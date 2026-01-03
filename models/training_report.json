@@ -1,0 +1,10 @@
+{
+  "training_date": "2026-01-03T20:41:05.729867",
+  "epochs": 100,
+  "final_loss": 0.7263872623443604,
+  "best_loss": 0.7203106880187988,
+  "num_nodes": 8961,
+  "num_edges": 14272,
+  "model_params": 313089,
+  "device": "cuda"
+}

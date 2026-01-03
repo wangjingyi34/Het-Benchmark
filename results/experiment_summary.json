@@ -1,0 +1,20 @@
+{
+  "experiment_date": "2026-01-03T20:43:20.503565",
+  "device": "cuda",
+  "total_models": 34,
+  "total_operators": 468,
+  "tables_generated": [
+    "table4",
+    "table5",
+    "table6",
+    "table7",
+    "table8"
+  ],
+  "results": {
+    "table4_models": 34,
+    "table5_platforms": 5,
+    "table6_operators": 13,
+    "table7_attributions": 7,
+    "table8_predictions": 25
+  }
+}

@@ -1,708 +1,936 @@
 """
 MOH-KG: Model-Operator-Hardware Knowledge Graph
-Multi-relational knowledge graph for AI model migration evaluation
+Enhanced version with complete relation types
+
+Relation Types:
+- r_contains: Model contains Operator
+- r_has_type: Operator has Type
+- r_supports: Hardware supports Operator Type
+- r_seq: Sequential dependency between operators
+- r_sim: Similarity between operators (based on embedding)
+- r_optimizes: Optimization relation
+- r_compatible: Hardware compatibility relation
 """
 
 import json
+import numpy as np
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional, Any, Tuple, Set, Union
-from enum import Enum
+from typing import Dict, List, Optional, Any, Tuple, Set
 from collections import defaultdict
-import hashlib
 from loguru import logger
-
-
-class EntityType(Enum):
-    """Entity types in MOH-KG"""
-    MODEL = "Model"
-    OPERATOR = "Operator"
-    HARDWARE = "Hardware"
-    OPERATOR_INSTANCE = "OperatorInstance"
-    PERFORMANCE_RECORD = "PerformanceRecord"
-
-
-class RelationType(Enum):
-    """Relation types in MOH-KG"""
-    # Model-Operator relations
-    CONTAINS = "contains"           # Model contains Operator
-    DEPENDS_ON = "depends_on"       # Operator depends on another Operator
-    
-    # Operator-Hardware relations
-    RUNS_ON = "runs_on"             # Operator runs on Hardware
-    SUPPORTED_BY = "supported_by"   # Operator is supported by Hardware
-    OPTIMIZED_FOR = "optimized_for" # Operator is optimized for Hardware
-    
-    # Performance relations
-    HAS_PERFORMANCE = "has_performance"  # Entity has performance record
-    COMPARED_TO = "compared_to"          # Performance comparison
-    
-    # Similarity relations
-    SIMILAR_TO = "similar_to"       # Semantic similarity between operators
-    EQUIVALENT_TO = "equivalent_to" # Functionally equivalent operators
+import hashlib
 
 
 @dataclass
-class Entity:
-    """Base entity in knowledge graph"""
+class Node:
+    """Base class for knowledge graph nodes"""
     id: str
-    type: EntityType
-    name: str
+    type: str  # "model", "operator", "operator_type", "hardware"
     properties: Dict[str, Any] = field(default_factory=dict)
+    embedding: Optional[np.ndarray] = None
     
     def to_dict(self) -> Dict:
-        return {
+        result = {
             "id": self.id,
-            "type": self.type.value,
-            "name": self.name,
+            "type": self.type,
             "properties": self.properties,
         }
-    
-    @classmethod
-    def from_dict(cls, data: Dict) -> "Entity":
-        return cls(
-            id=data["id"],
-            type=EntityType(data["type"]),
-            name=data["name"],
-            properties=data.get("properties", {}),
-        )
+        if self.embedding is not None:
+            result["embedding"] = self.embedding.tolist()
+        return result
 
 
 @dataclass
-class Relation:
-    """Relation between entities"""
-    id: str
-    type: RelationType
-    source_id: str
-    target_id: str
+class Edge:
+    """Edge in the knowledge graph"""
+    source: str
+    target: str
+    relation: str  # r_contains, r_has_type, r_supports, r_seq, r_sim, r_optimizes, r_compatible
     properties: Dict[str, Any] = field(default_factory=dict)
     weight: float = 1.0
     
     def to_dict(self) -> Dict:
         return {
-            "id": self.id,
-            "type": self.type.value,
-            "source_id": self.source_id,
-            "target_id": self.target_id,
+            "source": self.source,
+            "target": self.target,
+            "relation": self.relation,
             "properties": self.properties,
             "weight": self.weight,
         }
+
+
+@dataclass
+class OperatorNode(Node):
+    """Operator node with detailed attributes"""
+    operator_type: str = ""
+    input_shapes: List[Tuple] = field(default_factory=list)
+    output_shapes: List[Tuple] = field(default_factory=list)
+    parameters: int = 0
+    flops: float = 0.0
+    memory_bytes: int = 0
+    execution_order: int = 0
     
-    @classmethod
-    def from_dict(cls, data: Dict) -> "Relation":
-        return cls(
-            id=data["id"],
-            type=RelationType(data["type"]),
-            source_id=data["source_id"],
-            target_id=data["target_id"],
-            properties=data.get("properties", {}),
-            weight=data.get("weight", 1.0),
-        )
+    def __post_init__(self):
+        self.type = "operator"
+        self.properties.update({
+            "operator_type": self.operator_type,
+            "input_shapes": [list(s) for s in self.input_shapes],
+            "output_shapes": [list(s) for s in self.output_shapes],
+            "parameters": self.parameters,
+            "flops": self.flops,
+            "memory_bytes": self.memory_bytes,
+            "execution_order": self.execution_order,
+        })
 
 
 @dataclass
-class ModelEntity(Entity):
-    """Model entity with specific properties"""
-    def __init__(
-        self,
-        model_id: str,
-        name: str,
-        category: str,
-        num_params: int,
-        architecture: str,
-        **kwargs
-    ):
-        super().__init__(
-            id=model_id,
-            type=EntityType.MODEL,
-            name=name,
-            properties={
-                "category": category,
-                "num_params": num_params,
-                "architecture": architecture,
-                **kwargs,
-            }
-        )
+class ModelNode(Node):
+    """Model node"""
+    model_name: str = ""
+    model_family: str = ""
+    task_type: str = ""
+    total_parameters: int = 0
+    total_operators: int = 0
+    
+    def __post_init__(self):
+        self.type = "model"
+        self.properties.update({
+            "model_name": self.model_name,
+            "model_family": self.model_family,
+            "task_type": self.task_type,
+            "total_parameters": self.total_parameters,
+            "total_operators": self.total_operators,
+        })
 
 
 @dataclass
-class OperatorEntity(Entity):
-    """Operator entity with specific properties"""
-    def __init__(
-        self,
-        operator_id: str,
-        name: str,
-        op_type: str,
-        category: str,
-        **kwargs
-    ):
-        super().__init__(
-            id=operator_id,
-            type=EntityType.OPERATOR,
-            name=name,
-            properties={
-                "op_type": op_type,
-                "category": category,
-                **kwargs,
-            }
-        )
+class HardwareNode(Node):
+    """Hardware platform node"""
+    platform_name: str = ""
+    vendor: str = ""
+    compute_capability: str = ""
+    peak_flops_tflops: float = 0.0
+    memory_bandwidth_gbps: float = 0.0
+    memory_size_gb: float = 0.0
+    supported_dtypes: List[str] = field(default_factory=list)
+    
+    def __post_init__(self):
+        self.type = "hardware"
+        self.properties.update({
+            "platform_name": self.platform_name,
+            "vendor": self.vendor,
+            "compute_capability": self.compute_capability,
+            "peak_flops_tflops": self.peak_flops_tflops,
+            "memory_bandwidth_gbps": self.memory_bandwidth_gbps,
+            "memory_size_gb": self.memory_size_gb,
+            "supported_dtypes": self.supported_dtypes,
+        })
 
 
 @dataclass
-class HardwareEntity(Entity):
-    """Hardware entity with specific properties"""
-    def __init__(
-        self,
-        hardware_id: str,
-        name: str,
-        platform: str,
-        vendor: str,
-        compute_capability: str,
-        memory_gb: float,
-        **kwargs
-    ):
-        super().__init__(
-            id=hardware_id,
-            type=EntityType.HARDWARE,
-            name=name,
-            properties={
-                "platform": platform,
-                "vendor": vendor,
-                "compute_capability": compute_capability,
-                "memory_gb": memory_gb,
-                **kwargs,
-            }
-        )
+class OperatorTypeNode(Node):
+    """Operator type node"""
+    type_name: str = ""
+    category: str = ""  # "compute", "memory", "communication", "activation"
+    is_compute_intensive: bool = False
+    is_memory_intensive: bool = False
+    typical_flops_ratio: float = 0.0
+    
+    def __post_init__(self):
+        self.type = "operator_type"
+        self.properties.update({
+            "type_name": self.type_name,
+            "category": self.category,
+            "is_compute_intensive": self.is_compute_intensive,
+            "is_memory_intensive": self.is_memory_intensive,
+            "typical_flops_ratio": self.typical_flops_ratio,
+        })
+
+
+class OperatorEmbedding:
+    """
+    Generate embeddings for operators based on their properties
+    Used for computing r_sim (similarity) relations
+    """
+    
+    def __init__(self, embedding_dim: int = 128):
+        self.embedding_dim = embedding_dim
+        self._type_embeddings: Dict[str, np.ndarray] = {}
+        self._initialize_type_embeddings()
+    
+    def _initialize_type_embeddings(self):
+        """Initialize base embeddings for operator types"""
+        operator_types = [
+            "MatMul", "Gemm", "Linear", "Conv2d", "Conv", "Conv1d", "Conv3d",
+            "Attention", "MultiHeadAttention", "ScaledDotProductAttention",
+            "LayerNorm", "RMSNorm", "BatchNorm", "GroupNorm", "InstanceNorm",
+            "GELU", "ReLU", "SiLU", "Sigmoid", "Tanh", "Softmax", "LeakyReLU",
+            "Add", "Mul", "Sub", "Div", "Concat", "Split",
+            "Embedding", "Dropout", "Reshape", "Transpose", "Permute",
+            "MaxPool", "AvgPool", "GlobalAvgPool", "AdaptiveAvgPool",
+            "Upsample", "Interpolate",
+        ]
+        
+        # Create deterministic embeddings based on operator type characteristics
+        np.random.seed(42)
+        for op_type in operator_types:
+            # Base random embedding
+            base_emb = np.random.randn(self.embedding_dim)
+            
+            # Add semantic structure based on category
+            if op_type in ["MatMul", "Gemm", "Linear"]:
+                base_emb[:16] += 2.0  # Matrix operations cluster
+            elif op_type in ["Conv2d", "Conv", "Conv1d", "Conv3d"]:
+                base_emb[16:32] += 2.0  # Convolution cluster
+            elif op_type in ["Attention", "MultiHeadAttention", "ScaledDotProductAttention"]:
+                base_emb[32:48] += 2.0  # Attention cluster
+            elif op_type in ["LayerNorm", "RMSNorm", "BatchNorm", "GroupNorm", "InstanceNorm"]:
+                base_emb[48:64] += 2.0  # Normalization cluster
+            elif op_type in ["GELU", "ReLU", "SiLU", "Sigmoid", "Tanh", "Softmax", "LeakyReLU"]:
+                base_emb[64:80] += 2.0  # Activation cluster
+            elif op_type in ["Add", "Mul", "Sub", "Div", "Concat", "Split"]:
+                base_emb[80:96] += 2.0  # Element-wise cluster
+            elif op_type in ["MaxPool", "AvgPool", "GlobalAvgPool", "AdaptiveAvgPool"]:
+                base_emb[96:112] += 2.0  # Pooling cluster
+            
+            # Normalize
+            base_emb = base_emb / np.linalg.norm(base_emb)
+            self._type_embeddings[op_type] = base_emb
+    
+    def embed_operator(self, operator: OperatorNode) -> np.ndarray:
+        """Generate embedding for an operator instance"""
+        # Start with type embedding
+        if operator.operator_type in self._type_embeddings:
+            base_emb = self._type_embeddings[operator.operator_type].copy()
+        else:
+            base_emb = np.random.randn(self.embedding_dim)
+            base_emb = base_emb / np.linalg.norm(base_emb)
+        
+        # Add shape-based features
+        if operator.input_shapes:
+            shape = operator.input_shapes[0]
+            shape_features = np.zeros(16)
+            for i, dim in enumerate(shape[:4]):
+                shape_features[i*4:(i+1)*4] = [
+                    np.log1p(dim),
+                    dim % 2,
+                    dim % 4 == 0,
+                    dim % 8 == 0,
+                ]
+            shape_features = shape_features / (np.linalg.norm(shape_features) + 1e-8)
+            base_emb[-16:] = shape_features
+        
+        # Add parameter-based features
+        if operator.parameters > 0:
+            param_feature = np.log1p(operator.parameters) / 25.0  # Normalize
+            base_emb[-17] = param_feature
+        
+        # Normalize final embedding
+        base_emb = base_emb / np.linalg.norm(base_emb)
+        return base_emb
+    
+    def compute_similarity(self, emb1: np.ndarray, emb2: np.ndarray) -> float:
+        """Compute cosine similarity between two embeddings"""
+        return float(np.dot(emb1, emb2))
 
 
 class MOHKG:
     """
     Model-Operator-Hardware Knowledge Graph
     
-    A multi-relational knowledge graph that captures:
-    - Model structure and operator composition
-    - Operator characteristics and dependencies
-    - Hardware capabilities and operator support
-    - Cross-platform performance relationships
+    Complete implementation with all relation types:
+    - r_contains: Model → Operator
+    - r_has_type: Operator → OperatorType
+    - r_supports: Hardware → OperatorType
+    - r_seq: Operator → Operator (sequential dependency)
+    - r_sim: Operator → Operator (similarity)
+    - r_optimizes: Hardware → Operator (optimization capability)
+    - r_compatible: Hardware → Model (compatibility)
     """
     
-    def __init__(self):
-        self._entities: Dict[str, Entity] = {}
-        self._relations: Dict[str, Relation] = {}
-        
-        # Indexes for efficient querying
-        self._entity_by_type: Dict[EntityType, Set[str]] = defaultdict(set)
-        self._relations_by_source: Dict[str, Set[str]] = defaultdict(set)
-        self._relations_by_target: Dict[str, Set[str]] = defaultdict(set)
-        self._relations_by_type: Dict[RelationType, Set[str]] = defaultdict(set)
-        
-        self._relation_counter = 0
+    RELATION_TYPES = [
+        "r_contains",    # Model contains Operator
+        "r_has_type",    # Operator has OperatorType
+        "r_supports",    # Hardware supports OperatorType
+        "r_seq",         # Sequential dependency
+        "r_sim",         # Similarity relation
+        "r_optimizes",   # Optimization relation
+        "r_compatible",  # Compatibility relation
+    ]
     
-    def add_entity(self, entity: Entity) -> str:
-        """Add an entity to the knowledge graph"""
-        if entity.id in self._entities:
-            logger.warning(f"Entity {entity.id} already exists, updating...")
+    def __init__(self, embedding_dim: int = 128, similarity_threshold: float = 0.8):
+        self.embedding_dim = embedding_dim
+        self.similarity_threshold = similarity_threshold
         
-        self._entities[entity.id] = entity
-        self._entity_by_type[entity.type].add(entity.id)
+        # Node storage
+        self.nodes: Dict[str, Node] = {}
+        self.models: Dict[str, ModelNode] = {}
+        self.operators: Dict[str, OperatorNode] = {}
+        self.operator_types: Dict[str, OperatorTypeNode] = {}
+        self.hardware: Dict[str, HardwareNode] = {}
         
-        return entity.id
+        # Edge storage by relation type
+        self.edges: Dict[str, List[Edge]] = {rel: [] for rel in self.RELATION_TYPES}
+        
+        # Adjacency lists for efficient traversal
+        self.adjacency: Dict[str, Dict[str, List[str]]] = defaultdict(lambda: defaultdict(list))
+        
+        # Embedding generator
+        self.embedder = OperatorEmbedding(embedding_dim)
+        
+        # Initialize default hardware platforms
+        self._initialize_hardware_platforms()
+        
+        # Initialize operator types
+        self._initialize_operator_types()
     
-    def add_relation(
-        self,
-        source_id: str,
-        target_id: str,
-        relation_type: RelationType,
-        properties: Optional[Dict] = None,
-        weight: float = 1.0
-    ) -> str:
-        """Add a relation between entities"""
-        if source_id not in self._entities:
-            raise ValueError(f"Source entity {source_id} not found")
-        if target_id not in self._entities:
-            raise ValueError(f"Target entity {target_id} not found")
+    def _initialize_hardware_platforms(self):
+        """Initialize the 5 hardware platforms from the paper"""
+        platforms = [
+            HardwareNode(
+                id="hw_cuda",
+                platform_name="CUDA/cuDNN",
+                vendor="NVIDIA",
+                compute_capability="8.0",
+                peak_flops_tflops=312.0,
+                memory_bandwidth_gbps=2039.0,
+                memory_size_gb=80.0,
+                supported_dtypes=["FP32", "FP16", "BF16", "INT8", "FP8"],
+            ),
+            HardwareNode(
+                id="hw_rocm",
+                platform_name="ROCm/MIGraphX",
+                vendor="AMD",
+                compute_capability="gfx90a",
+                peak_flops_tflops=181.0,
+                memory_bandwidth_gbps=3276.0,
+                memory_size_gb=128.0,
+                supported_dtypes=["FP32", "FP16", "BF16", "INT8"],
+            ),
+            HardwareNode(
+                id="hw_oneapi",
+                platform_name="oneAPI/oneDNN",
+                vendor="Intel",
+                compute_capability="Xe-HPC",
+                peak_flops_tflops=52.0,
+                memory_bandwidth_gbps=3276.0,
+                memory_size_gb=128.0,
+                supported_dtypes=["FP32", "FP16", "BF16", "INT8"],
+            ),
+            HardwareNode(
+                id="hw_cann",
+                platform_name="CANN",
+                vendor="Huawei",
+                compute_capability="Ascend910B",
+                peak_flops_tflops=320.0,
+                memory_bandwidth_gbps=1200.0,
+                memory_size_gb=64.0,
+                supported_dtypes=["FP32", "FP16", "BF16", "INT8"],
+            ),
+            HardwareNode(
+                id="hw_mlu",
+                platform_name="BANG/CNNL",
+                vendor="Cambricon",
+                compute_capability="MLU370",
+                peak_flops_tflops=256.0,
+                memory_bandwidth_gbps=614.0,
+                memory_size_gb=48.0,
+                supported_dtypes=["FP32", "FP16", "INT8"],
+            ),
+        ]
         
-        self._relation_counter += 1
-        relation_id = f"rel_{self._relation_counter:06d}"
-        
-        relation = Relation(
-            id=relation_id,
-            type=relation_type,
-            source_id=source_id,
-            target_id=target_id,
-            properties=properties or {},
-            weight=weight,
-        )
-        
-        self._relations[relation_id] = relation
-        self._relations_by_source[source_id].add(relation_id)
-        self._relations_by_target[target_id].add(relation_id)
-        self._relations_by_type[relation_type].add(relation_id)
-        
-        return relation_id
+        for hw in platforms:
+            self.add_hardware(hw)
     
-    def get_entity(self, entity_id: str) -> Optional[Entity]:
-        """Get entity by ID"""
-        return self._entities.get(entity_id)
-    
-    def get_entities_by_type(self, entity_type: EntityType) -> List[Entity]:
-        """Get all entities of a specific type"""
-        return [self._entities[eid] for eid in self._entity_by_type[entity_type]]
-    
-    def get_relations(
-        self,
-        source_id: Optional[str] = None,
-        target_id: Optional[str] = None,
-        relation_type: Optional[RelationType] = None
-    ) -> List[Relation]:
-        """Query relations with optional filters"""
-        result_ids = None
-        
-        if source_id is not None:
-            result_ids = self._relations_by_source.get(source_id, set())
-        
-        if target_id is not None:
-            target_ids = self._relations_by_target.get(target_id, set())
-            if result_ids is None:
-                result_ids = target_ids
-            else:
-                result_ids = result_ids & target_ids
-        
-        if relation_type is not None:
-            type_ids = self._relations_by_type.get(relation_type, set())
-            if result_ids is None:
-                result_ids = type_ids
-            else:
-                result_ids = result_ids & type_ids
-        
-        if result_ids is None:
-            result_ids = set(self._relations.keys())
-        
-        return [self._relations[rid] for rid in result_ids]
-    
-    def get_neighbors(
-        self,
-        entity_id: str,
-        relation_type: Optional[RelationType] = None,
-        direction: str = "outgoing"
-    ) -> List[Tuple[Entity, Relation]]:
-        """Get neighboring entities connected by relations"""
-        neighbors = []
-        
-        if direction in ["outgoing", "both"]:
-            for rel_id in self._relations_by_source.get(entity_id, set()):
-                rel = self._relations[rel_id]
-                if relation_type is None or rel.type == relation_type:
-                    neighbor = self._entities.get(rel.target_id)
-                    if neighbor:
-                        neighbors.append((neighbor, rel))
-        
-        if direction in ["incoming", "both"]:
-            for rel_id in self._relations_by_target.get(entity_id, set()):
-                rel = self._relations[rel_id]
-                if relation_type is None or rel.type == relation_type:
-                    neighbor = self._entities.get(rel.source_id)
-                    if neighbor:
-                        neighbors.append((neighbor, rel))
-        
-        return neighbors
-    
-    def get_model_operators(self, model_id: str) -> List[Entity]:
-        """Get all operators contained in a model"""
-        operators = []
-        for neighbor, rel in self.get_neighbors(model_id, RelationType.CONTAINS):
-            if neighbor.type == EntityType.OPERATOR:
-                operators.append(neighbor)
-        return operators
-    
-    def get_operator_hardware_support(self, operator_id: str) -> List[Entity]:
-        """Get all hardware platforms that support an operator"""
-        hardware_list = []
-        for neighbor, rel in self.get_neighbors(operator_id, RelationType.SUPPORTED_BY):
-            if neighbor.type == EntityType.HARDWARE:
-                hardware_list.append(neighbor)
-        return hardware_list
-    
-    def get_hardware_operators(self, hardware_id: str) -> List[Entity]:
-        """Get all operators supported by a hardware platform"""
-        operators = []
-        for neighbor, rel in self.get_neighbors(hardware_id, direction="incoming"):
-            if rel.type == RelationType.SUPPORTED_BY:
-                operators.append(neighbor)
-        return operators
-    
-    def calculate_migration_compatibility(
-        self,
-        model_id: str,
-        source_hardware_id: str,
-        target_hardware_id: str
-    ) -> Dict[str, Any]:
-        """
-        Calculate migration compatibility score between hardware platforms
-        
-        Returns:
-            Dictionary with compatibility metrics
-        """
-        model_operators = self.get_model_operators(model_id)
-        
-        source_supported = set()
-        target_supported = set()
-        
-        for op in model_operators:
-            source_hw = self.get_operator_hardware_support(op.id)
-            target_hw = self.get_operator_hardware_support(op.id)
+    def _initialize_operator_types(self):
+        """Initialize operator type nodes"""
+        type_definitions = [
+            # Matrix operations
+            ("MatMul", "compute", True, False, 0.35),
+            ("Gemm", "compute", True, False, 0.35),
+            ("Linear", "compute", True, False, 0.30),
             
-            if any(h.id == source_hardware_id for h in source_hw):
-                source_supported.add(op.id)
-            if any(h.id == target_hardware_id for h in target_hw):
-                target_supported.add(op.id)
+            # Convolutions
+            ("Conv2d", "compute", True, False, 0.25),
+            ("Conv", "compute", True, False, 0.25),
+            ("Conv1d", "compute", True, False, 0.20),
+            ("Conv3d", "compute", True, False, 0.30),
+            
+            # Attention
+            ("Attention", "compute", True, True, 0.40),
+            ("MultiHeadAttention", "compute", True, True, 0.45),
+            ("ScaledDotProductAttention", "compute", True, True, 0.40),
+            
+            # Normalization
+            ("LayerNorm", "memory", False, True, 0.05),
+            ("RMSNorm", "memory", False, True, 0.04),
+            ("BatchNorm", "memory", False, True, 0.05),
+            ("GroupNorm", "memory", False, True, 0.05),
+            ("InstanceNorm", "memory", False, True, 0.05),
+            
+            # Activations
+            ("GELU", "activation", False, False, 0.02),
+            ("ReLU", "activation", False, False, 0.01),
+            ("SiLU", "activation", False, False, 0.02),
+            ("Sigmoid", "activation", False, False, 0.02),
+            ("Tanh", "activation", False, False, 0.02),
+            ("Softmax", "activation", False, True, 0.03),
+            ("LeakyReLU", "activation", False, False, 0.01),
+            
+            # Element-wise
+            ("Add", "memory", False, True, 0.01),
+            ("Mul", "memory", False, True, 0.01),
+            ("Sub", "memory", False, True, 0.01),
+            ("Div", "memory", False, True, 0.01),
+            ("Concat", "memory", False, True, 0.02),
+            ("Split", "memory", False, True, 0.01),
+            
+            # Embedding and dropout
+            ("Embedding", "memory", False, True, 0.03),
+            ("Dropout", "memory", False, False, 0.01),
+            
+            # Reshape operations
+            ("Reshape", "memory", False, True, 0.01),
+            ("Transpose", "memory", False, True, 0.02),
+            ("Permute", "memory", False, True, 0.02),
+            
+            # Pooling
+            ("MaxPool", "memory", False, True, 0.02),
+            ("AvgPool", "memory", False, True, 0.02),
+            ("GlobalAvgPool", "memory", False, True, 0.02),
+            ("AdaptiveAvgPool", "memory", False, True, 0.02),
+            
+            # Upsampling
+            ("Upsample", "memory", False, True, 0.02),
+            ("Interpolate", "memory", False, True, 0.02),
+        ]
         
-        total_ops = len(model_operators)
-        source_coverage = len(source_supported) / total_ops if total_ops > 0 else 0
-        target_coverage = len(target_supported) / total_ops if total_ops > 0 else 0
-        
-        # Operators that need migration attention
-        migration_gaps = source_supported - target_supported
-        
-        return {
-            "model_id": model_id,
-            "source_hardware": source_hardware_id,
-            "target_hardware": target_hardware_id,
-            "total_operators": total_ops,
-            "source_coverage": source_coverage,
-            "target_coverage": target_coverage,
-            "migration_gaps": list(migration_gaps),
-            "compatibility_score": target_coverage,
-        }
+        for type_name, category, is_compute, is_memory, flops_ratio in type_definitions:
+            op_type = OperatorTypeNode(
+                id=f"type_{type_name.lower()}",
+                type_name=type_name,
+                category=category,
+                is_compute_intensive=is_compute,
+                is_memory_intensive=is_memory,
+                typical_flops_ratio=flops_ratio,
+            )
+            self.add_operator_type(op_type)
     
-    def find_similar_operators(
-        self,
-        operator_id: str,
-        threshold: float = 0.8
-    ) -> List[Tuple[Entity, float]]:
-        """Find operators similar to the given operator"""
-        similar = []
+    def add_model(self, model: ModelNode):
+        """Add a model node to the graph"""
+        self.nodes[model.id] = model
+        self.models[model.id] = model
+        logger.debug(f"Added model: {model.id}")
+    
+    def add_operator(self, operator: OperatorNode, model_id: str = None):
+        """Add an operator node and optionally link to a model"""
+        # Generate embedding
+        operator.embedding = self.embedder.embed_operator(operator)
         
-        for neighbor, rel in self.get_neighbors(operator_id, RelationType.SIMILAR_TO, "both"):
-            if rel.weight >= threshold:
-                similar.append((neighbor, rel.weight))
+        self.nodes[operator.id] = operator
+        self.operators[operator.id] = operator
         
-        return sorted(similar, key=lambda x: x[1], reverse=True)
+        # Add r_contains edge if model_id provided
+        if model_id and model_id in self.models:
+            self.add_edge(Edge(
+                source=model_id,
+                target=operator.id,
+                relation="r_contains",
+                properties={"execution_order": operator.execution_order},
+            ))
+        
+        # Add r_has_type edge
+        type_id = f"type_{operator.operator_type.lower()}"
+        if type_id in self.operator_types:
+            self.add_edge(Edge(
+                source=operator.id,
+                target=type_id,
+                relation="r_has_type",
+            ))
+        
+        logger.debug(f"Added operator: {operator.id}")
+    
+    def add_operator_type(self, op_type: OperatorTypeNode):
+        """Add an operator type node"""
+        self.nodes[op_type.id] = op_type
+        self.operator_types[op_type.id] = op_type
+        
+        # Add r_supports edges from all hardware platforms
+        for hw_id, hw in self.hardware.items():
+            # Determine support level based on operator type
+            support_level = self._determine_support_level(op_type, hw)
+            if support_level > 0:
+                self.add_edge(Edge(
+                    source=hw_id,
+                    target=op_type.id,
+                    relation="r_supports",
+                    properties={"support_level": support_level},
+                    weight=support_level,
+                ))
+    
+    def _determine_support_level(self, op_type: OperatorTypeNode, hw: HardwareNode) -> float:
+        """Determine how well a hardware platform supports an operator type"""
+        # Base support level
+        support = 0.8
+        
+        # CUDA has best overall support
+        if hw.vendor == "NVIDIA":
+            support = 1.0
+        elif hw.vendor == "AMD":
+            support = 0.94
+        elif hw.vendor == "Intel":
+            support = 0.89
+        elif hw.vendor == "Huawei":
+            support = 0.93
+        elif hw.vendor == "Cambricon":
+            support = 0.85
+        
+        # Adjust based on operator type
+        if op_type.is_compute_intensive:
+            # Compute-intensive ops benefit from high FLOPS
+            if hw.peak_flops_tflops > 200:
+                support *= 1.05
+        
+        if op_type.is_memory_intensive:
+            # Memory-intensive ops benefit from high bandwidth
+            if hw.memory_bandwidth_gbps > 2000:
+                support *= 1.05
+        
+        return min(support, 1.0)
+    
+    def add_hardware(self, hardware: HardwareNode):
+        """Add a hardware platform node"""
+        self.nodes[hardware.id] = hardware
+        self.hardware[hardware.id] = hardware
+        logger.debug(f"Added hardware: {hardware.id}")
+    
+    def add_edge(self, edge: Edge):
+        """Add an edge to the graph"""
+        if edge.relation not in self.RELATION_TYPES:
+            logger.warning(f"Unknown relation type: {edge.relation}")
+            return
+        
+        self.edges[edge.relation].append(edge)
+        self.adjacency[edge.source][edge.relation].append(edge.target)
+    
+    def build_sequential_edges(self, model_id: str):
+        """
+        Build r_seq (sequential dependency) edges for operators in a model
+        Based on execution order
+        """
+        if model_id not in self.models:
+            logger.warning(f"Model not found: {model_id}")
+            return
+        
+        # Get all operators for this model
+        model_operators = []
+        for edge in self.edges["r_contains"]:
+            if edge.source == model_id:
+                op_id = edge.target
+                if op_id in self.operators:
+                    model_operators.append(self.operators[op_id])
+        
+        # Sort by execution order
+        model_operators.sort(key=lambda x: x.execution_order)
+        
+        # Create sequential edges
+        for i in range(len(model_operators) - 1):
+            curr_op = model_operators[i]
+            next_op = model_operators[i + 1]
+            
+            self.add_edge(Edge(
+                source=curr_op.id,
+                target=next_op.id,
+                relation="r_seq",
+                properties={
+                    "order_diff": next_op.execution_order - curr_op.execution_order,
+                },
+            ))
+        
+        logger.info(f"Built {len(model_operators) - 1} r_seq edges for model {model_id}")
+    
+    def build_similarity_edges(self, threshold: float = None):
+        """
+        Build r_sim (similarity) edges between operators
+        Based on embedding cosine similarity
+        """
+        if threshold is None:
+            threshold = self.similarity_threshold
+        
+        operators = list(self.operators.values())
+        n = len(operators)
+        sim_edges_count = 0
+        
+        for i in range(n):
+            for j in range(i + 1, n):
+                op1 = operators[i]
+                op2 = operators[j]
+                
+                if op1.embedding is None or op2.embedding is None:
+                    continue
+                
+                similarity = self.embedder.compute_similarity(op1.embedding, op2.embedding)
+                
+                if similarity >= threshold:
+                    self.add_edge(Edge(
+                        source=op1.id,
+                        target=op2.id,
+                        relation="r_sim",
+                        properties={"similarity": similarity},
+                        weight=similarity,
+                    ))
+                    sim_edges_count += 1
+        
+        logger.info(f"Built {sim_edges_count} r_sim edges with threshold {threshold}")
+    
+    def build_optimization_edges(self):
+        """
+        Build r_optimizes edges between hardware and operators
+        Based on hardware capabilities and operator characteristics
+        """
+        opt_edges_count = 0
+        
+        for hw_id, hw in self.hardware.items():
+            for op_id, op in self.operators.items():
+                # Check if this hardware can optimize this operator
+                opt_score = self._compute_optimization_score(hw, op)
+                
+                if opt_score > 0.7:  # Only add edge if significant optimization potential
+                    self.add_edge(Edge(
+                        source=hw_id,
+                        target=op_id,
+                        relation="r_optimizes",
+                        properties={
+                            "optimization_score": opt_score,
+                            "techniques": self._get_optimization_techniques(hw, op),
+                        },
+                        weight=opt_score,
+                    ))
+                    opt_edges_count += 1
+        
+        logger.info(f"Built {opt_edges_count} r_optimizes edges")
+    
+    def _compute_optimization_score(self, hw: HardwareNode, op: OperatorNode) -> float:
+        """Compute how well a hardware can optimize an operator"""
+        score = 0.5  # Base score
+        
+        # Tensor Core optimization for matrix operations
+        if op.operator_type in ["MatMul", "Gemm", "Linear", "Conv2d"]:
+            if hw.vendor == "NVIDIA" and "FP16" in hw.supported_dtypes:
+                score += 0.3
+            elif hw.vendor == "AMD" and "FP16" in hw.supported_dtypes:
+                score += 0.25
+            elif hw.vendor == "Huawei":
+                score += 0.25
+        
+        # Flash Attention optimization
+        if op.operator_type in ["Attention", "MultiHeadAttention"]:
+            if hw.vendor == "NVIDIA":
+                score += 0.35
+            elif hw.vendor == "AMD":
+                score += 0.25
+        
+        # Memory-bound optimization
+        if op.operator_type in ["LayerNorm", "RMSNorm", "Softmax"]:
+            if hw.memory_bandwidth_gbps > 2000:
+                score += 0.2
+        
+        return min(score, 1.0)
+    
+    def _get_optimization_techniques(self, hw: HardwareNode, op: OperatorNode) -> List[str]:
+        """Get applicable optimization techniques"""
+        techniques = []
+        
+        if op.operator_type in ["MatMul", "Gemm", "Linear"]:
+            if hw.vendor == "NVIDIA":
+                techniques.extend(["TensorCore", "cuBLAS", "FP16"])
+            elif hw.vendor == "AMD":
+                techniques.extend(["MatrixCore", "rocBLAS", "FP16"])
+            elif hw.vendor == "Huawei":
+                techniques.extend(["CubeCore", "CANN-GEMM", "FP16"])
+        
+        if op.operator_type in ["Attention", "MultiHeadAttention"]:
+            if hw.vendor == "NVIDIA":
+                techniques.append("FlashAttention")
+            techniques.append("KV-Cache")
+        
+        if op.operator_type in ["Conv2d", "Conv"]:
+            techniques.extend(["Winograd", "Im2Col", "FFT"])
+        
+        return techniques
+    
+    def build_compatibility_edges(self):
+        """
+        Build r_compatible edges between hardware and models
+        Based on operator coverage
+        """
+        compat_edges_count = 0
+        
+        for hw_id, hw in self.hardware.items():
+            for model_id, model in self.models.items():
+                # Calculate compatibility score
+                compat_score = self._compute_compatibility_score(hw_id, model_id)
+                
+                self.add_edge(Edge(
+                    source=hw_id,
+                    target=model_id,
+                    relation="r_compatible",
+                    properties={
+                        "compatibility_score": compat_score,
+                        "coverage_ratio": compat_score,
+                    },
+                    weight=compat_score,
+                ))
+                compat_edges_count += 1
+        
+        logger.info(f"Built {compat_edges_count} r_compatible edges")
+    
+    def _compute_compatibility_score(self, hw_id: str, model_id: str) -> float:
+        """Compute compatibility score between hardware and model"""
+        # Get all operators in the model
+        model_operators = []
+        for edge in self.edges["r_contains"]:
+            if edge.source == model_id:
+                model_operators.append(edge.target)
+        
+        if not model_operators:
+            return 0.0
+        
+        # Check support for each operator type
+        supported = 0
+        for op_id in model_operators:
+            if op_id in self.operators:
+                op = self.operators[op_id]
+                type_id = f"type_{op.operator_type.lower()}"
+                
+                # Check if hardware supports this type
+                for edge in self.edges["r_supports"]:
+                    if edge.source == hw_id and edge.target == type_id:
+                        supported += edge.weight
+                        break
+                else:
+                    supported += 0.5  # Partial support for unknown types
+        
+        return supported / len(model_operators)
     
     def get_statistics(self) -> Dict[str, Any]:
         """Get knowledge graph statistics"""
-        return {
-            "total_entities": len(self._entities),
-            "total_relations": len(self._relations),
-            "entities_by_type": {
-                t.value: len(ids) for t, ids in self._entity_by_type.items()
-            },
-            "relations_by_type": {
-                t.value: len(ids) for t, ids in self._relations_by_type.items()
-            },
+        stats = {
+            "total_nodes": len(self.nodes),
+            "models": len(self.models),
+            "operators": len(self.operators),
+            "operator_types": len(self.operator_types),
+            "hardware_platforms": len(self.hardware),
+            "edges_by_relation": {rel: len(edges) for rel, edges in self.edges.items()},
+            "total_edges": sum(len(edges) for edges in self.edges.values()),
         }
+        return stats
     
-    def to_dict(self) -> Dict:
+    def to_dict(self) -> Dict[str, Any]:
         """Export knowledge graph to dictionary"""
         return {
-            "entities": [e.to_dict() for e in self._entities.values()],
-            "relations": [r.to_dict() for r in self._relations.values()],
+            "nodes": {nid: node.to_dict() for nid, node in self.nodes.items()},
+            "edges": {rel: [e.to_dict() for e in edges] for rel, edges in self.edges.items()},
             "statistics": self.get_statistics(),
         }
     
-    def save(self, path: str):
+    def save_json(self, path: str):
         """Save knowledge graph to JSON file"""
         with open(path, 'w') as f:
-            json.dump(self.to_dict(), f, indent=2)
-        logger.info(f"Saved knowledge graph to {path}")
+            json.dump(self.to_dict(), f, indent=2, default=str)
+        logger.info(f"Knowledge graph saved to {path}")
     
-    @classmethod
-    def load(cls, path: str) -> "MOHKG":
-        """Load knowledge graph from JSON file"""
-        with open(path, 'r') as f:
-            data = json.load(f)
+    def export_neo4j_cypher(self, path: str):
+        """Export to Neo4j Cypher format"""
+        lines = []
         
-        kg = cls()
+        # Create nodes
+        lines.append("// Create nodes")
+        for node_id, node in self.nodes.items():
+            props = json.dumps(node.properties)
+            lines.append(f"CREATE (:{node.type} {{id: '{node_id}', properties: {props}}})")
         
-        for entity_data in data["entities"]:
-            entity = Entity.from_dict(entity_data)
-            kg.add_entity(entity)
+        lines.append("\n// Create edges")
+        for rel_type, edges in self.edges.items():
+            for edge in edges:
+                props = json.dumps(edge.properties)
+                lines.append(
+                    f"MATCH (a {{id: '{edge.source}'}}), (b {{id: '{edge.target}'}}) "
+                    f"CREATE (a)-[:{rel_type} {{weight: {edge.weight}, properties: {props}}}]->(b)"
+                )
         
-        for relation_data in data["relations"]:
-            kg.add_relation(
-                source_id=relation_data["source_id"],
-                target_id=relation_data["target_id"],
-                relation_type=RelationType(relation_data["type"]),
-                properties=relation_data.get("properties", {}),
-                weight=relation_data.get("weight", 1.0),
-            )
-        
-        logger.info(f"Loaded knowledge graph from {path}")
-        return kg
-
-
-class KGBuilder:
-    """
-    Builder for constructing MOH-KG from various data sources
-    """
+        with open(path, 'w') as f:
+            f.write('\n'.join(lines))
+        logger.info(f"Neo4j Cypher exported to {path}")
     
-    def __init__(self):
-        self.kg = MOHKG()
-    
-    def add_model(
+    def query_neighbors(
         self,
-        model_id: str,
-        name: str,
-        category: str,
-        num_params: int,
-        architecture: str,
-        operators: List[Dict[str, Any]],
-        **kwargs
-    ) -> str:
-        """Add a model with its operators to the knowledge graph"""
-        # Add model entity
-        model = ModelEntity(
-            model_id=model_id,
-            name=name,
-            category=category,
-            num_params=num_params,
-            architecture=architecture,
-            **kwargs,
-        )
-        self.kg.add_entity(model)
+        node_id: str,
+        relation: str = None,
+        direction: str = "outgoing"
+    ) -> List[str]:
+        """Query neighboring nodes"""
+        neighbors = []
         
-        # Add operators and relations
-        for op_data in operators:
-            op_id = op_data.get("id", f"{model_id}_{op_data['op_type']}_{len(self.kg._entities)}")
-            
-            operator = OperatorEntity(
-                operator_id=op_id,
-                name=op_data.get("name", op_data["op_type"]),
-                op_type=op_data["op_type"],
-                category=op_data.get("category", "other"),
-            )
-            self.kg.add_entity(operator)
-            
-            # Add CONTAINS relation
-            self.kg.add_relation(
-                source_id=model_id,
-                target_id=op_id,
-                relation_type=RelationType.CONTAINS,
-            )
+        if direction in ["outgoing", "both"]:
+            if relation:
+                neighbors.extend(self.adjacency[node_id].get(relation, []))
+            else:
+                for rel_neighbors in self.adjacency[node_id].values():
+                    neighbors.extend(rel_neighbors)
         
-        return model_id
-    
-    def add_hardware(
-        self,
-        hardware_id: str,
-        name: str,
-        platform: str,
-        vendor: str,
-        compute_capability: str,
-        memory_gb: float,
-        supported_operators: List[str],
-        **kwargs
-    ) -> str:
-        """Add a hardware platform with its supported operators"""
-        # Add hardware entity
-        hardware = HardwareEntity(
-            hardware_id=hardware_id,
-            name=name,
-            platform=platform,
-            vendor=vendor,
-            compute_capability=compute_capability,
-            memory_gb=memory_gb,
-            **kwargs,
-        )
-        self.kg.add_entity(hardware)
+        if direction in ["incoming", "both"]:
+            for rel_type, edges in self.edges.items():
+                if relation and rel_type != relation:
+                    continue
+                for edge in edges:
+                    if edge.target == node_id:
+                        neighbors.append(edge.source)
         
-        # Add SUPPORTED_BY relations for existing operators
-        for op_type in supported_operators:
-            # Find operators of this type
-            for entity in self.kg.get_entities_by_type(EntityType.OPERATOR):
-                if entity.properties.get("op_type") == op_type:
-                    self.kg.add_relation(
-                        source_id=entity.id,
-                        target_id=hardware_id,
-                        relation_type=RelationType.SUPPORTED_BY,
-                    )
-        
-        return hardware_id
+        return list(set(neighbors))
     
-    def add_operator_similarity(
-        self,
-        operator1_id: str,
-        operator2_id: str,
-        similarity: float
-    ):
-        """Add similarity relation between operators"""
-        self.kg.add_relation(
-            source_id=operator1_id,
-            target_id=operator2_id,
-            relation_type=RelationType.SIMILAR_TO,
-            weight=similarity,
-        )
-    
-    def build(self) -> MOHKG:
-        """Return the constructed knowledge graph"""
-        stats = self.kg.get_statistics()
-        logger.info(f"Built knowledge graph: {stats['total_entities']} entities, {stats['total_relations']} relations")
-        return self.kg
-
-
-class KGQueryEngine:
-    """
-    Query engine for MOH-KG with advanced query capabilities
-    """
-    
-    def __init__(self, kg: MOHKG):
-        self.kg = kg
-    
-    def query_path(
-        self,
-        start_id: str,
-        end_id: str,
-        max_depth: int = 5
-    ) -> List[List[str]]:
-        """Find paths between two entities using BFS"""
-        if start_id not in self.kg._entities or end_id not in self.kg._entities:
+    def find_similar_operators(self, operator_id: str, top_k: int = 10) -> List[Tuple[str, float]]:
+        """Find most similar operators"""
+        if operator_id not in self.operators:
             return []
         
-        from collections import deque
+        target_op = self.operators[operator_id]
+        if target_op.embedding is None:
+            return []
         
-        queue = deque([(start_id, [start_id])])
-        visited = {start_id}
-        paths = []
-        
-        while queue:
-            current, path = queue.popleft()
-            
-            if len(path) > max_depth:
+        similarities = []
+        for op_id, op in self.operators.items():
+            if op_id == operator_id or op.embedding is None:
                 continue
             
-            if current == end_id:
-                paths.append(path)
-                continue
-            
-            for neighbor, rel in self.kg.get_neighbors(current, direction="both"):
-                if neighbor.id not in visited:
-                    visited.add(neighbor.id)
-                    queue.append((neighbor.id, path + [neighbor.id]))
+            sim = self.embedder.compute_similarity(target_op.embedding, op.embedding)
+            similarities.append((op_id, sim))
         
-        return paths
+        similarities.sort(key=lambda x: x[1], reverse=True)
+        return similarities[:top_k]
+
+
+def build_kg_from_dataset(dataset_path: str, output_path: str):
+    """Build MOH-KG from model dataset"""
+    logger.info(f"Building MOH-KG from {dataset_path}")
     
-    def query_subgraph(
-        self,
-        center_id: str,
-        depth: int = 2
-    ) -> Dict[str, Any]:
-        """Extract subgraph around a center entity"""
-        entities = {}
-        relations = []
-        
-        def explore(entity_id: str, current_depth: int):
-            if current_depth > depth or entity_id in entities:
-                return
-            
-            entity = self.kg.get_entity(entity_id)
-            if entity:
-                entities[entity_id] = entity.to_dict()
-            
-            for neighbor, rel in self.kg.get_neighbors(entity_id, direction="both"):
-                relations.append(rel.to_dict())
-                explore(neighbor.id, current_depth + 1)
-        
-        explore(center_id, 0)
-        
-        return {
-            "center": center_id,
-            "depth": depth,
-            "entities": list(entities.values()),
-            "relations": relations,
-        }
+    # Load dataset
+    with open(dataset_path, 'r') as f:
+        dataset = json.load(f)
     
-    def query_by_properties(
-        self,
-        entity_type: Optional[EntityType] = None,
-        **property_filters
-    ) -> List[Entity]:
-        """Query entities by property values"""
-        results = []
+    # Initialize knowledge graph
+    kg = MOHKG()
+    
+    # Add models and operators
+    for model_data in dataset.get("models", []):
+        # Create model node
+        model = ModelNode(
+            id=f"model_{model_data['name'].lower().replace('-', '_').replace('.', '_')}",
+            model_name=model_data["name"],
+            model_family=model_data.get("family", ""),
+            task_type=model_data.get("task_type", ""),
+            total_parameters=model_data.get("parameters", 0),
+            total_operators=len(model_data.get("operators", [])),
+        )
+        kg.add_model(model)
         
-        if entity_type:
-            candidates = self.kg.get_entities_by_type(entity_type)
-        else:
-            candidates = list(self.kg._entities.values())
+        # Add operators
+        for i, op_data in enumerate(model_data.get("operators", [])):
+            operator = OperatorNode(
+                id=f"{model.id}_op_{i:04d}",
+                operator_type=op_data.get("type", "Unknown"),
+                input_shapes=[tuple(s) for s in op_data.get("input_shapes", [[1, 1024]])],
+                output_shapes=[tuple(s) for s in op_data.get("output_shapes", [[1, 1024]])],
+                parameters=op_data.get("parameters", 0),
+                flops=op_data.get("flops", 0),
+                memory_bytes=op_data.get("memory_bytes", 0),
+                execution_order=i,
+            )
+            kg.add_operator(operator, model.id)
         
-        for entity in candidates:
-            match = True
-            for key, value in property_filters.items():
-                if entity.properties.get(key) != value:
-                    match = False
-                    break
-            if match:
-                results.append(entity)
-        
-        return results
+        # Build sequential edges for this model
+        kg.build_sequential_edges(model.id)
+    
+    # Build similarity edges (with higher threshold for large graphs)
+    num_operators = len(kg.operators)
+    if num_operators > 1000:
+        threshold = 0.95  # Higher threshold for large graphs
+    else:
+        threshold = 0.85
+    kg.build_similarity_edges(threshold=threshold)
+    
+    # Build optimization and compatibility edges
+    kg.build_optimization_edges()
+    kg.build_compatibility_edges()
+    
+    # Save
+    kg.save_json(output_path)
+    
+    # Print statistics
+    stats = kg.get_statistics()
+    logger.info(f"MOH-KG Statistics:")
+    logger.info(f"  Total nodes: {stats['total_nodes']}")
+    logger.info(f"  Models: {stats['models']}")
+    logger.info(f"  Operators: {stats['operators']}")
+    logger.info(f"  Operator types: {stats['operator_types']}")
+    logger.info(f"  Hardware platforms: {stats['hardware_platforms']}")
+    logger.info(f"  Total edges: {stats['total_edges']}")
+    for rel, count in stats['edges_by_relation'].items():
+        logger.info(f"    {rel}: {count}")
+    
+    return kg
 
 
 if __name__ == "__main__":
     # Test MOH-KG
-    builder = KGBuilder()
+    logger.info("Testing MOH-KG...")
     
-    # Add sample model
-    builder.add_model(
-        model_id="llama-3.1-8b",
-        name="Llama-3.1-8B",
-        category="LLM",
-        num_params=8_000_000_000,
-        architecture="transformer",
-        operators=[
-            {"op_type": "MatMul", "category": "matrix"},
-            {"op_type": "GELU", "category": "activation"},
-            {"op_type": "LayerNorm", "category": "normalization"},
-            {"op_type": "MultiHeadAttention", "category": "attention"},
-            {"op_type": "RMSNorm", "category": "normalization"},
-        ]
+    kg = MOHKG()
+    
+    # Add a test model
+    model = ModelNode(
+        id="model_test",
+        model_name="TestModel",
+        model_family="Transformer",
+        task_type="LLM",
+        total_parameters=7000000000,
+        total_operators=10,
     )
+    kg.add_model(model)
     
-    # Add hardware platforms
-    builder.add_hardware(
-        hardware_id="nvidia-a100",
-        name="NVIDIA A100 80GB",
-        platform="CUDA",
-        vendor="NVIDIA",
-        compute_capability="8.0",
-        memory_gb=80,
-        supported_operators=["MatMul", "GELU", "LayerNorm", "MultiHeadAttention", "RMSNorm"],
-    )
+    # Add test operators
+    for i in range(10):
+        op_types = ["MatMul", "GELU", "LayerNorm", "Attention", "MatMul",
+                    "Add", "Softmax", "MatMul", "ReLU", "Linear"]
+        op = OperatorNode(
+            id=f"model_test_op_{i:04d}",
+            operator_type=op_types[i],
+            input_shapes=[(1, 1024, 4096)],
+            output_shapes=[(1, 1024, 4096)],
+            parameters=1000000 * (i + 1),
+            execution_order=i,
+        )
+        kg.add_operator(op, "model_test")
     
-    builder.add_hardware(
-        hardware_id="ascend-910b",
-        name="Huawei Ascend 910B",
-        platform="CANN",
-        vendor="Huawei",
-        compute_capability="Ascend",
-        memory_gb=64,
-        supported_operators=["MatMul", "GELU", "LayerNorm", "MultiHeadAttention"],
-    )
-    
-    # Build knowledge graph
-    kg = builder.build()
+    # Build edges
+    kg.build_sequential_edges("model_test")
+    kg.build_similarity_edges(threshold=0.7)
+    kg.build_optimization_edges()
+    kg.build_compatibility_edges()
     
     # Print statistics
     stats = kg.get_statistics()
-    print(f"Knowledge Graph Statistics:")
-    print(f"  Entities: {stats['total_entities']}")
-    print(f"  Relations: {stats['total_relations']}")
-    print(f"  By type: {stats['entities_by_type']}")
+    print("\n=== MOH-KG Statistics ===")
+    print(f"Total nodes: {stats['total_nodes']}")
+    print(f"Total edges: {stats['total_edges']}")
+    print("\nEdges by relation:")
+    for rel, count in stats['edges_by_relation'].items():
+        print(f"  {rel}: {count}")
     
-    # Test migration compatibility
-    compatibility = kg.calculate_migration_compatibility(
-        model_id="llama-3.1-8b",
-        source_hardware_id="nvidia-a100",
-        target_hardware_id="ascend-910b",
-    )
-    print(f"\nMigration Compatibility:")
-    print(f"  Source coverage: {compatibility['source_coverage']:.2%}")
-    print(f"  Target coverage: {compatibility['target_coverage']:.2%}")
-    print(f"  Migration gaps: {compatibility['migration_gaps']}")
+    # Test similarity query
+    similar = kg.find_similar_operators("model_test_op_0000", top_k=3)
+    print("\n=== Similar operators to model_test_op_0000 ===")
+    for op_id, sim in similar:
+        print(f"  {op_id}: {sim:.4f}")
+    
+    print("\nMOH-KG test complete!")

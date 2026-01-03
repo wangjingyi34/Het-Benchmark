@@ -1,0 +1,8 @@
+operator_type,instance_count,total_parameters,shapley_value,contribution_percent
+Linear,226,1262170496,0.8583,85.83
+Embedding,13,146778368,0.0975,9.75
+Dropout,110,0,0.0215,2.15
+LayerNorm,79,229888,0.0151,1.51
+NewGELUActivation,25,0,0.0048,0.48
+GELUActivation,12,0,0.0023,0.23
+Tanh,3,0,0.0006,0.06

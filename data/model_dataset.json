@@ -442,6 +442,2872 @@
       "num_attention_heads": null,
       "intermediate_size": null,
       "max_position_embeddings": null
+    },
+    {
+      "model_id": "distilbert-base-uncased",
+      "name": "DistilBERT-Base",
+      "category": "nlp",
+      "task": "text-classification",
+      "description": "Distilled version of BERT base model",
+      "total_parameters": 66362880,
+      "parameter_size_human": "66.4M",
+      "num_operators": 70,
+      "operators": [
+        {
+          "op_id": "DistilBERT-Base_0",
+          "name": "embeddings.word_embeddings",
+          "type": "Embedding",
+          "parameters": 23440896
+        },
+        {
+          "op_id": "DistilBERT-Base_1",
+          "name": "embeddings.position_embeddings",
+          "type": "Embedding",
+          "parameters": 393216
+        },
+        {
+          "op_id": "DistilBERT-Base_2",
+          "name": "embeddings.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_3",
+          "name": "embeddings.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_4",
+          "name": "transformer.layer.0.attention.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_5",
+          "name": "transformer.layer.0.attention.q_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_6",
+          "name": "transformer.layer.0.attention.k_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_7",
+          "name": "transformer.layer.0.attention.v_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_8",
+          "name": "transformer.layer.0.attention.out_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_9",
+          "name": "transformer.layer.0.sa_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_10",
+          "name": "transformer.layer.0.ffn.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_11",
+          "name": "transformer.layer.0.ffn.lin1",
+          "type": "Linear",
+          "parameters": 2362368
+        },
+        {
+          "op_id": "DistilBERT-Base_12",
+          "name": "transformer.layer.0.ffn.lin2",
+          "type": "Linear",
+          "parameters": 2360064
+        },
+        {
+          "op_id": "DistilBERT-Base_13",
+          "name": "transformer.layer.0.ffn.activation",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_14",
+          "name": "transformer.layer.0.output_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_15",
+          "name": "transformer.layer.1.attention.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_16",
+          "name": "transformer.layer.1.attention.q_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_17",
+          "name": "transformer.layer.1.attention.k_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_18",
+          "name": "transformer.layer.1.attention.v_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_19",
+          "name": "transformer.layer.1.attention.out_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_20",
+          "name": "transformer.layer.1.sa_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_21",
+          "name": "transformer.layer.1.ffn.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_22",
+          "name": "transformer.layer.1.ffn.lin1",
+          "type": "Linear",
+          "parameters": 2362368
+        },
+        {
+          "op_id": "DistilBERT-Base_23",
+          "name": "transformer.layer.1.ffn.lin2",
+          "type": "Linear",
+          "parameters": 2360064
+        },
+        {
+          "op_id": "DistilBERT-Base_24",
+          "name": "transformer.layer.1.ffn.activation",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_25",
+          "name": "transformer.layer.1.output_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_26",
+          "name": "transformer.layer.2.attention.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_27",
+          "name": "transformer.layer.2.attention.q_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_28",
+          "name": "transformer.layer.2.attention.k_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_29",
+          "name": "transformer.layer.2.attention.v_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_30",
+          "name": "transformer.layer.2.attention.out_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_31",
+          "name": "transformer.layer.2.sa_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_32",
+          "name": "transformer.layer.2.ffn.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_33",
+          "name": "transformer.layer.2.ffn.lin1",
+          "type": "Linear",
+          "parameters": 2362368
+        },
+        {
+          "op_id": "DistilBERT-Base_34",
+          "name": "transformer.layer.2.ffn.lin2",
+          "type": "Linear",
+          "parameters": 2360064
+        },
+        {
+          "op_id": "DistilBERT-Base_35",
+          "name": "transformer.layer.2.ffn.activation",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_36",
+          "name": "transformer.layer.2.output_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_37",
+          "name": "transformer.layer.3.attention.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_38",
+          "name": "transformer.layer.3.attention.q_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_39",
+          "name": "transformer.layer.3.attention.k_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_40",
+          "name": "transformer.layer.3.attention.v_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_41",
+          "name": "transformer.layer.3.attention.out_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_42",
+          "name": "transformer.layer.3.sa_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_43",
+          "name": "transformer.layer.3.ffn.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_44",
+          "name": "transformer.layer.3.ffn.lin1",
+          "type": "Linear",
+          "parameters": 2362368
+        },
+        {
+          "op_id": "DistilBERT-Base_45",
+          "name": "transformer.layer.3.ffn.lin2",
+          "type": "Linear",
+          "parameters": 2360064
+        },
+        {
+          "op_id": "DistilBERT-Base_46",
+          "name": "transformer.layer.3.ffn.activation",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_47",
+          "name": "transformer.layer.3.output_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_48",
+          "name": "transformer.layer.4.attention.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_49",
+          "name": "transformer.layer.4.attention.q_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_50",
+          "name": "transformer.layer.4.attention.k_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_51",
+          "name": "transformer.layer.4.attention.v_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_52",
+          "name": "transformer.layer.4.attention.out_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_53",
+          "name": "transformer.layer.4.sa_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_54",
+          "name": "transformer.layer.4.ffn.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_55",
+          "name": "transformer.layer.4.ffn.lin1",
+          "type": "Linear",
+          "parameters": 2362368
+        },
+        {
+          "op_id": "DistilBERT-Base_56",
+          "name": "transformer.layer.4.ffn.lin2",
+          "type": "Linear",
+          "parameters": 2360064
+        },
+        {
+          "op_id": "DistilBERT-Base_57",
+          "name": "transformer.layer.4.ffn.activation",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_58",
+          "name": "transformer.layer.4.output_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_59",
+          "name": "transformer.layer.5.attention.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_60",
+          "name": "transformer.layer.5.attention.q_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_61",
+          "name": "transformer.layer.5.attention.k_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_62",
+          "name": "transformer.layer.5.attention.v_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_63",
+          "name": "transformer.layer.5.attention.out_lin",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "DistilBERT-Base_64",
+          "name": "transformer.layer.5.sa_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "DistilBERT-Base_65",
+          "name": "transformer.layer.5.ffn.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_66",
+          "name": "transformer.layer.5.ffn.lin1",
+          "type": "Linear",
+          "parameters": 2362368
+        },
+        {
+          "op_id": "DistilBERT-Base_67",
+          "name": "transformer.layer.5.ffn.lin2",
+          "type": "Linear",
+          "parameters": 2360064
+        },
+        {
+          "op_id": "DistilBERT-Base_68",
+          "name": "transformer.layer.5.ffn.activation",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "DistilBERT-Base_69",
+          "name": "transformer.layer.5.output_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        }
+      ]
+    },
+    {
+      "model_id": "albert-base-v2",
+      "name": "ALBERT-Base",
+      "category": "nlp",
+      "task": "text-classification",
+      "description": "A Lite BERT for self-supervised learning",
+      "total_parameters": 11683584,
+      "parameter_size_human": "11.7M",
+      "num_operators": 20,
+      "operators": [
+        {
+          "op_id": "ALBERT-Base_0",
+          "name": "embeddings.word_embeddings",
+          "type": "Embedding",
+          "parameters": 3840000
+        },
+        {
+          "op_id": "ALBERT-Base_1",
+          "name": "embeddings.position_embeddings",
+          "type": "Embedding",
+          "parameters": 65536
+        },
+        {
+          "op_id": "ALBERT-Base_2",
+          "name": "embeddings.token_type_embeddings",
+          "type": "Embedding",
+          "parameters": 256
+        },
+        {
+          "op_id": "ALBERT-Base_3",
+          "name": "embeddings.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 256
+        },
+        {
+          "op_id": "ALBERT-Base_4",
+          "name": "embeddings.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "ALBERT-Base_5",
+          "name": "encoder.embedding_hidden_mapping_in",
+          "type": "Linear",
+          "parameters": 99072
+        },
+        {
+          "op_id": "ALBERT-Base_6",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.full_layer_layer_norm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "ALBERT-Base_7",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.attention.query",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "ALBERT-Base_8",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.attention.key",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "ALBERT-Base_9",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.attention.value",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "ALBERT-Base_10",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.attention.attention_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "ALBERT-Base_11",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.attention.output_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "ALBERT-Base_12",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.attention.dense",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "ALBERT-Base_13",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.attention.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 1536
+        },
+        {
+          "op_id": "ALBERT-Base_14",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.ffn",
+          "type": "Linear",
+          "parameters": 2362368
+        },
+        {
+          "op_id": "ALBERT-Base_15",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.ffn_output",
+          "type": "Linear",
+          "parameters": 2360064
+        },
+        {
+          "op_id": "ALBERT-Base_16",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.activation",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "ALBERT-Base_17",
+          "name": "encoder.albert_layer_groups.0.albert_layers.0.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "ALBERT-Base_18",
+          "name": "pooler",
+          "type": "Linear",
+          "parameters": 590592
+        },
+        {
+          "op_id": "ALBERT-Base_19",
+          "name": "pooler_activation",
+          "type": "Tanh",
+          "parameters": 0
+        }
+      ]
+    },
+    {
+      "model_id": "EleutherAI/gpt-neo-1.3B",
+      "name": "GPT-Neo-1.3B",
+      "category": "llm",
+      "task": "text-generation",
+      "description": "GPT-Neo 1.3B parameter model from EleutherAI",
+      "total_parameters": 1315575808,
+      "parameter_size_human": "1.3B",
+      "num_operators": 292,
+      "operators": [
+        {
+          "op_id": "GPT-Neo-1.3B_0",
+          "name": "wte",
+          "type": "Embedding",
+          "parameters": 102926336
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_1",
+          "name": "wpe",
+          "type": "Embedding",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_2",
+          "name": "drop",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_3",
+          "name": "h.0.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_4",
+          "name": "h.0.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_5",
+          "name": "h.0.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_6",
+          "name": "h.0.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_7",
+          "name": "h.0.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_8",
+          "name": "h.0.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_9",
+          "name": "h.0.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_10",
+          "name": "h.0.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_11",
+          "name": "h.0.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_12",
+          "name": "h.0.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_13",
+          "name": "h.0.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_14",
+          "name": "h.0.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_15",
+          "name": "h.1.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_16",
+          "name": "h.1.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_17",
+          "name": "h.1.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_18",
+          "name": "h.1.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_19",
+          "name": "h.1.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_20",
+          "name": "h.1.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_21",
+          "name": "h.1.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_22",
+          "name": "h.1.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_23",
+          "name": "h.1.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_24",
+          "name": "h.1.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_25",
+          "name": "h.1.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_26",
+          "name": "h.1.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_27",
+          "name": "h.2.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_28",
+          "name": "h.2.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_29",
+          "name": "h.2.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_30",
+          "name": "h.2.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_31",
+          "name": "h.2.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_32",
+          "name": "h.2.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_33",
+          "name": "h.2.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_34",
+          "name": "h.2.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_35",
+          "name": "h.2.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_36",
+          "name": "h.2.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_37",
+          "name": "h.2.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_38",
+          "name": "h.2.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_39",
+          "name": "h.3.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_40",
+          "name": "h.3.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_41",
+          "name": "h.3.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_42",
+          "name": "h.3.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_43",
+          "name": "h.3.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_44",
+          "name": "h.3.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_45",
+          "name": "h.3.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_46",
+          "name": "h.3.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_47",
+          "name": "h.3.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_48",
+          "name": "h.3.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_49",
+          "name": "h.3.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_50",
+          "name": "h.3.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_51",
+          "name": "h.4.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_52",
+          "name": "h.4.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_53",
+          "name": "h.4.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_54",
+          "name": "h.4.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_55",
+          "name": "h.4.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_56",
+          "name": "h.4.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_57",
+          "name": "h.4.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_58",
+          "name": "h.4.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_59",
+          "name": "h.4.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_60",
+          "name": "h.4.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_61",
+          "name": "h.4.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_62",
+          "name": "h.4.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_63",
+          "name": "h.5.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_64",
+          "name": "h.5.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_65",
+          "name": "h.5.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_66",
+          "name": "h.5.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_67",
+          "name": "h.5.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_68",
+          "name": "h.5.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_69",
+          "name": "h.5.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_70",
+          "name": "h.5.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_71",
+          "name": "h.5.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_72",
+          "name": "h.5.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_73",
+          "name": "h.5.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_74",
+          "name": "h.5.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_75",
+          "name": "h.6.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_76",
+          "name": "h.6.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_77",
+          "name": "h.6.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_78",
+          "name": "h.6.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_79",
+          "name": "h.6.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_80",
+          "name": "h.6.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_81",
+          "name": "h.6.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_82",
+          "name": "h.6.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_83",
+          "name": "h.6.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_84",
+          "name": "h.6.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_85",
+          "name": "h.6.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_86",
+          "name": "h.6.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_87",
+          "name": "h.7.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_88",
+          "name": "h.7.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_89",
+          "name": "h.7.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_90",
+          "name": "h.7.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_91",
+          "name": "h.7.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_92",
+          "name": "h.7.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_93",
+          "name": "h.7.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_94",
+          "name": "h.7.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_95",
+          "name": "h.7.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_96",
+          "name": "h.7.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_97",
+          "name": "h.7.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_98",
+          "name": "h.7.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_99",
+          "name": "h.8.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_100",
+          "name": "h.8.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_101",
+          "name": "h.8.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_102",
+          "name": "h.8.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_103",
+          "name": "h.8.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_104",
+          "name": "h.8.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_105",
+          "name": "h.8.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_106",
+          "name": "h.8.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_107",
+          "name": "h.8.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_108",
+          "name": "h.8.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_109",
+          "name": "h.8.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_110",
+          "name": "h.8.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_111",
+          "name": "h.9.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_112",
+          "name": "h.9.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_113",
+          "name": "h.9.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_114",
+          "name": "h.9.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_115",
+          "name": "h.9.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_116",
+          "name": "h.9.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_117",
+          "name": "h.9.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_118",
+          "name": "h.9.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_119",
+          "name": "h.9.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_120",
+          "name": "h.9.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_121",
+          "name": "h.9.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_122",
+          "name": "h.9.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_123",
+          "name": "h.10.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_124",
+          "name": "h.10.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_125",
+          "name": "h.10.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_126",
+          "name": "h.10.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_127",
+          "name": "h.10.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_128",
+          "name": "h.10.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_129",
+          "name": "h.10.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_130",
+          "name": "h.10.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_131",
+          "name": "h.10.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_132",
+          "name": "h.10.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_133",
+          "name": "h.10.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_134",
+          "name": "h.10.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_135",
+          "name": "h.11.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_136",
+          "name": "h.11.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_137",
+          "name": "h.11.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_138",
+          "name": "h.11.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_139",
+          "name": "h.11.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_140",
+          "name": "h.11.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_141",
+          "name": "h.11.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_142",
+          "name": "h.11.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_143",
+          "name": "h.11.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_144",
+          "name": "h.11.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_145",
+          "name": "h.11.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_146",
+          "name": "h.11.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_147",
+          "name": "h.12.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_148",
+          "name": "h.12.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_149",
+          "name": "h.12.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_150",
+          "name": "h.12.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_151",
+          "name": "h.12.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_152",
+          "name": "h.12.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_153",
+          "name": "h.12.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_154",
+          "name": "h.12.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_155",
+          "name": "h.12.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_156",
+          "name": "h.12.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_157",
+          "name": "h.12.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_158",
+          "name": "h.12.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_159",
+          "name": "h.13.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_160",
+          "name": "h.13.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_161",
+          "name": "h.13.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_162",
+          "name": "h.13.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_163",
+          "name": "h.13.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_164",
+          "name": "h.13.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_165",
+          "name": "h.13.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_166",
+          "name": "h.13.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_167",
+          "name": "h.13.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_168",
+          "name": "h.13.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_169",
+          "name": "h.13.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_170",
+          "name": "h.13.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_171",
+          "name": "h.14.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_172",
+          "name": "h.14.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_173",
+          "name": "h.14.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_174",
+          "name": "h.14.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_175",
+          "name": "h.14.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_176",
+          "name": "h.14.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_177",
+          "name": "h.14.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_178",
+          "name": "h.14.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_179",
+          "name": "h.14.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_180",
+          "name": "h.14.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_181",
+          "name": "h.14.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_182",
+          "name": "h.14.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_183",
+          "name": "h.15.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_184",
+          "name": "h.15.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_185",
+          "name": "h.15.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_186",
+          "name": "h.15.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_187",
+          "name": "h.15.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_188",
+          "name": "h.15.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_189",
+          "name": "h.15.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_190",
+          "name": "h.15.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_191",
+          "name": "h.15.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_192",
+          "name": "h.15.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_193",
+          "name": "h.15.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_194",
+          "name": "h.15.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_195",
+          "name": "h.16.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_196",
+          "name": "h.16.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_197",
+          "name": "h.16.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_198",
+          "name": "h.16.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_199",
+          "name": "h.16.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_200",
+          "name": "h.16.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_201",
+          "name": "h.16.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_202",
+          "name": "h.16.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_203",
+          "name": "h.16.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_204",
+          "name": "h.16.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_205",
+          "name": "h.16.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_206",
+          "name": "h.16.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_207",
+          "name": "h.17.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_208",
+          "name": "h.17.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_209",
+          "name": "h.17.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_210",
+          "name": "h.17.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_211",
+          "name": "h.17.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_212",
+          "name": "h.17.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_213",
+          "name": "h.17.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_214",
+          "name": "h.17.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_215",
+          "name": "h.17.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_216",
+          "name": "h.17.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_217",
+          "name": "h.17.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_218",
+          "name": "h.17.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_219",
+          "name": "h.18.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_220",
+          "name": "h.18.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_221",
+          "name": "h.18.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_222",
+          "name": "h.18.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_223",
+          "name": "h.18.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_224",
+          "name": "h.18.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_225",
+          "name": "h.18.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_226",
+          "name": "h.18.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_227",
+          "name": "h.18.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_228",
+          "name": "h.18.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_229",
+          "name": "h.18.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_230",
+          "name": "h.18.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_231",
+          "name": "h.19.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_232",
+          "name": "h.19.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_233",
+          "name": "h.19.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_234",
+          "name": "h.19.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_235",
+          "name": "h.19.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_236",
+          "name": "h.19.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_237",
+          "name": "h.19.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_238",
+          "name": "h.19.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_239",
+          "name": "h.19.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_240",
+          "name": "h.19.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_241",
+          "name": "h.19.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_242",
+          "name": "h.19.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_243",
+          "name": "h.20.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_244",
+          "name": "h.20.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_245",
+          "name": "h.20.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_246",
+          "name": "h.20.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_247",
+          "name": "h.20.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_248",
+          "name": "h.20.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_249",
+          "name": "h.20.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_250",
+          "name": "h.20.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_251",
+          "name": "h.20.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_252",
+          "name": "h.20.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_253",
+          "name": "h.20.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_254",
+          "name": "h.20.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_255",
+          "name": "h.21.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_256",
+          "name": "h.21.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_257",
+          "name": "h.21.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_258",
+          "name": "h.21.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_259",
+          "name": "h.21.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_260",
+          "name": "h.21.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_261",
+          "name": "h.21.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_262",
+          "name": "h.21.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_263",
+          "name": "h.21.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_264",
+          "name": "h.21.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_265",
+          "name": "h.21.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_266",
+          "name": "h.21.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_267",
+          "name": "h.22.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_268",
+          "name": "h.22.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_269",
+          "name": "h.22.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_270",
+          "name": "h.22.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_271",
+          "name": "h.22.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_272",
+          "name": "h.22.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_273",
+          "name": "h.22.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_274",
+          "name": "h.22.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_275",
+          "name": "h.22.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_276",
+          "name": "h.22.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_277",
+          "name": "h.22.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_278",
+          "name": "h.22.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_279",
+          "name": "h.23.ln_1",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_280",
+          "name": "h.23.attn.attention.attn_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_281",
+          "name": "h.23.attn.attention.resid_dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_282",
+          "name": "h.23.attn.attention.k_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_283",
+          "name": "h.23.attn.attention.v_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_284",
+          "name": "h.23.attn.attention.q_proj",
+          "type": "Linear",
+          "parameters": 4194304
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_285",
+          "name": "h.23.attn.attention.out_proj",
+          "type": "Linear",
+          "parameters": 4196352
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_286",
+          "name": "h.23.ln_2",
+          "type": "LayerNorm",
+          "parameters": 4096
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_287",
+          "name": "h.23.mlp.c_fc",
+          "type": "Linear",
+          "parameters": 16785408
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_288",
+          "name": "h.23.mlp.c_proj",
+          "type": "Linear",
+          "parameters": 16779264
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_289",
+          "name": "h.23.mlp.act",
+          "type": "NewGELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_290",
+          "name": "h.23.mlp.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "GPT-Neo-1.3B_291",
+          "name": "ln_f",
+          "type": "LayerNorm",
+          "parameters": 4096
+        }
+      ]
+    },
+    {
+      "model_id": "prajjwal1/bert-tiny",
+      "name": "BERT-Tiny",
+      "category": "nlp",
+      "task": "text-classification",
+      "total_parameters": 4385920,
+      "parameter_size_human": "4.4M",
+      "num_operators": 31,
+      "operators": [
+        {
+          "op_id": "BERT-Tiny_0",
+          "name": "embeddings.word_embeddings",
+          "type": "Embedding",
+          "parameters": 3906816
+        },
+        {
+          "op_id": "BERT-Tiny_1",
+          "name": "embeddings.position_embeddings",
+          "type": "Embedding",
+          "parameters": 65536
+        },
+        {
+          "op_id": "BERT-Tiny_2",
+          "name": "embeddings.token_type_embeddings",
+          "type": "Embedding",
+          "parameters": 256
+        },
+        {
+          "op_id": "BERT-Tiny_3",
+          "name": "embeddings.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 256
+        },
+        {
+          "op_id": "BERT-Tiny_4",
+          "name": "embeddings.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Tiny_5",
+          "name": "encoder.layer.0.attention.self.query",
+          "type": "Linear",
+          "parameters": 16512
+        },
+        {
+          "op_id": "BERT-Tiny_6",
+          "name": "encoder.layer.0.attention.self.key",
+          "type": "Linear",
+          "parameters": 16512
+        },
+        {
+          "op_id": "BERT-Tiny_7",
+          "name": "encoder.layer.0.attention.self.value",
+          "type": "Linear",
+          "parameters": 16512
+        },
+        {
+          "op_id": "BERT-Tiny_8",
+          "name": "encoder.layer.0.attention.self.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Tiny_9",
+          "name": "encoder.layer.0.attention.output.dense",
+          "type": "Linear",
+          "parameters": 16512
+        },
+        {
+          "op_id": "BERT-Tiny_10",
+          "name": "encoder.layer.0.attention.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 256
+        },
+        {
+          "op_id": "BERT-Tiny_11",
+          "name": "encoder.layer.0.attention.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Tiny_12",
+          "name": "encoder.layer.0.intermediate.dense",
+          "type": "Linear",
+          "parameters": 66048
+        },
+        {
+          "op_id": "BERT-Tiny_13",
+          "name": "encoder.layer.0.intermediate.intermediate_act_fn",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Tiny_14",
+          "name": "encoder.layer.0.output.dense",
+          "type": "Linear",
+          "parameters": 65664
+        },
+        {
+          "op_id": "BERT-Tiny_15",
+          "name": "encoder.layer.0.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 256
+        },
+        {
+          "op_id": "BERT-Tiny_16",
+          "name": "encoder.layer.0.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Tiny_17",
+          "name": "encoder.layer.1.attention.self.query",
+          "type": "Linear",
+          "parameters": 16512
+        },
+        {
+          "op_id": "BERT-Tiny_18",
+          "name": "encoder.layer.1.attention.self.key",
+          "type": "Linear",
+          "parameters": 16512
+        },
+        {
+          "op_id": "BERT-Tiny_19",
+          "name": "encoder.layer.1.attention.self.value",
+          "type": "Linear",
+          "parameters": 16512
+        },
+        {
+          "op_id": "BERT-Tiny_20",
+          "name": "encoder.layer.1.attention.self.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Tiny_21",
+          "name": "encoder.layer.1.attention.output.dense",
+          "type": "Linear",
+          "parameters": 16512
+        },
+        {
+          "op_id": "BERT-Tiny_22",
+          "name": "encoder.layer.1.attention.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 256
+        },
+        {
+          "op_id": "BERT-Tiny_23",
+          "name": "encoder.layer.1.attention.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Tiny_24",
+          "name": "encoder.layer.1.intermediate.dense",
+          "type": "Linear",
+          "parameters": 66048
+        },
+        {
+          "op_id": "BERT-Tiny_25",
+          "name": "encoder.layer.1.intermediate.intermediate_act_fn",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Tiny_26",
+          "name": "encoder.layer.1.output.dense",
+          "type": "Linear",
+          "parameters": 65664
+        },
+        {
+          "op_id": "BERT-Tiny_27",
+          "name": "encoder.layer.1.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 256
+        },
+        {
+          "op_id": "BERT-Tiny_28",
+          "name": "encoder.layer.1.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Tiny_29",
+          "name": "pooler.dense",
+          "type": "Linear",
+          "parameters": 16512
+        },
+        {
+          "op_id": "BERT-Tiny_30",
+          "name": "pooler.activation",
+          "type": "Tanh",
+          "parameters": 0
+        }
+      ]
+    },
+    {
+      "model_id": "prajjwal1/bert-mini",
+      "name": "BERT-Mini",
+      "category": "nlp",
+      "task": "text-classification",
+      "total_parameters": 11170560,
+      "parameter_size_human": "11.2M",
+      "num_operators": 55,
+      "operators": [
+        {
+          "op_id": "BERT-Mini_0",
+          "name": "embeddings.word_embeddings",
+          "type": "Embedding",
+          "parameters": 7813632
+        },
+        {
+          "op_id": "BERT-Mini_1",
+          "name": "embeddings.position_embeddings",
+          "type": "Embedding",
+          "parameters": 131072
+        },
+        {
+          "op_id": "BERT-Mini_2",
+          "name": "embeddings.token_type_embeddings",
+          "type": "Embedding",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_3",
+          "name": "embeddings.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_4",
+          "name": "embeddings.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_5",
+          "name": "encoder.layer.0.attention.self.query",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_6",
+          "name": "encoder.layer.0.attention.self.key",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_7",
+          "name": "encoder.layer.0.attention.self.value",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_8",
+          "name": "encoder.layer.0.attention.self.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_9",
+          "name": "encoder.layer.0.attention.output.dense",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_10",
+          "name": "encoder.layer.0.attention.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_11",
+          "name": "encoder.layer.0.attention.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_12",
+          "name": "encoder.layer.0.intermediate.dense",
+          "type": "Linear",
+          "parameters": 263168
+        },
+        {
+          "op_id": "BERT-Mini_13",
+          "name": "encoder.layer.0.intermediate.intermediate_act_fn",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_14",
+          "name": "encoder.layer.0.output.dense",
+          "type": "Linear",
+          "parameters": 262400
+        },
+        {
+          "op_id": "BERT-Mini_15",
+          "name": "encoder.layer.0.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_16",
+          "name": "encoder.layer.0.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_17",
+          "name": "encoder.layer.1.attention.self.query",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_18",
+          "name": "encoder.layer.1.attention.self.key",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_19",
+          "name": "encoder.layer.1.attention.self.value",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_20",
+          "name": "encoder.layer.1.attention.self.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_21",
+          "name": "encoder.layer.1.attention.output.dense",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_22",
+          "name": "encoder.layer.1.attention.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_23",
+          "name": "encoder.layer.1.attention.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_24",
+          "name": "encoder.layer.1.intermediate.dense",
+          "type": "Linear",
+          "parameters": 263168
+        },
+        {
+          "op_id": "BERT-Mini_25",
+          "name": "encoder.layer.1.intermediate.intermediate_act_fn",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_26",
+          "name": "encoder.layer.1.output.dense",
+          "type": "Linear",
+          "parameters": 262400
+        },
+        {
+          "op_id": "BERT-Mini_27",
+          "name": "encoder.layer.1.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_28",
+          "name": "encoder.layer.1.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_29",
+          "name": "encoder.layer.2.attention.self.query",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_30",
+          "name": "encoder.layer.2.attention.self.key",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_31",
+          "name": "encoder.layer.2.attention.self.value",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_32",
+          "name": "encoder.layer.2.attention.self.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_33",
+          "name": "encoder.layer.2.attention.output.dense",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_34",
+          "name": "encoder.layer.2.attention.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_35",
+          "name": "encoder.layer.2.attention.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_36",
+          "name": "encoder.layer.2.intermediate.dense",
+          "type": "Linear",
+          "parameters": 263168
+        },
+        {
+          "op_id": "BERT-Mini_37",
+          "name": "encoder.layer.2.intermediate.intermediate_act_fn",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_38",
+          "name": "encoder.layer.2.output.dense",
+          "type": "Linear",
+          "parameters": 262400
+        },
+        {
+          "op_id": "BERT-Mini_39",
+          "name": "encoder.layer.2.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_40",
+          "name": "encoder.layer.2.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_41",
+          "name": "encoder.layer.3.attention.self.query",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_42",
+          "name": "encoder.layer.3.attention.self.key",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_43",
+          "name": "encoder.layer.3.attention.self.value",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_44",
+          "name": "encoder.layer.3.attention.self.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_45",
+          "name": "encoder.layer.3.attention.output.dense",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_46",
+          "name": "encoder.layer.3.attention.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_47",
+          "name": "encoder.layer.3.attention.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_48",
+          "name": "encoder.layer.3.intermediate.dense",
+          "type": "Linear",
+          "parameters": 263168
+        },
+        {
+          "op_id": "BERT-Mini_49",
+          "name": "encoder.layer.3.intermediate.intermediate_act_fn",
+          "type": "GELUActivation",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_50",
+          "name": "encoder.layer.3.output.dense",
+          "type": "Linear",
+          "parameters": 262400
+        },
+        {
+          "op_id": "BERT-Mini_51",
+          "name": "encoder.layer.3.output.LayerNorm",
+          "type": "LayerNorm",
+          "parameters": 512
+        },
+        {
+          "op_id": "BERT-Mini_52",
+          "name": "encoder.layer.3.output.dropout",
+          "type": "Dropout",
+          "parameters": 0
+        },
+        {
+          "op_id": "BERT-Mini_53",
+          "name": "pooler.dense",
+          "type": "Linear",
+          "parameters": 65792
+        },
+        {
+          "op_id": "BERT-Mini_54",
+          "name": "pooler.activation",
+          "type": "Tanh",
+          "parameters": 0
+        }
+      ]
     }
   ],
   "operators": [
@@ -113194,306 +116060,7 @@
     }
   ],
   "statistics": {
-    "total_models": 29,
-    "total_operators": 8894,
-    "operator_types": {
-      "Qwen2ForCausalLM": 1,
-      "Qwen2Model": 1,
-      "Embedding": 32,
-      "Qwen2DecoderLayer": 28,
-      "Qwen2Attention": 28,
-      "MatMul": 2803,
-      "Qwen2MLP": 28,
-      "SiLUActivation": 146,
-      "Qwen2RMSNorm": 57,
-      "Qwen2RotaryEmbedding": 1,
-      "MistralForCausalLM": 1,
-      "MistralModel": 1,
-      "MistralDecoderLayer": 32,
-      "MistralAttention": 32,
-      "MistralMLP": 32,
-      "MistralRMSNorm": 65,
-      "MistralRotaryEmbedding": 1,
-      "Phi3ForCausalLM": 1,
-      "Phi3Model": 1,
-      "Dropout": 750,
-      "Phi3DecoderLayer": 32,
-      "Phi3Attention": 32,
-      "Phi3RotaryEmbedding": 32,
-      "Phi3MLP": 32,
-      "Phi3RMSNorm": 65,
-      "BloomForCausalLM": 1,
-      "BloomModel": 1,
-      "LayerNorm": 710,
-      "BloomBlock": 24,
-      "BloomAttention": 24,
-      "BloomMLP": 24,
-      "BloomGelu": 24,
-      "GPT2LMHeadModel": 1,
-      "GPT2Model": 1,
-      "GPT2Block": 12,
-      "GPT2Attention": 12,
-      "Conv1D": 48,
-      "GPT2MLP": 12,
-      "NewGELUActivation": 12,
-      "OPTForCausalLM": 1,
-      "OPTModel": 1,
-      "OPTDecoder": 1,
-      "OPTLearnedPositionalEmbedding": 1,
-      "OPTDecoderLayer": 24,
-      "OPTAttention": 24,
-      "Relu": 186,
-      "FalconForCausalLM": 1,
-      "FalconModel": 1,
-      "FalconDecoderLayer": 32,
-      "FalconAttention": 32,
-      "FalconRotaryEmbedding": 32,
-      "FalconLinear": 128,
-      "FalconMLP": 32,
-      "Gelu": 32,
-      "StableLmForCausalLM": 1,
-      "StableLmModel": 1,
-      "StableLmDecoderLayer": 32,
-      "StableLmSdpaAttention": 32,
-      "StableLmRotaryEmbedding": 33,
-      "StableLmMLP": 32,
-      "LlamaForCausalLM": 1,
-      "LlamaModel": 1,
-      "LlamaDecoderLayer": 22,
-      "LlamaAttention": 22,
-      "LlamaMLP": 22,
-      "LlamaRMSNorm": 45,
-      "LlamaRotaryEmbedding": 1,
-      "GPTNeoXForCausalLM": 1,
-      "GPTNeoXModel": 1,
-      "GPTNeoXLayer": 24,
-      "GPTNeoXAttention": 24,
-      "GPTNeoXMLP": 24,
-      "GELUActivation": 218,
-      "GPTNeoXRotaryEmbedding": 1,
-      "ResNetForImageClassification": 1,
-      "ResNetModel": 1,
-      "ResNetEmbeddings": 1,
-      "ResNetConvLayer": 49,
-      "Conv": 342,
-      "BatchNorm": 225,
-      "MaxPool": 1,
-      "ResNetEncoder": 1,
-      "ResNetStage": 4,
-      "ResNetBottleNeckLayer": 16,
-      "ResNetShortCut": 4,
-      "Identity": 119,
-      "AdaptiveAvgPool": 41,
-      "Flatten": 2,
-      "ViTForImageClassification": 2,
-      "ViTModel": 2,
-      "ViTEmbeddings": 2,
-      "ViTPatchEmbeddings": 2,
-      "ViTEncoder": 2,
-      "ViTLayer": 24,
-      "ViTAttention": 24,
-      "ViTSelfAttention": 24,
-      "ViTSelfOutput": 24,
-      "ViTIntermediate": 24,
-      "ViTOutput": 24,
-      "SwinForImageClassification": 1,
-      "SwinModel": 1,
-      "SwinEmbeddings": 1,
-      "SwinPatchEmbeddings": 1,
-      "SwinEncoder": 1,
-      "SwinStage": 4,
-      "SwinLayer": 24,
-      "SwinAttention": 24,
-      "SwinSelfAttention": 24,
-      "SwinSelfOutput": 24,
-      "SwinIntermediate": 24,
-      "SwinOutput": 24,
-      "SwinDropPath": 23,
-      "SwinPatchMerging": 3,
-      "AdaptiveAvgPool1d": 1,
-      "Dinov2ForImageClassification": 1,
-      "Dinov2Model": 1,
-      "Dinov2Embeddings": 1,
-      "Dinov2PatchEmbeddings": 1,
-      "Dinov2Encoder": 1,
-      "Dinov2Layer": 12,
-      "Dinov2Attention": 12,
-      "Dinov2SelfAttention": 12,
-      "Dinov2SelfOutput": 12,
-      "Dinov2LayerScale": 24,
-      "Dinov2MLP": 12,
-      "MobileNetV2ForImageClassification": 1,
-      "MobileNetV2Model": 1,
-      "MobileNetV2Stem": 1,
-      "MobileNetV2ConvLayer": 52,
-      "ReLU6": 35,
-      "MobileNetV2InvertedResidual": 16,
-      "EfficientNetForImageClassification": 1,
-      "EfficientNetModel": 1,
-      "EfficientNetEmbeddings": 1,
-      "ZeroPad2d": 17,
-      "Silu": 49,
-      "EfficientNetEncoder": 1,
-      "EfficientNetBlock": 16,
-      "EfficientNetDepthwiseLayer": 16,
-      "EfficientNetDepthwiseConv2d": 16,
-      "EfficientNetSqueezeExciteLayer": 16,
-      "Sigmoid": 38,
-      "EfficientNetFinalBlockLayer": 16,
-      "EfficientNetExpansionLayer": 15,
-      "AvgPool": 1,
-      "ConvNextForImageClassification": 1,
-      "ConvNextModel": 1,
-      "ConvNextEmbeddings": 1,
-      "ConvNextLayerNorm": 40,
-      "ConvNextEncoder": 1,
-      "ConvNextStage": 4,
-      "ConvNextLayer": 36,
-      "RegNetForImageClassification": 1,
-      "RegNetModel": 1,
-      "RegNetEmbeddings": 1,
-      "RegNetConvLayer": 67,
-      "RegNetEncoder": 1,
-      "RegNetStage": 4,
-      "RegNetYLayer": 22,
-      "RegNetShortCut": 4,
-      "RegNetSELayer": 22,
-      "BeitForImageClassification": 1,
-      "BeitModel": 1,
-      "BeitEmbeddings": 1,
-      "BeitPatchEmbeddings": 1,
-      "BeitEncoder": 1,
-      "BeitLayer": 12,
-      "BeitAttention": 12,
-      "BeitSdpaSelfAttention": 12,
-      "BeitRelativePositionBias": 12,
-      "BeitSelfOutput": 12,
-      "BeitIntermediate": 12,
-      "BeitOutput": 12,
-      "BeitDropPath": 11,
-      "BeitPooler": 1,
-      "BertForSequenceClassification": 1,
-      "BertModel": 1,
-      "BertEmbeddings": 1,
-      "BertEncoder": 1,
-      "BertLayer": 12,
-      "BertAttention": 12,
-      "BertSdpaSelfAttention": 12,
-      "BertSelfOutput": 12,
-      "BertIntermediate": 12,
-      "BertOutput": 12,
-      "BertPooler": 1,
-      "Tanh": 2,
-      "RobertaForSequenceClassification": 1,
-      "RobertaModel": 1,
-      "RobertaEmbeddings": 1,
-      "RobertaEncoder": 1,
-      "RobertaLayer": 12,
-      "RobertaAttention": 12,
-      "RobertaSdpaSelfAttention": 12,
-      "RobertaSelfOutput": 12,
-      "RobertaIntermediate": 12,
-      "RobertaOutput": 12,
-      "RobertaClassificationHead": 1,
-      "T5ForSequenceClassification": 1,
-      "T5Model": 1,
-      "T5Stack": 2,
-      "T5Block": 24,
-      "T5LayerSelfAttention": 24,
-      "T5Attention": 36,
-      "T5LayerNorm": 62,
-      "T5LayerFF": 24,
-      "T5DenseActDense": 24,
-      "T5LayerCrossAttention": 12,
-      "T5ClassificationHead": 1,
-      "DistilBertForSequenceClassification": 1,
-      "DistilBertModel": 1,
-      "Embeddings": 1,
-      "Transformer": 1,
-      "TransformerBlock": 6,
-      "DistilBertSdpaAttention": 6,
-      "FFN": 6,
-      "WhisperForConditionalGeneration": 1,
-      "WhisperModel": 1,
-      "WhisperEncoder": 1,
-      "WhisperEncoderLayer": 6,
-      "WhisperAttention": 18,
-      "WhisperDecoder": 1,
-      "WhisperPositionalEmbedding": 1,
-      "WhisperDecoderLayer": 6,
-      "Wav2Vec2Model": 1,
-      "Wav2Vec2FeatureEncoder": 1,
-      "Wav2Vec2GroupNormConvLayer": 1,
-      "GroupNorm": 1,
-      "Wav2Vec2NoLayerNormConvLayer": 6,
-      "Wav2Vec2FeatureProjection": 1,
-      "Wav2Vec2Encoder": 1,
-      "Wav2Vec2PositionalConvEmbedding": 1,
-      "ParametrizedConv1d": 1,
-      "ParametrizationList": 1,
-      "_WeightNorm": 1,
-      "Wav2Vec2SamePadLayer": 1,
-      "Wav2Vec2EncoderLayer": 12,
-      "Wav2Vec2Attention": 12,
-      "Wav2Vec2FeedForward": 12,
-      "CLIPModel": 1,
-      "CLIPTextTransformer": 1,
-      "CLIPTextEmbeddings": 1,
-      "CLIPEncoder": 2,
-      "CLIPEncoderLayer": 24,
-      "CLIPAttention": 24,
-      "CLIPMLP": 24,
-      "QuickGELUActivation": 24,
-      "CLIPVisionTransformer": 1,
-      "CLIPVisionEmbeddings": 1,
-      "BlipModel": 1,
-      "BlipTextModel": 1,
-      "BlipTextEmbeddings": 1,
-      "BlipTextEncoder": 1,
-      "BlipTextLayer": 12,
-      "BlipTextAttention": 24,
-      "BlipTextSelfAttention": 24,
-      "BlipTextSelfOutput": 24,
-      "BlipTextIntermediate": 12,
-      "BlipTextOutput": 12,
-      "BlipTextPooler": 1,
-      "BlipVisionModel": 1,
-      "BlipVisionEmbeddings": 1,
-      "BlipEncoder": 1,
-      "BlipEncoderLayer": 12,
-      "BlipAttention": 12,
-      "BlipMLP": 12,
-      "SiglipModel": 1,
-      "SiglipTextTransformer": 1,
-      "SiglipTextEmbeddings": 1,
-      "SiglipEncoder": 2,
-      "SiglipEncoderLayer": 24,
-      "SiglipAttention": 24,
-      "SiglipMLP": 25,
-      "GELUTanh": 25,
-      "SiglipVisionTransformer": 1,
-      "SiglipVisionEmbeddings": 1,
-      "SiglipMultiheadAttentionPoolingHead": 1,
-      "MultiHeadAttention": 1,
-      "NonDynamicallyQuantizableLinear": 1
-    },
-    "operator_categories": {
-      "other": 2368,
-      "embedding": 157,
-      "attention": 672,
-      "matrix": 3599,
-      "activation": 791,
-      "normalization": 1230,
-      "pooling": 44,
-      "reshape": 18,
-      "elementwise": 15
-    },
-    "models_by_category": {
-      "LLM": 10,
-      "CV": 10,
-      "Multimodal": 3,
-      "Audio": 2,
-      "NLP": 4
-    }
+    "total_models": 34,
+    "total_operators": 468
   }
 }
