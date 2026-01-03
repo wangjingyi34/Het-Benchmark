@@ -1,0 +1,6 @@
+Platform,Total Operators,Supported Operators,Coverage (%)
+CUDA/cuDNN,8894,8450,95.0
+ROCm/MIGraphX,8894,8104,91.1
+oneAPI/oneDNN,8894,7749,87.1
+Ascend/CANN,8894,7981,89.7
+MLU/CNNL,8894,7394,83.1

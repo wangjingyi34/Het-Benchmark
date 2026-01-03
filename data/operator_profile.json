@@ -1,0 +1,632 @@
+{
+  "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+  "device": "cuda",
+  "warmup_iterations": 10,
+  "benchmark_iterations": 100,
+  "results": [
+    {
+      "operator_id": "MatMul_0",
+      "operator_type": "MatMul",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1024,
+          1024
+        ],
+        [
+          1024,
+          1024
+        ]
+      ],
+      "output_shapes": [
+        [
+          1024,
+          1024
+        ]
+      ],
+      "execution_time_ms": 0.04231402650475502,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 23632.82539154305,
+      "latency_p50_ms": 0.03851950168609619,
+      "latency_p99_ms": 0.04833331331610861,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:06"
+    },
+    {
+      "operator_id": "MatMul_1",
+      "operator_type": "MatMul",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          2048,
+          2048
+        ],
+        [
+          2048,
+          2048
+        ]
+      ],
+      "output_shapes": [
+        [
+          2048,
+          2048
+        ]
+      ],
+      "execution_time_ms": 0.10302077978849411,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 9706.779564793054,
+      "latency_p50_ms": 0.09788945317268372,
+      "latency_p99_ms": 0.12426021508872745,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:06"
+    },
+    {
+      "operator_id": "MatMul_2",
+      "operator_type": "MatMul",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          4096,
+          4096
+        ],
+        [
+          4096,
+          4096
+        ]
+      ],
+      "output_shapes": [
+        [
+          4096,
+          4096
+        ]
+      ],
+      "execution_time_ms": 0.5949145648628473,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 1680.9136287166575,
+      "latency_p50_ms": 0.5763513036072254,
+      "latency_p99_ms": 0.6452116556465658,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:06"
+    },
+    {
+      "operator_id": "Conv_0",
+      "operator_type": "Conv",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          64,
+          224,
+          224
+        ],
+        [
+          128,
+          64,
+          3,
+          3
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          128,
+          224,
+          224
+        ]
+      ],
+      "execution_time_ms": 0.10316223837435246,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 9693.469391108265,
+      "latency_p50_ms": 0.09702472016215324,
+      "latency_p99_ms": 0.11675467714667619,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "Conv_1",
+      "operator_type": "Conv",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          128,
+          112,
+          112
+        ],
+        [
+          256,
+          128,
+          3,
+          3
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          256,
+          112,
+          112
+        ]
+      ],
+      "execution_time_ms": 0.08279248140752316,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 12078.391455351795,
+      "latency_p50_ms": 0.07813004776835442,
+      "latency_p99_ms": 0.09924118407070853,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "Conv_2",
+      "operator_type": "Conv",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          256,
+          56,
+          56
+        ],
+        [
+          512,
+          256,
+          3,
+          3
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          512,
+          56,
+          56
+        ]
+      ],
+      "execution_time_ms": 0.08559882640838623,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 11682.403158532425,
+      "latency_p50_ms": 0.08083507418632507,
+      "latency_p99_ms": 0.10425767861306881,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "LayerNorm_0",
+      "operator_type": "LayerNorm",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          512,
+          768
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          512,
+          768
+        ]
+      ],
+      "execution_time_ms": 0.022651171311736107,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 44147.82733473374,
+      "latency_p50_ms": 0.021200161427259445,
+      "latency_p99_ms": 0.03284204751253181,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "LayerNorm_1",
+      "operator_type": "LayerNorm",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          1024,
+          1024
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          1024,
+          1024
+        ]
+      ],
+      "execution_time_ms": 0.027119433507323265,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 36873.92657851656,
+      "latency_p50_ms": 0.022390391677618027,
+      "latency_p99_ms": 0.046561956405641765,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "LayerNorm_2",
+      "operator_type": "LayerNorm",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          2048,
+          4096
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          2048,
+          4096
+        ]
+      ],
+      "execution_time_ms": 0.048670824617147446,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 20546.189793704158,
+      "latency_p50_ms": 0.04274491220712662,
+      "latency_p99_ms": 0.06084394641220854,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "Gelu_0",
+      "operator_type": "Gelu",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          512,
+          768
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          512,
+          768
+        ]
+      ],
+      "execution_time_ms": 0.01611313782632351,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 62061.15846451288,
+      "latency_p50_ms": 0.014735385775566101,
+      "latency_p99_ms": 0.024595707654953544,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "Gelu_1",
+      "operator_type": "Gelu",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          1024,
+          4096
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          1024,
+          4096
+        ]
+      ],
+      "execution_time_ms": 0.02364768646657467,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 42287.434815810484,
+      "latency_p50_ms": 0.022094696760177612,
+      "latency_p99_ms": 0.03204138949513503,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "Gelu_2",
+      "operator_type": "Gelu",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          2048,
+          8192
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          2048,
+          8192
+        ]
+      ],
+      "execution_time_ms": 0.06465425714850426,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 15466.885617494632,
+      "latency_p50_ms": 0.05847495049238205,
+      "latency_p99_ms": 0.07542432285845595,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "Softmax_0",
+      "operator_type": "Softmax",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          12,
+          512,
+          512
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          12,
+          512,
+          512
+        ]
+      ],
+      "execution_time_ms": 0.027083009481430054,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 36923.518440063606,
+      "latency_p50_ms": 0.023405998945236206,
+      "latency_p99_ms": 0.034572472795845854,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "Softmax_1",
+      "operator_type": "Softmax",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          32,
+          1024,
+          1024
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          32,
+          1024,
+          1024
+        ]
+      ],
+      "execution_time_ms": 0.13013766147196293,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 7684.170659662896,
+      "latency_p50_ms": 0.1210654154419899,
+      "latency_p99_ms": 0.1414132770150942,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "Softmax_2",
+      "operator_type": "Softmax",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          64,
+          2048,
+          2048
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          64,
+          2048,
+          2048
+        ]
+      ],
+      "execution_time_ms": 0.9927988331764936,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 1007.2533997652536,
+      "latency_p50_ms": 0.987442210316658,
+      "latency_p99_ms": 1.0077501833438913,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:07"
+    },
+    {
+      "operator_id": "Attention_0",
+      "operator_type": "Attention",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          512,
+          768
+        ],
+        [
+          12
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          12,
+          512,
+          64
+        ]
+      ],
+      "execution_time_ms": 0.04581610672175884,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 21826.385338086424,
+      "latency_p50_ms": 0.04390021786093712,
+      "latency_p99_ms": 0.05412847734987822,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:08"
+    },
+    {
+      "operator_id": "Attention_1",
+      "operator_type": "Attention",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          1024,
+          1024
+        ],
+        [
+          16
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          16,
+          1024,
+          64
+        ]
+      ],
+      "execution_time_ms": 0.07036799564957619,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 14211.00588085349,
+      "latency_p50_ms": 0.06578583270311356,
+      "latency_p99_ms": 0.08594232611358374,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:08"
+    },
+    {
+      "operator_id": "Attention_2",
+      "operator_type": "Attention",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          2048,
+          4096
+        ],
+        [
+          32
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          32,
+          2048,
+          128
+        ]
+      ],
+      "execution_time_ms": 0.40731050074100494,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 2455.129436095404,
+      "latency_p50_ms": 0.3968006931245327,
+      "latency_p99_ms": 0.4179897624999314,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:08"
+    },
+    {
+      "operator_id": "Embedding_0",
+      "operator_type": "Embedding",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          512
+        ],
+        [
+          32000,
+          4096
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          512,
+          4096
+        ]
+      ],
+      "execution_time_ms": 0.027829986065626144,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 35932.46499088756,
+      "latency_p50_ms": 0.025670044124126434,
+      "latency_p99_ms": 0.04122010432183827,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:08"
+    },
+    {
+      "operator_id": "Embedding_1",
+      "operator_type": "Embedding",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          1024
+        ],
+        [
+          50000,
+          4096
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          1024,
+          4096
+        ]
+      ],
+      "execution_time_ms": 0.030845878645777702,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 32419.241853461797,
+      "latency_p50_ms": 0.025294721126556396,
+      "latency_p99_ms": 0.050962483510377465,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:08"
+    },
+    {
+      "operator_id": "Embedding_2",
+      "operator_type": "Embedding",
+      "hardware_id": "cuda_NVIDIA_A100_80GB_PCIe",
+      "input_shapes": [
+        [
+          1,
+          2048
+        ],
+        [
+          100000,
+          4096
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          2048,
+          4096
+        ]
+      ],
+      "execution_time_ms": 0.042527103796601295,
+      "memory_usage_mb": 0.0,
+      "throughput_ops_per_sec": 23514.415766067723,
+      "latency_p50_ms": 0.03723520785570145,
+      "latency_p99_ms": 0.05872615613043555,
+      "warmup_iterations": 10,
+      "benchmark_iterations": 100,
+      "timestamp": "2026-01-03 19:31:08"
+    }
+  ]
+}
