@@ -12,11 +12,11 @@ Het-Benchmark is a comprehensive evaluation framework designed to assess AI mode
 
 - **Three-Layer Decoupled Architecture**: Model Layer → Operator Layer → Hardware Layer
 - **COPA Algorithm**: Two-stage Contribution-based Operator Performance Attribution using Shapley values
-- **MOH-KG**: Model-Operator-Hardware Knowledge Graph with 8,961 nodes and 14,272 edges
+- **MOH-KG**: Model-Operator-Hardware Knowledge Graph with 6,299 nodes and 29,199 edges
 - **RGAT**: Relational Graph Attention Network for cross-platform performance prediction
 - **KG-A2O**: Knowledge-Graph-guided Adaptive Operator Optimization using PPO
 - **Hardware Abstraction Layer (HAL)**: Unified interface for 5 major hardware platforms
-- **Comprehensive Dataset**: 34 models, 9,000+ operator instances across 6 categories
+- **Comprehensive Dataset**: 34 models, 6,244 operator instances across 5 categories
 - **Standard Input Dataset**: 1,000 standardized inputs for reproducible benchmarking
 
 ## 📊 Benchmark Dataset
@@ -31,7 +31,7 @@ Het-Benchmark is a comprehensive evaluation framework designed to assess AI mode
 | **Audio** | Whisper-Large-V3, Wav2Vec2-Base | 2 |
 | **Multimodal** | CLIP-ViT-L/14 | 1 |
 
-### Operators (9,000+ instances)
+### Operators (6,244 instances)
 
 - **Matrix Operations**: MatMul, Conv, Linear, Gemm
 - **Activation Functions**: ReLU, GELU, SiLU, Softmax
@@ -134,8 +134,8 @@ het-benchmark/
 │   ├── train_rgat.py             # RGAT training script
 │   └── run_full_experiments.py   # Complete experiment runner
 ├── data/                         # Dataset files
-│   ├── model_dataset.json        # 34 models with operators (3.1 MB)
-│   ├── moh_kg.json               # Knowledge graph (6.9 MB)
+│   ├── model_dataset.json        # 34 models with 6,244 operators
+│   ├── moh_kg.json               # Knowledge graph (6,299 nodes, 29,199 edges)
 │   └── standard_inputs.json      # 1000 standard inputs (315 KB)
 ├── models/                       # Trained models
 │   ├── rgat_final.pt             # Trained RGAT model (3.7 MB)
@@ -198,8 +198,8 @@ het-benchmark/
 
 | Metric | Value |
 |--------|-------|
-| Nodes | 8,961 |
-| Edges | 14,272 |
+| Nodes | 6,299 |
+| Edges | 29,199 |
 | Parameters | 313,089 |
 | Best Loss | 0.720311 |
 | Training Epochs | 100 |
