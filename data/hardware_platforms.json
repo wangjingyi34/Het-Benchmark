@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "description": "Supported hardware platforms for heterogeneous computing",
+    "total_platforms": 5,
+    "source": "Het-Benchmark"
+  },
+  "platforms": [
+    {
+      "platform_id": "nvidia_cuda",
+      "name": "CUDA/cuDNN",
+      "vendor": "NVIDIA",
+      "type": "GPU",
+      "version": "cuDNN 9.0",
+      "peak_flops_tflops": 312,
+      "memory_bandwidth_gbps": 2039,
+      "operator_coverage": 0.98
+    },
+    {
+      "platform_id": "amd_rocm",
+      "name": "ROCm/MIGraphX",
+      "vendor": "AMD",
+      "type": "GPU",
+      "version": "ROCm 6.0",
+      "peak_flops_tflops": 383,
+      "memory_bandwidth_gbps": 1638,
+      "operator_coverage": 0.94
+    },
+    {
+      "platform_id": "intel_oneapi",
+      "name": "oneAPI/oneDNN",
+      "vendor": "Intel",
+      "type": "GPU/CPU",
+      "version": "oneDNN 3.0",
+      "peak_flops_tflops": 52,
+      "memory_bandwidth_gbps": 1228,
+      "operator_coverage": 0.89
+    },
+    {
+      "platform_id": "huawei_cann",
+      "name": "CANN",
+      "vendor": "Huawei",
+      "type": "NPU",
+      "version": "CANN 8.0",
+      "peak_flops_tflops": 320,
+      "memory_bandwidth_gbps": 1555,
+      "operator_coverage": 0.93
+    },
+    {
+      "platform_id": "cambricon_mlu",
+      "name": "MLU/CNNL",
+      "vendor": "Cambricon",
+      "type": "MLU",
+      "version": "CNNL 1.9",
+      "peak_flops_tflops": 256,
+      "memory_bandwidth_gbps": 921,
+      "operator_coverage": 0.83
+    }
+  ]
+}
