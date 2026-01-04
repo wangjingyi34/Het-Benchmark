@@ -151,6 +151,20 @@ het-benchmark/
 └── examples/                     # Example scripts
 ```
 
+
+### Data Files Description
+
+| File | Size | Description |
+|------|------|-------------|
+| `models.json` | 9.8 KB | 34 AI models with metadata (name, category, parameters, architecture) |
+| `operators.json` | 1.9 MB | 6,244 operator instances extracted from all models |
+| `operator_types.json` | 8.0 KB | 16 operator type definitions with statistics |
+| `benchmark_inputs.json` | 337 KB | 1,000 standard evaluation inputs |
+| `hardware_platforms.json` | 1.5 KB | 5 hardware platform specifications |
+| `model_dataset.json` | 1.8 MB | Complete model dataset with embedded operators |
+| `moh_kg.json` | 6.6 MB | MOH-KG knowledge graph (6,299 nodes, 29,199 edges) |
+| `standard_inputs.json` | 315 KB | Standard inputs (alternative format) |
+
 ## 📈 Experimental Results
 
 ### Table 5: Operator Coverage by Platform
