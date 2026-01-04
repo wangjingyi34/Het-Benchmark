@@ -1,6 +1,6 @@
 {
   "experiment": "FITAS Migration Case Study",
-  "timestamp": "2026-01-04T18:37:30.741413",
+  "timestamp": "2026-01-04T15:19:30.860888",
   "hardware_specs": {
     "NVIDIA A100 80GB": {
       "fp16_tflops": 312,
@@ -56,23 +56,7 @@
       "change_percent": 65.7
     }
   ],
-  "real_measurements": [
-    {
-      "batch_size": 32,
-      "latency_ms": 47.04,
-      "throughput": 680.3
-    },
-    {
-      "batch_size": 64,
-      "latency_ms": 89.64,
-      "throughput": 714.0
-    },
-    {
-      "batch_size": 128,
-      "latency_ms": 178.05,
-      "throughput": 718.9
-    }
-  ],
+  "real_measurements": [],
   "migration_summary": {
     "End-to-End Latency (hours)": {
       "Before (A100)": 0.0,

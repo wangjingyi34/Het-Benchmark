@@ -1,6 +1,6 @@
 {
-  "experiment": "GNN Predictor MRE by Operator Family and Hardware (Improved)",
-  "timestamp": "2026-01-04T18:44:00.714747",
+  "experiment": "GNN Predictor MRE by Operator Family and Hardware",
+  "timestamp": "2026-01-04T15:18:34.954992",
   "operator_families": [
     "MatMul",
     "Conv2D",
@@ -16,45 +16,45 @@
   "results": [
     {
       "Operator Family": "MatMul",
-      "A100 MRE (%)": 12.6,
-      "Ascend 910B MRE (%)": 12.9,
-      "MLU370 MRE (%)": 11.8,
-      "Avg MRE (%)": 12.4
+      "A100 MRE (%)": 47.5,
+      "Ascend 910B MRE (%)": 54.2,
+      "MLU370 MRE (%)": 39.2,
+      "Avg MRE (%)": 47.0
     },
     {
       "Operator Family": "Conv2D",
-      "A100 MRE (%)": 11.7,
-      "Ascend 910B MRE (%)": 11.4,
-      "MLU370 MRE (%)": 11.5,
-      "Avg MRE (%)": 11.5
+      "A100 MRE (%)": 53.1,
+      "Ascend 910B MRE (%)": 145.8,
+      "MLU370 MRE (%)": 103.5,
+      "Avg MRE (%)": 100.8
     },
     {
       "Operator Family": "Attention",
-      "A100 MRE (%)": 54.9,
-      "Ascend 910B MRE (%)": 30.4,
-      "MLU370 MRE (%)": 25.4,
-      "Avg MRE (%)": 36.9
+      "A100 MRE (%)": 59.6,
+      "Ascend 910B MRE (%)": 78.3,
+      "MLU370 MRE (%)": 74.2,
+      "Avg MRE (%)": 70.7
     },
     {
       "Operator Family": "LayerNorm",
-      "A100 MRE (%)": 6.7,
-      "Ascend 910B MRE (%)": 6.1,
-      "MLU370 MRE (%)": 6.9,
-      "Avg MRE (%)": 6.6
+      "A100 MRE (%)": 93.2,
+      "Ascend 910B MRE (%)": 67.8,
+      "MLU370 MRE (%)": 63.7,
+      "Avg MRE (%)": 74.9
     },
     {
       "Operator Family": "Activation",
-      "A100 MRE (%)": 3.9,
-      "Ascend 910B MRE (%)": 4.1,
-      "MLU370 MRE (%)": 4.0,
-      "Avg MRE (%)": 4.0
+      "A100 MRE (%)": 500.9,
+      "Ascend 910B MRE (%)": 333.5,
+      "MLU370 MRE (%)": 267.1,
+      "Avg MRE (%)": 367.2
     },
     {
       "Operator Family": "Overall",
-      "A100 MRE (%)": 18.0,
-      "Ascend 910B MRE (%)": 13.0,
-      "MLU370 MRE (%)": 11.9,
-      "Avg MRE (%)": 14.3
+      "A100 MRE (%)": 150.9,
+      "Ascend 910B MRE (%)": 135.9,
+      "MLU370 MRE (%)": 109.5,
+      "Avg MRE (%)": 132.1
     }
   ]
 }
