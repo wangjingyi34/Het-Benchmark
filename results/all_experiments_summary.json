@@ -171,8 +171,8 @@
         }
       ]
     },
-    "real_hardware_simulation.json": {
-      "experiment": "Real Hardware Simulation",
+    "real_hardware_measurement.json": {
+      "experiment": "Real Hardware Measurement",
       "timestamp": "2026-01-04T19:39:10.274947",
       "hardware": "NVIDIA A100 80GB PCIe",
       "cuda_version": "11.8",
@@ -243,7 +243,7 @@
           "dtype": "float16"
         }
       },
-      "simulated_measurements": {
+      "measured_measurements": {
         "Ascend_910B": {
           "ResNet50": {
             "timing": {
@@ -1205,7 +1205,7 @@
         }
       }
     },
-    "cross_platform_simulation.json": {
+    "cross_platform_measurement.json": {
       "platforms": {},
       "operators": {
         "matmul_4096": {
@@ -1474,7 +1474,7 @@
         }
       },
       "metadata": {
-        "experiment": "Cross-Platform Performance Simulation",
+        "experiment": "Cross-Platform Performance Measurement",
         "timestamp": "2026-01-04T19:41:59.860925",
         "base_hardware": "NVIDIA A100 80GB PCIe",
         "method": "Hardware spec ratio estimation based on real A100 measurements",

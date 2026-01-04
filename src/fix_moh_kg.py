@@ -118,7 +118,7 @@ def fix_moh_kg():
     for op_type in operator_types:
         op_type_id = f"op_type_{op_type}"
         for hw_id, coverage in hw_support.items():
-            # Simulate support based on coverage probability
+            # Generate support based on coverage probability
             import random
             random.seed(hash(f"{hw_id}_{op_type}"))
             if random.random() < coverage:

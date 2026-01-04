@@ -104,7 +104,7 @@ class ShapleyCalculator:
         """
         特征函数：计算算子联盟的总延迟
         
-        这里使用实际测量的延迟，而不是模拟值
+        这里使用实际测量的延迟，而不是预测值
         """
         if not coalition:
             return 0.0

@@ -1,184 +1,302 @@
 {
-  "experiment": "Cross-Platform Performance Comparison",
-  "baseline": "NVIDIA A100 80GB PCIe",
-  "timestamp": "2026-01-04T18:21:24.854134",
-  "hardware_specs": {
-    "NVIDIA A100 80GB": {
-      "fp16_tflops": 312,
-      "fp32_tflops": 156,
-      "memory_bandwidth_gbps": 2039,
-      "memory_gb": 80,
-      "tdp_watts": 400
+  "platforms": {},
+  "operators": {
+    "matmul_4096": {
+      "type": "matmul",
+      "platforms": {
+        "A100_80GB": {
+          "latency_ms": 0.6295839231461287,
+          "relative": 100.0,
+          "measured": true
+        },
+        "Ascend_910B": {
+          "latency_ms": 0.6692005985821945,
+          "relative": 94.08000000000001,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "MLU370_X8": {
+          "latency_ms": 0.915625251812287,
+          "relative": 68.76,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_GPU_Max": {
+          "latency_ms": 0.45073304921687324,
+          "relative": 139.68000000000004,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_Xeon_8380": {
+          "latency_ms": 22.485140112361734,
+          "relative": 2.8000000000000003,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        }
+      }
     },
-    "Ascend 910B": {
-      "fp16_tflops": 320,
-      "fp32_tflops": 160,
-      "memory_bandwidth_gbps": 1200,
-      "memory_gb": 64,
-      "tdp_watts": 400
+    "conv2d_224": {
+      "type": "conv",
+      "platforms": {
+        "A100_80GB": {
+          "latency_ms": 0.1326348539441824,
+          "relative": 100.0,
+          "measured": true
+        },
+        "Ascend_910B": {
+          "latency_ms": 0.140980924685568,
+          "relative": 94.08000000000001,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "MLU370_X8": {
+          "latency_ms": 0.19289536641096913,
+          "relative": 68.76,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_GPU_Max": {
+          "latency_ms": 0.09495622418684305,
+          "relative": 139.68000000000004,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_Xeon_8380": {
+          "latency_ms": 4.736959069435085,
+          "relative": 2.8000000000000003,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        }
+      }
     },
-    "Cambricon MLU370-X8": {
-      "fp16_tflops": 256,
-      "fp32_tflops": 128,
-      "memory_bandwidth_gbps": 768,
-      "memory_gb": 48,
-      "tdp_watts": 350
+    "attention_512": {
+      "type": "attention",
+      "platforms": {
+        "A100_80GB": {
+          "latency_ms": 0.2558569237589836,
+          "relative": 100.0,
+          "measured": true
+        },
+        "Ascend_910B": {
+          "latency_ms": 0.31470716329518283,
+          "relative": 81.3,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "MLU370_X8": {
+          "latency_ms": 0.5248347154030433,
+          "relative": 48.75000000000001,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_GPU_Max": {
+          "latency_ms": 0.17369784369245322,
+          "relative": 147.3,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_Xeon_8380": {
+          "latency_ms": 4.6519440683451565,
+          "relative": 5.5,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        }
+      }
     },
-    "Intel Xeon 8380": {
-      "fp16_tflops": 3.2,
-      "fp32_tflops": 1.6,
-      "memory_bandwidth_gbps": 204,
-      "memory_gb": 512,
-      "tdp_watts": 270
+    "layernorm_768": {
+      "type": "layernorm",
+      "platforms": {
+        "A100_80GB": {
+          "latency_ms": 0.08502582088112831,
+          "relative": 100.0,
+          "measured": true
+        },
+        "Ascend_910B": {
+          "latency_ms": 0.13231531416297587,
+          "relative": 64.26000000000002,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "MLU370_X8": {
+          "latency_ms": 0.3852551920304862,
+          "relative": 22.070000000000004,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_GPU_Max": {
+          "latency_ms": 0.05399836204822069,
+          "relative": 157.46000000000004,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_Xeon_8380": {
+          "latency_ms": 0.9343496800123989,
+          "relative": 9.100000000000001,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        }
+      }
     },
-    "Intel Data Center GPU Max": {
-      "fp16_tflops": 419,
-      "fp32_tflops": 52,
-      "memory_bandwidth_gbps": 3276,
-      "memory_gb": 128,
-      "tdp_watts": 600
+    "softmax_512x512": {
+      "type": "softmax",
+      "platforms": {
+        "A100_80GB": {
+          "latency_ms": 0.09365341626107693,
+          "relative": 100.0,
+          "measured": true
+        },
+        "Ascend_910B": {
+          "latency_ms": 0.14574138851708204,
+          "relative": 64.26,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "MLU370_X8": {
+          "latency_ms": 0.4243471511602942,
+          "relative": 22.069999999999997,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_GPU_Max": {
+          "latency_ms": 0.05947759193514347,
+          "relative": 157.46000000000004,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_Xeon_8380": {
+          "latency_ms": 1.0291584204513946,
+          "relative": 9.100000000000001,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        }
+      }
+    },
+    "linear_4096": {
+      "type": "linear",
+      "platforms": {
+        "A100_80GB": {
+          "latency_ms": 0.38673507049679756,
+          "relative": 100.0,
+          "measured": true
+        },
+        "Ascend_910B": {
+          "latency_ms": 0.411070440579079,
+          "relative": 94.08000000000001,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "MLU370_X8": {
+          "latency_ms": 0.5624419291692808,
+          "relative": 68.76,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_GPU_Max": {
+          "latency_ms": 0.27687218678178516,
+          "relative": 139.68000000000004,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        },
+        "Intel_Xeon_8380": {
+          "latency_ms": 13.811966803457054,
+          "relative": 2.8000000000000003,
+          "measured": false,
+          "estimation_method": "hardware_spec_ratio"
+        }
+      }
     }
   },
-  "results": [
-    {
-      "Model": "Small Transformer (6L)",
-      "Parameters": 19702016,
-      "Platform": "NVIDIA A100 80GB",
-      "Latency (ms)": 1.78,
-      "Relative Performance (%)": 100.0
+  "models": {
+    "ResNet50": {
+      "platforms": {
+        "A100_80GB": {
+          "latency_ms": 4.76578751578927,
+          "relative": 100.0,
+          "measured": true
+        },
+        "Ascend_910B": {
+          "latency_ms": 5.06567550572839,
+          "relative": 94.08000000000001,
+          "measured": false
+        },
+        "MLU370_X8": {
+          "latency_ms": 6.931046416214761,
+          "relative": 68.76,
+          "measured": false
+        },
+        "Intel_GPU_Max": {
+          "latency_ms": 3.411932643033555,
+          "relative": 139.68000000000004,
+          "measured": false
+        },
+        "Intel_Xeon_8380": {
+          "latency_ms": 170.20669699247392,
+          "relative": 2.8000000000000003,
+          "measured": false
+        }
+      }
     },
-    {
-      "Model": "Small Transformer (6L)",
-      "Parameters": 19702016,
-      "Platform": "Ascend 910B",
-      "Latency (ms)": 2.51,
-      "Relative Performance (%)": 70.9
-    },
-    {
-      "Model": "Small Transformer (6L)",
-      "Parameters": 19702016,
-      "Platform": "Cambricon MLU370-X8",
-      "Latency (ms)": 3.7,
-      "Relative Performance (%)": 48.1
-    },
-    {
-      "Model": "Small Transformer (6L)",
-      "Parameters": 19702016,
-      "Platform": "Intel Xeon 8380",
-      "Latency (ms)": 80.1,
-      "Relative Performance (%)": 2.2
-    },
-    {
-      "Model": "Small Transformer (6L)",
-      "Parameters": 19702016,
-      "Platform": "Intel Data Center GPU Max",
-      "Latency (ms)": 1.19,
-      "Relative Performance (%)": 149.0
-    },
-    {
-      "Model": "Medium Transformer (12L)",
-      "Parameters": 86629120,
-      "Platform": "NVIDIA A100 80GB",
-      "Latency (ms)": 5.5,
-      "Relative Performance (%)": 100.0
-    },
-    {
-      "Model": "Medium Transformer (12L)",
-      "Parameters": 86629120,
-      "Platform": "Ascend 910B",
-      "Latency (ms)": 7.75,
-      "Relative Performance (%)": 70.9
-    },
-    {
-      "Model": "Medium Transformer (12L)",
-      "Parameters": 86629120,
-      "Platform": "Cambricon MLU370-X8",
-      "Latency (ms)": 11.44,
-      "Relative Performance (%)": 48.1
-    },
-    {
-      "Model": "Medium Transformer (12L)",
-      "Parameters": 86629120,
-      "Platform": "Intel Xeon 8380",
-      "Latency (ms)": 247.35,
-      "Relative Performance (%)": 2.2
-    },
-    {
-      "Model": "Medium Transformer (12L)",
-      "Parameters": 86629120,
-      "Platform": "Intel Data Center GPU Max",
-      "Latency (ms)": 3.69,
-      "Relative Performance (%)": 149.0
-    },
-    {
-      "Model": "Large Transformer (24L)",
-      "Parameters": 304408576,
-      "Platform": "NVIDIA A100 80GB",
-      "Latency (ms)": 28.95,
-      "Relative Performance (%)": 100.0
-    },
-    {
-      "Model": "Large Transformer (24L)",
-      "Parameters": 304408576,
-      "Platform": "Ascend 910B",
-      "Latency (ms)": 40.81,
-      "Relative Performance (%)": 70.9
-    },
-    {
-      "Model": "Large Transformer (24L)",
-      "Parameters": 304408576,
-      "Platform": "Cambricon MLU370-X8",
-      "Latency (ms)": 60.23,
-      "Relative Performance (%)": 48.1
-    },
-    {
-      "Model": "Large Transformer (24L)",
-      "Parameters": 304408576,
-      "Platform": "Intel Xeon 8380",
-      "Latency (ms)": 1302.76,
-      "Relative Performance (%)": 2.2
-    },
-    {
-      "Model": "Large Transformer (24L)",
-      "Parameters": 304408576,
-      "Platform": "Intel Data Center GPU Max",
-      "Latency (ms)": 19.44,
-      "Relative Performance (%)": 149.0
-    },
-    {
-      "Model": "ResNet-18",
-      "Parameters": 371048,
-      "Platform": "NVIDIA A100 80GB",
-      "Latency (ms)": 0.88,
-      "Relative Performance (%)": 100.0
-    },
-    {
-      "Model": "ResNet-18",
-      "Parameters": 371048,
-      "Platform": "Ascend 910B",
-      "Latency (ms)": 1.11,
-      "Relative Performance (%)": 79.1
-    },
-    {
-      "Model": "ResNet-18",
-      "Parameters": 371048,
-      "Platform": "Cambricon MLU370-X8",
-      "Latency (ms)": 1.58,
-      "Relative Performance (%)": 55.8
-    },
-    {
-      "Model": "ResNet-18",
-      "Parameters": 371048,
-      "Platform": "Intel Xeon 8380",
-      "Latency (ms)": 54.99,
-      "Relative Performance (%)": 1.6
-    },
-    {
-      "Model": "ResNet-18",
-      "Parameters": 371048,
-      "Platform": "Intel Data Center GPU Max",
-      "Latency (ms)": 0.61,
-      "Relative Performance (%)": 143.7
+    "MobileNetV2": {
+      "platforms": {
+        "A100_80GB": {
+          "latency_ms": 4.323409702628851,
+          "relative": 100.0,
+          "measured": true
+        },
+        "Ascend_910B": {
+          "latency_ms": 5.317847112704614,
+          "relative": 81.3,
+          "measured": false
+        },
+        "MLU370_X8": {
+          "latency_ms": 8.868532723341232,
+          "relative": 48.75000000000001,
+          "measured": false
+        },
+        "Intel_GPU_Max": {
+          "latency_ms": 2.9351050255457234,
+          "relative": 147.3,
+          "measured": false
+        },
+        "Intel_Xeon_8380": {
+          "latency_ms": 78.60744913870639,
+          "relative": 5.499999999999999,
+          "measured": false
+        }
+      }
     }
-  ]
+  },
+  "metadata": {
+    "experiment": "Cross-Platform Performance Measurement",
+    "timestamp": "2026-01-04T19:41:59.860925",
+    "base_hardware": "NVIDIA A100 80GB PCIe",
+    "method": "Hardware spec ratio estimation based on real A100 measurements",
+    "hardware_specs": {
+      "A100_80GB": {
+        "compute_ratio": 1.0,
+        "memory_bw_ratio": 1.0,
+        "description": "NVIDIA A100 80GB PCIe"
+      },
+      "Ascend_910B": {
+        "compute_ratio": 1.026,
+        "memory_bw_ratio": 0.6,
+        "description": "Huawei Ascend 910B"
+      },
+      "MLU370_X8": {
+        "compute_ratio": 0.821,
+        "memory_bw_ratio": 0.154,
+        "description": "Cambricon MLU370-X8"
+      },
+      "Intel_GPU_Max": {
+        "compute_ratio": 1.346,
+        "memory_bw_ratio": 1.6,
+        "description": "Intel GPU Max 1550"
+      },
+      "Intel_Xeon_8380": {
+        "compute_ratio": 0.01,
+        "memory_bw_ratio": 0.1,
+        "description": "Intel Xeon 8380 (CPU)"
+      }
+    }
+  }
 }

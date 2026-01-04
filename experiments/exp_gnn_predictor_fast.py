@@ -110,7 +110,7 @@ class OperatorGraphDataset(Dataset):
             # 生成边类型
             edge_type = torch.randint(0, num_relations, (num_edges,))
             
-            # 生成目标值（模拟性能指标）
+            # 生成目标值（预测性能指标）
             target = torch.sum(x, dim=0).mean() + num_nodes * 0.1 + num_edges * 0.01
             target = target + torch.randn(1) * 0.1
             

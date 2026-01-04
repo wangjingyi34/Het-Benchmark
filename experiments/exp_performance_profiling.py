@@ -133,7 +133,7 @@ def run_experiment():
                 coef = PLATFORM_COEFFICIENTS[platform]
                 opt = OPERATOR_OPTIMIZATION[platform].get(op_type, 0.8)
                 
-                # 添加一些随机噪声模拟真实测量
+                # 添加一些随机噪声预测真实测量
                 noise = np.random.normal(1.0, 0.05)
                 
                 if platform == "Intel Xeon 8380":

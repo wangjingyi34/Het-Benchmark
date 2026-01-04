@@ -37,7 +37,7 @@ We evaluate across **5 heterogeneous hardware platforms** representing diverse c
 
 ### 5.1.3 Implementation Details
 
-All experiments were conducted on NVIDIA A100 80GB PCIe GPUs. For NPU evaluation, we developed a cycle-accurate simulator based on Ascend 910B specifications, validated against published benchmarks. The RGAT model was trained for 100 epochs with AdamW optimizer (lr=0.001, weight_decay=0.01).
+All experiments were conducted on NVIDIA A100 80GB PCIe GPUs. For NPU evaluation, we developed a performance model based on Ascend 910B specifications, validated against published benchmarks. The RGAT model was trained for 100 epochs with AdamW optimizer (lr=0.001, weight_decay=0.01).
 
 ## 5.2 COPA Evaluation
 

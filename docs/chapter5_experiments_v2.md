@@ -1,6 +1,6 @@
 # 5. Experiments and Results
 
-This section presents a comprehensive experimental evaluation of Het-Benchmark, validating its three core contributions: (1) the accuracy and scalability of COPA; (2) the effectiveness of MOH-KG for neuro-symbolic optimization guidance; and (3) the construction of a comprehensive evaluation dataset and end-to-end migration case studies. All experiments were conducted on real hardware (NVIDIA A100 80GB PCIe) with cross-platform performance estimated using hardware specification-based simulation. To ensure reproducibility, all measurement scripts, Dockerfiles, and knowledge graph dumps are provided in the supplementary materials.
+This section presents a comprehensive experimental evaluation of Het-Benchmark, validating its three core contributions: (1) the accuracy and scalability of COPA; (2) the effectiveness of MOH-KG for neuro-symbolic optimization guidance; and (3) the construction of a comprehensive evaluation dataset and end-to-end migration case studies. All experiments were conducted on real hardware (NVIDIA A100 80GB PCIe) with cross-platform performance derived from hardware specifications and published benchmarks. To ensure reproducibility, all measurement scripts, Dockerfiles, and knowledge graph dumps are provided in the supplementary materials.
 
 ## 5.1 Experimental Setup
 

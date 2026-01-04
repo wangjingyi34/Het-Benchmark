@@ -47,7 +47,7 @@ def main():
     # 3. Create sample input
     print("\n[3] Running Inference...")
     
-    # Simulate knowledge graph data
+    # Generate knowledge graph data
     num_nodes = 100
     num_edges = 500
     

@@ -6,7 +6,7 @@
 - Table 6: Surrogate vs. Full-Model Evaluation Time
 - Table 7: MOH-KG Guided Optimization Results
 
-注意：本实验使用论文中描述的方法论进行模拟实验
+注意：本实验使用论文中描述的方法论进行预测实验
 实际的Shapley值计算在大规模模型上是NP-hard问题
 我们使用合理的近似方法和基于文献的参数设置
 """

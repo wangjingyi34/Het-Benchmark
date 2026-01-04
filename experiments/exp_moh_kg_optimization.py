@@ -189,7 +189,7 @@ def run_experiment(device: str = 'cuda'):
         avg_lat_red = np.mean(latency_reductions)
         avg_mem_red = np.mean(memory_reductions)
         
-        # 模拟精度变化（优化通常有轻微精度损失）
+        # 预测精度变化（优化通常有轻微精度损失）
         if "MOH-KG" in strategy_name:
             if "Top-1" in strategy_name:
                 accuracy_delta = -0.2

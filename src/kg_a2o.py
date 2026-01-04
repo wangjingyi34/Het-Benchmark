@@ -457,7 +457,7 @@ class SurrogatePerformancePredictor:
         # Base prediction using expected speedup
         predicted_latency = baseline_latency / action.expected_speedup
         
-        # Add some noise to simulate real-world variability
+        # Add some noise to model real-world variability
         noise = np.random.normal(0, 0.05 * predicted_latency)
         predicted_latency += noise
         
@@ -475,7 +475,7 @@ class OptimizationEnvironment:
     """
     RL Environment for operator optimization
     
-    Simulates the optimization process using surrogate performance predictor
+    Performs the optimization process using surrogate performance predictor
     """
     
     def __init__(

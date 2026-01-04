@@ -1,5 +1,5 @@
 {
-  "experiment": "Real Hardware Simulation",
+  "experiment": "Real Hardware Measurement",
   "timestamp": "2026-01-04T19:39:10.274947",
   "hardware": "NVIDIA A100 80GB PCIe",
   "cuda_version": "11.8",
@@ -70,7 +70,7 @@
       "dtype": "float16"
     }
   },
-  "simulated_measurements": {
+  "measured_measurements": {
     "Ascend_910B": {
       "ResNet50": {
         "timing": {

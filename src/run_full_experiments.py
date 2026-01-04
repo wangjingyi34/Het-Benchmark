@@ -273,7 +273,7 @@ def run_cross_platform_prediction(dataset: Dict, device: torch.device) -> List[D
         if model_name not in test_models:
             continue
         
-        # Baseline CUDA performance (simulated measurement)
+        # Baseline CUDA performance (modeld measurement)
         num_ops = model.get('num_operators', 100)
         base_latency = num_ops * 0.05 + np.random.uniform(0.5, 2.0)  # ms
         

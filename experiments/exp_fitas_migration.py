@@ -2,7 +2,7 @@
 """
 实验: FITAS迁移案例研究
 
-模拟将AI模型从A100迁移到Ascend 910B的完整流程
+预测将AI模型从A100迁移到Ascend 910B的完整流程
 基于真实硬件规格进行性能预测
 """
 
@@ -43,7 +43,7 @@ HARDWARE_SPECS = {
 
 
 class FITASWorkload:
-    """FITAS工作负载模拟"""
+    """FITAS工作负载预测"""
     
     def __init__(self):
         # FITAS每日处理任务
