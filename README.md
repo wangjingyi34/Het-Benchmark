@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)](https://pytorch.org/)
+[![Release](https://img.shields.io/github/v/release/wangjingyi34/Het-Benchmark)](https://github.com/wangjingyi34/Het-Benchmark/releases)
 
 **A Knowledge-Graph-Driven Evaluation Framework for Zero-Shot AI Model Migration on Heterogeneous Chips**
 
@@ -19,6 +20,64 @@ Het-Benchmark is a comprehensive evaluation framework designed to assess AI mode
 - **Comprehensive Dataset**: 34 models, 6,244 operator instances across 5 categories
 - **Standard Input Dataset**: 1,000 standardized inputs for reproducible benchmarking
 
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/wangjingyi34/Het-Benchmark.git
+cd Het-Benchmark
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install Git LFS (for large files)
+git lfs install
+git lfs pull
+```
+
+### Download Benchmark Data
+
+The benchmark input data (~368 MB) is available via GitHub Release:
+
+```bash
+# Option 1: Use the setup script (recommended)
+python scripts/setup_data.py --data_only
+
+# Option 2: Manual download
+wget https://github.com/wangjingyi34/Het-Benchmark/releases/download/v1.0.0/benchmark_data.tar.gz
+tar -xzf benchmark_data.tar.gz
+```
+
+### Download Models (Optional)
+
+Models are hosted on Hugging Face (~66 GB total). Download only what you need:
+
+```bash
+# Download all models (requires ~66 GB)
+python scripts/download_models.py --output_dir ./models_hub
+
+# Download specific category
+python scripts/download_models.py --output_dir ./models_hub --category LLM
+
+# Download single model
+python scripts/download_models.py --output_dir ./models_hub --model "Qwen2.5-7B"
+```
+
+### Run Benchmark
+
+```bash
+# Run full benchmark evaluation
+python scripts/run_benchmark.py --data_dir ./benchmark_data --output_dir ./results
+
+# Run specific category
+python scripts/run_benchmark.py --data_dir ./benchmark_data --category LLM
+
+# Profile operators
+python scripts/profile_operators.py --output_dir ./operator_profiles
+```
+
 ## 📊 Benchmark Dataset
 
 ### Models (34 total)
@@ -31,23 +90,28 @@ Het-Benchmark is a comprehensive evaluation framework designed to assess AI mode
 | **Audio** | Whisper-Large-V3, Wav2Vec2-Base | 2 |
 | **Multimodal** | CLIP-ViT-L/14 | 1 |
 
-### Operators (6,244 instances)
+### Operators (16 types, 6,244 instances)
 
-- **Matrix Operations**: MatMul, Conv, Linear, Gemm
-- **Activation Functions**: ReLU, GELU, SiLU, Softmax
-- **Normalization**: LayerNorm, BatchNorm, RMSNorm
-- **Attention**: MultiHeadAttention, ScaledDotProductAttention
-- **Pooling**: MaxPool, AvgPool, AdaptiveAvgPool
-- **Others**: Embedding, Dropout, Reshape, Transpose
+| Category | Operators |
+|----------|-----------|
+| **Matrix Operations** | Linear, Conv1d, Conv2d, MatMul |
+| **Normalization** | LayerNorm, BatchNorm2d, RMSNorm |
+| **Activation** | ReLU, ReLU6, GELU, SiLU, Softmax, Tanh |
+| **Pooling** | MaxPool2d, AdaptiveAvgPool2d |
+| **Others** | Embedding, Dropout |
 
-### Standard Input Dataset (1,000 samples)
+### Standard Benchmark Inputs
 
-| Category | Samples | Details |
-|----------|---------|---------|
-| LLM | 300 | Sequence lengths: 128-2048 tokens |
-| CV | 250 | Resolutions: 224×224 to 512×512 |
-| VLM | 200 | Image + text pairs |
-| Diffusion | 250 | Prompts with various parameters |
+| Category | Files | Size | Description |
+|----------|-------|------|-------------|
+| **LLM** | 20 | 1.8 MB | Tokenized sequences (128-2048 tokens) |
+| **CV** | 15 | 321 MB | Image tensors (224×224 to 512×512) |
+| **NLP** | 16 | 1.3 MB | BERT-style inputs (64-512 tokens) |
+| **Audio** | 12 | 8.8 MB | Audio waveforms (1-5 seconds) |
+| **Multimodal** | 18 | 72.9 MB | Image-text pairs |
+| **Diffusion** | 9 | 7.9 MB | Latent tensors |
+
+**Total: 90 files, 413 MB**
 
 ### Hardware Platforms
 
@@ -58,64 +122,6 @@ Het-Benchmark is a comprehensive evaluation framework designed to assess AI mode
 | oneAPI/oneDNN | Intel | GPU/CPU | 89.0% |
 | CANN | Huawei | NPU | 93.0% |
 | MLU/CNNL | Cambricon | MLU | 83.0% |
-
-## 🚀 Quick Start
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/wangjingyi34/Het-Benchmark.git
-cd Het-Benchmark
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Basic Usage
-
-```python
-from src.model_parser import ModelParser
-from src.operator_extractor import OperatorExtractor
-from src.copa import COPA, MicroBenchmarker
-
-# Parse a model
-parser = ModelParser()
-model_info = parser.parse("Qwen/Qwen2.5-7B")
-
-# Extract operators
-extractor = OperatorExtractor()
-operators = extractor.extract(model_info)
-
-# Run COPA two-stage analysis
-# Stage I: Micro-benchmarking
-benchmarker = MicroBenchmarker(device='cuda')
-micro_results = benchmarker.profile_operators(operators)
-
-# Stage II: Shapley attribution
-copa = COPA()
-attribution = copa.analyze(operators, micro_results)
-print(attribution.get_bottlenecks())
-```
-
-### Run Experiments
-
-```bash
-# Run all experiments
-python src/run_full_experiments.py
-
-# Build model dataset
-python src/build_model_dataset.py
-
-# Build standard input dataset
-python src/build_standard_inputs.py
-
-# Train RGAT model
-python src/train_rgat.py
-
-# Build knowledge graph
-python src/build_knowledge_graph.py
-```
 
 ## 📁 Project Structure
 
@@ -130,40 +136,53 @@ het-benchmark/
 │   ├── rgat.py                   # RGAT neural network
 │   ├── kg_a2o.py                 # KG-A2O optimization (PPO)
 │   ├── profiler.py               # Performance profiling
-│   ├── build_standard_inputs.py  # Standard input generator
-│   ├── train_rgat.py             # RGAT training script
-│   └── run_full_experiments.py   # Complete experiment runner
+│   └── operators/                # Operator implementations
+│       ├── base.py               # Base operator class
+│       ├── linear.py             # Linear operator
+│       ├── conv.py               # Convolution operators
+│       ├── normalization.py      # Normalization operators
+│       ├── activation.py         # Activation functions
+│       ├── pooling.py            # Pooling operators
+│       ├── embedding.py          # Embedding operator
+│       └── dropout.py            # Dropout operator
+├── scripts/                      # Utility scripts
+│   ├── setup_data.py             # Download benchmark data
+│   ├── download_models.py        # Download models from HuggingFace
+│   ├── generate_benchmark_data.py # Generate benchmark inputs
+│   ├── run_benchmark.py          # Run benchmark evaluation
+│   └── profile_operators.py      # Profile operator performance
 ├── data/                         # Dataset files
 │   ├── model_dataset.json        # 34 models with 6,244 operators
 │   ├── moh_kg.json               # Knowledge graph (6,299 nodes, 29,199 edges)
-│   └── standard_inputs.json      # 1000 standard inputs (315 KB)
+│   ├── models.json               # Model metadata
+│   ├── operators.json            # All operator instances
+│   ├── operator_types.json       # Operator type definitions
+│   ├── benchmark_inputs.json     # Standard evaluation inputs
+│   ├── hardware_platforms.json   # Hardware specifications
+│   └── standard_inputs.json      # Standard inputs (alternative format)
 ├── models/                       # Trained models
 │   ├── rgat_final.pt             # Trained RGAT model (3.7 MB)
 │   └── training_report.json      # Training metrics
+├── benchmark_data/               # Generated benchmark inputs (via setup_data.py)
+│   ├── LLM/                      # LLM input tensors
+│   ├── CV/                       # CV input tensors
+│   ├── NLP/                      # NLP input tensors
+│   ├── Audio/                    # Audio input tensors
+│   ├── Multimodal/               # Multimodal input tensors
+│   ├── Diffusion/                # Diffusion input tensors
+│   └── manifest.json             # Data manifest
 ├── results/                      # Experiment results
 │   ├── table4_model_dataset.csv
 │   ├── table5_operator_coverage.csv
 │   ├── table6_performance_profiling.csv
 │   ├── table7_copa_attribution.csv
 │   └── table8_cross_platform_prediction.csv
-├── tests/                        # Unit tests
-├── docs/                         # Documentation
-└── examples/                     # Example scripts
+├── examples/                     # Example scripts
+│   ├── quick_start.py            # Basic usage example
+│   ├── rgat_inference.py         # RGAT inference example
+│   └── kg_query.py               # Knowledge graph query example
+└── docs/                         # Documentation
 ```
-
-
-### Data Files Description
-
-| File | Size | Description |
-|------|------|-------------|
-| `models.json` | 9.8 KB | 34 AI models with metadata (name, category, parameters, architecture) |
-| `operators.json` | 1.9 MB | 6,244 operator instances extracted from all models |
-| `operator_types.json` | 8.0 KB | 16 operator type definitions with statistics |
-| `benchmark_inputs.json` | 337 KB | 1,000 standard evaluation inputs |
-| `hardware_platforms.json` | 1.5 KB | 5 hardware platform specifications |
-| `model_dataset.json` | 1.8 MB | Complete model dataset with embedded operators |
-| `moh_kg.json` | 6.6 MB | MOH-KG knowledge graph (6,299 nodes, 29,199 edges) |
-| `standard_inputs.json` | 315 KB | Standard inputs (alternative format) |
 
 ## 📈 Experimental Results
 
@@ -263,6 +282,30 @@ PPO-based reinforcement learning for automatic optimization:
 - **12 Optimization Actions**: TensorCore, OperatorFusion, LayoutOptimization, PrecisionReduction, FlashAttention, KernelAutoTuning, MemoryPooling, StreamPipelining, GraphOptimization, QuantizationAware, SparsityExploitation, CustomKernel
 - Knowledge graph-guided action selection
 - Surrogate performance prediction
+
+## 🛠️ Development
+
+### Generate New Benchmark Data
+
+```bash
+# Generate standard benchmark inputs
+python scripts/generate_benchmark_data.py --output_dir ./benchmark_data
+
+# Generate for specific category
+python scripts/generate_benchmark_data.py --output_dir ./benchmark_data --category LLM
+```
+
+### Train RGAT Model
+
+```bash
+python src/train_rgat.py
+```
+
+### Build Knowledge Graph
+
+```bash
+python src/build_knowledge_graph.py
+```
 
 ## 📝 Citation
 

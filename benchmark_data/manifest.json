@@ -1,0 +1,1260 @@
+{
+  "description": "Het-Benchmark Standard Input Data",
+  "version": "1.0",
+  "categories": {
+    "LLM": {
+      "description": "Tokenized text sequences",
+      "inputs": [
+        {
+          "file": "input_b1_s128.pt",
+          "batch_size": 1,
+          "seq_length": 128,
+          "shape": [
+            1,
+            128
+          ],
+          "size_mb": 0.0038042068481445312
+        },
+        {
+          "file": "input_b1_s256.pt",
+          "batch_size": 1,
+          "seq_length": 256,
+          "shape": [
+            1,
+            256
+          ],
+          "size_mb": 0.005757331848144531
+        },
+        {
+          "file": "input_b1_s512.pt",
+          "batch_size": 1,
+          "seq_length": 512,
+          "shape": [
+            1,
+            512
+          ],
+          "size_mb": 0.009663581848144531
+        },
+        {
+          "file": "input_b1_s1024.pt",
+          "batch_size": 1,
+          "seq_length": 1024,
+          "shape": [
+            1,
+            1024
+          ],
+          "size_mb": 0.01748371124267578
+        },
+        {
+          "file": "input_b1_s2048.pt",
+          "batch_size": 1,
+          "seq_length": 2048,
+          "shape": [
+            1,
+            2048
+          ],
+          "size_mb": 0.03310871124267578
+        },
+        {
+          "file": "input_b4_s128.pt",
+          "batch_size": 4,
+          "seq_length": 128,
+          "shape": [
+            4,
+            128
+          ],
+          "size_mb": 0.009663581848144531
+        },
+        {
+          "file": "input_b4_s256.pt",
+          "batch_size": 4,
+          "seq_length": 256,
+          "shape": [
+            4,
+            256
+          ],
+          "size_mb": 0.01747608184814453
+        },
+        {
+          "file": "input_b4_s512.pt",
+          "batch_size": 4,
+          "seq_length": 512,
+          "shape": [
+            4,
+            512
+          ],
+          "size_mb": 0.03310108184814453
+        },
+        {
+          "file": "input_b4_s1024.pt",
+          "batch_size": 4,
+          "seq_length": 1024,
+          "shape": [
+            4,
+            1024
+          ],
+          "size_mb": 0.06435871124267578
+        },
+        {
+          "file": "input_b4_s2048.pt",
+          "batch_size": 4,
+          "seq_length": 2048,
+          "shape": [
+            4,
+            2048
+          ],
+          "size_mb": 0.12685871124267578
+        },
+        {
+          "file": "input_b8_s128.pt",
+          "batch_size": 8,
+          "seq_length": 128,
+          "shape": [
+            8,
+            128
+          ],
+          "size_mb": 0.01747608184814453
+        },
+        {
+          "file": "input_b8_s256.pt",
+          "batch_size": 8,
+          "seq_length": 256,
+          "shape": [
+            8,
+            256
+          ],
+          "size_mb": 0.03310108184814453
+        },
+        {
+          "file": "input_b8_s512.pt",
+          "batch_size": 8,
+          "seq_length": 512,
+          "shape": [
+            8,
+            512
+          ],
+          "size_mb": 0.06435108184814453
+        },
+        {
+          "file": "input_b8_s1024.pt",
+          "batch_size": 8,
+          "seq_length": 1024,
+          "shape": [
+            8,
+            1024
+          ],
+          "size_mb": 0.12685871124267578
+        },
+        {
+          "file": "input_b8_s2048.pt",
+          "batch_size": 8,
+          "seq_length": 2048,
+          "shape": [
+            8,
+            2048
+          ],
+          "size_mb": 0.2518587112426758
+        },
+        {
+          "file": "input_b16_s128.pt",
+          "batch_size": 16,
+          "seq_length": 128,
+          "shape": [
+            16,
+            128
+          ],
+          "size_mb": 0.03310871124267578
+        },
+        {
+          "file": "input_b16_s256.pt",
+          "batch_size": 16,
+          "seq_length": 256,
+          "shape": [
+            16,
+            256
+          ],
+          "size_mb": 0.06435871124267578
+        },
+        {
+          "file": "input_b16_s512.pt",
+          "batch_size": 16,
+          "seq_length": 512,
+          "shape": [
+            16,
+            512
+          ],
+          "size_mb": 0.12685871124267578
+        },
+        {
+          "file": "input_b16_s1024.pt",
+          "batch_size": 16,
+          "seq_length": 1024,
+          "shape": [
+            16,
+            1024
+          ],
+          "size_mb": 0.25186634063720703
+        },
+        {
+          "file": "input_b16_s2048.pt",
+          "batch_size": 16,
+          "seq_length": 2048,
+          "shape": [
+            16,
+            2048
+          ],
+          "size_mb": 0.501866340637207
+        }
+      ],
+      "total_files": 20,
+      "total_size_mb": 1.7929801940917969
+    },
+    "CV": {
+      "description": "RGB image tensors normalized to [0, 1]",
+      "inputs": [
+        {
+          "file": "input_b1_224x224.pt",
+          "batch_size": 1,
+          "image_size": [
+            224,
+            224
+          ],
+          "shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "size_mb": 0.5759048461914062
+        },
+        {
+          "file": "input_b1_384x384.pt",
+          "batch_size": 1,
+          "image_size": [
+            384,
+            384
+          ],
+          "shape": [
+            1,
+            3,
+            384,
+            384
+          ],
+          "size_mb": 1.6891860961914062
+        },
+        {
+          "file": "input_b1_512x512.pt",
+          "batch_size": 1,
+          "image_size": [
+            512,
+            512
+          ],
+          "shape": [
+            1,
+            3,
+            512,
+            512
+          ],
+          "size_mb": 3.0016860961914062
+        },
+        {
+          "file": "input_b4_224x224.pt",
+          "batch_size": 4,
+          "image_size": [
+            224,
+            224
+          ],
+          "shape": [
+            4,
+            3,
+            224,
+            224
+          ],
+          "size_mb": 2.2985610961914062
+        },
+        {
+          "file": "input_b4_384x384.pt",
+          "batch_size": 4,
+          "image_size": [
+            384,
+            384
+          ],
+          "shape": [
+            4,
+            3,
+            384,
+            384
+          ],
+          "size_mb": 6.751686096191406
+        },
+        {
+          "file": "input_b4_512x512.pt",
+          "batch_size": 4,
+          "image_size": [
+            512,
+            512
+          ],
+          "shape": [
+            4,
+            3,
+            512,
+            512
+          ],
+          "size_mb": 12.001686096191406
+        },
+        {
+          "file": "input_b8_224x224.pt",
+          "batch_size": 8,
+          "image_size": [
+            224,
+            224
+          ],
+          "shape": [
+            8,
+            3,
+            224,
+            224
+          ],
+          "size_mb": 4.595436096191406
+        },
+        {
+          "file": "input_b8_384x384.pt",
+          "batch_size": 8,
+          "image_size": [
+            384,
+            384
+          ],
+          "shape": [
+            8,
+            3,
+            384,
+            384
+          ],
+          "size_mb": 13.501686096191406
+        },
+        {
+          "file": "input_b8_512x512.pt",
+          "batch_size": 8,
+          "image_size": [
+            512,
+            512
+          ],
+          "shape": [
+            8,
+            3,
+            512,
+            512
+          ],
+          "size_mb": 24.001686096191406
+        },
+        {
+          "file": "input_b16_224x224.pt",
+          "batch_size": 16,
+          "image_size": [
+            224,
+            224
+          ],
+          "shape": [
+            16,
+            3,
+            224,
+            224
+          ],
+          "size_mb": 9.189192771911621
+        },
+        {
+          "file": "input_b16_384x384.pt",
+          "batch_size": 16,
+          "image_size": [
+            384,
+            384
+          ],
+          "shape": [
+            16,
+            3,
+            384,
+            384
+          ],
+          "size_mb": 27.00169277191162
+        },
+        {
+          "file": "input_b16_512x512.pt",
+          "batch_size": 16,
+          "image_size": [
+            512,
+            512
+          ],
+          "shape": [
+            16,
+            3,
+            512,
+            512
+          ],
+          "size_mb": 48.00169277191162
+        },
+        {
+          "file": "input_b32_224x224.pt",
+          "batch_size": 32,
+          "image_size": [
+            224,
+            224
+          ],
+          "shape": [
+            32,
+            3,
+            224,
+            224
+          ],
+          "size_mb": 18.37669277191162
+        },
+        {
+          "file": "input_b32_384x384.pt",
+          "batch_size": 32,
+          "image_size": [
+            384,
+            384
+          ],
+          "shape": [
+            32,
+            3,
+            384,
+            384
+          ],
+          "size_mb": 54.00169277191162
+        },
+        {
+          "file": "input_b32_512x512.pt",
+          "batch_size": 32,
+          "image_size": [
+            512,
+            512
+          ],
+          "shape": [
+            32,
+            3,
+            512,
+            512
+          ],
+          "size_mb": 96.00169277191162
+        }
+      ],
+      "total_files": 15,
+      "total_size_mb": 320.9901752471924
+    },
+    "NLP": {
+      "description": "Tokenized text sequences for encoder models",
+      "inputs": [
+        {
+          "file": "input_b1_s64.pt",
+          "batch_size": 1,
+          "seq_length": 64,
+          "shape": [
+            1,
+            64
+          ],
+          "size_mb": 0.0035533905029296875
+        },
+        {
+          "file": "input_b1_s128.pt",
+          "batch_size": 1,
+          "seq_length": 128,
+          "shape": [
+            1,
+            128
+          ],
+          "size_mb": 0.005026817321777344
+        },
+        {
+          "file": "input_b1_s256.pt",
+          "batch_size": 1,
+          "seq_length": 256,
+          "shape": [
+            1,
+            256
+          ],
+          "size_mb": 0.008017539978027344
+        },
+        {
+          "file": "input_b1_s512.pt",
+          "batch_size": 1,
+          "seq_length": 512,
+          "shape": [
+            1,
+            512
+          ],
+          "size_mb": 0.013876914978027344
+        },
+        {
+          "file": "input_b8_s64.pt",
+          "batch_size": 8,
+          "seq_length": 64,
+          "shape": [
+            8,
+            64
+          ],
+          "size_mb": 0.013807296752929688
+        },
+        {
+          "file": "input_b8_s128.pt",
+          "batch_size": 8,
+          "seq_length": 128,
+          "shape": [
+            8,
+            128
+          ],
+          "size_mb": 0.025534629821777344
+        },
+        {
+          "file": "input_b8_s256.pt",
+          "batch_size": 8,
+          "seq_length": 256,
+          "shape": [
+            8,
+            256
+          ],
+          "size_mb": 0.049033164978027344
+        },
+        {
+          "file": "input_b8_s512.pt",
+          "batch_size": 8,
+          "seq_length": 512,
+          "shape": [
+            8,
+            512
+          ],
+          "size_mb": 0.09590816497802734
+        },
+        {
+          "file": "input_b16_s64.pt",
+          "batch_size": 16,
+          "seq_length": 64,
+          "shape": [
+            16,
+            64
+          ],
+          "size_mb": 0.025534629821777344
+        },
+        {
+          "file": "input_b16_s128.pt",
+          "batch_size": 16,
+          "seq_length": 128,
+          "shape": [
+            16,
+            128
+          ],
+          "size_mb": 0.048980712890625
+        },
+        {
+          "file": "input_b16_s256.pt",
+          "batch_size": 16,
+          "seq_length": 256,
+          "shape": [
+            16,
+            256
+          ],
+          "size_mb": 0.095916748046875
+        },
+        {
+          "file": "input_b16_s512.pt",
+          "batch_size": 16,
+          "seq_length": 512,
+          "shape": [
+            16,
+            512
+          ],
+          "size_mb": 0.189666748046875
+        },
+        {
+          "file": "input_b32_s64.pt",
+          "batch_size": 32,
+          "seq_length": 64,
+          "shape": [
+            32,
+            64
+          ],
+          "size_mb": 0.048972129821777344
+        },
+        {
+          "file": "input_b32_s128.pt",
+          "batch_size": 32,
+          "seq_length": 128,
+          "shape": [
+            32,
+            128
+          ],
+          "size_mb": 0.095855712890625
+        },
+        {
+          "file": "input_b32_s256.pt",
+          "batch_size": 32,
+          "seq_length": 256,
+          "shape": [
+            32,
+            256
+          ],
+          "size_mb": 0.189666748046875
+        },
+        {
+          "file": "input_b32_s512.pt",
+          "batch_size": 32,
+          "seq_length": 512,
+          "shape": [
+            32,
+            512
+          ],
+          "size_mb": 0.377166748046875
+        }
+      ],
+      "total_files": 16,
+      "total_size_mb": 1.2865180969238281
+    },
+    "Audio": {
+      "description": "Raw audio waveforms",
+      "inputs": [
+        {
+          "file": "input_b1_1.0s.pt",
+          "batch_size": 1,
+          "audio_length": 16000,
+          "duration_s": 1.0,
+          "shape": [
+            1,
+            16000
+          ],
+          "size_mb": 0.06270122528076172
+        },
+        {
+          "file": "input_b1_2.0s.pt",
+          "batch_size": 1,
+          "audio_length": 32000,
+          "duration_s": 2.0,
+          "shape": [
+            1,
+            32000
+          ],
+          "size_mb": 0.12373638153076172
+        },
+        {
+          "file": "input_b1_3.0s.pt",
+          "batch_size": 1,
+          "audio_length": 48000,
+          "duration_s": 3.0,
+          "shape": [
+            1,
+            48000
+          ],
+          "size_mb": 0.18477153778076172
+        },
+        {
+          "file": "input_b1_5.0s.pt",
+          "batch_size": 1,
+          "audio_length": 80000,
+          "duration_s": 5.0,
+          "shape": [
+            1,
+            80000
+          ],
+          "size_mb": 0.3068418502807617
+        },
+        {
+          "file": "input_b4_1.0s.pt",
+          "batch_size": 4,
+          "audio_length": 16000,
+          "duration_s": 1.0,
+          "shape": [
+            4,
+            16000
+          ],
+          "size_mb": 0.24580669403076172
+        },
+        {
+          "file": "input_b4_2.0s.pt",
+          "batch_size": 4,
+          "audio_length": 32000,
+          "duration_s": 2.0,
+          "shape": [
+            4,
+            32000
+          ],
+          "size_mb": 0.4899473190307617
+        },
+        {
+          "file": "input_b4_3.0s.pt",
+          "batch_size": 4,
+          "audio_length": 48000,
+          "duration_s": 3.0,
+          "shape": [
+            4,
+            48000
+          ],
+          "size_mb": 0.7340879440307617
+        },
+        {
+          "file": "input_b4_5.0s.pt",
+          "batch_size": 4,
+          "audio_length": 80000,
+          "duration_s": 5.0,
+          "shape": [
+            4,
+            80000
+          ],
+          "size_mb": 1.2223691940307617
+        },
+        {
+          "file": "input_b8_1.0s.pt",
+          "batch_size": 8,
+          "audio_length": 16000,
+          "duration_s": 1.0,
+          "shape": [
+            8,
+            16000
+          ],
+          "size_mb": 0.4899473190307617
+        },
+        {
+          "file": "input_b8_2.0s.pt",
+          "batch_size": 8,
+          "audio_length": 32000,
+          "duration_s": 2.0,
+          "shape": [
+            8,
+            32000
+          ],
+          "size_mb": 0.9782285690307617
+        },
+        {
+          "file": "input_b8_3.0s.pt",
+          "batch_size": 8,
+          "audio_length": 48000,
+          "duration_s": 3.0,
+          "shape": [
+            8,
+            48000
+          ],
+          "size_mb": 1.4665098190307617
+        },
+        {
+          "file": "input_b8_5.0s.pt",
+          "batch_size": 8,
+          "audio_length": 80000,
+          "duration_s": 5.0,
+          "shape": [
+            8,
+            80000
+          ],
+          "size_mb": 2.4430723190307617
+        }
+      ],
+      "total_files": 12,
+      "total_size_mb": 8.74802017211914
+    },
+    "Multimodal": {
+      "description": "Image-text pairs",
+      "inputs": [
+        {
+          "file": "input_b1_224x224_s32.pt",
+          "batch_size": 1,
+          "image_size": [
+            224,
+            224
+          ],
+          "seq_length": 32,
+          "image_shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "text_shape": [
+            1,
+            32
+          ],
+          "size_mb": 0.5769252777099609
+        },
+        {
+          "file": "input_b1_224x224_s64.pt",
+          "batch_size": 1,
+          "image_size": [
+            224,
+            224
+          ],
+          "seq_length": 64,
+          "image_shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "text_shape": [
+            1,
+            64
+          ],
+          "size_mb": 0.5774135589599609
+        },
+        {
+          "file": "input_b1_224x224_s77.pt",
+          "batch_size": 1,
+          "image_size": [
+            224,
+            224
+          ],
+          "seq_length": 77,
+          "image_shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "text_shape": [
+            1,
+            77
+          ],
+          "size_mb": 0.5775356292724609
+        },
+        {
+          "file": "input_b1_336x336_s32.pt",
+          "batch_size": 1,
+          "image_size": [
+            336,
+            336
+          ],
+          "seq_length": 32,
+          "image_shape": [
+            1,
+            3,
+            336,
+            336
+          ],
+          "text_shape": [
+            1,
+            32
+          ],
+          "size_mb": 1.294759750366211
+        },
+        {
+          "file": "input_b1_336x336_s64.pt",
+          "batch_size": 1,
+          "image_size": [
+            336,
+            336
+          ],
+          "seq_length": 64,
+          "image_shape": [
+            1,
+            3,
+            336,
+            336
+          ],
+          "text_shape": [
+            1,
+            64
+          ],
+          "size_mb": 1.295248031616211
+        },
+        {
+          "file": "input_b1_336x336_s77.pt",
+          "batch_size": 1,
+          "image_size": [
+            336,
+            336
+          ],
+          "seq_length": 77,
+          "image_shape": [
+            1,
+            3,
+            336,
+            336
+          ],
+          "text_shape": [
+            1,
+            77
+          ],
+          "size_mb": 1.295370101928711
+        },
+        {
+          "file": "input_b4_224x224_s32.pt",
+          "batch_size": 4,
+          "image_size": [
+            224,
+            224
+          ],
+          "seq_length": 32,
+          "image_shape": [
+            4,
+            3,
+            224,
+            224
+          ],
+          "text_shape": [
+            4,
+            32
+          ],
+          "size_mb": 2.301046371459961
+        },
+        {
+          "file": "input_b4_224x224_s64.pt",
+          "batch_size": 4,
+          "image_size": [
+            224,
+            224
+          ],
+          "seq_length": 64,
+          "image_shape": [
+            4,
+            3,
+            224,
+            224
+          ],
+          "text_shape": [
+            4,
+            64
+          ],
+          "size_mb": 2.302999496459961
+        },
+        {
+          "file": "input_b4_224x224_s77.pt",
+          "batch_size": 4,
+          "image_size": [
+            224,
+            224
+          ],
+          "seq_length": 77,
+          "image_shape": [
+            4,
+            3,
+            224,
+            224
+          ],
+          "text_shape": [
+            4,
+            77
+          ],
+          "size_mb": 2.303731918334961
+        },
+        {
+          "file": "input_b4_336x336_s32.pt",
+          "batch_size": 4,
+          "image_size": [
+            336,
+            336
+          ],
+          "seq_length": 32,
+          "image_shape": [
+            4,
+            3,
+            336,
+            336
+          ],
+          "text_shape": [
+            4,
+            32
+          ],
+          "size_mb": 5.172201156616211
+        },
+        {
+          "file": "input_b4_336x336_s64.pt",
+          "batch_size": 4,
+          "image_size": [
+            336,
+            336
+          ],
+          "seq_length": 64,
+          "image_shape": [
+            4,
+            3,
+            336,
+            336
+          ],
+          "text_shape": [
+            4,
+            64
+          ],
+          "size_mb": 5.174154281616211
+        },
+        {
+          "file": "input_b4_336x336_s77.pt",
+          "batch_size": 4,
+          "image_size": [
+            336,
+            336
+          ],
+          "seq_length": 77,
+          "image_shape": [
+            4,
+            3,
+            336,
+            336
+          ],
+          "text_shape": [
+            4,
+            77
+          ],
+          "size_mb": 5.174886703491211
+        },
+        {
+          "file": "input_b8_224x224_s32.pt",
+          "batch_size": 8,
+          "image_size": [
+            224,
+            224
+          ],
+          "seq_length": 32,
+          "image_shape": [
+            8,
+            3,
+            224,
+            224
+          ],
+          "text_shape": [
+            8,
+            32
+          ],
+          "size_mb": 4.599874496459961
+        },
+        {
+          "file": "input_b8_224x224_s64.pt",
+          "batch_size": 8,
+          "image_size": [
+            224,
+            224
+          ],
+          "seq_length": 64,
+          "image_shape": [
+            8,
+            3,
+            224,
+            224
+          ],
+          "text_shape": [
+            8,
+            64
+          ],
+          "size_mb": 4.603780746459961
+        },
+        {
+          "file": "input_b8_224x224_s77.pt",
+          "batch_size": 8,
+          "image_size": [
+            224,
+            224
+          ],
+          "seq_length": 77,
+          "image_shape": [
+            8,
+            3,
+            224,
+            224
+          ],
+          "text_shape": [
+            8,
+            77
+          ],
+          "size_mb": 4.605367660522461
+        },
+        {
+          "file": "input_b8_336x336_s32.pt",
+          "batch_size": 8,
+          "image_size": [
+            336,
+            336
+          ],
+          "seq_length": 32,
+          "image_shape": [
+            8,
+            3,
+            336,
+            336
+          ],
+          "text_shape": [
+            8,
+            32
+          ],
+          "size_mb": 10.342123031616211
+        },
+        {
+          "file": "input_b8_336x336_s64.pt",
+          "batch_size": 8,
+          "image_size": [
+            336,
+            336
+          ],
+          "seq_length": 64,
+          "image_shape": [
+            8,
+            3,
+            336,
+            336
+          ],
+          "text_shape": [
+            8,
+            64
+          ],
+          "size_mb": 10.346029281616211
+        },
+        {
+          "file": "input_b8_336x336_s77.pt",
+          "batch_size": 8,
+          "image_size": [
+            336,
+            336
+          ],
+          "seq_length": 77,
+          "image_shape": [
+            8,
+            3,
+            336,
+            336
+          ],
+          "text_shape": [
+            8,
+            77
+          ],
+          "size_mb": 10.347616195678711
+        }
+      ],
+      "total_files": 18,
+      "total_size_mb": 72.89106369018555
+    },
+    "Diffusion": {
+      "description": "Latent noise tensors and text embeddings",
+      "inputs": [
+        {
+          "file": "input_b1_64x64.pt",
+          "batch_size": 1,
+          "latent_size": [
+            64,
+            64
+          ],
+          "latent_shape": [
+            1,
+            4,
+            64,
+            64
+          ],
+          "size_mb": 0.290252685546875
+        },
+        {
+          "file": "input_b1_96x96.pt",
+          "batch_size": 1,
+          "latent_size": [
+            96,
+            96
+          ],
+          "latent_shape": [
+            1,
+            4,
+            96,
+            96
+          ],
+          "size_mb": 0.368377685546875
+        },
+        {
+          "file": "input_b1_128x128.pt",
+          "batch_size": 1,
+          "latent_size": [
+            128,
+            128
+          ],
+          "latent_shape": [
+            1,
+            4,
+            128,
+            128
+          ],
+          "size_mb": 0.4777698516845703
+        },
+        {
+          "file": "input_b2_64x64.pt",
+          "batch_size": 2,
+          "latent_size": [
+            64,
+            64
+          ],
+          "latent_shape": [
+            2,
+            4,
+            64,
+            64
+          ],
+          "size_mb": 0.578338623046875
+        },
+        {
+          "file": "input_b2_96x96.pt",
+          "batch_size": 2,
+          "latent_size": [
+            96,
+            96
+          ],
+          "latent_shape": [
+            2,
+            4,
+            96,
+            96
+          ],
+          "size_mb": 0.734588623046875
+        },
+        {
+          "file": "input_b2_128x128.pt",
+          "batch_size": 2,
+          "latent_size": [
+            128,
+            128
+          ],
+          "latent_shape": [
+            2,
+            4,
+            128,
+            128
+          ],
+          "size_mb": 0.9533557891845703
+        },
+        {
+          "file": "input_b4_64x64.pt",
+          "batch_size": 4,
+          "latent_size": [
+            64,
+            64
+          ],
+          "latent_shape": [
+            4,
+            4,
+            64,
+            64
+          ],
+          "size_mb": 1.154510498046875
+        },
+        {
+          "file": "input_b4_96x96.pt",
+          "batch_size": 4,
+          "latent_size": [
+            96,
+            96
+          ],
+          "latent_shape": [
+            4,
+            4,
+            96,
+            96
+          ],
+          "size_mb": 1.467010498046875
+        },
+        {
+          "file": "input_b4_128x128.pt",
+          "batch_size": 4,
+          "latent_size": [
+            128,
+            128
+          ],
+          "latent_shape": [
+            4,
+            4,
+            128,
+            128
+          ],
+          "size_mb": 1.9045276641845703
+        }
+      ],
+      "total_files": 9,
+      "total_size_mb": 7.928731918334961
+    }
+  }
+}
