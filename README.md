@@ -47,6 +47,12 @@ python experiments/exp_cross_platform.py
 # Run GNN predictor evaluation
 python experiments/exp_gnn_by_operator.py
 
+# Run Shapley value calculation
+python experiments/exp_shapley_real.py
+
+# Run surrogate model speedup evaluation
+python experiments/exp_surrogate_speedup.py
+
 # Run FITAS migration case study
 python experiments/exp_fitas_migration.py
 ```
@@ -99,14 +105,15 @@ het-benchmark/
 │   ├── exp_copa_attribution_full.py
 │   ├── exp_cross_platform.py
 │   ├── exp_gnn_by_operator.py
-│   ├── exp_fitas_migration.py
-│   └── exp_shapley_real.py
+│   ├── exp_shapley_real.py
+│   ├── exp_surrogate_speedup.py
+│   └── exp_fitas_migration.py
 ├── data/                         # Dataset files
 │   ├── model_dataset.json        # 34 models with 6,244 operators
 │   ├── moh_kg.json               # Knowledge graph
 │   └── hardware_platforms.json   # Hardware specifications
 ├── models/                       # Trained models
-│   └── rgat_final.pt             # Trained RGAT model
+│   └── rgat_final.pt             # Trained RGAT model (3.7MB, 313K params)
 ├── results/                      # Experiment results
 ├── figures/                      # Generated figures
 ├── examples/                     # Example scripts
@@ -115,43 +122,48 @@ het-benchmark/
 
 ## Experimental Results
 
-### COPA Attribution Accuracy
+### COPA Shapley Sampling Accuracy
 
-| Sampling Strategy | Samples | MRE (%) | Time (s) |
-|-------------------|---------|---------|----------|
-| Permutation | 100 | 0.82 | 12.3 |
-| Subset | 50 | 0.95 | 8.7 |
-| Stratified | 100 | 0.71 | 15.2 |
+Evaluated on NVIDIA A100 80GB with real operator latency measurements:
+
+| Model Scale | Operators | Strategy | K=100 MRE (%) | K=200 MRE (%) |
+|-------------|-----------|----------|---------------|---------------|
+| Small | 8 | Permutation | 1.37 | 0.71 |
+| Small | 8 | Stratified | 4.70 | 2.52 |
+| Medium | 15 | Permutation | 1.14 | 1.68 |
+| Large | 25 | Permutation | 0.89 | 0.62 |
 
 ### Surrogate Model Speedup
 
-| Model | Full Measurement (s) | Surrogate (s) | Speedup |
-|-------|---------------------|---------------|---------|
-| GPT-2 | 847.2 | 1.98 | 428× |
-| BERT-Base | 523.1 | 0.89 | 588× |
-| ResNet-50 | 312.4 | 0.12 | 2,603× |
-| ViT-Base | 456.7 | 0.21 | 2,175× |
-
-### GNN Predictor Performance
-
-| Operator Family | MRE (%) |
-|-----------------|---------|
-| MatMul/Linear | 8.2 |
-| Conv2D | 11.5 |
-| Attention | 18.7 |
-| LayerNorm | 6.3 |
-| Activation | 4.1 |
-| **Overall** | **14.3** |
+| Model | Operators | Full Model (ms) | Surrogate (ms) | Speedup |
+|-------|-----------|-----------------|----------------|---------|
+| Small MLP | 12 | 0.326 | 0.00076 | 429× |
+| Medium MLP | 36 | 2.11 | 0.002 | 1,058× |
+| Large MLP | 72 | 8.37 | 0.0042 | 1,993× |
+| Small Transformer | 18 | 1.34 | 0.00093 | 1,440× |
+| Medium Transformer | 54 | 11.64 | 0.00276 | 4,219× |
+| Large Transformer | 108 | 46.12 | 0.00559 | 8,252× |
 
 ### Cross-Platform Performance (Inference Latency, ms)
 
+Measured on NVIDIA A100 80GB, with cross-platform estimates based on hardware specifications:
+
 | Model | A100 | Ascend 910B | MLU370 | Intel GPU Max | Intel Xeon |
 |-------|------|-------------|--------|---------------|------------|
-| ResNet50 | 4.77 | 5.07 | 6.93 | 3.41 | 170.2 |
-| MobileNetV2 | 4.32 | 5.32 | 8.87 | 2.94 | 78.6 |
-| BERT-Base | 2.66 | 3.27 | 5.46 | 1.81 | 48.4 |
-| GPT-2 | 31.98 | 39.32 | 65.57 | 21.71 | 581.4 |
-| ViT-Base | 2.60 | 3.20 | 5.33 | 1.76 | 47.3 |
+| Small Transformer | 1.78 | 2.51 | 3.70 | 1.19 | 80.0 |
+| Medium Transformer | 5.48 | 7.72 | 11.40 | 3.68 | 246.5 |
+| Large Transformer | 28.91 | 40.74 | 60.14 | 19.40 | 1300.7 |
+| ResNet-18 | 0.90 | 1.14 | 1.62 | 0.63 | 56.4 |
+
+### MOH-KG Guided Optimization
+
+| Optimization Mode | Latency Reduction (%) | Accuracy Impact |
+|-------------------|----------------------|-----------------|
+| Top-1 MOH-KG Guided | 0.6 | -0.2% |
+| Top-3 MOH-KG Guided | 1.9 | +0.0% |
+| Top-5 MOH-KG Guided | 2.6 | -0.1% |
+| Random Selection | 1.0 | -0.5% |
+| Greedy Selection | 2.6 | -0.3% |
 
 ## Core Algorithms
 
@@ -172,6 +184,7 @@ $$\phi_i = \sum_{S \subseteq N \setminus \{i\}} \frac{|S|!(|N|-|S|-1)!}{|N|!} [v
 
 - **Node Types**: Hardware, OperatorType, Model, OperatorInstance
 - **Edge Types**: r_contains, r_has_type, r_supports, r_seq, r_sim, r_perf
+- **Statistics**: 6,299 nodes, 29,199 edges
 
 ### RGAT (Relational Graph Attention Network)
 
@@ -187,7 +200,7 @@ If you use Het-Benchmark in your research, please cite:
 ```bibtex
 @inproceedings{hetbenchmark2026,
   title={Beyond Black-Box Benchmarking: A Neuro-Symbolic Evaluation Paradigm for Zero-Shot AI Model Migration},
-  author={Wang, Jingyi and others},
+  author={Wang, Jingyi and Wang, Jia},
   booktitle={Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI)},
   year={2026}
 }
@@ -199,7 +212,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Acknowledgments
 
-This work was supported by [Institution Name]. We thank the anonymous reviewers for their valuable feedback.
+This work was supported by Jingyi Wang and Jia Wang. We thank the anonymous reviewers for their valuable feedback.
 
 ---
 
