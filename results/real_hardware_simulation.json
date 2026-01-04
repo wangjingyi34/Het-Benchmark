@@ -1,0 +1,289 @@
+{
+  "experiment": "Real Hardware Simulation",
+  "timestamp": "2026-01-04T19:39:10.274947",
+  "hardware": "NVIDIA A100 80GB PCIe",
+  "cuda_version": "11.8",
+  "pytorch_version": "2.1.0+cu118",
+  "baseline_measurements": {
+    "ResNet50": {
+      "platform": "A100_80GB",
+      "timing": {
+        "mean_ms": 4.444521889090538,
+        "std_ms": 0.01748870735231786,
+        "min_ms": 4.417398013174534,
+        "max_ms": 4.4999392703175545,
+        "median_ms": 4.44071926176548
+      },
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "dtype": "float16"
+    },
+    "BERT_Base": {
+      "platform": "A100_80GB",
+      "timing": {
+        "mean_ms": 2.66055591404438,
+        "std_ms": 0.4326860599458236,
+        "min_ms": 2.569255419075489,
+        "max_ms": 5.683681927621365,
+        "median_ms": 2.59528961032629
+      },
+      "input_shape": [
+        1,
+        512
+      ],
+      "dtype": "float16"
+    },
+    "GPT2_Small": {
+      "platform": "A100_80GB",
+      "timing": {
+        "mean_ms": 31.98177721351385,
+        "std_ms": 33.665759223245466,
+        "min_ms": 8.329627104103565,
+        "max_ms": 85.01117303967476,
+        "median_ms": 8.587051648646593
+      },
+      "input_shape": [
+        1,
+        512
+      ],
+      "dtype": "float16"
+    },
+    "ViT_Base": {
+      "platform": "A100_80GB",
+      "timing": {
+        "mean_ms": 2.59586026892066,
+        "std_ms": 0.03096762067338232,
+        "min_ms": 2.5189146399497986,
+        "max_ms": 2.780446782708168,
+        "median_ms": 2.5933501310646534
+      },
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "dtype": "float16"
+    }
+  },
+  "simulated_measurements": {
+    "Ascend_910B": {
+      "ResNet50": {
+        "timing": {
+          "mean_ms": 5.2545858201431015,
+          "std_ms": 0.020676220290800743,
+          "compute_factor": 0.9746588693957114,
+          "bandwidth_factor": 1.6666666666666667,
+          "combined_factor": 1.182261208576998
+        },
+        "baseline_mean_ms": 4.444521889090538,
+        "relative_performance": 84.58367683429515
+      },
+      "BERT_Base": {
+        "timing": {
+          "mean_ms": 3.5136971379436015,
+          "std_ms": 0.5714323696165604,
+          "compute_factor": 0.9746588693957114,
+          "bandwidth_factor": 1.6666666666666667,
+          "combined_factor": 1.320662768031189
+        },
+        "baseline_mean_ms": 2.66055591404438,
+        "relative_performance": 75.71955719557195
+      },
+      "GPT2_Small": {
+        "timing": {
+          "mean_ms": 42.23714242135601,
+          "std_ms": 44.46111476364289,
+          "compute_factor": 0.9746588693957114,
+          "bandwidth_factor": 1.6666666666666667,
+          "combined_factor": 1.320662768031189
+        },
+        "baseline_mean_ms": 31.98177721351385,
+        "relative_performance": 75.71955719557195
+      },
+      "ViT_Base": {
+        "timing": {
+          "mean_ms": 3.428256008174946,
+          "std_ms": 0.04089778363784897,
+          "compute_factor": 0.9746588693957114,
+          "bandwidth_factor": 1.6666666666666667,
+          "combined_factor": 1.320662768031189
+        },
+        "baseline_mean_ms": 2.59586026892066,
+        "relative_performance": 75.71955719557195
+      }
+    },
+    "MLU370_X8": {
+      "ResNet50": {
+        "timing": {
+          "mean_ms": 6.752497323985706,
+          "std_ms": 0.02657033816986335,
+          "compute_factor": 1.218026796589525,
+          "bandwidth_factor": 2.2222222222222223,
+          "combined_factor": 1.519285424279334
+        },
+        "baseline_mean_ms": 4.444521889090538,
+        "relative_performance": 65.82041688936397
+      },
+      "BERT_Base": {
+        "timing": {
+          "mean_ms": 4.576487436392485,
+          "std_ms": 0.7442738965910702,
+          "compute_factor": 1.218026796589525,
+          "bandwidth_factor": 2.2222222222222223,
+          "combined_factor": 1.7201245094058737
+        },
+        "baseline_mean_ms": 2.66055591404438,
+        "relative_performance": 58.135326514555466
+      },
+      "GPT2_Small": {
+        "timing": {
+          "mean_ms": 55.012638839323465,
+          "std_ms": 57.909297567661376,
+          "compute_factor": 1.218026796589525,
+          "bandwidth_factor": 2.2222222222222223,
+          "combined_factor": 1.7201245094058737
+        },
+        "baseline_mean_ms": 31.98177721351385,
+        "relative_performance": 58.135326514555466
+      },
+      "ViT_Base": {
+        "timing": {
+          "mean_ms": 4.46520287156335,
+          "std_ms": 0.05326816331826895,
+          "compute_factor": 1.218026796589525,
+          "bandwidth_factor": 2.2222222222222223,
+          "combined_factor": 1.7201245094058737
+        },
+        "baseline_mean_ms": 2.59586026892066,
+        "relative_performance": 58.135326514555466
+      }
+    },
+    "Intel_GPU_Max": {
+      "ResNet50": {
+        "timing": {
+          "mean_ms": 3.144763398308024,
+          "std_ms": 0.012374299899452988,
+          "compute_factor": 0.7429420505200593,
+          "bandwidth_factor": 0.625,
+          "combined_factor": 0.7075594353640415
+        },
+        "baseline_mean_ms": 4.444521889090538,
+        "relative_performance": 141.33088331802074
+      },
+      "BERT_Base": {
+        "timing": {
+          "mean_ms": 1.8197431562905702,
+          "std_ms": 0.29594472803686767,
+          "compute_factor": 0.7429420505200593,
+          "bandwidth_factor": 0.625,
+          "combined_factor": 0.6839710252600297
+        },
+        "baseline_mean_ms": 2.66055591404438,
+        "relative_performance": 146.2050237610319
+      },
+      "GPT2_Small": {
+        "timing": {
+          "mean_ms": 21.874608950364927,
+          "std_ms": 23.026403852080502,
+          "compute_factor": 0.7429420505200593,
+          "bandwidth_factor": 0.625,
+          "combined_factor": 0.6839710252600297
+        },
+        "baseline_mean_ms": 31.98177721351385,
+        "relative_performance": 146.2050237610319
+      },
+      "ViT_Base": {
+        "timing": {
+          "mean_ms": 1.7754932095654403,
+          "std_ms": 0.021180955261836998,
+          "compute_factor": 0.7429420505200593,
+          "bandwidth_factor": 0.625,
+          "combined_factor": 0.6839710252600297
+        },
+        "baseline_mean_ms": 2.59586026892066,
+        "relative_performance": 146.2050237610319
+      }
+    },
+    "Intel_Xeon": {
+      "ResNet50": {
+        "timing": {
+          "mean_ms": 315.3884513336188,
+          "std_ms": 1.2410190489135071,
+          "compute_factor": 97.08737864077669,
+          "bandwidth_factor": 10.0,
+          "combined_factor": 70.96116504854368
+        },
+        "baseline_mean_ms": 4.444521889090538,
+        "relative_performance": 1.4092215077301957
+      },
+      "BERT_Base": {
+        "timing": {
+          "mean_ms": 142.45597928111414,
+          "std_ms": 23.167607967002105,
+          "compute_factor": 97.08737864077669,
+          "bandwidth_factor": 10.0,
+          "combined_factor": 53.543689320388346
+        },
+        "baseline_mean_ms": 2.66055591404438,
+        "relative_performance": 1.8676337262012694
+      },
+      "GPT2_Small": {
+        "timing": {
+          "mean_ms": 1712.4223430342608,
+          "std_ms": 1802.5889525844536,
+          "compute_factor": 97.08737864077669,
+          "bandwidth_factor": 10.0,
+          "combined_factor": 53.543689320388346
+        },
+        "baseline_mean_ms": 31.98177721351385,
+        "relative_performance": 1.8676337262012694
+      },
+      "ViT_Base": {
+        "timing": {
+          "mean_ms": 138.99193575822756,
+          "std_ms": 1.6581206603272183,
+          "compute_factor": 97.08737864077669,
+          "bandwidth_factor": 10.0,
+          "combined_factor": 53.543689320388346
+        },
+        "baseline_mean_ms": 2.59586026892066,
+        "relative_performance": 1.8676337262012694
+      }
+    }
+  },
+  "cross_platform_comparison": {
+    "ResNet50": {
+      "A100_80GB": 100.0,
+      "Ascend_910B": 84.58367683429515,
+      "MLU370_X8": 65.82041688936397,
+      "Intel_GPU_Max": 141.33088331802074,
+      "Intel_Xeon": 1.4092215077301957
+    },
+    "BERT_Base": {
+      "A100_80GB": 100.0,
+      "Ascend_910B": 75.71955719557195,
+      "MLU370_X8": 58.135326514555466,
+      "Intel_GPU_Max": 146.2050237610319,
+      "Intel_Xeon": 1.8676337262012694
+    },
+    "GPT2_Small": {
+      "A100_80GB": 100.0,
+      "Ascend_910B": 75.71955719557195,
+      "MLU370_X8": 58.135326514555466,
+      "Intel_GPU_Max": 146.2050237610319,
+      "Intel_Xeon": 1.8676337262012694
+    },
+    "ViT_Base": {
+      "A100_80GB": 100.0,
+      "Ascend_910B": 75.71955719557195,
+      "MLU370_X8": 58.135326514555466,
+      "Intel_GPU_Max": 146.2050237610319,
+      "Intel_Xeon": 1.8676337262012694
+    }
+  }
+}

@@ -1,0 +1,5457 @@
+{
+  "timestamp": "2026-01-04T14:42:49.795826",
+  "experiment_count": 13,
+  "all_results": {
+    "shapley_real_results.json": {
+      "experiment": "Real Shapley Value Calculation",
+      "device": "cuda",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "timestamp": "2026-01-04T17:40:28.273970",
+      "results": [
+        {
+          "Model Scale": "Small",
+          "n": 8,
+          "K": 50,
+          "Permutation MRE (%)": 0.98,
+          "Permutation Time (s)": 0.001,
+          "Subset MRE (%)": 4.19,
+          "Subset Time (s)": 0.0,
+          "Stratified MRE (%)": 2.95,
+          "Stratified Time (s)": 0.0
+        },
+        {
+          "Model Scale": "Small",
+          "n": 8,
+          "K": 100,
+          "Permutation MRE (%)": 1.37,
+          "Permutation Time (s)": 0.002,
+          "Subset MRE (%)": 2.76,
+          "Subset Time (s)": 0.001,
+          "Stratified MRE (%)": 4.72,
+          "Stratified Time (s)": 0.001
+        },
+        {
+          "Model Scale": "Small",
+          "n": 8,
+          "K": 200,
+          "Permutation MRE (%)": 0.72,
+          "Permutation Time (s)": 0.005,
+          "Subset MRE (%)": 2.47,
+          "Subset Time (s)": 0.001,
+          "Stratified MRE (%)": 2.54,
+          "Stratified Time (s)": 0.001
+        },
+        {
+          "Model Scale": "Medium",
+          "n": 15,
+          "K": 50,
+          "Permutation MRE (%)": 1.85,
+          "Permutation Time (s)": 0.003,
+          "Subset MRE (%)": 8.5,
+          "Subset Time (s)": 0.0,
+          "Stratified MRE (%)": 7.99,
+          "Stratified Time (s)": 0.001
+        },
+        {
+          "Model Scale": "Medium",
+          "n": 15,
+          "K": 100,
+          "Permutation MRE (%)": 1.14,
+          "Permutation Time (s)": 0.006,
+          "Subset MRE (%)": 4.59,
+          "Subset Time (s)": 0.001,
+          "Stratified MRE (%)": 7.37,
+          "Stratified Time (s)": 0.007
+        },
+        {
+          "Model Scale": "Medium",
+          "n": 15,
+          "K": 200,
+          "Permutation MRE (%)": 1.68,
+          "Permutation Time (s)": 0.012,
+          "Subset MRE (%)": 4.03,
+          "Subset Time (s)": 0.002,
+          "Stratified MRE (%)": 3.35,
+          "Stratified Time (s)": 0.002
+        },
+        {
+          "Model Scale": "Large",
+          "n": 25,
+          "K": 50,
+          "Permutation MRE (%)": 1.93,
+          "Permutation Time (s)": 0.007,
+          "Subset MRE (%)": 16.33,
+          "Subset Time (s)": 0.001,
+          "Stratified MRE (%)": 9.05,
+          "Stratified Time (s)": 0.001
+        },
+        {
+          "Model Scale": "Large",
+          "n": 25,
+          "K": 100,
+          "Permutation MRE (%)": 1.14,
+          "Permutation Time (s)": 0.014,
+          "Subset MRE (%)": 7.32,
+          "Subset Time (s)": 0.001,
+          "Stratified MRE (%)": 7.91,
+          "Stratified Time (s)": 0.002
+        },
+        {
+          "Model Scale": "Large",
+          "n": 25,
+          "K": 200,
+          "Permutation MRE (%)": 0.88,
+          "Permutation Time (s)": 0.028,
+          "Subset MRE (%)": 4.34,
+          "Subset Time (s)": 0.002,
+          "Stratified MRE (%)": 4.94,
+          "Stratified Time (s)": 0.003
+        }
+      ]
+    },
+    "surrogate_speedup_results.json": {
+      "experiment": "Surrogate vs Full Model Evaluation Time",
+      "device": "cuda",
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "timestamp": "2026-01-04T17:40:44.870828",
+      "results": [
+        {
+          "Model": "Small MLP",
+          "Type": "mlp",
+          "Layers": 4,
+          "Operators": 12,
+          "Full Model Time (ms)": 0.3261,
+          "Surrogate Time (ms)": 0.00076,
+          "Speedup": "429\u00d7"
+        },
+        {
+          "Model": "Medium MLP",
+          "Type": "mlp",
+          "Layers": 12,
+          "Operators": 36,
+          "Full Model Time (ms)": 2.1109,
+          "Surrogate Time (ms)": 0.001995,
+          "Speedup": "1058\u00d7"
+        },
+        {
+          "Model": "Large MLP",
+          "Type": "mlp",
+          "Layers": 24,
+          "Operators": 72,
+          "Full Model Time (ms)": 8.3664,
+          "Surrogate Time (ms)": 0.004198,
+          "Speedup": "1993\u00d7"
+        },
+        {
+          "Model": "Small Transformer",
+          "Type": "transformer",
+          "Layers": 2,
+          "Operators": 16,
+          "Full Model Time (ms)": 1.3417,
+          "Surrogate Time (ms)": 0.000912,
+          "Speedup": "1471\u00d7"
+        },
+        {
+          "Model": "Medium Transformer",
+          "Type": "transformer",
+          "Layers": 6,
+          "Operators": 48,
+          "Full Model Time (ms)": 11.5076,
+          "Surrogate Time (ms)": 0.002705,
+          "Speedup": "4254\u00d7"
+        },
+        {
+          "Model": "Large Transformer",
+          "Type": "transformer",
+          "Layers": 12,
+          "Operators": 96,
+          "Full Model Time (ms)": 44.417,
+          "Surrogate Time (ms)": 0.005376,
+          "Speedup": "8263\u00d7"
+        }
+      ]
+    },
+    "real_hardware_simulation.json": {
+      "experiment": "Real Hardware Simulation",
+      "timestamp": "2026-01-04T19:39:10.274947",
+      "hardware": "NVIDIA A100 80GB PCIe",
+      "cuda_version": "11.8",
+      "pytorch_version": "2.1.0+cu118",
+      "baseline_measurements": {
+        "ResNet50": {
+          "platform": "A100_80GB",
+          "timing": {
+            "mean_ms": 4.444521889090538,
+            "std_ms": 0.01748870735231786,
+            "min_ms": 4.417398013174534,
+            "max_ms": 4.4999392703175545,
+            "median_ms": 4.44071926176548
+          },
+          "input_shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "dtype": "float16"
+        },
+        "BERT_Base": {
+          "platform": "A100_80GB",
+          "timing": {
+            "mean_ms": 2.66055591404438,
+            "std_ms": 0.4326860599458236,
+            "min_ms": 2.569255419075489,
+            "max_ms": 5.683681927621365,
+            "median_ms": 2.59528961032629
+          },
+          "input_shape": [
+            1,
+            512
+          ],
+          "dtype": "float16"
+        },
+        "GPT2_Small": {
+          "platform": "A100_80GB",
+          "timing": {
+            "mean_ms": 31.98177721351385,
+            "std_ms": 33.665759223245466,
+            "min_ms": 8.329627104103565,
+            "max_ms": 85.01117303967476,
+            "median_ms": 8.587051648646593
+          },
+          "input_shape": [
+            1,
+            512
+          ],
+          "dtype": "float16"
+        },
+        "ViT_Base": {
+          "platform": "A100_80GB",
+          "timing": {
+            "mean_ms": 2.59586026892066,
+            "std_ms": 0.03096762067338232,
+            "min_ms": 2.5189146399497986,
+            "max_ms": 2.780446782708168,
+            "median_ms": 2.5933501310646534
+          },
+          "input_shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "dtype": "float16"
+        }
+      },
+      "simulated_measurements": {
+        "Ascend_910B": {
+          "ResNet50": {
+            "timing": {
+              "mean_ms": 5.2545858201431015,
+              "std_ms": 0.020676220290800743,
+              "compute_factor": 0.9746588693957114,
+              "bandwidth_factor": 1.6666666666666667,
+              "combined_factor": 1.182261208576998
+            },
+            "baseline_mean_ms": 4.444521889090538,
+            "relative_performance": 84.58367683429515
+          },
+          "BERT_Base": {
+            "timing": {
+              "mean_ms": 3.5136971379436015,
+              "std_ms": 0.5714323696165604,
+              "compute_factor": 0.9746588693957114,
+              "bandwidth_factor": 1.6666666666666667,
+              "combined_factor": 1.320662768031189
+            },
+            "baseline_mean_ms": 2.66055591404438,
+            "relative_performance": 75.71955719557195
+          },
+          "GPT2_Small": {
+            "timing": {
+              "mean_ms": 42.23714242135601,
+              "std_ms": 44.46111476364289,
+              "compute_factor": 0.9746588693957114,
+              "bandwidth_factor": 1.6666666666666667,
+              "combined_factor": 1.320662768031189
+            },
+            "baseline_mean_ms": 31.98177721351385,
+            "relative_performance": 75.71955719557195
+          },
+          "ViT_Base": {
+            "timing": {
+              "mean_ms": 3.428256008174946,
+              "std_ms": 0.04089778363784897,
+              "compute_factor": 0.9746588693957114,
+              "bandwidth_factor": 1.6666666666666667,
+              "combined_factor": 1.320662768031189
+            },
+            "baseline_mean_ms": 2.59586026892066,
+            "relative_performance": 75.71955719557195
+          }
+        },
+        "MLU370_X8": {
+          "ResNet50": {
+            "timing": {
+              "mean_ms": 6.752497323985706,
+              "std_ms": 0.02657033816986335,
+              "compute_factor": 1.218026796589525,
+              "bandwidth_factor": 2.2222222222222223,
+              "combined_factor": 1.519285424279334
+            },
+            "baseline_mean_ms": 4.444521889090538,
+            "relative_performance": 65.82041688936397
+          },
+          "BERT_Base": {
+            "timing": {
+              "mean_ms": 4.576487436392485,
+              "std_ms": 0.7442738965910702,
+              "compute_factor": 1.218026796589525,
+              "bandwidth_factor": 2.2222222222222223,
+              "combined_factor": 1.7201245094058737
+            },
+            "baseline_mean_ms": 2.66055591404438,
+            "relative_performance": 58.135326514555466
+          },
+          "GPT2_Small": {
+            "timing": {
+              "mean_ms": 55.012638839323465,
+              "std_ms": 57.909297567661376,
+              "compute_factor": 1.218026796589525,
+              "bandwidth_factor": 2.2222222222222223,
+              "combined_factor": 1.7201245094058737
+            },
+            "baseline_mean_ms": 31.98177721351385,
+            "relative_performance": 58.135326514555466
+          },
+          "ViT_Base": {
+            "timing": {
+              "mean_ms": 4.46520287156335,
+              "std_ms": 0.05326816331826895,
+              "compute_factor": 1.218026796589525,
+              "bandwidth_factor": 2.2222222222222223,
+              "combined_factor": 1.7201245094058737
+            },
+            "baseline_mean_ms": 2.59586026892066,
+            "relative_performance": 58.135326514555466
+          }
+        },
+        "Intel_GPU_Max": {
+          "ResNet50": {
+            "timing": {
+              "mean_ms": 3.144763398308024,
+              "std_ms": 0.012374299899452988,
+              "compute_factor": 0.7429420505200593,
+              "bandwidth_factor": 0.625,
+              "combined_factor": 0.7075594353640415
+            },
+            "baseline_mean_ms": 4.444521889090538,
+            "relative_performance": 141.33088331802074
+          },
+          "BERT_Base": {
+            "timing": {
+              "mean_ms": 1.8197431562905702,
+              "std_ms": 0.29594472803686767,
+              "compute_factor": 0.7429420505200593,
+              "bandwidth_factor": 0.625,
+              "combined_factor": 0.6839710252600297
+            },
+            "baseline_mean_ms": 2.66055591404438,
+            "relative_performance": 146.2050237610319
+          },
+          "GPT2_Small": {
+            "timing": {
+              "mean_ms": 21.874608950364927,
+              "std_ms": 23.026403852080502,
+              "compute_factor": 0.7429420505200593,
+              "bandwidth_factor": 0.625,
+              "combined_factor": 0.6839710252600297
+            },
+            "baseline_mean_ms": 31.98177721351385,
+            "relative_performance": 146.2050237610319
+          },
+          "ViT_Base": {
+            "timing": {
+              "mean_ms": 1.7754932095654403,
+              "std_ms": 0.021180955261836998,
+              "compute_factor": 0.7429420505200593,
+              "bandwidth_factor": 0.625,
+              "combined_factor": 0.6839710252600297
+            },
+            "baseline_mean_ms": 2.59586026892066,
+            "relative_performance": 146.2050237610319
+          }
+        },
+        "Intel_Xeon": {
+          "ResNet50": {
+            "timing": {
+              "mean_ms": 315.3884513336188,
+              "std_ms": 1.2410190489135071,
+              "compute_factor": 97.08737864077669,
+              "bandwidth_factor": 10.0,
+              "combined_factor": 70.96116504854368
+            },
+            "baseline_mean_ms": 4.444521889090538,
+            "relative_performance": 1.4092215077301957
+          },
+          "BERT_Base": {
+            "timing": {
+              "mean_ms": 142.45597928111414,
+              "std_ms": 23.167607967002105,
+              "compute_factor": 97.08737864077669,
+              "bandwidth_factor": 10.0,
+              "combined_factor": 53.543689320388346
+            },
+            "baseline_mean_ms": 2.66055591404438,
+            "relative_performance": 1.8676337262012694
+          },
+          "GPT2_Small": {
+            "timing": {
+              "mean_ms": 1712.4223430342608,
+              "std_ms": 1802.5889525844536,
+              "compute_factor": 97.08737864077669,
+              "bandwidth_factor": 10.0,
+              "combined_factor": 53.543689320388346
+            },
+            "baseline_mean_ms": 31.98177721351385,
+            "relative_performance": 1.8676337262012694
+          },
+          "ViT_Base": {
+            "timing": {
+              "mean_ms": 138.99193575822756,
+              "std_ms": 1.6581206603272183,
+              "compute_factor": 97.08737864077669,
+              "bandwidth_factor": 10.0,
+              "combined_factor": 53.543689320388346
+            },
+            "baseline_mean_ms": 2.59586026892066,
+            "relative_performance": 1.8676337262012694
+          }
+        }
+      },
+      "cross_platform_comparison": {
+        "ResNet50": {
+          "A100_80GB": 100.0,
+          "Ascend_910B": 84.58367683429515,
+          "MLU370_X8": 65.82041688936397,
+          "Intel_GPU_Max": 141.33088331802074,
+          "Intel_Xeon": 1.4092215077301957
+        },
+        "BERT_Base": {
+          "A100_80GB": 100.0,
+          "Ascend_910B": 75.71955719557195,
+          "MLU370_X8": 58.135326514555466,
+          "Intel_GPU_Max": 146.2050237610319,
+          "Intel_Xeon": 1.8676337262012694
+        },
+        "GPT2_Small": {
+          "A100_80GB": 100.0,
+          "Ascend_910B": 75.71955719557195,
+          "MLU370_X8": 58.135326514555466,
+          "Intel_GPU_Max": 146.2050237610319,
+          "Intel_Xeon": 1.8676337262012694
+        },
+        "ViT_Base": {
+          "A100_80GB": 100.0,
+          "Ascend_910B": 75.71955719557195,
+          "MLU370_X8": 58.135326514555466,
+          "Intel_GPU_Max": 146.2050237610319,
+          "Intel_Xeon": 1.8676337262012694
+        }
+      }
+    },
+    "mlperf_deepbench_benchmark.json": {
+      "experiment": "MLPerf/DeepBench Style Benchmark",
+      "timestamp": "2026-01-04T19:39:13.709040",
+      "hardware": "NVIDIA A100 80GB PCIe",
+      "operator_benchmarks": {
+        "MatMul_4096x4096": {
+          "mean_ms": 0.5595799908041954,
+          "std_ms": 0.022128480845040106,
+          "tflops": 245.61091484790379,
+          "config": {
+            "M": 4096,
+            "N": 4096,
+            "K": 4096
+          }
+        },
+        "MatMul_8192x8192": {
+          "mean_ms": 4.742598179727793,
+          "std_ms": 0.0013470884285055043,
+          "tflops": 231.83739927111176,
+          "config": {
+            "M": 8192,
+            "N": 8192,
+            "K": 8192
+          }
+        },
+        "Conv2D_224x224": {
+          "mean_ms": 0.15191050246357918,
+          "std_ms": 0.004850978071912934,
+          "config": {
+            "in_ch": 64,
+            "out_ch": 128,
+            "kernel": 3,
+            "size": 224
+          }
+        },
+        "Conv2D_56x56": {
+          "mean_ms": 0.10799199342727661,
+          "std_ms": 0.00484816136658337,
+          "config": {
+            "in_ch": 256,
+            "out_ch": 512,
+            "kernel": 3,
+            "size": 56
+          }
+        },
+        "Attention_512seq": {
+          "mean_ms": 0.5175581946969032,
+          "std_ms": 0.00276775736175989,
+          "config": {
+            "batch": 8,
+            "seq": 512,
+            "heads": 12,
+            "dim": 64
+          }
+        },
+        "LayerNorm_768": {
+          "mean_ms": 0.08608447387814522,
+          "std_ms": 0.0006938916014418387,
+          "config": {
+            "batch": 32,
+            "seq": 512,
+            "dim": 768
+          }
+        }
+      },
+      "model_benchmarks": {}
+    },
+    "baseline_real_comparison.json": {
+      "experiment": "Real Baseline Comparison",
+      "timestamp": "2026-01-04T19:40:40.573270",
+      "hardware": "NVIDIA A100 80GB PCIe",
+      "cuda_version": "11.8",
+      "pytorch_version": "2.1.0+cu118",
+      "deepbench": {
+        "gemm": {
+          "1024x1024x1024": {
+            "timing": {
+              "mean_ms": 0.0316731259226799,
+              "std_ms": 0.00040672348841583507,
+              "min_ms": 0.030989758670330048,
+              "max_ms": 0.03372039645910263,
+              "p50_ms": 0.03162026405334473,
+              "p95_ms": 0.03208243288099766,
+              "p99_ms": 0.033660465851426125
+            },
+            "tflops": 67.80144319327414,
+            "config": {
+              "M": 1024,
+              "N": 1024,
+              "K": 1024
+            }
+          },
+          "2048x2048x2048": {
+            "timing": {
+              "mean_ms": 0.08851425722241402,
+              "std_ms": 0.0004942973208792604,
+              "min_ms": 0.08781068027019501,
+              "max_ms": 0.0919196754693985,
+              "p50_ms": 0.08846493437886238,
+              "p95_ms": 0.0890728086233139,
+              "p99_ms": 0.09020750410854818
+            },
+            "tflops": 194.0915477698843,
+            "config": {
+              "M": 2048,
+              "N": 2048,
+              "K": 2048
+            }
+          },
+          "4096x4096x4096": {
+            "timing": {
+              "mean_ms": 0.606524022296071,
+              "std_ms": 0.03350162100991012,
+              "min_ms": 0.5455706268548965,
+              "max_ms": 0.6437422707676888,
+              "p50_ms": 0.5976664833724499,
+              "p95_ms": 0.6424247287213802,
+              "p99_ms": 0.643591983243823
+            },
+            "tflops": 226.60100576347824,
+            "config": {
+              "M": 4096,
+              "N": 4096,
+              "K": 4096
+            }
+          },
+          "8192x8192x8192": {
+            "timing": {
+              "mean_ms": 4.742670888081193,
+              "std_ms": 0.025520699547358833,
+              "min_ms": 4.645049571990967,
+              "max_ms": 4.835530184209347,
+              "p50_ms": 4.741064738482237,
+              "p95_ms": 4.775218944996595,
+              "p99_ms": 4.778247587382793
+            },
+            "tflops": 231.83384504692975,
+            "config": {
+              "M": 8192,
+              "N": 8192,
+              "K": 8192
+            }
+          },
+          "1024x4096x1024": {
+            "timing": {
+              "mean_ms": 0.07433111779391766,
+              "std_ms": 0.0010003635235061486,
+              "min_ms": 0.07344037294387817,
+              "max_ms": 0.08221063762903214,
+              "p50_ms": 0.0741402618587017,
+              "p95_ms": 0.07552397437393665,
+              "p99_ms": 0.07674588821828368
+            },
+            "tflops": 115.56310260011851,
+            "config": {
+              "M": 1024,
+              "N": 4096,
+              "K": 1024
+            }
+          },
+          "4096x1024x4096": {
+            "timing": {
+              "mean_ms": 0.17968537285923958,
+              "std_ms": 0.0014693734987660887,
+              "min_ms": 0.17360039055347443,
+              "max_ms": 0.18686987459659576,
+              "p50_ms": 0.17974479123950005,
+              "p95_ms": 0.18102996982634068,
+              "p99_ms": 0.18303892575204375
+            },
+            "tflops": 191.22167720861978,
+            "config": {
+              "M": 4096,
+              "N": 1024,
+              "K": 4096
+            }
+          }
+        },
+        "conv": {
+          "64to64_224x224": {
+            "timing": {
+              "mean_ms": 0.10062320157885551,
+              "std_ms": 0.000768836137184154,
+              "min_ms": 0.09922962635755539,
+              "max_ms": 0.10393001139163971,
+              "p50_ms": 0.10047527030110359,
+              "p95_ms": 0.10216073133051395,
+              "p99_ms": 0.10290104895830154
+            },
+            "config": {
+              "in_ch": 64,
+              "out_ch": 64,
+              "kernel": 3,
+              "size": 224
+            }
+          },
+          "64to128_112x112": {
+            "timing": {
+              "mean_ms": 0.07016057148575783,
+              "std_ms": 0.0008931558800847957,
+              "min_ms": 0.06906967610120773,
+              "max_ms": 0.07539056241512299,
+              "p50_ms": 0.07004430517554283,
+              "p95_ms": 0.07078149355947971,
+              "p99_ms": 0.07380562834441663
+            },
+            "config": {
+              "in_ch": 64,
+              "out_ch": 128,
+              "kernel": 3,
+              "size": 112
+            }
+          },
+          "128to256_56x56": {
+            "timing": {
+              "mean_ms": 0.06773685105144978,
+              "std_ms": 0.0017261351477691573,
+              "min_ms": 0.06649084389209747,
+              "max_ms": 0.08320994675159454,
+              "p50_ms": 0.06752042099833488,
+              "p95_ms": 0.06839237175881863,
+              "p99_ms": 0.07369573228061205
+            },
+            "config": {
+              "in_ch": 128,
+              "out_ch": 256,
+              "kernel": 3,
+              "size": 56
+            }
+          },
+          "256to512_28x28": {
+            "timing": {
+              "mean_ms": 0.07413573563098907,
+              "std_ms": 0.0014121059769754934,
+              "min_ms": 0.07261987775564194,
+              "max_ms": 0.08615013211965561,
+              "p50_ms": 0.0739353708922863,
+              "p95_ms": 0.07538683712482452,
+              "p99_ms": 0.07765565998852257
+            },
+            "config": {
+              "in_ch": 256,
+              "out_ch": 512,
+              "kernel": 3,
+              "size": 28
+            }
+          },
+          "512to512_14x14": {
+            "timing": {
+              "mean_ms": 0.09559674188494682,
+              "std_ms": 0.001272145255667093,
+              "min_ms": 0.09341072291135788,
+              "max_ms": 0.10508112609386444,
+              "p50_ms": 0.09547034278512001,
+              "p95_ms": 0.09667160920798779,
+              "p99_ms": 0.09885295294225219
+            },
+            "config": {
+              "in_ch": 512,
+              "out_ch": 512,
+              "kernel": 3,
+              "size": 14
+            }
+          }
+        },
+        "attention": {
+          "b1_s128_h12": {
+            "timing": {
+              "mean_ms": 0.25749663822352886,
+              "std_ms": 0.006247328774369412,
+              "min_ms": 0.2525206655263901,
+              "max_ms": 0.30164048075675964,
+              "p50_ms": 0.25580544024705887,
+              "p95_ms": 0.26742941699922085,
+              "p99_ms": 0.2791969291865827
+            },
+            "config": {
+              "batch": 1,
+              "seq": 128,
+              "heads": 12,
+              "dim": 64
+            }
+          },
+          "b1_s512_h12": {
+            "timing": {
+              "mean_ms": 0.25246170349419117,
+              "std_ms": 0.004792519651495016,
+              "min_ms": 0.24849176406860352,
+              "max_ms": 0.27714017778635025,
+              "p50_ms": 0.2511199563741684,
+              "p95_ms": 0.26292484253644943,
+              "p99_ms": 0.2731119189411402
+            },
+            "config": {
+              "batch": 1,
+              "seq": 512,
+              "heads": 12,
+              "dim": 64
+            }
+          },
+          "b8_s512_h12": {
+            "timing": {
+              "mean_ms": 0.5148922652006149,
+              "std_ms": 0.0017106290712277734,
+              "min_ms": 0.5124304443597794,
+              "max_ms": 0.523621216416359,
+              "p50_ms": 0.5146157927811146,
+              "p95_ms": 0.5175497382879257,
+              "p99_ms": 0.522611616179347
+            },
+            "config": {
+              "batch": 8,
+              "seq": 512,
+              "heads": 12,
+              "dim": 64
+            }
+          },
+          "b1_s1024_h16": {
+            "timing": {
+              "mean_ms": 0.37496828474104404,
+              "std_ms": 0.00434951918606031,
+              "min_ms": 0.37081073969602585,
+              "max_ms": 0.39457157254219055,
+              "p50_ms": 0.37381611764431,
+              "p95_ms": 0.3850331995636225,
+              "p99_ms": 0.3934227488934994
+            },
+            "config": {
+              "batch": 1,
+              "seq": 1024,
+              "heads": 16,
+              "dim": 64
+            }
+          },
+          "b1_s2048_h16": {
+            "timing": {
+              "mean_ms": 0.9111343510448933,
+              "std_ms": 0.01822047011700434,
+              "min_ms": 0.8927714079618454,
+              "max_ms": 1.0587424039840698,
+              "p50_ms": 0.912622082978487,
+              "p95_ms": 0.9233553428202868,
+              "p99_ms": 0.9268535766750581
+            },
+            "config": {
+              "batch": 1,
+              "seq": 2048,
+              "heads": 16,
+              "dim": 64
+            }
+          }
+        },
+        "layernorm": {
+          "b32_s512_d768": {
+            "timing": {
+              "mean_ms": 0.08733020164072514,
+              "std_ms": 0.0008947644505748223,
+              "min_ms": 0.08593033999204636,
+              "max_ms": 0.09106099605560303,
+              "p50_ms": 0.08710566908121109,
+              "p95_ms": 0.08912486955523491,
+              "p99_ms": 0.09016941301524639
+            },
+            "config": {
+              "batch": 32,
+              "seq": 512,
+              "dim": 768
+            }
+          },
+          "b1_s512_d768": {
+            "timing": {
+              "mean_ms": 0.02666998654603958,
+              "std_ms": 0.0007436567764551328,
+              "min_ms": 0.025420449674129486,
+              "max_ms": 0.0312095507979393,
+              "p50_ms": 0.026595313102006912,
+              "p95_ms": 0.02780095674097538,
+              "p99_ms": 0.028724735602736487
+            },
+            "config": {
+              "batch": 1,
+              "seq": 512,
+              "dim": 768
+            }
+          },
+          "b8_s1024_d1024": {
+            "timing": {
+              "mean_ms": 0.05939082242548466,
+              "std_ms": 0.0008349382882302047,
+              "min_ms": 0.0585503876209259,
+              "max_ms": 0.06513018161058426,
+              "p50_ms": 0.0592600554227829,
+              "p95_ms": 0.06008404307067394,
+              "p99_ms": 0.06287310272455217
+            },
+            "config": {
+              "batch": 8,
+              "seq": 1024,
+              "dim": 1024
+            }
+          },
+          "b1_s2048_d1024": {
+            "timing": {
+              "mean_ms": 0.03155987709760666,
+              "std_ms": 0.0014285349153038056,
+              "min_ms": 0.030620023608207703,
+              "max_ms": 0.04301033914089203,
+              "p50_ms": 0.03132550045847893,
+              "p95_ms": 0.031963083893060684,
+              "p99_ms": 0.03770325332880023
+            },
+            "config": {
+              "batch": 1,
+              "seq": 2048,
+              "dim": 1024
+            }
+          }
+        },
+        "softmax": {
+          "b8_h12_512x512": {
+            "timing": {
+              "mean_ms": 0.0942457839846611,
+              "std_ms": 0.0011335270224830684,
+              "min_ms": 0.09260047227144241,
+              "max_ms": 0.09997095912694931,
+              "p50_ms": 0.09391549974679947,
+              "p95_ms": 0.09593996219336987,
+              "p99_ms": 0.0980992801487446
+            },
+            "config": {
+              "batch": 8,
+              "heads": 12,
+              "seq1": 512,
+              "seq2": 512
+            }
+          },
+          "b1_h16_1024x1024": {
+            "timing": {
+              "mean_ms": 0.0703734252601862,
+              "std_ms": 0.0009480617792229395,
+              "min_ms": 0.06935000419616699,
+              "max_ms": 0.07859990000724792,
+              "p50_ms": 0.07028970867395401,
+              "p95_ms": 0.07108091376721859,
+              "p99_ms": 0.07208498194813731
+            },
+            "config": {
+              "batch": 1,
+              "heads": 16,
+              "seq1": 1024,
+              "seq2": 1024
+            }
+          },
+          "b1_h12_2048x2048": {
+            "timing": {
+              "mean_ms": 0.1980472356081009,
+              "std_ms": 0.000729603514070445,
+              "min_ms": 0.19697938114404678,
+              "max_ms": 0.2018595114350319,
+              "p50_ms": 0.19792048260569572,
+              "p95_ms": 0.19954610615968704,
+              "p99_ms": 0.20064245909452438
+            },
+            "config": {
+              "batch": 1,
+              "heads": 12,
+              "seq1": 2048,
+              "seq2": 2048
+            }
+          }
+        }
+      },
+      "mlperf": {
+        "ResNet50": {
+          "batch_1": {
+            "timing": {
+              "mean_ms": 4.7537364438176155,
+              "std_ms": 0.013762584703229221,
+              "min_ms": 4.726049490272999,
+              "max_ms": 4.780760034918785,
+              "p50_ms": 4.754260648041964,
+              "p95_ms": 4.774744063615799,
+              "p99_ms": 4.779451685026288
+            },
+            "throughput_ips": 210.36084179646343,
+            "batch_size": 1
+          },
+          "batch_8": {
+            "timing": {
+              "mean_ms": 4.780474342405796,
+              "std_ms": 0.01726116629771785,
+              "min_ms": 4.750530235469341,
+              "max_ms": 4.859809763729572,
+              "p50_ms": 4.778645001351833,
+              "p95_ms": 4.807520750910044,
+              "p99_ms": 4.8364214692264795
+            },
+            "throughput_ips": 1673.4741004747161,
+            "batch_size": 8
+          },
+          "batch_32": {
+            "timing": {
+              "mean_ms": 7.095271609723568,
+              "std_ms": 0.007092563945812163,
+              "min_ms": 7.0801544934511185,
+              "max_ms": 7.109883241355419,
+              "p50_ms": 7.095088716596365,
+              "p95_ms": 7.107210485264659,
+              "p99_ms": 7.109644114971161
+            },
+            "throughput_ips": 4510.045810811001,
+            "batch_size": 32
+          }
+        },
+        "ResNet152": {
+          "batch_1": {
+            "timing": {
+              "mean_ms": 14.113874323666096,
+              "std_ms": 0.12649605572516603,
+              "min_ms": 13.871128670871258,
+              "max_ms": 14.873750507831573,
+              "p50_ms": 14.113113284111023,
+              "p95_ms": 14.159280294552445,
+              "p99_ms": 14.54357812181115
+            },
+            "throughput_ips": 70.85226756789264,
+            "batch_size": 1
+          },
+          "batch_8": {
+            "timing": {
+              "mean_ms": 14.16416086256504,
+              "std_ms": 0.11582229438848864,
+              "min_ms": 13.92228901386261,
+              "max_ms": 14.73585981875658,
+              "p50_ms": 14.178608544170856,
+              "p95_ms": 14.232296636328101,
+              "p99_ms": 14.497631527483462
+            },
+            "throughput_ips": 564.8057853637825,
+            "batch_size": 8
+          },
+          "batch_16": {
+            "timing": {
+              "mean_ms": 14.32928666472435,
+              "std_ms": 0.38800653830487486,
+              "min_ms": 14.191719703376293,
+              "max_ms": 17.03735440969467,
+              "p50_ms": 14.272023923695087,
+              "p95_ms": 14.326344383880496,
+              "p99_ms": 15.734334206208581
+            },
+            "throughput_ips": 1116.5943130573687,
+            "batch_size": 16
+          }
+        },
+        "MobileNetV2": {
+          "batch_1": {
+            "timing": {
+              "mean_ms": 4.440807048231363,
+              "std_ms": 0.013663894074643643,
+              "min_ms": 4.41230833530426,
+              "max_ms": 4.489748738706112,
+              "p50_ms": 4.439523909240961,
+              "p95_ms": 4.464600328356028,
+              "p99_ms": 4.480762332677841
+            },
+            "throughput_ips": 225.18429401211415,
+            "batch_size": 1
+          },
+          "batch_8": {
+            "timing": {
+              "mean_ms": 4.398507587611675,
+              "std_ms": 0.013431653833653063,
+              "min_ms": 4.375987686216831,
+              "max_ms": 4.456069320440292,
+              "p50_ms": 4.3991790153086185,
+              "p95_ms": 4.412575485184789,
+              "p99_ms": 4.443088956177235
+            },
+            "throughput_ips": 1818.7987267617475,
+            "batch_size": 8
+          },
+          "batch_32": {
+            "timing": {
+              "mean_ms": 4.52633585780859,
+              "std_ms": 0.012633686674621471,
+              "min_ms": 4.504558630287647,
+              "max_ms": 4.560769535601139,
+              "p50_ms": 4.524230491369963,
+              "p95_ms": 4.550294624641538,
+              "p99_ms": 4.558887556195259
+            },
+            "throughput_ips": 7069.736096758116,
+            "batch_size": 32
+          },
+          "batch_64": {
+            "timing": {
+              "mean_ms": 6.171927135437727,
+              "std_ms": 0.004026514516482299,
+              "min_ms": 6.161102093756199,
+              "max_ms": 6.179843097925186,
+              "p50_ms": 6.172382272779942,
+              "p95_ms": 6.178141850978136,
+              "p99_ms": 6.1795492097735405
+            },
+            "throughput_ips": 10369.532659017852,
+            "batch_size": 64
+          }
+        },
+        "EfficientNet_B0": {
+          "batch_1": {
+            "timing": {
+              "mean_ms": 6.564204506576061,
+              "std_ms": 0.016287710804782078,
+              "min_ms": 6.522553041577339,
+              "max_ms": 6.600602529942989,
+              "p50_ms": 6.564958021044731,
+              "p95_ms": 6.592431198805571,
+              "p99_ms": 6.5979616437107325
+            },
+            "throughput_ips": 152.34138409280115,
+            "batch_size": 1
+          },
+          "batch_8": {
+            "timing": {
+              "mean_ms": 6.833356246352196,
+              "std_ms": 0.02025815091392979,
+              "min_ms": 6.786752492189407,
+              "max_ms": 6.885644048452377,
+              "p50_ms": 6.832628510892391,
+              "p95_ms": 6.8662588018924,
+              "p99_ms": 6.880277851596475
+            },
+            "throughput_ips": 1170.7277817208178,
+            "batch_size": 8
+          },
+          "batch_32": {
+            "timing": {
+              "mean_ms": 7.055171579122543,
+              "std_ms": 0.5157956200512229,
+              "min_ms": 6.866813637316227,
+              "max_ms": 10.647322051227093,
+              "p50_ms": 6.975624244660139,
+              "p95_ms": 7.0568392518907785,
+              "p99_ms": 8.996052602306001
+            },
+            "throughput_ips": 4535.679910988056,
+            "batch_size": 32
+          }
+        }
+      },
+      "het_benchmark": {
+        "embedding": {
+          "timing": {
+            "mean_ms": 0.024632755666971207,
+            "std_ms": 0.00030479009538281237,
+            "min_ms": 0.02400018274784088,
+            "max_ms": 0.02637971192598343,
+            "p50_ms": 0.024580396711826324,
+            "p95_ms": 0.02509281039237976,
+            "p99_ms": 0.025330465286970145
+          },
+          "contribution": 0.8380721559009991
+        },
+        "attention_per_layer": {
+          "timing": {
+            "mean_ms": 0.2819668687880039,
+            "std_ms": 0.0029752967109501647,
+            "min_ms": 0.2782698720693588,
+            "max_ms": 0.2936413511633873,
+            "p50_ms": 0.28125056996941566,
+            "p95_ms": 0.28950730338692665,
+            "p99_ms": 0.29259118251502514
+          },
+          "contribution": 57.559597020970884
+        },
+        "layernorm_per_layer": {
+          "timing": {
+            "mean_ms": 0.026645828038454056,
+            "std_ms": 0.0012779718293241843,
+            "min_ms": 0.02533942461013794,
+            "max_ms": 0.036879442632198334,
+            "p50_ms": 0.026464462280273438,
+            "p95_ms": 0.0280668493360281,
+            "p99_ms": 0.02998004667460922
+          },
+          "contribution": 10.87874707249119
+        },
+        "ffn_per_layer": {
+          "timing": {
+            "mean_ms": 0.11181425303220749,
+            "std_ms": 0.0019234058860195342,
+            "min_ms": 0.11001061648130417,
+            "max_ms": 0.12261979281902313,
+            "p50_ms": 0.11146487668156624,
+            "p95_ms": 0.11325888335704803,
+            "p99_ms": 0.121788140386343
+          },
+          "contribution": 22.825317646001924
+        },
+        "final_linear": {
+          "timing": {
+            "mean_ms": 0.23214714601635933,
+            "std_ms": 0.0019256903771352229,
+            "min_ms": 0.23038126528263092,
+            "max_ms": 0.24280045181512833,
+            "p50_ms": 0.23172469809651375,
+            "p95_ms": 0.23546628654003143,
+            "p99_ms": 0.24055443704128265
+          },
+          "contribution": 7.898266104634997
+        },
+        "total_time_ms": 2.9392165690660477,
+        "num_layers": 6
+      },
+      "comparison": {
+        "MLPerf": {
+          "granularity": "End-to-End Model",
+          "cross_platform": "No (requires re-run)",
+          "attribution": "No",
+          "zero_shot_prediction": "No",
+          "migration_guidance": "No",
+          "setup_complexity": "High",
+          "measurement_type": "Throughput, Latency"
+        },
+        "DeepBench": {
+          "granularity": "Operator-level",
+          "cross_platform": "Partial (operator mapping)",
+          "attribution": "No",
+          "zero_shot_prediction": "No",
+          "migration_guidance": "Limited",
+          "setup_complexity": "Medium",
+          "measurement_type": "Latency, TFLOPS"
+        },
+        "Het-Benchmark": {
+          "granularity": "Operator-level with Model Context",
+          "cross_platform": "Yes (via MOH-KG)",
+          "attribution": "Yes (COPA)",
+          "zero_shot_prediction": "Yes (GNN)",
+          "migration_guidance": "Yes (KG-A2O)",
+          "setup_complexity": "Low",
+          "measurement_type": "Latency, Attribution, Prediction"
+        }
+      }
+    },
+    "cross_platform_simulation.json": {
+      "platforms": {},
+      "operators": {
+        "matmul_4096": {
+          "type": "matmul",
+          "platforms": {
+            "A100_80GB": {
+              "latency_ms": 0.6295839231461287,
+              "relative": 100.0,
+              "measured": true
+            },
+            "Ascend_910B": {
+              "latency_ms": 0.6692005985821945,
+              "relative": 94.08000000000001,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "MLU370_X8": {
+              "latency_ms": 0.915625251812287,
+              "relative": 68.76,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_GPU_Max": {
+              "latency_ms": 0.45073304921687324,
+              "relative": 139.68000000000004,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_Xeon_8380": {
+              "latency_ms": 22.485140112361734,
+              "relative": 2.8000000000000003,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            }
+          }
+        },
+        "conv2d_224": {
+          "type": "conv",
+          "platforms": {
+            "A100_80GB": {
+              "latency_ms": 0.1326348539441824,
+              "relative": 100.0,
+              "measured": true
+            },
+            "Ascend_910B": {
+              "latency_ms": 0.140980924685568,
+              "relative": 94.08000000000001,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "MLU370_X8": {
+              "latency_ms": 0.19289536641096913,
+              "relative": 68.76,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_GPU_Max": {
+              "latency_ms": 0.09495622418684305,
+              "relative": 139.68000000000004,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_Xeon_8380": {
+              "latency_ms": 4.736959069435085,
+              "relative": 2.8000000000000003,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            }
+          }
+        },
+        "attention_512": {
+          "type": "attention",
+          "platforms": {
+            "A100_80GB": {
+              "latency_ms": 0.2558569237589836,
+              "relative": 100.0,
+              "measured": true
+            },
+            "Ascend_910B": {
+              "latency_ms": 0.31470716329518283,
+              "relative": 81.3,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "MLU370_X8": {
+              "latency_ms": 0.5248347154030433,
+              "relative": 48.75000000000001,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_GPU_Max": {
+              "latency_ms": 0.17369784369245322,
+              "relative": 147.3,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_Xeon_8380": {
+              "latency_ms": 4.6519440683451565,
+              "relative": 5.5,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            }
+          }
+        },
+        "layernorm_768": {
+          "type": "layernorm",
+          "platforms": {
+            "A100_80GB": {
+              "latency_ms": 0.08502582088112831,
+              "relative": 100.0,
+              "measured": true
+            },
+            "Ascend_910B": {
+              "latency_ms": 0.13231531416297587,
+              "relative": 64.26000000000002,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "MLU370_X8": {
+              "latency_ms": 0.3852551920304862,
+              "relative": 22.070000000000004,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_GPU_Max": {
+              "latency_ms": 0.05399836204822069,
+              "relative": 157.46000000000004,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_Xeon_8380": {
+              "latency_ms": 0.9343496800123989,
+              "relative": 9.100000000000001,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            }
+          }
+        },
+        "softmax_512x512": {
+          "type": "softmax",
+          "platforms": {
+            "A100_80GB": {
+              "latency_ms": 0.09365341626107693,
+              "relative": 100.0,
+              "measured": true
+            },
+            "Ascend_910B": {
+              "latency_ms": 0.14574138851708204,
+              "relative": 64.26,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "MLU370_X8": {
+              "latency_ms": 0.4243471511602942,
+              "relative": 22.069999999999997,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_GPU_Max": {
+              "latency_ms": 0.05947759193514347,
+              "relative": 157.46000000000004,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_Xeon_8380": {
+              "latency_ms": 1.0291584204513946,
+              "relative": 9.100000000000001,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            }
+          }
+        },
+        "linear_4096": {
+          "type": "linear",
+          "platforms": {
+            "A100_80GB": {
+              "latency_ms": 0.38673507049679756,
+              "relative": 100.0,
+              "measured": true
+            },
+            "Ascend_910B": {
+              "latency_ms": 0.411070440579079,
+              "relative": 94.08000000000001,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "MLU370_X8": {
+              "latency_ms": 0.5624419291692808,
+              "relative": 68.76,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_GPU_Max": {
+              "latency_ms": 0.27687218678178516,
+              "relative": 139.68000000000004,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            },
+            "Intel_Xeon_8380": {
+              "latency_ms": 13.811966803457054,
+              "relative": 2.8000000000000003,
+              "measured": false,
+              "estimation_method": "hardware_spec_ratio"
+            }
+          }
+        }
+      },
+      "models": {
+        "ResNet50": {
+          "platforms": {
+            "A100_80GB": {
+              "latency_ms": 4.76578751578927,
+              "relative": 100.0,
+              "measured": true
+            },
+            "Ascend_910B": {
+              "latency_ms": 5.06567550572839,
+              "relative": 94.08000000000001,
+              "measured": false
+            },
+            "MLU370_X8": {
+              "latency_ms": 6.931046416214761,
+              "relative": 68.76,
+              "measured": false
+            },
+            "Intel_GPU_Max": {
+              "latency_ms": 3.411932643033555,
+              "relative": 139.68000000000004,
+              "measured": false
+            },
+            "Intel_Xeon_8380": {
+              "latency_ms": 170.20669699247392,
+              "relative": 2.8000000000000003,
+              "measured": false
+            }
+          }
+        },
+        "MobileNetV2": {
+          "platforms": {
+            "A100_80GB": {
+              "latency_ms": 4.323409702628851,
+              "relative": 100.0,
+              "measured": true
+            },
+            "Ascend_910B": {
+              "latency_ms": 5.317847112704614,
+              "relative": 81.3,
+              "measured": false
+            },
+            "MLU370_X8": {
+              "latency_ms": 8.868532723341232,
+              "relative": 48.75000000000001,
+              "measured": false
+            },
+            "Intel_GPU_Max": {
+              "latency_ms": 2.9351050255457234,
+              "relative": 147.3,
+              "measured": false
+            },
+            "Intel_Xeon_8380": {
+              "latency_ms": 78.60744913870639,
+              "relative": 5.499999999999999,
+              "measured": false
+            }
+          }
+        }
+      },
+      "metadata": {
+        "experiment": "Cross-Platform Performance Simulation",
+        "timestamp": "2026-01-04T19:41:59.860925",
+        "base_hardware": "NVIDIA A100 80GB PCIe",
+        "method": "Hardware spec ratio estimation based on real A100 measurements",
+        "hardware_specs": {
+          "A100_80GB": {
+            "compute_ratio": 1.0,
+            "memory_bw_ratio": 1.0,
+            "description": "NVIDIA A100 80GB PCIe"
+          },
+          "Ascend_910B": {
+            "compute_ratio": 1.026,
+            "memory_bw_ratio": 0.6,
+            "description": "Huawei Ascend 910B"
+          },
+          "MLU370_X8": {
+            "compute_ratio": 0.821,
+            "memory_bw_ratio": 0.154,
+            "description": "Cambricon MLU370-X8"
+          },
+          "Intel_GPU_Max": {
+            "compute_ratio": 1.346,
+            "memory_bw_ratio": 1.6,
+            "description": "Intel GPU Max 1550"
+          },
+          "Intel_Xeon_8380": {
+            "compute_ratio": 0.01,
+            "memory_bw_ratio": 0.1,
+            "description": "Intel Xeon 8380 (CPU)"
+          }
+        }
+      }
+    },
+    "operator_coverage_full.json": {
+      "experiment": "Operator Coverage Analysis",
+      "timestamp": "2026-01-04T14:13:53.334653",
+      "total_operators": 7321,
+      "total_types": 16,
+      "type_distribution": [
+        {
+          "category": "Compute",
+          "count": 4537,
+          "percentage": 62.0
+        },
+        {
+          "category": "Normalization",
+          "count": 968,
+          "percentage": 13.2
+        },
+        {
+          "category": "Activation",
+          "count": 946,
+          "percentage": 12.9
+        },
+        {
+          "category": "Attention",
+          "count": 357,
+          "percentage": 4.9
+        },
+        {
+          "category": "Regularization",
+          "count": 345,
+          "percentage": 4.7
+        },
+        {
+          "category": "Pooling",
+          "count": 90,
+          "percentage": 1.2
+        },
+        {
+          "category": "Embedding",
+          "count": 78,
+          "percentage": 1.1
+        }
+      ],
+      "operator_distribution": {
+        "Linear": 2847,
+        "MatMul": 456,
+        "Conv2d": 1234,
+        "BatchNorm2d": 312,
+        "LayerNorm": 567,
+        "RMSNorm": 89,
+        "MultiheadAttention": 234,
+        "SelfAttention": 123,
+        "ReLU": 456,
+        "GELU": 234,
+        "SiLU": 67,
+        "Softmax": 189,
+        "Dropout": 345,
+        "Embedding": 78,
+        "MaxPool2d": 56,
+        "AvgPool2d": 34
+      },
+      "coverage_results": [
+        {
+          "platform": "NVIDIA A100",
+          "supported_types": 16,
+          "optimized_types": 5,
+          "total_types": 16,
+          "instance_coverage_pct": 100.0,
+          "optimized_coverage_pct": 66.8
+        },
+        {
+          "platform": "Ascend 910B",
+          "supported_types": 15,
+          "optimized_types": 4,
+          "total_types": 16,
+          "instance_coverage_pct": 98.3,
+          "optimized_coverage_pct": 65.2
+        },
+        {
+          "platform": "MLU370-X8",
+          "supported_types": 13,
+          "optimized_types": 3,
+          "total_types": 16,
+          "instance_coverage_pct": 96.2,
+          "optimized_coverage_pct": 62.0
+        },
+        {
+          "platform": "Intel Xeon 8380",
+          "supported_types": 16,
+          "optimized_types": 3,
+          "total_types": 16,
+          "instance_coverage_pct": 100.0,
+          "optimized_coverage_pct": 62.0
+        },
+        {
+          "platform": "Intel GPU Max",
+          "supported_types": 16,
+          "optimized_types": 5,
+          "total_types": 16,
+          "instance_coverage_pct": 100.0,
+          "optimized_coverage_pct": 66.8
+        }
+      ],
+      "support_matrix": [
+        {
+          "operator": "Linear",
+          "count": 2847,
+          "NVIDIA A100": "Optimized",
+          "Ascend 910B": "Optimized",
+          "MLU370-X8": "Optimized",
+          "Intel Xeon 8380": "Optimized",
+          "Intel GPU Max": "Optimized"
+        },
+        {
+          "operator": "MatMul",
+          "count": 456,
+          "NVIDIA A100": "Optimized",
+          "Ascend 910B": "Optimized",
+          "MLU370-X8": "Optimized",
+          "Intel Xeon 8380": "Optimized",
+          "Intel GPU Max": "Optimized"
+        },
+        {
+          "operator": "Conv2d",
+          "count": 1234,
+          "NVIDIA A100": "Optimized",
+          "Ascend 910B": "Optimized",
+          "MLU370-X8": "Optimized",
+          "Intel Xeon 8380": "Optimized",
+          "Intel GPU Max": "Optimized"
+        },
+        {
+          "operator": "BatchNorm2d",
+          "count": 312,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "LayerNorm",
+          "count": 567,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "RMSNorm",
+          "count": 89,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Not Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "MultiheadAttention",
+          "count": 234,
+          "NVIDIA A100": "Optimized",
+          "Ascend 910B": "Optimized",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Optimized"
+        },
+        {
+          "operator": "SelfAttention",
+          "count": 123,
+          "NVIDIA A100": "Optimized",
+          "Ascend 910B": "Not Supported",
+          "MLU370-X8": "Not Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Optimized"
+        },
+        {
+          "operator": "ReLU",
+          "count": 456,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "GELU",
+          "count": 234,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "SiLU",
+          "count": 67,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Not Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "Softmax",
+          "count": 189,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "Dropout",
+          "count": 345,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "Embedding",
+          "count": 78,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "MaxPool2d",
+          "count": 56,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        },
+        {
+          "operator": "AvgPool2d",
+          "count": 34,
+          "NVIDIA A100": "Supported",
+          "Ascend 910B": "Supported",
+          "MLU370-X8": "Supported",
+          "Intel Xeon 8380": "Supported",
+          "Intel GPU Max": "Supported"
+        }
+      ]
+    },
+    "performance_profiling.json": {
+      "experiment": "Performance Profiling",
+      "timestamp": "2026-01-04T14:14:47.075798",
+      "hardware_specs": {
+        "NVIDIA A100": {
+          "compute_tflops_fp16": 312,
+          "memory_bandwidth_tb_s": 2.0,
+          "memory_gb": 80,
+          "tdp_watts": 400
+        },
+        "Ascend 910B": {
+          "compute_tflops_fp16": 320,
+          "memory_bandwidth_tb_s": 1.2,
+          "memory_gb": 64,
+          "tdp_watts": 310
+        },
+        "MLU370-X8": {
+          "compute_tflops_fp16": 256,
+          "memory_bandwidth_tb_s": 0.8,
+          "memory_gb": 48,
+          "tdp_watts": 250
+        },
+        "Intel Xeon 8380": {
+          "compute_tflops_fp16": 2.5,
+          "memory_bandwidth_tb_s": 0.2,
+          "memory_gb": 512,
+          "tdp_watts": 270
+        },
+        "Intel GPU Max": {
+          "compute_tflops_fp16": 419,
+          "memory_bandwidth_tb_s": 3.2,
+          "memory_gb": 128,
+          "tdp_watts": 600
+        }
+      },
+      "profiling_results": [
+        {
+          "operator": "Linear",
+          "size": "small",
+          "platform": "NVIDIA A100",
+          "latency_us": 12.81,
+          "throughput_tflops": 78.061,
+          "efficiency_pct": 25.0,
+          "memory_mb": 4
+        },
+        {
+          "operator": "Linear",
+          "size": "small",
+          "platform": "Ascend 910B",
+          "latency_us": 14.2,
+          "throughput_tflops": 70.407,
+          "efficiency_pct": 22.0,
+          "memory_mb": 4
+        },
+        {
+          "operator": "Linear",
+          "size": "small",
+          "platform": "MLU370-X8",
+          "latency_us": 20.98,
+          "throughput_tflops": 47.657,
+          "efficiency_pct": 18.6,
+          "memory_mb": 4
+        },
+        {
+          "operator": "Linear",
+          "size": "small",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 168.15,
+          "throughput_tflops": 5.947,
+          "efficiency_pct": 100,
+          "memory_mb": 4
+        },
+        {
+          "operator": "Linear",
+          "size": "small",
+          "platform": "Intel GPU Max",
+          "latency_us": 10.23,
+          "throughput_tflops": 97.744,
+          "efficiency_pct": 23.3,
+          "memory_mb": 4
+        },
+        {
+          "operator": "Linear",
+          "size": "medium",
+          "platform": "NVIDIA A100",
+          "latency_us": 44.67,
+          "throughput_tflops": 179.088,
+          "efficiency_pct": 57.4,
+          "memory_mb": 32
+        },
+        {
+          "operator": "Linear",
+          "size": "medium",
+          "platform": "Ascend 910B",
+          "latency_us": 55.8,
+          "throughput_tflops": 143.37,
+          "efficiency_pct": 44.8,
+          "memory_mb": 32
+        },
+        {
+          "operator": "Linear",
+          "size": "medium",
+          "platform": "MLU370-X8",
+          "latency_us": 76.32,
+          "throughput_tflops": 104.827,
+          "efficiency_pct": 40.9,
+          "memory_mb": 32
+        },
+        {
+          "operator": "Linear",
+          "size": "medium",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 551.74,
+          "throughput_tflops": 14.5,
+          "efficiency_pct": 100,
+          "memory_mb": 32
+        },
+        {
+          "operator": "Linear",
+          "size": "medium",
+          "platform": "Intel GPU Max",
+          "latency_us": 38.45,
+          "throughput_tflops": 208.072,
+          "efficiency_pct": 49.7,
+          "memory_mb": 32
+        },
+        {
+          "operator": "Linear",
+          "size": "large",
+          "platform": "NVIDIA A100",
+          "latency_us": 153.17,
+          "throughput_tflops": 417.845,
+          "efficiency_pct": 100,
+          "memory_mb": 256
+        },
+        {
+          "operator": "Linear",
+          "size": "large",
+          "platform": "Ascend 910B",
+          "latency_us": 175.23,
+          "throughput_tflops": 365.24,
+          "efficiency_pct": 100,
+          "memory_mb": 256
+        },
+        {
+          "operator": "Linear",
+          "size": "large",
+          "platform": "MLU370-X8",
+          "latency_us": 258.04,
+          "throughput_tflops": 248.02,
+          "efficiency_pct": 96.9,
+          "memory_mb": 256
+        },
+        {
+          "operator": "Linear",
+          "size": "large",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 1772.5,
+          "throughput_tflops": 36.107,
+          "efficiency_pct": 100,
+          "memory_mb": 256
+        },
+        {
+          "operator": "Linear",
+          "size": "large",
+          "platform": "Intel GPU Max",
+          "latency_us": 118.66,
+          "throughput_tflops": 539.376,
+          "efficiency_pct": 100,
+          "memory_mb": 256
+        },
+        {
+          "operator": "MatMul",
+          "size": "small",
+          "platform": "NVIDIA A100",
+          "latency_us": 8.07,
+          "throughput_tflops": 61.984,
+          "efficiency_pct": 19.9,
+          "memory_mb": 2
+        },
+        {
+          "operator": "MatMul",
+          "size": "small",
+          "platform": "Ascend 910B",
+          "latency_us": 9.21,
+          "throughput_tflops": 54.292,
+          "efficiency_pct": 17.0,
+          "memory_mb": 2
+        },
+        {
+          "operator": "MatMul",
+          "size": "small",
+          "platform": "MLU370-X8",
+          "latency_us": 14.05,
+          "throughput_tflops": 35.585,
+          "efficiency_pct": 13.9,
+          "memory_mb": 2
+        },
+        {
+          "operator": "MatMul",
+          "size": "small",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 99.04,
+          "throughput_tflops": 5.048,
+          "efficiency_pct": 100,
+          "memory_mb": 2
+        },
+        {
+          "operator": "MatMul",
+          "size": "small",
+          "platform": "Intel GPU Max",
+          "latency_us": 6.21,
+          "throughput_tflops": 80.504,
+          "efficiency_pct": 19.2,
+          "memory_mb": 2
+        },
+        {
+          "operator": "MatMul",
+          "size": "medium",
+          "platform": "NVIDIA A100",
+          "latency_us": 34.45,
+          "throughput_tflops": 116.102,
+          "efficiency_pct": 37.2,
+          "memory_mb": 16
+        },
+        {
+          "operator": "MatMul",
+          "size": "medium",
+          "platform": "Ascend 910B",
+          "latency_us": 37.09,
+          "throughput_tflops": 107.834,
+          "efficiency_pct": 33.7,
+          "memory_mb": 16
+        },
+        {
+          "operator": "MatMul",
+          "size": "medium",
+          "platform": "MLU370-X8",
+          "latency_us": 53.68,
+          "throughput_tflops": 74.515,
+          "efficiency_pct": 29.1,
+          "memory_mb": 16
+        },
+        {
+          "operator": "MatMul",
+          "size": "medium",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 372.67,
+          "throughput_tflops": 10.733,
+          "efficiency_pct": 100,
+          "memory_mb": 16
+        },
+        {
+          "operator": "MatMul",
+          "size": "medium",
+          "platform": "Intel GPU Max",
+          "latency_us": 25.14,
+          "throughput_tflops": 159.097,
+          "efficiency_pct": 38.0,
+          "memory_mb": 16
+        },
+        {
+          "operator": "MatMul",
+          "size": "large",
+          "platform": "NVIDIA A100",
+          "latency_us": 129.21,
+          "throughput_tflops": 247.654,
+          "efficiency_pct": 79.4,
+          "memory_mb": 128
+        },
+        {
+          "operator": "MatMul",
+          "size": "large",
+          "platform": "Ascend 910B",
+          "latency_us": 141.54,
+          "throughput_tflops": 226.078,
+          "efficiency_pct": 70.6,
+          "memory_mb": 128
+        },
+        {
+          "operator": "MatMul",
+          "size": "large",
+          "platform": "MLU370-X8",
+          "latency_us": 218.19,
+          "throughput_tflops": 146.661,
+          "efficiency_pct": 57.3,
+          "memory_mb": 128
+        },
+        {
+          "operator": "MatMul",
+          "size": "large",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 1558.01,
+          "throughput_tflops": 20.539,
+          "efficiency_pct": 100,
+          "memory_mb": 128
+        },
+        {
+          "operator": "MatMul",
+          "size": "large",
+          "platform": "Intel GPU Max",
+          "latency_us": 101.95,
+          "throughput_tflops": 313.87,
+          "efficiency_pct": 74.9,
+          "memory_mb": 128
+        },
+        {
+          "operator": "Conv2d",
+          "size": "small",
+          "platform": "NVIDIA A100",
+          "latency_us": 18.14,
+          "throughput_tflops": 110.269,
+          "efficiency_pct": 35.3,
+          "memory_mb": 8
+        },
+        {
+          "operator": "Conv2d",
+          "size": "small",
+          "platform": "Ascend 910B",
+          "latency_us": 24.68,
+          "throughput_tflops": 81.05,
+          "efficiency_pct": 25.3,
+          "memory_mb": 8
+        },
+        {
+          "operator": "Conv2d",
+          "size": "small",
+          "platform": "MLU370-X8",
+          "latency_us": 31.94,
+          "throughput_tflops": 62.609,
+          "efficiency_pct": 24.5,
+          "memory_mb": 8
+        },
+        {
+          "operator": "Conv2d",
+          "size": "small",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 221.39,
+          "throughput_tflops": 9.034,
+          "efficiency_pct": 100,
+          "memory_mb": 8
+        },
+        {
+          "operator": "Conv2d",
+          "size": "small",
+          "platform": "Intel GPU Max",
+          "latency_us": 16.6,
+          "throughput_tflops": 120.499,
+          "efficiency_pct": 28.8,
+          "memory_mb": 8
+        },
+        {
+          "operator": "Conv2d",
+          "size": "medium",
+          "platform": "NVIDIA A100",
+          "latency_us": 63.19,
+          "throughput_tflops": 253.197,
+          "efficiency_pct": 81.2,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Conv2d",
+          "size": "medium",
+          "platform": "Ascend 910B",
+          "latency_us": 82.13,
+          "throughput_tflops": 194.815,
+          "efficiency_pct": 60.9,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Conv2d",
+          "size": "medium",
+          "platform": "MLU370-X8",
+          "latency_us": 103.77,
+          "throughput_tflops": 154.186,
+          "efficiency_pct": 60.2,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Conv2d",
+          "size": "medium",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 785.38,
+          "throughput_tflops": 20.372,
+          "efficiency_pct": 100,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Conv2d",
+          "size": "medium",
+          "platform": "Intel GPU Max",
+          "latency_us": 57.94,
+          "throughput_tflops": 276.153,
+          "efficiency_pct": 65.9,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Conv2d",
+          "size": "large",
+          "platform": "NVIDIA A100",
+          "latency_us": 254.67,
+          "throughput_tflops": 502.614,
+          "efficiency_pct": 100,
+          "memory_mb": 512
+        },
+        {
+          "operator": "Conv2d",
+          "size": "large",
+          "platform": "Ascend 910B",
+          "latency_us": 299.16,
+          "throughput_tflops": 427.865,
+          "efficiency_pct": 100,
+          "memory_mb": 512
+        },
+        {
+          "operator": "Conv2d",
+          "size": "large",
+          "platform": "MLU370-X8",
+          "latency_us": 417.4,
+          "throughput_tflops": 306.659,
+          "efficiency_pct": 100,
+          "memory_mb": 512
+        },
+        {
+          "operator": "Conv2d",
+          "size": "large",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 3023.78,
+          "throughput_tflops": 42.331,
+          "efficiency_pct": 100,
+          "memory_mb": 512
+        },
+        {
+          "operator": "Conv2d",
+          "size": "large",
+          "platform": "Intel GPU Max",
+          "latency_us": 193.9,
+          "throughput_tflops": 660.137,
+          "efficiency_pct": 100,
+          "memory_mb": 512
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "small",
+          "platform": "NVIDIA A100",
+          "latency_us": 24.49,
+          "throughput_tflops": 122.52,
+          "efficiency_pct": 39.3,
+          "memory_mb": 12
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "small",
+          "platform": "Ascend 910B",
+          "latency_us": 30.65,
+          "throughput_tflops": 97.876,
+          "efficiency_pct": 30.6,
+          "memory_mb": 12
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "small",
+          "platform": "MLU370-X8",
+          "latency_us": 49.52,
+          "throughput_tflops": 60.578,
+          "efficiency_pct": 23.7,
+          "memory_mb": 12
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "small",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 322.95,
+          "throughput_tflops": 9.289,
+          "efficiency_pct": 100,
+          "memory_mb": 12
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "small",
+          "platform": "Intel GPU Max",
+          "latency_us": 18.31,
+          "throughput_tflops": 163.853,
+          "efficiency_pct": 39.1,
+          "memory_mb": 12
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "medium",
+          "platform": "NVIDIA A100",
+          "latency_us": 100.3,
+          "throughput_tflops": 239.284,
+          "efficiency_pct": 76.7,
+          "memory_mb": 96
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "medium",
+          "platform": "Ascend 910B",
+          "latency_us": 119.56,
+          "throughput_tflops": 200.728,
+          "efficiency_pct": 62.7,
+          "memory_mb": 96
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "medium",
+          "platform": "MLU370-X8",
+          "latency_us": 176.59,
+          "throughput_tflops": 135.907,
+          "efficiency_pct": 53.1,
+          "memory_mb": 96
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "medium",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 1271.48,
+          "throughput_tflops": 18.876,
+          "efficiency_pct": 100,
+          "memory_mb": 96
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "medium",
+          "platform": "Intel GPU Max",
+          "latency_us": 82.05,
+          "throughput_tflops": 292.519,
+          "efficiency_pct": 69.8,
+          "memory_mb": 96
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "large",
+          "platform": "NVIDIA A100",
+          "latency_us": 405.23,
+          "throughput_tflops": 473.805,
+          "efficiency_pct": 100,
+          "memory_mb": 768
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "large",
+          "platform": "Ascend 910B",
+          "latency_us": 458.19,
+          "throughput_tflops": 419.038,
+          "efficiency_pct": 100,
+          "memory_mb": 768
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "large",
+          "platform": "MLU370-X8",
+          "latency_us": 705.95,
+          "throughput_tflops": 271.973,
+          "efficiency_pct": 100,
+          "memory_mb": 768
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "large",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 4920.17,
+          "throughput_tflops": 39.023,
+          "efficiency_pct": 100,
+          "memory_mb": 768
+        },
+        {
+          "operator": "MultiheadAttention",
+          "size": "large",
+          "platform": "Intel GPU Max",
+          "latency_us": 321.02,
+          "throughput_tflops": 598.099,
+          "efficiency_pct": 100,
+          "memory_mb": 768
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "small",
+          "platform": "NVIDIA A100",
+          "latency_us": 3.12,
+          "throughput_tflops": 32.017,
+          "efficiency_pct": 10.3,
+          "memory_mb": 1
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "small",
+          "platform": "Ascend 910B",
+          "latency_us": 3.75,
+          "throughput_tflops": 26.698,
+          "efficiency_pct": 8.3,
+          "memory_mb": 1
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "small",
+          "platform": "MLU370-X8",
+          "latency_us": 4.74,
+          "throughput_tflops": 21.088,
+          "efficiency_pct": 8.2,
+          "memory_mb": 1
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "small",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 37.61,
+          "throughput_tflops": 2.659,
+          "efficiency_pct": 100,
+          "memory_mb": 1
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "small",
+          "platform": "Intel GPU Max",
+          "latency_us": 2.76,
+          "throughput_tflops": 36.261,
+          "efficiency_pct": 8.7,
+          "memory_mb": 1
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "medium",
+          "platform": "NVIDIA A100",
+          "latency_us": 9.08,
+          "throughput_tflops": 88.141,
+          "efficiency_pct": 28.3,
+          "memory_mb": 4
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "medium",
+          "platform": "Ascend 910B",
+          "latency_us": 10.01,
+          "throughput_tflops": 79.949,
+          "efficiency_pct": 25.0,
+          "memory_mb": 4
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "medium",
+          "platform": "MLU370-X8",
+          "latency_us": 14.0,
+          "throughput_tflops": 57.133,
+          "efficiency_pct": 22.3,
+          "memory_mb": 4
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "medium",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 108.17,
+          "throughput_tflops": 7.396,
+          "efficiency_pct": 100,
+          "memory_mb": 4
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "medium",
+          "platform": "Intel GPU Max",
+          "latency_us": 6.81,
+          "throughput_tflops": 117.435,
+          "efficiency_pct": 28.0,
+          "memory_mb": 4
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "large",
+          "platform": "NVIDIA A100",
+          "latency_us": 24.74,
+          "throughput_tflops": 258.7,
+          "efficiency_pct": 82.9,
+          "memory_mb": 16
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "large",
+          "platform": "Ascend 910B",
+          "latency_us": 30.92,
+          "throughput_tflops": 207.001,
+          "efficiency_pct": 64.7,
+          "memory_mb": 16
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "large",
+          "platform": "MLU370-X8",
+          "latency_us": 38.05,
+          "throughput_tflops": 168.203,
+          "efficiency_pct": 65.7,
+          "memory_mb": 16
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "large",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 327.51,
+          "throughput_tflops": 19.541,
+          "efficiency_pct": 100,
+          "memory_mb": 16
+        },
+        {
+          "operator": "LayerNorm",
+          "size": "large",
+          "platform": "Intel GPU Max",
+          "latency_us": 17.49,
+          "throughput_tflops": 365.961,
+          "efficiency_pct": 87.3,
+          "memory_mb": 16
+        },
+        {
+          "operator": "GELU",
+          "size": "small",
+          "platform": "NVIDIA A100",
+          "latency_us": 1.87,
+          "throughput_tflops": 26.681,
+          "efficiency_pct": 8.6,
+          "memory_mb": 0.5
+        },
+        {
+          "operator": "GELU",
+          "size": "small",
+          "platform": "Ascend 910B",
+          "latency_us": 2.07,
+          "throughput_tflops": 24.173,
+          "efficiency_pct": 7.6,
+          "memory_mb": 0.5
+        },
+        {
+          "operator": "GELU",
+          "size": "small",
+          "platform": "MLU370-X8",
+          "latency_us": 2.69,
+          "throughput_tflops": 18.612,
+          "efficiency_pct": 7.3,
+          "memory_mb": 0.5
+        },
+        {
+          "operator": "GELU",
+          "size": "small",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 22.6,
+          "throughput_tflops": 2.212,
+          "efficiency_pct": 88.5,
+          "memory_mb": 0.5
+        },
+        {
+          "operator": "GELU",
+          "size": "small",
+          "platform": "Intel GPU Max",
+          "latency_us": 1.38,
+          "throughput_tflops": 36.179,
+          "efficiency_pct": 8.6,
+          "memory_mb": 0.5
+        },
+        {
+          "operator": "GELU",
+          "size": "medium",
+          "platform": "NVIDIA A100",
+          "latency_us": 4.15,
+          "throughput_tflops": 96.296,
+          "efficiency_pct": 30.9,
+          "memory_mb": 2
+        },
+        {
+          "operator": "GELU",
+          "size": "medium",
+          "platform": "Ascend 910B",
+          "latency_us": 4.89,
+          "throughput_tflops": 81.778,
+          "efficiency_pct": 25.6,
+          "memory_mb": 2
+        },
+        {
+          "operator": "GELU",
+          "size": "medium",
+          "platform": "MLU370-X8",
+          "latency_us": 6.83,
+          "throughput_tflops": 58.532,
+          "efficiency_pct": 22.9,
+          "memory_mb": 2
+        },
+        {
+          "operator": "GELU",
+          "size": "medium",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 51.14,
+          "throughput_tflops": 7.822,
+          "efficiency_pct": 100,
+          "memory_mb": 2
+        },
+        {
+          "operator": "GELU",
+          "size": "medium",
+          "platform": "Intel GPU Max",
+          "latency_us": 3.44,
+          "throughput_tflops": 116.421,
+          "efficiency_pct": 27.8,
+          "memory_mb": 2
+        },
+        {
+          "operator": "GELU",
+          "size": "large",
+          "platform": "NVIDIA A100",
+          "latency_us": 11.8,
+          "throughput_tflops": 271.268,
+          "efficiency_pct": 86.9,
+          "memory_mb": 8
+        },
+        {
+          "operator": "GELU",
+          "size": "large",
+          "platform": "Ascend 910B",
+          "latency_us": 14.48,
+          "throughput_tflops": 221.024,
+          "efficiency_pct": 69.1,
+          "memory_mb": 8
+        },
+        {
+          "operator": "GELU",
+          "size": "large",
+          "platform": "MLU370-X8",
+          "latency_us": 18.63,
+          "throughput_tflops": 171.723,
+          "efficiency_pct": 67.1,
+          "memory_mb": 8
+        },
+        {
+          "operator": "GELU",
+          "size": "large",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 147.24,
+          "throughput_tflops": 21.733,
+          "efficiency_pct": 100,
+          "memory_mb": 8
+        },
+        {
+          "operator": "GELU",
+          "size": "large",
+          "platform": "Intel GPU Max",
+          "latency_us": 10.58,
+          "throughput_tflops": 302.453,
+          "efficiency_pct": 72.2,
+          "memory_mb": 8
+        },
+        {
+          "operator": "Softmax",
+          "size": "small",
+          "platform": "NVIDIA A100",
+          "latency_us": 2.51,
+          "throughput_tflops": 31.845,
+          "efficiency_pct": 10.2,
+          "memory_mb": 0.8
+        },
+        {
+          "operator": "Softmax",
+          "size": "small",
+          "platform": "Ascend 910B",
+          "latency_us": 3.17,
+          "throughput_tflops": 25.272,
+          "efficiency_pct": 7.9,
+          "memory_mb": 0.8
+        },
+        {
+          "operator": "Softmax",
+          "size": "small",
+          "platform": "MLU370-X8",
+          "latency_us": 3.92,
+          "throughput_tflops": 20.396,
+          "efficiency_pct": 8.0,
+          "memory_mb": 0.8
+        },
+        {
+          "operator": "Softmax",
+          "size": "small",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 30.74,
+          "throughput_tflops": 2.603,
+          "efficiency_pct": 100,
+          "memory_mb": 0.8
+        },
+        {
+          "operator": "Softmax",
+          "size": "small",
+          "platform": "Intel GPU Max",
+          "latency_us": 2.03,
+          "throughput_tflops": 39.413,
+          "efficiency_pct": 9.4,
+          "memory_mb": 0.8
+        },
+        {
+          "operator": "Softmax",
+          "size": "medium",
+          "platform": "NVIDIA A100",
+          "latency_us": 6.3,
+          "throughput_tflops": 101.549,
+          "efficiency_pct": 32.5,
+          "memory_mb": 3
+        },
+        {
+          "operator": "Softmax",
+          "size": "medium",
+          "platform": "Ascend 910B",
+          "latency_us": 8.33,
+          "throughput_tflops": 76.792,
+          "efficiency_pct": 24.0,
+          "memory_mb": 3
+        },
+        {
+          "operator": "Softmax",
+          "size": "medium",
+          "platform": "MLU370-X8",
+          "latency_us": 11.2,
+          "throughput_tflops": 57.137,
+          "efficiency_pct": 22.3,
+          "memory_mb": 3
+        },
+        {
+          "operator": "Softmax",
+          "size": "medium",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 85.02,
+          "throughput_tflops": 7.527,
+          "efficiency_pct": 100,
+          "memory_mb": 3
+        },
+        {
+          "operator": "Softmax",
+          "size": "medium",
+          "platform": "Intel GPU Max",
+          "latency_us": 5.57,
+          "throughput_tflops": 114.996,
+          "efficiency_pct": 27.4,
+          "memory_mb": 3
+        },
+        {
+          "operator": "Softmax",
+          "size": "large",
+          "platform": "NVIDIA A100",
+          "latency_us": 18.03,
+          "throughput_tflops": 282.908,
+          "efficiency_pct": 90.7,
+          "memory_mb": 12
+        },
+        {
+          "operator": "Softmax",
+          "size": "large",
+          "platform": "Ascend 910B",
+          "latency_us": 22.94,
+          "throughput_tflops": 222.347,
+          "efficiency_pct": 69.5,
+          "memory_mb": 12
+        },
+        {
+          "operator": "Softmax",
+          "size": "large",
+          "platform": "MLU370-X8",
+          "latency_us": 31.0,
+          "throughput_tflops": 164.494,
+          "efficiency_pct": 64.3,
+          "memory_mb": 12
+        },
+        {
+          "operator": "Softmax",
+          "size": "large",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 232.77,
+          "throughput_tflops": 21.91,
+          "efficiency_pct": 100,
+          "memory_mb": 12
+        },
+        {
+          "operator": "Softmax",
+          "size": "large",
+          "platform": "Intel GPU Max",
+          "latency_us": 15.94,
+          "throughput_tflops": 320.016,
+          "efficiency_pct": 76.4,
+          "memory_mb": 12
+        },
+        {
+          "operator": "Embedding",
+          "size": "small",
+          "platform": "NVIDIA A100",
+          "latency_us": 4.18,
+          "throughput_tflops": 4.781,
+          "efficiency_pct": 1.5,
+          "memory_mb": 16
+        },
+        {
+          "operator": "Embedding",
+          "size": "small",
+          "platform": "Ascend 910B",
+          "latency_us": 5.74,
+          "throughput_tflops": 3.486,
+          "efficiency_pct": 1.1,
+          "memory_mb": 16
+        },
+        {
+          "operator": "Embedding",
+          "size": "small",
+          "platform": "MLU370-X8",
+          "latency_us": 7.35,
+          "throughput_tflops": 2.72,
+          "efficiency_pct": 1.1,
+          "memory_mb": 16
+        },
+        {
+          "operator": "Embedding",
+          "size": "small",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 51.91,
+          "throughput_tflops": 0.385,
+          "efficiency_pct": 15.4,
+          "memory_mb": 16
+        },
+        {
+          "operator": "Embedding",
+          "size": "small",
+          "platform": "Intel GPU Max",
+          "latency_us": 3.74,
+          "throughput_tflops": 5.349,
+          "efficiency_pct": 1.3,
+          "memory_mb": 16
+        },
+        {
+          "operator": "Embedding",
+          "size": "medium",
+          "platform": "NVIDIA A100",
+          "latency_us": 11.12,
+          "throughput_tflops": 14.389,
+          "efficiency_pct": 4.6,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Embedding",
+          "size": "medium",
+          "platform": "Ascend 910B",
+          "latency_us": 15.71,
+          "throughput_tflops": 10.186,
+          "efficiency_pct": 3.2,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Embedding",
+          "size": "medium",
+          "platform": "MLU370-X8",
+          "latency_us": 21.93,
+          "throughput_tflops": 7.295,
+          "efficiency_pct": 2.8,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Embedding",
+          "size": "medium",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 172.69,
+          "throughput_tflops": 0.927,
+          "efficiency_pct": 37.1,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Embedding",
+          "size": "medium",
+          "platform": "Intel GPU Max",
+          "latency_us": 11.15,
+          "throughput_tflops": 14.349,
+          "efficiency_pct": 3.4,
+          "memory_mb": 64
+        },
+        {
+          "operator": "Embedding",
+          "size": "large",
+          "platform": "NVIDIA A100",
+          "latency_us": 39.28,
+          "throughput_tflops": 32.584,
+          "efficiency_pct": 10.4,
+          "memory_mb": 256
+        },
+        {
+          "operator": "Embedding",
+          "size": "large",
+          "platform": "Ascend 910B",
+          "latency_us": 49.4,
+          "throughput_tflops": 25.91,
+          "efficiency_pct": 8.1,
+          "memory_mb": 256
+        },
+        {
+          "operator": "Embedding",
+          "size": "large",
+          "platform": "MLU370-X8",
+          "latency_us": 64.78,
+          "throughput_tflops": 19.759,
+          "efficiency_pct": 7.7,
+          "memory_mb": 256
+        },
+        {
+          "operator": "Embedding",
+          "size": "large",
+          "platform": "Intel Xeon 8380",
+          "latency_us": 511.39,
+          "throughput_tflops": 2.503,
+          "efficiency_pct": 100,
+          "memory_mb": 256
+        },
+        {
+          "operator": "Embedding",
+          "size": "large",
+          "platform": "Intel GPU Max",
+          "latency_us": 36.76,
+          "throughput_tflops": 34.825,
+          "efficiency_pct": 8.3,
+          "memory_mb": 256
+        }
+      ],
+      "efficiency_summary": {
+        "NVIDIA A100": 47.9,
+        "Ascend 910B": 40.9,
+        "MLU370-X8": 38.2,
+        "Intel Xeon 8380": 93.4,
+        "Intel GPU Max": 44.5
+      },
+      "roofline_results": [
+        {
+          "operator": "Linear",
+          "platform": "NVIDIA A100",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 156.0,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "Linear",
+          "platform": "Ascend 910B",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 266.67,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Linear",
+          "platform": "MLU370-X8",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 320.0,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Linear",
+          "platform": "Intel Xeon 8380",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 12.5,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "Linear",
+          "platform": "Intel GPU Max",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 130.94,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "MatMul",
+          "platform": "NVIDIA A100",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 156.0,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "MatMul",
+          "platform": "Ascend 910B",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 266.67,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "MatMul",
+          "platform": "MLU370-X8",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 320.0,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "MatMul",
+          "platform": "Intel Xeon 8380",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 12.5,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "MatMul",
+          "platform": "Intel GPU Max",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 130.94,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "Conv2d",
+          "platform": "NVIDIA A100",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 156.0,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "Conv2d",
+          "platform": "Ascend 910B",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 266.67,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Conv2d",
+          "platform": "MLU370-X8",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 320.0,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Conv2d",
+          "platform": "Intel Xeon 8380",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 12.5,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "Conv2d",
+          "platform": "Intel GPU Max",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 130.94,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "MultiheadAttention",
+          "platform": "NVIDIA A100",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 156.0,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "MultiheadAttention",
+          "platform": "Ascend 910B",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 266.67,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "MultiheadAttention",
+          "platform": "MLU370-X8",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 320.0,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "MultiheadAttention",
+          "platform": "Intel Xeon 8380",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 12.5,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "MultiheadAttention",
+          "platform": "Intel GPU Max",
+          "arithmetic_intensity": 250.0,
+          "ridge_point": 130.94,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "LayerNorm",
+          "platform": "NVIDIA A100",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 156.0,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "LayerNorm",
+          "platform": "Ascend 910B",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 266.67,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "LayerNorm",
+          "platform": "MLU370-X8",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 320.0,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "LayerNorm",
+          "platform": "Intel Xeon 8380",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 12.5,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "LayerNorm",
+          "platform": "Intel GPU Max",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 130.94,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "GELU",
+          "platform": "NVIDIA A100",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 156.0,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "GELU",
+          "platform": "Ascend 910B",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 266.67,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "GELU",
+          "platform": "MLU370-X8",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 320.0,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "GELU",
+          "platform": "Intel Xeon 8380",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 12.5,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "GELU",
+          "platform": "Intel GPU Max",
+          "arithmetic_intensity": 200.0,
+          "ridge_point": 130.94,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "Softmax",
+          "platform": "NVIDIA A100",
+          "arithmetic_intensity": 213.33,
+          "ridge_point": 156.0,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "Softmax",
+          "platform": "Ascend 910B",
+          "arithmetic_intensity": 213.33,
+          "ridge_point": 266.67,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Softmax",
+          "platform": "MLU370-X8",
+          "arithmetic_intensity": 213.33,
+          "ridge_point": 320.0,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Softmax",
+          "platform": "Intel Xeon 8380",
+          "arithmetic_intensity": 213.33,
+          "ridge_point": 12.5,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "Softmax",
+          "platform": "Intel GPU Max",
+          "arithmetic_intensity": 213.33,
+          "ridge_point": 130.94,
+          "bottleneck": "Compute-bound"
+        },
+        {
+          "operator": "Embedding",
+          "platform": "NVIDIA A100",
+          "arithmetic_intensity": 2.5,
+          "ridge_point": 156.0,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Embedding",
+          "platform": "Ascend 910B",
+          "arithmetic_intensity": 2.5,
+          "ridge_point": 266.67,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Embedding",
+          "platform": "MLU370-X8",
+          "arithmetic_intensity": 2.5,
+          "ridge_point": 320.0,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Embedding",
+          "platform": "Intel Xeon 8380",
+          "arithmetic_intensity": 2.5,
+          "ridge_point": 12.5,
+          "bottleneck": "Memory-bound"
+        },
+        {
+          "operator": "Embedding",
+          "platform": "Intel GPU Max",
+          "arithmetic_intensity": 2.5,
+          "ridge_point": 130.94,
+          "bottleneck": "Memory-bound"
+        }
+      ]
+    },
+    "copa_attribution_full.json": {
+      "experiment": "COPA Attribution Analysis (Full)",
+      "timestamp": "2026-01-04T14:15:42.017040",
+      "models_analyzed": 8,
+      "platforms_analyzed": 5,
+      "detailed_results": [
+        {
+          "model": "GPT-2",
+          "category": "LLM",
+          "platform": "NVIDIA A100",
+          "total_latency_us": 3760.2,
+          "shapley_values": {
+            "Linear": 2160.0,
+            "LayerNorm": 212.5,
+            "MultiheadAttention": 1176.0,
+            "GELU": 50.4,
+            "Embedding": 24.0,
+            "Softmax": 81.6
+          },
+          "contributions_pct": {
+            "Linear": 58.3,
+            "LayerNorm": 5.7,
+            "MultiheadAttention": 31.7,
+            "GELU": 1.4,
+            "Embedding": 0.6,
+            "Softmax": 2.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              58.3
+            ],
+            [
+              "MultiheadAttention",
+              31.7
+            ],
+            [
+              "LayerNorm",
+              5.7
+            ]
+          ]
+        },
+        {
+          "model": "GPT-2",
+          "category": "LLM",
+          "platform": "Ascend 910B",
+          "total_latency_us": 3868.8,
+          "shapley_values": {
+            "Linear": 2273.68,
+            "LayerNorm": 250.0,
+            "MultiheadAttention": 1237.89,
+            "GELU": 59.29,
+            "Embedding": 28.24,
+            "Softmax": 96.0
+          },
+          "contributions_pct": {
+            "Linear": 57.6,
+            "LayerNorm": 6.3,
+            "MultiheadAttention": 31.4,
+            "GELU": 1.5,
+            "Embedding": 0.7,
+            "Softmax": 2.4
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              57.6
+            ],
+            [
+              "MultiheadAttention",
+              31.4
+            ],
+            [
+              "LayerNorm",
+              6.3
+            ]
+          ]
+        },
+        {
+          "model": "GPT-2",
+          "category": "LLM",
+          "platform": "MLU370-X8",
+          "total_latency_us": 4762.8,
+          "shapley_values": {
+            "Linear": 2769.23,
+            "LayerNorm": 303.57,
+            "MultiheadAttention": 1507.69,
+            "GELU": 72.0,
+            "Embedding": 34.29,
+            "Softmax": 116.57
+          },
+          "contributions_pct": {
+            "Linear": 57.7,
+            "LayerNorm": 6.3,
+            "MultiheadAttention": 31.4,
+            "GELU": 1.5,
+            "Embedding": 0.7,
+            "Softmax": 2.4
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              57.7
+            ],
+            [
+              "MultiheadAttention",
+              31.4
+            ],
+            [
+              "LayerNorm",
+              6.3
+            ]
+          ]
+        },
+        {
+          "model": "GPT-2",
+          "category": "LLM",
+          "platform": "Intel Xeon 8380",
+          "total_latency_us": 45208.9,
+          "shapley_values": {
+            "Linear": 27000.0,
+            "LayerNorm": 1416.67,
+            "MultiheadAttention": 14700.0,
+            "GELU": 336.0,
+            "Embedding": 160.0,
+            "Softmax": 544.0
+          },
+          "contributions_pct": {
+            "Linear": 61.1,
+            "LayerNorm": 3.2,
+            "MultiheadAttention": 33.3,
+            "GELU": 0.8,
+            "Embedding": 0.4,
+            "Softmax": 1.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              61.1
+            ],
+            [
+              "MultiheadAttention",
+              33.3
+            ],
+            [
+              "LayerNorm",
+              3.2
+            ]
+          ]
+        },
+        {
+          "model": "GPT-2",
+          "category": "LLM",
+          "platform": "Intel GPU Max",
+          "total_latency_us": 3227.1,
+          "shapley_values": {
+            "Linear": 1963.64,
+            "LayerNorm": 177.08,
+            "MultiheadAttention": 1069.09,
+            "GELU": 42.0,
+            "Embedding": 20.0,
+            "Softmax": 68.0
+          },
+          "contributions_pct": {
+            "Linear": 58.8,
+            "LayerNorm": 5.3,
+            "MultiheadAttention": 32.0,
+            "GELU": 1.3,
+            "Embedding": 0.6,
+            "Softmax": 2.0
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              58.8
+            ],
+            [
+              "MultiheadAttention",
+              32.0
+            ],
+            [
+              "LayerNorm",
+              5.3
+            ]
+          ]
+        },
+        {
+          "model": "LLaMA-7B",
+          "category": "LLM",
+          "platform": "NVIDIA A100",
+          "total_latency_us": 9398.1,
+          "shapley_values": {
+            "Linear": 5760.0,
+            "RMSNorm": 487.5,
+            "MultiheadAttention": 3136.0,
+            "SiLU": 121.6,
+            "Embedding": 24.0,
+            "Softmax": 217.6
+          },
+          "contributions_pct": {
+            "Linear": 59.1,
+            "RMSNorm": 5.0,
+            "MultiheadAttention": 32.2,
+            "SiLU": 1.2,
+            "Embedding": 0.2,
+            "Softmax": 2.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              59.1
+            ],
+            [
+              "MultiheadAttention",
+              32.2
+            ],
+            [
+              "RMSNorm",
+              5.0
+            ]
+          ]
+        },
+        {
+          "model": "LLaMA-7B",
+          "category": "LLM",
+          "platform": "Ascend 910B",
+          "total_latency_us": 10106.9,
+          "shapley_values": {
+            "Linear": 6063.16,
+            "RMSNorm": 573.53,
+            "MultiheadAttention": 3301.05,
+            "SiLU": 143.06,
+            "Embedding": 28.24,
+            "Softmax": 256.0
+          },
+          "contributions_pct": {
+            "Linear": 58.5,
+            "RMSNorm": 5.5,
+            "MultiheadAttention": 31.8,
+            "SiLU": 1.4,
+            "Embedding": 0.3,
+            "Softmax": 2.5
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              58.5
+            ],
+            [
+              "MultiheadAttention",
+              31.8
+            ],
+            [
+              "RMSNorm",
+              5.5
+            ]
+          ]
+        },
+        {
+          "model": "LLaMA-7B",
+          "category": "LLM",
+          "platform": "MLU370-X8",
+          "total_latency_us": 12486.5,
+          "shapley_values": {
+            "Linear": 7384.62,
+            "RMSNorm": 696.43,
+            "MultiheadAttention": 4020.51,
+            "SiLU": 173.71,
+            "Embedding": 34.29,
+            "Softmax": 310.86
+          },
+          "contributions_pct": {
+            "Linear": 58.5,
+            "RMSNorm": 5.5,
+            "MultiheadAttention": 31.9,
+            "SiLU": 1.4,
+            "Embedding": 0.3,
+            "Softmax": 2.5
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              58.5
+            ],
+            [
+              "MultiheadAttention",
+              31.9
+            ],
+            [
+              "RMSNorm",
+              5.5
+            ]
+          ]
+        },
+        {
+          "model": "LLaMA-7B",
+          "category": "LLM",
+          "platform": "Intel Xeon 8380",
+          "total_latency_us": 117624.6,
+          "shapley_values": {
+            "Linear": 72000.0,
+            "RMSNorm": 3250.0,
+            "MultiheadAttention": 39200.0,
+            "SiLU": 810.67,
+            "Embedding": 160.0,
+            "Softmax": 1450.67
+          },
+          "contributions_pct": {
+            "Linear": 61.6,
+            "RMSNorm": 2.8,
+            "MultiheadAttention": 33.5,
+            "SiLU": 0.7,
+            "Embedding": 0.1,
+            "Softmax": 1.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              61.6
+            ],
+            [
+              "MultiheadAttention",
+              33.5
+            ],
+            [
+              "RMSNorm",
+              2.8
+            ]
+          ]
+        },
+        {
+          "model": "LLaMA-7B",
+          "category": "LLM",
+          "platform": "Intel GPU Max",
+          "total_latency_us": 8571.2,
+          "shapley_values": {
+            "Linear": 5236.36,
+            "RMSNorm": 406.25,
+            "MultiheadAttention": 2850.91,
+            "SiLU": 101.33,
+            "Embedding": 20.0,
+            "Softmax": 181.33
+          },
+          "contributions_pct": {
+            "Linear": 59.5,
+            "RMSNorm": 4.6,
+            "MultiheadAttention": 32.4,
+            "SiLU": 1.2,
+            "Embedding": 0.2,
+            "Softmax": 2.1
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              59.5
+            ],
+            [
+              "MultiheadAttention",
+              32.4
+            ],
+            [
+              "RMSNorm",
+              4.6
+            ]
+          ]
+        },
+        {
+          "model": "BERT-Base",
+          "category": "NLP",
+          "platform": "NVIDIA A100",
+          "total_latency_us": 4702.0,
+          "shapley_values": {
+            "Linear": 3240.0,
+            "LayerNorm": 212.5,
+            "MultiheadAttention": 1176.0,
+            "GELU": 50.4,
+            "Embedding": 36.0,
+            "Softmax": 81.6
+          },
+          "contributions_pct": {
+            "Linear": 67.5,
+            "LayerNorm": 4.4,
+            "MultiheadAttention": 24.5,
+            "GELU": 1.1,
+            "Embedding": 0.8,
+            "Softmax": 1.7
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              67.5
+            ],
+            [
+              "MultiheadAttention",
+              24.5
+            ],
+            [
+              "LayerNorm",
+              4.4
+            ]
+          ]
+        },
+        {
+          "model": "BERT-Base",
+          "category": "NLP",
+          "platform": "Ascend 910B",
+          "total_latency_us": 5043.8,
+          "shapley_values": {
+            "Linear": 3410.53,
+            "LayerNorm": 250.0,
+            "MultiheadAttention": 1237.89,
+            "GELU": 59.29,
+            "Embedding": 42.35,
+            "Softmax": 96.0
+          },
+          "contributions_pct": {
+            "Linear": 66.9,
+            "LayerNorm": 4.9,
+            "MultiheadAttention": 24.3,
+            "GELU": 1.2,
+            "Embedding": 0.8,
+            "Softmax": 1.9
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              66.9
+            ],
+            [
+              "MultiheadAttention",
+              24.3
+            ],
+            [
+              "LayerNorm",
+              4.9
+            ]
+          ]
+        },
+        {
+          "model": "BERT-Base",
+          "category": "NLP",
+          "platform": "MLU370-X8",
+          "total_latency_us": 6145.4,
+          "shapley_values": {
+            "Linear": 4153.85,
+            "LayerNorm": 303.57,
+            "MultiheadAttention": 1507.69,
+            "GELU": 72.0,
+            "Embedding": 51.43,
+            "Softmax": 116.57
+          },
+          "contributions_pct": {
+            "Linear": 66.9,
+            "LayerNorm": 4.9,
+            "MultiheadAttention": 24.3,
+            "GELU": 1.2,
+            "Embedding": 0.8,
+            "Softmax": 1.9
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              66.9
+            ],
+            [
+              "MultiheadAttention",
+              24.3
+            ],
+            [
+              "LayerNorm",
+              4.9
+            ]
+          ]
+        },
+        {
+          "model": "BERT-Base",
+          "category": "NLP",
+          "platform": "Intel Xeon 8380",
+          "total_latency_us": 57401.1,
+          "shapley_values": {
+            "Linear": 40500.0,
+            "LayerNorm": 1416.67,
+            "MultiheadAttention": 14700.0,
+            "GELU": 336.0,
+            "Embedding": 240.0,
+            "Softmax": 544.0
+          },
+          "contributions_pct": {
+            "Linear": 70.1,
+            "LayerNorm": 2.5,
+            "MultiheadAttention": 25.5,
+            "GELU": 0.6,
+            "Embedding": 0.4,
+            "Softmax": 0.9
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              70.1
+            ],
+            [
+              "MultiheadAttention",
+              25.5
+            ],
+            [
+              "LayerNorm",
+              2.5
+            ]
+          ]
+        },
+        {
+          "model": "BERT-Base",
+          "category": "NLP",
+          "platform": "Intel GPU Max",
+          "total_latency_us": 4371.4,
+          "shapley_values": {
+            "Linear": 2945.45,
+            "LayerNorm": 177.08,
+            "MultiheadAttention": 1069.09,
+            "GELU": 42.0,
+            "Embedding": 30.0,
+            "Softmax": 68.0
+          },
+          "contributions_pct": {
+            "Linear": 68.0,
+            "LayerNorm": 4.1,
+            "MultiheadAttention": 24.7,
+            "GELU": 1.0,
+            "Embedding": 0.7,
+            "Softmax": 1.6
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              68.0
+            ],
+            [
+              "MultiheadAttention",
+              24.7
+            ],
+            [
+              "LayerNorm",
+              4.1
+            ]
+          ]
+        },
+        {
+          "model": "ResNet-50",
+          "category": "CV",
+          "platform": "NVIDIA A100",
+          "total_latency_us": 4267.8,
+          "shapley_values": {
+            "Conv2d": 3551.0,
+            "BatchNorm2d": 424.0,
+            "ReLU": 98.0,
+            "MaxPool2d": 5.0,
+            "AvgPool2d": 4.5,
+            "Linear": 45.0
+          },
+          "contributions_pct": {
+            "Conv2d": 86.0,
+            "BatchNorm2d": 10.3,
+            "ReLU": 2.4,
+            "MaxPool2d": 0.1,
+            "AvgPool2d": 0.1,
+            "Linear": 1.1
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              86.0
+            ],
+            [
+              "BatchNorm2d",
+              10.3
+            ],
+            [
+              "ReLU",
+              2.4
+            ]
+          ]
+        },
+        {
+          "model": "ResNet-50",
+          "category": "CV",
+          "platform": "Ascend 910B",
+          "total_latency_us": 4309.8,
+          "shapley_values": {
+            "Conv2d": 3737.89,
+            "BatchNorm2d": 498.82,
+            "ReLU": 115.29,
+            "MaxPool2d": 5.88,
+            "AvgPool2d": 5.29,
+            "Linear": 47.37
+          },
+          "contributions_pct": {
+            "Conv2d": 84.7,
+            "BatchNorm2d": 11.3,
+            "ReLU": 2.6,
+            "MaxPool2d": 0.1,
+            "AvgPool2d": 0.1,
+            "Linear": 1.1
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              84.7
+            ],
+            [
+              "BatchNorm2d",
+              11.3
+            ],
+            [
+              "ReLU",
+              2.6
+            ]
+          ]
+        },
+        {
+          "model": "ResNet-50",
+          "category": "CV",
+          "platform": "MLU370-X8",
+          "total_latency_us": 5571.7,
+          "shapley_values": {
+            "Conv2d": 4552.56,
+            "BatchNorm2d": 605.71,
+            "ReLU": 140.0,
+            "MaxPool2d": 7.14,
+            "AvgPool2d": 6.43,
+            "Linear": 57.69
+          },
+          "contributions_pct": {
+            "Conv2d": 84.8,
+            "BatchNorm2d": 11.3,
+            "ReLU": 2.6,
+            "MaxPool2d": 0.1,
+            "AvgPool2d": 0.1,
+            "Linear": 1.1
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              84.8
+            ],
+            [
+              "BatchNorm2d",
+              11.3
+            ],
+            [
+              "ReLU",
+              2.6
+            ]
+          ]
+        },
+        {
+          "model": "ResNet-50",
+          "category": "CV",
+          "platform": "Intel Xeon 8380",
+          "total_latency_us": 45203.5,
+          "shapley_values": {
+            "Conv2d": 44387.5,
+            "BatchNorm2d": 2826.67,
+            "ReLU": 653.33,
+            "MaxPool2d": 33.33,
+            "AvgPool2d": 30.0,
+            "Linear": 562.5
+          },
+          "contributions_pct": {
+            "Conv2d": 91.5,
+            "BatchNorm2d": 5.8,
+            "ReLU": 1.3,
+            "MaxPool2d": 0.1,
+            "AvgPool2d": 0.1,
+            "Linear": 1.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              91.5
+            ],
+            [
+              "BatchNorm2d",
+              5.8
+            ],
+            [
+              "ReLU",
+              1.3
+            ]
+          ]
+        },
+        {
+          "model": "ResNet-50",
+          "category": "CV",
+          "platform": "Intel GPU Max",
+          "total_latency_us": 3672.8,
+          "shapley_values": {
+            "Conv2d": 3228.18,
+            "BatchNorm2d": 353.33,
+            "ReLU": 81.67,
+            "MaxPool2d": 4.17,
+            "AvgPool2d": 3.75,
+            "Linear": 40.91
+          },
+          "contributions_pct": {
+            "Conv2d": 87.0,
+            "BatchNorm2d": 9.5,
+            "ReLU": 2.2,
+            "MaxPool2d": 0.1,
+            "AvgPool2d": 0.1,
+            "Linear": 1.1
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              87.0
+            ],
+            [
+              "BatchNorm2d",
+              9.5
+            ],
+            [
+              "ReLU",
+              2.2
+            ]
+          ]
+        },
+        {
+          "model": "ViT-Base",
+          "category": "CV",
+          "platform": "NVIDIA A100",
+          "total_latency_us": 3702.6,
+          "shapley_values": {
+            "Linear": 2160.0,
+            "LayerNorm": 212.5,
+            "MultiheadAttention": 1176.0,
+            "GELU": 50.4,
+            "Conv2d": 67.0,
+            "Softmax": 81.6
+          },
+          "contributions_pct": {
+            "Linear": 57.6,
+            "LayerNorm": 5.7,
+            "MultiheadAttention": 31.4,
+            "GELU": 1.3,
+            "Conv2d": 1.8,
+            "Softmax": 2.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              57.6
+            ],
+            [
+              "MultiheadAttention",
+              31.4
+            ],
+            [
+              "LayerNorm",
+              5.7
+            ]
+          ]
+        },
+        {
+          "model": "ViT-Base",
+          "category": "CV",
+          "platform": "Ascend 910B",
+          "total_latency_us": 4007.5,
+          "shapley_values": {
+            "Linear": 2273.68,
+            "LayerNorm": 250.0,
+            "MultiheadAttention": 1237.89,
+            "GELU": 59.29,
+            "Conv2d": 70.53,
+            "Softmax": 96.0
+          },
+          "contributions_pct": {
+            "Linear": 57.0,
+            "LayerNorm": 6.3,
+            "MultiheadAttention": 31.0,
+            "GELU": 1.5,
+            "Conv2d": 1.8,
+            "Softmax": 2.4
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              57.0
+            ],
+            [
+              "MultiheadAttention",
+              31.0
+            ],
+            [
+              "LayerNorm",
+              6.3
+            ]
+          ]
+        },
+        {
+          "model": "ViT-Base",
+          "category": "CV",
+          "platform": "MLU370-X8",
+          "total_latency_us": 4811.4,
+          "shapley_values": {
+            "Linear": 2769.23,
+            "LayerNorm": 303.57,
+            "MultiheadAttention": 1507.69,
+            "GELU": 72.0,
+            "Conv2d": 85.9,
+            "Softmax": 116.57
+          },
+          "contributions_pct": {
+            "Linear": 57.0,
+            "LayerNorm": 6.3,
+            "MultiheadAttention": 31.1,
+            "GELU": 1.5,
+            "Conv2d": 1.8,
+            "Softmax": 2.4
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              57.0
+            ],
+            [
+              "MultiheadAttention",
+              31.1
+            ],
+            [
+              "LayerNorm",
+              6.3
+            ]
+          ]
+        },
+        {
+          "model": "ViT-Base",
+          "category": "CV",
+          "platform": "Intel Xeon 8380",
+          "total_latency_us": 44872.3,
+          "shapley_values": {
+            "Linear": 27000.0,
+            "LayerNorm": 1416.67,
+            "MultiheadAttention": 14700.0,
+            "GELU": 336.0,
+            "Conv2d": 837.5,
+            "Softmax": 544.0
+          },
+          "contributions_pct": {
+            "Linear": 60.2,
+            "LayerNorm": 3.2,
+            "MultiheadAttention": 32.8,
+            "GELU": 0.7,
+            "Conv2d": 1.9,
+            "Softmax": 1.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              60.2
+            ],
+            [
+              "MultiheadAttention",
+              32.8
+            ],
+            [
+              "LayerNorm",
+              3.2
+            ]
+          ]
+        },
+        {
+          "model": "ViT-Base",
+          "category": "CV",
+          "platform": "Intel GPU Max",
+          "total_latency_us": 3475.3,
+          "shapley_values": {
+            "Linear": 1963.64,
+            "LayerNorm": 177.08,
+            "MultiheadAttention": 1069.09,
+            "GELU": 42.0,
+            "Conv2d": 60.91,
+            "Softmax": 68.0
+          },
+          "contributions_pct": {
+            "Linear": 58.1,
+            "LayerNorm": 5.2,
+            "MultiheadAttention": 31.6,
+            "GELU": 1.2,
+            "Conv2d": 1.8,
+            "Softmax": 2.0
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              58.1
+            ],
+            [
+              "MultiheadAttention",
+              31.6
+            ],
+            [
+              "LayerNorm",
+              5.2
+            ]
+          ]
+        },
+        {
+          "model": "Stable Diffusion",
+          "category": "Diffusion",
+          "platform": "NVIDIA A100",
+          "total_latency_us": 17350.7,
+          "shapley_values": {
+            "Conv2d": 8576.0,
+            "Linear": 4320.0,
+            "MultiheadAttention": 3136.0,
+            "GroupNorm": 576.0,
+            "SiLU": 243.2,
+            "Softmax": 217.6
+          },
+          "contributions_pct": {
+            "Conv2d": 50.2,
+            "Linear": 25.3,
+            "MultiheadAttention": 18.4,
+            "GroupNorm": 3.4,
+            "SiLU": 1.4,
+            "Softmax": 1.3
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              50.2
+            ],
+            [
+              "Linear",
+              25.3
+            ],
+            [
+              "MultiheadAttention",
+              18.4
+            ]
+          ]
+        },
+        {
+          "model": "Stable Diffusion",
+          "category": "Diffusion",
+          "platform": "Ascend 910B",
+          "total_latency_us": 18226.7,
+          "shapley_values": {
+            "Conv2d": 9027.37,
+            "Linear": 4547.37,
+            "MultiheadAttention": 3301.05,
+            "GroupNorm": 677.65,
+            "SiLU": 286.12,
+            "Softmax": 256.0
+          },
+          "contributions_pct": {
+            "Conv2d": 49.9,
+            "Linear": 25.1,
+            "MultiheadAttention": 18.2,
+            "GroupNorm": 3.7,
+            "SiLU": 1.6,
+            "Softmax": 1.4
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              49.9
+            ],
+            [
+              "Linear",
+              25.1
+            ],
+            [
+              "MultiheadAttention",
+              18.2
+            ]
+          ]
+        },
+        {
+          "model": "Stable Diffusion",
+          "category": "Diffusion",
+          "platform": "MLU370-X8",
+          "total_latency_us": 22230.1,
+          "shapley_values": {
+            "Conv2d": 10994.87,
+            "Linear": 5538.46,
+            "MultiheadAttention": 4020.51,
+            "GroupNorm": 822.86,
+            "SiLU": 347.43,
+            "Softmax": 310.86
+          },
+          "contributions_pct": {
+            "Conv2d": 49.9,
+            "Linear": 25.1,
+            "MultiheadAttention": 18.2,
+            "GroupNorm": 3.7,
+            "SiLU": 1.6,
+            "Softmax": 1.4
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              49.9
+            ],
+            [
+              "Linear",
+              25.1
+            ],
+            [
+              "MultiheadAttention",
+              18.2
+            ]
+          ]
+        },
+        {
+          "model": "Stable Diffusion",
+          "category": "Diffusion",
+          "platform": "Intel Xeon 8380",
+          "total_latency_us": 209110.3,
+          "shapley_values": {
+            "Conv2d": 107200.0,
+            "Linear": 54000.0,
+            "MultiheadAttention": 39200.0,
+            "GroupNorm": 3840.0,
+            "SiLU": 1621.33,
+            "Softmax": 1450.67
+          },
+          "contributions_pct": {
+            "Conv2d": 51.7,
+            "Linear": 26.0,
+            "MultiheadAttention": 18.9,
+            "GroupNorm": 1.9,
+            "SiLU": 0.8,
+            "Softmax": 0.7
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              51.7
+            ],
+            [
+              "Linear",
+              26.0
+            ],
+            [
+              "MultiheadAttention",
+              18.9
+            ]
+          ]
+        },
+        {
+          "model": "Stable Diffusion",
+          "category": "Diffusion",
+          "platform": "Intel GPU Max",
+          "total_latency_us": 15431.6,
+          "shapley_values": {
+            "Conv2d": 7796.36,
+            "Linear": 3927.27,
+            "MultiheadAttention": 2850.91,
+            "GroupNorm": 480.0,
+            "SiLU": 202.67,
+            "Softmax": 181.33
+          },
+          "contributions_pct": {
+            "Conv2d": 50.5,
+            "Linear": 25.4,
+            "MultiheadAttention": 18.5,
+            "GroupNorm": 3.1,
+            "SiLU": 1.3,
+            "Softmax": 1.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Conv2d",
+              50.5
+            ],
+            [
+              "Linear",
+              25.4
+            ],
+            [
+              "MultiheadAttention",
+              18.5
+            ]
+          ]
+        },
+        {
+          "model": "CLIP",
+          "category": "Multimodal",
+          "platform": "NVIDIA A100",
+          "total_latency_us": 8247.6,
+          "shapley_values": {
+            "Linear": 4320.0,
+            "LayerNorm": 408.0,
+            "MultiheadAttention": 2352.0,
+            "GELU": 100.8,
+            "Conv2d": 1072.0,
+            "Softmax": 163.2
+          },
+          "contributions_pct": {
+            "Linear": 51.3,
+            "LayerNorm": 4.8,
+            "MultiheadAttention": 27.9,
+            "GELU": 1.2,
+            "Conv2d": 12.7,
+            "Softmax": 1.9
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              51.3
+            ],
+            [
+              "MultiheadAttention",
+              27.9
+            ],
+            [
+              "Conv2d",
+              12.7
+            ]
+          ]
+        },
+        {
+          "model": "CLIP",
+          "category": "Multimodal",
+          "platform": "Ascend 910B",
+          "total_latency_us": 9058.8,
+          "shapley_values": {
+            "Linear": 4547.37,
+            "LayerNorm": 480.0,
+            "MultiheadAttention": 2475.79,
+            "GELU": 118.59,
+            "Conv2d": 1128.42,
+            "Softmax": 192.0
+          },
+          "contributions_pct": {
+            "Linear": 50.9,
+            "LayerNorm": 5.4,
+            "MultiheadAttention": 27.7,
+            "GELU": 1.3,
+            "Conv2d": 12.6,
+            "Softmax": 2.1
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              50.9
+            ],
+            [
+              "MultiheadAttention",
+              27.7
+            ],
+            [
+              "Conv2d",
+              12.6
+            ]
+          ]
+        },
+        {
+          "model": "CLIP",
+          "category": "Multimodal",
+          "platform": "MLU370-X8",
+          "total_latency_us": 10756.8,
+          "shapley_values": {
+            "Linear": 5538.46,
+            "LayerNorm": 582.86,
+            "MultiheadAttention": 3015.38,
+            "GELU": 144.0,
+            "Conv2d": 1374.36,
+            "Softmax": 233.14
+          },
+          "contributions_pct": {
+            "Linear": 50.9,
+            "LayerNorm": 5.4,
+            "MultiheadAttention": 27.7,
+            "GELU": 1.3,
+            "Conv2d": 12.6,
+            "Softmax": 2.1
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              50.9
+            ],
+            [
+              "MultiheadAttention",
+              27.7
+            ],
+            [
+              "Conv2d",
+              12.6
+            ]
+          ]
+        },
+        {
+          "model": "CLIP",
+          "category": "Multimodal",
+          "platform": "Intel Xeon 8380",
+          "total_latency_us": 99762.7,
+          "shapley_values": {
+            "Linear": 54000.0,
+            "LayerNorm": 2720.0,
+            "MultiheadAttention": 29400.0,
+            "GELU": 672.0,
+            "Conv2d": 13400.0,
+            "Softmax": 1088.0
+          },
+          "contributions_pct": {
+            "Linear": 53.3,
+            "LayerNorm": 2.7,
+            "MultiheadAttention": 29.0,
+            "GELU": 0.7,
+            "Conv2d": 13.2,
+            "Softmax": 1.1
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              53.3
+            ],
+            [
+              "MultiheadAttention",
+              29.0
+            ],
+            [
+              "Conv2d",
+              13.2
+            ]
+          ]
+        },
+        {
+          "model": "CLIP",
+          "category": "Multimodal",
+          "platform": "Intel GPU Max",
+          "total_latency_us": 7378.0,
+          "shapley_values": {
+            "Linear": 3927.27,
+            "LayerNorm": 340.0,
+            "MultiheadAttention": 2138.18,
+            "GELU": 84.0,
+            "Conv2d": 974.55,
+            "Softmax": 136.0
+          },
+          "contributions_pct": {
+            "Linear": 51.7,
+            "LayerNorm": 4.5,
+            "MultiheadAttention": 28.1,
+            "GELU": 1.1,
+            "Conv2d": 12.8,
+            "Softmax": 1.8
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              51.7
+            ],
+            [
+              "MultiheadAttention",
+              28.1
+            ],
+            [
+              "Conv2d",
+              12.8
+            ]
+          ]
+        },
+        {
+          "model": "Whisper-Base",
+          "category": "Audio",
+          "platform": "NVIDIA A100",
+          "total_latency_us": 3754.4,
+          "shapley_values": {
+            "Linear": 2160.0,
+            "LayerNorm": 204.0,
+            "MultiheadAttention": 1176.0,
+            "GELU": 50.4,
+            "Conv1d": 70.0,
+            "Softmax": 81.6
+          },
+          "contributions_pct": {
+            "Linear": 57.7,
+            "LayerNorm": 5.5,
+            "MultiheadAttention": 31.4,
+            "GELU": 1.3,
+            "Conv1d": 1.9,
+            "Softmax": 2.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              57.7
+            ],
+            [
+              "MultiheadAttention",
+              31.4
+            ],
+            [
+              "LayerNorm",
+              5.5
+            ]
+          ]
+        },
+        {
+          "model": "Whisper-Base",
+          "category": "Audio",
+          "platform": "Ascend 910B",
+          "total_latency_us": 3899.1,
+          "shapley_values": {
+            "Linear": 2273.68,
+            "LayerNorm": 240.0,
+            "MultiheadAttention": 1237.89,
+            "GELU": 59.29,
+            "Conv1d": 73.68,
+            "Softmax": 96.0
+          },
+          "contributions_pct": {
+            "Linear": 57.1,
+            "LayerNorm": 6.0,
+            "MultiheadAttention": 31.1,
+            "GELU": 1.5,
+            "Conv1d": 1.9,
+            "Softmax": 2.4
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              57.1
+            ],
+            [
+              "MultiheadAttention",
+              31.1
+            ],
+            [
+              "LayerNorm",
+              6.0
+            ]
+          ]
+        },
+        {
+          "model": "Whisper-Base",
+          "category": "Audio",
+          "platform": "MLU370-X8",
+          "total_latency_us": 4937.3,
+          "shapley_values": {
+            "Linear": 2769.23,
+            "LayerNorm": 291.43,
+            "MultiheadAttention": 1507.69,
+            "GELU": 72.0,
+            "Conv1d": 89.74,
+            "Softmax": 116.57
+          },
+          "contributions_pct": {
+            "Linear": 57.1,
+            "LayerNorm": 6.0,
+            "MultiheadAttention": 31.1,
+            "GELU": 1.5,
+            "Conv1d": 1.9,
+            "Softmax": 2.4
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              57.1
+            ],
+            [
+              "MultiheadAttention",
+              31.1
+            ],
+            [
+              "LayerNorm",
+              6.0
+            ]
+          ]
+        },
+        {
+          "model": "Whisper-Base",
+          "category": "Audio",
+          "platform": "Intel Xeon 8380",
+          "total_latency_us": 44189.6,
+          "shapley_values": {
+            "Linear": 27000.0,
+            "LayerNorm": 1360.0,
+            "MultiheadAttention": 14700.0,
+            "GELU": 336.0,
+            "Conv1d": 875.0,
+            "Softmax": 544.0
+          },
+          "contributions_pct": {
+            "Linear": 60.2,
+            "LayerNorm": 3.0,
+            "MultiheadAttention": 32.8,
+            "GELU": 0.7,
+            "Conv1d": 2.0,
+            "Softmax": 1.2
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              60.2
+            ],
+            [
+              "MultiheadAttention",
+              32.8
+            ],
+            [
+              "LayerNorm",
+              3.0
+            ]
+          ]
+        },
+        {
+          "model": "Whisper-Base",
+          "category": "Audio",
+          "platform": "Intel GPU Max",
+          "total_latency_us": 3382.3,
+          "shapley_values": {
+            "Linear": 1963.64,
+            "LayerNorm": 170.0,
+            "MultiheadAttention": 1069.09,
+            "GELU": 42.0,
+            "Conv1d": 63.64,
+            "Softmax": 68.0
+          },
+          "contributions_pct": {
+            "Linear": 58.2,
+            "LayerNorm": 5.0,
+            "MultiheadAttention": 31.7,
+            "GELU": 1.2,
+            "Conv1d": 1.9,
+            "Softmax": 2.0
+          },
+          "top3_bottlenecks": [
+            [
+              "Linear",
+              58.2
+            ],
+            [
+              "MultiheadAttention",
+              31.7
+            ],
+            [
+              "LayerNorm",
+              5.0
+            ]
+          ]
+        }
+      ],
+      "operator_model_contrib": {
+        "Linear": [
+          {
+            "model": "GPT-2",
+            "contribution": 58.3
+          },
+          {
+            "model": "LLaMA-7B",
+            "contribution": 59.1
+          },
+          {
+            "model": "BERT-Base",
+            "contribution": 67.5
+          },
+          {
+            "model": "ResNet-50",
+            "contribution": 1.1
+          },
+          {
+            "model": "ViT-Base",
+            "contribution": 57.6
+          },
+          {
+            "model": "Stable Diffusion",
+            "contribution": 25.3
+          },
+          {
+            "model": "CLIP",
+            "contribution": 51.3
+          },
+          {
+            "model": "Whisper-Base",
+            "contribution": 57.7
+          }
+        ],
+        "LayerNorm": [
+          {
+            "model": "GPT-2",
+            "contribution": 5.7
+          },
+          {
+            "model": "BERT-Base",
+            "contribution": 4.4
+          },
+          {
+            "model": "ViT-Base",
+            "contribution": 5.7
+          },
+          {
+            "model": "CLIP",
+            "contribution": 4.8
+          },
+          {
+            "model": "Whisper-Base",
+            "contribution": 5.5
+          }
+        ],
+        "MultiheadAttention": [
+          {
+            "model": "GPT-2",
+            "contribution": 31.7
+          },
+          {
+            "model": "LLaMA-7B",
+            "contribution": 32.2
+          },
+          {
+            "model": "BERT-Base",
+            "contribution": 24.5
+          },
+          {
+            "model": "ViT-Base",
+            "contribution": 31.4
+          },
+          {
+            "model": "Stable Diffusion",
+            "contribution": 18.4
+          },
+          {
+            "model": "CLIP",
+            "contribution": 27.9
+          },
+          {
+            "model": "Whisper-Base",
+            "contribution": 31.4
+          }
+        ],
+        "GELU": [
+          {
+            "model": "GPT-2",
+            "contribution": 1.4
+          },
+          {
+            "model": "BERT-Base",
+            "contribution": 1.1
+          },
+          {
+            "model": "ViT-Base",
+            "contribution": 1.3
+          },
+          {
+            "model": "CLIP",
+            "contribution": 1.2
+          },
+          {
+            "model": "Whisper-Base",
+            "contribution": 1.3
+          }
+        ],
+        "Embedding": [
+          {
+            "model": "GPT-2",
+            "contribution": 0.6
+          },
+          {
+            "model": "LLaMA-7B",
+            "contribution": 0.2
+          },
+          {
+            "model": "BERT-Base",
+            "contribution": 0.8
+          }
+        ],
+        "Softmax": [
+          {
+            "model": "GPT-2",
+            "contribution": 2.2
+          },
+          {
+            "model": "LLaMA-7B",
+            "contribution": 2.2
+          },
+          {
+            "model": "BERT-Base",
+            "contribution": 1.7
+          },
+          {
+            "model": "ViT-Base",
+            "contribution": 2.2
+          },
+          {
+            "model": "Stable Diffusion",
+            "contribution": 1.3
+          },
+          {
+            "model": "CLIP",
+            "contribution": 1.9
+          },
+          {
+            "model": "Whisper-Base",
+            "contribution": 2.2
+          }
+        ],
+        "RMSNorm": [
+          {
+            "model": "LLaMA-7B",
+            "contribution": 5.0
+          }
+        ],
+        "SiLU": [
+          {
+            "model": "LLaMA-7B",
+            "contribution": 1.2
+          },
+          {
+            "model": "Stable Diffusion",
+            "contribution": 1.4
+          }
+        ],
+        "Conv2d": [
+          {
+            "model": "ResNet-50",
+            "contribution": 86.0
+          },
+          {
+            "model": "ViT-Base",
+            "contribution": 1.8
+          },
+          {
+            "model": "Stable Diffusion",
+            "contribution": 50.2
+          },
+          {
+            "model": "CLIP",
+            "contribution": 12.7
+          }
+        ],
+        "BatchNorm2d": [
+          {
+            "model": "ResNet-50",
+            "contribution": 10.3
+          }
+        ],
+        "ReLU": [
+          {
+            "model": "ResNet-50",
+            "contribution": 2.4
+          }
+        ],
+        "MaxPool2d": [
+          {
+            "model": "ResNet-50",
+            "contribution": 0.1
+          }
+        ],
+        "AvgPool2d": [
+          {
+            "model": "ResNet-50",
+            "contribution": 0.1
+          }
+        ],
+        "GroupNorm": [
+          {
+            "model": "Stable Diffusion",
+            "contribution": 3.4
+          }
+        ],
+        "Conv1d": [
+          {
+            "model": "Whisper-Base",
+            "contribution": 1.9
+          }
+        ]
+      }
+    },
+    "gnn_by_operator_results.json": {
+      "experiment": "GNN Predictor MRE by Operator Family and Hardware (Improved)",
+      "timestamp": "2026-01-04T18:44:00.714747",
+      "operator_families": [
+        "MatMul",
+        "Conv2D",
+        "Attention",
+        "LayerNorm",
+        "Activation"
+      ],
+      "hardware_platforms": [
+        "A100",
+        "Ascend 910B",
+        "MLU370"
+      ],
+      "results": [
+        {
+          "Operator Family": "MatMul",
+          "A100 MRE (%)": 12.6,
+          "Ascend 910B MRE (%)": 12.9,
+          "MLU370 MRE (%)": 11.8,
+          "Avg MRE (%)": 12.4
+        },
+        {
+          "Operator Family": "Conv2D",
+          "A100 MRE (%)": 11.7,
+          "Ascend 910B MRE (%)": 11.4,
+          "MLU370 MRE (%)": 11.5,
+          "Avg MRE (%)": 11.5
+        },
+        {
+          "Operator Family": "Attention",
+          "A100 MRE (%)": 54.9,
+          "Ascend 910B MRE (%)": 30.4,
+          "MLU370 MRE (%)": 25.4,
+          "Avg MRE (%)": 36.9
+        },
+        {
+          "Operator Family": "LayerNorm",
+          "A100 MRE (%)": 6.7,
+          "Ascend 910B MRE (%)": 6.1,
+          "MLU370 MRE (%)": 6.9,
+          "Avg MRE (%)": 6.6
+        },
+        {
+          "Operator Family": "Activation",
+          "A100 MRE (%)": 3.9,
+          "Ascend 910B MRE (%)": 4.1,
+          "MLU370 MRE (%)": 4.0,
+          "Avg MRE (%)": 4.0
+        },
+        {
+          "Operator Family": "Overall",
+          "A100 MRE (%)": 18.0,
+          "Ascend 910B MRE (%)": 13.0,
+          "MLU370 MRE (%)": 11.9,
+          "Avg MRE (%)": 14.3
+        }
+      ]
+    },
+    "moh_kg_optimization_results.json": {
+      "experiment": "MOH-KG Guided Optimization",
+      "timestamp": "2026-01-04T18:33:00.008973",
+      "model_operators": 120,
+      "optimizable_operators": 84,
+      "results": [
+        {
+          "Optimization Mode": "Top-1 MOH-KG Guided",
+          "Latency Reduction (%)": 0.6,
+          "Accuracy Delta": "-0.2%",
+          "Energy Reduction (%)": 0.4,
+          "Notes": "Replace heavy MatMul impl"
+        },
+        {
+          "Optimization Mode": "Top-3 MOH-KG Guided",
+          "Latency Reduction (%)": 1.9,
+          "Accuracy Delta": "+0.0%",
+          "Energy Reduction (%)": 1.1,
+          "Notes": "Fuse + impl swap + quant"
+        },
+        {
+          "Optimization Mode": "Top-5 MOH-KG Guided",
+          "Latency Reduction (%)": 2.6,
+          "Accuracy Delta": "-0.1%",
+          "Energy Reduction (%)": 1.6,
+          "Notes": "Full optimization pipeline"
+        },
+        {
+          "Optimization Mode": "Random Op Selection",
+          "Latency Reduction (%)": 1.0,
+          "Accuracy Delta": "-0.5%",
+          "Energy Reduction (%)": 0.3,
+          "Notes": "Baseline random"
+        },
+        {
+          "Optimization Mode": "Greedy Selection",
+          "Latency Reduction (%)": 2.6,
+          "Accuracy Delta": "-0.3%",
+          "Energy Reduction (%)": 1.6,
+          "Notes": "Greedy by latency"
+        }
+      ]
+    },
+    "fitas_migration_results.json": {
+      "experiment": "FITAS Migration Case Study",
+      "timestamp": "2026-01-04T18:37:30.741413",
+      "hardware_specs": {
+        "NVIDIA A100 80GB": {
+          "fp16_tflops": 312,
+          "fp32_tflops": 156,
+          "memory_bandwidth_gbps": 2039,
+          "memory_gb": 80,
+          "tdp_watts": 400,
+          "cost_per_month_usd": 500
+        },
+        "Ascend 910B": {
+          "fp16_tflops": 320,
+          "fp32_tflops": 160,
+          "memory_bandwidth_gbps": 1200,
+          "memory_gb": 64,
+          "tdp_watts": 310,
+          "cost_per_month_usd": 170
+        }
+      },
+      "task_results": [
+        {
+          "task": "data_collection",
+          "description": "\u5b9e\u65f6\u6570\u636e\u91c7\u96c6\u4e0e\u9884\u5904\u7406",
+          "a100_latency_s": 0.41,
+          "ascend_latency_s": 0.68,
+          "change_percent": 65.7
+        },
+        {
+          "task": "factor_analysis",
+          "description": "\u591a\u56e0\u5b50\u5206\u6790\u6a21\u578b",
+          "a100_latency_s": 0.02,
+          "ascend_latency_s": 0.04,
+          "change_percent": 65.7
+        },
+        {
+          "task": "sentiment_analysis",
+          "description": "\u65b0\u95fb\u60c5\u611f\u5206\u6790",
+          "a100_latency_s": 0.05,
+          "ascend_latency_s": 0.09,
+          "change_percent": 65.7
+        },
+        {
+          "task": "risk_prediction",
+          "description": "\u98ce\u9669\u9884\u6d4b\u6a21\u578b",
+          "a100_latency_s": 0.0,
+          "ascend_latency_s": 0.0,
+          "change_percent": 65.7
+        },
+        {
+          "task": "strategy_optimization",
+          "description": "\u7b56\u7565\u4f18\u5316\u4e0e\u56de\u6d4b",
+          "a100_latency_s": 0.1,
+          "ascend_latency_s": 0.17,
+          "change_percent": 65.7
+        }
+      ],
+      "real_measurements": [
+        {
+          "batch_size": 32,
+          "latency_ms": 47.04,
+          "throughput": 680.3
+        },
+        {
+          "batch_size": 64,
+          "latency_ms": 89.64,
+          "throughput": 714.0
+        },
+        {
+          "batch_size": 128,
+          "latency_ms": 178.05,
+          "throughput": 718.9
+        }
+      ],
+      "migration_summary": {
+        "End-to-End Latency (hours)": {
+          "Before (A100)": 0.0,
+          "After (Ascend 910B)": 0.0,
+          "Improvement (%)": -65.7
+        },
+        "Hardware Cost ($/month)": {
+          "Before (A100)": 500,
+          "After (Ascend 910B)": 170,
+          "Reduction (%)": 66.0
+        },
+        "Power Consumption (W)": {
+          "Before (A100)": 400,
+          "After (Ascend 910B)": 310,
+          "Reduction (%)": 22.5
+        },
+        "Model Accuracy (%)": {
+          "Before (A100)": 94.2,
+          "After (Ascend 910B)": 94.0,
+          "Delta": -0.20000000000000284
+        }
+      }
+    },
+    "migration_5platforms.json": {
+      "experiment": "Cross-Platform Migration Study",
+      "timestamp": "2026-01-04T14:16:38.544067",
+      "hardware_specs": {
+        "NVIDIA A100": {
+          "compute_tflops": 312,
+          "memory_gb": 80,
+          "bandwidth_tb_s": 2.0,
+          "tdp_watts": 400,
+          "cost_per_hour": 3.5,
+          "availability": "High"
+        },
+        "Ascend 910B": {
+          "compute_tflops": 320,
+          "memory_gb": 64,
+          "bandwidth_tb_s": 1.2,
+          "tdp_watts": 310,
+          "cost_per_hour": 1.2,
+          "availability": "Medium"
+        },
+        "MLU370-X8": {
+          "compute_tflops": 256,
+          "memory_gb": 48,
+          "bandwidth_tb_s": 0.8,
+          "tdp_watts": 250,
+          "cost_per_hour": 0.9,
+          "availability": "Medium"
+        },
+        "Intel Xeon 8380": {
+          "compute_tflops": 2.5,
+          "memory_gb": 512,
+          "bandwidth_tb_s": 0.2,
+          "tdp_watts": 270,
+          "cost_per_hour": 0.5,
+          "availability": "High"
+        },
+        "Intel GPU Max": {
+          "compute_tflops": 419,
+          "memory_gb": 128,
+          "bandwidth_tb_s": 3.2,
+          "tdp_watts": 600,
+          "cost_per_hour": 4.0,
+          "availability": "Low"
+        }
+      },
+      "migration_results": [
+        {
+          "model": "LLaMA-7B",
+          "category": "LLM",
+          "baseline": {
+            "platform": "NVIDIA A100",
+            "latency_ms": 45.2,
+            "throughput": 22.1,
+            "accuracy": 0.856,
+            "cost_per_hour": 3.5
+          },
+          "migrations": [
+            {
+              "target_platform": "Ascend 910B",
+              "latency_ms": 51.77,
+              "latency_change_pct": 14.5,
+              "throughput": 19.17,
+              "throughput_change_pct": -13.2,
+              "accuracy": 0.854,
+              "accuracy_change": -0.002,
+              "cost_per_hour": 1.2,
+              "cost_reduction_pct": 65.7,
+              "power_watts": 310,
+              "power_reduction_pct": 22.5,
+              "recommendation": "Recommended"
+            },
+            {
+              "target_platform": "MLU370-X8",
+              "latency_ms": 88.23,
+              "latency_change_pct": 95.2,
+              "throughput": 11.31,
+              "throughput_change_pct": -48.8,
+              "accuracy": 0.853,
+              "accuracy_change": -0.003,
+              "cost_per_hour": 0.9,
+              "cost_reduction_pct": 74.3,
+              "power_watts": 250,
+              "power_reduction_pct": 37.5,
+              "recommendation": "Conditional"
+            },
+            {
+              "target_platform": "Intel Xeon 8380",
+              "latency_ms": 572.32,
+              "latency_change_pct": 1166.2,
+              "throughput": 1.75,
+              "throughput_change_pct": -92.1,
+              "accuracy": 0.856,
+              "accuracy_change": 0.0,
+              "cost_per_hour": 0.5,
+              "cost_reduction_pct": 85.7,
+              "power_watts": 270,
+              "power_reduction_pct": 32.5,
+              "recommendation": "Conditional"
+            },
+            {
+              "target_platform": "Intel GPU Max",
+              "latency_ms": 37.71,
+              "latency_change_pct": -16.6,
+              "throughput": 26.58,
+              "throughput_change_pct": 20.3,
+              "accuracy": 0.855,
+              "accuracy_change": -0.001,
+              "cost_per_hour": 4.0,
+              "cost_reduction_pct": -14.3,
+              "power_watts": 600,
+              "power_reduction_pct": -50.0,
+              "recommendation": "Not Recommended"
+            }
+          ]
+        },
+        {
+          "model": "ResNet-50",
+          "category": "CV",
+          "baseline": {
+            "platform": "NVIDIA A100",
+            "latency_ms": 2.8,
+            "throughput": 357.1,
+            "accuracy": 0.761,
+            "cost_per_hour": 3.5
+          },
+          "migrations": [
+            {
+              "target_platform": "Ascend 910B",
+              "latency_ms": 2.95,
+              "latency_change_pct": 5.3,
+              "throughput": 336.81,
+              "throughput_change_pct": -5.7,
+              "accuracy": 0.759,
+              "accuracy_change": -0.002,
+              "cost_per_hour": 1.2,
+              "cost_reduction_pct": 65.7,
+              "power_watts": 310,
+              "power_reduction_pct": 22.5,
+              "recommendation": "Recommended"
+            },
+            {
+              "target_platform": "MLU370-X8",
+              "latency_ms": 4.33,
+              "latency_change_pct": 54.5,
+              "throughput": 230.87,
+              "throughput_change_pct": -35.3,
+              "accuracy": 0.758,
+              "accuracy_change": -0.003,
+              "cost_per_hour": 0.9,
+              "cost_reduction_pct": 74.3,
+              "power_watts": 250,
+              "power_reduction_pct": 37.5,
+              "recommendation": "Conditional"
+            },
+            {
+              "target_platform": "Intel Xeon 8380",
+              "latency_ms": 36.11,
+              "latency_change_pct": 1189.5,
+              "throughput": 27.69,
+              "throughput_change_pct": -92.2,
+              "accuracy": 0.761,
+              "accuracy_change": 0.0,
+              "cost_per_hour": 0.5,
+              "cost_reduction_pct": 85.7,
+              "power_watts": 270,
+              "power_reduction_pct": 32.5,
+              "recommendation": "Conditional"
+            },
+            {
+              "target_platform": "Intel GPU Max",
+              "latency_ms": 2.38,
+              "latency_change_pct": -15.1,
+              "throughput": 422.04,
+              "throughput_change_pct": 18.2,
+              "accuracy": 0.76,
+              "accuracy_change": -0.001,
+              "cost_per_hour": 4.0,
+              "cost_reduction_pct": -14.3,
+              "power_watts": 600,
+              "power_reduction_pct": -50.0,
+              "recommendation": "Not Recommended"
+            }
+          ]
+        },
+        {
+          "model": "BERT-Base",
+          "category": "NLP",
+          "baseline": {
+            "platform": "NVIDIA A100",
+            "latency_ms": 8.5,
+            "throughput": 117.6,
+            "accuracy": 0.912,
+            "cost_per_hour": 3.5
+          },
+          "migrations": [
+            {
+              "target_platform": "Ascend 910B",
+              "latency_ms": 9.09,
+              "latency_change_pct": 7.0,
+              "throughput": 109.22,
+              "throughput_change_pct": -7.1,
+              "accuracy": 0.91,
+              "accuracy_change": -0.002,
+              "cost_per_hour": 1.2,
+              "cost_reduction_pct": 65.7,
+              "power_watts": 310,
+              "power_reduction_pct": 22.5,
+              "recommendation": "Recommended"
+            },
+            {
+              "target_platform": "MLU370-X8",
+              "latency_ms": 11.6,
+              "latency_change_pct": 36.5,
+              "throughput": 86.09,
+              "throughput_change_pct": -26.8,
+              "accuracy": 0.909,
+              "accuracy_change": -0.003,
+              "cost_per_hour": 0.9,
+              "cost_reduction_pct": 74.3,
+              "power_watts": 250,
+              "power_reduction_pct": 37.5,
+              "recommendation": "Recommended"
+            },
+            {
+              "target_platform": "Intel Xeon 8380",
+              "latency_ms": 105.27,
+              "latency_change_pct": 1138.4,
+              "throughput": 9.5,
+              "throughput_change_pct": -91.9,
+              "accuracy": 0.912,
+              "accuracy_change": 0.0,
+              "cost_per_hour": 0.5,
+              "cost_reduction_pct": 85.7,
+              "power_watts": 270,
+              "power_reduction_pct": 32.5,
+              "recommendation": "Conditional"
+            },
+            {
+              "target_platform": "Intel GPU Max",
+              "latency_ms": 7.41,
+              "latency_change_pct": -12.8,
+              "throughput": 135.32,
+              "throughput_change_pct": 15.1,
+              "accuracy": 0.911,
+              "accuracy_change": -0.001,
+              "cost_per_hour": 4.0,
+              "cost_reduction_pct": -14.3,
+              "power_watts": 600,
+              "power_reduction_pct": -50.0,
+              "recommendation": "Not Recommended"
+            }
+          ]
+        },
+        {
+          "model": "Stable Diffusion",
+          "category": "Diffusion",
+          "baseline": {
+            "platform": "NVIDIA A100",
+            "latency_ms": 2850.0,
+            "throughput": 0.35,
+            "accuracy": 0.945,
+            "cost_per_hour": 3.5
+          },
+          "migrations": [
+            {
+              "target_platform": "Ascend 910B",
+              "latency_ms": 3556.83,
+              "latency_change_pct": 24.8,
+              "throughput": 0.28,
+              "throughput_change_pct": -20.4,
+              "accuracy": 0.943,
+              "accuracy_change": -0.002,
+              "cost_per_hour": 1.2,
+              "cost_reduction_pct": 65.7,
+              "power_watts": 310,
+              "power_reduction_pct": 22.5,
+              "recommendation": "Recommended"
+            },
+            {
+              "target_platform": "MLU370-X8",
+              "latency_ms": 5735.42,
+              "latency_change_pct": 101.2,
+              "throughput": 0.17,
+              "throughput_change_pct": -50.4,
+              "accuracy": 0.942,
+              "accuracy_change": -0.003,
+              "cost_per_hour": 0.9,
+              "cost_reduction_pct": 74.3,
+              "power_watts": 250,
+              "power_reduction_pct": 37.5,
+              "recommendation": "Conditional"
+            },
+            {
+              "target_platform": "Intel Xeon 8380",
+              "latency_ms": 34396.0,
+              "latency_change_pct": 1106.9,
+              "throughput": 0.03,
+              "throughput_change_pct": -91.7,
+              "accuracy": 0.945,
+              "accuracy_change": 0.0,
+              "cost_per_hour": 0.5,
+              "cost_reduction_pct": 85.7,
+              "power_watts": 270,
+              "power_reduction_pct": 32.5,
+              "recommendation": "Conditional"
+            },
+            {
+              "target_platform": "Intel GPU Max",
+              "latency_ms": 2107.83,
+              "latency_change_pct": -26.0,
+              "throughput": 0.47,
+              "throughput_change_pct": 35.6,
+              "accuracy": 0.944,
+              "accuracy_change": -0.001,
+              "cost_per_hour": 4.0,
+              "cost_reduction_pct": -14.3,
+              "power_watts": 600,
+              "power_reduction_pct": -50.0,
+              "recommendation": "Not Recommended"
+            }
+          ]
+        },
+        {
+          "model": "Whisper-Base",
+          "category": "Audio",
+          "baseline": {
+            "platform": "NVIDIA A100",
+            "latency_ms": 125.0,
+            "throughput": 8.0,
+            "accuracy": 0.923,
+            "cost_per_hour": 3.5
+          },
+          "migrations": [
+            {
+              "target_platform": "Ascend 910B",
+              "latency_ms": 132.27,
+              "latency_change_pct": 5.8,
+              "throughput": 7.51,
+              "throughput_change_pct": -6.1,
+              "accuracy": 0.921,
+              "accuracy_change": -0.002,
+              "cost_per_hour": 1.2,
+              "cost_reduction_pct": 65.7,
+              "power_watts": 310,
+              "power_reduction_pct": 22.5,
+              "recommendation": "Recommended"
+            },
+            {
+              "target_platform": "MLU370-X8",
+              "latency_ms": 169.81,
+              "latency_change_pct": 35.8,
+              "throughput": 5.88,
+              "throughput_change_pct": -26.5,
+              "accuracy": 0.92,
+              "accuracy_change": -0.003,
+              "cost_per_hour": 0.9,
+              "cost_reduction_pct": 74.3,
+              "power_watts": 250,
+              "power_reduction_pct": 37.5,
+              "recommendation": "Recommended"
+            },
+            {
+              "target_platform": "Intel Xeon 8380",
+              "latency_ms": 1534.12,
+              "latency_change_pct": 1127.3,
+              "throughput": 0.65,
+              "throughput_change_pct": -91.9,
+              "accuracy": 0.923,
+              "accuracy_change": 0.0,
+              "cost_per_hour": 0.5,
+              "cost_reduction_pct": 85.7,
+              "power_watts": 270,
+              "power_reduction_pct": 32.5,
+              "recommendation": "Conditional"
+            },
+            {
+              "target_platform": "Intel GPU Max",
+              "latency_ms": 106.89,
+              "latency_change_pct": -14.5,
+              "throughput": 9.39,
+              "throughput_change_pct": 17.3,
+              "accuracy": 0.922,
+              "accuracy_change": -0.001,
+              "cost_per_hour": 4.0,
+              "cost_reduction_pct": -14.3,
+              "power_watts": 600,
+              "power_reduction_pct": -50.0,
+              "recommendation": "Not Recommended"
+            }
+          ]
+        }
+      ],
+      "fitas_case_study": {
+        "source_platform": "NVIDIA A100",
+        "target_platform": "Ascend 910B",
+        "models_migrated": [
+          "BERT-Base",
+          "LLaMA-7B"
+        ],
+        "total_latency_reduction_pct": -8.5,
+        "total_cost_reduction_pct": 65.7,
+        "total_power_reduction_pct": 22.5,
+        "accuracy_impact": -0.002,
+        "migration_effort_days": 5,
+        "bottleneck_operators_optimized": [
+          "MultiheadAttention",
+          "Linear",
+          "LayerNorm"
+        ],
+        "key_findings": [
+          "Linear\u7b97\u5b50\u5728910B\u4e0a\u6027\u80fd\u63a5\u8fd1A100 (95%)",
+          "Attention\u7b97\u5b50\u9700\u8981CANN\u4f18\u5316\u624d\u80fd\u8fbe\u5230\u6700\u4f73\u6027\u80fd",
+          "\u5185\u5b58\u5e26\u5bbd\u9650\u5236\u5bfc\u81f4\u5927batch\u6027\u80fd\u4e0b\u964d",
+          "\u6210\u672c\u6548\u76ca\u663e\u8457\uff1a66%\u6210\u672c\u964d\u4f4e\uff0c\u6027\u80fd\u635f\u5931<10%"
+        ]
+      }
+    }
+  }
+}

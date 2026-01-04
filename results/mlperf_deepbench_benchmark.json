@@ -1,0 +1,67 @@
+{
+  "experiment": "MLPerf/DeepBench Style Benchmark",
+  "timestamp": "2026-01-04T19:39:13.709040",
+  "hardware": "NVIDIA A100 80GB PCIe",
+  "operator_benchmarks": {
+    "MatMul_4096x4096": {
+      "mean_ms": 0.5595799908041954,
+      "std_ms": 0.022128480845040106,
+      "tflops": 245.61091484790379,
+      "config": {
+        "M": 4096,
+        "N": 4096,
+        "K": 4096
+      }
+    },
+    "MatMul_8192x8192": {
+      "mean_ms": 4.742598179727793,
+      "std_ms": 0.0013470884285055043,
+      "tflops": 231.83739927111176,
+      "config": {
+        "M": 8192,
+        "N": 8192,
+        "K": 8192
+      }
+    },
+    "Conv2D_224x224": {
+      "mean_ms": 0.15191050246357918,
+      "std_ms": 0.004850978071912934,
+      "config": {
+        "in_ch": 64,
+        "out_ch": 128,
+        "kernel": 3,
+        "size": 224
+      }
+    },
+    "Conv2D_56x56": {
+      "mean_ms": 0.10799199342727661,
+      "std_ms": 0.00484816136658337,
+      "config": {
+        "in_ch": 256,
+        "out_ch": 512,
+        "kernel": 3,
+        "size": 56
+      }
+    },
+    "Attention_512seq": {
+      "mean_ms": 0.5175581946969032,
+      "std_ms": 0.00276775736175989,
+      "config": {
+        "batch": 8,
+        "seq": 512,
+        "heads": 12,
+        "dim": 64
+      }
+    },
+    "LayerNorm_768": {
+      "mean_ms": 0.08608447387814522,
+      "std_ms": 0.0006938916014418387,
+      "config": {
+        "batch": 32,
+        "seq": 512,
+        "dim": 768
+      }
+    }
+  },
+  "model_benchmarks": {}
+}
