@@ -423,6 +423,10 @@ def create_hal() -> HAL:
     return hal
 
 
+# Alias for compatibility
+HardwareAbstractionLayer = HAL
+
+
 if __name__ == "__main__":
     # Test HAL
     hal = create_hal()

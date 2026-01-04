@@ -17,9 +17,9 @@ from pathlib import Path
 import argparse
 
 # Import Het-Benchmark modules
-from profiler import OperatorProfiler, ModelProfiler, ProfileResult
-from copa import COPA, COPAAnalyzer
-from moh_kg import MOHKG, KGQueryEngine
+from .profiler import OperatorProfiler, ModelProfiler, ProfileResult
+from .copa import COPA, COPAAnalyzer
+from .moh_kg import MOHKG, KGQueryEngine
 
 
 @dataclass

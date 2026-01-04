@@ -3071,7 +3071,8 @@
           "input_shape": "[batch, seq, 3584]",
           "output_shape": "[batch, seq, 3584]"
         }
-      ]
+      ],
+      "parameters": 7000000000
     },
     {
       "model_id": "Mistral_7B",
@@ -6569,7 +6570,8 @@
           "input_shape": "[batch, seq, 4096]",
           "output_shape": "[batch, seq, 4096]"
         }
-      ]
+      ],
+      "parameters": 7000000000
     },
     {
       "model_id": "Phi_3_mini",
@@ -10067,7 +10069,8 @@
           "input_shape": "[batch, seq, 3072]",
           "output_shape": "[batch, seq, 3072]"
         }
-      ]
+      ],
+      "parameters": 3800000000
     },
     {
       "model_id": "BLOOM_560M",
@@ -12269,7 +12272,8 @@
           "input_shape": "[batch, seq, 1024]",
           "output_shape": "[batch, seq, 1024]"
         }
-      ]
+      ],
+      "parameters": 560000000
     },
     {
       "model_id": "GPT_2",
@@ -13391,7 +13395,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 124000000
     },
     {
       "model_id": "OPT_1.3B",
@@ -15593,7 +15598,8 @@
           "input_shape": "[batch, seq, 2048]",
           "output_shape": "[batch, seq, 2048]"
         }
-      ]
+      ],
+      "parameters": 1300000000
     },
     {
       "model_id": "Falcon_7B",
@@ -19091,7 +19097,8 @@
           "input_shape": "[batch, seq, 4544]",
           "output_shape": "[batch, seq, 4544]"
         }
-      ]
+      ],
+      "parameters": 7000000000
     },
     {
       "model_id": "StableLM_3B",
@@ -22589,7 +22596,8 @@
           "input_shape": "[batch, seq, 2560]",
           "output_shape": "[batch, seq, 2560]"
         }
-      ]
+      ],
+      "parameters": 3000000000
     },
     {
       "model_id": "TinyLlama_1.1B",
@@ -25007,7 +25015,8 @@
           "input_shape": "[batch, seq, 2048]",
           "output_shape": "[batch, seq, 2048]"
         }
-      ]
+      ],
+      "parameters": 1100000000
     },
     {
       "model_id": "Pythia_1.4B",
@@ -27209,7 +27218,8 @@
           "input_shape": "[batch, seq, 2048]",
           "output_shape": "[batch, seq, 2048]"
         }
-      ]
+      ],
+      "parameters": 1400000000
     },
     {
       "model_id": "ResNet_50",
@@ -28286,7 +28296,8 @@
           "input_shape": "[batch, 512, H, W]",
           "output_shape": "[batch, 512, H, W]"
         }
-      ]
+      ],
+      "parameters": 25600000
     },
     {
       "model_id": "ViT_Base",
@@ -29408,7 +29419,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 86000000
     },
     {
       "model_id": "Swin_Base",
@@ -31610,7 +31622,8 @@
           "input_shape": "[batch, seq, 1024]",
           "output_shape": "[batch, seq, 1024]"
         }
-      ]
+      ],
+      "parameters": 88000000
     },
     {
       "model_id": "DINOv2_Base",
@@ -32732,7 +32745,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 86000000
     },
     {
       "model_id": "MobileNet_V2",
@@ -33881,7 +33895,8 @@
           "input_shape": "[batch, 320, H, W]",
           "output_shape": "[batch, 320, H, W]"
         }
-      ]
+      ],
+      "parameters": 3500000
     },
     {
       "model_id": "EfficientNet_B0",
@@ -34967,7 +34982,8 @@
           "input_shape": "[batch, 320, H, W]",
           "output_shape": "[batch, 320, H, W]"
         }
-      ]
+      ],
+      "parameters": 5300000
     },
     {
       "model_id": "ConvNeXt_Base",
@@ -37304,7 +37320,8 @@
           "input_shape": "[batch, 1024, H, W]",
           "output_shape": "[batch, 1024, H, W]"
         }
-      ]
+      ],
+      "parameters": 89000000
     },
     {
       "model_id": "RegNet_Y_4GF",
@@ -38759,7 +38776,8 @@
           "input_shape": "[batch, 440, H, W]",
           "output_shape": "[batch, 440, H, W]"
         }
-      ]
+      ],
+      "parameters": 21000000
     },
     {
       "model_id": "BEiT_Base",
@@ -39881,7 +39899,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 86000000
     },
     {
       "model_id": "DeiT_Base",
@@ -41003,7 +41022,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 86000000
     },
     {
       "model_id": "BERT_Base",
@@ -42368,7 +42388,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 110000000
     },
     {
       "model_id": "RoBERTa_Base",
@@ -43733,7 +43754,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 125000000
     },
     {
       "model_id": "T5_Base",
@@ -44954,7 +44976,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 220000000
     },
     {
       "model_id": "DistilBERT",
@@ -45671,7 +45694,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 66000000
     },
     {
       "model_id": "Whisper_Base",
@@ -46802,7 +46826,8 @@
           "input_shape": "[batch, seq, 2048]",
           "output_shape": "[batch, seq, 2048]"
         }
-      ]
+      ],
+      "parameters": 74000000
     },
     {
       "model_id": "Wav2Vec2_Base",
@@ -48167,7 +48192,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 95000000
     },
     {
       "model_id": "CLIP_ViT_B_32",
@@ -49325,7 +49351,8 @@
           "input_shape": "[batch, seq, 3072]",
           "output_shape": "[batch, seq, 3072]"
         }
-      ]
+      ],
+      "parameters": 151000000
     },
     {
       "model_id": "BLIP_Base",
@@ -50483,7 +50510,8 @@
           "input_shape": "[batch, seq, 3072]",
           "output_shape": "[batch, seq, 3072]"
         }
-      ]
+      ],
+      "parameters": 224000000
     },
     {
       "model_id": "SigLIP_Base",
@@ -51641,7 +51669,8 @@
           "input_shape": "[batch, seq, 3072]",
           "output_shape": "[batch, seq, 3072]"
         }
-      ]
+      ],
+      "parameters": 86000000
     },
     {
       "model_id": "DistilBERT_Base",
@@ -52358,7 +52387,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 66000000
     },
     {
       "model_id": "ALBERT_Base",
@@ -53723,7 +53753,8 @@
           "input_shape": "[batch, seq, 768]",
           "output_shape": "[batch, seq, 768]"
         }
-      ]
+      ],
+      "parameters": 12000000
     },
     {
       "model_id": "GPT_Neo_1.3B",
@@ -55925,7 +55956,8 @@
           "input_shape": "[batch, seq, 2048]",
           "output_shape": "[batch, seq, 2048]"
         }
-      ]
+      ],
+      "parameters": 1300000000
     },
     {
       "model_id": "BERT_Tiny",
@@ -56210,7 +56242,8 @@
           "input_shape": "[batch, seq, 128]",
           "output_shape": "[batch, seq, 128]"
         }
-      ]
+      ],
+      "parameters": 4400000
     },
     {
       "model_id": "BERT_Mini",
@@ -56711,7 +56744,8 @@
           "input_shape": "[batch, seq, 256]",
           "output_shape": "[batch, seq, 256]"
         }
-      ]
+      ],
+      "parameters": 11300000
     }
   ]
 }

@@ -24,8 +24,8 @@ import hashlib
 @dataclass
 class Node:
     """Base class for knowledge graph nodes"""
-    id: str
-    type: str  # "model", "operator", "operator_type", "hardware"
+    id: str = ""
+    type: str = ""  # "model", "operator", "operator_type", "hardware"
     properties: Dict[str, Any] = field(default_factory=dict)
     embedding: Optional[np.ndarray] = None
     
@@ -113,6 +113,7 @@ class HardwareNode(Node):
     memory_bandwidth_gbps: float = 0.0
     memory_size_gb: float = 0.0
     supported_dtypes: List[str] = field(default_factory=list)
+    type: str = field(default="hardware")
     
     def __post_init__(self):
         self.type = "hardware"
@@ -254,6 +255,7 @@ class MOHKG:
         "r_supports",    # Hardware supports OperatorType
         "r_seq",         # Sequential dependency
         "r_sim",         # Similarity relation
+        "r_perf",        # Performance relationship (operator -> hardware)
         "r_optimizes",   # Optimization relation
         "r_compatible",  # Compatibility relation
     ]

@@ -10,7 +10,7 @@ from enum import Enum
 from collections import defaultdict
 from loguru import logger
 
-from model_parser import ModelGraph, OperatorNode, ModelCategory
+from .model_parser import ModelGraph, OperatorNode, ModelCategory
 
 
 class OperatorCategory(Enum):

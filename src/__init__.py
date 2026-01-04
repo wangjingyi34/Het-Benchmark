@@ -15,26 +15,57 @@ __version__ = "1.0.0"
 __author__ = "Het-Benchmark Team"
 __license__ = "Apache-2.0"
 
-from .hal import HardwareAbstractionLayer, HardwareBackend
-from .model_parser import ModelParser
-from .operator_extractor import OperatorExtractor
-from .copa import COPA, PerformanceBottleneckAnalyzer
-from .moh_kg import MOHKnowledgeGraph, KGQueryEngine
-from .rgat import RGAT, PerformancePredictor
-from .profiler import Profiler, OperatorProfiler, ModelProfiler
+# Lazy imports to avoid circular dependencies
+def __getattr__(name):
+    if name == "HardwareAbstractionLayer":
+        from .hal import HardwareAbstractionLayer
+        return HardwareAbstractionLayer
+    elif name == "HAL":
+        from .hal import HAL
+        return HAL
+    elif name == "HardwareBackend":
+        from .hal import HardwareBackend
+        return HardwareBackend
+    elif name == "ModelParser":
+        from .model_parser import ModelParser
+        return ModelParser
+    elif name == "OperatorExtractor":
+        from .operator_extractor import OperatorExtractor
+        return OperatorExtractor
+    elif name == "COPA":
+        from .copa import COPA
+        return COPA
+    elif name == "MicroBenchmarker":
+        from .copa import MicroBenchmarker
+        return MicroBenchmarker
+    elif name == "ShapleyCalculator":
+        from .copa import ShapleyCalculator
+        return ShapleyCalculator
+    elif name == "MOHKG":
+        from .moh_kg import MOHKG
+        return MOHKG
+    elif name == "RGAT":
+        from .rgat import RGAT
+        return RGAT
+    elif name == "KGA2O":
+        from .kg_a2o import KGA2O
+        return KGA2O
+    elif name == "Profiler":
+        from .profiler import Profiler
+        return Profiler
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 __all__ = [
     "HardwareAbstractionLayer",
+    "HAL",
     "HardwareBackend",
     "ModelParser",
     "OperatorExtractor",
     "COPA",
-    "PerformanceBottleneckAnalyzer",
-    "MOHKnowledgeGraph",
-    "KGQueryEngine",
+    "MicroBenchmarker",
+    "ShapleyCalculator",
+    "MOHKG",
     "RGAT",
-    "PerformancePredictor",
+    "KGA2O",
     "Profiler",
-    "OperatorProfiler",
-    "ModelProfiler",
 ]
