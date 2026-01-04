@@ -119,11 +119,15 @@ dmypy.json
 Thumbs.db
 
 # Project specific
-*.pt
-*.pth
+# *.pt  # Commented out to allow models/rgat_final.pt
+# *.pth
 *.onnx
 *.bin
 checkpoints/
+
+# But keep the trained model
+!models/*.pt
+!models/*.pth
 logs/
 wandb/
 mlruns/
