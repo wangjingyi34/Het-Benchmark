@@ -1,20 +1,39 @@
 {
-  "experiment_date": "2026-01-03T20:43:20.503565",
-  "device": "cuda",
-  "total_models": 34,
-  "total_operators": 468,
-  "tables_generated": [
-    "table4",
-    "table5",
-    "table6",
-    "table7",
-    "table8"
-  ],
-  "results": {
-    "table4_models": 34,
-    "table5_platforms": 5,
-    "table6_operators": 13,
-    "table7_attributions": 7,
-    "table8_predictions": 25
+  "generated_at": "2026-01-04T04:04:46.977421",
+  "dataset": {
+    "total_models": 34,
+    "total_operators": 6244,
+    "categories": {
+      "LLM": 11,
+      "CV": 11,
+      "NLP": 8,
+      "Audio": 2,
+      "Multimodal": 2
+    }
+  },
+  "knowledge_graph": {
+    "total_nodes": 6299,
+    "total_edges": 29199,
+    "node_types": {
+      "hardware": 5,
+      "operator_type": 16,
+      "model": 34,
+      "operator_instance": 6244
+    },
+    "edge_types": {
+      "r_supports": 76,
+      "r_contains": 6244,
+      "r_has_type": 6244,
+      "r_seq": 6210,
+      "r_sim": 10345,
+      "r_perf": 80
+    }
+  },
+  "experiments": {
+    "table4": "Model Dataset (34 models)",
+    "table5": "Operator Coverage (5 platforms)",
+    "table6": "Performance Profiling (18 configurations)",
+    "table7": "COPA Attribution Analysis",
+    "table8": "Cross-Platform Prediction"
   }
 }

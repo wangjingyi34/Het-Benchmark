@@ -1,35 +1,35 @@
-model_name,category,parameters,num_operators,task
-Qwen2.5-7B,LLM,0.0K,0,general
-Mistral-7B,LLM,0.0K,0,general
-Phi-3-mini,LLM,0.0K,0,general
-BLOOM-560M,LLM,0.0K,0,general
-GPT-2,LLM,0.0K,0,general
-OPT-1.3B,LLM,0.0K,0,general
-Falcon-7B,LLM,0.0K,0,general
-StableLM-3B,LLM,0.0K,0,general
-TinyLlama-1.1B,LLM,0.0K,0,general
-Pythia-1.4B,LLM,0.0K,0,general
-ResNet-50,CV,0.0K,0,general
-ViT-Base,CV,0.0K,0,general
-Swin-Base,CV,0.0K,0,general
-DINOv2-Base,CV,0.0K,0,general
-MobileNet-V2,CV,0.0K,0,general
-EfficientNet-B0,CV,0.0K,0,general
-ConvNeXt-Base,CV,0.0K,0,general
-RegNet-Y-4GF,CV,0.0K,0,general
-BEiT-Base,CV,0.0K,0,general
-DeiT-Base,CV,0.0K,0,general
-BERT-Base,NLP,0.0K,0,general
-RoBERTa-Base,NLP,0.0K,0,general
-T5-Base,NLP,0.0K,0,general
-DistilBERT,NLP,0.0K,0,general
-Whisper-Base,Audio,0.0K,0,general
-Wav2Vec2-Base,Audio,0.0K,0,general
-CLIP-ViT-B/32,Multimodal,0.0K,0,general
-BLIP-Base,Multimodal,0.0K,0,general
-SigLIP-Base,Multimodal,0.0K,0,general
-DistilBERT-Base,nlp,66.4M,70,text-classification
-ALBERT-Base,nlp,11.7M,20,text-classification
-GPT-Neo-1.3B,llm,1.3B,292,text-generation
-BERT-Tiny,nlp,4.4M,31,text-classification
-BERT-Mini,nlp,11.2M,55,text-classification
+model_name,category,parameters,num_operators,architecture,source
+Qwen2.5-7B,LLM,7.0B,339,llm_decoder,Hugging Face
+Mistral-7B,LLM,7.0B,387,llm_decoder,Hugging Face
+Phi-3-mini,LLM,3.8B,387,llm_decoder,Hugging Face
+BLOOM-560M,LLM,560.0M,243,gpt2_style,Hugging Face
+GPT-2,LLM,124.0M,123,gpt2_style,Hugging Face
+OPT-1.3B,LLM,1.3B,243,gpt2_style,Hugging Face
+Falcon-7B,LLM,7.0B,387,llm_decoder,Hugging Face
+StableLM-3B,LLM,3.0B,387,llm_decoder,Hugging Face
+TinyLlama-1.1B,LLM,1.1B,267,llm_decoder,Hugging Face
+Pythia-1.4B,LLM,1.4B,243,gpt2_style,Hugging Face
+ResNet-50,CV,25.6M,118,resnet_style,Hugging Face
+ViT-Base,CV,86.0M,123,vit_style,Hugging Face
+Swin-Base,CV,88.0M,243,swin_style,Hugging Face
+DINOv2-Base,CV,86.0M,123,vit_style,Hugging Face
+MobileNet-V2,CV,3.5M,126,mobilenet_style,Hugging Face
+EfficientNet-B0,CV,5.3M,119,mobilenet_style,Hugging Face
+ConvNeXt-Base,CV,89.0M,258,resnet_style,Hugging Face
+RegNet-Y-4GF,CV,20.6M,160,resnet_style,Hugging Face
+BEiT-Base,CV,86.0M,123,vit_style,Hugging Face
+DeiT-Base,CV,86.0M,123,vit_style,Hugging Face
+BERT-Base,NLP,110.0M,150,bert_style,Hugging Face
+RoBERTa-Base,NLP,125.0M,150,bert_style,Hugging Face
+T5-Base,NLP,220.0M,134,t5_style,Hugging Face
+DistilBERT,NLP,66.0M,78,bert_style,Hugging Face
+Whisper-Base,Audio,74.0M,124,whisper_style,Hugging Face
+Wav2Vec2-Base,Audio,95.0M,150,bert_style,Hugging Face
+CLIP-ViT-B/32,CV,151.0M,127,clip_style,Hugging Face
+BLIP-Base,Multimodal,224.0M,127,clip_style,Hugging Face
+SigLIP-Base,Multimodal,200.0M,127,clip_style,Hugging Face
+DistilBERT-Base,NLP,66.0M,78,bert_style,Hugging Face
+ALBERT-Base,NLP,12.0M,150,bert_style,Hugging Face
+GPT-Neo-1.3B,LLM,1.3B,243,gpt2_style,Hugging Face
+BERT-Tiny,NLP,4.4M,30,bert_style,Hugging Face
+BERT-Mini,NLP,11.3M,54,bert_style,Hugging Face

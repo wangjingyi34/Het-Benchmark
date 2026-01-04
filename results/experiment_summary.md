@@ -1,41 +1,44 @@
-# Het-Benchmark Experiment Results
+# Het-Benchmark Experiment Summary
 
-## Experiment Information
-- **Date**: 2026-01-03 20:43:20
-- **Device**: cuda
+Generated: 2026-01-04T04:04:46.977421
+
+## Dataset Statistics
+
 - **Total Models**: 34
-- **Total Operators**: 468
+- **Total Operators**: 6244
 
-## Generated Tables
+### Model Categories
+- Audio: 2
+- CV: 11
+- LLM: 11
+- Multimodal: 2
+- NLP: 8
 
-### Table 4: Model Dataset Statistics
-- Models analyzed: 34
-- Categories: LLM, CV, NLP, Audio, Multimodal, Diffusion
+## Knowledge Graph Statistics
 
-### Table 5: Operator Coverage
-| Platform | Vendor | Coverage |
-|----------|--------|----------|
-| CUDA/cuDNN | NVIDIA | 98.0% |
-| ROCm/MIGraphX | AMD | 94.0% |
-| oneAPI/oneDNN | Intel | 89.0% |
-| CANN | Huawei | 93.0% |
-| MLU/CNNL | Cambricon | 83.0% |
+- **Total Nodes**: 6299
+- **Total Edges**: 29199
 
-### Table 6: Performance Profiling
-- Operators profiled: 13
-- Device: cuda
+### Node Types
+- hardware: 5
+- operator_type: 16
+- model: 34
+- operator_instance: 6244
 
-### Table 7: COPA Attribution Analysis
-- Top operators by Shapley value: 7
+### Edge Types
+- r_supports: 76
+- r_contains: 6244
+- r_has_type: 6244
+- r_seq: 6210
+- r_sim: 10345
+- r_perf: 80
 
-### Table 8: Cross-Platform Prediction
-- Predictions generated: 25
-- Platforms: CUDA, ROCm, oneAPI, CANN, MLU
+## Experiment Tables
 
-## Files Generated
-- `table4_model_dataset.csv`
-- `table5_operator_coverage.csv`
-- `table6_performance_profiling.csv`
-- `table7_copa_attribution.csv`
-- `table8_cross_platform_prediction.csv`
-- `experiment_summary.json`
+| Table | Description | Status |
+|-------|-------------|--------|
+| Table 4 | Model Dataset | ✅ Generated |
+| Table 5 | Operator Coverage | ✅ Generated |
+| Table 6 | Performance Profiling | ✅ Generated |
+| Table 7 | COPA Attribution | ✅ Generated |
+| Table 8 | Cross-Platform Prediction | ✅ Generated |
