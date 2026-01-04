@@ -33,7 +33,13 @@ Our benchmark dataset comprises 34 representative AI models spanning four major 
 | Multimodal | 2 | CLIP, BLIP | 166 | 151M - 446M |
 | **Total** | **34** | - | **6,244** | - |
 
+![Operator Distribution](../figures/operator_distribution.png)
+*Figure 2: Distribution of 16 operator types across 6,244 operator instances in the Het-Benchmark dataset.*
+
 ### 5.1.3 MOH-KG Statistics
+
+![MOH-KG Architecture](../figures/moh_kg_architecture.png)
+*Figure 1: MOH-KG Knowledge Graph Architecture showing the three-layer structure with Model, Operator, and Hardware nodes.*
 
 **Table 3: MOH-KG Knowledge Graph Statistics**
 
@@ -113,6 +119,9 @@ COPA identifies the contribution of each operator type to overall model performa
 - **LLM models**: Dominated by MatMul (38.2%) and Attention (32.1%)
 - **CV models**: Conv2D contributes 45.8% of execution time
 - **Cross-category**: LayerNorm consistently contributes 10-15% across all categories
+
+![COPA Attribution Heatmap](../figures/copa_attribution_heatmap.png)
+*Figure 3: COPA Attribution Analysis heatmap showing operator contribution percentages by model category.*
 
 **Table 7: Top Bottleneck Operators by Model (Real A100 Measurements)**
 
@@ -194,6 +203,9 @@ We train a Relational Graph Attention Network (RGAT) to predict operator perform
 | BERT-Base | 2.66 | 3.27 | 5.46 | 1.81 | 48.4 |
 | GPT-2 Small | 31.98 | 39.32 | 65.57 | 21.71 | 581.4 |
 | ViT-Base | 2.60 | 3.20 | 5.33 | 1.76 | 47.3 |
+
+![Cross-Platform Performance](../figures/cross_platform_performance.png)
+*Figure 4: Cross-platform model inference latency comparison across 5 hardware platforms (log scale).*
 
 ## 5.5 Baseline Comparison
 
