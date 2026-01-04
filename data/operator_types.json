@@ -1,405 +1,98 @@
-{
-  "metadata": {
-    "description": "Operator type definitions and statistics",
-    "total_types": 16,
-    "source": "Het-Benchmark"
+[
+  {
+    "type": "Linear",
+    "count": 2764,
+    "total_parameters": 38366289920,
+    "percentage": 44.27
   },
-  "operator_types": [
-    {
-      "type_name": "Embedding",
-      "instance_count": 48,
-      "total_parameters": 1753054976,
-      "models": [
-        "Falcon-7B",
-        "StableLM-3B",
-        "GPT-2",
-        "DistilBERT",
-        "SigLIP-Base",
-        "Whisper-Base",
-        "T5-Base",
-        "BERT-Mini",
-        "Pythia-1.4B",
-        "BLIP-Base",
-        "ALBERT-Base",
-        "RoBERTa-Base",
-        "Wav2Vec2-Base",
-        "TinyLlama-1.1B",
-        "CLIP-ViT-B/32",
-        "Mistral-7B",
-        "OPT-1.3B",
-        "BLOOM-560M",
-        "GPT-Neo-1.3B",
-        "Phi-3-mini",
-        "DistilBERT-Base",
-        "Qwen2.5-7B",
-        "BERT-Tiny",
-        "BERT-Base"
-      ],
-      "categories": [
-        "Audio",
-        "Multimodal",
-        "CV",
-        "LLM",
-        "NLP"
-      ]
-    },
-    {
-      "type_name": "RMSNorm",
-      "instance_count": 375,
-      "total_parameters": 1234112,
-      "models": [
-        "Falcon-7B",
-        "Phi-3-mini",
-        "StableLM-3B",
-        "TinyLlama-1.1B",
-        "T5-Base",
-        "Qwen2.5-7B",
-        "Mistral-7B"
-      ],
-      "categories": [
-        "LLM",
-        "NLP"
-      ]
-    },
-    {
-      "type_name": "Linear",
-      "instance_count": 2764,
-      "total_parameters": 38366289920,
-      "models": [
-        "Falcon-7B",
-        "StableLM-3B",
-        "GPT-2",
-        "MobileNet-V2",
-        "DistilBERT",
-        "SigLIP-Base",
-        "DistilBERT-Base",
-        "RegNet-Y-4GF",
-        "Swin-Base",
-        "DINOv2-Base",
-        "Whisper-Base",
-        "ResNet-50",
-        "T5-Base",
-        "DeiT-Base",
-        "ViT-Base",
-        "BERT-Mini",
-        "Pythia-1.4B",
-        "BLIP-Base",
-        "ALBERT-Base",
-        "RoBERTa-Base",
-        "Wav2Vec2-Base",
-        "TinyLlama-1.1B",
-        "CLIP-ViT-B/32",
-        "Mistral-7B",
-        "OPT-1.3B",
-        "BLOOM-560M",
-        "GPT-Neo-1.3B",
-        "Phi-3-mini",
-        "ConvNeXt-Base",
-        "EfficientNet-B0",
-        "Qwen2.5-7B",
-        "BERT-Tiny",
-        "BERT-Base",
-        "BEiT-Base"
-      ],
-      "categories": [
-        "Multimodal",
-        "Audio",
-        "CV",
-        "LLM",
-        "NLP"
-      ]
-    },
-    {
-      "type_name": "Softmax",
-      "instance_count": 484,
-      "total_parameters": 0,
-      "models": [
-        "Falcon-7B",
-        "StableLM-3B",
-        "GPT-2",
-        "DistilBERT",
-        "SigLIP-Base",
-        "Swin-Base",
-        "DINOv2-Base",
-        "Whisper-Base",
-        "T5-Base",
-        "DeiT-Base",
-        "ViT-Base",
-        "BERT-Mini",
-        "Pythia-1.4B",
-        "BLIP-Base",
-        "ALBERT-Base",
-        "RoBERTa-Base",
-        "Wav2Vec2-Base",
-        "TinyLlama-1.1B",
-        "CLIP-ViT-B/32",
-        "Mistral-7B",
-        "OPT-1.3B",
-        "BLOOM-560M",
-        "GPT-Neo-1.3B",
-        "Phi-3-mini",
-        "DistilBERT-Base",
-        "Qwen2.5-7B",
-        "BERT-Tiny",
-        "BERT-Base",
-        "BEiT-Base"
-      ],
-      "categories": [
-        "Multimodal",
-        "Audio",
-        "CV",
-        "LLM",
-        "NLP"
-      ]
-    },
-    {
-      "type_name": "SiLU",
-      "instance_count": 178,
-      "total_parameters": 0,
-      "models": [
-        "Falcon-7B",
-        "Phi-3-mini",
-        "StableLM-3B",
-        "TinyLlama-1.1B",
-        "Qwen2.5-7B",
-        "Mistral-7B"
-      ],
-      "categories": [
-        "LLM"
-      ]
-    },
-    {
-      "type_name": "Dropout",
-      "instance_count": 682,
-      "total_parameters": 0,
-      "models": [
-        "Falcon-7B",
-        "StableLM-3B",
-        "GPT-2",
-        "DistilBERT",
-        "Swin-Base",
-        "DINOv2-Base",
-        "T5-Base",
-        "DeiT-Base",
-        "ViT-Base",
-        "BERT-Mini",
-        "Pythia-1.4B",
-        "ALBERT-Base",
-        "RoBERTa-Base",
-        "Wav2Vec2-Base",
-        "TinyLlama-1.1B",
-        "Mistral-7B",
-        "OPT-1.3B",
-        "BLOOM-560M",
-        "GPT-Neo-1.3B",
-        "Phi-3-mini",
-        "DistilBERT-Base",
-        "Qwen2.5-7B",
-        "BERT-Tiny",
-        "BERT-Base",
-        "BEiT-Base"
-      ],
-      "categories": [
-        "CV",
-        "LLM",
-        "NLP",
-        "Audio"
-      ]
-    },
-    {
-      "type_name": "LayerNorm",
-      "instance_count": 613,
-      "total_parameters": 1795478,
-      "models": [
-        "GPT-2",
-        "DistilBERT",
-        "SigLIP-Base",
-        "Swin-Base",
-        "DINOv2-Base",
-        "Whisper-Base",
-        "DeiT-Base",
-        "ViT-Base",
-        "BERT-Mini",
-        "Pythia-1.4B",
-        "BLIP-Base",
-        "ALBERT-Base",
-        "RoBERTa-Base",
-        "Wav2Vec2-Base",
-        "CLIP-ViT-B/32",
-        "OPT-1.3B",
-        "BLOOM-560M",
-        "GPT-Neo-1.3B",
-        "DistilBERT-Base",
-        "BERT-Tiny",
-        "BERT-Base",
-        "BEiT-Base"
-      ],
-      "categories": [
-        "Multimodal",
-        "Audio",
-        "CV",
-        "LLM",
-        "NLP"
-      ]
-    },
-    {
-      "type_name": "GELU",
-      "instance_count": 306,
-      "total_parameters": 0,
-      "models": [
-        "GPT-2",
-        "DistilBERT",
-        "SigLIP-Base",
-        "Swin-Base",
-        "DINOv2-Base",
-        "Whisper-Base",
-        "T5-Base",
-        "DeiT-Base",
-        "ViT-Base",
-        "BERT-Mini",
-        "Pythia-1.4B",
-        "BLIP-Base",
-        "ALBERT-Base",
-        "RoBERTa-Base",
-        "Wav2Vec2-Base",
-        "CLIP-ViT-B/32",
-        "OPT-1.3B",
-        "BLOOM-560M",
-        "GPT-Neo-1.3B",
-        "DistilBERT-Base",
-        "BERT-Tiny",
-        "BERT-Base",
-        "BEiT-Base"
-      ],
-      "categories": [
-        "Multimodal",
-        "Audio",
-        "CV",
-        "LLM",
-        "NLP"
-      ]
-    },
-    {
-      "type_name": "Conv2d",
-      "instance_count": 336,
-      "total_parameters": 18425302496288,
-      "models": [
-        "EfficientNet-B0",
-        "CLIP-ViT-B/32",
-        "MobileNet-V2",
-        "ResNet-50",
-        "SigLIP-Base",
-        "RegNet-Y-4GF",
-        "DeiT-Base",
-        "ViT-Base",
-        "ConvNeXt-Base",
-        "Swin-Base",
-        "DINOv2-Base",
-        "BLIP-Base",
-        "BEiT-Base"
-      ],
-      "categories": [
-        "Multimodal",
-        "CV"
-      ]
-    },
-    {
-      "type_name": "BatchNorm2d",
-      "instance_count": 328,
-      "total_parameters": 1310784,
-      "models": [
-        "MobileNet-V2",
-        "ResNet-50",
-        "RegNet-Y-4GF",
-        "ConvNeXt-Base",
-        "EfficientNet-B0"
-      ],
-      "categories": [
-        "CV"
-      ]
-    },
-    {
-      "type_name": "ReLU",
-      "instance_count": 77,
-      "total_parameters": 0,
-      "models": [
-        "ConvNeXt-Base",
-        "RegNet-Y-4GF",
-        "ResNet-50"
-      ],
-      "categories": [
-        "CV"
-      ]
-    },
-    {
-      "type_name": "MaxPool2d",
-      "instance_count": 3,
-      "total_parameters": 0,
-      "models": [
-        "ConvNeXt-Base",
-        "RegNet-Y-4GF",
-        "ResNet-50"
-      ],
-      "categories": [
-        "CV"
-      ]
-    },
-    {
-      "type_name": "AdaptiveAvgPool2d",
-      "instance_count": 5,
-      "total_parameters": 0,
-      "models": [
-        "MobileNet-V2",
-        "ResNet-50",
-        "RegNet-Y-4GF",
-        "ConvNeXt-Base",
-        "EfficientNet-B0"
-      ],
-      "categories": [
-        "CV"
-      ]
-    },
-    {
-      "type_name": "ReLU6",
-      "instance_count": 35,
-      "total_parameters": 0,
-      "models": [
-        "EfficientNet-B0",
-        "MobileNet-V2"
-      ],
-      "categories": [
-        "CV"
-      ]
-    },
-    {
-      "type_name": "Tanh",
-      "instance_count": 8,
-      "total_parameters": 0,
-      "models": [
-        "ALBERT-Base",
-        "RoBERTa-Base",
-        "Wav2Vec2-Base",
-        "DistilBERT",
-        "BERT-Mini",
-        "DistilBERT-Base",
-        "BERT-Tiny",
-        "BERT-Base"
-      ],
-      "categories": [
-        "Audio",
-        "NLP"
-      ]
-    },
-    {
-      "type_name": "Conv1d",
-      "instance_count": 2,
-      "total_parameters": 909312,
-      "models": [
-        "Whisper-Base"
-      ],
-      "categories": [
-        "Audio"
-      ]
-    }
-  ]
-}
+  {
+    "type": "Dropout",
+    "count": 682,
+    "total_parameters": 0,
+    "percentage": 10.92
+  },
+  {
+    "type": "LayerNorm",
+    "count": 613,
+    "total_parameters": 1795478,
+    "percentage": 9.82
+  },
+  {
+    "type": "Softmax",
+    "count": 484,
+    "total_parameters": 0,
+    "percentage": 7.75
+  },
+  {
+    "type": "RMSNorm",
+    "count": 375,
+    "total_parameters": 1234112,
+    "percentage": 6.01
+  },
+  {
+    "type": "Conv2d",
+    "count": 336,
+    "total_parameters": 18425302496288,
+    "percentage": 5.38
+  },
+  {
+    "type": "BatchNorm2d",
+    "count": 328,
+    "total_parameters": 1310784,
+    "percentage": 5.25
+  },
+  {
+    "type": "GELU",
+    "count": 306,
+    "total_parameters": 0,
+    "percentage": 4.9
+  },
+  {
+    "type": "SiLU",
+    "count": 178,
+    "total_parameters": 0,
+    "percentage": 2.85
+  },
+  {
+    "type": "ReLU",
+    "count": 77,
+    "total_parameters": 0,
+    "percentage": 1.23
+  },
+  {
+    "type": "Embedding",
+    "count": 48,
+    "total_parameters": 1753054976,
+    "percentage": 0.77
+  },
+  {
+    "type": "ReLU6",
+    "count": 35,
+    "total_parameters": 0,
+    "percentage": 0.56
+  },
+  {
+    "type": "Tanh",
+    "count": 8,
+    "total_parameters": 0,
+    "percentage": 0.13
+  },
+  {
+    "type": "AdaptiveAvgPool2d",
+    "count": 5,
+    "total_parameters": 0,
+    "percentage": 0.08
+  },
+  {
+    "type": "MaxPool2d",
+    "count": 3,
+    "total_parameters": 0,
+    "percentage": 0.05
+  },
+  {
+    "type": "Conv1d",
+    "count": 2,
+    "total_parameters": 909312,
+    "percentage": 0.03
+  }
+]

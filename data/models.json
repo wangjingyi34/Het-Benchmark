@@ -1,390 +1,274 @@
-{
-  "metadata": {
-    "description": "34 AI models across 5 categories for heterogeneous benchmark",
-    "total_models": 34,
-    "categories": [
-      "LLM",
-      "CV",
-      "NLP",
-      "Audio",
-      "Multimodal"
-    ],
-    "source": "Het-Benchmark"
+[
+  {
+    "name": "Qwen2.5-7B",
+    "category": "LLM",
+    "parameters": 7000000000,
+    "num_operators": 339,
+    "architecture": "llm_decoder",
+    "huggingface_id": ""
   },
-  "models": [
-    {
-      "model_id": "Qwen2.5_7B",
-      "name": "Qwen2.5-7B",
-      "category": "LLM",
-      "architecture": "llm_decoder",
-      "parameters": 7000000000,
-      "num_layers": 28,
-      "hidden_size": 3584,
-      "operator_count": 339,
-      "source": "huggingface/qwen2.5-7b"
-    },
-    {
-      "model_id": "Mistral_7B",
-      "name": "Mistral-7B",
-      "category": "LLM",
-      "architecture": "llm_decoder",
-      "parameters": 7000000000,
-      "num_layers": 32,
-      "hidden_size": 4096,
-      "operator_count": 387,
-      "source": "huggingface/mistral-7b"
-    },
-    {
-      "model_id": "Phi_3_mini",
-      "name": "Phi-3-mini",
-      "category": "LLM",
-      "architecture": "llm_decoder",
-      "parameters": 3800000000,
-      "num_layers": 32,
-      "hidden_size": 3072,
-      "operator_count": 387,
-      "source": "huggingface/phi-3-mini"
-    },
-    {
-      "model_id": "BLOOM_560M",
-      "name": "BLOOM-560M",
-      "category": "LLM",
-      "architecture": "gpt2_style",
-      "parameters": 560000000,
-      "num_layers": 24,
-      "hidden_size": 1024,
-      "operator_count": 243,
-      "source": "huggingface/bloom-560m"
-    },
-    {
-      "model_id": "GPT_2",
-      "name": "GPT-2",
-      "category": "LLM",
-      "architecture": "gpt2_style",
-      "parameters": 124000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 123,
-      "source": "huggingface/gpt-2"
-    },
-    {
-      "model_id": "OPT_1.3B",
-      "name": "OPT-1.3B",
-      "category": "LLM",
-      "architecture": "gpt2_style",
-      "parameters": 1300000000,
-      "num_layers": 24,
-      "hidden_size": 2048,
-      "operator_count": 243,
-      "source": "huggingface/opt-1.3b"
-    },
-    {
-      "model_id": "Falcon_7B",
-      "name": "Falcon-7B",
-      "category": "LLM",
-      "architecture": "llm_decoder",
-      "parameters": 7000000000,
-      "num_layers": 32,
-      "hidden_size": 4544,
-      "operator_count": 387,
-      "source": "huggingface/falcon-7b"
-    },
-    {
-      "model_id": "StableLM_3B",
-      "name": "StableLM-3B",
-      "category": "LLM",
-      "architecture": "llm_decoder",
-      "parameters": 3000000000,
-      "num_layers": 32,
-      "hidden_size": 2560,
-      "operator_count": 387,
-      "source": "huggingface/stablelm-3b"
-    },
-    {
-      "model_id": "TinyLlama_1.1B",
-      "name": "TinyLlama-1.1B",
-      "category": "LLM",
-      "architecture": "llm_decoder",
-      "parameters": 1100000000,
-      "num_layers": 22,
-      "hidden_size": 2048,
-      "operator_count": 267,
-      "source": "huggingface/tinyllama-1.1b"
-    },
-    {
-      "model_id": "Pythia_1.4B",
-      "name": "Pythia-1.4B",
-      "category": "LLM",
-      "architecture": "gpt2_style",
-      "parameters": 1400000000,
-      "num_layers": 24,
-      "hidden_size": 2048,
-      "operator_count": 243,
-      "source": "huggingface/pythia-1.4b"
-    },
-    {
-      "model_id": "ResNet_50",
-      "name": "ResNet-50",
-      "category": "CV",
-      "architecture": "resnet_style",
-      "parameters": 25600000,
-      "num_layers": 16,
-      "hidden_size": 768,
-      "operator_count": 118,
-      "source": "huggingface/resnet-50"
-    },
-    {
-      "model_id": "ViT_Base",
-      "name": "ViT-Base",
-      "category": "CV",
-      "architecture": "vit_style",
-      "parameters": 86000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 123,
-      "source": "huggingface/vit-base"
-    },
-    {
-      "model_id": "Swin_Base",
-      "name": "Swin-Base",
-      "category": "CV",
-      "architecture": "swin_style",
-      "parameters": 88000000,
-      "num_layers": 24,
-      "hidden_size": 1024,
-      "operator_count": 243,
-      "source": "huggingface/swin-base"
-    },
-    {
-      "model_id": "DINOv2_Base",
-      "name": "DINOv2-Base",
-      "category": "CV",
-      "architecture": "vit_style",
-      "parameters": 86000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 123,
-      "source": "huggingface/dinov2-base"
-    },
-    {
-      "model_id": "MobileNet_V2",
-      "name": "MobileNet-V2",
-      "category": "CV",
-      "architecture": "mobilenet_style",
-      "parameters": 3500000,
-      "num_layers": 17,
-      "hidden_size": 768,
-      "operator_count": 126,
-      "source": "huggingface/mobilenet-v2"
-    },
-    {
-      "model_id": "EfficientNet_B0",
-      "name": "EfficientNet-B0",
-      "category": "CV",
-      "architecture": "mobilenet_style",
-      "parameters": 5300000,
-      "num_layers": 16,
-      "hidden_size": 768,
-      "operator_count": 119,
-      "source": "huggingface/efficientnet-b0"
-    },
-    {
-      "model_id": "ConvNeXt_Base",
-      "name": "ConvNeXt-Base",
-      "category": "CV",
-      "architecture": "resnet_style",
-      "parameters": 89000000,
-      "num_layers": 36,
-      "hidden_size": 768,
-      "operator_count": 258,
-      "source": "huggingface/convnext-base"
-    },
-    {
-      "model_id": "RegNet_Y_4GF",
-      "name": "RegNet-Y-4GF",
-      "category": "CV",
-      "architecture": "resnet_style",
-      "parameters": 21000000,
-      "num_layers": 22,
-      "hidden_size": 768,
-      "operator_count": 160,
-      "source": "huggingface/regnet-y-4gf"
-    },
-    {
-      "model_id": "BEiT_Base",
-      "name": "BEiT-Base",
-      "category": "CV",
-      "architecture": "vit_style",
-      "parameters": 86000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 123,
-      "source": "huggingface/beit-base"
-    },
-    {
-      "model_id": "DeiT_Base",
-      "name": "DeiT-Base",
-      "category": "CV",
-      "architecture": "vit_style",
-      "parameters": 86000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 123,
-      "source": "huggingface/deit-base"
-    },
-    {
-      "model_id": "BERT_Base",
-      "name": "BERT-Base",
-      "category": "NLP",
-      "architecture": "bert_style",
-      "parameters": 110000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 150,
-      "source": "huggingface/bert-base"
-    },
-    {
-      "model_id": "RoBERTa_Base",
-      "name": "RoBERTa-Base",
-      "category": "NLP",
-      "architecture": "bert_style",
-      "parameters": 125000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 150,
-      "source": "huggingface/roberta-base"
-    },
-    {
-      "model_id": "T5_Base",
-      "name": "T5-Base",
-      "category": "NLP",
-      "architecture": "t5_style",
-      "parameters": 220000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 134,
-      "source": "huggingface/t5-base"
-    },
-    {
-      "model_id": "DistilBERT",
-      "name": "DistilBERT",
-      "category": "NLP",
-      "architecture": "bert_style",
-      "parameters": 66000000,
-      "num_layers": 6,
-      "hidden_size": 768,
-      "operator_count": 78,
-      "source": "huggingface/distilbert"
-    },
-    {
-      "model_id": "Whisper_Base",
-      "name": "Whisper-Base",
-      "category": "Audio",
-      "architecture": "whisper_style",
-      "parameters": 74000000,
-      "num_layers": 12,
-      "hidden_size": 512,
-      "operator_count": 124,
-      "source": "huggingface/whisper-base"
-    },
-    {
-      "model_id": "Wav2Vec2_Base",
-      "name": "Wav2Vec2-Base",
-      "category": "Audio",
-      "architecture": "bert_style",
-      "parameters": 95000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 150,
-      "source": "huggingface/wav2vec2-base"
-    },
-    {
-      "model_id": "CLIP_ViT_B_32",
-      "name": "CLIP-ViT-B/32",
-      "category": "CV",
-      "architecture": "clip_style",
-      "parameters": 151000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 127,
-      "source": "huggingface/clip-vit-b/32"
-    },
-    {
-      "model_id": "BLIP_Base",
-      "name": "BLIP-Base",
-      "category": "Multimodal",
-      "architecture": "clip_style",
-      "parameters": 224000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 127,
-      "source": "huggingface/blip-base"
-    },
-    {
-      "model_id": "SigLIP_Base",
-      "name": "SigLIP-Base",
-      "category": "Multimodal",
-      "architecture": "clip_style",
-      "parameters": 86000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 127,
-      "source": "huggingface/siglip-base"
-    },
-    {
-      "model_id": "DistilBERT_Base",
-      "name": "DistilBERT-Base",
-      "category": "NLP",
-      "architecture": "bert_style",
-      "parameters": 66000000,
-      "num_layers": 6,
-      "hidden_size": 768,
-      "operator_count": 78,
-      "source": "huggingface/distilbert-base"
-    },
-    {
-      "model_id": "ALBERT_Base",
-      "name": "ALBERT-Base",
-      "category": "NLP",
-      "architecture": "bert_style",
-      "parameters": 12000000,
-      "num_layers": 12,
-      "hidden_size": 768,
-      "operator_count": 150,
-      "source": "huggingface/albert-base"
-    },
-    {
-      "model_id": "GPT_Neo_1.3B",
-      "name": "GPT-Neo-1.3B",
-      "category": "LLM",
-      "architecture": "gpt2_style",
-      "parameters": 1300000000,
-      "num_layers": 24,
-      "hidden_size": 2048,
-      "operator_count": 243,
-      "source": "huggingface/gpt-neo-1.3b"
-    },
-    {
-      "model_id": "BERT_Tiny",
-      "name": "BERT-Tiny",
-      "category": "NLP",
-      "architecture": "bert_style",
-      "parameters": 4400000,
-      "num_layers": 2,
-      "hidden_size": 128,
-      "operator_count": 30,
-      "source": "huggingface/bert-tiny"
-    },
-    {
-      "model_id": "BERT_Mini",
-      "name": "BERT-Mini",
-      "category": "NLP",
-      "architecture": "bert_style",
-      "parameters": 11300000,
-      "num_layers": 4,
-      "hidden_size": 256,
-      "operator_count": 54,
-      "source": "huggingface/bert-mini"
-    }
-  ]
-}
+  {
+    "name": "Mistral-7B",
+    "category": "LLM",
+    "parameters": 7000000000,
+    "num_operators": 387,
+    "architecture": "llm_decoder",
+    "huggingface_id": ""
+  },
+  {
+    "name": "Phi-3-mini",
+    "category": "LLM",
+    "parameters": 3800000000,
+    "num_operators": 387,
+    "architecture": "llm_decoder",
+    "huggingface_id": ""
+  },
+  {
+    "name": "BLOOM-560M",
+    "category": "LLM",
+    "parameters": 560000000,
+    "num_operators": 243,
+    "architecture": "gpt2_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "GPT-2",
+    "category": "LLM",
+    "parameters": 124000000,
+    "num_operators": 123,
+    "architecture": "gpt2_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "OPT-1.3B",
+    "category": "LLM",
+    "parameters": 1300000000,
+    "num_operators": 243,
+    "architecture": "gpt2_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "Falcon-7B",
+    "category": "LLM",
+    "parameters": 7000000000,
+    "num_operators": 387,
+    "architecture": "llm_decoder",
+    "huggingface_id": ""
+  },
+  {
+    "name": "StableLM-3B",
+    "category": "LLM",
+    "parameters": 3000000000,
+    "num_operators": 387,
+    "architecture": "llm_decoder",
+    "huggingface_id": ""
+  },
+  {
+    "name": "TinyLlama-1.1B",
+    "category": "LLM",
+    "parameters": 1100000000,
+    "num_operators": 267,
+    "architecture": "llm_decoder",
+    "huggingface_id": ""
+  },
+  {
+    "name": "Pythia-1.4B",
+    "category": "LLM",
+    "parameters": 1400000000,
+    "num_operators": 243,
+    "architecture": "gpt2_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "ResNet-50",
+    "category": "CV",
+    "parameters": 25600000,
+    "num_operators": 118,
+    "architecture": "resnet_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "ViT-Base",
+    "category": "CV",
+    "parameters": 86000000,
+    "num_operators": 123,
+    "architecture": "vit_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "Swin-Base",
+    "category": "CV",
+    "parameters": 88000000,
+    "num_operators": 243,
+    "architecture": "swin_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "DINOv2-Base",
+    "category": "CV",
+    "parameters": 86000000,
+    "num_operators": 123,
+    "architecture": "vit_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "MobileNet-V2",
+    "category": "CV",
+    "parameters": 3500000,
+    "num_operators": 126,
+    "architecture": "mobilenet_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "EfficientNet-B0",
+    "category": "CV",
+    "parameters": 5300000,
+    "num_operators": 119,
+    "architecture": "mobilenet_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "ConvNeXt-Base",
+    "category": "CV",
+    "parameters": 89000000,
+    "num_operators": 258,
+    "architecture": "resnet_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "RegNet-Y-4GF",
+    "category": "CV",
+    "parameters": 21000000,
+    "num_operators": 160,
+    "architecture": "resnet_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "BEiT-Base",
+    "category": "CV",
+    "parameters": 86000000,
+    "num_operators": 123,
+    "architecture": "vit_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "DeiT-Base",
+    "category": "CV",
+    "parameters": 86000000,
+    "num_operators": 123,
+    "architecture": "vit_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "BERT-Base",
+    "category": "NLP",
+    "parameters": 110000000,
+    "num_operators": 150,
+    "architecture": "bert_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "RoBERTa-Base",
+    "category": "NLP",
+    "parameters": 125000000,
+    "num_operators": 150,
+    "architecture": "bert_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "T5-Base",
+    "category": "NLP",
+    "parameters": 220000000,
+    "num_operators": 134,
+    "architecture": "t5_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "DistilBERT",
+    "category": "NLP",
+    "parameters": 66000000,
+    "num_operators": 78,
+    "architecture": "bert_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "Whisper-Base",
+    "category": "Audio",
+    "parameters": 74000000,
+    "num_operators": 124,
+    "architecture": "whisper_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "Wav2Vec2-Base",
+    "category": "Audio",
+    "parameters": 95000000,
+    "num_operators": 150,
+    "architecture": "bert_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "CLIP-ViT-B/32",
+    "category": "CV",
+    "parameters": 151000000,
+    "num_operators": 127,
+    "architecture": "clip_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "BLIP-Base",
+    "category": "Multimodal",
+    "parameters": 224000000,
+    "num_operators": 127,
+    "architecture": "clip_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "SigLIP-Base",
+    "category": "Multimodal",
+    "parameters": 86000000,
+    "num_operators": 127,
+    "architecture": "clip_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "DistilBERT-Base",
+    "category": "NLP",
+    "parameters": 66000000,
+    "num_operators": 78,
+    "architecture": "bert_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "ALBERT-Base",
+    "category": "NLP",
+    "parameters": 12000000,
+    "num_operators": 150,
+    "architecture": "bert_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "GPT-Neo-1.3B",
+    "category": "LLM",
+    "parameters": 1300000000,
+    "num_operators": 243,
+    "architecture": "gpt2_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "BERT-Tiny",
+    "category": "NLP",
+    "parameters": 4400000,
+    "num_operators": 30,
+    "architecture": "bert_style",
+    "huggingface_id": ""
+  },
+  {
+    "name": "BERT-Mini",
+    "category": "NLP",
+    "parameters": 11300000,
+    "num_operators": 54,
+    "architecture": "bert_style",
+    "huggingface_id": ""
+  }
+]
