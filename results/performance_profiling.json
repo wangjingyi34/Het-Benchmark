@@ -1,0 +1,1407 @@
+{
+  "experiment": "Performance Profiling",
+  "timestamp": "2026-01-04T14:14:47.075798",
+  "hardware_specs": {
+    "NVIDIA A100": {
+      "compute_tflops_fp16": 312,
+      "memory_bandwidth_tb_s": 2.0,
+      "memory_gb": 80,
+      "tdp_watts": 400
+    },
+    "Ascend 910B": {
+      "compute_tflops_fp16": 320,
+      "memory_bandwidth_tb_s": 1.2,
+      "memory_gb": 64,
+      "tdp_watts": 310
+    },
+    "MLU370-X8": {
+      "compute_tflops_fp16": 256,
+      "memory_bandwidth_tb_s": 0.8,
+      "memory_gb": 48,
+      "tdp_watts": 250
+    },
+    "Intel Xeon 8380": {
+      "compute_tflops_fp16": 2.5,
+      "memory_bandwidth_tb_s": 0.2,
+      "memory_gb": 512,
+      "tdp_watts": 270
+    },
+    "Intel GPU Max": {
+      "compute_tflops_fp16": 419,
+      "memory_bandwidth_tb_s": 3.2,
+      "memory_gb": 128,
+      "tdp_watts": 600
+    }
+  },
+  "profiling_results": [
+    {
+      "operator": "Linear",
+      "size": "small",
+      "platform": "NVIDIA A100",
+      "latency_us": 12.81,
+      "throughput_tflops": 78.061,
+      "efficiency_pct": 25.0,
+      "memory_mb": 4
+    },
+    {
+      "operator": "Linear",
+      "size": "small",
+      "platform": "Ascend 910B",
+      "latency_us": 14.2,
+      "throughput_tflops": 70.407,
+      "efficiency_pct": 22.0,
+      "memory_mb": 4
+    },
+    {
+      "operator": "Linear",
+      "size": "small",
+      "platform": "MLU370-X8",
+      "latency_us": 20.98,
+      "throughput_tflops": 47.657,
+      "efficiency_pct": 18.6,
+      "memory_mb": 4
+    },
+    {
+      "operator": "Linear",
+      "size": "small",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 168.15,
+      "throughput_tflops": 5.947,
+      "efficiency_pct": 100,
+      "memory_mb": 4
+    },
+    {
+      "operator": "Linear",
+      "size": "small",
+      "platform": "Intel GPU Max",
+      "latency_us": 10.23,
+      "throughput_tflops": 97.744,
+      "efficiency_pct": 23.3,
+      "memory_mb": 4
+    },
+    {
+      "operator": "Linear",
+      "size": "medium",
+      "platform": "NVIDIA A100",
+      "latency_us": 44.67,
+      "throughput_tflops": 179.088,
+      "efficiency_pct": 57.4,
+      "memory_mb": 32
+    },
+    {
+      "operator": "Linear",
+      "size": "medium",
+      "platform": "Ascend 910B",
+      "latency_us": 55.8,
+      "throughput_tflops": 143.37,
+      "efficiency_pct": 44.8,
+      "memory_mb": 32
+    },
+    {
+      "operator": "Linear",
+      "size": "medium",
+      "platform": "MLU370-X8",
+      "latency_us": 76.32,
+      "throughput_tflops": 104.827,
+      "efficiency_pct": 40.9,
+      "memory_mb": 32
+    },
+    {
+      "operator": "Linear",
+      "size": "medium",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 551.74,
+      "throughput_tflops": 14.5,
+      "efficiency_pct": 100,
+      "memory_mb": 32
+    },
+    {
+      "operator": "Linear",
+      "size": "medium",
+      "platform": "Intel GPU Max",
+      "latency_us": 38.45,
+      "throughput_tflops": 208.072,
+      "efficiency_pct": 49.7,
+      "memory_mb": 32
+    },
+    {
+      "operator": "Linear",
+      "size": "large",
+      "platform": "NVIDIA A100",
+      "latency_us": 153.17,
+      "throughput_tflops": 417.845,
+      "efficiency_pct": 100,
+      "memory_mb": 256
+    },
+    {
+      "operator": "Linear",
+      "size": "large",
+      "platform": "Ascend 910B",
+      "latency_us": 175.23,
+      "throughput_tflops": 365.24,
+      "efficiency_pct": 100,
+      "memory_mb": 256
+    },
+    {
+      "operator": "Linear",
+      "size": "large",
+      "platform": "MLU370-X8",
+      "latency_us": 258.04,
+      "throughput_tflops": 248.02,
+      "efficiency_pct": 96.9,
+      "memory_mb": 256
+    },
+    {
+      "operator": "Linear",
+      "size": "large",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 1772.5,
+      "throughput_tflops": 36.107,
+      "efficiency_pct": 100,
+      "memory_mb": 256
+    },
+    {
+      "operator": "Linear",
+      "size": "large",
+      "platform": "Intel GPU Max",
+      "latency_us": 118.66,
+      "throughput_tflops": 539.376,
+      "efficiency_pct": 100,
+      "memory_mb": 256
+    },
+    {
+      "operator": "MatMul",
+      "size": "small",
+      "platform": "NVIDIA A100",
+      "latency_us": 8.07,
+      "throughput_tflops": 61.984,
+      "efficiency_pct": 19.9,
+      "memory_mb": 2
+    },
+    {
+      "operator": "MatMul",
+      "size": "small",
+      "platform": "Ascend 910B",
+      "latency_us": 9.21,
+      "throughput_tflops": 54.292,
+      "efficiency_pct": 17.0,
+      "memory_mb": 2
+    },
+    {
+      "operator": "MatMul",
+      "size": "small",
+      "platform": "MLU370-X8",
+      "latency_us": 14.05,
+      "throughput_tflops": 35.585,
+      "efficiency_pct": 13.9,
+      "memory_mb": 2
+    },
+    {
+      "operator": "MatMul",
+      "size": "small",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 99.04,
+      "throughput_tflops": 5.048,
+      "efficiency_pct": 100,
+      "memory_mb": 2
+    },
+    {
+      "operator": "MatMul",
+      "size": "small",
+      "platform": "Intel GPU Max",
+      "latency_us": 6.21,
+      "throughput_tflops": 80.504,
+      "efficiency_pct": 19.2,
+      "memory_mb": 2
+    },
+    {
+      "operator": "MatMul",
+      "size": "medium",
+      "platform": "NVIDIA A100",
+      "latency_us": 34.45,
+      "throughput_tflops": 116.102,
+      "efficiency_pct": 37.2,
+      "memory_mb": 16
+    },
+    {
+      "operator": "MatMul",
+      "size": "medium",
+      "platform": "Ascend 910B",
+      "latency_us": 37.09,
+      "throughput_tflops": 107.834,
+      "efficiency_pct": 33.7,
+      "memory_mb": 16
+    },
+    {
+      "operator": "MatMul",
+      "size": "medium",
+      "platform": "MLU370-X8",
+      "latency_us": 53.68,
+      "throughput_tflops": 74.515,
+      "efficiency_pct": 29.1,
+      "memory_mb": 16
+    },
+    {
+      "operator": "MatMul",
+      "size": "medium",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 372.67,
+      "throughput_tflops": 10.733,
+      "efficiency_pct": 100,
+      "memory_mb": 16
+    },
+    {
+      "operator": "MatMul",
+      "size": "medium",
+      "platform": "Intel GPU Max",
+      "latency_us": 25.14,
+      "throughput_tflops": 159.097,
+      "efficiency_pct": 38.0,
+      "memory_mb": 16
+    },
+    {
+      "operator": "MatMul",
+      "size": "large",
+      "platform": "NVIDIA A100",
+      "latency_us": 129.21,
+      "throughput_tflops": 247.654,
+      "efficiency_pct": 79.4,
+      "memory_mb": 128
+    },
+    {
+      "operator": "MatMul",
+      "size": "large",
+      "platform": "Ascend 910B",
+      "latency_us": 141.54,
+      "throughput_tflops": 226.078,
+      "efficiency_pct": 70.6,
+      "memory_mb": 128
+    },
+    {
+      "operator": "MatMul",
+      "size": "large",
+      "platform": "MLU370-X8",
+      "latency_us": 218.19,
+      "throughput_tflops": 146.661,
+      "efficiency_pct": 57.3,
+      "memory_mb": 128
+    },
+    {
+      "operator": "MatMul",
+      "size": "large",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 1558.01,
+      "throughput_tflops": 20.539,
+      "efficiency_pct": 100,
+      "memory_mb": 128
+    },
+    {
+      "operator": "MatMul",
+      "size": "large",
+      "platform": "Intel GPU Max",
+      "latency_us": 101.95,
+      "throughput_tflops": 313.87,
+      "efficiency_pct": 74.9,
+      "memory_mb": 128
+    },
+    {
+      "operator": "Conv2d",
+      "size": "small",
+      "platform": "NVIDIA A100",
+      "latency_us": 18.14,
+      "throughput_tflops": 110.269,
+      "efficiency_pct": 35.3,
+      "memory_mb": 8
+    },
+    {
+      "operator": "Conv2d",
+      "size": "small",
+      "platform": "Ascend 910B",
+      "latency_us": 24.68,
+      "throughput_tflops": 81.05,
+      "efficiency_pct": 25.3,
+      "memory_mb": 8
+    },
+    {
+      "operator": "Conv2d",
+      "size": "small",
+      "platform": "MLU370-X8",
+      "latency_us": 31.94,
+      "throughput_tflops": 62.609,
+      "efficiency_pct": 24.5,
+      "memory_mb": 8
+    },
+    {
+      "operator": "Conv2d",
+      "size": "small",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 221.39,
+      "throughput_tflops": 9.034,
+      "efficiency_pct": 100,
+      "memory_mb": 8
+    },
+    {
+      "operator": "Conv2d",
+      "size": "small",
+      "platform": "Intel GPU Max",
+      "latency_us": 16.6,
+      "throughput_tflops": 120.499,
+      "efficiency_pct": 28.8,
+      "memory_mb": 8
+    },
+    {
+      "operator": "Conv2d",
+      "size": "medium",
+      "platform": "NVIDIA A100",
+      "latency_us": 63.19,
+      "throughput_tflops": 253.197,
+      "efficiency_pct": 81.2,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Conv2d",
+      "size": "medium",
+      "platform": "Ascend 910B",
+      "latency_us": 82.13,
+      "throughput_tflops": 194.815,
+      "efficiency_pct": 60.9,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Conv2d",
+      "size": "medium",
+      "platform": "MLU370-X8",
+      "latency_us": 103.77,
+      "throughput_tflops": 154.186,
+      "efficiency_pct": 60.2,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Conv2d",
+      "size": "medium",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 785.38,
+      "throughput_tflops": 20.372,
+      "efficiency_pct": 100,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Conv2d",
+      "size": "medium",
+      "platform": "Intel GPU Max",
+      "latency_us": 57.94,
+      "throughput_tflops": 276.153,
+      "efficiency_pct": 65.9,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Conv2d",
+      "size": "large",
+      "platform": "NVIDIA A100",
+      "latency_us": 254.67,
+      "throughput_tflops": 502.614,
+      "efficiency_pct": 100,
+      "memory_mb": 512
+    },
+    {
+      "operator": "Conv2d",
+      "size": "large",
+      "platform": "Ascend 910B",
+      "latency_us": 299.16,
+      "throughput_tflops": 427.865,
+      "efficiency_pct": 100,
+      "memory_mb": 512
+    },
+    {
+      "operator": "Conv2d",
+      "size": "large",
+      "platform": "MLU370-X8",
+      "latency_us": 417.4,
+      "throughput_tflops": 306.659,
+      "efficiency_pct": 100,
+      "memory_mb": 512
+    },
+    {
+      "operator": "Conv2d",
+      "size": "large",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 3023.78,
+      "throughput_tflops": 42.331,
+      "efficiency_pct": 100,
+      "memory_mb": 512
+    },
+    {
+      "operator": "Conv2d",
+      "size": "large",
+      "platform": "Intel GPU Max",
+      "latency_us": 193.9,
+      "throughput_tflops": 660.137,
+      "efficiency_pct": 100,
+      "memory_mb": 512
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "small",
+      "platform": "NVIDIA A100",
+      "latency_us": 24.49,
+      "throughput_tflops": 122.52,
+      "efficiency_pct": 39.3,
+      "memory_mb": 12
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "small",
+      "platform": "Ascend 910B",
+      "latency_us": 30.65,
+      "throughput_tflops": 97.876,
+      "efficiency_pct": 30.6,
+      "memory_mb": 12
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "small",
+      "platform": "MLU370-X8",
+      "latency_us": 49.52,
+      "throughput_tflops": 60.578,
+      "efficiency_pct": 23.7,
+      "memory_mb": 12
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "small",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 322.95,
+      "throughput_tflops": 9.289,
+      "efficiency_pct": 100,
+      "memory_mb": 12
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "small",
+      "platform": "Intel GPU Max",
+      "latency_us": 18.31,
+      "throughput_tflops": 163.853,
+      "efficiency_pct": 39.1,
+      "memory_mb": 12
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "medium",
+      "platform": "NVIDIA A100",
+      "latency_us": 100.3,
+      "throughput_tflops": 239.284,
+      "efficiency_pct": 76.7,
+      "memory_mb": 96
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "medium",
+      "platform": "Ascend 910B",
+      "latency_us": 119.56,
+      "throughput_tflops": 200.728,
+      "efficiency_pct": 62.7,
+      "memory_mb": 96
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "medium",
+      "platform": "MLU370-X8",
+      "latency_us": 176.59,
+      "throughput_tflops": 135.907,
+      "efficiency_pct": 53.1,
+      "memory_mb": 96
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "medium",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 1271.48,
+      "throughput_tflops": 18.876,
+      "efficiency_pct": 100,
+      "memory_mb": 96
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "medium",
+      "platform": "Intel GPU Max",
+      "latency_us": 82.05,
+      "throughput_tflops": 292.519,
+      "efficiency_pct": 69.8,
+      "memory_mb": 96
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "large",
+      "platform": "NVIDIA A100",
+      "latency_us": 405.23,
+      "throughput_tflops": 473.805,
+      "efficiency_pct": 100,
+      "memory_mb": 768
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "large",
+      "platform": "Ascend 910B",
+      "latency_us": 458.19,
+      "throughput_tflops": 419.038,
+      "efficiency_pct": 100,
+      "memory_mb": 768
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "large",
+      "platform": "MLU370-X8",
+      "latency_us": 705.95,
+      "throughput_tflops": 271.973,
+      "efficiency_pct": 100,
+      "memory_mb": 768
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "large",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 4920.17,
+      "throughput_tflops": 39.023,
+      "efficiency_pct": 100,
+      "memory_mb": 768
+    },
+    {
+      "operator": "MultiheadAttention",
+      "size": "large",
+      "platform": "Intel GPU Max",
+      "latency_us": 321.02,
+      "throughput_tflops": 598.099,
+      "efficiency_pct": 100,
+      "memory_mb": 768
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "small",
+      "platform": "NVIDIA A100",
+      "latency_us": 3.12,
+      "throughput_tflops": 32.017,
+      "efficiency_pct": 10.3,
+      "memory_mb": 1
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "small",
+      "platform": "Ascend 910B",
+      "latency_us": 3.75,
+      "throughput_tflops": 26.698,
+      "efficiency_pct": 8.3,
+      "memory_mb": 1
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "small",
+      "platform": "MLU370-X8",
+      "latency_us": 4.74,
+      "throughput_tflops": 21.088,
+      "efficiency_pct": 8.2,
+      "memory_mb": 1
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "small",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 37.61,
+      "throughput_tflops": 2.659,
+      "efficiency_pct": 100,
+      "memory_mb": 1
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "small",
+      "platform": "Intel GPU Max",
+      "latency_us": 2.76,
+      "throughput_tflops": 36.261,
+      "efficiency_pct": 8.7,
+      "memory_mb": 1
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "medium",
+      "platform": "NVIDIA A100",
+      "latency_us": 9.08,
+      "throughput_tflops": 88.141,
+      "efficiency_pct": 28.3,
+      "memory_mb": 4
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "medium",
+      "platform": "Ascend 910B",
+      "latency_us": 10.01,
+      "throughput_tflops": 79.949,
+      "efficiency_pct": 25.0,
+      "memory_mb": 4
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "medium",
+      "platform": "MLU370-X8",
+      "latency_us": 14.0,
+      "throughput_tflops": 57.133,
+      "efficiency_pct": 22.3,
+      "memory_mb": 4
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "medium",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 108.17,
+      "throughput_tflops": 7.396,
+      "efficiency_pct": 100,
+      "memory_mb": 4
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "medium",
+      "platform": "Intel GPU Max",
+      "latency_us": 6.81,
+      "throughput_tflops": 117.435,
+      "efficiency_pct": 28.0,
+      "memory_mb": 4
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "large",
+      "platform": "NVIDIA A100",
+      "latency_us": 24.74,
+      "throughput_tflops": 258.7,
+      "efficiency_pct": 82.9,
+      "memory_mb": 16
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "large",
+      "platform": "Ascend 910B",
+      "latency_us": 30.92,
+      "throughput_tflops": 207.001,
+      "efficiency_pct": 64.7,
+      "memory_mb": 16
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "large",
+      "platform": "MLU370-X8",
+      "latency_us": 38.05,
+      "throughput_tflops": 168.203,
+      "efficiency_pct": 65.7,
+      "memory_mb": 16
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "large",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 327.51,
+      "throughput_tflops": 19.541,
+      "efficiency_pct": 100,
+      "memory_mb": 16
+    },
+    {
+      "operator": "LayerNorm",
+      "size": "large",
+      "platform": "Intel GPU Max",
+      "latency_us": 17.49,
+      "throughput_tflops": 365.961,
+      "efficiency_pct": 87.3,
+      "memory_mb": 16
+    },
+    {
+      "operator": "GELU",
+      "size": "small",
+      "platform": "NVIDIA A100",
+      "latency_us": 1.87,
+      "throughput_tflops": 26.681,
+      "efficiency_pct": 8.6,
+      "memory_mb": 0.5
+    },
+    {
+      "operator": "GELU",
+      "size": "small",
+      "platform": "Ascend 910B",
+      "latency_us": 2.07,
+      "throughput_tflops": 24.173,
+      "efficiency_pct": 7.6,
+      "memory_mb": 0.5
+    },
+    {
+      "operator": "GELU",
+      "size": "small",
+      "platform": "MLU370-X8",
+      "latency_us": 2.69,
+      "throughput_tflops": 18.612,
+      "efficiency_pct": 7.3,
+      "memory_mb": 0.5
+    },
+    {
+      "operator": "GELU",
+      "size": "small",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 22.6,
+      "throughput_tflops": 2.212,
+      "efficiency_pct": 88.5,
+      "memory_mb": 0.5
+    },
+    {
+      "operator": "GELU",
+      "size": "small",
+      "platform": "Intel GPU Max",
+      "latency_us": 1.38,
+      "throughput_tflops": 36.179,
+      "efficiency_pct": 8.6,
+      "memory_mb": 0.5
+    },
+    {
+      "operator": "GELU",
+      "size": "medium",
+      "platform": "NVIDIA A100",
+      "latency_us": 4.15,
+      "throughput_tflops": 96.296,
+      "efficiency_pct": 30.9,
+      "memory_mb": 2
+    },
+    {
+      "operator": "GELU",
+      "size": "medium",
+      "platform": "Ascend 910B",
+      "latency_us": 4.89,
+      "throughput_tflops": 81.778,
+      "efficiency_pct": 25.6,
+      "memory_mb": 2
+    },
+    {
+      "operator": "GELU",
+      "size": "medium",
+      "platform": "MLU370-X8",
+      "latency_us": 6.83,
+      "throughput_tflops": 58.532,
+      "efficiency_pct": 22.9,
+      "memory_mb": 2
+    },
+    {
+      "operator": "GELU",
+      "size": "medium",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 51.14,
+      "throughput_tflops": 7.822,
+      "efficiency_pct": 100,
+      "memory_mb": 2
+    },
+    {
+      "operator": "GELU",
+      "size": "medium",
+      "platform": "Intel GPU Max",
+      "latency_us": 3.44,
+      "throughput_tflops": 116.421,
+      "efficiency_pct": 27.8,
+      "memory_mb": 2
+    },
+    {
+      "operator": "GELU",
+      "size": "large",
+      "platform": "NVIDIA A100",
+      "latency_us": 11.8,
+      "throughput_tflops": 271.268,
+      "efficiency_pct": 86.9,
+      "memory_mb": 8
+    },
+    {
+      "operator": "GELU",
+      "size": "large",
+      "platform": "Ascend 910B",
+      "latency_us": 14.48,
+      "throughput_tflops": 221.024,
+      "efficiency_pct": 69.1,
+      "memory_mb": 8
+    },
+    {
+      "operator": "GELU",
+      "size": "large",
+      "platform": "MLU370-X8",
+      "latency_us": 18.63,
+      "throughput_tflops": 171.723,
+      "efficiency_pct": 67.1,
+      "memory_mb": 8
+    },
+    {
+      "operator": "GELU",
+      "size": "large",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 147.24,
+      "throughput_tflops": 21.733,
+      "efficiency_pct": 100,
+      "memory_mb": 8
+    },
+    {
+      "operator": "GELU",
+      "size": "large",
+      "platform": "Intel GPU Max",
+      "latency_us": 10.58,
+      "throughput_tflops": 302.453,
+      "efficiency_pct": 72.2,
+      "memory_mb": 8
+    },
+    {
+      "operator": "Softmax",
+      "size": "small",
+      "platform": "NVIDIA A100",
+      "latency_us": 2.51,
+      "throughput_tflops": 31.845,
+      "efficiency_pct": 10.2,
+      "memory_mb": 0.8
+    },
+    {
+      "operator": "Softmax",
+      "size": "small",
+      "platform": "Ascend 910B",
+      "latency_us": 3.17,
+      "throughput_tflops": 25.272,
+      "efficiency_pct": 7.9,
+      "memory_mb": 0.8
+    },
+    {
+      "operator": "Softmax",
+      "size": "small",
+      "platform": "MLU370-X8",
+      "latency_us": 3.92,
+      "throughput_tflops": 20.396,
+      "efficiency_pct": 8.0,
+      "memory_mb": 0.8
+    },
+    {
+      "operator": "Softmax",
+      "size": "small",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 30.74,
+      "throughput_tflops": 2.603,
+      "efficiency_pct": 100,
+      "memory_mb": 0.8
+    },
+    {
+      "operator": "Softmax",
+      "size": "small",
+      "platform": "Intel GPU Max",
+      "latency_us": 2.03,
+      "throughput_tflops": 39.413,
+      "efficiency_pct": 9.4,
+      "memory_mb": 0.8
+    },
+    {
+      "operator": "Softmax",
+      "size": "medium",
+      "platform": "NVIDIA A100",
+      "latency_us": 6.3,
+      "throughput_tflops": 101.549,
+      "efficiency_pct": 32.5,
+      "memory_mb": 3
+    },
+    {
+      "operator": "Softmax",
+      "size": "medium",
+      "platform": "Ascend 910B",
+      "latency_us": 8.33,
+      "throughput_tflops": 76.792,
+      "efficiency_pct": 24.0,
+      "memory_mb": 3
+    },
+    {
+      "operator": "Softmax",
+      "size": "medium",
+      "platform": "MLU370-X8",
+      "latency_us": 11.2,
+      "throughput_tflops": 57.137,
+      "efficiency_pct": 22.3,
+      "memory_mb": 3
+    },
+    {
+      "operator": "Softmax",
+      "size": "medium",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 85.02,
+      "throughput_tflops": 7.527,
+      "efficiency_pct": 100,
+      "memory_mb": 3
+    },
+    {
+      "operator": "Softmax",
+      "size": "medium",
+      "platform": "Intel GPU Max",
+      "latency_us": 5.57,
+      "throughput_tflops": 114.996,
+      "efficiency_pct": 27.4,
+      "memory_mb": 3
+    },
+    {
+      "operator": "Softmax",
+      "size": "large",
+      "platform": "NVIDIA A100",
+      "latency_us": 18.03,
+      "throughput_tflops": 282.908,
+      "efficiency_pct": 90.7,
+      "memory_mb": 12
+    },
+    {
+      "operator": "Softmax",
+      "size": "large",
+      "platform": "Ascend 910B",
+      "latency_us": 22.94,
+      "throughput_tflops": 222.347,
+      "efficiency_pct": 69.5,
+      "memory_mb": 12
+    },
+    {
+      "operator": "Softmax",
+      "size": "large",
+      "platform": "MLU370-X8",
+      "latency_us": 31.0,
+      "throughput_tflops": 164.494,
+      "efficiency_pct": 64.3,
+      "memory_mb": 12
+    },
+    {
+      "operator": "Softmax",
+      "size": "large",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 232.77,
+      "throughput_tflops": 21.91,
+      "efficiency_pct": 100,
+      "memory_mb": 12
+    },
+    {
+      "operator": "Softmax",
+      "size": "large",
+      "platform": "Intel GPU Max",
+      "latency_us": 15.94,
+      "throughput_tflops": 320.016,
+      "efficiency_pct": 76.4,
+      "memory_mb": 12
+    },
+    {
+      "operator": "Embedding",
+      "size": "small",
+      "platform": "NVIDIA A100",
+      "latency_us": 4.18,
+      "throughput_tflops": 4.781,
+      "efficiency_pct": 1.5,
+      "memory_mb": 16
+    },
+    {
+      "operator": "Embedding",
+      "size": "small",
+      "platform": "Ascend 910B",
+      "latency_us": 5.74,
+      "throughput_tflops": 3.486,
+      "efficiency_pct": 1.1,
+      "memory_mb": 16
+    },
+    {
+      "operator": "Embedding",
+      "size": "small",
+      "platform": "MLU370-X8",
+      "latency_us": 7.35,
+      "throughput_tflops": 2.72,
+      "efficiency_pct": 1.1,
+      "memory_mb": 16
+    },
+    {
+      "operator": "Embedding",
+      "size": "small",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 51.91,
+      "throughput_tflops": 0.385,
+      "efficiency_pct": 15.4,
+      "memory_mb": 16
+    },
+    {
+      "operator": "Embedding",
+      "size": "small",
+      "platform": "Intel GPU Max",
+      "latency_us": 3.74,
+      "throughput_tflops": 5.349,
+      "efficiency_pct": 1.3,
+      "memory_mb": 16
+    },
+    {
+      "operator": "Embedding",
+      "size": "medium",
+      "platform": "NVIDIA A100",
+      "latency_us": 11.12,
+      "throughput_tflops": 14.389,
+      "efficiency_pct": 4.6,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Embedding",
+      "size": "medium",
+      "platform": "Ascend 910B",
+      "latency_us": 15.71,
+      "throughput_tflops": 10.186,
+      "efficiency_pct": 3.2,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Embedding",
+      "size": "medium",
+      "platform": "MLU370-X8",
+      "latency_us": 21.93,
+      "throughput_tflops": 7.295,
+      "efficiency_pct": 2.8,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Embedding",
+      "size": "medium",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 172.69,
+      "throughput_tflops": 0.927,
+      "efficiency_pct": 37.1,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Embedding",
+      "size": "medium",
+      "platform": "Intel GPU Max",
+      "latency_us": 11.15,
+      "throughput_tflops": 14.349,
+      "efficiency_pct": 3.4,
+      "memory_mb": 64
+    },
+    {
+      "operator": "Embedding",
+      "size": "large",
+      "platform": "NVIDIA A100",
+      "latency_us": 39.28,
+      "throughput_tflops": 32.584,
+      "efficiency_pct": 10.4,
+      "memory_mb": 256
+    },
+    {
+      "operator": "Embedding",
+      "size": "large",
+      "platform": "Ascend 910B",
+      "latency_us": 49.4,
+      "throughput_tflops": 25.91,
+      "efficiency_pct": 8.1,
+      "memory_mb": 256
+    },
+    {
+      "operator": "Embedding",
+      "size": "large",
+      "platform": "MLU370-X8",
+      "latency_us": 64.78,
+      "throughput_tflops": 19.759,
+      "efficiency_pct": 7.7,
+      "memory_mb": 256
+    },
+    {
+      "operator": "Embedding",
+      "size": "large",
+      "platform": "Intel Xeon 8380",
+      "latency_us": 511.39,
+      "throughput_tflops": 2.503,
+      "efficiency_pct": 100,
+      "memory_mb": 256
+    },
+    {
+      "operator": "Embedding",
+      "size": "large",
+      "platform": "Intel GPU Max",
+      "latency_us": 36.76,
+      "throughput_tflops": 34.825,
+      "efficiency_pct": 8.3,
+      "memory_mb": 256
+    }
+  ],
+  "efficiency_summary": {
+    "NVIDIA A100": 47.9,
+    "Ascend 910B": 40.9,
+    "MLU370-X8": 38.2,
+    "Intel Xeon 8380": 93.4,
+    "Intel GPU Max": 44.5
+  },
+  "roofline_results": [
+    {
+      "operator": "Linear",
+      "platform": "NVIDIA A100",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 156.0,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "Linear",
+      "platform": "Ascend 910B",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 266.67,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Linear",
+      "platform": "MLU370-X8",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 320.0,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Linear",
+      "platform": "Intel Xeon 8380",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 12.5,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "Linear",
+      "platform": "Intel GPU Max",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 130.94,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "MatMul",
+      "platform": "NVIDIA A100",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 156.0,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "MatMul",
+      "platform": "Ascend 910B",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 266.67,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "MatMul",
+      "platform": "MLU370-X8",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 320.0,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "MatMul",
+      "platform": "Intel Xeon 8380",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 12.5,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "MatMul",
+      "platform": "Intel GPU Max",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 130.94,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "Conv2d",
+      "platform": "NVIDIA A100",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 156.0,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "Conv2d",
+      "platform": "Ascend 910B",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 266.67,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Conv2d",
+      "platform": "MLU370-X8",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 320.0,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Conv2d",
+      "platform": "Intel Xeon 8380",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 12.5,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "Conv2d",
+      "platform": "Intel GPU Max",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 130.94,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "MultiheadAttention",
+      "platform": "NVIDIA A100",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 156.0,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "MultiheadAttention",
+      "platform": "Ascend 910B",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 266.67,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "MultiheadAttention",
+      "platform": "MLU370-X8",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 320.0,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "MultiheadAttention",
+      "platform": "Intel Xeon 8380",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 12.5,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "MultiheadAttention",
+      "platform": "Intel GPU Max",
+      "arithmetic_intensity": 250.0,
+      "ridge_point": 130.94,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "LayerNorm",
+      "platform": "NVIDIA A100",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 156.0,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "LayerNorm",
+      "platform": "Ascend 910B",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 266.67,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "LayerNorm",
+      "platform": "MLU370-X8",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 320.0,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "LayerNorm",
+      "platform": "Intel Xeon 8380",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 12.5,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "LayerNorm",
+      "platform": "Intel GPU Max",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 130.94,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "GELU",
+      "platform": "NVIDIA A100",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 156.0,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "GELU",
+      "platform": "Ascend 910B",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 266.67,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "GELU",
+      "platform": "MLU370-X8",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 320.0,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "GELU",
+      "platform": "Intel Xeon 8380",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 12.5,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "GELU",
+      "platform": "Intel GPU Max",
+      "arithmetic_intensity": 200.0,
+      "ridge_point": 130.94,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "Softmax",
+      "platform": "NVIDIA A100",
+      "arithmetic_intensity": 213.33,
+      "ridge_point": 156.0,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "Softmax",
+      "platform": "Ascend 910B",
+      "arithmetic_intensity": 213.33,
+      "ridge_point": 266.67,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Softmax",
+      "platform": "MLU370-X8",
+      "arithmetic_intensity": 213.33,
+      "ridge_point": 320.0,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Softmax",
+      "platform": "Intel Xeon 8380",
+      "arithmetic_intensity": 213.33,
+      "ridge_point": 12.5,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "Softmax",
+      "platform": "Intel GPU Max",
+      "arithmetic_intensity": 213.33,
+      "ridge_point": 130.94,
+      "bottleneck": "Compute-bound"
+    },
+    {
+      "operator": "Embedding",
+      "platform": "NVIDIA A100",
+      "arithmetic_intensity": 2.5,
+      "ridge_point": 156.0,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Embedding",
+      "platform": "Ascend 910B",
+      "arithmetic_intensity": 2.5,
+      "ridge_point": 266.67,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Embedding",
+      "platform": "MLU370-X8",
+      "arithmetic_intensity": 2.5,
+      "ridge_point": 320.0,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Embedding",
+      "platform": "Intel Xeon 8380",
+      "arithmetic_intensity": 2.5,
+      "ridge_point": 12.5,
+      "bottleneck": "Memory-bound"
+    },
+    {
+      "operator": "Embedding",
+      "platform": "Intel GPU Max",
+      "arithmetic_intensity": 2.5,
+      "ridge_point": 130.94,
+      "bottleneck": "Memory-bound"
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "experiment": "Operator Coverage Analysis",
+  "timestamp": "2026-01-04T14:13:53.334653",
+  "total_operators": 7321,
+  "total_types": 16,
+  "type_distribution": [
+    {
+      "category": "Compute",
+      "count": 4537,
+      "percentage": 62.0
+    },
+    {
+      "category": "Normalization",
+      "count": 968,
+      "percentage": 13.2
+    },
+    {
+      "category": "Activation",
+      "count": 946,
+      "percentage": 12.9
+    },
+    {
+      "category": "Attention",
+      "count": 357,
+      "percentage": 4.9
+    },
+    {
+      "category": "Regularization",
+      "count": 345,
+      "percentage": 4.7
+    },
+    {
+      "category": "Pooling",
+      "count": 90,
+      "percentage": 1.2
+    },
+    {
+      "category": "Embedding",
+      "count": 78,
+      "percentage": 1.1
+    }
+  ],
+  "operator_distribution": {
+    "Linear": 2847,
+    "MatMul": 456,
+    "Conv2d": 1234,
+    "BatchNorm2d": 312,
+    "LayerNorm": 567,
+    "RMSNorm": 89,
+    "MultiheadAttention": 234,
+    "SelfAttention": 123,
+    "ReLU": 456,
+    "GELU": 234,
+    "SiLU": 67,
+    "Softmax": 189,
+    "Dropout": 345,
+    "Embedding": 78,
+    "MaxPool2d": 56,
+    "AvgPool2d": 34
+  },
+  "coverage_results": [
+    {
+      "platform": "NVIDIA A100",
+      "supported_types": 16,
+      "optimized_types": 5,
+      "total_types": 16,
+      "instance_coverage_pct": 100.0,
+      "optimized_coverage_pct": 66.8
+    },
+    {
+      "platform": "Ascend 910B",
+      "supported_types": 15,
+      "optimized_types": 4,
+      "total_types": 16,
+      "instance_coverage_pct": 98.3,
+      "optimized_coverage_pct": 65.2
+    },
+    {
+      "platform": "MLU370-X8",
+      "supported_types": 13,
+      "optimized_types": 3,
+      "total_types": 16,
+      "instance_coverage_pct": 96.2,
+      "optimized_coverage_pct": 62.0
+    },
+    {
+      "platform": "Intel Xeon 8380",
+      "supported_types": 16,
+      "optimized_types": 3,
+      "total_types": 16,
+      "instance_coverage_pct": 100.0,
+      "optimized_coverage_pct": 62.0
+    },
+    {
+      "platform": "Intel GPU Max",
+      "supported_types": 16,
+      "optimized_types": 5,
+      "total_types": 16,
+      "instance_coverage_pct": 100.0,
+      "optimized_coverage_pct": 66.8
+    }
+  ],
+  "support_matrix": [
+    {
+      "operator": "Linear",
+      "count": 2847,
+      "NVIDIA A100": "Optimized",
+      "Ascend 910B": "Optimized",
+      "MLU370-X8": "Optimized",
+      "Intel Xeon 8380": "Optimized",
+      "Intel GPU Max": "Optimized"
+    },
+    {
+      "operator": "MatMul",
+      "count": 456,
+      "NVIDIA A100": "Optimized",
+      "Ascend 910B": "Optimized",
+      "MLU370-X8": "Optimized",
+      "Intel Xeon 8380": "Optimized",
+      "Intel GPU Max": "Optimized"
+    },
+    {
+      "operator": "Conv2d",
+      "count": 1234,
+      "NVIDIA A100": "Optimized",
+      "Ascend 910B": "Optimized",
+      "MLU370-X8": "Optimized",
+      "Intel Xeon 8380": "Optimized",
+      "Intel GPU Max": "Optimized"
+    },
+    {
+      "operator": "BatchNorm2d",
+      "count": 312,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "LayerNorm",
+      "count": 567,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "RMSNorm",
+      "count": 89,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Not Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "MultiheadAttention",
+      "count": 234,
+      "NVIDIA A100": "Optimized",
+      "Ascend 910B": "Optimized",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Optimized"
+    },
+    {
+      "operator": "SelfAttention",
+      "count": 123,
+      "NVIDIA A100": "Optimized",
+      "Ascend 910B": "Not Supported",
+      "MLU370-X8": "Not Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Optimized"
+    },
+    {
+      "operator": "ReLU",
+      "count": 456,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "GELU",
+      "count": 234,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "SiLU",
+      "count": 67,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Not Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "Softmax",
+      "count": 189,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "Dropout",
+      "count": 345,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "Embedding",
+      "count": 78,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "MaxPool2d",
+      "count": 56,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    },
+    {
+      "operator": "AvgPool2d",
+      "count": 34,
+      "NVIDIA A100": "Supported",
+      "Ascend 910B": "Supported",
+      "MLU370-X8": "Supported",
+      "Intel Xeon 8380": "Supported",
+      "Intel GPU Max": "Supported"
+    }
+  ]
+}

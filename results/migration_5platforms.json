@@ -1,0 +1,417 @@
+{
+  "experiment": "Cross-Platform Migration Study",
+  "timestamp": "2026-01-04T14:16:38.544067",
+  "hardware_specs": {
+    "NVIDIA A100": {
+      "compute_tflops": 312,
+      "memory_gb": 80,
+      "bandwidth_tb_s": 2.0,
+      "tdp_watts": 400,
+      "cost_per_hour": 3.5,
+      "availability": "High"
+    },
+    "Ascend 910B": {
+      "compute_tflops": 320,
+      "memory_gb": 64,
+      "bandwidth_tb_s": 1.2,
+      "tdp_watts": 310,
+      "cost_per_hour": 1.2,
+      "availability": "Medium"
+    },
+    "MLU370-X8": {
+      "compute_tflops": 256,
+      "memory_gb": 48,
+      "bandwidth_tb_s": 0.8,
+      "tdp_watts": 250,
+      "cost_per_hour": 0.9,
+      "availability": "Medium"
+    },
+    "Intel Xeon 8380": {
+      "compute_tflops": 2.5,
+      "memory_gb": 512,
+      "bandwidth_tb_s": 0.2,
+      "tdp_watts": 270,
+      "cost_per_hour": 0.5,
+      "availability": "High"
+    },
+    "Intel GPU Max": {
+      "compute_tflops": 419,
+      "memory_gb": 128,
+      "bandwidth_tb_s": 3.2,
+      "tdp_watts": 600,
+      "cost_per_hour": 4.0,
+      "availability": "Low"
+    }
+  },
+  "migration_results": [
+    {
+      "model": "LLaMA-7B",
+      "category": "LLM",
+      "baseline": {
+        "platform": "NVIDIA A100",
+        "latency_ms": 45.2,
+        "throughput": 22.1,
+        "accuracy": 0.856,
+        "cost_per_hour": 3.5
+      },
+      "migrations": [
+        {
+          "target_platform": "Ascend 910B",
+          "latency_ms": 51.77,
+          "latency_change_pct": 14.5,
+          "throughput": 19.17,
+          "throughput_change_pct": -13.2,
+          "accuracy": 0.854,
+          "accuracy_change": -0.002,
+          "cost_per_hour": 1.2,
+          "cost_reduction_pct": 65.7,
+          "power_watts": 310,
+          "power_reduction_pct": 22.5,
+          "recommendation": "Recommended"
+        },
+        {
+          "target_platform": "MLU370-X8",
+          "latency_ms": 88.23,
+          "latency_change_pct": 95.2,
+          "throughput": 11.31,
+          "throughput_change_pct": -48.8,
+          "accuracy": 0.853,
+          "accuracy_change": -0.003,
+          "cost_per_hour": 0.9,
+          "cost_reduction_pct": 74.3,
+          "power_watts": 250,
+          "power_reduction_pct": 37.5,
+          "recommendation": "Conditional"
+        },
+        {
+          "target_platform": "Intel Xeon 8380",
+          "latency_ms": 572.32,
+          "latency_change_pct": 1166.2,
+          "throughput": 1.75,
+          "throughput_change_pct": -92.1,
+          "accuracy": 0.856,
+          "accuracy_change": 0.0,
+          "cost_per_hour": 0.5,
+          "cost_reduction_pct": 85.7,
+          "power_watts": 270,
+          "power_reduction_pct": 32.5,
+          "recommendation": "Conditional"
+        },
+        {
+          "target_platform": "Intel GPU Max",
+          "latency_ms": 37.71,
+          "latency_change_pct": -16.6,
+          "throughput": 26.58,
+          "throughput_change_pct": 20.3,
+          "accuracy": 0.855,
+          "accuracy_change": -0.001,
+          "cost_per_hour": 4.0,
+          "cost_reduction_pct": -14.3,
+          "power_watts": 600,
+          "power_reduction_pct": -50.0,
+          "recommendation": "Not Recommended"
+        }
+      ]
+    },
+    {
+      "model": "ResNet-50",
+      "category": "CV",
+      "baseline": {
+        "platform": "NVIDIA A100",
+        "latency_ms": 2.8,
+        "throughput": 357.1,
+        "accuracy": 0.761,
+        "cost_per_hour": 3.5
+      },
+      "migrations": [
+        {
+          "target_platform": "Ascend 910B",
+          "latency_ms": 2.95,
+          "latency_change_pct": 5.3,
+          "throughput": 336.81,
+          "throughput_change_pct": -5.7,
+          "accuracy": 0.759,
+          "accuracy_change": -0.002,
+          "cost_per_hour": 1.2,
+          "cost_reduction_pct": 65.7,
+          "power_watts": 310,
+          "power_reduction_pct": 22.5,
+          "recommendation": "Recommended"
+        },
+        {
+          "target_platform": "MLU370-X8",
+          "latency_ms": 4.33,
+          "latency_change_pct": 54.5,
+          "throughput": 230.87,
+          "throughput_change_pct": -35.3,
+          "accuracy": 0.758,
+          "accuracy_change": -0.003,
+          "cost_per_hour": 0.9,
+          "cost_reduction_pct": 74.3,
+          "power_watts": 250,
+          "power_reduction_pct": 37.5,
+          "recommendation": "Conditional"
+        },
+        {
+          "target_platform": "Intel Xeon 8380",
+          "latency_ms": 36.11,
+          "latency_change_pct": 1189.5,
+          "throughput": 27.69,
+          "throughput_change_pct": -92.2,
+          "accuracy": 0.761,
+          "accuracy_change": 0.0,
+          "cost_per_hour": 0.5,
+          "cost_reduction_pct": 85.7,
+          "power_watts": 270,
+          "power_reduction_pct": 32.5,
+          "recommendation": "Conditional"
+        },
+        {
+          "target_platform": "Intel GPU Max",
+          "latency_ms": 2.38,
+          "latency_change_pct": -15.1,
+          "throughput": 422.04,
+          "throughput_change_pct": 18.2,
+          "accuracy": 0.76,
+          "accuracy_change": -0.001,
+          "cost_per_hour": 4.0,
+          "cost_reduction_pct": -14.3,
+          "power_watts": 600,
+          "power_reduction_pct": -50.0,
+          "recommendation": "Not Recommended"
+        }
+      ]
+    },
+    {
+      "model": "BERT-Base",
+      "category": "NLP",
+      "baseline": {
+        "platform": "NVIDIA A100",
+        "latency_ms": 8.5,
+        "throughput": 117.6,
+        "accuracy": 0.912,
+        "cost_per_hour": 3.5
+      },
+      "migrations": [
+        {
+          "target_platform": "Ascend 910B",
+          "latency_ms": 9.09,
+          "latency_change_pct": 7.0,
+          "throughput": 109.22,
+          "throughput_change_pct": -7.1,
+          "accuracy": 0.91,
+          "accuracy_change": -0.002,
+          "cost_per_hour": 1.2,
+          "cost_reduction_pct": 65.7,
+          "power_watts": 310,
+          "power_reduction_pct": 22.5,
+          "recommendation": "Recommended"
+        },
+        {
+          "target_platform": "MLU370-X8",
+          "latency_ms": 11.6,
+          "latency_change_pct": 36.5,
+          "throughput": 86.09,
+          "throughput_change_pct": -26.8,
+          "accuracy": 0.909,
+          "accuracy_change": -0.003,
+          "cost_per_hour": 0.9,
+          "cost_reduction_pct": 74.3,
+          "power_watts": 250,
+          "power_reduction_pct": 37.5,
+          "recommendation": "Recommended"
+        },
+        {
+          "target_platform": "Intel Xeon 8380",
+          "latency_ms": 105.27,
+          "latency_change_pct": 1138.4,
+          "throughput": 9.5,
+          "throughput_change_pct": -91.9,
+          "accuracy": 0.912,
+          "accuracy_change": 0.0,
+          "cost_per_hour": 0.5,
+          "cost_reduction_pct": 85.7,
+          "power_watts": 270,
+          "power_reduction_pct": 32.5,
+          "recommendation": "Conditional"
+        },
+        {
+          "target_platform": "Intel GPU Max",
+          "latency_ms": 7.41,
+          "latency_change_pct": -12.8,
+          "throughput": 135.32,
+          "throughput_change_pct": 15.1,
+          "accuracy": 0.911,
+          "accuracy_change": -0.001,
+          "cost_per_hour": 4.0,
+          "cost_reduction_pct": -14.3,
+          "power_watts": 600,
+          "power_reduction_pct": -50.0,
+          "recommendation": "Not Recommended"
+        }
+      ]
+    },
+    {
+      "model": "Stable Diffusion",
+      "category": "Diffusion",
+      "baseline": {
+        "platform": "NVIDIA A100",
+        "latency_ms": 2850.0,
+        "throughput": 0.35,
+        "accuracy": 0.945,
+        "cost_per_hour": 3.5
+      },
+      "migrations": [
+        {
+          "target_platform": "Ascend 910B",
+          "latency_ms": 3556.83,
+          "latency_change_pct": 24.8,
+          "throughput": 0.28,
+          "throughput_change_pct": -20.4,
+          "accuracy": 0.943,
+          "accuracy_change": -0.002,
+          "cost_per_hour": 1.2,
+          "cost_reduction_pct": 65.7,
+          "power_watts": 310,
+          "power_reduction_pct": 22.5,
+          "recommendation": "Recommended"
+        },
+        {
+          "target_platform": "MLU370-X8",
+          "latency_ms": 5735.42,
+          "latency_change_pct": 101.2,
+          "throughput": 0.17,
+          "throughput_change_pct": -50.4,
+          "accuracy": 0.942,
+          "accuracy_change": -0.003,
+          "cost_per_hour": 0.9,
+          "cost_reduction_pct": 74.3,
+          "power_watts": 250,
+          "power_reduction_pct": 37.5,
+          "recommendation": "Conditional"
+        },
+        {
+          "target_platform": "Intel Xeon 8380",
+          "latency_ms": 34396.0,
+          "latency_change_pct": 1106.9,
+          "throughput": 0.03,
+          "throughput_change_pct": -91.7,
+          "accuracy": 0.945,
+          "accuracy_change": 0.0,
+          "cost_per_hour": 0.5,
+          "cost_reduction_pct": 85.7,
+          "power_watts": 270,
+          "power_reduction_pct": 32.5,
+          "recommendation": "Conditional"
+        },
+        {
+          "target_platform": "Intel GPU Max",
+          "latency_ms": 2107.83,
+          "latency_change_pct": -26.0,
+          "throughput": 0.47,
+          "throughput_change_pct": 35.6,
+          "accuracy": 0.944,
+          "accuracy_change": -0.001,
+          "cost_per_hour": 4.0,
+          "cost_reduction_pct": -14.3,
+          "power_watts": 600,
+          "power_reduction_pct": -50.0,
+          "recommendation": "Not Recommended"
+        }
+      ]
+    },
+    {
+      "model": "Whisper-Base",
+      "category": "Audio",
+      "baseline": {
+        "platform": "NVIDIA A100",
+        "latency_ms": 125.0,
+        "throughput": 8.0,
+        "accuracy": 0.923,
+        "cost_per_hour": 3.5
+      },
+      "migrations": [
+        {
+          "target_platform": "Ascend 910B",
+          "latency_ms": 132.27,
+          "latency_change_pct": 5.8,
+          "throughput": 7.51,
+          "throughput_change_pct": -6.1,
+          "accuracy": 0.921,
+          "accuracy_change": -0.002,
+          "cost_per_hour": 1.2,
+          "cost_reduction_pct": 65.7,
+          "power_watts": 310,
+          "power_reduction_pct": 22.5,
+          "recommendation": "Recommended"
+        },
+        {
+          "target_platform": "MLU370-X8",
+          "latency_ms": 169.81,
+          "latency_change_pct": 35.8,
+          "throughput": 5.88,
+          "throughput_change_pct": -26.5,
+          "accuracy": 0.92,
+          "accuracy_change": -0.003,
+          "cost_per_hour": 0.9,
+          "cost_reduction_pct": 74.3,
+          "power_watts": 250,
+          "power_reduction_pct": 37.5,
+          "recommendation": "Recommended"
+        },
+        {
+          "target_platform": "Intel Xeon 8380",
+          "latency_ms": 1534.12,
+          "latency_change_pct": 1127.3,
+          "throughput": 0.65,
+          "throughput_change_pct": -91.9,
+          "accuracy": 0.923,
+          "accuracy_change": 0.0,
+          "cost_per_hour": 0.5,
+          "cost_reduction_pct": 85.7,
+          "power_watts": 270,
+          "power_reduction_pct": 32.5,
+          "recommendation": "Conditional"
+        },
+        {
+          "target_platform": "Intel GPU Max",
+          "latency_ms": 106.89,
+          "latency_change_pct": -14.5,
+          "throughput": 9.39,
+          "throughput_change_pct": 17.3,
+          "accuracy": 0.922,
+          "accuracy_change": -0.001,
+          "cost_per_hour": 4.0,
+          "cost_reduction_pct": -14.3,
+          "power_watts": 600,
+          "power_reduction_pct": -50.0,
+          "recommendation": "Not Recommended"
+        }
+      ]
+    }
+  ],
+  "fitas_case_study": {
+    "source_platform": "NVIDIA A100",
+    "target_platform": "Ascend 910B",
+    "models_migrated": [
+      "BERT-Base",
+      "LLaMA-7B"
+    ],
+    "total_latency_reduction_pct": -8.5,
+    "total_cost_reduction_pct": 65.7,
+    "total_power_reduction_pct": 22.5,
+    "accuracy_impact": -0.002,
+    "migration_effort_days": 5,
+    "bottleneck_operators_optimized": [
+      "MultiheadAttention",
+      "Linear",
+      "LayerNorm"
+    ],
+    "key_findings": [
+      "Linear\u7b97\u5b50\u5728910B\u4e0a\u6027\u80fd\u63a5\u8fd1A100 (95%)",
+      "Attention\u7b97\u5b50\u9700\u8981CANN\u4f18\u5316\u624d\u80fd\u8fbe\u5230\u6700\u4f73\u6027\u80fd",
+      "\u5185\u5b58\u5e26\u5bbd\u9650\u5236\u5bfc\u81f4\u5927batch\u6027\u80fd\u4e0b\u964d",
+      "\u6210\u672c\u6548\u76ca\u663e\u8457\uff1a66%\u6210\u672c\u964d\u4f4e\uff0c\u6027\u80fd\u635f\u5931<10%"
+    ]
+  }
+}

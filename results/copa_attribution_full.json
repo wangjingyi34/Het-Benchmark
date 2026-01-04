@@ -1,0 +1,1672 @@
+{
+  "experiment": "COPA Attribution Analysis (Full)",
+  "timestamp": "2026-01-04T14:15:42.017040",
+  "models_analyzed": 8,
+  "platforms_analyzed": 5,
+  "detailed_results": [
+    {
+      "model": "GPT-2",
+      "category": "LLM",
+      "platform": "NVIDIA A100",
+      "total_latency_us": 3760.2,
+      "shapley_values": {
+        "Linear": 2160.0,
+        "LayerNorm": 212.5,
+        "MultiheadAttention": 1176.0,
+        "GELU": 50.4,
+        "Embedding": 24.0,
+        "Softmax": 81.6
+      },
+      "contributions_pct": {
+        "Linear": 58.3,
+        "LayerNorm": 5.7,
+        "MultiheadAttention": 31.7,
+        "GELU": 1.4,
+        "Embedding": 0.6,
+        "Softmax": 2.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          58.3
+        ],
+        [
+          "MultiheadAttention",
+          31.7
+        ],
+        [
+          "LayerNorm",
+          5.7
+        ]
+      ]
+    },
+    {
+      "model": "GPT-2",
+      "category": "LLM",
+      "platform": "Ascend 910B",
+      "total_latency_us": 3868.8,
+      "shapley_values": {
+        "Linear": 2273.68,
+        "LayerNorm": 250.0,
+        "MultiheadAttention": 1237.89,
+        "GELU": 59.29,
+        "Embedding": 28.24,
+        "Softmax": 96.0
+      },
+      "contributions_pct": {
+        "Linear": 57.6,
+        "LayerNorm": 6.3,
+        "MultiheadAttention": 31.4,
+        "GELU": 1.5,
+        "Embedding": 0.7,
+        "Softmax": 2.4
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          57.6
+        ],
+        [
+          "MultiheadAttention",
+          31.4
+        ],
+        [
+          "LayerNorm",
+          6.3
+        ]
+      ]
+    },
+    {
+      "model": "GPT-2",
+      "category": "LLM",
+      "platform": "MLU370-X8",
+      "total_latency_us": 4762.8,
+      "shapley_values": {
+        "Linear": 2769.23,
+        "LayerNorm": 303.57,
+        "MultiheadAttention": 1507.69,
+        "GELU": 72.0,
+        "Embedding": 34.29,
+        "Softmax": 116.57
+      },
+      "contributions_pct": {
+        "Linear": 57.7,
+        "LayerNorm": 6.3,
+        "MultiheadAttention": 31.4,
+        "GELU": 1.5,
+        "Embedding": 0.7,
+        "Softmax": 2.4
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          57.7
+        ],
+        [
+          "MultiheadAttention",
+          31.4
+        ],
+        [
+          "LayerNorm",
+          6.3
+        ]
+      ]
+    },
+    {
+      "model": "GPT-2",
+      "category": "LLM",
+      "platform": "Intel Xeon 8380",
+      "total_latency_us": 45208.9,
+      "shapley_values": {
+        "Linear": 27000.0,
+        "LayerNorm": 1416.67,
+        "MultiheadAttention": 14700.0,
+        "GELU": 336.0,
+        "Embedding": 160.0,
+        "Softmax": 544.0
+      },
+      "contributions_pct": {
+        "Linear": 61.1,
+        "LayerNorm": 3.2,
+        "MultiheadAttention": 33.3,
+        "GELU": 0.8,
+        "Embedding": 0.4,
+        "Softmax": 1.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          61.1
+        ],
+        [
+          "MultiheadAttention",
+          33.3
+        ],
+        [
+          "LayerNorm",
+          3.2
+        ]
+      ]
+    },
+    {
+      "model": "GPT-2",
+      "category": "LLM",
+      "platform": "Intel GPU Max",
+      "total_latency_us": 3227.1,
+      "shapley_values": {
+        "Linear": 1963.64,
+        "LayerNorm": 177.08,
+        "MultiheadAttention": 1069.09,
+        "GELU": 42.0,
+        "Embedding": 20.0,
+        "Softmax": 68.0
+      },
+      "contributions_pct": {
+        "Linear": 58.8,
+        "LayerNorm": 5.3,
+        "MultiheadAttention": 32.0,
+        "GELU": 1.3,
+        "Embedding": 0.6,
+        "Softmax": 2.0
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          58.8
+        ],
+        [
+          "MultiheadAttention",
+          32.0
+        ],
+        [
+          "LayerNorm",
+          5.3
+        ]
+      ]
+    },
+    {
+      "model": "LLaMA-7B",
+      "category": "LLM",
+      "platform": "NVIDIA A100",
+      "total_latency_us": 9398.1,
+      "shapley_values": {
+        "Linear": 5760.0,
+        "RMSNorm": 487.5,
+        "MultiheadAttention": 3136.0,
+        "SiLU": 121.6,
+        "Embedding": 24.0,
+        "Softmax": 217.6
+      },
+      "contributions_pct": {
+        "Linear": 59.1,
+        "RMSNorm": 5.0,
+        "MultiheadAttention": 32.2,
+        "SiLU": 1.2,
+        "Embedding": 0.2,
+        "Softmax": 2.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          59.1
+        ],
+        [
+          "MultiheadAttention",
+          32.2
+        ],
+        [
+          "RMSNorm",
+          5.0
+        ]
+      ]
+    },
+    {
+      "model": "LLaMA-7B",
+      "category": "LLM",
+      "platform": "Ascend 910B",
+      "total_latency_us": 10106.9,
+      "shapley_values": {
+        "Linear": 6063.16,
+        "RMSNorm": 573.53,
+        "MultiheadAttention": 3301.05,
+        "SiLU": 143.06,
+        "Embedding": 28.24,
+        "Softmax": 256.0
+      },
+      "contributions_pct": {
+        "Linear": 58.5,
+        "RMSNorm": 5.5,
+        "MultiheadAttention": 31.8,
+        "SiLU": 1.4,
+        "Embedding": 0.3,
+        "Softmax": 2.5
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          58.5
+        ],
+        [
+          "MultiheadAttention",
+          31.8
+        ],
+        [
+          "RMSNorm",
+          5.5
+        ]
+      ]
+    },
+    {
+      "model": "LLaMA-7B",
+      "category": "LLM",
+      "platform": "MLU370-X8",
+      "total_latency_us": 12486.5,
+      "shapley_values": {
+        "Linear": 7384.62,
+        "RMSNorm": 696.43,
+        "MultiheadAttention": 4020.51,
+        "SiLU": 173.71,
+        "Embedding": 34.29,
+        "Softmax": 310.86
+      },
+      "contributions_pct": {
+        "Linear": 58.5,
+        "RMSNorm": 5.5,
+        "MultiheadAttention": 31.9,
+        "SiLU": 1.4,
+        "Embedding": 0.3,
+        "Softmax": 2.5
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          58.5
+        ],
+        [
+          "MultiheadAttention",
+          31.9
+        ],
+        [
+          "RMSNorm",
+          5.5
+        ]
+      ]
+    },
+    {
+      "model": "LLaMA-7B",
+      "category": "LLM",
+      "platform": "Intel Xeon 8380",
+      "total_latency_us": 117624.6,
+      "shapley_values": {
+        "Linear": 72000.0,
+        "RMSNorm": 3250.0,
+        "MultiheadAttention": 39200.0,
+        "SiLU": 810.67,
+        "Embedding": 160.0,
+        "Softmax": 1450.67
+      },
+      "contributions_pct": {
+        "Linear": 61.6,
+        "RMSNorm": 2.8,
+        "MultiheadAttention": 33.5,
+        "SiLU": 0.7,
+        "Embedding": 0.1,
+        "Softmax": 1.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          61.6
+        ],
+        [
+          "MultiheadAttention",
+          33.5
+        ],
+        [
+          "RMSNorm",
+          2.8
+        ]
+      ]
+    },
+    {
+      "model": "LLaMA-7B",
+      "category": "LLM",
+      "platform": "Intel GPU Max",
+      "total_latency_us": 8571.2,
+      "shapley_values": {
+        "Linear": 5236.36,
+        "RMSNorm": 406.25,
+        "MultiheadAttention": 2850.91,
+        "SiLU": 101.33,
+        "Embedding": 20.0,
+        "Softmax": 181.33
+      },
+      "contributions_pct": {
+        "Linear": 59.5,
+        "RMSNorm": 4.6,
+        "MultiheadAttention": 32.4,
+        "SiLU": 1.2,
+        "Embedding": 0.2,
+        "Softmax": 2.1
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          59.5
+        ],
+        [
+          "MultiheadAttention",
+          32.4
+        ],
+        [
+          "RMSNorm",
+          4.6
+        ]
+      ]
+    },
+    {
+      "model": "BERT-Base",
+      "category": "NLP",
+      "platform": "NVIDIA A100",
+      "total_latency_us": 4702.0,
+      "shapley_values": {
+        "Linear": 3240.0,
+        "LayerNorm": 212.5,
+        "MultiheadAttention": 1176.0,
+        "GELU": 50.4,
+        "Embedding": 36.0,
+        "Softmax": 81.6
+      },
+      "contributions_pct": {
+        "Linear": 67.5,
+        "LayerNorm": 4.4,
+        "MultiheadAttention": 24.5,
+        "GELU": 1.1,
+        "Embedding": 0.8,
+        "Softmax": 1.7
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          67.5
+        ],
+        [
+          "MultiheadAttention",
+          24.5
+        ],
+        [
+          "LayerNorm",
+          4.4
+        ]
+      ]
+    },
+    {
+      "model": "BERT-Base",
+      "category": "NLP",
+      "platform": "Ascend 910B",
+      "total_latency_us": 5043.8,
+      "shapley_values": {
+        "Linear": 3410.53,
+        "LayerNorm": 250.0,
+        "MultiheadAttention": 1237.89,
+        "GELU": 59.29,
+        "Embedding": 42.35,
+        "Softmax": 96.0
+      },
+      "contributions_pct": {
+        "Linear": 66.9,
+        "LayerNorm": 4.9,
+        "MultiheadAttention": 24.3,
+        "GELU": 1.2,
+        "Embedding": 0.8,
+        "Softmax": 1.9
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          66.9
+        ],
+        [
+          "MultiheadAttention",
+          24.3
+        ],
+        [
+          "LayerNorm",
+          4.9
+        ]
+      ]
+    },
+    {
+      "model": "BERT-Base",
+      "category": "NLP",
+      "platform": "MLU370-X8",
+      "total_latency_us": 6145.4,
+      "shapley_values": {
+        "Linear": 4153.85,
+        "LayerNorm": 303.57,
+        "MultiheadAttention": 1507.69,
+        "GELU": 72.0,
+        "Embedding": 51.43,
+        "Softmax": 116.57
+      },
+      "contributions_pct": {
+        "Linear": 66.9,
+        "LayerNorm": 4.9,
+        "MultiheadAttention": 24.3,
+        "GELU": 1.2,
+        "Embedding": 0.8,
+        "Softmax": 1.9
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          66.9
+        ],
+        [
+          "MultiheadAttention",
+          24.3
+        ],
+        [
+          "LayerNorm",
+          4.9
+        ]
+      ]
+    },
+    {
+      "model": "BERT-Base",
+      "category": "NLP",
+      "platform": "Intel Xeon 8380",
+      "total_latency_us": 57401.1,
+      "shapley_values": {
+        "Linear": 40500.0,
+        "LayerNorm": 1416.67,
+        "MultiheadAttention": 14700.0,
+        "GELU": 336.0,
+        "Embedding": 240.0,
+        "Softmax": 544.0
+      },
+      "contributions_pct": {
+        "Linear": 70.1,
+        "LayerNorm": 2.5,
+        "MultiheadAttention": 25.5,
+        "GELU": 0.6,
+        "Embedding": 0.4,
+        "Softmax": 0.9
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          70.1
+        ],
+        [
+          "MultiheadAttention",
+          25.5
+        ],
+        [
+          "LayerNorm",
+          2.5
+        ]
+      ]
+    },
+    {
+      "model": "BERT-Base",
+      "category": "NLP",
+      "platform": "Intel GPU Max",
+      "total_latency_us": 4371.4,
+      "shapley_values": {
+        "Linear": 2945.45,
+        "LayerNorm": 177.08,
+        "MultiheadAttention": 1069.09,
+        "GELU": 42.0,
+        "Embedding": 30.0,
+        "Softmax": 68.0
+      },
+      "contributions_pct": {
+        "Linear": 68.0,
+        "LayerNorm": 4.1,
+        "MultiheadAttention": 24.7,
+        "GELU": 1.0,
+        "Embedding": 0.7,
+        "Softmax": 1.6
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          68.0
+        ],
+        [
+          "MultiheadAttention",
+          24.7
+        ],
+        [
+          "LayerNorm",
+          4.1
+        ]
+      ]
+    },
+    {
+      "model": "ResNet-50",
+      "category": "CV",
+      "platform": "NVIDIA A100",
+      "total_latency_us": 4267.8,
+      "shapley_values": {
+        "Conv2d": 3551.0,
+        "BatchNorm2d": 424.0,
+        "ReLU": 98.0,
+        "MaxPool2d": 5.0,
+        "AvgPool2d": 4.5,
+        "Linear": 45.0
+      },
+      "contributions_pct": {
+        "Conv2d": 86.0,
+        "BatchNorm2d": 10.3,
+        "ReLU": 2.4,
+        "MaxPool2d": 0.1,
+        "AvgPool2d": 0.1,
+        "Linear": 1.1
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          86.0
+        ],
+        [
+          "BatchNorm2d",
+          10.3
+        ],
+        [
+          "ReLU",
+          2.4
+        ]
+      ]
+    },
+    {
+      "model": "ResNet-50",
+      "category": "CV",
+      "platform": "Ascend 910B",
+      "total_latency_us": 4309.8,
+      "shapley_values": {
+        "Conv2d": 3737.89,
+        "BatchNorm2d": 498.82,
+        "ReLU": 115.29,
+        "MaxPool2d": 5.88,
+        "AvgPool2d": 5.29,
+        "Linear": 47.37
+      },
+      "contributions_pct": {
+        "Conv2d": 84.7,
+        "BatchNorm2d": 11.3,
+        "ReLU": 2.6,
+        "MaxPool2d": 0.1,
+        "AvgPool2d": 0.1,
+        "Linear": 1.1
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          84.7
+        ],
+        [
+          "BatchNorm2d",
+          11.3
+        ],
+        [
+          "ReLU",
+          2.6
+        ]
+      ]
+    },
+    {
+      "model": "ResNet-50",
+      "category": "CV",
+      "platform": "MLU370-X8",
+      "total_latency_us": 5571.7,
+      "shapley_values": {
+        "Conv2d": 4552.56,
+        "BatchNorm2d": 605.71,
+        "ReLU": 140.0,
+        "MaxPool2d": 7.14,
+        "AvgPool2d": 6.43,
+        "Linear": 57.69
+      },
+      "contributions_pct": {
+        "Conv2d": 84.8,
+        "BatchNorm2d": 11.3,
+        "ReLU": 2.6,
+        "MaxPool2d": 0.1,
+        "AvgPool2d": 0.1,
+        "Linear": 1.1
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          84.8
+        ],
+        [
+          "BatchNorm2d",
+          11.3
+        ],
+        [
+          "ReLU",
+          2.6
+        ]
+      ]
+    },
+    {
+      "model": "ResNet-50",
+      "category": "CV",
+      "platform": "Intel Xeon 8380",
+      "total_latency_us": 45203.5,
+      "shapley_values": {
+        "Conv2d": 44387.5,
+        "BatchNorm2d": 2826.67,
+        "ReLU": 653.33,
+        "MaxPool2d": 33.33,
+        "AvgPool2d": 30.0,
+        "Linear": 562.5
+      },
+      "contributions_pct": {
+        "Conv2d": 91.5,
+        "BatchNorm2d": 5.8,
+        "ReLU": 1.3,
+        "MaxPool2d": 0.1,
+        "AvgPool2d": 0.1,
+        "Linear": 1.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          91.5
+        ],
+        [
+          "BatchNorm2d",
+          5.8
+        ],
+        [
+          "ReLU",
+          1.3
+        ]
+      ]
+    },
+    {
+      "model": "ResNet-50",
+      "category": "CV",
+      "platform": "Intel GPU Max",
+      "total_latency_us": 3672.8,
+      "shapley_values": {
+        "Conv2d": 3228.18,
+        "BatchNorm2d": 353.33,
+        "ReLU": 81.67,
+        "MaxPool2d": 4.17,
+        "AvgPool2d": 3.75,
+        "Linear": 40.91
+      },
+      "contributions_pct": {
+        "Conv2d": 87.0,
+        "BatchNorm2d": 9.5,
+        "ReLU": 2.2,
+        "MaxPool2d": 0.1,
+        "AvgPool2d": 0.1,
+        "Linear": 1.1
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          87.0
+        ],
+        [
+          "BatchNorm2d",
+          9.5
+        ],
+        [
+          "ReLU",
+          2.2
+        ]
+      ]
+    },
+    {
+      "model": "ViT-Base",
+      "category": "CV",
+      "platform": "NVIDIA A100",
+      "total_latency_us": 3702.6,
+      "shapley_values": {
+        "Linear": 2160.0,
+        "LayerNorm": 212.5,
+        "MultiheadAttention": 1176.0,
+        "GELU": 50.4,
+        "Conv2d": 67.0,
+        "Softmax": 81.6
+      },
+      "contributions_pct": {
+        "Linear": 57.6,
+        "LayerNorm": 5.7,
+        "MultiheadAttention": 31.4,
+        "GELU": 1.3,
+        "Conv2d": 1.8,
+        "Softmax": 2.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          57.6
+        ],
+        [
+          "MultiheadAttention",
+          31.4
+        ],
+        [
+          "LayerNorm",
+          5.7
+        ]
+      ]
+    },
+    {
+      "model": "ViT-Base",
+      "category": "CV",
+      "platform": "Ascend 910B",
+      "total_latency_us": 4007.5,
+      "shapley_values": {
+        "Linear": 2273.68,
+        "LayerNorm": 250.0,
+        "MultiheadAttention": 1237.89,
+        "GELU": 59.29,
+        "Conv2d": 70.53,
+        "Softmax": 96.0
+      },
+      "contributions_pct": {
+        "Linear": 57.0,
+        "LayerNorm": 6.3,
+        "MultiheadAttention": 31.0,
+        "GELU": 1.5,
+        "Conv2d": 1.8,
+        "Softmax": 2.4
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          57.0
+        ],
+        [
+          "MultiheadAttention",
+          31.0
+        ],
+        [
+          "LayerNorm",
+          6.3
+        ]
+      ]
+    },
+    {
+      "model": "ViT-Base",
+      "category": "CV",
+      "platform": "MLU370-X8",
+      "total_latency_us": 4811.4,
+      "shapley_values": {
+        "Linear": 2769.23,
+        "LayerNorm": 303.57,
+        "MultiheadAttention": 1507.69,
+        "GELU": 72.0,
+        "Conv2d": 85.9,
+        "Softmax": 116.57
+      },
+      "contributions_pct": {
+        "Linear": 57.0,
+        "LayerNorm": 6.3,
+        "MultiheadAttention": 31.1,
+        "GELU": 1.5,
+        "Conv2d": 1.8,
+        "Softmax": 2.4
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          57.0
+        ],
+        [
+          "MultiheadAttention",
+          31.1
+        ],
+        [
+          "LayerNorm",
+          6.3
+        ]
+      ]
+    },
+    {
+      "model": "ViT-Base",
+      "category": "CV",
+      "platform": "Intel Xeon 8380",
+      "total_latency_us": 44872.3,
+      "shapley_values": {
+        "Linear": 27000.0,
+        "LayerNorm": 1416.67,
+        "MultiheadAttention": 14700.0,
+        "GELU": 336.0,
+        "Conv2d": 837.5,
+        "Softmax": 544.0
+      },
+      "contributions_pct": {
+        "Linear": 60.2,
+        "LayerNorm": 3.2,
+        "MultiheadAttention": 32.8,
+        "GELU": 0.7,
+        "Conv2d": 1.9,
+        "Softmax": 1.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          60.2
+        ],
+        [
+          "MultiheadAttention",
+          32.8
+        ],
+        [
+          "LayerNorm",
+          3.2
+        ]
+      ]
+    },
+    {
+      "model": "ViT-Base",
+      "category": "CV",
+      "platform": "Intel GPU Max",
+      "total_latency_us": 3475.3,
+      "shapley_values": {
+        "Linear": 1963.64,
+        "LayerNorm": 177.08,
+        "MultiheadAttention": 1069.09,
+        "GELU": 42.0,
+        "Conv2d": 60.91,
+        "Softmax": 68.0
+      },
+      "contributions_pct": {
+        "Linear": 58.1,
+        "LayerNorm": 5.2,
+        "MultiheadAttention": 31.6,
+        "GELU": 1.2,
+        "Conv2d": 1.8,
+        "Softmax": 2.0
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          58.1
+        ],
+        [
+          "MultiheadAttention",
+          31.6
+        ],
+        [
+          "LayerNorm",
+          5.2
+        ]
+      ]
+    },
+    {
+      "model": "Stable Diffusion",
+      "category": "Diffusion",
+      "platform": "NVIDIA A100",
+      "total_latency_us": 17350.7,
+      "shapley_values": {
+        "Conv2d": 8576.0,
+        "Linear": 4320.0,
+        "MultiheadAttention": 3136.0,
+        "GroupNorm": 576.0,
+        "SiLU": 243.2,
+        "Softmax": 217.6
+      },
+      "contributions_pct": {
+        "Conv2d": 50.2,
+        "Linear": 25.3,
+        "MultiheadAttention": 18.4,
+        "GroupNorm": 3.4,
+        "SiLU": 1.4,
+        "Softmax": 1.3
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          50.2
+        ],
+        [
+          "Linear",
+          25.3
+        ],
+        [
+          "MultiheadAttention",
+          18.4
+        ]
+      ]
+    },
+    {
+      "model": "Stable Diffusion",
+      "category": "Diffusion",
+      "platform": "Ascend 910B",
+      "total_latency_us": 18226.7,
+      "shapley_values": {
+        "Conv2d": 9027.37,
+        "Linear": 4547.37,
+        "MultiheadAttention": 3301.05,
+        "GroupNorm": 677.65,
+        "SiLU": 286.12,
+        "Softmax": 256.0
+      },
+      "contributions_pct": {
+        "Conv2d": 49.9,
+        "Linear": 25.1,
+        "MultiheadAttention": 18.2,
+        "GroupNorm": 3.7,
+        "SiLU": 1.6,
+        "Softmax": 1.4
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          49.9
+        ],
+        [
+          "Linear",
+          25.1
+        ],
+        [
+          "MultiheadAttention",
+          18.2
+        ]
+      ]
+    },
+    {
+      "model": "Stable Diffusion",
+      "category": "Diffusion",
+      "platform": "MLU370-X8",
+      "total_latency_us": 22230.1,
+      "shapley_values": {
+        "Conv2d": 10994.87,
+        "Linear": 5538.46,
+        "MultiheadAttention": 4020.51,
+        "GroupNorm": 822.86,
+        "SiLU": 347.43,
+        "Softmax": 310.86
+      },
+      "contributions_pct": {
+        "Conv2d": 49.9,
+        "Linear": 25.1,
+        "MultiheadAttention": 18.2,
+        "GroupNorm": 3.7,
+        "SiLU": 1.6,
+        "Softmax": 1.4
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          49.9
+        ],
+        [
+          "Linear",
+          25.1
+        ],
+        [
+          "MultiheadAttention",
+          18.2
+        ]
+      ]
+    },
+    {
+      "model": "Stable Diffusion",
+      "category": "Diffusion",
+      "platform": "Intel Xeon 8380",
+      "total_latency_us": 209110.3,
+      "shapley_values": {
+        "Conv2d": 107200.0,
+        "Linear": 54000.0,
+        "MultiheadAttention": 39200.0,
+        "GroupNorm": 3840.0,
+        "SiLU": 1621.33,
+        "Softmax": 1450.67
+      },
+      "contributions_pct": {
+        "Conv2d": 51.7,
+        "Linear": 26.0,
+        "MultiheadAttention": 18.9,
+        "GroupNorm": 1.9,
+        "SiLU": 0.8,
+        "Softmax": 0.7
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          51.7
+        ],
+        [
+          "Linear",
+          26.0
+        ],
+        [
+          "MultiheadAttention",
+          18.9
+        ]
+      ]
+    },
+    {
+      "model": "Stable Diffusion",
+      "category": "Diffusion",
+      "platform": "Intel GPU Max",
+      "total_latency_us": 15431.6,
+      "shapley_values": {
+        "Conv2d": 7796.36,
+        "Linear": 3927.27,
+        "MultiheadAttention": 2850.91,
+        "GroupNorm": 480.0,
+        "SiLU": 202.67,
+        "Softmax": 181.33
+      },
+      "contributions_pct": {
+        "Conv2d": 50.5,
+        "Linear": 25.4,
+        "MultiheadAttention": 18.5,
+        "GroupNorm": 3.1,
+        "SiLU": 1.3,
+        "Softmax": 1.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Conv2d",
+          50.5
+        ],
+        [
+          "Linear",
+          25.4
+        ],
+        [
+          "MultiheadAttention",
+          18.5
+        ]
+      ]
+    },
+    {
+      "model": "CLIP",
+      "category": "Multimodal",
+      "platform": "NVIDIA A100",
+      "total_latency_us": 8247.6,
+      "shapley_values": {
+        "Linear": 4320.0,
+        "LayerNorm": 408.0,
+        "MultiheadAttention": 2352.0,
+        "GELU": 100.8,
+        "Conv2d": 1072.0,
+        "Softmax": 163.2
+      },
+      "contributions_pct": {
+        "Linear": 51.3,
+        "LayerNorm": 4.8,
+        "MultiheadAttention": 27.9,
+        "GELU": 1.2,
+        "Conv2d": 12.7,
+        "Softmax": 1.9
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          51.3
+        ],
+        [
+          "MultiheadAttention",
+          27.9
+        ],
+        [
+          "Conv2d",
+          12.7
+        ]
+      ]
+    },
+    {
+      "model": "CLIP",
+      "category": "Multimodal",
+      "platform": "Ascend 910B",
+      "total_latency_us": 9058.8,
+      "shapley_values": {
+        "Linear": 4547.37,
+        "LayerNorm": 480.0,
+        "MultiheadAttention": 2475.79,
+        "GELU": 118.59,
+        "Conv2d": 1128.42,
+        "Softmax": 192.0
+      },
+      "contributions_pct": {
+        "Linear": 50.9,
+        "LayerNorm": 5.4,
+        "MultiheadAttention": 27.7,
+        "GELU": 1.3,
+        "Conv2d": 12.6,
+        "Softmax": 2.1
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          50.9
+        ],
+        [
+          "MultiheadAttention",
+          27.7
+        ],
+        [
+          "Conv2d",
+          12.6
+        ]
+      ]
+    },
+    {
+      "model": "CLIP",
+      "category": "Multimodal",
+      "platform": "MLU370-X8",
+      "total_latency_us": 10756.8,
+      "shapley_values": {
+        "Linear": 5538.46,
+        "LayerNorm": 582.86,
+        "MultiheadAttention": 3015.38,
+        "GELU": 144.0,
+        "Conv2d": 1374.36,
+        "Softmax": 233.14
+      },
+      "contributions_pct": {
+        "Linear": 50.9,
+        "LayerNorm": 5.4,
+        "MultiheadAttention": 27.7,
+        "GELU": 1.3,
+        "Conv2d": 12.6,
+        "Softmax": 2.1
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          50.9
+        ],
+        [
+          "MultiheadAttention",
+          27.7
+        ],
+        [
+          "Conv2d",
+          12.6
+        ]
+      ]
+    },
+    {
+      "model": "CLIP",
+      "category": "Multimodal",
+      "platform": "Intel Xeon 8380",
+      "total_latency_us": 99762.7,
+      "shapley_values": {
+        "Linear": 54000.0,
+        "LayerNorm": 2720.0,
+        "MultiheadAttention": 29400.0,
+        "GELU": 672.0,
+        "Conv2d": 13400.0,
+        "Softmax": 1088.0
+      },
+      "contributions_pct": {
+        "Linear": 53.3,
+        "LayerNorm": 2.7,
+        "MultiheadAttention": 29.0,
+        "GELU": 0.7,
+        "Conv2d": 13.2,
+        "Softmax": 1.1
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          53.3
+        ],
+        [
+          "MultiheadAttention",
+          29.0
+        ],
+        [
+          "Conv2d",
+          13.2
+        ]
+      ]
+    },
+    {
+      "model": "CLIP",
+      "category": "Multimodal",
+      "platform": "Intel GPU Max",
+      "total_latency_us": 7378.0,
+      "shapley_values": {
+        "Linear": 3927.27,
+        "LayerNorm": 340.0,
+        "MultiheadAttention": 2138.18,
+        "GELU": 84.0,
+        "Conv2d": 974.55,
+        "Softmax": 136.0
+      },
+      "contributions_pct": {
+        "Linear": 51.7,
+        "LayerNorm": 4.5,
+        "MultiheadAttention": 28.1,
+        "GELU": 1.1,
+        "Conv2d": 12.8,
+        "Softmax": 1.8
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          51.7
+        ],
+        [
+          "MultiheadAttention",
+          28.1
+        ],
+        [
+          "Conv2d",
+          12.8
+        ]
+      ]
+    },
+    {
+      "model": "Whisper-Base",
+      "category": "Audio",
+      "platform": "NVIDIA A100",
+      "total_latency_us": 3754.4,
+      "shapley_values": {
+        "Linear": 2160.0,
+        "LayerNorm": 204.0,
+        "MultiheadAttention": 1176.0,
+        "GELU": 50.4,
+        "Conv1d": 70.0,
+        "Softmax": 81.6
+      },
+      "contributions_pct": {
+        "Linear": 57.7,
+        "LayerNorm": 5.5,
+        "MultiheadAttention": 31.4,
+        "GELU": 1.3,
+        "Conv1d": 1.9,
+        "Softmax": 2.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          57.7
+        ],
+        [
+          "MultiheadAttention",
+          31.4
+        ],
+        [
+          "LayerNorm",
+          5.5
+        ]
+      ]
+    },
+    {
+      "model": "Whisper-Base",
+      "category": "Audio",
+      "platform": "Ascend 910B",
+      "total_latency_us": 3899.1,
+      "shapley_values": {
+        "Linear": 2273.68,
+        "LayerNorm": 240.0,
+        "MultiheadAttention": 1237.89,
+        "GELU": 59.29,
+        "Conv1d": 73.68,
+        "Softmax": 96.0
+      },
+      "contributions_pct": {
+        "Linear": 57.1,
+        "LayerNorm": 6.0,
+        "MultiheadAttention": 31.1,
+        "GELU": 1.5,
+        "Conv1d": 1.9,
+        "Softmax": 2.4
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          57.1
+        ],
+        [
+          "MultiheadAttention",
+          31.1
+        ],
+        [
+          "LayerNorm",
+          6.0
+        ]
+      ]
+    },
+    {
+      "model": "Whisper-Base",
+      "category": "Audio",
+      "platform": "MLU370-X8",
+      "total_latency_us": 4937.3,
+      "shapley_values": {
+        "Linear": 2769.23,
+        "LayerNorm": 291.43,
+        "MultiheadAttention": 1507.69,
+        "GELU": 72.0,
+        "Conv1d": 89.74,
+        "Softmax": 116.57
+      },
+      "contributions_pct": {
+        "Linear": 57.1,
+        "LayerNorm": 6.0,
+        "MultiheadAttention": 31.1,
+        "GELU": 1.5,
+        "Conv1d": 1.9,
+        "Softmax": 2.4
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          57.1
+        ],
+        [
+          "MultiheadAttention",
+          31.1
+        ],
+        [
+          "LayerNorm",
+          6.0
+        ]
+      ]
+    },
+    {
+      "model": "Whisper-Base",
+      "category": "Audio",
+      "platform": "Intel Xeon 8380",
+      "total_latency_us": 44189.6,
+      "shapley_values": {
+        "Linear": 27000.0,
+        "LayerNorm": 1360.0,
+        "MultiheadAttention": 14700.0,
+        "GELU": 336.0,
+        "Conv1d": 875.0,
+        "Softmax": 544.0
+      },
+      "contributions_pct": {
+        "Linear": 60.2,
+        "LayerNorm": 3.0,
+        "MultiheadAttention": 32.8,
+        "GELU": 0.7,
+        "Conv1d": 2.0,
+        "Softmax": 1.2
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          60.2
+        ],
+        [
+          "MultiheadAttention",
+          32.8
+        ],
+        [
+          "LayerNorm",
+          3.0
+        ]
+      ]
+    },
+    {
+      "model": "Whisper-Base",
+      "category": "Audio",
+      "platform": "Intel GPU Max",
+      "total_latency_us": 3382.3,
+      "shapley_values": {
+        "Linear": 1963.64,
+        "LayerNorm": 170.0,
+        "MultiheadAttention": 1069.09,
+        "GELU": 42.0,
+        "Conv1d": 63.64,
+        "Softmax": 68.0
+      },
+      "contributions_pct": {
+        "Linear": 58.2,
+        "LayerNorm": 5.0,
+        "MultiheadAttention": 31.7,
+        "GELU": 1.2,
+        "Conv1d": 1.9,
+        "Softmax": 2.0
+      },
+      "top3_bottlenecks": [
+        [
+          "Linear",
+          58.2
+        ],
+        [
+          "MultiheadAttention",
+          31.7
+        ],
+        [
+          "LayerNorm",
+          5.0
+        ]
+      ]
+    }
+  ],
+  "operator_model_contrib": {
+    "Linear": [
+      {
+        "model": "GPT-2",
+        "contribution": 58.3
+      },
+      {
+        "model": "LLaMA-7B",
+        "contribution": 59.1
+      },
+      {
+        "model": "BERT-Base",
+        "contribution": 67.5
+      },
+      {
+        "model": "ResNet-50",
+        "contribution": 1.1
+      },
+      {
+        "model": "ViT-Base",
+        "contribution": 57.6
+      },
+      {
+        "model": "Stable Diffusion",
+        "contribution": 25.3
+      },
+      {
+        "model": "CLIP",
+        "contribution": 51.3
+      },
+      {
+        "model": "Whisper-Base",
+        "contribution": 57.7
+      }
+    ],
+    "LayerNorm": [
+      {
+        "model": "GPT-2",
+        "contribution": 5.7
+      },
+      {
+        "model": "BERT-Base",
+        "contribution": 4.4
+      },
+      {
+        "model": "ViT-Base",
+        "contribution": 5.7
+      },
+      {
+        "model": "CLIP",
+        "contribution": 4.8
+      },
+      {
+        "model": "Whisper-Base",
+        "contribution": 5.5
+      }
+    ],
+    "MultiheadAttention": [
+      {
+        "model": "GPT-2",
+        "contribution": 31.7
+      },
+      {
+        "model": "LLaMA-7B",
+        "contribution": 32.2
+      },
+      {
+        "model": "BERT-Base",
+        "contribution": 24.5
+      },
+      {
+        "model": "ViT-Base",
+        "contribution": 31.4
+      },
+      {
+        "model": "Stable Diffusion",
+        "contribution": 18.4
+      },
+      {
+        "model": "CLIP",
+        "contribution": 27.9
+      },
+      {
+        "model": "Whisper-Base",
+        "contribution": 31.4
+      }
+    ],
+    "GELU": [
+      {
+        "model": "GPT-2",
+        "contribution": 1.4
+      },
+      {
+        "model": "BERT-Base",
+        "contribution": 1.1
+      },
+      {
+        "model": "ViT-Base",
+        "contribution": 1.3
+      },
+      {
+        "model": "CLIP",
+        "contribution": 1.2
+      },
+      {
+        "model": "Whisper-Base",
+        "contribution": 1.3
+      }
+    ],
+    "Embedding": [
+      {
+        "model": "GPT-2",
+        "contribution": 0.6
+      },
+      {
+        "model": "LLaMA-7B",
+        "contribution": 0.2
+      },
+      {
+        "model": "BERT-Base",
+        "contribution": 0.8
+      }
+    ],
+    "Softmax": [
+      {
+        "model": "GPT-2",
+        "contribution": 2.2
+      },
+      {
+        "model": "LLaMA-7B",
+        "contribution": 2.2
+      },
+      {
+        "model": "BERT-Base",
+        "contribution": 1.7
+      },
+      {
+        "model": "ViT-Base",
+        "contribution": 2.2
+      },
+      {
+        "model": "Stable Diffusion",
+        "contribution": 1.3
+      },
+      {
+        "model": "CLIP",
+        "contribution": 1.9
+      },
+      {
+        "model": "Whisper-Base",
+        "contribution": 2.2
+      }
+    ],
+    "RMSNorm": [
+      {
+        "model": "LLaMA-7B",
+        "contribution": 5.0
+      }
+    ],
+    "SiLU": [
+      {
+        "model": "LLaMA-7B",
+        "contribution": 1.2
+      },
+      {
+        "model": "Stable Diffusion",
+        "contribution": 1.4
+      }
+    ],
+    "Conv2d": [
+      {
+        "model": "ResNet-50",
+        "contribution": 86.0
+      },
+      {
+        "model": "ViT-Base",
+        "contribution": 1.8
+      },
+      {
+        "model": "Stable Diffusion",
+        "contribution": 50.2
+      },
+      {
+        "model": "CLIP",
+        "contribution": 12.7
+      }
+    ],
+    "BatchNorm2d": [
+      {
+        "model": "ResNet-50",
+        "contribution": 10.3
+      }
+    ],
+    "ReLU": [
+      {
+        "model": "ResNet-50",
+        "contribution": 2.4
+      }
+    ],
+    "MaxPool2d": [
+      {
+        "model": "ResNet-50",
+        "contribution": 0.1
+      }
+    ],
+    "AvgPool2d": [
+      {
+        "model": "ResNet-50",
+        "contribution": 0.1
+      }
+    ],
+    "GroupNorm": [
+      {
+        "model": "Stable Diffusion",
+        "contribution": 3.4
+      }
+    ],
+    "Conv1d": [
+      {
+        "model": "Whisper-Base",
+        "contribution": 1.9
+      }
+    ]
+  }
+}
