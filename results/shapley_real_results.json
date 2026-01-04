@@ -1,0 +1,107 @@
+{
+  "experiment": "Real Shapley Value Calculation",
+  "device": "cuda",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "timestamp": "2026-01-04T17:40:28.273970",
+  "results": [
+    {
+      "Model Scale": "Small",
+      "n": 8,
+      "K": 50,
+      "Permutation MRE (%)": 0.98,
+      "Permutation Time (s)": 0.001,
+      "Subset MRE (%)": 4.19,
+      "Subset Time (s)": 0.0,
+      "Stratified MRE (%)": 2.95,
+      "Stratified Time (s)": 0.0
+    },
+    {
+      "Model Scale": "Small",
+      "n": 8,
+      "K": 100,
+      "Permutation MRE (%)": 1.37,
+      "Permutation Time (s)": 0.002,
+      "Subset MRE (%)": 2.76,
+      "Subset Time (s)": 0.001,
+      "Stratified MRE (%)": 4.72,
+      "Stratified Time (s)": 0.001
+    },
+    {
+      "Model Scale": "Small",
+      "n": 8,
+      "K": 200,
+      "Permutation MRE (%)": 0.72,
+      "Permutation Time (s)": 0.005,
+      "Subset MRE (%)": 2.47,
+      "Subset Time (s)": 0.001,
+      "Stratified MRE (%)": 2.54,
+      "Stratified Time (s)": 0.001
+    },
+    {
+      "Model Scale": "Medium",
+      "n": 15,
+      "K": 50,
+      "Permutation MRE (%)": 1.85,
+      "Permutation Time (s)": 0.003,
+      "Subset MRE (%)": 8.5,
+      "Subset Time (s)": 0.0,
+      "Stratified MRE (%)": 7.99,
+      "Stratified Time (s)": 0.001
+    },
+    {
+      "Model Scale": "Medium",
+      "n": 15,
+      "K": 100,
+      "Permutation MRE (%)": 1.14,
+      "Permutation Time (s)": 0.006,
+      "Subset MRE (%)": 4.59,
+      "Subset Time (s)": 0.001,
+      "Stratified MRE (%)": 7.37,
+      "Stratified Time (s)": 0.007
+    },
+    {
+      "Model Scale": "Medium",
+      "n": 15,
+      "K": 200,
+      "Permutation MRE (%)": 1.68,
+      "Permutation Time (s)": 0.012,
+      "Subset MRE (%)": 4.03,
+      "Subset Time (s)": 0.002,
+      "Stratified MRE (%)": 3.35,
+      "Stratified Time (s)": 0.002
+    },
+    {
+      "Model Scale": "Large",
+      "n": 25,
+      "K": 50,
+      "Permutation MRE (%)": 1.93,
+      "Permutation Time (s)": 0.007,
+      "Subset MRE (%)": 16.33,
+      "Subset Time (s)": 0.001,
+      "Stratified MRE (%)": 9.05,
+      "Stratified Time (s)": 0.001
+    },
+    {
+      "Model Scale": "Large",
+      "n": 25,
+      "K": 100,
+      "Permutation MRE (%)": 1.14,
+      "Permutation Time (s)": 0.014,
+      "Subset MRE (%)": 7.32,
+      "Subset Time (s)": 0.001,
+      "Stratified MRE (%)": 7.91,
+      "Stratified Time (s)": 0.002
+    },
+    {
+      "Model Scale": "Large",
+      "n": 25,
+      "K": 200,
+      "Permutation MRE (%)": 0.88,
+      "Permutation Time (s)": 0.028,
+      "Subset MRE (%)": 4.34,
+      "Subset Time (s)": 0.002,
+      "Stratified MRE (%)": 4.94,
+      "Stratified Time (s)": 0.003
+    }
+  ]
+}

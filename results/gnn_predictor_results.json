@@ -1,0 +1,52 @@
+{
+  "experiment": "GNN Performance Predictor Training",
+  "device": "cuda",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "timestamp": "2026-01-04T18:15:32.037295",
+  "config": {
+    "epochs": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "train_samples": 400,
+    "val_samples": 50,
+    "test_samples": 50
+  },
+  "results": [
+    {
+      "Model": "Small",
+      "Hidden": 64,
+      "Output": 32,
+      "Parameters": 33474,
+      "Training Time (s)": 78.3,
+      "Test MSE": 0.7815,
+      "Test RMSE": 0.884,
+      "Test MAE": 0.6902,
+      "Test MAPE (%)": 37.11,
+      "Test R\u00b2": 0.2164
+    },
+    {
+      "Model": "Medium",
+      "Hidden": 128,
+      "Output": 64,
+      "Parameters": 128386,
+      "Training Time (s)": 51.7,
+      "Test MSE": 1.0965,
+      "Test RMSE": 1.0472,
+      "Test MAE": 0.8592,
+      "Test MAPE (%)": 47.94,
+      "Test R\u00b2": -0.0994
+    },
+    {
+      "Model": "Large",
+      "Hidden": 256,
+      "Output": 128,
+      "Parameters": 502530,
+      "Training Time (s)": 46.9,
+      "Test MSE": 0.8725,
+      "Test RMSE": 0.9341,
+      "Test MAE": 0.7449,
+      "Test MAPE (%)": 52.38,
+      "Test R\u00b2": 0.1252
+    }
+  ]
+}

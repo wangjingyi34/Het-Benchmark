@@ -1,0 +1,62 @@
+{
+  "experiment": "Surrogate vs Full Model Evaluation Time",
+  "device": "cuda",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "timestamp": "2026-01-04T17:40:44.870828",
+  "results": [
+    {
+      "Model": "Small MLP",
+      "Type": "mlp",
+      "Layers": 4,
+      "Operators": 12,
+      "Full Model Time (ms)": 0.3261,
+      "Surrogate Time (ms)": 0.00076,
+      "Speedup": "429\u00d7"
+    },
+    {
+      "Model": "Medium MLP",
+      "Type": "mlp",
+      "Layers": 12,
+      "Operators": 36,
+      "Full Model Time (ms)": 2.1109,
+      "Surrogate Time (ms)": 0.001995,
+      "Speedup": "1058\u00d7"
+    },
+    {
+      "Model": "Large MLP",
+      "Type": "mlp",
+      "Layers": 24,
+      "Operators": 72,
+      "Full Model Time (ms)": 8.3664,
+      "Surrogate Time (ms)": 0.004198,
+      "Speedup": "1993\u00d7"
+    },
+    {
+      "Model": "Small Transformer",
+      "Type": "transformer",
+      "Layers": 2,
+      "Operators": 16,
+      "Full Model Time (ms)": 1.3417,
+      "Surrogate Time (ms)": 0.000912,
+      "Speedup": "1471\u00d7"
+    },
+    {
+      "Model": "Medium Transformer",
+      "Type": "transformer",
+      "Layers": 6,
+      "Operators": 48,
+      "Full Model Time (ms)": 11.5076,
+      "Surrogate Time (ms)": 0.002705,
+      "Speedup": "4254\u00d7"
+    },
+    {
+      "Model": "Large Transformer",
+      "Type": "transformer",
+      "Layers": 12,
+      "Operators": 96,
+      "Full Model Time (ms)": 44.417,
+      "Surrogate Time (ms)": 0.005376,
+      "Speedup": "8263\u00d7"
+    }
+  ]
+}

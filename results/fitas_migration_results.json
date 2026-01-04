@@ -1,0 +1,98 @@
+{
+  "experiment": "FITAS Migration Case Study",
+  "timestamp": "2026-01-04T18:37:30.741413",
+  "hardware_specs": {
+    "NVIDIA A100 80GB": {
+      "fp16_tflops": 312,
+      "fp32_tflops": 156,
+      "memory_bandwidth_gbps": 2039,
+      "memory_gb": 80,
+      "tdp_watts": 400,
+      "cost_per_month_usd": 500
+    },
+    "Ascend 910B": {
+      "fp16_tflops": 320,
+      "fp32_tflops": 160,
+      "memory_bandwidth_gbps": 1200,
+      "memory_gb": 64,
+      "tdp_watts": 310,
+      "cost_per_month_usd": 170
+    }
+  },
+  "task_results": [
+    {
+      "task": "data_collection",
+      "description": "\u5b9e\u65f6\u6570\u636e\u91c7\u96c6\u4e0e\u9884\u5904\u7406",
+      "a100_latency_s": 0.41,
+      "ascend_latency_s": 0.68,
+      "change_percent": 65.7
+    },
+    {
+      "task": "factor_analysis",
+      "description": "\u591a\u56e0\u5b50\u5206\u6790\u6a21\u578b",
+      "a100_latency_s": 0.02,
+      "ascend_latency_s": 0.04,
+      "change_percent": 65.7
+    },
+    {
+      "task": "sentiment_analysis",
+      "description": "\u65b0\u95fb\u60c5\u611f\u5206\u6790",
+      "a100_latency_s": 0.05,
+      "ascend_latency_s": 0.09,
+      "change_percent": 65.7
+    },
+    {
+      "task": "risk_prediction",
+      "description": "\u98ce\u9669\u9884\u6d4b\u6a21\u578b",
+      "a100_latency_s": 0.0,
+      "ascend_latency_s": 0.0,
+      "change_percent": 65.7
+    },
+    {
+      "task": "strategy_optimization",
+      "description": "\u7b56\u7565\u4f18\u5316\u4e0e\u56de\u6d4b",
+      "a100_latency_s": 0.1,
+      "ascend_latency_s": 0.17,
+      "change_percent": 65.7
+    }
+  ],
+  "real_measurements": [
+    {
+      "batch_size": 32,
+      "latency_ms": 47.04,
+      "throughput": 680.3
+    },
+    {
+      "batch_size": 64,
+      "latency_ms": 89.64,
+      "throughput": 714.0
+    },
+    {
+      "batch_size": 128,
+      "latency_ms": 178.05,
+      "throughput": 718.9
+    }
+  ],
+  "migration_summary": {
+    "End-to-End Latency (hours)": {
+      "Before (A100)": 0.0,
+      "After (Ascend 910B)": 0.0,
+      "Improvement (%)": -65.7
+    },
+    "Hardware Cost ($/month)": {
+      "Before (A100)": 500,
+      "After (Ascend 910B)": 170,
+      "Reduction (%)": 66.0
+    },
+    "Power Consumption (W)": {
+      "Before (A100)": 400,
+      "After (Ascend 910B)": 310,
+      "Reduction (%)": 22.5
+    },
+    "Model Accuracy (%)": {
+      "Before (A100)": 94.2,
+      "After (Ascend 910B)": 94.0,
+      "Delta": -0.20000000000000284
+    }
+  }
+}

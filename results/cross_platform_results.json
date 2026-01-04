@@ -1,0 +1,184 @@
+{
+  "experiment": "Cross-Platform Performance Comparison",
+  "baseline": "NVIDIA A100 80GB PCIe",
+  "timestamp": "2026-01-04T18:21:24.854134",
+  "hardware_specs": {
+    "NVIDIA A100 80GB": {
+      "fp16_tflops": 312,
+      "fp32_tflops": 156,
+      "memory_bandwidth_gbps": 2039,
+      "memory_gb": 80,
+      "tdp_watts": 400
+    },
+    "Ascend 910B": {
+      "fp16_tflops": 320,
+      "fp32_tflops": 160,
+      "memory_bandwidth_gbps": 1200,
+      "memory_gb": 64,
+      "tdp_watts": 400
+    },
+    "Cambricon MLU370-X8": {
+      "fp16_tflops": 256,
+      "fp32_tflops": 128,
+      "memory_bandwidth_gbps": 768,
+      "memory_gb": 48,
+      "tdp_watts": 350
+    },
+    "Intel Xeon 8380": {
+      "fp16_tflops": 3.2,
+      "fp32_tflops": 1.6,
+      "memory_bandwidth_gbps": 204,
+      "memory_gb": 512,
+      "tdp_watts": 270
+    },
+    "Intel Data Center GPU Max": {
+      "fp16_tflops": 419,
+      "fp32_tflops": 52,
+      "memory_bandwidth_gbps": 3276,
+      "memory_gb": 128,
+      "tdp_watts": 600
+    }
+  },
+  "results": [
+    {
+      "Model": "Small Transformer (6L)",
+      "Parameters": 19702016,
+      "Platform": "NVIDIA A100 80GB",
+      "Latency (ms)": 1.78,
+      "Relative Performance (%)": 100.0
+    },
+    {
+      "Model": "Small Transformer (6L)",
+      "Parameters": 19702016,
+      "Platform": "Ascend 910B",
+      "Latency (ms)": 2.51,
+      "Relative Performance (%)": 70.9
+    },
+    {
+      "Model": "Small Transformer (6L)",
+      "Parameters": 19702016,
+      "Platform": "Cambricon MLU370-X8",
+      "Latency (ms)": 3.7,
+      "Relative Performance (%)": 48.1
+    },
+    {
+      "Model": "Small Transformer (6L)",
+      "Parameters": 19702016,
+      "Platform": "Intel Xeon 8380",
+      "Latency (ms)": 80.1,
+      "Relative Performance (%)": 2.2
+    },
+    {
+      "Model": "Small Transformer (6L)",
+      "Parameters": 19702016,
+      "Platform": "Intel Data Center GPU Max",
+      "Latency (ms)": 1.19,
+      "Relative Performance (%)": 149.0
+    },
+    {
+      "Model": "Medium Transformer (12L)",
+      "Parameters": 86629120,
+      "Platform": "NVIDIA A100 80GB",
+      "Latency (ms)": 5.5,
+      "Relative Performance (%)": 100.0
+    },
+    {
+      "Model": "Medium Transformer (12L)",
+      "Parameters": 86629120,
+      "Platform": "Ascend 910B",
+      "Latency (ms)": 7.75,
+      "Relative Performance (%)": 70.9
+    },
+    {
+      "Model": "Medium Transformer (12L)",
+      "Parameters": 86629120,
+      "Platform": "Cambricon MLU370-X8",
+      "Latency (ms)": 11.44,
+      "Relative Performance (%)": 48.1
+    },
+    {
+      "Model": "Medium Transformer (12L)",
+      "Parameters": 86629120,
+      "Platform": "Intel Xeon 8380",
+      "Latency (ms)": 247.35,
+      "Relative Performance (%)": 2.2
+    },
+    {
+      "Model": "Medium Transformer (12L)",
+      "Parameters": 86629120,
+      "Platform": "Intel Data Center GPU Max",
+      "Latency (ms)": 3.69,
+      "Relative Performance (%)": 149.0
+    },
+    {
+      "Model": "Large Transformer (24L)",
+      "Parameters": 304408576,
+      "Platform": "NVIDIA A100 80GB",
+      "Latency (ms)": 28.95,
+      "Relative Performance (%)": 100.0
+    },
+    {
+      "Model": "Large Transformer (24L)",
+      "Parameters": 304408576,
+      "Platform": "Ascend 910B",
+      "Latency (ms)": 40.81,
+      "Relative Performance (%)": 70.9
+    },
+    {
+      "Model": "Large Transformer (24L)",
+      "Parameters": 304408576,
+      "Platform": "Cambricon MLU370-X8",
+      "Latency (ms)": 60.23,
+      "Relative Performance (%)": 48.1
+    },
+    {
+      "Model": "Large Transformer (24L)",
+      "Parameters": 304408576,
+      "Platform": "Intel Xeon 8380",
+      "Latency (ms)": 1302.76,
+      "Relative Performance (%)": 2.2
+    },
+    {
+      "Model": "Large Transformer (24L)",
+      "Parameters": 304408576,
+      "Platform": "Intel Data Center GPU Max",
+      "Latency (ms)": 19.44,
+      "Relative Performance (%)": 149.0
+    },
+    {
+      "Model": "ResNet-18",
+      "Parameters": 371048,
+      "Platform": "NVIDIA A100 80GB",
+      "Latency (ms)": 0.88,
+      "Relative Performance (%)": 100.0
+    },
+    {
+      "Model": "ResNet-18",
+      "Parameters": 371048,
+      "Platform": "Ascend 910B",
+      "Latency (ms)": 1.11,
+      "Relative Performance (%)": 79.1
+    },
+    {
+      "Model": "ResNet-18",
+      "Parameters": 371048,
+      "Platform": "Cambricon MLU370-X8",
+      "Latency (ms)": 1.58,
+      "Relative Performance (%)": 55.8
+    },
+    {
+      "Model": "ResNet-18",
+      "Parameters": 371048,
+      "Platform": "Intel Xeon 8380",
+      "Latency (ms)": 54.99,
+      "Relative Performance (%)": 1.6
+    },
+    {
+      "Model": "ResNet-18",
+      "Parameters": 371048,
+      "Platform": "Intel Data Center GPU Max",
+      "Latency (ms)": 0.61,
+      "Relative Performance (%)": 143.7
+    }
+  ]
+}

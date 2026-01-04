@@ -1,0 +1,43 @@
+{
+  "experiment": "MOH-KG Guided Optimization",
+  "timestamp": "2026-01-04T18:33:00.008973",
+  "model_operators": 120,
+  "optimizable_operators": 84,
+  "results": [
+    {
+      "Optimization Mode": "Top-1 MOH-KG Guided",
+      "Latency Reduction (%)": 0.6,
+      "Accuracy Delta": "-0.2%",
+      "Energy Reduction (%)": 0.4,
+      "Notes": "Replace heavy MatMul impl"
+    },
+    {
+      "Optimization Mode": "Top-3 MOH-KG Guided",
+      "Latency Reduction (%)": 1.9,
+      "Accuracy Delta": "+0.0%",
+      "Energy Reduction (%)": 1.1,
+      "Notes": "Fuse + impl swap + quant"
+    },
+    {
+      "Optimization Mode": "Top-5 MOH-KG Guided",
+      "Latency Reduction (%)": 2.6,
+      "Accuracy Delta": "-0.1%",
+      "Energy Reduction (%)": 1.6,
+      "Notes": "Full optimization pipeline"
+    },
+    {
+      "Optimization Mode": "Random Op Selection",
+      "Latency Reduction (%)": 1.0,
+      "Accuracy Delta": "-0.5%",
+      "Energy Reduction (%)": 0.3,
+      "Notes": "Baseline random"
+    },
+    {
+      "Optimization Mode": "Greedy Selection",
+      "Latency Reduction (%)": 2.6,
+      "Accuracy Delta": "-0.3%",
+      "Energy Reduction (%)": 1.6,
+      "Notes": "Greedy by latency"
+    }
+  ]
+}
