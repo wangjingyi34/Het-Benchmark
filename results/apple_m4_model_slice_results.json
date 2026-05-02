@@ -1,0 +1,54 @@
+{
+  "torch_version": "2.8.0",
+  "mps_available": true,
+  "results": [
+    {
+      "model": "ResNet50",
+      "device": "mps",
+      "input_desc": "(1, 3, 224, 224)",
+      "warmup_runs": 10,
+      "timed_runs": 20,
+      "mean_ms": 8.594610200000208,
+      "std_ms": 0.350675555996428,
+      "median_ms": 8.486895999999966,
+      "status": "ok",
+      "notes": ""
+    },
+    {
+      "model": "ViT-Base",
+      "device": "mps",
+      "input_desc": "(1, 3, 224, 224)",
+      "warmup_runs": 10,
+      "timed_runs": 20,
+      "mean_ms": 79.82442080000015,
+      "std_ms": 0.4839812140028712,
+      "median_ms": 79.72572900000063,
+      "status": "ok",
+      "notes": ""
+    },
+    {
+      "model": "BERT-Base",
+      "device": "mps",
+      "input_desc": "(1, 512)",
+      "warmup_runs": 10,
+      "timed_runs": 20,
+      "mean_ms": 50.01430405000029,
+      "std_ms": 0.5683590664612922,
+      "median_ms": 50.166729500000784,
+      "status": "ok",
+      "notes": ""
+    },
+    {
+      "model": "GPT2-Small",
+      "device": "mps",
+      "input_desc": "(1, 512)",
+      "warmup_runs": 10,
+      "timed_runs": 20,
+      "mean_ms": 58.93246235000022,
+      "std_ms": 0.6894727166501633,
+      "median_ms": 58.91135400000014,
+      "status": "ok",
+      "notes": ""
+    }
+  ]
+}

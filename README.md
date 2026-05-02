@@ -41,6 +41,10 @@ git lfs pull
 # Run COPA attribution analysis
 python experiments/exp_copa_attribution_full.py
 
+# Run Apple M4 operator and model validation slices
+python experiments/exp_apple_m4_operator_slice.py
+python experiments/exp_apple_m4_model_slice.py
+
 # Run cross-platform evaluation
 python experiments/exp_cross_platform.py
 
@@ -164,6 +168,25 @@ Measured on NVIDIA A100 80GB, with cross-platform estimates based on hardware sp
 | Top-5 MOH-KG Guided | 2.6 | -0.1% |
 | Random Selection | 1.0 | -0.5% |
 | Greedy Selection | 2.6 | -0.3% |
+
+### Apple M4 Validation Slice
+
+The repository now includes a compact Apple M4 MPS validation slice with directly measured model- and operator-level results. This slice is intended as bounded second-platform evidence rather than as deployment-class validation for all non-NVIDIA targets.
+
+| Model | Device | Mean (ms) |
+|-------|--------|-----------|
+| ResNet50 | MPS | 8.8362 |
+| ViT-Base | MPS | 80.0000 |
+| BERT-Base | MPS | 49.9706 |
+| GPT2-Small | MPS | 58.8377 |
+
+| Operator | Device | Mean (ms) |
+|----------|--------|-----------|
+| Linear | MPS | 0.5255 |
+| Conv2d | MPS | 2.2067 |
+| LayerNorm | MPS | 1.4670 |
+| Softmax | MPS | 2.7262 |
+| MultiheadAttention | MPS | 19.6013 |
 
 ## Core Algorithms
 
