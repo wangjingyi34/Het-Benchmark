@@ -19,6 +19,11 @@ import json
 import random
 from loguru import logger
 
+try:
+    from .priority import OperatorPriorityScorer
+except ImportError:  # Support direct execution: python src/kg_a2o.py
+    from priority import OperatorPriorityScorer
+
 
 @dataclass
 class OptimizationAction:
@@ -613,6 +618,43 @@ class KGA2O:
         self.best_plan: List[Tuple[str, str]] = []
         self.best_reward: float = float('-inf')
         self.training_history: List[Dict] = []
+        self.last_priority_ranking: List[Dict[str, Any]] = []
+
+    def rank_operator_priorities(
+        self,
+        evidence: List[Dict[str, Any]],
+    ) -> List[Dict[str, Any]]:
+        """Rank operators with the paper's evidence-backed priority rule.
+
+        Each input mapping must contain normalized ``attribution``,
+        ``headroom``, ``uncertainty``, and ``implementation_risk`` values in
+        ``[0, 1]``. The returned records expose every component and the final
+        score so a recommendation can be audited and reproduced.
+        """
+        self.last_priority_ranking = OperatorPriorityScorer.rank(evidence)
+        return list(self.last_priority_ranking)
+
+    def _order_operators_by_priority(
+        self,
+        operators: List[Dict[str, Any]],
+        priority_evidence: Optional[List[Dict[str, Any]]],
+    ) -> List[Dict[str, Any]]:
+        """Order operators by priority while retaining unmatched operators."""
+        if priority_evidence is None:
+            return list(operators)
+
+        ranking = self.rank_operator_priorities(priority_evidence)
+        rank_by_id = {
+            item["operator_id"]: rank for rank, item in enumerate(ranking)
+        }
+        original_position = {str(op["id"]): idx for idx, op in enumerate(operators)}
+        return sorted(
+            operators,
+            key=lambda op: (
+                0 if str(op["id"]) in rank_by_id else 1,
+                rank_by_id.get(str(op["id"]), original_position[str(op["id"])]),
+            ),
+        )
     
     def train(
         self,
@@ -709,7 +751,8 @@ class KGA2O:
     def optimize(
         self,
         operators: List[Dict[str, Any]],
-        hardware_embedding: np.ndarray
+        hardware_embedding: np.ndarray,
+        priority_evidence: Optional[List[Dict[str, Any]]] = None,
     ) -> List[Tuple[str, str]]:
         """
         Apply trained policy to optimize operators
@@ -717,8 +760,12 @@ class KGA2O:
         Returns:
             List of (operator_id, action_id) tuples
         """
+        ordered_operators = self._order_operators_by_priority(
+            operators, priority_evidence
+        )
+
         env = OptimizationEnvironment(
-            operators=operators,
+            operators=ordered_operators,
             hardware_embedding=hardware_embedding,
             action_space=self.action_space,
             surrogate=self.surrogate
@@ -796,6 +843,7 @@ class KGA2O:
             "best_reward": self.best_reward,
             "action_space": [a.to_dict() for a in self.action_space.actions],
             "training_history": self.training_history,
+            "priority_ranking": self.last_priority_ranking,
         }
         
         with open(path, 'w') as f:

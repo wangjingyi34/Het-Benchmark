@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "scope": "metadata_only_scale_extension",
+    "included_in_profiled_core": false,
+    "profiled_core_models": 34,
+    "profiled_core_operators": 6244,
+    "description": "Official model-scale descriptors used for parser, schema, and memory-feasibility checks. They are excluded from latency, MRE, COPA, and MOH-KG edge-count tables until hardware profiling evidence is attached."
+  },
+  "models": [
+    {
+      "name": "Llama-3.1-405B",
+      "release_date": "2024-07-23",
+      "model_type": "decoder_only_transformer",
+      "parameters": 405000000000,
+      "context_length": 131072,
+      "source": "https://ai.meta.com/blog/meta-llama-3-1/",
+      "source_fact": "Meta reports an openly available 405B model and 128K context length."
+    },
+    {
+      "name": "Qwen2.5-72B",
+      "release_date": "2024-09-19",
+      "model_type": "dense_decoder_only_transformer",
+      "parameters": 72000000000,
+      "context_length": 131072,
+      "source": "https://qwenlm.github.io/blog/qwen2.5/",
+      "source_fact": "The official Qwen2.5 release lists dense models from 0.5B through 72B and up to 128K context."
+    },
+    {
+      "name": "Stable-Diffusion-3-Suite",
+      "release_date": "2024-02-22",
+      "model_type": "multimodal_diffusion_transformer",
+      "parameter_range": {
+        "min": 800000000,
+        "max": 8000000000
+      },
+      "source": "https://stability.ai/news-updates/stable-diffusion-3",
+      "source_fact": "Stability AI reports an SD3 suite ranging from 800M to 8B parameters."
+    }
+  ]
+}
