@@ -124,6 +124,7 @@ het-benchmark/
 │   ├── split_mohkg.py            # Deterministic model split and leakage audit
 │   ├── validate_artifact.py      # Paper count/data validation
 │   ├── reproduce_tables.py       # Canonical table reproduction
+│   ├── priority.py               # Auditable operator-priority scoring
 │   └── operators/                # Operator implementations
 ├── experiments/                  # Experiment scripts
 │   ├── exp_copa_attribution_full.py
@@ -134,6 +135,7 @@ het-benchmark/
 │   └── exp_fitas_migration.py
 ├── data/                         # Dataset files
 │   ├── model_dataset.json        # 34 models with 6,244 operators
+│   ├── model_scale_extensions.json # Metadata-only scale boundary checks
 │   ├── moh_kg.json               # Knowledge graph
 │   ├── paper_schema_counts.json  # Paper-locked node/edge/split schema
 │   └── hardware_platforms.json   # Hardware specifications
@@ -239,6 +241,32 @@ $$\phi_i = \sum_{S \subseteq N \setminus \{i\}} \frac{|S|!(|N|-|S|-1)!}{|N|!} [v
 - Relation-aware message passing
 - Hardware-specific embeddings
 - Parameters: 313,089
+
+### Auditable Operator Prioritization
+
+KG-A2O can optionally rank operators before plan generation with the paper's
+evidence-backed rule:
+
+$$q_i = a_i g_i (1-u_i)(1-r_i),$$
+
+where attribution $a_i$, optimization headroom $g_i$, uncertainty $u_i$, and
+implementation risk $r_i$ must be normalized to $[0,1]$. The implementation in
+`src/priority.py` rejects missing or out-of-range evidence, preserves input
+order for exact ties, and exports every score component with the ranking.
+`KGA2O.optimize(..., priority_evidence=...)` consumes this ranking without
+mutating the caller's operator list.
+
+The separate `data/model_scale_extensions.json` file records official scale
+descriptors for Llama 3.1 405B, Qwen2.5 72B, and the Stable Diffusion 3 suite.
+These records are metadata-only: they are explicitly excluded from the
+34-model/6,244-operator profiled corpus and from latency, MRE, COPA, and graph
+count results until hardware profiling evidence is attached.
+
+Run the lightweight validation suite with:
+
+```bash
+python -m unittest discover -s tests -v
+```
 
 ## Citation
 
