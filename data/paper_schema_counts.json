@@ -1,0 +1,30 @@
+{
+  "snapshot": "paper-canonical-v1",
+  "node_counts": {
+    "model": 34,
+    "operator_instance": 6244,
+    "hardware": 5,
+    "operator_family": 16,
+    "total": 6299
+  },
+  "edge_counts": {
+    "contains": 6244,
+    "has_type": 6244,
+    "supports": 80,
+    "sequence": 6210,
+    "similar": 5421,
+    "performance": 5000,
+    "total": 29199
+  },
+  "similarity": {
+    "feature_dimension": 128,
+    "metric": "cosine",
+    "threshold": 0.8
+  },
+  "split": {
+    "group": "source_model",
+    "ratios": [0.8, 0.1, 0.1],
+    "seed": 42,
+    "model_counts": [27, 3, 4]
+  }
+}

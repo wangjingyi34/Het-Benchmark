@@ -1,0 +1,17 @@
+{
+  "name": "HET anonymous reviewer artifact",
+  "version": "11.0-review",
+  "paper_title": "HET: White-Box Operator Benchmarking and Counterfactual Attribution for AI Inference Migration",
+  "anonymous_url": "ANONYMOUS_ARTIFACT_URL",
+  "seed": 42,
+  "python": ">=3.10",
+  "measured_reference_environment": {
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "cuda": "11.8",
+    "pytorch": "2.1.0+cu118"
+  },
+  "profile_protocol": {"warmup_iterations": 10, "measured_iterations": 100},
+  "paper_schema": "data/paper_schema_counts.json",
+  "provenance": "docs/PROVENANCE.md",
+  "non_redistributable": ["raw vendor profiler traces", "proprietary vendor event identifiers"]
+}

@@ -1,0 +1,6 @@
+platform,peak_compute,memory,bandwidth,architecture
+NVIDIA A100,312 TFLOPS FP16,80 GB,2.0 TB/s,Ampere
+Huawei Ascend 910B,320 TFLOPS FP16,64 GB,1.2 TB/s,Da Vinci
+Cambricon MLU370-X8,256 TFLOPS FP16,48 GB,307 GB/s,MLUv02
+Intel GPU Max 1550,420 TFLOPS FP16,128 GB,3.2 TB/s,Xe HPC
+Intel Xeon 8380,3 TFLOPS FP32,512 GB,204 GB/s,Ice Lake

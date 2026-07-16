@@ -1,0 +1,6 @@
+model,first,first_percent,second,second_percent,third,third_percent
+GPT-2,Attention,57.6,FFN/Linear,22.8,LayerNorm,10.9
+BERT-Base,Attention,48.3,Linear,28.5,LayerNorm,12.1
+ResNet50,Conv2D,62.4,BatchNorm,18.2,ReLU,12.8
+ViT-Base,Attention,52.1,Linear,25.3,LayerNorm,14.2
+LLaMA-7B,Attention,61.2,Linear,24.8,RMSNorm,8.5

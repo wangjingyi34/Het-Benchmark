@@ -1,0 +1,8 @@
+estimator,samples,mre_percent,sd,time_ms
+Permutation,100,3.21,0.89,45.2
+Permutation,500,1.45,0.42,223.1
+Permutation,1000,0.72,0.21,447.8
+Antithetic,100,2.15,0.67,48.3
+Antithetic,500,0.98,0.31,238.5
+Stratified,100,2.87,0.78,52.1
+Stratified,500,1.23,0.38,256.7

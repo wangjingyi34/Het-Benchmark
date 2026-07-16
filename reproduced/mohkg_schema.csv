@@ -1,0 +1,13 @@
+kind,name,count
+node,model,34
+node,operator_instance,6244
+node,hardware,5
+node,operator_family,16
+node,total,6299
+edge,contains,6244
+edge,has_type,6244
+edge,supports,80
+edge,sequence,6210
+edge,similar,5421
+edge,performance,5000
+edge,total,29199

@@ -1,0 +1,10 @@
+model,execute_ms,surrogate_ms,speedup
+ResNet50,4.754,0.011,429
+BERT-Base,2.661,0.008,333
+GPT-2 Small,31.982,0.012,2665
+ViT-Base,2.596,0.009,288
+ResNet152,14.114,0.015,941
+MobileNetV2,4.441,0.007,634
+EfficientNet-B0,6.564,0.010,656
+LLaMA-7B,89.234,0.018,4957
+Whisper-Large,156.782,0.019,8252

@@ -61,6 +61,23 @@ python experiments/exp_surrogate_speedup.py
 python experiments/exp_fitas_migration.py
 ```
 
+### Validate and Reproduce the Paper Snapshot
+
+The repository includes a paper-locked schema, table exports, and deterministic
+model-group split. These commands validate the reported corpus and graph counts,
+recreate the leakage-audited split, and copy the canonical paper tables into a
+clean reproduction directory:
+
+```bash
+python src/validate_artifact.py
+python src/split_mohkg.py
+python src/reproduce_tables.py --output reproduced
+```
+
+The provenance policy in `docs/PROVENANCE.md` distinguishes measured, derived,
+and estimated records. Canonical paper-facing tables are stored under
+`results/paper_tables/`; their released copies are under `reproduced/`.
+
 ## Benchmark Dataset
 
 ### Models (34 total)
@@ -104,6 +121,9 @@ het-benchmark/
 │   ├── moh_kg.py                 # MOH-KG knowledge graph
 │   ├── rgat.py                   # RGAT neural network
 │   ├── kg_a2o.py                 # KG-A2O optimization (PPO)
+│   ├── split_mohkg.py            # Deterministic model split and leakage audit
+│   ├── validate_artifact.py      # Paper count/data validation
+│   ├── reproduce_tables.py       # Canonical table reproduction
 │   └── operators/                # Operator implementations
 ├── experiments/                  # Experiment scripts
 │   ├── exp_copa_attribution_full.py
@@ -115,13 +135,17 @@ het-benchmark/
 ├── data/                         # Dataset files
 │   ├── model_dataset.json        # 34 models with 6,244 operators
 │   ├── moh_kg.json               # Knowledge graph
+│   ├── paper_schema_counts.json  # Paper-locked node/edge/split schema
 │   └── hardware_platforms.json   # Hardware specifications
 ├── models/                       # Trained models
 │   └── rgat_final.pt             # Trained RGAT model (3.7MB, 313K params)
 ├── results/                      # Experiment results
+│   └── paper_tables/             # Canonical paper-facing CSV tables
+├── reproduced/                   # Released reproducibility snapshot
 ├── figures/                      # Generated figures
 ├── examples/                     # Example scripts
-└── docs/                         # Documentation
+├── docs/                         # Documentation and data provenance
+└── ARTIFACT_MANIFEST.json        # Artifact file/checksum manifest
 ```
 
 ## Experimental Results

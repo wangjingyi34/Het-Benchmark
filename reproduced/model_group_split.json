@@ -1,0 +1,57 @@
+{
+  "seed": 42,
+  "group": "source_model",
+  "ratios": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "split": {
+    "train": [
+      "ALBERT_Base",
+      "BERT_Mini",
+      "BERT_Tiny",
+      "BLIP_Base",
+      "BLOOM_560M",
+      "ConvNeXt_Base",
+      "DINOv2_Base",
+      "DeiT_Base",
+      "DistilBERT",
+      "DistilBERT_Base",
+      "EfficientNet_B0",
+      "Falcon_7B",
+      "GPT_2",
+      "GPT_Neo_1.3B",
+      "MobileNet_V2",
+      "OPT_1.3B",
+      "Phi_3_mini",
+      "Pythia_1.4B",
+      "Qwen2.5_7B",
+      "ResNet_50",
+      "RoBERTa_Base",
+      "SigLIP_Base",
+      "StableLM_3B",
+      "Swin_Base",
+      "T5_Base",
+      "ViT_Base",
+      "Wav2Vec2_Base"
+    ],
+    "validation": [
+      "BEiT_Base",
+      "RegNet_Y_4GF",
+      "TinyLlama_1.1B"
+    ],
+    "test": [
+      "BERT_Base",
+      "CLIP_ViT_B_32",
+      "Mistral_7B",
+      "Whisper_Base"
+    ]
+  },
+  "leakage_controls": [
+    "remove held-out performance labels and edges from the training graph",
+    "mask similar edges crossing train/validation/test model groups",
+    "select checkpoints on validation only and open test labels once"
+  ],
+  "sha256": "08b0ace3199f698a4a007eab9e79b8ca537a650885ee368fdd351f50b485435e"
+}

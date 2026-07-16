@@ -1,0 +1,7 @@
+category,models,operator_instances,examples,parameter_range
+LLM,11,2847,"GPT-2; BERT; LLaMA; T5",117M--7B
+CV,11,1892,"ResNet; ViT; YOLO; EfficientNet",3.4M--632M
+NLP,8,1105,"RoBERTa; DistilBERT; ALBERT",22M--355M
+Audio,2,234,"Whisper; Wav2Vec2",39M--1.5B
+Multimodal,2,166,"CLIP; BLIP",151M--446M
+Total,34,6244,,
