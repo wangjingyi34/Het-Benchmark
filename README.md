@@ -247,7 +247,7 @@ If you use Het-Benchmark in your research, please cite:
 ```bibtex
 @inproceedings{hetbenchmark2026,
   title={Beyond Black-Box Benchmarking: A Neuro-Symbolic Evaluation Paradigm for Zero-Shot AI Model Migration},
-  author={Wang, Jingyi and Wang, Jia},
+  author={xxx},
   booktitle={Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI)},
   year={2026}
 }
@@ -259,7 +259,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Acknowledgments
 
-This work was supported by Jingyi Wang and Jia Wang. We thank the anonymous reviewers for their valuable feedback.
+This work was supported by XXX. We thank the anonymous reviewers for their valuable feedback.
 
 ---
 
