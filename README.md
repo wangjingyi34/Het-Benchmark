@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)](https://pytorch.org/)
 
-**Beyond Black-Box Benchmarking: A Neuro-Symbolic Evaluation Paradigm for Zero-Shot AI Model Migration**
+**White-Box Operator Benchmarking and Counterfactual Attribution for AI Inference Migration**
 
 Het-Benchmark is a comprehensive evaluation framework for assessing AI model migration capabilities across heterogeneous hardware platforms. It provides fine-grained operator-level analysis, cross-platform performance prediction, and knowledge graph-based optimization guidance for zero-shot model deployment.
 
@@ -246,9 +246,9 @@ If you use Het-Benchmark in your research, please cite:
 
 ```bibtex
 @inproceedings{hetbenchmark2026,
-  title={Beyond Black-Box Benchmarking: A Neuro-Symbolic Evaluation Paradigm for Zero-Shot AI Model Migration},
+  title={HET: White-Box Operator Benchmarking and Counterfactual Attribution for AI Inference Migration},
   author={xxx},
-  booktitle={Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI)},
+  booktitle={Proceedings of the AAAI 2027},
   year={2026}
 }
 ```
