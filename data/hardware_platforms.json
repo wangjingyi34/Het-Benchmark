@@ -1,37 +1,47 @@
 [
   {
-    "name": "CUDA",
+    "name": "NVIDIA A100",
+    "backend": "CUDA/cuDNN",
     "vendor": "NVIDIA",
-    "type": "GPU",
-    "version": "cuDNN 9.0",
-    "coverage": 98.0
+    "architecture": "Ampere",
+    "peak_compute": "312 TFLOPS FP16",
+    "memory_gb": 80,
+    "bandwidth_gbps": 2000
   },
   {
-    "name": "ROCm",
-    "vendor": "AMD",
-    "type": "GPU",
-    "version": "ROCm 6.0",
-    "coverage": 94.0
-  },
-  {
-    "name": "oneAPI",
-    "vendor": "Intel",
-    "type": "GPU/CPU",
-    "version": "oneDNN 3.0",
-    "coverage": 89.0
-  },
-  {
-    "name": "CANN",
+    "name": "Huawei Ascend 910B",
+    "backend": "CANN",
     "vendor": "Huawei",
-    "type": "NPU",
-    "version": "CANN 8.0",
-    "coverage": 93.0
+    "architecture": "Da Vinci",
+    "peak_compute": "320 TFLOPS FP16",
+    "memory_gb": 64,
+    "bandwidth_gbps": 1200
   },
   {
-    "name": "MLU",
+    "name": "Cambricon MLU370-X8",
+    "backend": "BANG/CNNL",
     "vendor": "Cambricon",
-    "type": "MLU",
-    "version": "CNNL 1.9",
-    "coverage": 83.0
+    "architecture": "MLUv02",
+    "peak_compute": "256 TFLOPS FP16",
+    "memory_gb": 48,
+    "bandwidth_gbps": 307
+  },
+  {
+    "name": "Intel GPU Max 1550",
+    "backend": "oneAPI/oneDNN",
+    "vendor": "Intel",
+    "architecture": "Xe HPC",
+    "peak_compute": "420 TFLOPS FP16",
+    "memory_gb": 128,
+    "bandwidth_gbps": 3200
+  },
+  {
+    "name": "Intel Xeon 8380",
+    "backend": "CPU/oneDNN",
+    "vendor": "Intel",
+    "architecture": "Ice Lake",
+    "peak_compute": "3 TFLOPS FP32",
+    "memory_gb": 512,
+    "bandwidth_gbps": 204
   }
 ]

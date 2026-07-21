@@ -28,8 +28,9 @@ import urllib.request
 from pathlib import Path
 from typing import Optional
 
-# GitHub Release URL
-GITHUB_RELEASE_URL = "https://github.com/wangjingyi34/Het-Benchmark/releases/download/v1.0.0"
+# Optional release mirror. It is deliberately supplied at runtime during
+# double-blind review so this script does not disclose the source repository.
+GITHUB_RELEASE_URL = os.environ.get("HET_BENCHMARK_RELEASE_URL", "")
 BENCHMARK_DATA_FILE = "benchmark_data.tar.gz"
 BENCHMARK_DATA_SIZE_MB = 368
 
@@ -118,6 +119,13 @@ def setup_benchmark_data(dest_dir: str = "./benchmark_data") -> bool:
     if os.path.exists(manifest_path):
         print(f"✅ Benchmark data already exists at {dest_dir}")
         return True
+
+    if not GITHUB_RELEASE_URL:
+        print(
+            "❌ No release mirror configured. Set HET_BENCHMARK_RELEASE_URL "
+            "to the reviewer-provided data mirror, or use the packaged benchmark_data directory."
+        )
+        return False
     
     # Download
     if not download_file(url, archive_path, f"Downloading benchmark data (~{BENCHMARK_DATA_SIZE_MB} MB)"):

@@ -16,15 +16,15 @@ Het-Benchmark is a comprehensive evaluation framework for assessing AI model mig
 - **RGAT**: Relational Graph Attention Network for cross-platform performance prediction
 - **KG-A2O**: Knowledge-Graph-guided Adaptive Operator Optimization using PPO
 - **Hardware Abstraction Layer (HAL)**: Unified interface for 5 major hardware platforms
-- **Comprehensive Dataset**: 34 models, 6,244 operator instances across 6 categories
+- **Comprehensive Dataset**: 34 models, 6,244 operator instances across 5 workload categories
 
 ## Quick Start
 
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/wangjingyi34/Het-Benchmark.git
+# Download or clone the anonymous reviewer snapshot
+# https://anonymous.4open.science/anonymize/Het-Benchmark-D974
 cd Het-Benchmark
 
 # Install dependencies
@@ -77,6 +77,10 @@ python src/reproduce_tables.py --output reproduced
 The provenance policy in `docs/PROVENANCE.md` distinguishes measured, derived,
 and estimated records. Canonical paper-facing tables are stored under
 `results/paper_tables/`; their released copies are under `reproduced/`.
+The paper-locked five-platform manifest is `data/hardware_platforms.json`.
+Historical exploratory scripts for additional backends (for example ROCm) are
+retained in the full repository but are not inputs to the paper's reported
+five-platform tables or MOH-KG counts.
 
 ## Benchmark Dataset
 
@@ -270,16 +274,7 @@ python -m unittest discover -s tests -v
 
 ## Citation
 
-If you use Het-Benchmark in your research, please cite:
-
-```bibtex
-@inproceedings{hetbenchmark2026,
-  title={HET: White-Box Operator Benchmarking and Counterfactual Attribution for AI Inference Migration},
-  author={xxx},
-  booktitle={Proceedings of the AAAI 2027},
-  year={2026}
-}
-```
+Citation metadata is withheld during double-blind review and will be added after publication.
 
 ## License
 
@@ -287,7 +282,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Acknowledgments
 
-This work was supported by XXX. We thank the anonymous reviewers for their valuable feedback.
+Acknowledgments are withheld during double-blind review.
 
 ---
 

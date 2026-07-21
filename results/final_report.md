@@ -198,7 +198,7 @@
 
 ### 3.3 代码仓库信息
 
-- **GitHub仓库**: https://github.com/wangjingyi34/Het-Benchmark
+- **匿名评审仓库**: https://anonymous.4open.science/anonymize/Het-Benchmark-D974
 - **许可证**: MIT License
 - **Python版本**: 3.8+
 - **主要依赖**: PyTorch 2.0+, torch-geometric, transformers

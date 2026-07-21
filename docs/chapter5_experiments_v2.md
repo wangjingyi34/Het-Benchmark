@@ -276,4 +276,5 @@ Our experimental evaluation demonstrates that Het-Benchmark successfully achieve
 
 3. **Comprehensive Evaluation**: The benchmark covers 34 models, 6,244 operators, and 5 hardware platforms, enabling practical migration decisions with quantified trade-offs.
 
-All experimental data and code are available at: https://github.com/wangjingyi34/Het-Benchmark
+All experimental data and code are available in the anonymous reviewer repository:
+https://anonymous.4open.science/anonymize/Het-Benchmark-D974

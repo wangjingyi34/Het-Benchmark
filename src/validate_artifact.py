@@ -18,9 +18,18 @@ def main() -> None:
     assert len(models["models"]) == schema["node_counts"]["model"] == 34
     assert len(operators) == schema["node_counts"]["operator_instance"] == 6244
     assert len(hardware) == schema["node_counts"]["hardware"] == 5
+    assert [row["name"] for row in hardware] == [
+        "NVIDIA A100",
+        "Huawei Ascend 910B",
+        "Cambricon MLU370-X8",
+        "Intel GPU Max 1550",
+        "Intel Xeon 8380",
+    ]
+    assert [row["bandwidth_gbps"] for row in hardware] == [2000, 1200, 307, 3200, 204]
     assert sum(v for k, v in schema["edge_counts"].items() if k != "total") == 29199
     required = [
-        "src/copa.py", "src/kg_a2o.py", "src/moh_kg.py", "src/rgat.py",
+        "src/copa.py", "src/kg_a2o.py", "src/moh_kg.py", "src/rgat.py", "src/priority.py",
+        "tests/test_priority_scoring.py",
         "results/paper_tables/benchmark_corpus.csv", "results/paper_tables/prediction_mre.csv",
         "docs/PROVENANCE.md", "ARTIFACT_MANIFEST.json",
     ]
@@ -30,6 +39,10 @@ def main() -> None:
     assert "Overall,32.0,25.6,14.3,7.8,10.4,14.3" in prediction
     shapley = (ROOT / "results/paper_tables/shapley_sampling.csv").read_text()
     assert "Antithetic,500,0.98,0.31,238.5" in shapley
+    legacy_graph = ROOT / "data/moh_kg.json"
+    if legacy_graph.exists():
+        legacy = json.loads(legacy_graph.read_text())
+        assert legacy["metadata"].get("paper_canonical") is False
     print("artifact validation=PASS")
     print(f"models={len(models['models'])}, operators={len(operators)}, edges={schema['edge_counts']['total']}")
 
