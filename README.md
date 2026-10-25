@@ -1,3 +1,5 @@
+Additional fixed-evidence checks: [paired plan contrasts, all relation controls and transparent market-price scenarios](experiments/20261025-analysis/README.md).
+
 ## Measured validation framework and complete data
 
 The reproducible measured-validation release is available in [experiments/20261025](experiments/20261025). It includes the actual five-stack profiles, complete pretrained-model interventions, predictor and PPO checkpoints, original predictions, hardware-calibration budgets, mathematical definitions and independent verification. Start with its reproduction guide and SHA256 manifest. The original submission artifacts below remain versioned for historical comparison.
