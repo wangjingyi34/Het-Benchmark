@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3007,
+      "sha256": "a66bcc4a9ee5b4ca6d7ac512b361f884dc5fec5beadfc0b61b16ab4c27ebf34a"
+    },
+    {
+      "path": "recheck_frozen_evidence.py",
+      "bytes": 4792,
+      "sha256": "1752b44deae06b57c603c164f059971ac759f466412cad81f67bb5f68728da7a"
+    },
+    {
+      "path": "recompute_official_market_costs.py",
+      "bytes": 3640,
+      "sha256": "751d1cfaea4ca9a25c786c0ad854f6841b5462f29b3d69e70bef4b60b25b8558"
+    },
+    {
+      "path": "results/all-relation-controls.json",
+      "bytes": 1768,
+      "sha256": "23b5ba45452ca4b5b1d7cf70318cc3c332c29586636f4361b006f1118d66adbf"
+    },
+    {
+      "path": "results/official-market-cost-recheck.csv",
+      "bytes": 66245,
+      "sha256": "0bd5b7d9c2d78edbef03e63c94d211db93f8d6ec8b1b8506a138ea4a888bce46"
+    },
+    {
+      "path": "results/official-market-cost-recheck.json",
+      "bytes": 221618,
+      "sha256": "05b4c032544bf191d8cd9ef9e7a945029f88b3b2b7bd77d7b90313136569fe58"
+    },
+    {
+      "path": "results/paired-fixed-plan-contrasts.json",
+      "bytes": 68663,
+      "sha256": "80eb940bde87ac840b3d877c8ef99df10b103fd2a38d1bd3bd51b70e9d8dc43a"
+    }
+  ],
+  "count": 7,
+  "hardware_workloads_executed": 0
+}

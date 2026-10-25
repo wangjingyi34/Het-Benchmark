@@ -1,0 +1,57 @@
+{
+  "source_sha256": "38284efb1d0b3afc4c5b39ad7c04be47353cce7442f7dd3b6796fee41a3b4862",
+  "scope": "All same-information baseline and six relation controls, probe model holdout; selected single-control contrast does not establish all relations help.",
+  "rows": [
+    {
+      "method": "drop_contains",
+      "micro_mre_five_seed_mean": 68.22182398461707,
+      "micro_mre_seed_sample_sd": 9.41545822395557
+    },
+    {
+      "method": "drop_dependency",
+      "micro_mre_five_seed_mean": 65.40233875246275,
+      "micro_mre_seed_sample_sd": 8.801602057132355
+    },
+    {
+      "method": "drop_has_type",
+      "micro_mre_five_seed_mean": 68.10724124751944,
+      "micro_mre_seed_sample_sd": 8.632479350601
+    },
+    {
+      "method": "drop_performance_context",
+      "micro_mre_five_seed_mean": 69.82620451748915,
+      "micro_mre_seed_sample_sd": 9.84805548868531
+    },
+    {
+      "method": "drop_similarity",
+      "micro_mre_five_seed_mean": 69.28175936473619,
+      "micro_mre_seed_sample_sd": 10.074545722289052
+    },
+    {
+      "method": "drop_supports",
+      "micro_mre_five_seed_mean": 68.75987955098118,
+      "micro_mre_seed_sample_sd": 9.605029253394271
+    },
+    {
+      "method": "gcn",
+      "micro_mre_five_seed_mean": 69.4463709831808,
+      "micro_mre_seed_sample_sd": 2.5669330728111417
+    },
+    {
+      "method": "mlp",
+      "micro_mre_five_seed_mean": 67.33433427969607,
+      "micro_mre_seed_sample_sd": 2.7304363267990666
+    },
+    {
+      "method": "rgat",
+      "micro_mre_five_seed_mean": 68.1497441494311,
+      "micro_mre_seed_sample_sd": 9.451104128080162
+    },
+    {
+      "method": "ridge",
+      "micro_mre_five_seed_mean": 77.42334891537008,
+      "micro_mre_seed_sample_sd": 0.0
+    }
+  ],
+  "paired_comparisons": []
+}
