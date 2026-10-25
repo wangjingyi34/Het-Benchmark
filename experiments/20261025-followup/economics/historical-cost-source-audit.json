@@ -1,0 +1,24 @@
+{
+  "inspected_utc": "2026-10-25T14:35:41.291844+00:00",
+  "sources": [
+    {
+      "path": "public-repo/results/fitas_migration_results.json",
+      "sha256": "a37968bb57d78bc135950bd7042643d892e3c4d015756417192ae16ad1bf4b2a"
+    },
+    {
+      "path": "public-repo/docs/chapter5_experiments_and_results.md",
+      "sha256": "78961fc0784b689c149955297817b937ee476a04b5cce25b8a3aaff210a1b967",
+      "relevant_line": 169
+    }
+  ],
+  "recorded_unit": "USD per month",
+  "A100_recorded_budget": 500,
+  "Ascend_recorded_budget": 170,
+  "Ascend_to_A100_budget_ratio": 0.34,
+  "arithmetic_reduction": 0.6599999999999999,
+  "real_measurements_array_length": 0,
+  "invoice_or_purchase_receipt_present_in_cost_result": false,
+  "priced_period_and_hardware_count_documented_in_cost_result": false,
+  "equal_service_demand_or_throughput_documented_in_cost_result": false,
+  "conclusion": "The released cost result identifies the numerical monthly budget assumption and its arithmetic, but provides no paid billing provenance or equal-service denominator. This audit does not authenticate historical spend."
+}

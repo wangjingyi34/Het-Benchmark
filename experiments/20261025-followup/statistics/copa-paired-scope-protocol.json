@@ -1,0 +1,13 @@
+{
+  "kind": "frozen-secondary-COPA-paired-scope-audit",
+  "selection": "All four existing NPU contexts: ResNet18/50 x batch1/4; runs101..105; no reselection of plans or measurements.",
+  "frozen_plan_source": "v2-实证增强/methods/paired-method-results-with-ppo.json",
+  "primary_metric": "Per fresh-process block raw gain =100*(mean A-mean B)/mean A; each mean uses20 adjacent AB/BA pairs. Do not replace it with mean per-pair percentage gain.",
+  "plans": ["cross_dag", "cross_plain_sum", "target_operator_latency", "uniform_at_most2", "uniform_exact2"],
+  "comparisons": "Cross-DAG minus each of other four controls, all four contexts; no pooling across fixed contexts as16independent architectures.",
+  "random_scope": "Exact expectation across allowed masks with <=2 or exactly2 actions. No-op operational gain is0, with observed mask0 sham measurement reported separately. This is not a separately sampled randomized planner experiment.",
+  "uncertainty": "Five process-block vectors: descriptive t95 withdf4; exact32signflip diagnostics, and Holm16 exploratory correction.20within-process pairs are not20independent experiments.",
+  "accepted_gains": "Report max(raw,0) separately from raw; observed no-op negative controls separately. Accepted gains are in-sample rejection-rule utilities and can be optimistically selected by timing noise without a fresh postselection run.",
+  "scope": "One physicalNPU configuration, two architectures, fixed shapes/weights and fixed100evaluation-image10classsubset. This does not establish arbitraryhardware/modeleffects,69/175operatorCOPAaccuracy, originalFITASspeedup or original0.98physicalattributionMRE.",
+  "transparency": "Existing result summaries and a single raw schema were read first; this freezes secondary recomputation before script execution, not pre-experiment preregistration."
+}

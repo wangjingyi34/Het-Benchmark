@@ -1,0 +1,39 @@
+{
+  "version": "layout-validation-v4",
+  "models": [
+    "resnet18",
+    "resnet50"
+  ],
+  "batches": [
+    1,
+    4
+  ],
+  "calibration_runs": [
+    1,
+    2,
+    3
+  ],
+  "evaluation_runs": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "actions": {
+    "F": "all eligible Conv2d+BatchNorm2d eval folds",
+    "L": "channels_last weights; actual NCHW input conversion inside every timed forward"
+  },
+  "coalitions": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "precision": "FP32; TF32 off; cuDNN benchmark off",
+  "timing": "20 adjacent balanced10AB10BA; 30 warmup on each side; process is statistical unit",
+  "quality": "disjoint100cal100eval Imagenette, pretrained1000class head, >=.99 pairedtop1retention and allclose1e-4",
+  "selection": "after all12calprocesses, freeze mask1vs2 max mean gain (k1) and mask3 k2 positivecalmean and allcalqualitygate; ties lower mask; no evaluation data read before freeze",
+  "purpose": "new deployment validation not reconstruction of historical FITAS15.6 or proof of COPA operator-ranking superiority",
+  "all_unfavorable_results_retained": true
+}

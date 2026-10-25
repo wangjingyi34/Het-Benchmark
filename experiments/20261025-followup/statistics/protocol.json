@@ -1,0 +1,60 @@
+{
+  "kind": "v4-independent-statistical-reverse-audit-protocol",
+  "frozen_before": "Execution of analyze_relation_drops.py and inspection of its newly computed results",
+  "transparency": "An existing V2 summary and V3 review had already been read for schema and scope. This is a frozen secondary-analysis plan, not a claim of prospective preregistration before the original experiments.",
+  "objective": "New offline statistical experiment on existing archived, physically measured prediction-label support; no retraining, remote hardware, main manuscript or V2 changes.",
+  "input": "v2-实证增强/prediction/formal-archive-restored/formal-five-stack/predictions.jsonl.gz",
+  "reference": "rgat",
+  "comparators": [
+    "drop_contains",
+    "drop_has_type",
+    "drop_dependency",
+    "drop_similarity",
+    "drop_supports",
+    "drop_performance_context"
+  ],
+  "panels": [
+    "strict/model_holdout",
+    "probe/model_holdout",
+    "strict/device_holdout_seen_architectures",
+    "probe/device_holdout_seen_architectures"
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "matching": "Exact record_id, feature_mode, protocol, seed. All seven methods must cover exactly the same original 13,905 physical record IDs. Verify each label against the mean of positive synchronized raw timing samples, status measured, >=20 repeats, model/device/input-weight identity and summary source SHA256. Abort rather than silently intersect or drop records.",
+  "error_percent": "100 * abs(prediction_ms - true_latency_ms) / max(true_latency_ms, 1e-6), exactly the archived evaluation convention",
+  "sign": "drop minus full RGAT MRE in percentage points; positive favors retaining the relation",
+  "primary_estimand": "Paired model-macro MRE difference: average each method's per-model errors equally over the five seeds, subtract full RGAT, then equal-weight the 12 model clusters. Training seed means refer to mean errors, not error of ensemble-averaged predictions.",
+  "secondary_estimands": [
+    "record-weighted micro MRE difference",
+    "per-device model-macro differences",
+    "per-model and per-seed differences",
+    "leave-one-model-out sensitivity"
+  ],
+  "bootstrap": {
+    "replicates": 50000,
+    "rng_seed": 2026102504,
+    "primary": "Paired percentile bootstrap of 12 entire model clusters, after averaging five seeds. The same resampled models are used for full and every ablation. Primary interval is 95%; micro uses ratio of cluster error sums to cluster counts.",
+    "sensitivity": "Crossed model x training-seed bootstrap: resample 12 models and five seed indices, using the same seed draw across all models/methods; descriptive, not an independent hardware-population interval.",
+    "scope": "Descriptive conditional uncertainty for the selected 12-model cohort and existing fitted predictors. Shared cross-validation training data create dependence; no population coverage guarantee, no arbitrary-model claim, no inference over hardware families. Model and device protocols remain separate."
+  },
+  "multiplicity": {
+    "status": "Exploratory descriptive only",
+    "test": "Enumerate all 2^12 paired model-cluster sign flips of seed-averaged differences, two-sided mean statistic. Report exact conditional sign-flip p values and Holm across all six relations within each panel; global Holm across 24 tests as sensitivity.",
+    "interpretation": "Model sign-exchangeability is an assumption, not established by fixed benchmark selection or cross-validation. These p values are diagnostics, never a confirmatory significance or causal claim. Unadjusted percentile intervals are not simultaneous six-relation intervals."
+  },
+  "reporting": "Publish all 24 panels/relation results, both signs, model sufficient statistics, support audits, source hashes, code hashes and all unresolved limitations. Do not select the relation or metric that makes the strongest result. Reject any silently relabeled original calibrated row.",
+  "COPA_scope_audit": "Assess conditional paired physical-plan inference and raw versus accepted gains separately. Physical actions, fixed two-model/four-context NPU evidence and paired process blocks do not certify 69/175-operator attribution accuracy, arbitrary hardware, private FITAS or the original 0.98% number.",
+  "success_evidence": [
+    "complete matched-support assertions",
+    "all six relation drops in all four panels",
+    "model-cluster intervals and multiplicity diagnostics",
+    "per-model sufficient statistics",
+    "source hash manifest"
+  ]
+}

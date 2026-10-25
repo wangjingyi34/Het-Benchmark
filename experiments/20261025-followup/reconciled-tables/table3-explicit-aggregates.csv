@@ -1,0 +1,9 @@
+family_set,method_or_split,families,weighting,printed_cell_mean_mre_percent,source
+shared_three_families,deepbench,3,equal family weights,32.03333333333333,"reported family cells, not recovered per-query predictions"
+shared_three_families,roofline,3,equal family weights,25.566666666666666,"reported family cells, not recovered per-query predictions"
+shared_three_families,train,3,equal family weights,11.5,"reported family cells, not recovered per-query predictions"
+shared_three_families,validation,3,equal family weights,16.0,"reported family cells, not recovered per-query predictions"
+shared_three_families,test,3,equal family weights,20.266666666666666,"reported family cells, not recovered per-query predictions"
+all_eight_printed_families,train,8,equal family weights,7.7875,"reported family cells, not recovered per-query predictions"
+all_eight_printed_families,validation,8,equal family weights,10.4,"reported family cells, not recovered per-query predictions"
+all_eight_printed_families,test,8,equal family weights,13.0375,"reported family cells, not recovered per-query predictions"

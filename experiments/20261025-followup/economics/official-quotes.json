@@ -1,0 +1,69 @@
+{
+  "retrieved_utc": "2026-10-25T14:28:01.829827+00:00",
+  "scope": "Reverify exactly the V3 official sources; no new price search to force 66 percent",
+  "rates": [
+    {
+      "id": "runpod",
+      "name": "Runpod Pods A100 SXM 80GB",
+      "currency": "USD",
+      "hourly_per_card": 1.79,
+      "minimum_cards_per_order": 1,
+      "billing_quantum_seconds": 1,
+      "url": "https://www.runpod.io/pricing",
+      "billing_url": "https://docs.runpod.io/accounts-billing/billing",
+      "page_updated": "2026-10-08",
+      "note": "The public Pods rate is a full card reference quote. Current capacity, region and MIG configuration access are not verified. One hour credit balance is not one hour billed time."
+    },
+    {
+      "id": "lambda",
+      "name": "Lambda 8x A100 SXM 80GB",
+      "currency": "USD",
+      "hourly_per_card": 2.79,
+      "minimum_cards_per_order": 8,
+      "billing_quantum_seconds": 60,
+      "url": "https://lambda.ai/instances",
+      "note": "The 80GB SXM row is under 8x instance selection. USD2.79 is per card; node charge is 8 times this. Excludes applicable taxes. No matching 1x SXM80GB row is asserted."
+    },
+    {
+      "id": "ctyun",
+      "name": "Tianyi pak3.4xlarge.8 Ascend 910B 64GB",
+      "currency": "CNY",
+      "hourly_per_card": 38.45,
+      "monthly_per_card": 18454,
+      "minimum_cards_per_order": 1,
+      "billing_quantum_seconds": null,
+      "url": "https://www.ctyun.cn/document/10029787/10047957",
+      "billing_url": "https://www.ctyun.cn/document/10029787/10030141",
+      "page_updated": "2026-10-15 16:38:42",
+      "note": "Includes the quoted host configuration: 16vCPU and128GB RAM. GPU-specific page confirms compute stop/release boundary but does not state time quantum;1s and1h are sensitivity assumptions. Disks and networking excluded."
+    }
+  ],
+  "same_provider_nonmatching_reference": [
+    {
+      "url": "https://www.ctyun.cn/document/10029787/10047957",
+      "name": "p8a.6xlarge.4 A100 PCIe40GB",
+      "cny_hour": 21.3,
+      "reason_not_in_primary_measured_grid": "40GB PCIe is not the measured 80GB SXM MIG2g.20GB configuration; no variant throughput substituted."
+    },
+    {
+      "url": "https://www.ctyun.cn/document/10029787/10047957",
+      "name": "p8av.3xlarge.8 A100 NVLink40GB",
+      "cny_hour": 31.27,
+      "reason_not_in_primary_measured_grid": "40GB variant; retained as a quote check only, not replacement timing evidence."
+    }
+  ],
+  "mig_source": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/supported-mig-profiles.html",
+  "mig_facts": {
+    "measured_profile": "A100-SXM4-80GB MIG2g.20gb",
+    "memory_fraction": 0.25,
+    "SM_fraction": 0.2857142857142857,
+    "max_homogeneous_instances": 3,
+    "note": "Geometry only; no price or simultaneous throughput inferred."
+  },
+  "source_limitations": [
+    "These are current public reference quotes, not historical paid invoices or a matched regional procurement offer.",
+    "Not total cost of ownership: no storage, network, tax, engineering, migration, energy or historical discount data.",
+    "A minimum cash balance or prepaid deposit is not consumed inference cost.",
+    "Ctyun stop rule changes on2026-10-28: scheduled stop assumes compute is released or a valid economy stop; no guarantee of restart capacity."
+  ]
+}

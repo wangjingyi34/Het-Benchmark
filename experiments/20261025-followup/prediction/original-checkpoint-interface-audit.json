@@ -1,0 +1,97 @@
+{
+  "kind": "original_checkpoint_fresh_physical_query_interface_feasibility",
+  "audit_script_sha256": "25b650a74c6c7c8664baed3cc1b65c762aaba5634c00717e6f29faebfc210ea9",
+  "checkpoint_path": "submitted-v21/HET_AAAI27_Final_All_Files_v21/05_Code_Data/HET_AAAI27_Code_Data_v21/models/rgat_final.pt",
+  "checkpoint_sha256": "fef8442b0b500fe02899187966d3ff7e6538ea0da31a295a6486d474460c73cd",
+  "checkpoint_keys": [
+    "epoch",
+    "model_state_dict",
+    "optimizer_state_dict",
+    "loss",
+    "config"
+  ],
+  "checkpoint_config": {
+    "node_dim": 64,
+    "hidden_dim": 128,
+    "output_dim": 1,
+    "num_relations": 6,
+    "num_layers": 3,
+    "num_heads": 4
+  },
+  "checkpoint_first_layer_shape": [
+    128,
+    64
+  ],
+  "archived_source_sha256": "8c0b5920827250c0fd0259d4e5bd4ab5508c75485c94247c5a79686d60b487c2",
+  "archived_source_excerpts": [
+    {
+      "file": "submitted-v21/HET_AAAI27_Final_All_Files_v21/05_Code_Data/HET_AAAI27_Code_Data_v21/src/train_rgat.py",
+      "line": 153,
+      "text": "node_dim = 64"
+    },
+    {
+      "file": "submitted-v21/HET_AAAI27_Final_All_Files_v21/05_Code_Data/HET_AAAI27_Code_Data_v21/src/train_rgat.py",
+      "line": 156,
+      "text": "node_features = torch.randn(num_nodes, node_dim)"
+    },
+    {
+      "file": "submitted-v21/HET_AAAI27_Final_All_Files_v21/05_Code_Data/HET_AAAI27_Code_Data_v21/src/train_rgat.py",
+      "line": 182,
+      "text": "# Create target labels (performance scores - synthetic for training)"
+    },
+    {
+      "file": "submitted-v21/HET_AAAI27_Final_All_Files_v21/05_Code_Data/HET_AAAI27_Code_Data_v21/src/train_rgat.py",
+      "line": 184,
+      "text": "targets = torch.randn(num_nodes, 1)"
+    }
+  ],
+  "fresh_queries": {
+    "count": 13905,
+    "strict_feature_dimension": 68,
+    "three_probe_feature_dimension": 71,
+    "source_manifest": [
+      {
+        "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5cpu.json",
+        "raw_sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+        "metadata_sha256": "9b3b8c5dc99190ca0b0a2732444ce6ff75dec87939bc84e87c11dd90396f1535",
+        "device_id": "Apple-M5-CPU-4T"
+      },
+      {
+        "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5mps.json",
+        "raw_sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+        "metadata_sha256": "8ea2686cf4870559424fac1e3568b136f9c56782d0469016f5efaf0426635014",
+        "device_id": "Apple-M5-MPS"
+      },
+      {
+        "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/a100mig.json",
+        "raw_sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+        "metadata_sha256": "a7e95b8be8067dcb905c603fec9404210e407c0f48cfec22a2d11b3b9a7ced3d",
+        "device_id": "A100-SXM4-MIG-2g20GB"
+      },
+      {
+        "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/xeon_cpu.json",
+        "raw_sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+        "metadata_sha256": "064e2a80d22a081e6ad20681b83e99b1d6ee405a4b36a9d53b47c0f01c549f1e",
+        "device_id": "Cloud-x86-CPU-4T"
+      },
+      {
+        "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/npub3.json",
+        "raw_sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+        "metadata_sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8",
+        "device_id": "Ascend-910B3-64GB"
+      }
+    ]
+  },
+  "interface_compatible": false,
+  "latency_experiment_executed_with_original_checkpoint": false,
+  "missing_dependencies": [
+    "saved semantically defined original64-dimensional feature transform or original node features and mapping",
+    "normalization/target transform and physical units",
+    "training label record IDs and measured/calibrated lineage",
+    "source-model split and exact graph edge masking linked to this checkpoint"
+  ],
+  "finding": "Our archived checkpoint cannot be evaluated meaningfully on the new structural-query schema without the original input/target contract. Equal-width padding or random features would not repair semantic compatibility.",
+  "evidence_limit": "The archived training example explicitly generates random features and targets, but the checkpoint has no code/label provenance binding. This audit does not establish that every historical paper result was generated with that example.",
+  "historical_14_3_certified": false,
+  "new_retrieval_result_is_original_rgat": false
+}

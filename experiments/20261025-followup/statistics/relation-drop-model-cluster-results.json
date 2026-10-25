@@ -1,0 +1,4023 @@
+{
+  "kind": "new-offline-paired-model-cluster-relation-drop-experiment",
+  "started_utc": "2026-10-25T14:19:39.765330+00:00",
+  "completed_utc": "2026-10-25T14:20:38.586754+00:00",
+  "runtime": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "numpy": "2.0.2",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "device": "local CPU"
+  },
+  "protocol_sha256": "e50bc8fa9a1eb5fd1a51a72cc0c6f95a308f10e25a58e13842e9d221e5da3194",
+  "analysis_code_sha256": "be9be624601b191cdf79ed6b0e5d78ab15b8584d4009e9865982dbc8479724e0",
+  "support": {
+    "original_prediction_rows_read": 2781000,
+    "selected_rows_exactly_matched": 1946700,
+    "physical_records_per_method_seed_panel": 13905,
+    "models": [
+      "audio_conv_ref",
+      "audio_dilated_ref",
+      "causal_lm_ref",
+      "densenet121",
+      "dual_encoder_ref",
+      "efficientnet_b0",
+      "mobilenet_v2",
+      "resnet18",
+      "resnet50",
+      "squeezenet1_1",
+      "text_cnn_ref",
+      "text_encoder_ref"
+    ],
+    "devices": [
+      "A100-SXM4-MIG-2g20GB",
+      "Apple-M5-CPU-4T",
+      "Apple-M5-MPS",
+      "Ascend-910B3-64GB",
+      "Cloud-x86-CPU-4T"
+    ],
+    "per_model_record_counts": {
+      "audio_conv_ref": 150,
+      "audio_dilated_ref": 150,
+      "causal_lm_ref": 660,
+      "densenet121": 1245,
+      "dual_encoder_ref": 165,
+      "efficientnet_b0": 3735,
+      "mobilenet_v2": 2295,
+      "resnet18": 1035,
+      "resnet50": 2625,
+      "squeezenet1_1": 990,
+      "text_cnn_ref": 180,
+      "text_encoder_ref": 675
+    },
+    "raw_statuses": {
+      "measured": 13905
+    },
+    "record_ids_sha256": "2ae2c0e2e05c51ba5fb1b0d0c127440efd5f8277184928f7a09e3760518277f8",
+    "source_verification": [
+      {
+        "path": "v2-实证增强/evidence/physical_profiles/m5cpu.json",
+        "sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+        "sidecar_sha256": "9b3b8c5dc99190ca0b0a2732444ce6ff75dec87939bc84e87c11dd90396f1535",
+        "device": "Apple-M5-CPU-4T",
+        "measured_rows": 2781
+      },
+      {
+        "path": "v2-实证增强/evidence/physical_profiles/m5mps.json",
+        "sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+        "sidecar_sha256": "8ea2686cf4870559424fac1e3568b136f9c56782d0469016f5efaf0426635014",
+        "device": "Apple-M5-MPS",
+        "measured_rows": 2781
+      },
+      {
+        "path": "v2-实证增强/evidence/physical_profiles/a100mig.json",
+        "sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+        "sidecar_sha256": "a7e95b8be8067dcb905c603fec9404210e407c0f48cfec22a2d11b3b9a7ced3d",
+        "device": "A100-SXM4-MIG-2g20GB",
+        "measured_rows": 2781
+      },
+      {
+        "path": "v2-实证增强/evidence/physical_profiles/xeon_cpu.json",
+        "sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+        "sidecar_sha256": "064e2a80d22a081e6ad20681b83e99b1d6ee405a4b36a9d53b47c0f01c549f1e",
+        "device": "Cloud-x86-CPU-4T",
+        "measured_rows": 2781
+      },
+      {
+        "path": "v2-实证增强/evidence/physical_profiles/npub3.json",
+        "sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+        "sidecar_sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8",
+        "device": "Ascend-910B3-64GB",
+        "measured_rows": 2781
+      }
+    ],
+    "maximum_macro_discrepancy_from_original_summary_pp": 4.547473508864641e-13,
+    "all_checks_passed": true
+  },
+  "bootstrap_replicates": 50000,
+  "rng_seed": 2026102504,
+  "results": [
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 69.32138964845012,
+      "ablation_model_macro_mre_percent": 69.89174076977292,
+      "paired_model_macro_difference_pp": 0.5703511213227986,
+      "model_cluster_percentile95_pp": [
+        -0.10524648820245293,
+        1.3285412119325586
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -0.986444799237351,
+        2.0914813906272545
+      ],
+      "full_micro_mre_percent": 72.5923830538221,
+      "ablation_micro_mre_percent": 73.01017517644591,
+      "paired_micro_difference_pp": 0.41779212262381604,
+      "micro_model_cluster_percentile95_pp": [
+        0.1360975915945699,
+        0.8083994924218874
+      ],
+      "models_with_positive_difference": 9,
+      "models_with_negative_difference": 3,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.563250313888922,
+        "audio_dilated_ref": -0.8593971153554734,
+        "causal_lm_ref": 0.9076824779231231,
+        "densenet121": 0.04222817890139367,
+        "dual_encoder_ref": 1.8866343293782535,
+        "efficientnet_b0": 0.16957242282470872,
+        "mobilenet_v2": -0.09309517489182326,
+        "resnet18": 0.877823886798501,
+        "resnet50": 0.9512426906997661,
+        "squeezenet1_1": 0.431328246117414,
+        "text_cnn_ref": 3.6474575938660534,
+        "text_encoder_ref": 0.445986233500588
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 0.13618725351231772,
+        "22": 1.2884157662414755,
+        "33": 0.12489518540877025,
+        "44": 2.431017015412778,
+        "55": -1.1287596139613487
+      },
+      "leave_one_model_out_macro_range_pp": [
+        0.2906141692734118,
+        0.7643148881602276
+      ],
+      "descriptive_signflip_two_sided_p": 0.16650390625,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.83251953125,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 69.32138964845012,
+      "ablation_model_macro_mre_percent": 69.24827136179772,
+      "paired_model_macro_difference_pp": -0.07311828665242175,
+      "model_cluster_percentile95_pp": [
+        -0.9813707879838832,
+        0.9592238747602367
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -1.29960712047631,
+        1.3519417241072045
+      ],
+      "full_micro_mre_percent": 72.5923830538221,
+      "ablation_micro_mre_percent": 72.18470783994886,
+      "paired_micro_difference_pp": -0.40767521387323424,
+      "micro_model_cluster_percentile95_pp": [
+        -1.0253563099712815,
+        0.5545989055873013
+      ],
+      "models_with_positive_difference": 6,
+      "models_with_negative_difference": 6,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.95822468274243,
+        "audio_dilated_ref": -2.051961395556404,
+        "causal_lm_ref": 1.2080376757292484,
+        "densenet121": 0.003114548919896265,
+        "dual_encoder_ref": -0.49722390083543927,
+        "efficientnet_b0": -1.3565912894978738,
+        "mobilenet_v2": 0.4106128136130394,
+        "resnet18": -2.0160049919255827,
+        "resnet50": -0.9262927948480282,
+        "squeezenet1_1": 1.7021758800746702,
+        "text_cnn_ref": 3.913592732667388,
+        "text_encoder_ref": 0.6913459645724543
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 0.03406065981176187,
+        "22": 0.3446906091454336,
+        "33": -0.7128011361647711,
+        "44": 0.5589611303996579,
+        "55": -0.5905026964541911
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -0.43554656113604084,
+        0.10677654142975847
+      ],
+      "descriptive_signflip_two_sided_p": 0.8955078125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 1.0,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 69.32138964845012,
+      "ablation_model_macro_mre_percent": 71.72532886801598,
+      "paired_model_macro_difference_pp": 2.4039392195658515,
+      "model_cluster_percentile95_pp": [
+        -0.8753344057229907,
+        6.037136855769471
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -2.422086147313266,
+        9.296254885359662
+      ],
+      "full_micro_mre_percent": 72.5923830538221,
+      "ablation_micro_mre_percent": 71.79551421613428,
+      "paired_micro_difference_pp": -0.79686883768782,
+      "micro_model_cluster_percentile95_pp": [
+        -2.8534756274989714,
+        3.556411635147392
+      ],
+      "models_with_positive_difference": 7,
+      "models_with_negative_difference": 5,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.698838944063455,
+        "audio_dilated_ref": 4.853878698965117,
+        "causal_lm_ref": 11.166227894494185,
+        "densenet121": 0.0777890301180264,
+        "dual_encoder_ref": 7.998335281670168,
+        "efficientnet_b0": -3.7503323661388293,
+        "mobilenet_v2": -0.4807832350277913,
+        "resnet18": -5.812461704122856,
+        "resnet50": -3.5871492162085135,
+        "squeezenet1_1": -0.9862797297368893,
+        "text_cnn_ref": 1.4785782988945897,
+        "text_encoder_ref": 15.190628737819555
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -2.5747868522238324,
+        "22": 1.767008142263329,
+        "33": 9.74195307775254,
+        "44": 0.20346573949944968,
+        "55": 2.8820559905377716
+      },
+      "leave_one_model_out_macro_range_pp": [
+        1.2415128997246057,
+        3.1508847580830066
+      ],
+      "descriptive_signflip_two_sided_p": 0.2236328125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.89453125,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 69.32138964845012,
+      "ablation_model_macro_mre_percent": 69.17468820553461,
+      "paired_model_macro_difference_pp": -0.14670144291553433,
+      "model_cluster_percentile95_pp": [
+        -2.3552537094469748,
+        2.8937460177121914
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -4.6287736040095915,
+        6.155979538460564
+      ],
+      "full_micro_mre_percent": 72.5923830538221,
+      "ablation_micro_mre_percent": 72.25602150001892,
+      "paired_micro_difference_pp": -0.33636155380317523,
+      "micro_model_cluster_percentile95_pp": [
+        -1.6808336822162306,
+        2.0806127234147063
+      ],
+      "models_with_positive_difference": 4,
+      "models_with_negative_difference": 8,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -2.9964668358939877,
+        "audio_dilated_ref": -4.051803746351368,
+        "causal_lm_ref": 13.856528119102496,
+        "densenet121": -0.06602346129641319,
+        "dual_encoder_ref": 2.359931283265773,
+        "efficientnet_b0": -1.4146720845014387,
+        "mobilenet_v2": 0.38370636105060923,
+        "resnet18": -2.142385353355934,
+        "resnet50": -1.3666357762241887,
+        "squeezenet1_1": 1.3400541986893253,
+        "text_cnn_ref": -1.9823276109605756,
+        "text_encoder_ref": -5.68032240851071
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -5.926498359842924,
+        "22": -0.256118316060934,
+        "33": 0.3909449698300452,
+        "44": -3.0951026621057705,
+        "55": 8.153267153601911
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -1.4197223121899007,
+        0.3563550085022089
+      ],
+      "descriptive_signflip_two_sided_p": 0.9443359375,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 1.0,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 69.32138964845012,
+      "ablation_model_macro_mre_percent": 69.77711753438486,
+      "paired_model_macro_difference_pp": 0.4557278859347294,
+      "model_cluster_percentile95_pp": [
+        0.08895481377704413,
+        0.8597663946771434
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        0.07871694684354845,
+        0.9522329334335952
+      ],
+      "full_micro_mre_percent": 72.5923830538221,
+      "ablation_micro_mre_percent": 72.68523892434229,
+      "paired_micro_difference_pp": 0.09285587052019124,
+      "micro_model_cluster_percentile95_pp": [
+        0.003652749545638738,
+        0.22388968437328377
+      ],
+      "models_with_positive_difference": 7,
+      "models_with_negative_difference": 5,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.3671422764297447,
+        "audio_dilated_ref": 1.4828625388353402,
+        "causal_lm_ref": -0.10702778593445358,
+        "densenet121": -0.0017475987016808859,
+        "dual_encoder_ref": 1.6870706510128017,
+        "efficientnet_b0": 0.15739772003287555,
+        "mobilenet_v2": -0.005781721933838924,
+        "resnet18": 0.024081408102628644,
+        "resnet50": -0.011123726689598356,
+        "squeezenet1_1": 0.08204485212723753,
+        "text_cnn_ref": 1.0692495435282807,
+        "text_encoder_ref": -0.2754335255925838
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 0.4127384912696028,
+        "22": 0.3468342189629497,
+        "33": 0.40017396622535956,
+        "44": 0.35233761496464133,
+        "55": 0.7665551382510939
+      },
+      "leave_one_model_out_macro_range_pp": [
+        0.3437876345639956,
+        0.5221971051644853
+      ],
+      "descriptive_signflip_two_sided_p": 0.08203125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.4921875,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 69.32138964845012,
+      "ablation_model_macro_mre_percent": 69.48524650181757,
+      "paired_model_macro_difference_pp": 0.16385685336742162,
+      "model_cluster_percentile95_pp": [
+        -0.5667801852743589,
+        0.9667487205961722
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -1.39887313010029,
+        1.6273966912605196
+      ],
+      "full_micro_mre_percent": 72.5923830538221,
+      "ablation_micro_mre_percent": 72.42131057909177,
+      "paired_micro_difference_pp": -0.17107247473031667,
+      "micro_model_cluster_percentile95_pp": [
+        -0.8251228422726087,
+        0.40049326330082197
+      ],
+      "models_with_positive_difference": 4,
+      "models_with_negative_difference": 8,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.018617314573536704,
+        "audio_dilated_ref": 0.8238746947593839,
+        "causal_lm_ref": -0.06209162635770511,
+        "densenet121": -0.20341027717356042,
+        "dual_encoder_ref": 2.9424309120532373,
+        "efficientnet_b0": 0.7657617335371896,
+        "mobilenet_v2": -0.11421975440547953,
+        "resnet18": -1.9472571706140571,
+        "resnet50": -0.875979700803363,
+        "squeezenet1_1": -0.5849155682009709,
+        "text_cnn_ref": 2.489625051674511,
+        "text_encoder_ref": -1.2489187394865895
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -1.4915324528717548,
+        "22": 1.4002766190065898,
+        "33": -0.34042754310830176,
+        "44": 1.8920640774661368,
+        "55": -0.6410964336555617
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -0.0887407883312889,
+        0.3557763100930106
+      ],
+      "descriptive_signflip_two_sided_p": 0.70361328125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 1.0,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 248.87630399172318,
+      "ablation_model_macro_mre_percent": 246.48100996189055,
+      "paired_model_macro_difference_pp": -2.3952940298326624,
+      "model_cluster_percentile95_pp": [
+        -4.56973571503194,
+        -0.281905768942245
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -13.149182396790719,
+        5.603296366585575
+      ],
+      "full_micro_mre_percent": 238.37218556580643,
+      "ablation_micro_mre_percent": 233.3065263767477,
+      "paired_micro_difference_pp": -5.065659189058701,
+      "micro_model_cluster_percentile95_pp": [
+        -6.5568245818868975,
+        -1.9034453230891315
+      ],
+      "models_with_positive_difference": 3,
+      "models_with_negative_difference": 9,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.22533340593872708,
+        "audio_dilated_ref": -0.23411711646890013,
+        "causal_lm_ref": 2.5505900989448946,
+        "densenet121": -0.4377895041664431,
+        "dual_encoder_ref": -1.101535587397052,
+        "efficientnet_b0": -7.25223848563761,
+        "mobilenet_v2": -7.923628554409442,
+        "resnet18": -7.047878948312149,
+        "resnet50": -5.850972290273608,
+        "squeezenet1_1": -5.135645516034748,
+        "text_cnn_ref": 1.9370029050967106,
+        "text_encoder_ref": 1.9780180466051207
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 0.9425711536424662,
+        "22": -20.988514499615437,
+        "33": -2.9913119605092007,
+        "44": 9.735083334893881,
+        "55": 1.3257018224249748
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -2.8449198597215313,
+        -1.8927181639620463
+      ],
+      "descriptive_signflip_two_sided_p": 0.0615234375,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.1845703125,
+      "descriptive_holm24_p": 0.9228515625
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 248.87630399172318,
+      "ablation_model_macro_mre_percent": 247.1319867133262,
+      "paired_model_macro_difference_pp": -1.744317278397019,
+      "model_cluster_percentile95_pp": [
+        -4.366560668310026,
+        0.6481553592585221
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -9.308951555253742,
+        5.63272418673896
+      ],
+      "full_micro_mre_percent": 238.37218556580643,
+      "ablation_micro_mre_percent": 235.00686218478455,
+      "paired_micro_difference_pp": -3.3653233810218683,
+      "micro_model_cluster_percentile95_pp": [
+        -4.9175005388344575,
+        -0.8321512256620055
+      ],
+      "models_with_positive_difference": 5,
+      "models_with_negative_difference": 7,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.8798400945902474,
+        "audio_dilated_ref": 1.532760436303431,
+        "causal_lm_ref": 2.564509116436642,
+        "densenet121": -2.260097200906722,
+        "dual_encoder_ref": -11.73898981740059,
+        "efficientnet_b0": -5.7107338280314766,
+        "mobilenet_v2": -6.4473233232917835,
+        "resnet18": -2.3045713985999496,
+        "resnet50": -1.805462956661279,
+        "squeezenet1_1": -3.6097983050252878,
+        "text_cnn_ref": 3.2373816412273015,
+        "text_encoder_ref": 2.7306782005952357
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -1.742274503980596,
+        "22": -6.214864990972335,
+        "33": 2.969267903056,
+        "44": -13.243151774254756,
+        "55": 9.50943697416659
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -2.1971989983628664,
+        -0.8357106839421491
+      ],
+      "descriptive_signflip_two_sided_p": 0.224609375,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.224609375,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 248.87630399172318,
+      "ablation_model_macro_mre_percent": 236.60711156850394,
+      "paired_model_macro_difference_pp": -12.269192423219279,
+      "model_cluster_percentile95_pp": [
+        -15.850884242818323,
+        -8.622976551556242
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -23.991218174437435,
+        0.6434719288878934
+      ],
+      "full_micro_mre_percent": 238.37218556580643,
+      "ablation_micro_mre_percent": 221.93629225866667,
+      "paired_micro_difference_pp": -16.435893307139757,
+      "micro_model_cluster_percentile95_pp": [
+        -18.48005975153518,
+        -13.381673673053172
+      ],
+      "models_with_positive_difference": 0,
+      "models_with_negative_difference": 12,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -6.630055090462361,
+        "audio_dilated_ref": -6.990976925406659,
+        "causal_lm_ref": -11.95678811665859,
+        "densenet121": -11.131748979633414,
+        "dual_encoder_ref": -2.8296062511283027,
+        "efficientnet_b0": -15.743132516101173,
+        "mobilenet_v2": -20.510071671705475,
+        "resnet18": -20.860431492360817,
+        "resnet50": -19.470281264754714,
+        "squeezenet1_1": -17.329864574980633,
+        "text_cnn_ref": -1.5090485749601215,
+        "text_encoder_ref": -12.268303620479065
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 10.758580716824468,
+        "22": -25.07236171262625,
+        "33": -24.57535877476789,
+        "44": -8.641926843318585,
+        "55": -13.814895502208136
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -13.247387318515564,
+        -11.488170689660956
+      ],
+      "descriptive_signflip_two_sided_p": 0.00048828125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.0029296875,
+      "descriptive_holm24_p": 0.01171875
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 248.87630399172318,
+      "ablation_model_macro_mre_percent": 244.9083481617979,
+      "paired_model_macro_difference_pp": -3.967955829925289,
+      "model_cluster_percentile95_pp": [
+        -5.642984702299937,
+        -2.348109965385244
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -12.254796823806956,
+        2.4932022822794195
+      ],
+      "full_micro_mre_percent": 238.37218556580643,
+      "ablation_micro_mre_percent": 232.53684276774095,
+      "paired_micro_difference_pp": -5.835342798065498,
+      "micro_model_cluster_percentile95_pp": [
+        -6.654239337487023,
+        -4.271422785708745
+      ],
+      "models_with_positive_difference": 0,
+      "models_with_negative_difference": 12,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.45980406277456043,
+        "audio_dilated_ref": -0.5237907169076379,
+        "causal_lm_ref": -0.2964285435075055,
+        "densenet121": -6.157037912774252,
+        "dual_encoder_ref": -1.7346498475880252,
+        "efficientnet_b0": -6.178153586834026,
+        "mobilenet_v2": -6.446296465641803,
+        "resnet18": -9.105189504143118,
+        "resnet50": -7.063110574736814,
+        "squeezenet1_1": -5.350312229821105,
+        "text_cnn_ref": -2.4008880009970484,
+        "text_encoder_ref": -1.8998085133775646
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 2.915196495716504,
+        "22": -17.688473747629626,
+        "33": -3.790790847424006,
+        "44": -6.1669708250770485,
+        "55": 4.891259774787734
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -4.301731037781451,
+        -3.500934586814577
+      ],
+      "descriptive_signflip_two_sided_p": 0.00048828125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.0029296875,
+      "descriptive_holm24_p": 0.01171875
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 248.87630399172318,
+      "ablation_model_macro_mre_percent": 253.5530082033291,
+      "paired_model_macro_difference_pp": 4.676704211605919,
+      "model_cluster_percentile95_pp": [
+        1.4974342052446943,
+        8.006458813535914
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        0.9100694795703995,
+        8.994525894774009
+      ],
+      "full_micro_mre_percent": 238.37218556580643,
+      "ablation_micro_mre_percent": 239.90316001925703,
+      "paired_micro_difference_pp": 1.5309744534505858,
+      "micro_model_cluster_percentile95_pp": [
+        0.3048867718927092,
+        3.7247028930517487
+      ],
+      "models_with_positive_difference": 9,
+      "models_with_negative_difference": 3,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 10.269379987253831,
+        "audio_dilated_ref": 10.921909325116554,
+        "causal_lm_ref": -3.2477352739952776,
+        "densenet121": 1.5205200508106145,
+        "dual_encoder_ref": 15.29072816995199,
+        "efficientnet_b0": -0.2348434912258881,
+        "mobilenet_v2": 2.1603061821799656,
+        "resnet18": 6.128237424353012,
+        "resnet50": 0.3117201672022702,
+        "squeezenet1_1": 4.322916332164942,
+        "text_cnn_ref": 11.195215993138111,
+        "text_encoder_ref": -2.5179043276790933
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 2.078957077591106,
+        "22": 5.474471929153175,
+        "33": 9.292836351118446,
+        "44": 4.144774853399102,
+        "55": 2.392480846767768
+      },
+      "leave_one_model_out_macro_range_pp": [
+        3.7117929426653675,
+        5.397107801206028
+      ],
+      "descriptive_signflip_two_sided_p": 0.02294921875,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.091796875,
+      "descriptive_holm24_p": 0.43603515625
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 248.87630399172318,
+      "ablation_model_macro_mre_percent": 247.58124609943388,
+      "paired_model_macro_difference_pp": -1.2950578922893647,
+      "model_cluster_percentile95_pp": [
+        -2.601246867111146,
+        -0.05528111569394175
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -10.566810282000308,
+        6.831281317035199
+      ],
+      "full_micro_mre_percent": 238.37218556580643,
+      "ablation_micro_mre_percent": 237.6711992161323,
+      "paired_micro_difference_pp": -0.7009863496741814,
+      "micro_model_cluster_percentile95_pp": [
+        -2.435762767124634,
+        0.5487862129151537
+      ],
+      "models_with_positive_difference": 6,
+      "models_with_negative_difference": 6,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -4.33471137875132,
+        "audio_dilated_ref": -4.8510310864088755,
+        "causal_lm_ref": 0.46701391900982114,
+        "densenet121": 0.327894295925239,
+        "dual_encoder_ref": 1.387605093398406,
+        "efficientnet_b0": 1.1144876558424641,
+        "mobilenet_v2": 0.3183029835583511,
+        "resnet18": -1.6419087293896382,
+        "resnet50": -3.5172567134353985,
+        "squeezenet1_1": -3.6785706820435564,
+        "text_cnn_ref": -2.283893812599507,
+        "text_encoder_ref": 1.1513737474216383
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 8.34332948647841,
+        "22": -18.423686368060142,
+        "33": -0.8732644775899061,
+        "44": 8.475327385590662,
+        "55": -3.996995487865848
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -1.5389363455337075,
+        -0.9717876019148638
+      ],
+      "descriptive_signflip_two_sided_p": 0.0830078125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.1845703125,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 59.72325139796524,
+      "ablation_model_macro_mre_percent": 60.48016994158158,
+      "paired_model_macro_difference_pp": 0.7569185436163366,
+      "model_cluster_percentile95_pp": [
+        -0.15043154271818995,
+        1.9071667307164433
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -0.3799164680344834,
+        2.5161105491729665
+      ],
+      "full_micro_mre_percent": 68.14974414943107,
+      "ablation_micro_mre_percent": 68.22182398461709,
+      "paired_micro_difference_pp": 0.07207983518602121,
+      "micro_model_cluster_percentile95_pp": [
+        -0.8013307193052215,
+        1.3965429568495165
+      ],
+      "models_with_positive_difference": 8,
+      "models_with_negative_difference": 4,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.26731758825029744,
+        "audio_dilated_ref": -0.3981706509105507,
+        "causal_lm_ref": -0.3300406547260536,
+        "densenet121": 0.002989971776489142,
+        "dual_encoder_ref": 0.8543904069132523,
+        "efficientnet_b0": -1.6097947323727055,
+        "mobilenet_v2": 0.21995532915420313,
+        "resnet18": 0.5227358193298471,
+        "resnet50": 0.3050321246614757,
+        "squeezenet1_1": 0.9230695062462594,
+        "text_cnn_ref": 3.1377523060270747,
+        "text_encoder_ref": 5.7224206855470445
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 2.187524876363497,
+        "22": 0.044791880257871064,
+        "33": 0.10854981595776121,
+        "44": 0.4015496969271026,
+        "55": 1.0421764485754508
+      },
+      "leave_one_model_out_macro_range_pp": [
+        0.3055092579862722,
+        0.9720742959789768
+      ],
+      "descriptive_signflip_two_sided_p": 0.232421875,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.9296875,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 59.72325139796524,
+      "ablation_model_macro_mre_percent": 60.9918085643333,
+      "paired_model_macro_difference_pp": 1.268557166368046,
+      "model_cluster_percentile95_pp": [
+        -0.4214689290507143,
+        3.3968722114535144
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -0.8210600689117201,
+        5.159455725728602
+      ],
+      "full_micro_mre_percent": 68.14974414943107,
+      "ablation_micro_mre_percent": 68.10724124751955,
+      "paired_micro_difference_pp": -0.04250290191150437,
+      "micro_model_cluster_percentile95_pp": [
+        -1.1916866087267037,
+        1.9938887492340112
+      ],
+      "models_with_positive_difference": 8,
+      "models_with_negative_difference": 4,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.8269374981709916,
+        "audio_dilated_ref": 0.9598177724991416,
+        "causal_lm_ref": 0.07717766455930786,
+        "densenet121": -1.4833961512146714,
+        "dual_encoder_ref": -0.2807195875882272,
+        "efficientnet_b0": -0.7584842183126483,
+        "mobilenet_v2": -2.6743891899529557,
+        "resnet18": 0.6367855707803741,
+        "resnet50": 0.21589383219797326,
+        "squeezenet1_1": 0.7871912268608717,
+        "text_cnn_ref": 7.009033775829752,
+        "text_encoder_ref": 9.906837802586642
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -0.26576931056219877,
+        "22": 1.393746128959832,
+        "33": 5.290784932985999,
+        "44": 0.21952320438153836,
+        "55": -0.2954991239249403
+      },
+      "leave_one_model_out_macro_range_pp": [
+        0.4832589267118099,
+        1.6270068351245006
+      ],
+      "descriptive_signflip_two_sided_p": 0.3291015625,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.9873046875,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 59.72325139796524,
+      "ablation_model_macro_mre_percent": 61.28641260548424,
+      "paired_model_macro_difference_pp": 1.5631612075189973,
+      "model_cluster_percentile95_pp": [
+        -1.8473401288019307,
+        4.877843034558349
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -3.2469883166859734,
+        8.05728212414932
+      ],
+      "full_micro_mre_percent": 68.14974414943107,
+      "ablation_micro_mre_percent": 65.4023387524628,
+      "paired_micro_difference_pp": -2.747405396968267,
+      "micro_model_cluster_percentile95_pp": [
+        -5.628378095633397,
+        2.7724835087106534
+      ],
+      "models_with_positive_difference": 7,
+      "models_with_negative_difference": 5,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.7117792850975975,
+        "audio_dilated_ref": 1.1992973806530371,
+        "causal_lm_ref": 8.195205467044083,
+        "densenet121": -0.7384133370700567,
+        "dual_encoder_ref": 7.2887107665967665,
+        "efficientnet_b0": -7.45363026768608,
+        "mobilenet_v2": -8.806374047940848,
+        "resnet18": -1.588072598740517,
+        "resnet50": -2.30528053552853,
+        "squeezenet1_1": 2.668716657661782,
+        "text_cnn_ref": 7.62445331652782,
+        "text_encoder_ref": 10.961542403612915
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -1.3228644528372744,
+        "22": 2.4936317143961095,
+        "33": 9.144822634063436,
+        "44": 0.9319985100668194,
+        "55": -3.431782368094103
+      },
+      "leave_one_model_out_macro_range_pp": [
+        0.7087629169650047,
+        2.5058462307426197
+      ],
+      "descriptive_signflip_two_sided_p": 0.392578125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.9873046875,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 59.72325139796524,
+      "ablation_model_macro_mre_percent": 60.46840135070972,
+      "paired_model_macro_difference_pp": 0.7451499527444855,
+      "model_cluster_percentile95_pp": [
+        -3.249273783389367,
+        5.605060599561639
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -4.366967135499761,
+        9.075457303186393
+      ],
+      "full_micro_mre_percent": 68.14974414943107,
+      "ablation_micro_mre_percent": 69.28175936473619,
+      "paired_micro_difference_pp": 1.1320152153051106,
+      "micro_model_cluster_percentile95_pp": [
+        -1.1353252231383753,
+        4.595218457104431
+      ],
+      "models_with_positive_difference": 7,
+      "models_with_negative_difference": 5,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -2.5313044299644973,
+        "audio_dilated_ref": -2.5527298711534625,
+        "causal_lm_ref": 22.01262554924051,
+        "densenet121": 0.8223662412872187,
+        "dual_encoder_ref": 5.105277311289123,
+        "efficientnet_b0": -0.8112709942288234,
+        "mobilenet_v2": 0.9046018869735946,
+        "resnet18": 3.109518635884352,
+        "resnet50": 2.052501891303328,
+        "squeezenet1_1": 0.695911986782653,
+        "text_cnn_ref": -10.458560627493407,
+        "text_encoder_ref": -9.40713814698677
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -4.046356141596317,
+        "22": 9.710483800606577,
+        "33": 0.26535349275024345,
+        "44": -0.24513390024206613,
+        "55": -1.9585974877960102
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -1.188256919664244,
+        1.7636690964024757
+      ],
+      "descriptive_signflip_two_sided_p": 0.796875,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.9873046875,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 59.72325139796524,
+      "ablation_model_macro_mre_percent": 61.58864619352715,
+      "paired_model_macro_difference_pp": 1.8653947955619081,
+      "model_cluster_percentile95_pp": [
+        0.1858540716245215,
+        4.1645530473343015
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        0.1112592885077167,
+        5.691234299076715
+      ],
+      "full_micro_mre_percent": 68.14974414943107,
+      "ablation_micro_mre_percent": 68.75987955098115,
+      "paired_micro_difference_pp": 0.6101354015500872,
+      "micro_model_cluster_percentile95_pp": [
+        -0.03820858671238909,
+        2.3887315356433865
+      ],
+      "models_with_positive_difference": 8,
+      "models_with_negative_difference": 4,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.082065006720346,
+        "audio_dilated_ref": 1.1076639719716468,
+        "causal_lm_ref": -0.03091836740817371,
+        "densenet121": -0.018531691205052426,
+        "dual_encoder_ref": 0.8636459332260558,
+        "efficientnet_b0": -0.18037010852299887,
+        "mobilenet_v2": 0.03848022691204278,
+        "resnet18": 0.0226420161712781,
+        "resnet50": -0.02235055756563753,
+        "squeezenet1_1": 0.1381491027583678,
+        "text_cnn_ref": 9.179976967106743,
+        "text_encoder_ref": 10.20428504657828
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 3.189825273402965,
+        "22": 0.23630671775122547,
+        "33": 5.374262382745283,
+        "44": 0.12019310621948372,
+        "55": 0.40638649769058216
+      },
+      "leave_one_model_out_macro_range_pp": [
+        1.107313863651329,
+        2.0513734232059906
+      ],
+      "descriptive_signflip_two_sided_p": 0.0390625,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.234375,
+      "descriptive_holm24_p": 0.703125
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 59.72325139796524,
+      "ablation_model_macro_mre_percent": 61.69279468593945,
+      "paired_model_macro_difference_pp": 1.9695432879742016,
+      "model_cluster_percentile95_pp": [
+        0.33942741221602996,
+        3.8398843720743834
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -0.10142964863249522,
+        5.479361073013887
+      ],
+      "full_micro_mre_percent": 68.14974414943107,
+      "ablation_micro_mre_percent": 69.82620451748899,
+      "paired_micro_difference_pp": 1.6764603680579182,
+      "micro_model_cluster_percentile95_pp": [
+        0.5616567523562906,
+        3.0043583653470085
+      ],
+      "models_with_positive_difference": 9,
+      "models_with_negative_difference": 3,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.8075100393973059,
+        "audio_dilated_ref": 1.2609393091409828,
+        "causal_lm_ref": -1.4167626260352677,
+        "densenet121": 0.6690240168711284,
+        "dual_encoder_ref": -1.5577565203147898,
+        "efficientnet_b0": 1.6135256001081615,
+        "mobilenet_v2": 0.02794439470744834,
+        "resnet18": 4.562983217160323,
+        "resnet50": 2.4501958130762604,
+        "squeezenet1_1": -0.6424429844601824,
+        "text_cnn_ref": 7.988037920119595,
+        "text_encoder_ref": 7.871321275919452
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 3.6873155014464687,
+        "22": 0.30403933134497585,
+        "33": 5.10638812857533,
+        "44": 0.26538888781266284,
+        "55": 0.4845845906915696
+      },
+      "leave_one_model_out_macro_range_pp": [
+        1.4224074123246204,
+        2.2902069069095643
+      ],
+      "descriptive_signflip_two_sided_p": 0.05419921875,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.27099609375,
+      "descriptive_holm24_p": 0.88818359375
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 169.73601036529686,
+      "ablation_model_macro_mre_percent": 169.448590253715,
+      "paired_model_macro_difference_pp": -0.2874201115818941,
+      "model_cluster_percentile95_pp": [
+        -1.755222022801232,
+        1.3259904554438375
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -3.33062588851478,
+        3.945474780276478
+      ],
+      "full_micro_mre_percent": 171.02632974478053,
+      "ablation_micro_mre_percent": 172.16013602442237,
+      "paired_micro_difference_pp": 1.1338062796418034,
+      "micro_model_cluster_percentile95_pp": [
+        -2.235659183925236,
+        3.712726241985665
+      ],
+      "models_with_positive_difference": 3,
+      "models_with_negative_difference": 9,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.7557197019711168,
+        "audio_dilated_ref": -0.6032308396304756,
+        "causal_lm_ref": -0.4772606816436905,
+        "densenet121": -4.715466098314766,
+        "dual_encoder_ref": -1.8877424024989296,
+        "efficientnet_b0": 6.100524343261736,
+        "mobilenet_v2": 2.931180239466218,
+        "resnet18": -3.4729785773181563,
+        "resnet50": -0.860515847576346,
+        "squeezenet1_1": -1.1122088939530443,
+        "text_cnn_ref": -0.5639424836145395,
+        "text_encoder_ref": -0.5431197991318527
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -2.8206904172218947,
+        "22": 5.114461564662274,
+        "33": -0.1766115447348883,
+        "44": 0.7590005582989079,
+        "55": -4.313260718913869
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -0.868142334749497,
+        0.11512952357563969
+      ],
+      "descriptive_signflip_two_sided_p": 0.73681640625,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.73681640625,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 169.73601036529686,
+      "ablation_model_macro_mre_percent": 167.50531199868593,
+      "paired_model_macro_difference_pp": -2.2306983666109432,
+      "model_cluster_percentile95_pp": [
+        -4.137376312281238,
+        -0.3324673587869197
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -7.423688769527816,
+        0.8959938062072793
+      ],
+      "full_micro_mre_percent": 171.02632974478053,
+      "ablation_micro_mre_percent": 166.74960663861694,
+      "paired_micro_difference_pp": -4.276723106163613,
+      "micro_model_cluster_percentile95_pp": [
+        -5.584208598679384,
+        -2.5344173098430787
+      ],
+      "models_with_positive_difference": 3,
+      "models_with_negative_difference": 9,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 3.5322732610970577,
+        "audio_dilated_ref": 2.5474197150178526,
+        "causal_lm_ref": -1.4221513212497654,
+        "densenet121": -4.331824612899626,
+        "dual_encoder_ref": -1.176812660764557,
+        "efficientnet_b0": -4.638228303070508,
+        "mobilenet_v2": -2.3448481227032376,
+        "resnet18": -7.742431552440678,
+        "resnet50": -7.051293326303991,
+        "squeezenet1_1": -3.8594191277331644,
+        "text_cnn_ref": 1.242543373877902,
+        "text_encoder_ref": -1.5236077221586015
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 0.7961421531997767,
+        "22": -9.903934573775805,
+        "33": -0.4937474247793657,
+        "44": -2.0242840485173588,
+        "55": 0.4723320608180366
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -2.754604878220761,
+        -1.7296317133536945
+      ],
+      "descriptive_signflip_two_sided_p": 0.05224609375,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.15673828125,
+      "descriptive_holm24_p": 0.88818359375
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 169.73601036529686,
+      "ablation_model_macro_mre_percent": 165.17392065133473,
+      "paired_model_macro_difference_pp": -4.5620897139621714,
+      "model_cluster_percentile95_pp": [
+        -7.252331735095242,
+        -1.7120445808483469
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -12.093646162738892,
+        3.1178577529274762
+      ],
+      "full_micro_mre_percent": 171.02632974478053,
+      "ablation_micro_mre_percent": 164.86219396489665,
+      "paired_micro_difference_pp": -6.1641357798838765,
+      "micro_model_cluster_percentile95_pp": [
+        -8.44320115637952,
+        -2.222777181813165
+      ],
+      "models_with_positive_difference": 4,
+      "models_with_negative_difference": 8,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.927298057749357,
+        "audio_dilated_ref": 0.4363005048225602,
+        "causal_lm_ref": -9.61164231422745,
+        "densenet121": 4.674244303352433,
+        "dual_encoder_ref": 0.013138644466243932,
+        "efficientnet_b0": -8.671000043655193,
+        "mobilenet_v2": -4.931506850274448,
+        "resnet18": -8.722715695345105,
+        "resnet50": -9.28449917803681,
+        "squeezenet1_1": 0.25851121878846184,
+        "text_cnn_ref": -7.811864675115833,
+        "text_encoder_ref": -10.166744424571556
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -3.4972803761711737,
+        "22": -16.947273874013103,
+        "33": 6.557910635106097,
+        "44": -2.2298408719661587,
+        "55": -6.693964082766519
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -5.401756442808954,
+        -4.0525756493613185
+      ],
+      "descriptive_signflip_two_sided_p": 0.0146484375,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.06103515625,
+      "descriptive_holm24_p": 0.29296875
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 169.73601036529686,
+      "ablation_model_macro_mre_percent": 165.0149203733784,
+      "paired_model_macro_difference_pp": -4.721089991918492,
+      "model_cluster_percentile95_pp": [
+        -6.865861357206094,
+        -2.800176547516206
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -12.972560565129578,
+        0.7573670616049439
+      ],
+      "full_micro_mre_percent": 171.02632974478053,
+      "ablation_micro_mre_percent": 164.89551467980448,
+      "paired_micro_difference_pp": -6.130815064976019,
+      "micro_model_cluster_percentile95_pp": [
+        -7.7832738164927004,
+        -4.212986285026159
+      ],
+      "models_with_positive_difference": 0,
+      "models_with_negative_difference": 12,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -3.4755542826226304,
+        "audio_dilated_ref": -3.6545880508731843,
+        "causal_lm_ref": -2.5582133144768364,
+        "densenet121": -1.6684171308474958,
+        "dual_encoder_ref": -0.41336318523951265,
+        "efficientnet_b0": -5.98817560859357,
+        "mobilenet_v2": -5.6488409624982125,
+        "resnet18": -11.855688657033742,
+        "resnet50": -7.809664585719946,
+        "squeezenet1_1": -10.590269296315151,
+        "text_cnn_ref": -0.5214110705564906,
+        "text_encoder_ref": -2.4688937582451387
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -0.7657929153072066,
+        "22": -19.755848290898083,
+        "33": -1.1694813451028203,
+        "44": -2.7082883264431907,
+        "55": 0.7939609181588368
+      },
+      "leave_one_model_out_macro_range_pp": [
+        -5.112701519798399,
+        -4.072490113271652
+      ],
+      "descriptive_signflip_two_sided_p": 0.00048828125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.0029296875,
+      "descriptive_holm24_p": 0.01171875
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 169.73601036529686,
+      "ablation_model_macro_mre_percent": 170.75788595788075,
+      "paired_model_macro_difference_pp": 1.0218755925838832,
+      "model_cluster_percentile95_pp": [
+        -0.019093854874274202,
+        2.051894884655538
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -0.14424829856766394,
+        2.4798297678364767
+      ],
+      "full_micro_mre_percent": 171.02632974478053,
+      "ablation_micro_mre_percent": 171.32139873709164,
+      "paired_micro_difference_pp": 0.2950689923111116,
+      "micro_model_cluster_percentile95_pp": [
+        -0.24930623948008815,
+        1.035163268640945
+      ],
+      "models_with_positive_difference": 8,
+      "models_with_negative_difference": 4,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.2776885191313454,
+        "audio_dilated_ref": 2.2981034255297543,
+        "causal_lm_ref": -1.9399774607687874,
+        "densenet121": 0.6344806277724586,
+        "dual_encoder_ref": 4.584893447533403,
+        "efficientnet_b0": -0.1290048274580556,
+        "mobilenet_v2": 1.0210905837813697,
+        "resnet18": 1.6773514911089393,
+        "resnet50": -0.36810247826501835,
+        "squeezenet1_1": 1.314948346807455,
+        "text_cnn_ref": 2.7961465849032665,
+        "text_encoder_ref": -1.905111149069532
+      },
+      "per_seed_macro_differences_pp": {
+        "11": 0.832844011292797,
+        "22": 2.527093168979339,
+        "33": 0.9424660433619643,
+        "44": -0.013604274505858882,
+        "55": 0.8205790137911748
+      },
+      "leave_one_model_out_macro_range_pp": [
+        0.6979648784975631,
+        1.2911349610704894
+      ],
+      "descriptive_signflip_two_sided_p": 0.09033203125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.1806640625,
+      "descriptive_holm24_p": 1.0
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "sign": "ablation minus full RGAT; positive favors full",
+      "n_model_clusters": 12,
+      "n_training_seeds": 5,
+      "n_records_per_seed": 13905,
+      "full_model_macro_mre_percent": 169.73601036529686,
+      "ablation_model_macro_mre_percent": 172.87723603450513,
+      "paired_model_macro_difference_pp": 3.141225669208231,
+      "model_cluster_percentile95_pp": [
+        1.1791780105599747,
+        5.251235353803847
+      ],
+      "crossed_model_seed_percentile95_pp": [
+        -0.78945197460398,
+        8.54847309047834
+      ],
+      "full_micro_mre_percent": 171.02632974478053,
+      "ablation_micro_mre_percent": 172.4395630748256,
+      "paired_micro_difference_pp": 1.4132333300450766,
+      "micro_model_cluster_percentile95_pp": [
+        -0.12570587864854765,
+        3.6044793921918092
+      ],
+      "models_with_positive_difference": 9,
+      "models_with_negative_difference": 3,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 4.531014678040552,
+        "audio_dilated_ref": 4.109923348843296,
+        "causal_lm_ref": 3.318386026223479,
+        "densenet121": -2.0657700950118367,
+        "dual_encoder_ref": 11.19282266298644,
+        "efficientnet_b0": 0.4823858882771276,
+        "mobilenet_v2": -1.4774647112986998,
+        "resnet18": 7.583487314359468,
+        "resnet50": 3.128829506174887,
+        "squeezenet1_1": -0.5681474434084407,
+        "text_cnn_ref": 4.153002446229453,
+        "text_encoder_ref": 3.306238409083053
+      },
+      "per_seed_macro_differences_pp": {
+        "11": -0.4627796152510264,
+        "22": 11.888375439973212,
+        "33": -1.47145455149269,
+        "44": 4.033500151151611,
+        "55": 1.7184869216600507
+      },
+      "leave_one_model_out_macro_range_pp": [
+        2.4092623061374847,
+        3.6145889205009643
+      ],
+      "descriptive_signflip_two_sided_p": 0.01220703125,
+      "same_record_support_verified": true,
+      "descriptive_holm6_p": 0.06103515625,
+      "descriptive_holm24_p": 0.25634765625
+    }
+  ],
+  "per_device_descriptive": [
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 0.3414990690522784,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.7928388578626698,
+        "audio_dilated_ref": -0.1799597417474654,
+        "causal_lm_ref": 0.6757797408410294,
+        "densenet121": -0.22838327230099878,
+        "dual_encoder_ref": 2.222360631142891,
+        "efficientnet_b0": -0.01941278942967081,
+        "mobilenet_v2": -0.36631747294049116,
+        "resnet18": 0.5137595178952717,
+        "resnet50": 0.558022582384498,
+        "squeezenet1_1": 0.10121915056241773,
+        "text_cnn_ref": 1.1702195766897208,
+        "text_encoder_ref": 0.44353976339280876
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 1.8895926053028635,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.020356608054294442,
+        "audio_dilated_ref": -1.1139950399674816,
+        "causal_lm_ref": 2.8585676654847014,
+        "densenet121": 0.26579039321384174,
+        "dual_encoder_ref": 4.648882170040918,
+        "efficientnet_b0": 1.1300096543786358,
+        "mobilenet_v2": -0.8300632568897094,
+        "resnet18": 0.7184388924863775,
+        "resnet50": 0.7257302468757022,
+        "squeezenet1_1": -0.12603464925643743,
+        "text_cnn_ref": 7.899371754225578,
+        "text_encoder_ref": 6.478056824987943
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 0.2082334883151423,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.5943388068199502,
+        "audio_dilated_ref": 0.17495239985248892,
+        "causal_lm_ref": 0.9750946682717435,
+        "densenet121": -0.34306015351303315,
+        "dual_encoder_ref": 0.9723223705479359,
+        "efficientnet_b0": -0.8748327459780816,
+        "mobilenet_v2": 0.20127554523779154,
+        "resnet18": -0.7146627266443834,
+        "resnet50": -0.18480548993375123,
+        "squeezenet1_1": 1.0591422858678328,
+        "text_cnn_ref": 7.187893421188009,
+        "text_encoder_ref": -4.360178908294895
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.29598591802144497,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -5.480863632915872,
+        "audio_dilated_ref": -2.302851811656446,
+        "causal_lm_ref": 0.13275755770755943,
+        "densenet121": 0.06480328394458999,
+        "dual_encoder_ref": 1.0378024242980946,
+        "efficientnet_b0": -0.19754042460489035,
+        "mobilenet_v2": 0.49868445127911315,
+        "resnet18": 1.2272690868305272,
+        "resnet50": 1.0425757309454826,
+        "squeezenet1_1": 0.6951971440407807,
+        "text_cnn_ref": -0.46408064486376094,
+        "text_encoder_ref": 0.194415818737482
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.7084163619651532,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.03143312009958682,
+        "audio_dilated_ref": -0.8751313832584735,
+        "causal_lm_ref": -0.10378724268944982,
+        "densenet121": 0.45199064316259985,
+        "dual_encoder_ref": 0.5518040508614316,
+        "efficientnet_b0": 0.8096384197575697,
+        "mobilenet_v2": 0.030944858854196497,
+        "resnet18": 2.6443146634247063,
+        "resnet50": 2.6146903832269075,
+        "squeezenet1_1": 0.42711729937249543,
+        "text_cnn_ref": 2.4438838620907486,
+        "text_encoder_ref": -0.5259023313204798
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -0.4849671490952614,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -2.88195600832282,
+        "audio_dilated_ref": -4.491209663327158,
+        "causal_lm_ref": 1.1750317083322253,
+        "densenet121": -0.18144979821887577,
+        "dual_encoder_ref": 1.1725518303019344,
+        "efficientnet_b0": -0.0370620616643562,
+        "mobilenet_v2": -0.10270866653766811,
+        "resnet18": -0.10308909892379411,
+        "resnet50": -1.1198376855108543,
+        "squeezenet1_1": 0.40577155492711503,
+        "text_cnn_ref": 1.1709174239139208,
+        "text_encoder_ref": -0.8265653241128065
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 0.36806095868714944,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.09521312202019895,
+        "audio_dilated_ref": 0.82808602293911,
+        "causal_lm_ref": 3.2648620650150777,
+        "densenet121": -0.11623670118019695,
+        "dual_encoder_ref": -2.2149364627064227,
+        "efficientnet_b0": -0.315839753477946,
+        "mobilenet_v2": 0.8228729586191751,
+        "resnet18": -7.412692445271538,
+        "resnet50": -3.6043159676758307,
+        "squeezenet1_1": 2.4073299266876496,
+        "text_cnn_ref": 6.042358610129376,
+        "text_encoder_ref": 4.810456373187538
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -0.17059652891581142,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.997903107598211,
+        "audio_dilated_ref": -2.3060824664375614,
+        "causal_lm_ref": -0.4054128715399547,
+        "densenet121": 0.1805496704367081,
+        "dual_encoder_ref": 1.6629502141028334,
+        "efficientnet_b0": -5.914602418052041,
+        "mobilenet_v2": 0.181019286459894,
+        "resnet18": -5.876872158043948,
+        "resnet50": -3.0347474628680695,
+        "squeezenet1_1": 2.648923837493066,
+        "text_cnn_ref": 12.563392965115769,
+        "text_encoder_ref": 0.25162616394178017
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.5843181181255493,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -3.8572734142481964,
+        "audio_dilated_ref": -2.6676211991604495,
+        "causal_lm_ref": 1.0739722484247394,
+        "densenet121": 0.08180913282266848,
+        "dual_encoder_ref": -0.6326974791222363,
+        "efficientnet_b0": -0.6203389545287562,
+        "mobilenet_v2": 0.6366191535010672,
+        "resnet18": -1.263818410265317,
+        "resnet50": -1.6120620418613163,
+        "squeezenet1_1": 1.6906717338643245,
+        "text_cnn_ref": 0.141959482287902,
+        "text_encoder_ref": 0.016962330778978362
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.5062294041873674,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.9587777615227245,
+        "audio_dilated_ref": -1.6229796717959646,
+        "causal_lm_ref": 0.9317352284141335,
+        "densenet121": 0.0509004407391901,
+        "dual_encoder_ref": -2.4739876067532784,
+        "efficientnet_b0": 0.10488674023367764,
+        "mobilenet_v2": 0.5152613360227328,
+        "resnet18": 4.57644715287669,
+        "resnet50": 4.739499183675935,
+        "squeezenet1_1": 1.3581823474012038,
+        "text_cnn_ref": -0.35066481810997063,
+        "text_encoder_ref": -0.7957497209332164
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 2.2080015565334032,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 10.08506434967163,
+        "audio_dilated_ref": 13.91235706000655,
+        "causal_lm_ref": -1.399115023633361,
+        "densenet121": 3.0909328436491785,
+        "dual_encoder_ref": 2.6639008523053263,
+        "efficientnet_b0": 1.7523154466740436,
+        "mobilenet_v2": 2.6426684167086574,
+        "resnet18": -4.765875144888189,
+        "resnet50": -3.8534915787037405,
+        "squeezenet1_1": -0.4671542154666592,
+        "text_cnn_ref": -4.161042096842597,
+        "text_encoder_ref": 6.995457768919996
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 7.117625050890827,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.9380713094823968,
+        "audio_dilated_ref": 1.0322928580018973,
+        "causal_lm_ref": 19.274107325411926,
+        "densenet121": -0.9251104940705833,
+        "dual_encoder_ref": 31.304987465082736,
+        "efficientnet_b0": -2.917370413135355,
+        "mobilenet_v2": -3.7575935685304467,
+        "resnet18": -7.862363146302239,
+        "resnet50": -5.732194993841455,
+        "squeezenet1_1": -1.5157882277820733,
+        "text_cnn_ref": 27.834736634211342,
+        "text_encoder_ref": 29.613868481126566
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 0.38160241724364524,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.032609505634641,
+        "audio_dilated_ref": -1.4291515880733907,
+        "causal_lm_ref": 27.064717770714086,
+        "densenet121": -0.8934649568943546,
+        "dual_encoder_ref": 1.8589973584525248,
+        "efficientnet_b0": -18.903245064649646,
+        "mobilenet_v2": -1.7569494642371595,
+        "resnet18": -8.45163303637259,
+        "resnet50": -2.7938246875422172,
+        "squeezenet1_1": -2.1560351142781764,
+        "text_cnn_ref": -22.73419843681563,
+        "text_encoder_ref": 35.806625732254936
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.14982647047274578,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.2547531124506128,
+        "audio_dilated_ref": 1.51029063661931,
+        "causal_lm_ref": 6.115068715483368,
+        "densenet121": -0.8011085724467113,
+        "dual_encoder_ref": -0.43158576558625217,
+        "efficientnet_b0": 1.285820808530821,
+        "mobilenet_v2": -0.2937500749725169,
+        "resnet18": -2.01294041303819,
+        "resnet50": -2.8280135604952843,
+        "squeezenet1_1": 0.17078174097752014,
+        "text_cnn_ref": -1.371432298759526,
+        "text_encoder_ref": -3.3958019744361008
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 2.4622935436341282,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 5.125058073312093,
+        "audio_dilated_ref": 9.243604528271186,
+        "causal_lm_ref": 4.776360684494895,
+        "densenet121": -0.08230366964738371,
+        "dual_encoder_ref": 4.595376498096512,
+        "efficientnet_b0": 0.030817391885978047,
+        "mobilenet_v2": 0.7617085158924951,
+        "resnet18": -5.969496780013081,
+        "resnet50": -2.728221260459856,
+        "squeezenet1_1": -0.9632028321350489,
+        "text_cnn_ref": 7.824827692679401,
+        "text_encoder_ref": 6.93299368123235
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -1.7506530705266805,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -9.477651532613969,
+        "audio_dilated_ref": -13.33178922910729,
+        "causal_lm_ref": 1.2499237107466505,
+        "densenet121": -0.650101733309553,
+        "dual_encoder_ref": 5.081373077801495,
+        "efficientnet_b0": -0.712937414963943,
+        "mobilenet_v2": 0.801292682779648,
+        "resnet18": 0.5947597862819941,
+        "resnet50": -0.8174563985277612,
+        "squeezenet1_1": 0.7882117738846304,
+        "text_cnn_ref": -1.470490163308973,
+        "text_encoder_ref": -3.0629714059830966
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": -0.09084027232453777,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.671429395380663,
+        "audio_dilated_ref": -0.5748096847433234,
+        "causal_lm_ref": 31.4725420405021,
+        "densenet121": -0.013871371959130584,
+        "dual_encoder_ref": 5.977990369778613,
+        "efficientnet_b0": 0.7197363729747686,
+        "mobilenet_v2": -0.20780465466037623,
+        "resnet18": -6.395144703175639,
+        "resnet50": -3.1985449561910477,
+        "squeezenet1_1": 3.188342699810078,
+        "text_cnn_ref": -15.225336070831647,
+        "text_encoder_ref": -15.16175391401819
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 1.15967500594361,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.5774661796058516,
+        "audio_dilated_ref": -2.684802251450244,
+        "causal_lm_ref": 27.59926407837837,
+        "densenet121": 0.44745394267937366,
+        "dual_encoder_ref": 3.9167777863918403,
+        "efficientnet_b0": -6.03278904432853,
+        "mobilenet_v2": 1.503593353265506,
+        "resnet18": -5.752700114625244,
+        "resnet50": -3.228264699676839,
+        "squeezenet1_1": 0.2378753745132324,
+        "text_cnn_ref": 7.7258851271236155,
+        "text_encoder_ref": -8.238727301341907
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.09885925595129215,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.529680773339149,
+        "audio_dilated_ref": -2.098675089282149,
+        "causal_lm_ref": 5.63183541038479,
+        "densenet121": -0.12802360608453647,
+        "dual_encoder_ref": 0.07907849431161522,
+        "efficientnet_b0": -0.2449333349679763,
+        "mobilenet_v2": -0.01253620606259127,
+        "resnet18": -0.8430537897575023,
+        "resnet50": -2.2280437096310526,
+        "squeezenet1_1": 0.8118219980457061,
+        "text_cnn_ref": -0.8011862083084849,
+        "text_encoder_ref": 0.17708574327582444
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.04717037828123002,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.72610629853031,
+        "audio_dilated_ref": -1.5689424771738494,
+        "causal_lm_ref": 3.329075355500564,
+        "densenet121": 0.01442546219180624,
+        "dual_encoder_ref": -3.2555633119546985,
+        "efficientnet_b0": -0.802437001221528,
+        "mobilenet_v2": -0.1660133700691394,
+        "resnet18": 1.6842120544967316,
+        "resnet50": 2.639130882905764,
+        "squeezenet1_1": 1.6740191471929953,
+        "text_cnn_ref": -0.14051073947735518,
+        "text_encoder_ref": -2.115245164486221
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 0.5887159805469925,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.7881950292494104,
+        "audio_dilated_ref": 2.6350335068095094,
+        "causal_lm_ref": 0.020712526593339813,
+        "densenet121": -0.025233892682899703,
+        "dual_encoder_ref": 0.948809593684803,
+        "efficientnet_b0": 0.10670455383503655,
+        "mobilenet_v2": 0.03647921087513819,
+        "resnet18": 0.012625956418937163,
+        "resnet50": -0.0002069891286817585,
+        "squeezenet1_1": 0.009087870348196211,
+        "text_cnn_ref": 0.6015578749832436,
+        "text_encoder_ref": -0.06917347442212321
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 0.546850465879886,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.3847573648312558,
+        "audio_dilated_ref": 1.7644250908927377,
+        "causal_lm_ref": -0.5273883201178579,
+        "densenet121": 0.003996727950346102,
+        "dual_encoder_ref": 2.5582832405422566,
+        "efficientnet_b0": -0.1174220435046246,
+        "mobilenet_v2": -0.1418727775075243,
+        "resnet18": 0.02597178018346956,
+        "resnet50": -0.014862599415109328,
+        "squeezenet1_1": 0.2671742958804618,
+        "text_cnn_ref": 3.2120426176917154,
+        "text_encoder_ref": -0.8528997868684955
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -0.1197484066014108,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.9606449499904712,
+        "audio_dilated_ref": -0.8229421840069024,
+        "causal_lm_ref": 0.01058930591658425,
+        "densenet121": -0.02917637706898423,
+        "dual_encoder_ref": -0.5061795545126828,
+        "efficientnet_b0": 0.7836721076929515,
+        "mobilenet_v2": -0.01585497697617316,
+        "resnet18": 0.01613117888121016,
+        "resnet50": 0.018340215727162917,
+        "squeezenet1_1": -0.014424109226082286,
+        "text_cnn_ref": 0.5581209282177453,
+        "text_encoder_ref": -0.47461246387128736
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.7755983546879862,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 3.1498464412050167,
+        "audio_dilated_ref": 2.5513825405600272,
+        "causal_lm_ref": -0.20217370878988977,
+        "densenet121": 0.025145342125012314,
+        "dual_encoder_ref": 3.3944587559996102,
+        "efficientnet_b0": 0.054962445758020194,
+        "mobilenet_v2": 0.074595106884167,
+        "resnet18": 0.04644424791199918,
+        "resnet50": 0.0046175227613112,
+        "squeezenet1_1": -0.05016645726715757,
+        "text_cnn_ref": 0.1771275089334053,
+        "text_encoder_ref": 0.08094051017431166
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.48722303516019044,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.4735574968534941,
+        "audio_dilated_ref": 1.2864137399213194,
+        "causal_lm_ref": 0.1631212667255344,
+        "densenet121": 0.0165302061681111,
+        "dual_encoder_ref": 2.039981219350042,
+        "efficientnet_b0": -0.04092846361701483,
+        "mobilenet_v2": 0.017744827055201407,
+        "resnet18": 0.01923387711753626,
+        "resnet50": -0.06350678339266998,
+        "squeezenet1_1": 0.19855266090079554,
+        "text_cnn_ref": 0.7973987878152732,
+        "text_encoder_ref": -0.06142241297533705
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 0.3825220568559877,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.9630873206380193,
+        "audio_dilated_ref": 2.52397496839322,
+        "causal_lm_ref": -0.005447900779232056,
+        "densenet121": -0.49902946629613837,
+        "dual_encoder_ref": 0.8690152337809957,
+        "efficientnet_b0": 0.1756685633460118,
+        "mobilenet_v2": -0.8491936193950288,
+        "resnet18": 0.6342146311858259,
+        "resnet50": -0.5516641108635343,
+        "squeezenet1_1": -0.06765647439485035,
+        "text_cnn_ref": 1.4358753838331602,
+        "text_encoder_ref": -0.0385798471765957
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 0.1141828893847947,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.0335666985476981,
+        "audio_dilated_ref": -0.6830391067529036,
+        "causal_lm_ref": 0.2896733029218667,
+        "densenet121": -0.2059034215993614,
+        "dual_encoder_ref": 10.006289051740023,
+        "efficientnet_b0": 0.1984449434993759,
+        "mobilenet_v2": -0.5048717371771632,
+        "resnet18": -7.410273782556288,
+        "resnet50": -3.9687141014327874,
+        "squeezenet1_1": -1.8663971821232321,
+        "text_cnn_ref": 4.167465825590162,
+        "text_encoder_ref": 2.381087579055542
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -0.9097878709563189,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.0743941780224526,
+        "audio_dilated_ref": 0.44757236044949894,
+        "causal_lm_ref": -0.13510262963550412,
+        "densenet121": -0.5254859447256542,
+        "dual_encoder_ref": 0.9911677447117728,
+        "efficientnet_b0": 3.8533594551336625,
+        "mobilenet_v2": -0.8204593332842476,
+        "resnet18": -6.220666405572313,
+        "resnet50": -2.8944693481131165,
+        "squeezenet1_1": -0.08691199376522445,
+        "text_cnn_ref": 3.637404323527825,
+        "text_encoder_ref": -8.089468502180072
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.1537401046352657,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.5863520665030433,
+        "audio_dilated_ref": 0.5306533911502779,
+        "causal_lm_ref": 0.239573698778428,
+        "densenet121": 0.09327270951710499,
+        "dual_encoder_ref": 1.701239517624437,
+        "efficientnet_b0": -0.32809706055781634,
+        "mobilenet_v2": 0.69991726955787,
+        "resnet18": -0.4749809275378686,
+        "resnet50": -1.0836789070778352,
+        "squeezenet1_1": -0.7896616930717044,
+        "text_cnn_ref": 0.3636305070704023,
+        "text_encoder_ref": 0.3066606836668492
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 1.0786270869173806,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.4654349165614134,
+        "audio_dilated_ref": 1.3002118605568065,
+        "causal_lm_ref": -0.6991546030741095,
+        "densenet121": 0.12009473723625434,
+        "dual_encoder_ref": 1.1444430124089842,
+        "efficientnet_b0": -0.07056723373531355,
+        "mobilenet_v2": 0.9035086482711804,
+        "resnet18": 3.7354206314103533,
+        "resnet50": 4.118627963470463,
+        "squeezenet1_1": -0.11395049764983338,
+        "text_cnn_ref": 2.843749218351044,
+        "text_encoder_ref": -0.8042936107986763
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -18.793392267298213,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -2.3514298156147397,
+        "audio_dilated_ref": -4.341260556383934,
+        "causal_lm_ref": -2.2452872535627395,
+        "densenet121": -4.6827393491355,
+        "dual_encoder_ref": -10.91614028126312,
+        "efficientnet_b0": -40.52299431465172,
+        "mobilenet_v2": -48.409319305194906,
+        "resnet18": -42.29020115984225,
+        "resnet50": -32.801094248691854,
+        "squeezenet1_1": -33.432570344959814,
+        "text_cnn_ref": 0.40685751368989487,
+        "text_encoder_ref": -3.9345280919678967
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 5.397857172732947,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.0352789999653949,
+        "audio_dilated_ref": 3.8597261835543404,
+        "causal_lm_ref": 11.172530708441526,
+        "densenet121": -1.1279786154416374,
+        "dual_encoder_ref": 6.596885563254124,
+        "efficientnet_b0": 3.4874145862142902,
+        "mobilenet_v2": 7.385539700830468,
+        "resnet18": 5.244653558128551,
+        "resnet50": 1.4439887820634862,
+        "squeezenet1_1": 6.975315587481353,
+        "text_cnn_ref": 8.41143073534751,
+        "text_encoder_ref": 10.289500282955965
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 0.8714513540855435,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.3344230224709737,
+        "audio_dilated_ref": -1.8291035403441211,
+        "causal_lm_ref": 4.6185828403098155,
+        "densenet121": 0.6353966267012394,
+        "dual_encoder_ref": 0.024334545556975767,
+        "efficientnet_b0": 0.5610225462073044,
+        "mobilenet_v2": 0.8354734802728947,
+        "resnet18": 0.32628987689087224,
+        "resnet50": 1.0624945906423129,
+        "squeezenet1_1": 0.7010046272980587,
+        "text_cnn_ref": 0.5946243516077353,
+        "text_encoder_ref": 4.261719326354408
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.14499097445351822,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.6127494554178885,
+        "audio_dilated_ref": 0.2558742258134609,
+        "causal_lm_ref": -0.15305122308554925,
+        "densenet121": 0.3115311171847956,
+        "dual_encoder_ref": 0.10454963400101454,
+        "efficientnet_b0": -0.03156209334262701,
+        "mobilenet_v2": -0.125706080107953,
+        "resnet18": 0.8053560862901958,
+        "resnet50": -0.015583067238565382,
+        "squeezenet1_1": -0.10779642289899646,
+        "text_cnn_ref": 0.2028074614774601,
+        "text_encoder_ref": -0.11927740006890598
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.40262261686290984,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.9111573530088236,
+        "audio_dilated_ref": 0.8841781050158113,
+        "causal_lm_ref": -0.6398245773786014,
+        "densenet121": 2.674842699858869,
+        "dual_encoder_ref": -1.3173073985343584,
+        "efficientnet_b0": 0.24492684738487613,
+        "mobilenet_v2": 0.6958694321522515,
+        "resnet18": 0.6745068969719163,
+        "resnet50": 1.055332491856586,
+        "squeezenet1_1": 0.18581897290562113,
+        "text_cnn_ref": 0.06929446336104558,
+        "text_encoder_ref": -0.6073238842479224
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -1.0583136849489825,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 16.76158390781008,
+        "audio_dilated_ref": 12.15197191727011,
+        "causal_lm_ref": 14.461405783227146,
+        "densenet121": -9.056930366956045,
+        "dual_encoder_ref": 1.8001476406665253,
+        "efficientnet_b0": -28.552687111441713,
+        "mobilenet_v2": -31.730542272262,
+        "resnet18": -7.171469306804063,
+        "resnet50": -9.106069209211162,
+        "squeezenet1_1": -11.931507725926316,
+        "text_cnn_ref": 26.03250933689589,
+        "text_encoder_ref": 13.641823187343752
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": -8.801069064930148,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.5777799879515617,
+        "audio_dilated_ref": -3.9373690233514163,
+        "causal_lm_ref": -4.201915493642218,
+        "densenet121": -2.3057465808938877,
+        "dual_encoder_ref": -63.934117266435216,
+        "efficientnet_b0": -0.25700884752579656,
+        "mobilenet_v2": -1.8467061464339927,
+        "resnet18": -7.403233247302981,
+        "resnet50": -2.0015096045660443,
+        "squeezenet1_1": -6.739169912145285,
+        "text_cnn_ref": -9.14527177559949,
+        "text_encoder_ref": -2.2630008933138703
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -0.18087452271902996,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.0444972367814087,
+        "audio_dilated_ref": -1.2242346311587717,
+        "causal_lm_ref": 1.3415021919493455,
+        "densenet121": -0.3419345093003539,
+        "dual_encoder_ref": 1.013826804577543,
+        "efficientnet_b0": -0.6631158243422606,
+        "mobilenet_v2": -0.49288879402006913,
+        "resnet18": 0.042336466393416414,
+        "resnet50": 0.12812633342341775,
+        "squeezenet1_1": -0.5127284013283925,
+        "text_cnn_ref": -1.1036617037082153,
+        "text_encoder_ref": 0.6867750316673895
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.08202501714825529,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.006589518540937742,
+        "audio_dilated_ref": -0.07758915128458616,
+        "causal_lm_ref": 0.01238539233240126,
+        "densenet121": -0.09206096564031194,
+        "dual_encoder_ref": 0.5571862246236454,
+        "efficientnet_b0": 0.01888035962495662,
+        "mobilenet_v2": -0.062462155184092025,
+        "resnet18": 0.6491515554178303,
+        "resnet50": 0.025347659484746828,
+        "squeezenet1_1": -0.00370553835605511,
+        "text_cnn_ref": -0.06161532181395416,
+        "text_encoder_ref": 0.012192628033544584
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 1.2366458634648045,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.2533042713330604,
+        "audio_dilated_ref": 0.7510230700417928,
+        "causal_lm_ref": 1.2091677083165249,
+        "densenet121": 0.496186418257004,
+        "dual_encoder_ref": 1.8680075095645572,
+        "efficientnet_b0": 0.9002622835276843,
+        "mobilenet_v2": 1.8959827514411784,
+        "resnet18": 2.3603575392960208,
+        "resnet50": 1.9267900375626597,
+        "squeezenet1_1": 1.1381200526296138,
+        "text_cnn_ref": 0.4649476703622282,
+        "text_encoder_ref": 1.575601049245331
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -53.269791854094784,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -27.886258884308237,
+        "audio_dilated_ref": -23.674494435250082,
+        "causal_lm_ref": -32.225690700593944,
+        "densenet121": -55.121580825884216,
+        "dual_encoder_ref": -3.363015124714573,
+        "efficientnet_b0": -66.45626526013926,
+        "mobilenet_v2": -87.52971645762013,
+        "resnet18": -100.68472542213355,
+        "resnet50": -94.47743658535084,
+        "squeezenet1_1": -96.19828146844115,
+        "text_cnn_ref": -18.974785982000963,
+        "text_encoder_ref": -32.64525110270036
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": -4.51602874930294,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -5.20298327711638,
+        "audio_dilated_ref": -9.618085075774852,
+        "causal_lm_ref": -25.269774773801686,
+        "densenet121": 2.561310332749431,
+        "dual_encoder_ref": -10.084299460103404,
+        "efficientnet_b0": -4.5118611911512625,
+        "mobilenet_v2": -8.415134631265879,
+        "resnet18": 4.130507604045557,
+        "resnet50": 4.302516643391142,
+        "squeezenet1_1": 13.853181659859555,
+        "text_cnn_ref": 9.519627277287794,
+        "text_encoder_ref": -25.4573500997553
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -2.7182466735199515,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.644081053288683,
+        "audio_dilated_ref": 0.8137629338313815,
+        "causal_lm_ref": -3.6638744419630864,
+        "densenet121": 0.40997435532571813,
+        "dual_encoder_ref": -1.5835537176605412,
+        "efficientnet_b0": -7.318302164427351,
+        "mobilenet_v2": -6.220788119516766,
+        "resnet18": -6.0934762179445805,
+        "resnet50": -5.088482155403578,
+        "squeezenet1_1": -3.7130810898075177,
+        "text_cnn_ref": 2.971063974731609,
+        "text_encoder_ref": -4.7762844926933905
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.5763537392592916,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.948975568624024,
+        "audio_dilated_ref": -0.6217743162617366,
+        "causal_lm_ref": 0.45973285951646903,
+        "densenet121": -1.886470318602012,
+        "dual_encoder_ref": 0.17415145442221464,
+        "efficientnet_b0": -0.31042432533262854,
+        "mobilenet_v2": -0.5069480728370488,
+        "resnet18": -1.3101660695763524,
+        "resnet50": -1.3347261429194839,
+        "squeezenet1_1": -0.49743275333674664,
+        "text_cnn_ref": -0.5669916136851738,
+        "text_encoder_ref": 0.4337799961250241
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": -0.26554109991938785,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.7561387755518858,
+        "audio_dilated_ref": -1.854293733577962,
+        "causal_lm_ref": 0.9156664735493454,
+        "densenet121": -1.621978441755955,
+        "dual_encoder_ref": 0.7086855924147251,
+        "efficientnet_b0": -0.1188096394551927,
+        "mobilenet_v2": 0.12222892271242738,
+        "resnet18": -0.3442973561950722,
+        "resnet50": -0.7532780834908087,
+        "squeezenet1_1": -0.0937092231772256,
+        "text_cnn_ref": -0.4941565311337795,
+        "text_encoder_ref": 1.1035875966287303
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -30.85152067528031,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -12.210768803370412,
+        "audio_dilated_ref": -17.22045092043043,
+        "causal_lm_ref": -16.124316872425695,
+        "densenet121": -37.66686387805745,
+        "dual_encoder_ref": -19.296641991382334,
+        "efficientnet_b0": -38.26319673589097,
+        "mobilenet_v2": -50.61281755452423,
+        "resnet18": -57.60610689050517,
+        "resnet50": -47.56093609572062,
+        "squeezenet1_1": -43.57642381589212,
+        "text_cnn_ref": -12.872759507920316,
+        "text_encoder_ref": -17.206965037243997
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 8.4909937739737,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 7.502651247612937,
+        "audio_dilated_ref": 10.963687219850835,
+        "causal_lm_ref": 15.21726966152374,
+        "densenet121": 5.919218111319317,
+        "dual_encoder_ref": 11.29567456594347,
+        "efficientnet_b0": 8.278434548317215,
+        "mobilenet_v2": 11.273469347714885,
+        "resnet18": 5.325679761152599,
+        "resnet50": 7.467522049292523,
+        "squeezenet1_1": 13.484323601893802,
+        "text_cnn_ref": -3.155574139410963,
+        "text_encoder_ref": 8.319569312474044
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 2.2340646773264137,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.5940443072561978,
+        "audio_dilated_ref": 2.598931692015361,
+        "causal_lm_ref": 0.06328086051128647,
+        "densenet121": 1.509320029088903,
+        "dual_encoder_ref": -0.925684533511721,
+        "efficientnet_b0": -0.438501219419291,
+        "mobilenet_v2": 7.189258044831821,
+        "resnet18": 4.376566021324534,
+        "resnet50": 4.061363086392531,
+        "squeezenet1_1": 3.40438318477731,
+        "text_cnn_ref": 3.2403829233064743,
+        "text_encoder_ref": 0.13543173134355802
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.12313731062435533,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.24381970888371218,
+        "audio_dilated_ref": 0.3723626693619474,
+        "causal_lm_ref": -0.3825496867568256,
+        "densenet121": -0.6645261097584256,
+        "dual_encoder_ref": -0.13468959348451304,
+        "efficientnet_b0": -0.15917388533258883,
+        "mobilenet_v2": -0.24919249447468395,
+        "resnet18": 0.6682653909099336,
+        "resnet50": 0.0623084019601986,
+        "squeezenet1_1": -0.7081191743593329,
+        "text_cnn_ref": -0.20785890606141816,
+        "text_encoder_ref": -0.31829404838026776
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.40982038497810097,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.5712332257446062,
+        "audio_dilated_ref": 0.6665157546640826,
+        "causal_lm_ref": -0.25582668039003786,
+        "densenet121": 0.11766228353645962,
+        "dual_encoder_ref": 0.38809231449497594,
+        "efficientnet_b0": -0.30833064184435416,
+        "mobilenet_v2": 0.16780032824317134,
+        "resnet18": 1.7096481964025247,
+        "resnet50": 0.6541896843912812,
+        "squeezenet1_1": 0.644275054474724,
+        "text_cnn_ref": 0.9913696251010012,
+        "text_encoder_ref": -0.42878452508122356
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 21.291840296482977,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 46.78441781912599,
+        "audio_dilated_ref": 48.191643201654706,
+        "causal_lm_ref": -3.3279731660435736,
+        "densenet121": 7.475292572597154,
+        "dual_encoder_ref": 48.75094835412419,
+        "efficientnet_b0": 1.920845247581862,
+        "mobilenet_v2": 10.982705209515418,
+        "resnet18": 28.766278491452226,
+        "resnet50": 2.8004324232655273,
+        "squeezenet1_1": 19.526983530458274,
+        "text_cnn_ref": 44.31684642313641,
+        "text_encoder_ref": -0.6863365490724433
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 3.3176681553696894,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 5.7336706329518075,
+        "audio_dilated_ref": 7.711401212502403,
+        "causal_lm_ref": -11.221777128107162,
+        "densenet121": 0.7233099212005698,
+        "dual_encoder_ref": 31.754527221468976,
+        "efficientnet_b0": -2.1691165690855647,
+        "mobilenet_v2": 0.10927334709569948,
+        "resnet18": 1.5708913098063557,
+        "resnet50": -1.181087471959118,
+        "squeezenet1_1": 2.4214712038864192,
+        "text_cnn_ref": 14.783716483168819,
+        "text_encoder_ref": -10.424262298492934
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -0.9244457248705656,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.4629383757572496,
+        "audio_dilated_ref": -0.4385046283285241,
+        "causal_lm_ref": -1.8279753832151961,
+        "densenet121": -0.41463086291101986,
+        "dual_encoder_ref": -1.6420307884180692,
+        "efficientnet_b0": -1.4468251227123958,
+        "mobilenet_v2": -0.6267474011642634,
+        "resnet18": 0.11556318253582405,
+        "resnet50": -0.6933985779039894,
+        "squeezenet1_1": -0.44124029365764444,
+        "text_cnn_ref": -1.6025842273622999,
+        "text_encoder_ref": -1.6120362195519589
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.0725195036275555,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.18851103716203474,
+        "audio_dilated_ref": -0.15403903358589782,
+        "causal_lm_ref": 0.08949049921546973,
+        "densenet121": -0.01849301766300365,
+        "dual_encoder_ref": -0.552014883289306,
+        "efficientnet_b0": 0.10010630430380786,
+        "mobilenet_v2": 0.04350921146005897,
+        "resnet18": -0.004956963482179766,
+        "resnet50": 0.08437256088110619,
+        "squeezenet1_1": 0.007030952842751099,
+        "text_cnn_ref": -0.3306866446876924,
+        "text_encoder_ref": 0.053958007636254274
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": -0.22902216532500527,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.5197391028895085,
+        "audio_dilated_ref": -0.7009541266599929,
+        "causal_lm_ref": 0.04955880817403931,
+        "densenet121": -0.1628783591706643,
+        "dual_encoder_ref": -1.8577890541261155,
+        "efficientnet_b0": 0.4207726837829724,
+        "mobilenet_v2": 0.29279054399287335,
+        "resnet18": 0.1934111014528364,
+        "resnet50": 0.5482819017277666,
+        "squeezenet1_1": 0.10033626729491633,
+        "text_cnn_ref": -1.191212068564775,
+        "text_encoder_ref": 0.07915542108558876
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -3.4270717155332324,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -10.693966438228301,
+        "audio_dilated_ref": -11.863522004440174,
+        "causal_lm_ref": 2.8049878358610987,
+        "densenet121": -2.7307257235327858,
+        "dual_encoder_ref": -5.728033186292121,
+        "efficientnet_b0": 7.073674686900987,
+        "mobilenet_v2": 10.01654962814701,
+        "resnet18": -4.041813940525837,
+        "resnet50": -14.120580921115742,
+        "squeezenet1_1": -11.172393179475211,
+        "text_cnn_ref": -4.911434902577461,
+        "text_encoder_ref": 4.242397558879743
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": -0.9147257526430149,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -7.926003362554428,
+        "audio_dilated_ref": -8.757479662972154,
+        "causal_lm_ref": -1.728015425148377,
+        "densenet121": 4.097769012276317,
+        "dual_encoder_ref": 15.913568841810807,
+        "efficientnet_b0": 2.33429073056213,
+        "mobilenet_v2": -3.1687642801588556,
+        "resnet18": -2.13623100100838,
+        "resnet50": -1.1103911375598432,
+        "squeezenet1_1": -4.434357125999687,
+        "text_cnn_ref": -4.060266170079253,
+        "text_encoder_ref": -0.0008294508844604328
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -0.2756249353806703,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.7551641605810304,
+        "audio_dilated_ref": -2.30059287773583,
+        "causal_lm_ref": 2.6442424734467607,
+        "densenet121": 1.4108856530514704,
+        "dual_encoder_ref": -0.4292909434737037,
+        "efficientnet_b0": -1.7880965306333345,
+        "mobilenet_v2": -2.919658899942328,
+        "resnet18": 0.6486138647684576,
+        "resnet50": 0.024882756136156526,
+        "squeezenet1_1": -0.6591137703969256,
+        "text_cnn_ref": -1.0315249601133791,
+        "text_encoder_ref": 2.847318170905643
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.6731025172461459,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.3216821670782583,
+        "audio_dilated_ref": -0.4121646272708505,
+        "causal_lm_ref": -0.5041750371959737,
+        "densenet121": -0.3499362040418874,
+        "dual_encoder_ref": -0.8838303756414961,
+        "efficientnet_b0": -0.7923168357643924,
+        "mobilenet_v2": -0.7949582833774896,
+        "resnet18": -1.1002942985517483,
+        "resnet50": -1.0453523311031576,
+        "squeezenet1_1": -0.8482234757747773,
+        "text_cnn_ref": -0.47563029810796914,
+        "text_encoder_ref": -0.5486662730457496
+      }
+    },
+    {
+      "feature_mode": "strict",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": -1.1847645406437657,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.976740765314704,
+        "audio_dilated_ref": -0.9213962596253881,
+        "causal_lm_ref": -0.8819702519144028,
+        "densenet121": -0.7885212581269421,
+        "dual_encoder_ref": -1.9343888694115356,
+        "efficientnet_b0": -1.2551137718529444,
+        "mobilenet_v2": -1.5416532468766408,
+        "resnet18": -1.579818271630617,
+        "resnet50": -1.3348419335343378,
+        "squeezenet1_1": -1.278765858571186,
+        "text_cnn_ref": -0.9406127321194008,
+        "text_encoder_ref": -0.7833512687470892
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 0.2354328673254582,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.9049426698238047,
+        "audio_dilated_ref": -0.3809772405477853,
+        "causal_lm_ref": 0.31610021672178895,
+        "densenet121": 0.12116453445575186,
+        "dual_encoder_ref": 1.8039259783284727,
+        "efficientnet_b0": -0.36991628315790387,
+        "mobilenet_v2": 0.06494472725168662,
+        "resnet18": 0.4269088988069501,
+        "resnet50": 0.32845012329505247,
+        "squeezenet1_1": 0.04634759036175903,
+        "text_cnn_ref": -0.336720978588606,
+        "text_encoder_ref": -0.09997582884547292
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 0.7448415721739648,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.8193237454526248,
+        "audio_dilated_ref": -1.3064133505144448,
+        "causal_lm_ref": -0.6439132753110789,
+        "densenet121": -0.1408821229447908,
+        "dual_encoder_ref": -4.048039209274,
+        "efficientnet_b0": -0.7213451279794403,
+        "mobilenet_v2": 2.5116671911247366,
+        "resnet18": 0.9528709566648494,
+        "resnet50": 0.6954003616532762,
+        "squeezenet1_1": 1.3688753688458972,
+        "text_cnn_ref": 2.2518796755115225,
+        "text_encoder_ref": 8.837322143763677
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 1.9839017810474475,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.020134539151484436,
+        "audio_dilated_ref": 0.05038117984107418,
+        "causal_lm_ref": -0.36838460391831457,
+        "densenet121": 0.22463991087597784,
+        "dual_encoder_ref": 1.3268960003149783,
+        "efficientnet_b0": -6.212625427202241,
+        "mobilenet_v2": -0.29467471151363184,
+        "resnet18": -0.3781181849082074,
+        "resnet50": -0.29962962169343893,
+        "squeezenet1_1": 1.459852459604873,
+        "text_cnn_ref": 12.13798535503266,
+        "text_encoder_ref": 16.180633555287127
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.3623042646494386,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.5062337898852993,
+        "audio_dilated_ref": -0.7733821646056013,
+        "causal_lm_ref": -0.9754709330184982,
+        "densenet121": -0.17854613358722526,
+        "dual_encoder_ref": 2.6561729673479944,
+        "efficientnet_b0": -0.34355978528466413,
+        "mobilenet_v2": -0.7326104363369457,
+        "resnet18": 1.0026025566693086,
+        "resnet50": 0.43536673351214944,
+        "squeezenet1_1": 0.7811583614130544,
+        "text_cnn_ref": 1.6569164724268357,
+        "text_encoder_ref": 2.325237327142155
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_contains",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.45811223288537245,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.10416146341411922,
+        "audio_dilated_ref": 0.4195383212739953,
+        "causal_lm_ref": 0.02146532189582277,
+        "densenet121": -0.011426329917283802,
+        "dual_encoder_ref": 2.532996297848811,
+        "efficientnet_b0": -0.4015270382392318,
+        "mobilenet_v2": -0.44955012475482964,
+        "resnet18": 0.6094148694163343,
+        "resnet50": 0.36557302654033574,
+        "squeezenet1_1": 0.959113751005702,
+        "text_cnn_ref": -0.021298994247050253,
+        "text_encoder_ref": 1.3688862303877452
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 1.797380390185294,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.8216435871164975,
+        "audio_dilated_ref": 2.6798057343631254,
+        "causal_lm_ref": 1.2565021840606332,
+        "densenet121": 1.856846876234469,
+        "dual_encoder_ref": 1.7654914172738716,
+        "efficientnet_b0": 0.003035971689328851,
+        "mobilenet_v2": 6.885920219646808,
+        "resnet18": -0.04983595949826935,
+        "resnet50": -0.6115434382265621,
+        "squeezenet1_1": 0.07020584514121381,
+        "text_cnn_ref": -0.741739449005894,
+        "text_encoder_ref": 5.632231693428305
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 2.387081419891567,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.830578725903721,
+        "audio_dilated_ref": -0.5720424107381443,
+        "causal_lm_ref": -2.1863809809043926,
+        "densenet121": -4.258261835984074,
+        "dual_encoder_ref": -5.577550307545329,
+        "efficientnet_b0": -0.017150966843807874,
+        "mobilenet_v2": 0.8474905273099074,
+        "resnet18": 1.7229815781949969,
+        "resnet50": 1.8645219951566985,
+        "squeezenet1_1": 0.9733631947533523,
+        "text_cnn_ref": 18.189036173563814,
+        "text_encoder_ref": 19.489548797639507
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 1.7549109078800669,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.13512738682608735,
+        "audio_dilated_ref": 0.2014369906793024,
+        "causal_lm_ref": 0.7079859776814703,
+        "densenet121": -4.188873466849547,
+        "dual_encoder_ref": 0.7237819454966824,
+        "efficientnet_b0": -3.5889740257124214,
+        "mobilenet_v2": -6.351629300860025,
+        "resnet18": 1.2749827793427102,
+        "resnet50": 0.5591082631335546,
+        "squeezenet1_1": 0.8764658211430735,
+        "text_cnn_ref": 16.360493459183534,
+        "text_encoder_ref": 14.619279838148556
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.7685024006760258,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.746334670327276,
+        "audio_dilated_ref": 1.7915959063175444,
+        "causal_lm_ref": -0.5529135252151341,
+        "densenet121": -0.2142949549678575,
+        "dual_encoder_ref": 2.9415068716490556,
+        "efficientnet_b0": 0.20118005011993717,
+        "mobilenet_v2": -6.618320497962654,
+        "resnet18": 1.0742481192371367,
+        "resnet50": -0.09257155483077652,
+        "squeezenet1_1": 0.5997718264121596,
+        "text_cnn_ref": 2.0844537042468576,
+        "text_encoder_ref": 5.261038192778766
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_has_type",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": -0.36508928679272495,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.5324153461410003,
+        "audio_dilated_ref": 0.6982926418738599,
+        "causal_lm_ref": 1.1606946671739617,
+        "densenet121": -0.612397374506357,
+        "dual_encoder_ref": -1.2568278648154079,
+        "efficientnet_b0": -0.39051212081619435,
+        "mobilenet_v2": -8.13540689789882,
+        "resnet18": -0.8384486633747021,
+        "resnet50": -0.6400461042430595,
+        "squeezenet1_1": 1.4161494468545344,
+        "text_cnn_ref": -0.8470750088395919,
+        "text_encoder_ref": 4.532090490938077
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -0.1323413024822879,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.415540902567429,
+        "audio_dilated_ref": 2.7854418453730645,
+        "causal_lm_ref": 1.7439505955323518,
+        "densenet121": -0.12941156031054243,
+        "dual_encoder_ref": -0.5591201211806528,
+        "efficientnet_b0": 2.5926654205917687,
+        "mobilenet_v2": 1.972668604050037,
+        "resnet18": -3.832173621787083,
+        "resnet50": -5.454581168141807,
+        "squeezenet1_1": 2.444059493916553,
+        "text_cnn_ref": -6.538373800939853,
+        "text_encoder_ref": 1.9712377805412804
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 6.3224540079291955,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.3052888965594587,
+        "audio_dilated_ref": 1.3726957161893454,
+        "causal_lm_ref": 8.391524966945124,
+        "densenet121": -2.206723581423805,
+        "dual_encoder_ref": 28.996569072740996,
+        "efficientnet_b0": 3.5893415404846163,
+        "mobilenet_v2": -17.42636154443203,
+        "resnet18": -2.5932551585880863,
+        "resnet50": -2.0789337348686456,
+        "squeezenet1_1": 2.7742901030941916,
+        "text_cnn_ref": 32.27129077693769,
+        "text_encoder_ref": 20.473721041511496
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -0.48781871421189155,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.088735671447682,
+        "audio_dilated_ref": 0.5407273799692041,
+        "causal_lm_ref": 24.215629043543867,
+        "densenet121": -4.641119015726336,
+        "dual_encoder_ref": 1.3909933840511746,
+        "efficientnet_b0": -47.306869049264094,
+        "mobilenet_v2": -11.555735458498411,
+        "resnet18": -1.6773626131529318,
+        "resnet50": -0.5933164676717534,
+        "squeezenet1_1": 2.0923938806741424,
+        "text_cnn_ref": 4.6745491544004825,
+        "text_encoder_ref": 24.91754951968428
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 1.2646689808269462,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.4544530673475626,
+        "audio_dilated_ref": 2.9417704550628523,
+        "causal_lm_ref": 3.619757911518015,
+        "densenet121": 0.08048967316167485,
+        "dual_encoder_ref": 3.887942548369064,
+        "efficientnet_b0": 2.8962510856553734,
+        "mobilenet_v2": -7.426454108978425,
+        "resnet18": -2.2313252523474683,
+        "resnet50": -2.388700499758453,
+        "squeezenet1_1": 3.605115959705071,
+        "text_cnn_ref": 3.2355931697058713,
+        "text_encoder_ref": 4.501133760482216
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_dependency",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.8488430655330234,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.2948778875658737,
+        "audio_dilated_ref": -1.644148493329289,
+        "causal_lm_ref": 3.0051648176810573,
+        "densenet121": 3.20469779894872,
+        "dual_encoder_ref": 2.7271689490032447,
+        "efficientnet_b0": 0.9604596641019529,
+        "mobilenet_v2": -9.595987731845412,
+        "resnet18": 2.393753652172999,
+        "resnet50": -1.0108708072019843,
+        "squeezenet1_1": 2.427723850918933,
+        "text_cnn_ref": 4.4792072825349,
+        "text_encoder_ref": 2.9440699158452843
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -0.837044555613752,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -7.297575490922985,
+        "audio_dilated_ref": -8.666321302361338,
+        "causal_lm_ref": 10.626943609647947,
+        "densenet121": -0.06665120801677081,
+        "dual_encoder_ref": -1.0723403820163353,
+        "efficientnet_b0": -0.03900724206265226,
+        "mobilenet_v2": 6.212904202097428,
+        "resnet18": -2.8047908929383474,
+        "resnet50": -3.439034348733508,
+        "squeezenet1_1": 1.5499805976223506,
+        "text_cnn_ref": -3.3245886790602786,
+        "text_encoder_ref": -1.7240535306205345
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 1.204970489249817,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.678589484594075,
+        "audio_dilated_ref": -0.6462389085427286,
+        "causal_lm_ref": 35.221806899978226,
+        "densenet121": 1.0470500850463373,
+        "dual_encoder_ref": 24.860616382460407,
+        "efficientnet_b0": 1.2400970958392523,
+        "mobilenet_v2": -8.470781943495536,
+        "resnet18": 0.16677351282350117,
+        "resnet50": 0.8734294198016053,
+        "squeezenet1_1": 0.6985127693195387,
+        "text_cnn_ref": -22.6011859545932,
+        "text_encoder_ref": -16.25184400304552
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 0.9623435925779257,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.7564923221975042,
+        "audio_dilated_ref": -2.2639039144832513,
+        "causal_lm_ref": 56.89178371546615,
+        "densenet121": 0.5814455801814341,
+        "dual_encoder_ref": 3.252281365514741,
+        "efficientnet_b0": -5.494799442268654,
+        "mobilenet_v2": 2.9848547260013056,
+        "resnet18": 2.928382389566854,
+        "resnet50": -0.4451508472163256,
+        "squeezenet1_1": -0.9652306486930087,
+        "text_cnn_ref": -21.696630925287856,
+        "text_encoder_ref": -22.46841656564878
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.3664926241148829,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.7071090519259976,
+        "audio_dilated_ref": -0.7611296846990658,
+        "causal_lm_ref": 3.9080080825008094,
+        "densenet121": 2.319117436747955,
+        "dual_encoder_ref": -1.1270207701995592,
+        "efficientnet_b0": -0.36152009526347934,
+        "mobilenet_v2": 3.169367889116047,
+        "resnet18": -2.1139431164235494,
+        "resnet50": -1.2619533830917222,
+        "squeezenet1_1": 0.8007891694202108,
+        "text_cnn_ref": 1.106498203714481,
+        "text_encoder_ref": -0.5731931905175339
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_similarity",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 2.0289876133935514,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.216755800181907,
+        "audio_dilated_ref": -0.4260555456809322,
+        "causal_lm_ref": 3.4145854386094325,
+        "densenet121": 0.2308693124771346,
+        "dual_encoder_ref": -0.38715003931363695,
+        "efficientnet_b0": 0.5988747126114505,
+        "mobilenet_v2": 0.6266645611487146,
+        "resnet18": 17.371171286393306,
+        "resnet50": 14.535218615756575,
+        "squeezenet1_1": 1.395508046244155,
+        "text_cnn_ref": -5.7768957822402385,
+        "text_encoder_ref": -6.018183445101434
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 0.47848958374864053,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.753253923898687,
+        "audio_dilated_ref": 2.9748443750472378,
+        "causal_lm_ref": 0.016006391125559717,
+        "densenet121": 0.014400360215477455,
+        "dual_encoder_ref": 0.7669144907710468,
+        "efficientnet_b0": -0.050754320082025246,
+        "mobilenet_v2": 0.10456935086805755,
+        "resnet18": 0.02870383857339997,
+        "resnet50": -0.03342270910034967,
+        "squeezenet1_1": 0.07468976247808409,
+        "text_cnn_ref": -2.1955978285852065,
+        "text_encoder_ref": 1.2882673697737168
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 3.4514228281814887,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.09834708492495854,
+        "audio_dilated_ref": 0.523099509666076,
+        "causal_lm_ref": -0.24244935040832502,
+        "densenet121": -0.02253785306855885,
+        "dual_encoder_ref": 1.2974705642186375,
+        "efficientnet_b0": -0.24081591424429027,
+        "mobilenet_v2": 0.15491115313226672,
+        "resnet18": 0.05203307694159406,
+        "resnet50": 0.010191852493727891,
+        "squeezenet1_1": 0.2373433499717033,
+        "text_cnn_ref": 20.59363937272055,
+        "text_encoder_ref": 19.152535261679446
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 3.4360458227638375,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.6432306222082586,
+        "audio_dilated_ref": -0.5992704400932823,
+        "causal_lm_ref": 0.0023555503797539276,
+        "densenet121": 6.653949363185013e-05,
+        "dual_encoder_ref": -0.056885232175885675,
+        "efficientnet_b0": -0.557267467162291,
+        "mobilenet_v2": -0.021863728701260743,
+        "resnet18": -0.03508361968730832,
+        "resnet50": -0.03528346046923923,
+        "squeezenet1_1": 0.025845623615629473,
+        "text_cnn_ref": 20.481577887423516,
+        "text_encoder_ref": 22.67158884275105
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 1.386465485527231,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.4253192658939935,
+        "audio_dilated_ref": 1.3454370019571948,
+        "causal_lm_ref": -0.02530608143152584,
+        "densenet121": -0.0734590898266272,
+        "dual_encoder_ref": 1.4209232339569864,
+        "efficientnet_b0": 0.09432417031697614,
+        "mobilenet_v2": -0.12855972376662825,
+        "resnet18": 0.006740687491701993,
+        "resnet50": -0.026436907928709903,
+        "squeezenet1_1": 0.13576522580498945,
+        "text_cnn_ref": 5.4770715625281605,
+        "text_encoder_ref": 5.985766481330259
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_supports",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.5745502575883435,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.9733295509422827,
+        "audio_dilated_ref": 1.294209413281004,
+        "causal_lm_ref": 0.0948016532936563,
+        "densenet121": -0.011128412839191653,
+        "dual_encoder_ref": 0.8898066093594827,
+        "efficientnet_b0": -0.14733701144330535,
+        "mobilenet_v2": 0.08334408302777545,
+        "resnet18": 0.06081609753701186,
+        "resnet50": -0.026801562823622564,
+        "squeezenet1_1": 0.21710155192142644,
+        "text_cnn_ref": 1.5431938414466626,
+        "text_encoder_ref": 1.9232672773569404
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 0.32673915986990093,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.422152519667111,
+        "audio_dilated_ref": 3.342177702527323,
+        "causal_lm_ref": 0.12225630563628617,
+        "densenet121": 0.3097458568350312,
+        "dual_encoder_ref": -0.3675580234685206,
+        "efficientnet_b0": -0.061451940628441545,
+        "mobilenet_v2": -0.5336742650747012,
+        "resnet18": 1.9892910136373796,
+        "resnet50": 1.1758141162376137,
+        "squeezenet1_1": -0.1537409716379981,
+        "text_cnn_ref": -3.943215343121684,
+        "text_encoder_ref": -0.3809270521705891
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 2.968220471965831,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.075892205231428,
+        "audio_dilated_ref": 0.564311349001855,
+        "causal_lm_ref": -2.584082798112169,
+        "densenet121": 1.0337449337853437,
+        "dual_encoder_ref": -4.702547977088088,
+        "efficientnet_b0": 0.6393786694643028,
+        "mobilenet_v2": 2.5148177082500127,
+        "resnet18": 3.574068479524513,
+        "resnet50": 2.5927841306685186,
+        "squeezenet1_1": -1.7436406460840936,
+        "text_cnn_ref": 16.092139098712984,
+        "text_encoder_ref": 16.56178051023537
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": 3.9876607143417284,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 1.1374702740220495,
+        "audio_dilated_ref": 1.8526869313492065,
+        "causal_lm_ref": -2.9373714302382026,
+        "densenet121": 1.0743153530440326,
+        "dual_encoder_ref": 0.22931907086382602,
+        "efficientnet_b0": 6.8522314719523925,
+        "mobilenet_v2": 0.5760066294892564,
+        "resnet18": 0.7854481388161979,
+        "resnet50": 0.38423164459558756,
+        "squeezenet1_1": -0.07899570683811392,
+        "text_cnn_ref": 22.89177462126181,
+        "text_encoder_ref": 15.084811573782696
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 1.7076657010794507,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -3.2808899068249424,
+        "audio_dilated_ref": -1.861031303683291,
+        "causal_lm_ref": -1.515581427778283,
+        "densenet121": 0.8635045862710583,
+        "dual_encoder_ref": -0.6453808696937539,
+        "efficientnet_b0": 0.5383303679221111,
+        "mobilenet_v2": 0.23353288908388353,
+        "resnet18": 9.305200278660484,
+        "resnet50": 4.7311949354207785,
+        "squeezenet1_1": -0.24980311207146294,
+        "text_cnn_ref": 4.667001576433086,
+        "text_encoder_ref": 7.705910399213739
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "model_holdout",
+      "ablation": "drop_performance_context",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.857430392614089,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 2.6829251048908747,
+        "audio_dilated_ref": 2.406551866509819,
+        "causal_lm_ref": -0.1690337796839831,
+        "densenet121": 0.06380935442017159,
+        "dual_encoder_ref": -2.302614802187394,
+        "efficientnet_b0": 0.09913943183040747,
+        "mobilenet_v2": -2.6509609882112164,
+        "resnet18": 7.160908175163032,
+        "resnet50": 3.366954238458797,
+        "squeezenet1_1": -0.9860344856692592,
+        "text_cnn_ref": 0.23248964731175573,
+        "text_encoder_ref": 0.38503094853606373
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 10.629609372851103,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 18.47776113686216,
+        "audio_dilated_ref": 7.662402375290247,
+        "causal_lm_ref": 2.732416779448438,
+        "densenet121": -12.593676817146346,
+        "dual_encoder_ref": 3.010611963940105,
+        "efficientnet_b0": 42.261028814506126,
+        "mobilenet_v2": 33.77128809152403,
+        "resnet18": -1.6972099181203566,
+        "resnet50": 10.263119884574193,
+        "squeezenet1_1": 13.222617668345356,
+        "text_cnn_ref": 7.703672490027634,
+        "text_encoder_ref": 2.7412800049616637
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": -6.99627531678717,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -5.674755335765721,
+        "audio_dilated_ref": -6.710192748102919,
+        "causal_lm_ref": -4.349123062831535,
+        "densenet121": -4.785669794045081,
+        "dual_encoder_ref": -12.66090097487886,
+        "efficientnet_b0": -6.684274179787421,
+        "mobilenet_v2": -8.514067210766209,
+        "resnet18": -8.02892878792408,
+        "resnet50": -6.407960047703038,
+        "squeezenet1_1": -10.800453045880063,
+        "text_cnn_ref": -5.117060128260259,
+        "text_encoder_ref": -4.221918485500855
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -3.984150268376427,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -2.4828885197768753,
+        "audio_dilated_ref": -3.0473775459209658,
+        "causal_lm_ref": -0.9969241933628973,
+        "densenet121": -4.664279596086924,
+        "dual_encoder_ref": -0.4845788137876512,
+        "efficientnet_b0": -4.946436257072332,
+        "mobilenet_v2": -9.031358776819314,
+        "resnet18": -4.6615581713202925,
+        "resnet50": -5.120081574965129,
+        "squeezenet1_1": -5.903480805537123,
+        "text_cnn_ref": -5.263353381780639,
+        "text_encoder_ref": -1.2074855840869805
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.2020448152440032,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.4732666397961149,
+        "audio_dilated_ref": 0.14786768487254212,
+        "causal_lm_ref": 0.32529963510390103,
+        "densenet121": -1.2084968306109911,
+        "dual_encoder_ref": 0.3830456111959479,
+        "efficientnet_b0": -0.3749615895613989,
+        "mobilenet_v2": -0.3731493678384805,
+        "resnet18": 0.14984283643496976,
+        "resnet50": -0.39698049241195793,
+        "squeezenet1_1": -0.5392511407485374,
+        "text_cnn_ref": -0.3396300134649534,
+        "text_encoder_ref": 0.27514252389703475
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_contains",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": -0.8842395303529571,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.068252131667821,
+        "audio_dilated_ref": -1.0688539642912367,
+        "causal_lm_ref": -0.09797256657632751,
+        "densenet121": -0.32520745368454634,
+        "dual_encoder_ref": 0.31311020103580434,
+        "efficientnet_b0": 0.24726492822365634,
+        "mobilenet_v2": -1.19681153876884,
+        "resnet18": -3.127038845661007,
+        "resnet50": -2.640677007375756,
+        "squeezenet1_1": -1.5404771459449011,
+        "text_cnn_ref": 0.1966586154056178,
+        "text_encoder_ref": -0.3026174549301245
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -9.70305822746633,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 13.492460264347308,
+        "audio_dilated_ref": 11.05294681356883,
+        "causal_lm_ref": 1.06695418197228,
+        "densenet121": -29.919944942079383,
+        "dual_encoder_ref": 2.8777540949959715,
+        "efficientnet_b0": -18.338508145719956,
+        "mobilenet_v2": -11.41682280231635,
+        "resnet18": -37.911684698925946,
+        "resnet50": -33.2640091451888,
+        "squeezenet1_1": -21.109753774626537,
+        "text_cnn_ref": 5.887165703598259,
+        "text_encoder_ref": 1.146743720778374
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": -0.3593138452851476,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 3.7286230483496805,
+        "audio_dilated_ref": 2.0151434459856676,
+        "causal_lm_ref": -9.141595702505176,
+        "densenet121": 10.752580415468389,
+        "dual_encoder_ref": -11.04123378767947,
+        "efficientnet_b0": 0.6096468459353189,
+        "mobilenet_v2": 2.7643044612327956,
+        "resnet18": -0.9674546490390554,
+        "resnet50": 0.9358588634069402,
+        "squeezenet1_1": 1.566551847225341,
+        "text_cnn_ref": 2.5128314018480045,
+        "text_encoder_ref": -8.047022333650206
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -1.9908590432588447,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.07178031251108928,
+        "audio_dilated_ref": -0.46110162223140794,
+        "causal_lm_ref": -0.24752942433312342,
+        "densenet121": -3.1415407453487973,
+        "dual_encoder_ref": 1.9927758861087628,
+        "efficientnet_b0": -6.1660223508433125,
+        "mobilenet_v2": -4.58351034638398,
+        "resnet18": -1.0986344704188618,
+        "resnet50": -4.091026382980909,
+        "squeezenet1_1": -0.8058808579832533,
+        "text_cnn_ref": -3.5588165222963326,
+        "text_encoder_ref": -1.8008019949060114
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.03205225884551557,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.45127215993354014,
+        "audio_dilated_ref": -0.38405892193787994,
+        "causal_lm_ref": 0.2754554394488623,
+        "densenet121": 0.26910761602418204,
+        "dual_encoder_ref": -0.6169361138940476,
+        "efficientnet_b0": 0.3969532273323439,
+        "mobilenet_v2": 0.3056056786608869,
+        "resnet18": 0.008058852605976153,
+        "resnet50": 0.5725902293854029,
+        "squeezenet1_1": 0.5191614390617225,
+        "text_cnn_ref": -0.7521816213321588,
+        "text_encoder_ref": 0.2421434407244366
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_has_type",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.8676870241101101,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.8197748402107855,
+        "audio_dilated_ref": 0.5141688597040815,
+        "causal_lm_ref": 0.9359588991683918,
+        "densenet121": 0.38067459143748483,
+        "dual_encoder_ref": 0.9035766166460024,
+        "efficientnet_b0": 0.30678890794310243,
+        "mobilenet_v2": 1.2061823952905482,
+        "resnet18": 1.2575572035745612,
+        "resnet50": 0.5901198038574492,
+        "squeezenet1_1": 0.5328257076567638,
+        "text_cnn_ref": 2.123717907571801,
+        "text_encoder_ref": 0.8408985562603482
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 0.728252958802479,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 4.920680169277854,
+        "audio_dilated_ref": 9.767816519024523,
+        "causal_lm_ref": 0.25662051870341257,
+        "densenet121": 50.33526406356269,
+        "dual_encoder_ref": 2.9700310522145523,
+        "efficientnet_b0": -18.859833518768106,
+        "mobilenet_v2": 12.045939218678908,
+        "resnet18": -33.470996184036885,
+        "resnet50": -30.991930981691933,
+        "squeezenet1_1": 19.77227225563499,
+        "text_cnn_ref": -8.959588158112762,
+        "text_encoder_ref": 0.9527605511424965
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": -13.9110047995798,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -11.88515741965806,
+        "audio_dilated_ref": -7.152245680646074,
+        "causal_lm_ref": -12.490514982521963,
+        "densenet121": -23.13185738758742,
+        "dual_encoder_ref": -5.953968228971608,
+        "efficientnet_b0": -13.563774300241677,
+        "mobilenet_v2": -24.098218548412095,
+        "resnet18": -6.011529206790376,
+        "resnet50": -9.890351987191428,
+        "squeezenet1_1": -14.905614980348656,
+        "text_cnn_ref": -22.20643035311915,
+        "text_encoder_ref": -15.642394519469084
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -9.385809789911212,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.5593342425017941,
+        "audio_dilated_ref": -0.7385901044585428,
+        "causal_lm_ref": -37.6820904690463,
+        "densenet121": -1.8311047464765893,
+        "dual_encoder_ref": 0.6261540361286205,
+        "efficientnet_b0": -8.111421133297423,
+        "mobilenet_v2": -9.062216251216926,
+        "resnet18": -3.91612646370886,
+        "resnet50": -5.154448179257608,
+        "squeezenet1_1": -0.7759947319848347,
+        "text_cnn_ref": -7.935117480395281,
+        "text_encoder_ref": -37.48942771271899
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.5359980741813009,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 3.033204661096963,
+        "audio_dilated_ref": 0.2869879911814962,
+        "causal_lm_ref": 3.7812467907004983,
+        "densenet121": 0.8390535022124235,
+        "dual_encoder_ref": -0.7374193121059313,
+        "efficientnet_b0": -0.7038075794519558,
+        "mobilenet_v2": -1.4212483703554306,
+        "resnet18": -0.2993030285445249,
+        "resnet50": 0.9679875847375417,
+        "squeezenet1_1": -0.1181857815913666,
+        "text_cnn_ref": -2.1330192117592173,
+        "text_encoder_ref": 2.936479644055114
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_dependency",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": -0.7778850133036003,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.14588345696175356,
+        "audio_dilated_ref": 0.017533799011472506,
+        "causal_lm_ref": -1.9234734289728666,
+        "densenet121": -2.8401339149489093,
+        "dual_encoder_ref": 3.1608956750656225,
+        "efficientnet_b0": -2.116163686516672,
+        "mobilenet_v2": -2.1217903000666896,
+        "resnet18": 0.08437640635517626,
+        "resnet50": -1.3537523267805815,
+        "squeezenet1_1": -2.6799206677678664,
+        "text_cnn_ref": 2.1748318278072123,
+        "text_encoder_ref": -1.5911400858673483
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": -25.03364248244034,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -19.38382114771402,
+        "audio_dilated_ref": -22.464517701883814,
+        "causal_lm_ref": -3.320995088732675,
+        "densenet121": -10.119092163873274,
+        "dual_encoder_ref": -14.25670188068525,
+        "efficientnet_b0": -29.872703309805374,
+        "mobilenet_v2": -30.233699525613577,
+        "resnet18": -55.52072979291661,
+        "resnet50": -40.49122619983533,
+        "squeezenet1_1": -66.40664537839491,
+        "text_cnn_ref": -4.832448853382582,
+        "text_encoder_ref": -3.5011287464466045
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 2.728675797072464,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 4.596325598011694,
+        "audio_dilated_ref": 6.506532164275403,
+        "causal_lm_ref": -7.784888931963904,
+        "densenet121": 2.7483643247888785,
+        "dual_encoder_ref": 13.284309545015685,
+        "efficientnet_b0": -1.3366571867472956,
+        "mobilenet_v2": 3.2510142969316544,
+        "resnet18": -0.19652899057540277,
+        "resnet50": 3.6471507121955717,
+        "squeezenet1_1": 13.55339753442041,
+        "text_cnn_ref": 1.6236889806262746,
+        "text_encoder_ref": -7.1485984821094055
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -0.6599977189885456,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.4741885741743548,
+        "audio_dilated_ref": -3.0524816569776765,
+        "causal_lm_ref": -0.7149252708387216,
+        "densenet121": 1.1193912882440786,
+        "dual_encoder_ref": 0.9030308838011647,
+        "efficientnet_b0": 0.018700200250606265,
+        "mobilenet_v2": -1.091767652723236,
+        "resnet18": -1.8955001431936414,
+        "resnet50": -1.7081765223031142,
+        "squeezenet1_1": 0.22351312294618447,
+        "text_cnn_ref": 0.5246728202285564,
+        "text_encoder_ref": -0.7722411231223941
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.028354829918309666,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.08432291580889512,
+        "audio_dilated_ref": 1.075406351259051,
+        "causal_lm_ref": -1.06718526797653,
+        "densenet121": -1.9650044427861955,
+        "dual_encoder_ref": 0.5588150034082189,
+        "efficientnet_b0": 0.46211338747408764,
+        "mobilenet_v2": 0.6353310262572,
+        "resnet18": -0.09084859845734299,
+        "resnet50": 0.46613912363563437,
+        "squeezenet1_1": 0.40548434234959974,
+        "text_cnn_ref": 0.10768472301049299,
+        "text_encoder_ref": -0.8438706913850375
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_similarity",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": -0.61213072531774,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -1.0317643734275606,
+        "audio_dilated_ref": -0.33787941103891367,
+        "causal_lm_ref": 0.09692798712766464,
+        "densenet121": -0.1257446606110309,
+        "dual_encoder_ref": -2.556269477737382,
+        "efficientnet_b0": 0.7876688658601659,
+        "mobilenet_v2": -0.8050829573430116,
+        "resnet18": -1.5748357600256477,
+        "resnet50": -0.9622100422925581,
+        "squeezenet1_1": -0.7270961028971668,
+        "text_cnn_ref": -0.030653023265183894,
+        "text_encoder_ref": -0.0786297481622552
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 3.3773317826494407,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 6.932009691658462,
+        "audio_dilated_ref": 6.276710885606175,
+        "causal_lm_ref": 0.1216661497266978,
+        "densenet121": 1.3697906100621682,
+        "dual_encoder_ref": 7.5374382734755745,
+        "efficientnet_b0": 0.3633784713437247,
+        "mobilenet_v2": 2.2083506637338277,
+        "resnet18": 5.72159398539476,
+        "resnet50": -0.18239160489580786,
+        "squeezenet1_1": 4.497603113565602,
+        "text_cnn_ref": 5.4232883127705245,
+        "text_encoder_ref": 0.2585428393515849
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": 1.9405649837178178,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 3.175480102278687,
+        "audio_dilated_ref": 4.140561674535312,
+        "causal_lm_ref": -4.5306088561378886,
+        "densenet121": 0.7231877327537466,
+        "dual_encoder_ref": 14.211349502535185,
+        "efficientnet_b0": -0.2901918058917491,
+        "mobilenet_v2": 0.526467280441557,
+        "resnet18": 1.266915423225318,
+        "resnet50": 0.20728923924222298,
+        "squeezenet1_1": 0.8453396199451901,
+        "text_cnn_ref": 7.1316779391541,
+        "text_encoder_ref": -4.120688047467865
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -0.3809961722179393,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.5512049124595793,
+        "audio_dilated_ref": 0.7095454774280733,
+        "causal_lm_ref": -5.326373758246423,
+        "densenet121": 0.3962454099505987,
+        "dual_encoder_ref": 1.3233574888865953,
+        "efficientnet_b0": -0.7397417965924495,
+        "mobilenet_v2": 2.647252896165119,
+        "resnet18": 1.1593229569849715,
+        "resnet50": -1.2378871821928747,
+        "squeezenet1_1": 1.1160451160689158,
+        "text_cnn_ref": 0.5598710249063124,
+        "text_encoder_ref": -5.730796612433688
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": -0.14097636077292683,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.043538960077134176,
+        "audio_dilated_ref": -0.3796441292383791,
+        "causal_lm_ref": -0.09612974023746679,
+        "densenet121": 0.3955531851387643,
+        "dual_encoder_ref": -0.7854778309873984,
+        "efficientnet_b0": -0.05347404079868851,
+        "mobilenet_v2": -0.16855169743185452,
+        "resnet18": 0.03543487920399875,
+        "resnet50": -0.04548749506252838,
+        "squeezenet1_1": -0.12802001808713448,
+        "text_cnn_ref": -0.3828671013403916,
+        "text_encoder_ref": -0.03951338035690926
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_supports",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.31345372954302747,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.7732868493371486,
+        "audio_dilated_ref": 0.7433432193176067,
+        "causal_lm_ref": 0.13155890105113174,
+        "densenet121": 0.2876262009569179,
+        "dual_encoder_ref": 0.637799803757041,
+        "efficientnet_b0": 0.07500503464892051,
+        "mobilenet_v2": -0.10806622400174476,
+        "resnet18": 0.20349021073574777,
+        "resnet50": -0.5820353484160632,
+        "squeezenet1_1": 0.24377390254468445,
+        "text_cnn_ref": 1.2487627490258002,
+        "text_encoder_ref": 0.10689945555913857
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "paired_model_macro_difference_pp": 17.608236549715837,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 18.831492054912534,
+        "audio_dilated_ref": 15.282493519897411,
+        "causal_lm_ref": 2.902841728605775,
+        "densenet121": 17.3839578720818,
+        "dual_encoder_ref": 9.709243289885173,
+        "efficientnet_b0": 14.412586226727452,
+        "mobilenet_v2": 26.14116076714875,
+        "resnet18": 47.17113156888467,
+        "resnet50": 35.05540434527793,
+        "squeezenet1_1": 12.002691041489086,
+        "text_cnn_ref": 9.64566464229204,
+        "text_encoder_ref": 2.7601715393873767
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "Apple-M5-CPU-4T",
+      "paired_model_macro_difference_pp": -1.764762543944445,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 4.576912006505894,
+        "audio_dilated_ref": 6.301047126023659,
+        "causal_lm_ref": 7.386274585917782,
+        "densenet121": -28.412734411030037,
+        "dual_encoder_ref": 43.48793237185595,
+        "efficientnet_b0": -10.026987720953672,
+        "mobilenet_v2": -25.302649004668094,
+        "resnet18": -7.778098645989076,
+        "resnet50": -17.752715608658452,
+        "squeezenet1_1": -12.817181363449931,
+        "text_cnn_ref": 10.901578331085382,
+        "text_encoder_ref": 8.259471806027264
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "Apple-M5-MPS",
+      "paired_model_macro_difference_pp": -1.0805105510014712,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.6440262711712544,
+        "audio_dilated_ref": -0.33609699617585403,
+        "causal_lm_ref": 4.1747768285268645,
+        "densenet121": -1.9809610069866623,
+        "dual_encoder_ref": 0.3424589538335472,
+        "efficientnet_b0": -2.8139848943842543,
+        "mobilenet_v2": -8.975561818262964,
+        "resnet18": -1.7938232461690657,
+        "resnet50": -2.387351539499953,
+        "squeezenet1_1": -2.190511158583239,
+        "text_cnn_ref": -0.14246765129243397,
+        "text_encoder_ref": 3.7814221881476144
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "Ascend-910B3-64GB",
+      "paired_model_macro_difference_pp": 0.3073934654320704,
+      "per_model_differences_pp": {
+        "audio_conv_ref": -0.4046223723106388,
+        "audio_dilated_ref": -0.38749600313284327,
+        "causal_lm_ref": 1.5722602694019292,
+        "densenet121": 1.9424799449129027,
+        "dual_encoder_ref": 1.0758401194308012,
+        "efficientnet_b0": -0.57393261583262,
+        "mobilenet_v2": -0.5791055564485817,
+        "resnet18": -0.05091635418107326,
+        "resnet50": 0.0013526950411931228,
+        "squeezenet1_1": 0.08852667530866311,
+        "text_cnn_ref": -0.2354140497091264,
+        "text_encoder_ref": 1.2397488327042394
+      }
+    },
+    {
+      "feature_mode": "probe",
+      "protocol": "device_holdout_seen_architectures",
+      "ablation": "drop_performance_context",
+      "device_id": "Cloud-x86-CPU-4T",
+      "paired_model_macro_difference_pp": 0.6357714258391632,
+      "per_model_differences_pp": {
+        "audio_conv_ref": 0.29531797226617573,
+        "audio_dilated_ref": -0.31033090239586814,
+        "causal_lm_ref": 0.5557767186650792,
+        "densenet121": 0.7384071259627384,
+        "dual_encoder_ref": 1.3486385799267318,
+        "efficientnet_b0": 1.414248445828695,
+        "mobilenet_v2": 1.3288320557374562,
+        "resnet18": 0.3691432492519057,
+        "resnet50": 0.7274576387137007,
+        "squeezenet1_1": 0.07573758819320096,
+        "text_cnn_ref": 0.5956509587713795,
+        "text_encoder_ref": 0.49037767914876457
+      }
+    }
+  ],
+  "interpretation_limits": [
+    "All 24 results are reported; no target-result selection.",
+    "New descriptive secondary analysis of existing V2 fitted predictions, not new hardware measurements or reproduction of original 14.3%.",
+    "Twelve fixed model clusters and shared cross-validation fits limit population inference. Intervals are not confirmatory or simultaneous.",
+    "Sign-flip exchangeability is unproven; Holm-adjusted values remain exploratory descriptive diagnostics.",
+    "Probe includes three measured hardware microprofiles; it is not zero-measurement transfer.",
+    "Device holdout sees model architectures in training and five runtime stacks are not five independent hardware families.",
+    "Relation deletion changes the trained predictor. It is a controlled architecture ablation on matched data, not causal identification of relation semantics in arbitrary graphs."
+  ]
+}

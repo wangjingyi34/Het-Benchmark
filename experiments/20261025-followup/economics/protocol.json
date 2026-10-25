@@ -1,0 +1,294 @@
+{
+  "schema": "het.v4.economics.protocol.v1",
+  "created_utc": "2026-10-25T14:28:01.829827+00:00",
+  "status": "frozen_before_new_envelope_calculation",
+  "task": "Independent economics reverse audit; equal-service demand with latency feasibility, idle utilization and order-minimum sensitivities",
+  "new_hardware_executions": 0,
+  "new_paid_orders": 0,
+  "source_selection": {
+    "root": "v2-实证增强/evidence/fullmodel_raw",
+    "devices": [
+      "cuda",
+      "npu"
+    ],
+    "models": [
+      "resnet18",
+      "resnet50"
+    ],
+    "batches": [
+      1,
+      4
+    ],
+    "runs": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "coalition_mask": 0,
+    "reason": "All five held-out original evaluation process blocks; no candidate selection and no upcoming F/L result. Use raw samples and independently reproduce mean, rather than trust old scenario summaries."
+  },
+  "frozen_sources": [
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r4.json",
+      "sha256": "0832075f202fa0fd9ddd4e6a0809b292aa823bbd5b6215d7785494c4fb82bcbb"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r5.json",
+      "sha256": "eb3a3fabff53831bcf28410ab499a38f5e5f9921e1c2d3860262e9f13ae9a9e6"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r6.json",
+      "sha256": "31e2a886321fc5a0f776f1550c7e5a5fa3889a8cd5becda88e4ff77b30df33a6"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r7.json",
+      "sha256": "833c873f8a6ea1bc4c411d8ce1f7086f07118be2c5d92ab9bd02139da4d8086d"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r8.json",
+      "sha256": "0283c160469df4367949f87a7e52e85e80ab19a7c1d68f3b0f0f6be4c41d625f"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r4.json",
+      "sha256": "02e56c9c57caaa4990c03afa655c3d6a92eea5d1f936f14e41af43949f522477"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r5.json",
+      "sha256": "3c8bdd26cd8029691cfe0811e7bd095420401f23b1efc8c65c223e8fbc10ff57"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r6.json",
+      "sha256": "c2d586f33fd6be1d3142a718465fa188d0a1ec4f96508f65ae435acef1d82c46"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r7.json",
+      "sha256": "b35d6e6ceed7790a1715ef24954d8ffb3a65e39e36f32f0010dcea77fd76cf50"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r8.json",
+      "sha256": "bc9d6e4b1bcaa3911d9c0948c180ccf6f1bfe8b95a052bebafbeb9daa5003cd0"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r4.json",
+      "sha256": "3449dbd147d7eb34e91782fd76263ede7a2a8d2b45664b854e7a830861d8b151"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r5.json",
+      "sha256": "723809972dbaedb546825fce1bd78a7ff4c4d18d9c3eac15e2096ab377f3bc0c"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r6.json",
+      "sha256": "0d6b586339af3a4998d24b360f8fa02fbb2cb78b1b70a578b994c5564c6e7b45"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r7.json",
+      "sha256": "36f60ef1a1231016a50f18764f4ad22cea413bed06d04de6e634e13f06799992"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r8.json",
+      "sha256": "ededf4837ecb1b4d904c73df43a22664419f317d4f84cbb9ea81848ea2f4e709"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r4.json",
+      "sha256": "81f8da00c3d5448b9800fa2c7ff0c8a589675e20a0c98cc9702f1d7cc417910d"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r5.json",
+      "sha256": "900ae4d81fd7ac460069f58a1563e422f173020b59f8f219423666c9698dcc2a"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r6.json",
+      "sha256": "d2086c5d4499df70295265e91f79f0191530a1b5bded2e608c4d9a2b92eb276b"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r7.json",
+      "sha256": "01817818b4ee22f315343ca9a5d9e42b1704552cb7e7a68a3f4aff00a283890b"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r8.json",
+      "sha256": "ede7ff3bd3467419ecc4c3300bf32f6a8b0fb34c447ab37a19f88d66ae7ae644"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r4.json",
+      "sha256": "ddc9dfcd633e442fcd57daaf06603cc6d7821df2b58b95c7f4487249917d8135"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r5.json",
+      "sha256": "4758d1e18a4f99c7531851484693817bb3fa238a1cefab8a09bee8769cfeedaf"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r6.json",
+      "sha256": "82e6be014af58d671ab903020cf8787e9345044b42184fc55bf62086670bf5d2"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r7.json",
+      "sha256": "b6f7f253b1077fa1f4fb533f15cfca1460a0fa2f533756623067c7759445e8ad"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r8.json",
+      "sha256": "b434a2edaba578e0ffc2125a924a6aed4b601eff523ed283e5ef1162303186d9"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r4.json",
+      "sha256": "6c277e4e3e1b40c3c6483662504d60d69b8ec522fb07df93fe4294abc35164c9"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r5.json",
+      "sha256": "2750058cbe67c0e2a8ac6ef91ce231b90880eb3e4feb0f2ce97aa3ecd60f7d91"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r6.json",
+      "sha256": "d690384f710349ee9292a5f7e6e6ed82b67c823f2c53b8f65d25504c4ff9f986"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r7.json",
+      "sha256": "1668af2597b3214d65e05de349017e29053af465d50444b00a7fbc78b74291cd"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r8.json",
+      "sha256": "e800fb671b192a5a6049d00d3180b519f237404014bc2546d787b4d0576680c1"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r4.json",
+      "sha256": "72d6731f00148d82eaecbb1b16bcfc92aca0b7205055a37c1e2f6a3e07c299ae"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r5.json",
+      "sha256": "601a560fe7cfaebe25cb035303b63076e5480262c6b97e3e8eb8e4563b24e2e7"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r6.json",
+      "sha256": "db04d7bc82fd639bda549ed0a4f79233173b353e5ea31fd55125e01a3f8b6170"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r7.json",
+      "sha256": "1f7f32a3e723abf9258ceb02467bd499afa86d810868b31aee9ff388382db307"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r8.json",
+      "sha256": "086d1be39f6eb2d9229256d2c5950735d412e499d42825c7f76b7664033a5275"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r4.json",
+      "sha256": "8070f2657931a8ed9be6127612cc3fd4453c8c5d3edc8a41d87ad3ae2363f93c"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r5.json",
+      "sha256": "d917b28f303bd18c054d0a8895a98cb41b73c0ae2a3923fd59b0c1fb1858939b"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r6.json",
+      "sha256": "9180f624de68b8aad6364190e9510b899523c0ebe3073bc662dd8e79e02255e6"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r7.json",
+      "sha256": "96974dd4e25f6c9b22bd2b41d3a9c8943e0559070f31956531117eda9f04abce"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r8.json",
+      "sha256": "82c1301d1d0bc9980a815bba8e1307d2c2dba17a5a22fcefcb47aacfd9d63ff9"
+    }
+  ],
+  "latency_statistics": [
+    "mean_of_five_process_means",
+    "max_of_five_process_means"
+  ],
+  "request_unit": "One image/sample; batch4 includes periodic batch formation wait",
+  "service_grid": {
+    "demand_samples_per_second": [
+      1,
+      10,
+      50,
+      100,
+      250,
+      500,
+      1000
+    ],
+    "maximum_response_budget_ms": [
+      10,
+      50,
+      100,
+      500
+    ],
+    "utilization_cap": [
+      0.5,
+      0.8
+    ],
+    "replicas": "ceil(demand*batch_latency_seconds/(batch*utilization_cap));at least1",
+    "deterministic_response_ms": "(batch-1)*1000/demand+batch_latency_ms",
+    "response_interpretation": "Ideal periodic-arrival serial service, round-robin complete batches, zero additional networking/startup/cold-start cost. With utilization cap below1, stable round-robin service has no queue; add batch formation. Budget feasibility is an offline deterministic scenario, not an empirically measured p95 service SLA.",
+    "latency_stat_interpretation": "Max process mean is a sensitivity endpoint, not a statistical upper confidence bound or measured per-request maximum.",
+    "retain_infeasible": true
+  },
+  "billing_grid": {
+    "horizon_days": 30,
+    "calendar_hours": 720,
+    "active_seconds_per_day": [
+      300,
+      3600,
+      28800,
+      86400
+    ],
+    "policies": [
+      "scheduled_release_outside_active_period",
+      "keep_warm_all_day"
+    ],
+    "fx_CNY_per_USD": [
+      6.5,
+      7.0,
+      7.5
+    ],
+    "a100_providers": [
+      "runpod",
+      "lambda"
+    ],
+    "a100_MIG_replicas_per_card": [
+      1,
+      3
+    ],
+    "npu_plans": [
+      "hourly_quantum1s_assumed",
+      "hourly_quantum3600s_assumed",
+      "monthly_30day_commitment"
+    ],
+    "MIG_packing_interpretation": "1 preserves one paid card per observed MIG timing.3 is geometry-only packing sensitivity and assumes unchanged per-MIG service; co-location and retail ability unverified. The timing is never scaled into a full-card performance estimate.",
+    "order_formula": "A100 billed cards=ceil(ceil(MIG_replicas/packing)/minimum_cards_per_order)*minimum_cards_per_order. NPU billed cards=NPU replicas. Scheduled hourly costs daily active window rounded to quantum; monthly cost pays whole30days.",
+    "exclusions": [
+      "No invented invoice, demand observation, measured availability, startup overhead or historical regional discount.",
+      "Neither500/170 nor66percent is authenticated by this envelope.",
+      "No pooled inference over all scenario rows; scenario counts are deterministic sensitivities, not independent experimental replicates."
+    ]
+  },
+  "normalized_grid": {
+    "FX": [
+      6.5,
+      7.0,
+      7.5
+    ],
+    "A100_allocation_alpha": [
+      0.25,
+      0.2857142857142857,
+      1.0
+    ],
+    "NPU_hourly": [
+      38.45
+    ],
+    "NPU_month_hours": [
+      672,
+      720,
+      744
+    ],
+    "formula": "C_per1000=hourly_rate*batch_latency_ms/(3600*batch);reduction=1-C_N/C_A;parity_P_A=P_N*t_N/(alpha*t_A);P_A_for66=parity_P_A/0.34",
+    "allocation_interpretation": "alpha is accounting assumption, not a public MIG rental quote or purchase quantity.",
+    "existing_v3_reproduction": "Recalculate every historicalV3 row from frozen raw baselines and preserved quotes, without mutatingV3."
+  },
+  "predeclared_reporting": [
+    "Report allrows, infeasible rows and negative results.",
+    "Separate capacity-normalized allocation from actual minimum-order reservation.",
+    "Aggregate within each provider and billing mode; never use a pooled favorable case to restore66.",
+    "Show representative default FX7,ucap0.8,mean latency,1hactive/day plus 24h service; list price parity and utilization thresholds.",
+    "Check raw/V3 agreement, row cardinality, invariant same demand and SLA, idle cost, min order, price monotonicity and arithmetic identities."
+  ]
+}
