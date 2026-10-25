@@ -1,0 +1,5804 @@
+{
+  "kind": "independent_full_model_record_consistency_audit",
+  "counts": {
+    "blocks": 48,
+    "coalitions": 768,
+    "coalition_timed_calls": 23040,
+    "quality_predictions": 76800,
+    "equivalence_passed_records": 768,
+    "non_ok_records": 0,
+    "quality_rejections": 0
+  },
+  "groups": [
+    {
+      "task": "resnet18_b1_imagenet_val10class_v2",
+      "device": "cpu_CPU_arm_arm64",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    },
+    {
+      "task": "resnet18_b4_imagenet_val10class_v2",
+      "device": "cpu_CPU_arm_arm64",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    },
+    {
+      "task": "resnet18_b1_imagenet_val10class_v2",
+      "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    },
+    {
+      "task": "resnet18_b4_imagenet_val10class_v2",
+      "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    },
+    {
+      "task": "resnet50_b1_imagenet_val10class_v2",
+      "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    },
+    {
+      "task": "resnet50_b4_imagenet_val10class_v2",
+      "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    }
+  ],
+  "weights_identical_per_model_across_observed_devices": true,
+  "unique_sample_definition": "Repeated evaluation of the same 100 IDs is not new independent quality samples.",
+  "raw_records": [
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r1.json",
+      "sha256": "4d47810caada19c9ee6b61d1ec28e87ed7855a2d3fd043a3cca1790b78bfd656",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run1",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.4831835500000003,
+        "main_early": -0.4074127055555559,
+        "main_transition": -0.438714366666667,
+        "shortcut_transition": -0.32411714444444456
+      },
+      "all_substitutions_benefit_percent": -23.842849544618947
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r2.json",
+      "sha256": "36e5e5de2115b4000888ae37cc80a84864a16196509fcead90648f03b4cd8d4f",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run2",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.5848056583333333,
+        "main_early": 0.1803492416666662,
+        "main_transition": -0.9883073194444446,
+        "shortcut_transition": -0.585129197222222
+      },
+      "all_substitutions_benefit_percent": -27.627241332970257
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r3.json",
+      "sha256": "c610ea280b07bca082527bb3ad3f771132878f195b3077a41bb2b14a03bda5d1",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run3",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.292273297222222,
+        "main_early": 0.12730169166666658,
+        "main_transition": 0.1848098194444446,
+        "shortcut_transition": 0.033260286111110794
+      },
+      "all_substitutions_benefit_percent": 0.6890537424805202
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r4.json",
+      "sha256": "e2ee78acfc1a17a37a98582edf4074119dcc13095f96d1711468668550690d01",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run4",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.9293482583333331,
+        "main_early": -0.4183884750000005,
+        "main_transition": -0.3945136083333336,
+        "shortcut_transition": -0.4751392416666666
+      },
+      "all_substitutions_benefit_percent": -4.682062513421606
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r5.json",
+      "sha256": "e4405d53870fd0a306fabe78126b045f8b5d841ee5bec849ee68034840d924f0",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run5",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 2.8357895555555555,
+        "main_early": 2.7055332666666665,
+        "main_transition": 2.9909448666666667,
+        "shortcut_transition": -8.914413722222221
+      },
+      "all_substitutions_benefit_percent": -5.496767440951373
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r6.json",
+      "sha256": "b10e399556f07abb8e7c980108369d32353d12e00d66a8108249c8255bcd17bd",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run6",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 1.0590408083333331,
+        "main_early": -1.4700781583333329,
+        "main_transition": -0.317932563888889,
+        "shortcut_transition": 0.5562058472222227
+      },
+      "all_substitutions_benefit_percent": -2.1951193955816457
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r7.json",
+      "sha256": "9c74b0572aecd17bb31b1b35bf552743c0d1a3ff99a09782c1bf9789549b59b8",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run7",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.007893661111111339,
+        "main_early": -0.5553270166666665,
+        "main_transition": 0.08600540555555591,
+        "shortcut_transition": -0.30417512777777755
+      },
+      "all_substitutions_benefit_percent": -10.19783312829456
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r8.json",
+      "sha256": "5d4bca3b74aac2af9230b9d0c5b664e65ed36dd6053233179e0c0ddb7db23795",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run8",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.0075491833333333576,
+        "main_early": -0.35371583888888875,
+        "main_transition": -0.6751776111111111,
+        "shortcut_transition": 0.7382179666666664
+      },
+      "all_substitutions_benefit_percent": -4.105838440892339
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b4-r1.json",
+      "sha256": "e74846248af18c6c9d302c4f1fe6a01fa51aac19f94ba54c4e729bee3b1e1318",
+      "run_id": "cpu_resnet18_b4_imagenet_val10class_v2_run1",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.1381597361111099,
+        "main_early": 3.889360969444445,
+        "main_transition": -7.539417802777777,
+        "shortcut_transition": 0.42371946388888865
+      },
+      "all_substitutions_benefit_percent": -10.770533019108555
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b4-r2.json",
+      "sha256": "04e8a6db4e4e530c4c8b34fc9a450d34bb9fba0df51e1f8f4ca802007f40b1f0",
+      "run_id": "cpu_resnet18_b4_imagenet_val10class_v2_run2",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.372810044444444,
+        "main_early": -0.2695345777777784,
+        "main_transition": 0.9269288111111109,
+        "shortcut_transition": 0.2644540888888904
+      },
+      "all_substitutions_benefit_percent": 3.739379376020764
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b4-r3.json",
+      "sha256": "5db68c60240532bbd7754dca55318a220b13c37014661b2a02b8f41ba397633a",
+      "run_id": "cpu_resnet18_b4_imagenet_val10class_v2_run3",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -1.0429930861111112,
+        "main_early": -1.5447752972222215,
+        "main_transition": -0.6604866861111119,
+        "shortcut_transition": -0.21974656388888913
+      },
+      "all_substitutions_benefit_percent": -11.904347573356242
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b4-r4.json",
+      "sha256": "34ea61f349bcaab1c2a0361b05f967cd2fd8186395a2809bbcd0f198e45f3ed6",
+      "run_id": "cpu_resnet18_b4_imagenet_val10class_v2_run4",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -3.227263311111111,
+        "main_early": -0.5368061111111118,
+        "main_transition": -0.9825676611111128,
+        "shortcut_transition": -4.353740516666668
+      },
+      "all_substitutions_benefit_percent": -27.28410628989033
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b4-r5.json",
+      "sha256": "55dc5842ea00936879775a3c0010079d7d341e5cf61a952db8919ff3a5102375",
+      "run_id": "cpu_resnet18_b4_imagenet_val10class_v2_run5",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.8835726666666659,
+        "main_early": -3.1729640999999993,
+        "main_transition": -1.4883088611111113,
+        "shortcut_transition": 3.357863661111113
+      },
+      "all_substitutions_benefit_percent": -7.3921319988190755
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b4-r6.json",
+      "sha256": "6394b3bd8f4bf2779b1c7e9a322c800477d949e5e75017e73dc2f9d0297b3875",
+      "run_id": "cpu_resnet18_b4_imagenet_val10class_v2_run6",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -2.6322037222222208,
+        "main_early": -3.9646822055555533,
+        "main_transition": -1.6079488222222214,
+        "shortcut_transition": -6.033820716666668
+      },
+      "all_substitutions_benefit_percent": -50.352908080646834
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b4-r7.json",
+      "sha256": "07af2ad8c86bcd36412563dfd2262ab8c09e1e43412f9b0f7776c1f804bb4abf",
+      "run_id": "cpu_resnet18_b4_imagenet_val10class_v2_run7",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -1.8708420916666666,
+        "main_early": -0.3982719861111111,
+        "main_transition": -1.4344936583333334,
+        "shortcut_transition": 0.6158852694444454
+      },
+      "all_substitutions_benefit_percent": -11.528544148262911
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b4-r8.json",
+      "sha256": "724c148e60ace4b4d719790f53bac5b0ff8905e1e59de1c97b93b3b287225a63",
+      "run_id": "cpu_resnet18_b4_imagenet_val10class_v2_run8",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.9792962111111105,
+        "main_early": -2.6990686777777775,
+        "main_transition": -2.1554963555555537,
+        "shortcut_transition": -4.7083311777777785
+      },
+      "all_substitutions_benefit_percent": -33.17580323715925
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b1-r1.json",
+      "sha256": "12b0493468045fc4006f05418bee8d25929115ef374912cdb2a039bc01471078",
+      "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run1",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.022716050000000026,
+        "main_early": 0.02317660555555549,
+        "main_transition": 0.013842127777777788,
+        "shortcut_transition": 0.019022449999999986
+      },
+      "all_substitutions_benefit_percent": 4.039335911079103
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b1-r2.json",
+      "sha256": "cfc1f300862ef102fabe813ae13d40cc53504331c087a6203bcadea7028fcc4b",
+      "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run2",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.01890446388888885,
+        "main_early": 0.01632826388888886,
+        "main_transition": 0.009752697222222198,
+        "shortcut_transition": 0.012196775000000049
+      },
+      "all_substitutions_benefit_percent": 2.9496261105012174
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b1-r3.json",
+      "sha256": "91275d7e7cca4f9a9bd8de01909371277a10c9d70c34f8b8a80bd93c5acda476",
+      "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run3",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.011215775000000075,
+        "main_early": 0.01607249166666665,
+        "main_transition": 0.00917477500000008,
+        "shortcut_transition": 0.013224924999999943
+      },
+      "all_substitutions_benefit_percent": 2.5855265504046234
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b1-r4.json",
+      "sha256": "0832075f202fa0fd9ddd4e6a0809b292aa823bbd5b6215d7785494c4fb82bcbb",
+      "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run4",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.023319502777777723,
+        "main_early": 0.013888791666666641,
+        "main_transition": 0.005778675000000029,
+        "shortcut_transition": 0.0032927305555555306
+      },
+      "all_substitutions_benefit_percent": 2.4179170697135044
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b1-r5.json",
+      "sha256": "eb3a3fabff53831bcf28410ab499a38f5e5f9921e1c2d3860262e9f13ae9a9e6",
+      "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run5",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.016578016666666622,
+        "main_early": 0.016058494444444404,
+        "main_transition": 0.00438332222222219,
+        "shortcut_transition": 0.010343600000000045
+      },
+      "all_substitutions_benefit_percent": 2.4693767258684938
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b1-r6.json",
+      "sha256": "31e2a886321fc5a0f776f1550c7e5a5fa3889a8cd5becda88e4ff77b30df33a6",
+      "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run6",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.023263641666666685,
+        "main_early": 0.02445681388888891,
+        "main_transition": 0.00019890277777782442,
+        "shortcut_transition": 0.0018632416666667002
+      },
+      "all_substitutions_benefit_percent": 2.5917825590300034
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b1-r7.json",
+      "sha256": "833c873f8a6ea1bc4c411d8ce1f7086f07118be2c5d92ab9bd02139da4d8086d",
+      "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run7",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.026326747222222262,
+        "main_early": 0.012011052777777828,
+        "main_transition": 0.010833152777777763,
+        "shortcut_transition": 0.003499180555555629
+      },
+      "all_substitutions_benefit_percent": 2.737941047206698
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b1-r8.json",
+      "sha256": "0283c160469df4367949f87a7e52e85e80ab19a7c1d68f3b0f0f6be4c41d625f",
+      "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run8",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.02375745277777778,
+        "main_early": 0.013282669444444525,
+        "main_transition": 0.013243830555555594,
+        "shortcut_transition": 0.016341447222222267
+      },
+      "all_substitutions_benefit_percent": 3.4438283735467063
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b4-r1.json",
+      "sha256": "5a68e59939aecc38c55e8bb5d72e9d8ae96d609093d9ca0e227be0dc4194c01a",
+      "run_id": "cuda_resnet18_b4_imagenet_val10class_v2_run1",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.009549663888888857,
+        "main_early": 0.0004464305555555252,
+        "main_transition": -0.0032433749999998263,
+        "shortcut_transition": -4.619444444298182e-06
+      },
+      "all_substitutions_benefit_percent": 0.16192333921738414
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b4-r2.json",
+      "sha256": "a012ec339b3ee5231eb0cebe55293f5e7ddb7d87b3659d50e7788ce3ee883a34",
+      "run_id": "cuda_resnet18_b4_imagenet_val10class_v2_run2",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.007992880555555285,
+        "main_early": 0.001996619444444366,
+        "main_transition": -0.0015200805555558212,
+        "shortcut_transition": -0.0007788527777780422
+      },
+      "all_substitutions_benefit_percent": 0.18432669365651924
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b4-r3.json",
+      "sha256": "e9be9e551631cd84ab7ade45552bee1054f2bf9b8cf8aa72d99156abc03cef04",
+      "run_id": "cuda_resnet18_b4_imagenet_val10class_v2_run3",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.007783411111111101,
+        "main_early": -0.0027061888888889976,
+        "main_transition": -0.002616694444444493,
+        "shortcut_transition": -0.003132061111111195
+      },
+      "all_substitutions_benefit_percent": -0.016131514651462633
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b4-r4.json",
+      "sha256": "02e56c9c57caaa4990c03afa655c3d6a92eea5d1f936f14e41af43949f522477",
+      "run_id": "cuda_resnet18_b4_imagenet_val10class_v2_run4",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.011666844444444472,
+        "main_early": -0.003254166666666706,
+        "main_transition": -0.0018392833333332377,
+        "shortcut_transition": -0.0004746611111112002
+      },
+      "all_substitutions_benefit_percent": 0.14626527424543048
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b4-r5.json",
+      "sha256": "3c8bdd26cd8029691cfe0811e7bd095420401f23b1efc8c65c223e8fbc10ff57",
+      "run_id": "cuda_resnet18_b4_imagenet_val10class_v2_run5",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.01017575833333321,
+        "main_early": -0.0021576972222220694,
+        "main_transition": -0.00046587499999994897,
+        "shortcut_transition": 0.0004307805555556765
+      },
+      "all_substitutions_benefit_percent": 0.1914346906543135
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b4-r6.json",
+      "sha256": "c2d586f33fd6be1d3142a718465fa188d0a1ec4f96508f65ae435acef1d82c46",
+      "run_id": "cuda_resnet18_b4_imagenet_val10class_v2_run6",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.012092511111110982,
+        "main_early": -0.002171544444444562,
+        "main_transition": 0.0005460333333334363,
+        "shortcut_transition": -0.00029909999999995957
+      },
+      "all_substitutions_benefit_percent": 0.2437442495819889
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b4-r7.json",
+      "sha256": "b35d6e6ceed7790a1715ef24954d8ffb3a65e39e36f32f0010dcea77fd76cf50",
+      "run_id": "cuda_resnet18_b4_imagenet_val10class_v2_run7",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.010571163888888865,
+        "main_early": -0.00042806388888879293,
+        "main_transition": 0.0008438305555556654,
+        "shortcut_transition": -0.0016999972222221011
+      },
+      "all_substitutions_benefit_percent": 0.22268517455035797
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b4-r8.json",
+      "sha256": "bc9d6e4b1bcaa3911d9c0948c180ccf6f1bfe8b95a052bebafbeb9daa5003cd0",
+      "run_id": "cuda_resnet18_b4_imagenet_val10class_v2_run8",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.010950302777777607,
+        "main_early": -0.0009454583333335561,
+        "main_transition": -0.0017844305555555866,
+        "shortcut_transition": 0.000663352777777663
+      },
+      "all_substitutions_benefit_percent": 0.2128970274977439
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b1-r1.json",
+      "sha256": "5f788c065b565b34b5a8821728e06b65f171d1d35d77d7d722595f85b6724f5d",
+      "run_id": "cuda_resnet50_b1_imagenet_val10class_v2_run1",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.013693108333333445,
+        "main_early": 0.0013896527777779166,
+        "main_transition": 0.013387486111111254,
+        "shortcut_transition": 0.017854086111111018
+      },
+      "all_substitutions_benefit_percent": 0.9586449482985174
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b1-r2.json",
+      "sha256": "336a263a9507082d72c6c1edb7011c1b0ec3a7f9d02c464b460c65f657b0896e",
+      "run_id": "cuda_resnet50_b1_imagenet_val10class_v2_run2",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.016439933333333306,
+        "main_early": 0.02028677222222212,
+        "main_transition": -0.00046340555555561086,
+        "shortcut_transition": 0.0008522666666666753
+      },
+      "all_substitutions_benefit_percent": 0.7639838436539835
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b1-r3.json",
+      "sha256": "f0944e0726a67d7167ff966829a8201450b33c6c1a8b873a320bb1b50dad86ea",
+      "run_id": "cuda_resnet50_b1_imagenet_val10class_v2_run3",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.02082715277777784,
+        "main_early": 0.0006563638888888631,
+        "main_transition": -0.005872608333333436,
+        "shortcut_transition": 0.009276258333333528
+      },
+      "all_substitutions_benefit_percent": 0.516095653483559
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b1-r4.json",
+      "sha256": "3449dbd147d7eb34e91782fd76263ede7a2a8d2b45664b854e7a830861d8b151",
+      "run_id": "cuda_resnet50_b1_imagenet_val10class_v2_run4",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.010320788888888913,
+        "main_early": 0.021435005555555515,
+        "main_transition": -0.011455666666666605,
+        "shortcut_transition": 0.009521505555555606
+      },
+      "all_substitutions_benefit_percent": 0.6155441046495933
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b1-r5.json",
+      "sha256": "723809972dbaedb546825fce1bd78a7ff4c4d18d9c3eac15e2096ab377f3bc0c",
+      "run_id": "cuda_resnet50_b1_imagenet_val10class_v2_run5",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.03852857777777752,
+        "main_early": 0.024708561111111155,
+        "main_transition": -0.032309788888888726,
+        "shortcut_transition": 0.11714627222222236
+      },
+      "all_substitutions_benefit_percent": 1.4667979823467514
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b1-r6.json",
+      "sha256": "0d6b586339af3a4998d24b360f8fa02fbb2cb78b1b70a578b994c5564c6e7b45",
+      "run_id": "cuda_resnet50_b1_imagenet_val10class_v2_run6",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.025321919444444656,
+        "main_early": 0.004754697222222178,
+        "main_transition": 0.011396413888889049,
+        "shortcut_transition": -0.00412413055555542
+      },
+      "all_substitutions_benefit_percent": 0.7717002084568036
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b1-r7.json",
+      "sha256": "36f60ef1a1231016a50f18764f4ad22cea413bed06d04de6e634e13f06799992",
+      "run_id": "cuda_resnet50_b1_imagenet_val10class_v2_run7",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.07557327500000022,
+        "main_early": 0.030742741666666722,
+        "main_transition": 0.05366699722222242,
+        "shortcut_transition": -0.12881584722222228
+      },
+      "all_substitutions_benefit_percent": 0.6454886459126128
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b1-r8.json",
+      "sha256": "ededf4837ecb1b4d904c73df43a22664419f317d4f84cbb9ea81848ea2f4e709",
+      "run_id": "cuda_resnet50_b1_imagenet_val10class_v2_run8",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.03113458888888876,
+        "main_early": 0.02289724999999998,
+        "main_transition": 0.002014672222222217,
+        "shortcut_transition": -0.007314877777777544
+      },
+      "all_substitutions_benefit_percent": 1.007317486652166
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b4-r1.json",
+      "sha256": "3743acb94ecee2fdced8b2287d7ffb64f6e3bb5fc1ee6463ac877342a995f069",
+      "run_id": "cuda_resnet50_b4_imagenet_val10class_v2_run1",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.013408758333333251,
+        "main_early": -0.004525813888888989,
+        "main_transition": 0.007689169444444459,
+        "shortcut_transition": 0.016739819444444876
+      },
+      "all_substitutions_benefit_percent": 0.29406802841481794
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b4-r2.json",
+      "sha256": "b828db147df023e3bb2bb4cb74304b20bf58c5cc0ebf59b3ec0786c27045b993",
+      "run_id": "cuda_resnet50_b4_imagenet_val10class_v2_run2",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.007492547222222405,
+        "main_early": -0.012347719444444424,
+        "main_transition": 0.011205397222222432,
+        "shortcut_transition": 0.013563841666666429
+      },
+      "all_substitutions_benefit_percent": 0.17575898800395387
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b4-r3.json",
+      "sha256": "b3c62f3fac98e121e2d84bf2ba2b0c541edd95e447991d106f1c10420543f3c1",
+      "run_id": "cuda_resnet50_b4_imagenet_val10class_v2_run3",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.01918312222222222,
+        "main_early": 0.00858535555555573,
+        "main_transition": 0.01720028333333327,
+        "shortcut_transition": 0.017144372222222575
+      },
+      "all_substitutions_benefit_percent": 0.5472458939399605
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b4-r4.json",
+      "sha256": "81f8da00c3d5448b9800fa2c7ff0c8a589675e20a0c98cc9702f1d7cc417910d",
+      "run_id": "cuda_resnet50_b4_imagenet_val10class_v2_run4",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.007340466666666619,
+        "main_early": -0.005105116666666613,
+        "main_transition": 0.019164911111111255,
+        "shortcut_transition": 0.011208838888888906
+      },
+      "all_substitutions_benefit_percent": 0.28783822737978165
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b4-r5.json",
+      "sha256": "900ae4d81fd7ac460069f58a1563e422f173020b59f8f219423666c9698dcc2a",
+      "run_id": "cuda_resnet50_b4_imagenet_val10class_v2_run5",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.011493619444444233,
+        "main_early": -0.006866669444444658,
+        "main_transition": 0.005833119444444239,
+        "shortcut_transition": 0.01878546388888876
+      },
+      "all_substitutions_benefit_percent": 0.25786731830838067
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b4-r6.json",
+      "sha256": "d2086c5d4499df70295265e91f79f0191530a1b5bded2e608c4d9a2b92eb276b",
+      "run_id": "cuda_resnet50_b4_imagenet_val10class_v2_run6",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.011664055555555533,
+        "main_early": -0.005966461111111432,
+        "main_transition": 0.011849672222222107,
+        "shortcut_transition": 0.017505733333333346
+      },
+      "all_substitutions_benefit_percent": 0.3093609273509661
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b4-r7.json",
+      "sha256": "01817818b4ee22f315343ca9a5d9e42b1704552cb7e7a68a3f4aff00a283890b",
+      "run_id": "cuda_resnet50_b4_imagenet_val10class_v2_run7",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.011164447222221874,
+        "main_early": -0.003285547222222185,
+        "main_transition": 0.0046893527777776,
+        "shortcut_transition": 0.014186613888888644
+      },
+      "all_substitutions_benefit_percent": 0.2362772623121108
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet50-b4-r8.json",
+      "sha256": "ede7ff3bd3467419ecc4c3300bf32f6a8b0fb34c447ab37a19f88d66ae7ae644",
+      "run_id": "cuda_resnet50_b4_imagenet_val10class_v2_run8",
+      "model_id": "resnet50",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.010418616666666955,
+        "main_early": -0.002287761111110953,
+        "main_transition": 0.009129355555555977,
+        "shortcut_transition": 0.015145088888888658
+      },
+      "all_substitutions_benefit_percent": 0.28610969157140426
+    }
+  ],
+  "audit_source_sha256": "a109f0c09cbff5c6c837dafbf9caaf60a8d55b8a4e75e0a4c12619af6595dd99",
+  "limitations": "Saved-record arithmetic/identity audit; device/run authenticity also requires worker receipts. Recorded logit equivalence cannot be recomputed from hashes alone."
+}

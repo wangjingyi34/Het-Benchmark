@@ -1,0 +1,52 @@
+{
+  "all_five_graph_input_weight_hashes_match": true,
+  "stacks": [
+    {
+      "file": "a100mig.json",
+      "sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "graphs": 36,
+      "records": 2781,
+      "failed_graphs": 0,
+      "failed_records": 0,
+      "device": "A100-SXM4-MIG-2g20GB"
+    },
+    {
+      "file": "m5cpu.json",
+      "sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "graphs": 36,
+      "records": 2781,
+      "failed_graphs": 0,
+      "failed_records": 0,
+      "device": "Apple-M5-CPU-4T"
+    },
+    {
+      "file": "m5mps.json",
+      "sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "graphs": 36,
+      "records": 2781,
+      "failed_graphs": 0,
+      "failed_records": 0,
+      "device": "Apple-M5-MPS"
+    },
+    {
+      "file": "xeon_cpu.json",
+      "sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "graphs": 36,
+      "records": 2781,
+      "failed_graphs": 0,
+      "failed_records": 0,
+      "device": "Cloud-x86-CPU-4T"
+    },
+    {
+      "file": "npub3.json",
+      "sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "graphs": 36,
+      "records": 2781,
+      "failed_graphs": 0,
+      "failed_records": 0,
+      "device": "Ascend-910B3-64GB"
+    }
+  ],
+  "graphs": 180,
+  "physical_records": 13905
+}

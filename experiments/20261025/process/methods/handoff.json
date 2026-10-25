@@ -1,0 +1,71 @@
+{
+  "recorded_utc": "2026-10-25T07:12:13.952081+00:00",
+  "scope": "completed measured v2 methods, CPU fits, migration bridge and fresh paired confirmation",
+  "real_policy_fits": 160,
+  "real_policy_configurations_per_context": 4,
+  "policy_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "policy_steps": 4096,
+  "contexts": 8,
+  "paid_npu_offline_training": false,
+  "migration_contexts": 4,
+  "operator_counts": [
+    69,
+    175
+  ],
+  "migration_total_permutations": 500,
+  "migration_reference_total_permutations": 5000,
+  "fresh_paired_contexts": 4,
+  "fresh_process_blocks_per_context": 5,
+  "raw_paired_calls": 4400,
+  "unit_cases": {
+    "methods_original_logic": 27,
+    "bridge_lightweight": 12,
+    "bridge_summary": 3,
+    "paired_summary": 4
+  },
+  "actual_runtime_audit": {
+    "checkpoint_sha": 160,
+    "reload_same_cal_plan": 160,
+    "independent_physical_phi_checks": 160,
+    "independent_surrogate_phi_checks": 32
+  },
+  "reports": [
+    "theory-and-implementation-clarifications.md",
+    "planner-matrix-independent-review.md",
+    "planner-matrix-independent-audit.json",
+    "paired-independent-review.md",
+    "paired-method-results-with-ppo.json",
+    "prediction-peer-review.md",
+    "quality-gate-npu-independent-review.md"
+  ],
+  "archives": {
+    "all160_policies": "9769531960c576850d73ca882ff5a3e1b953ec3e79dd01cbc803058e7ed1d518",
+    "resnet50_full_bridge": "6e4d5b337a26da931c088213ea3d05a3f62813b5c7a6b5ed7d3615d1dde5872f"
+  },
+  "source_sha256": {
+    "test_migration_bridge.py": "f363fbb3ea789eb8e41d6ca6d622adff4dfc4a3b1c982397c44e894895607632",
+    "audit_planner_matrix.py": "ad250979637cb99bdb089f0d869ea5feadb8552a784a8b91ff8487264a26f253",
+    "test_methods.py": "3ca926687d9cc3a93534e0ac18e3345fbc03081b7f41a634fa2783670772d6f6",
+    "attach_embeddings.py": "dc1963944d949a274e117028f467d8f0f519a1dd241b9fd523d00eaa39422b62",
+    "prepare_planner_matrix.py": "cb31a5eaa5c988d84b918718e88ee4bb02b7c1a04b062935583cee9ff3f8105a",
+    "cloud_planner_matrix.py": "cd447c683cae3d6406c3227694c4c58c050ddf3aff1de25d8b370101542ccb72",
+    "test_paired_summary.py": "7dd03bb2471177e360f668e4c1aee219f43a188c93e74cee6f4de0b8793c17ba",
+    "test_summarize_bridge.py": "43e8bd243654abb8e70e4a3870690d845963c3ef2901343698b591b6dae01165",
+    "download_research_artifacts.py": "09e285c3fa9312a11878b2a00bad1b8bbf58ccaadc80cd5ae338b2580a55b143",
+    "copa_v2.py": "421c94039b90c6cca76e7ba7ef53153f832e23fbb36607ee7c4a68f5f3c93d52",
+    "analyze_measured.py": "a3bb928ff5f05f29ae45280b23c54c56dca455b80c6635e1e160e7d27da473fc",
+    "summarize_paired_methods.py": "87eac0b12650dd6c6e905caa94a704e63a51c3fbbdbe77e9442fafa18eee07fb",
+    "runtime_calibration.py": "0193d36362b6fc30910870dbc751b047aff6a5798be4f4353073581744df45d8",
+    "summarize_bridge.py": "1566a2740577d552990a0a5cf7fe952c942e494d9f2813c309788caa345ddebc",
+    "measured_planner.py": "ab207e080c532a5bb75cda136cdfbbd6ea93522b8ead1631f5e62913bf9f2a2b",
+    "migration_bridge.py": "281f9afc72b3b79abbbeba16e1f49c3de5fcf1fb6aa169948046e5c654ae2f4c",
+    "cloud_early_bridge.py": "251501ccbf58dc600aefc979b09aeafec00c972b4d8343078fc1c23dd4542524"
+  },
+  "interpretation": "Report actual raw/gated effects, unchanged masks and negative controls; no broad gain guarantee; new implementation is separate from historical v21 claims."
+}

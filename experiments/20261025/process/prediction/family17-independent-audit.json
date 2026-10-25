@@ -1,0 +1,19 @@
+{
+  "kind": "independent_family17_result_integrity_audit",
+  "created_utc": "2026-10-25T07:50:53.106254+00:00",
+  "audit_code_sha256": "17c4b7d4cc5d0c04ac8d1e4f341403fb0d72df82a4dd5dad6e1d08781a503f24",
+  "summary_sha256": "5b209063d064fcf518940051adea47465ebcacb88a9f67b089799d016e535949",
+  "all_checks_passed": true,
+  "fixed_parameter_and_same_support_entries": 33,
+  "actual_probe_input_weight_and_timing_checks": 70,
+  "runtime_cost_checks": [
+    "Apple-M5-CPU-4T",
+    "Apple-M5-MPS",
+    "A100-SXM4-MIG-2g20GB",
+    "Cloud-x86-CPU-4T",
+    "Ascend-910B3-64GB"
+  ],
+  "independent_full_support_aggregate_metrics_checked": 6,
+  "all_original_results_retained": true,
+  "scope": "No new parameter choices, training or physical measurement. Raw probes, exact prior parameters, same13905 record supports,17-type cost and independent per-record arithmetic are checked."
+}

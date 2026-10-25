@@ -1,0 +1,22 @@
+
+Authorized users only. All activities may be monitored and reported.
+{"run_id": "npu_resnet18_b1_paired_run101", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b1-r101.json", "status": "existing_verified", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet18_b1_paired_run102", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b1-r102.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet18_b1_paired_run103", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b1-r103.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet18_b1_paired_run104", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b1-r104.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet18_b1_paired_run105", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b1-r105.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet18_b4_paired_run101", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b4-r101.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet18_b4_paired_run102", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b4-r102.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet18_b4_paired_run103", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b4-r103.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet18_b4_paired_run104", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b4-r104.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet18_b4_paired_run105", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b4-r105.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b1_paired_run101", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b1-r101.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b1_paired_run102", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b1-r102.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b1_paired_run103", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b1-r103.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b1_paired_run104", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b1-r104.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b1_paired_run105", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b1-r105.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b4_paired_run101", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b4-r101.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b4_paired_run102", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b4-r102.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b4_paired_run103", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b4-r103.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b4_paired_run104", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b4-r104.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}
+{"run_id": "npu_resnet50_b4_paired_run105", "file": "/root/het-rebuttal-20261025/paired_raw/npu-resnet50-b4-r105.json", "status": "executed", "collection_status": "completed", "masks": 11, "pairs": 220, "feasible": 11}

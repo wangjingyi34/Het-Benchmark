@@ -1,0 +1,14 @@
+{"total": 99003388, "etag": "\"3427d2e98d0c9c71b46a11ee849c3676-12\"", "parts": 95, "workers": 8}
+{"completed_chunks": 8, "total_chunks": 95}
+{"completed_chunks": 16, "total_chunks": 95}
+{"completed_chunks": 24, "total_chunks": 95}
+{"completed_chunks": 32, "total_chunks": 95}
+{"completed_chunks": 40, "total_chunks": 95}
+{"completed_chunks": 48, "total_chunks": 95}
+{"completed_chunks": 56, "total_chunks": 95}
+{"completed_chunks": 64, "total_chunks": 95}
+{"completed_chunks": 72, "total_chunks": 95}
+{"completed_chunks": 80, "total_chunks": 95}
+{"completed_chunks": 88, "total_chunks": 95}
+{"completed_chunks": 95, "total_chunks": 95}
+{"url": "https://fast-ai-imageclas.s3.amazonaws.com/imagenette2-160.tgz", "bytes": 99003388, "etag": "\"3427d2e98d0c9c71b46a11ee849c3676-12\"", "sha256": "64d0c4859f35a461889e0147755a999a48b49bf38a7e0f9bd27003f10db02fe5", "range_length_etag_checked": true, "limitations": "Hash seals received bytes; no independent upstream SHA256 was supplied."}

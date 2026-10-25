@@ -1,0 +1,18 @@
+
+Authorized users only. All activities may be monitored and reported.
+{"npu_fp32_launch": {"utc": "2026-10-25T07:33:59.224969+00:00", "torch": "2.6.0+cpu", "torch_npu": "2.6.0", "python": "3.9.9", "architecture": "aarch64", "device": "Ascend910B3", "conv_allow_hf32": false, "matmul_allow_hf32": false, "synchronization": "torch.npu.synchronize after timed calls", "visible_device_count": 1, "launcher_sha256": "2dbc8d43f9219e02bd76a115a061758717b5ecad4f581f633d913bc0b999f093", "script": "/root/het-rebuttal-20261025/methods/family_calibration_probes.py", "script_sha256": "cdd236c31f3c223889e68026f400aad5a6413ec6c1173603d92fb05a4d91dce2", "args": ["collect", "--manifest", "/root/het-rebuttal-20261025/methods/family-calibration-manifest.json", "--hardware-from", "/root/het-rebuttal-20261025/npu-hardware-only.json", "--device", "npu", "--output", "/root/het-rebuttal-20261025/family14-npub3.json"]}}
+{"probe": "family14-Conv2D", "status": "measured", "wall_seconds": 1.6530845000006593}
+{"probe": "family14-Conv1D", "status": "measured", "wall_seconds": 0.4735546499996417}
+{"probe": "family14-MatMul", "status": "measured", "wall_seconds": 0.4154037500002232}
+{"probe": "family14-Attention", "status": "measured", "wall_seconds": 0.05377281000073708}
+{"probe": "family14-Normalization", "status": "measured", "wall_seconds": 0.023888340000667085}
+{"probe": "family14-Activation", "status": "measured", "wall_seconds": 0.015159010000388662}
+{"probe": "family14-Pooling", "status": "measured", "wall_seconds": 0.040177699999730976}
+{"probe": "family14-Elementwise", "status": "measured", "wall_seconds": 0.01602190999983577}
+{"probe": "family14-View", "status": "measured", "wall_seconds": 0.007443009999406058}
+{"probe": "family14-Embedding", "status": "measured", "wall_seconds": 0.03052590999959648}
+{"probe": "family14-Dropout", "status": "measured", "wall_seconds": 0.0058446299999559415}
+{"probe": "family14-Reduction", "status": "measured", "wall_seconds": 0.014148820000627893}
+{"probe": "family14-Composite", "status": "measured", "wall_seconds": 0.9584262900007161}
+{"probe": "family14-Other", "status": "measured", "wall_seconds": 0.004703159999735362}
+{"output": "/root/het-rebuttal-20261025/family14-npub3.json", "successful": 14, "failed": 0, "budget": 17}

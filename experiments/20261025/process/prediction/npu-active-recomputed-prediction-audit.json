@@ -1,0 +1,23 @@
+{
+  "kind": "checkpoint_recomputed_unlabelled_active_decision_audit",
+  "created_utc": "2026-10-25T06:29:44.354771+00:00",
+  "code_sha256": "75c6c9caa0a60e80d6c293fbcdc9854a78d347fa4b873c9af64f8af0f046e839",
+  "policy_sha256": "ccae163877b5726a3aa98243fdf9551de0bb9583ef7e1396986725e6f33f341a",
+  "decisions_sha256": "1c263741170f255027922f764da0c81f41b0d8a2723b92dd96c3f6f48095de6f",
+  "physical_profile_sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+  "metadata_sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8",
+  "checkpoint_directory_explicitly_relocated": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/prediction/npu-policy-preserved/npu-policy-4source",
+  "query_count": 732,
+  "checkpoint_count": 5,
+  "prediction_max_absolute_difference_ms": 3.725290298461914e-08,
+  "uncertainty_max_absolute_difference": 4.7412861126083783e-07,
+  "all_predictions_numerically_close": true,
+  "trigger_mismatch_record_ids": [],
+  "all_triggers_match": true,
+  "deployed_policy_bytes_changed": false,
+  "target_latency_used_for_inference": false,
+  "new_physical_timings": 0,
+  "model_fitting": false,
+  "torch": "2.9.1",
+  "scope": "Read-only recomputation using stored structural metadata and exact local checkpoint hashes; cross-runtime FP32 tolerance2e-5 relative is declared."
+}

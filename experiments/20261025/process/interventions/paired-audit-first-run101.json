@@ -1,0 +1,200 @@
+{
+  "kind": "independent_paired_confirmation_saved_record_audit",
+  "counts": {
+    "completed_blocks": 1,
+    "incomplete_or_failed_blocks": 0,
+    "mask_records": 11,
+    "successful_pairs": 220,
+    "failed_pairs": 0,
+    "timed_calls": 440,
+    "quality_predictions": 2200,
+    "final_infeasible_masks": 0
+  },
+  "source_variants": "2f first run saved all data before terminal print failure; e88 changes only flush placement in final print. Measurement, quality and randomization unchanged; original first run is retained.",
+  "contexts": [
+    {
+      "device_id": "npu_Ascend910B3",
+      "model_id": "resnet18",
+      "batch": 1,
+      "run_indices": [
+        101
+      ],
+      "fresh_process_pid_unique": true,
+      "complete_five_process_protocol": false
+    }
+  ],
+  "records": [
+    {
+      "file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/paired_raw/npu-resnet18-b1-r101.json",
+      "sha256": "b3dd1e7fc2d12d422064eee8393bcd77b6c9b010417da281d5b11465af9b5f48",
+      "run_id": "npu_resnet18_b1_paired_run101",
+      "run_index": 101,
+      "device_id": "npu_Ascend910B3",
+      "model_id": "resnet18",
+      "measurement_source_sha256": "2f33287e7d6afffb9303724ac61186c5712cbaaa0784795196d7b1f4ec6c22bb",
+      "batch": 1,
+      "pid": 48749,
+      "status": "completed",
+      "mask_summaries": [
+        {
+          "mask": 0,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": -4.822752130279923,
+          "mean_paired_delta_ms": -0.2419750000000001,
+          "baseline_mean_ms": 5.6234725,
+          "candidate_mean_ms": 5.8654475,
+          "ratio_of_means_gain_percent": -4.3029462667417695,
+          "paired_delta_sample_sd_ms": 0.587023645228959,
+          "negative_gain_pairs": 12,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 1,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": 4.676786592467871,
+          "mean_paired_delta_ms": 0.3407465,
+          "baseline_mean_ms": 5.9284715,
+          "candidate_mean_ms": 5.587725,
+          "ratio_of_means_gain_percent": 5.747628203998279,
+          "paired_delta_sample_sd_ms": 0.6596321789753262,
+          "negative_gain_pairs": 4,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 2,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": 4.056534154628078,
+          "mean_paired_delta_ms": 0.3469319999999999,
+          "baseline_mean_ms": 6.033642,
+          "candidate_mean_ms": 5.68671,
+          "ratio_of_means_gain_percent": 5.749959974423419,
+          "paired_delta_sample_sd_ms": 0.9795457699663388,
+          "negative_gain_pairs": 9,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 3,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": 2.0521008063726587,
+          "mean_paired_delta_ms": 0.15633550000000002,
+          "baseline_mean_ms": 5.42128,
+          "candidate_mean_ms": 5.2649445,
+          "ratio_of_means_gain_percent": 2.88373778886167,
+          "paired_delta_sample_sd_ms": 0.6475352808146726,
+          "negative_gain_pairs": 7,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 4,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": 4.097563269928036,
+          "mean_paired_delta_ms": 0.36177249999999994,
+          "baseline_mean_ms": 5.4480155,
+          "candidate_mean_ms": 5.0862430000000005,
+          "ratio_of_means_gain_percent": 6.6404454979983045,
+          "paired_delta_sample_sd_ms": 1.149790422911818,
+          "negative_gain_pairs": 8,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 5,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": 4.405160455036605,
+          "mean_paired_delta_ms": 0.47128399999999987,
+          "baseline_mean_ms": 5.813904,
+          "candidate_mean_ms": 5.34262,
+          "ratio_of_means_gain_percent": 8.10615379958114,
+          "paired_delta_sample_sd_ms": 1.5945274169166697,
+          "negative_gain_pairs": 8,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 6,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": 1.5377595683886358,
+          "mean_paired_delta_ms": 0.07368500000000003,
+          "baseline_mean_ms": 5.2756435,
+          "candidate_mean_ms": 5.2019585,
+          "ratio_of_means_gain_percent": 1.396701653551841,
+          "paired_delta_sample_sd_ms": 0.2274296984610964,
+          "negative_gain_pairs": 6,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 8,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": -1.3536109371261578,
+          "mean_paired_delta_ms": 0.13157899999999997,
+          "baseline_mean_ms": 5.7333655,
+          "candidate_mean_ms": 5.6017865,
+          "ratio_of_means_gain_percent": 2.29496968229218,
+          "paired_delta_sample_sd_ms": 2.001885518770268,
+          "negative_gain_pairs": 5,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 9,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": -2.444445980815817,
+          "mean_paired_delta_ms": -0.08275800000000003,
+          "baseline_mean_ms": 5.3548515,
+          "candidate_mean_ms": 5.4376095,
+          "ratio_of_means_gain_percent": -1.5454770314358879,
+          "paired_delta_sample_sd_ms": 0.6119390686093888,
+          "negative_gain_pairs": 10,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 10,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": 5.316169279671992,
+          "mean_paired_delta_ms": 0.5351115,
+          "baseline_mean_ms": 6.2331415,
+          "candidate_mean_ms": 5.69803,
+          "ratio_of_means_gain_percent": 8.584940675580686,
+          "paired_delta_sample_sd_ms": 1.3711051788257873,
+          "negative_gain_pairs": 6,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        },
+        {
+          "mask": 12,
+          "final_candidate_feasible": true,
+          "mean_paired_gain_percent": 2.166883245957543,
+          "mean_paired_delta_ms": 0.17162300000000022,
+          "baseline_mean_ms": 5.6935055000000006,
+          "candidate_mean_ms": 5.5218825,
+          "ratio_of_means_gain_percent": 3.014364348993784,
+          "paired_delta_sample_sd_ms": 0.9081155963346934,
+          "negative_gain_pairs": 8,
+          "AB_pairs": 10,
+          "BA_pairs": 10,
+          "all_timed_outputs_equivalent": true
+        }
+      ],
+      "paired_temporal_order_checked": true,
+      "arithmetic_and_identity_checked": true
+    }
+  ],
+  "audit_source_sha256": "ed91c39f4e43763199d3a8b8d2017a7446dd0ccd62798f0d2c6d58a7b93a96b6",
+  "limitations": "Arithmetic, IDs and recorded time ordering checked. Timing pairs remain repeated calls within a process. Hashes do not reconstruct logits or authenticate the physical device; worker receipts are also required. Original main matrix is not replaced, and no plans are reselected."
+}

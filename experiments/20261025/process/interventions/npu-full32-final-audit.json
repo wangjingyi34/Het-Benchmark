@@ -1,0 +1,3876 @@
+{
+  "kind": "independent_full_model_record_consistency_audit",
+  "counts": {
+    "blocks": 32,
+    "coalitions": 512,
+    "coalition_timed_calls": 15360,
+    "quality_predictions": 51200,
+    "equivalence_passed_records": 512,
+    "non_ok_records": 0,
+    "quality_rejections": 0
+  },
+  "groups": [
+    {
+      "task": "resnet18_b1_imagenet_val10class_v2",
+      "device": "npu_Ascend910B3",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    },
+    {
+      "task": "resnet18_b4_imagenet_val10class_v2",
+      "device": "npu_Ascend910B3",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    },
+    {
+      "task": "resnet50_b1_imagenet_val10class_v2",
+      "device": "npu_Ascend910B3",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    },
+    {
+      "task": "resnet50_b4_imagenet_val10class_v2",
+      "device": "npu_Ascend910B3",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    }
+  ],
+  "weights_identical_per_model_across_observed_devices": true,
+  "unique_sample_definition": "Repeated evaluation of the same 100 IDs is not new independent quality samples.",
+  "raw_records": [
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r1.json",
+      "sha256": "8f81557b91e2e19cfa6f2f0c7ac4dc1e996776b210cbdf497cb9262bebbdaaeb",
+      "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run1",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.049780611111110984,
+        "main_early": 0.07295699999999979,
+        "main_transition": -0.15993822222222223,
+        "shortcut_transition": 0.21978550000000005
+      },
+      "all_substitutions_benefit_percent": 1.830831738366542
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r2.json",
+      "sha256": "789f1c345f20878dab126ceab3eb2c1ca3f36301404f420de8999ceca2cc4ac9",
+      "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run2",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.42367013888888855,
+        "main_early": -1.0948825277777774,
+        "main_transition": 0.22916008333333346,
+        "shortcut_transition": 0.8998262499999999
+      },
+      "all_substitutions_benefit_percent": -5.7035337049995265
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r3.json",
+      "sha256": "db41317112a450be9ce58b7241d8a337d69de756637d90b425dbdbb6064e95cb",
+      "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run3",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.4408168611111109,
+        "main_early": 0.062408972222222005,
+        "main_transition": -0.0660772499999999,
+        "shortcut_transition": -0.5127975833333335
+      },
+      "all_substitutions_benefit_percent": -1.1785267561306447
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r4.json",
+      "sha256": "ddc9dfcd633e442fcd57daaf06603cc6d7821df2b58b95c7f4487249917d8135",
+      "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run4",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.07537738888888883,
+        "main_early": 0.5378815000000001,
+        "main_transition": -0.6789364444444445,
+        "shortcut_transition": -0.311641111111111
+      },
+      "all_substitutions_benefit_percent": -8.027432191977688
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r5.json",
+      "sha256": "4758d1e18a4f99c7531851484693817bb3fa238a1cefab8a09bee8769cfeedaf",
+      "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run5",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.9917986388888891,
+        "main_early": -0.34947086111111125,
+        "main_transition": 0.03083619444444456,
+        "shortcut_transition": -0.39921697222222247
+      },
+      "all_substitutions_benefit_percent": 6.350788527205985
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r6.json",
+      "sha256": "82e6be014af58d671ab903020cf8787e9345044b42184fc55bf62086670bf5d2",
+      "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run6",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.06830013888888882,
+        "main_early": 0.0329635277777777,
+        "main_transition": -0.4366396944444441,
+        "shortcut_transition": -0.2654749722222219
+      },
+      "all_substitutions_benefit_percent": -11.264662925887812
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r7.json",
+      "sha256": "b6f7f253b1077fa1f4fb533f15cfca1460a0fa2f533756623067c7759445e8ad",
+      "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run7",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.06277505555555558,
+        "main_early": -0.06707211111111107,
+        "main_transition": 0.12234683333333352,
+        "shortcut_transition": 0.13767155555555566
+      },
+      "all_substitutions_benefit_percent": 5.454706921240141
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r8.json",
+      "sha256": "b434a2edaba578e0ffc2125a924a6aed4b601eff523ed283e5ef1162303186d9",
+      "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run8",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.6536137777777773,
+        "main_early": 0.4269523888888891,
+        "main_transition": 0.3818598333333334,
+        "shortcut_transition": 0.31263155555555544
+      },
+      "all_substitutions_benefit_percent": 10.331812174487629
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r1.json",
+      "sha256": "e72bc03e1121ade856474ef90c5e837d164659206f5a0a5a77813e6c7b2a2a58",
+      "run_id": "npu_resnet18_b4_imagenet_val10class_v2_run1",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.18168480555555536,
+        "main_early": 0.2290467500000004,
+        "main_transition": 0.5623870277777778,
+        "shortcut_transition": -0.5902493055555554
+      },
+      "all_substitutions_benefit_percent": 0.4261438862641284
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r2.json",
+      "sha256": "d4138d4b8766dc0825312c3301dc131cbe1c69800c00a21b3e4aa0f4f7775ffd",
+      "run_id": "npu_resnet18_b4_imagenet_val10class_v2_run2",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.29480236111111097,
+        "main_early": -0.5152777500000002,
+        "main_transition": 0.3560304166666666,
+        "shortcut_transition": 0.12957897222222214
+      },
+      "all_substitutions_benefit_percent": 6.131809363343399
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r3.json",
+      "sha256": "9349877eb73be9fde6145d420a373cdd3b9a6043592a8a77d56a641c33df68d1",
+      "run_id": "npu_resnet18_b4_imagenet_val10class_v2_run3",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.7933651944444446,
+        "main_early": -0.2404238055555553,
+        "main_transition": 0.7514934722222218,
+        "shortcut_transition": -1.2179141944444447
+      },
+      "all_substitutions_benefit_percent": 2.172199458862381
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r4.json",
+      "sha256": "6c277e4e3e1b40c3c6483662504d60d69b8ec522fb07df93fe4294abc35164c9",
+      "run_id": "npu_resnet18_b4_imagenet_val10class_v2_run4",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.03993380555555567,
+        "main_early": 0.015547916666666847,
+        "main_transition": 0.015128472222222097,
+        "shortcut_transition": 0.06275347222222227
+      },
+      "all_substitutions_benefit_percent": 2.975447137735443
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r5.json",
+      "sha256": "2750058cbe67c0e2a8ac6ef91ce231b90880eb3e4feb0f2ce97aa3ecd60f7d91",
+      "run_id": "npu_resnet18_b4_imagenet_val10class_v2_run5",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.36695249999999985,
+        "main_early": 0.8092168888888889,
+        "main_transition": 0.15022761111111102,
+        "shortcut_transition": 0.23417633333333346
+      },
+      "all_substitutions_benefit_percent": 26.111219589025424
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r6.json",
+      "sha256": "d690384f710349ee9292a5f7e6e6ed82b67c823f2c53b8f65d25504c4ff9f986",
+      "run_id": "npu_resnet18_b4_imagenet_val10class_v2_run6",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.02151091666666653,
+        "main_early": 0.10571486111111106,
+        "main_transition": 0.10224647222222216,
+        "shortcut_transition": -0.0036515833333333005
+      },
+      "all_substitutions_benefit_percent": 4.9483845412122704
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r7.json",
+      "sha256": "1668af2597b3214d65e05de349017e29053af465d50444b00a7fbc78b74291cd",
+      "run_id": "npu_resnet18_b4_imagenet_val10class_v2_run7",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.051903361111111046,
+        "main_early": -0.35475936111111056,
+        "main_transition": 0.6762445277777779,
+        "shortcut_transition": 0.05286686111111131
+      },
+      "all_substitutions_benefit_percent": 6.8249642540710544
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r8.json",
+      "sha256": "e800fb671b192a5a6049d00d3180b519f237404014bc2546d787b4d0576680c1",
+      "run_id": "npu_resnet18_b4_imagenet_val10class_v2_run8",
+      "model_id": "resnet18",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.239555083333333,
+        "main_early": -8.436111111119009e-05,
+        "main_transition": 0.918896972222222,
+        "shortcut_transition": 0.4806756388888888
+      },
+      "all_substitutions_benefit_percent": 30.722590341365372
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r1.json",
+      "sha256": "d8c487d498458f1927161d2f9215c38d2164020b7ca071e4322e897a3550dded",
+      "run_id": "npu_resnet50_b1_imagenet_val10class_v2_run1",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.7277875277777778,
+        "main_early": -0.8554068611111111,
+        "main_transition": -0.9833571944444444,
+        "shortcut_transition": -1.202757416666666
+      },
+      "all_substitutions_benefit_percent": -37.83820455957992
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r2.json",
+      "sha256": "651ed5bced4d6da54d578d71864320353499049a07c17b7d2a02501e6ad7a712",
+      "run_id": "npu_resnet50_b1_imagenet_val10class_v2_run2",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.21417994444444485,
+        "main_early": 0.9715315555555556,
+        "main_transition": 0.7653448888888885,
+        "shortcut_transition": 0.3655985000000001
+      },
+      "all_substitutions_benefit_percent": 14.215811440058305
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r3.json",
+      "sha256": "f1df188bb06e217821f54e2dbec076c27116d336b3623f935e1f603f445e71e3",
+      "run_id": "npu_resnet50_b1_imagenet_val10class_v2_run3",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.5286641666666667,
+        "main_early": -1.3917216111111121,
+        "main_transition": 0.32001738888888925,
+        "shortcut_transition": 0.4475973888888884
+      },
+      "all_substitutions_benefit_percent": -0.9065539403362237
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r4.json",
+      "sha256": "72d6731f00148d82eaecbb1b16bcfc92aca0b7205055a37c1e2f6a3e07c299ae",
+      "run_id": "npu_resnet50_b1_imagenet_val10class_v2_run4",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.5654303888888887,
+        "main_early": 1.2153501666666668,
+        "main_transition": 1.4203902222222229,
+        "shortcut_transition": 0.9118210000000002
+      },
+      "all_substitutions_benefit_percent": 21.853725706019482
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r5.json",
+      "sha256": "601a560fe7cfaebe25cb035303b63076e5480262c6b97e3e8eb8e4563b24e2e7",
+      "run_id": "npu_resnet50_b1_imagenet_val10class_v2_run5",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.4454777222222221,
+        "main_early": -0.7042825555555551,
+        "main_transition": -0.19018138888888858,
+        "shortcut_transition": 0.6682862222222222
+      },
+      "all_substitutions_benefit_percent": 2.1573744133623864
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r6.json",
+      "sha256": "db04d7bc82fd639bda549ed0a4f79233173b353e5ea31fd55125e01a3f8b6170",
+      "run_id": "npu_resnet50_b1_imagenet_val10class_v2_run6",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 1.2184236111111113,
+        "main_early": 0.0718379444444448,
+        "main_transition": 1.3095319444444444,
+        "shortcut_transition": 0.28416983333333334
+      },
+      "all_substitutions_benefit_percent": 20.70053441889222
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r7.json",
+      "sha256": "1f7f32a3e723abf9258ceb02467bd499afa86d810868b31aee9ff388382db307",
+      "run_id": "npu_resnet50_b1_imagenet_val10class_v2_run7",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -3.5400873333333336,
+        "main_early": 0.03808288888888941,
+        "main_transition": 0.4853760000000005,
+        "shortcut_transition": -0.7548902222222219
+      },
+      "all_substitutions_benefit_percent": -34.463655636239565
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r8.json",
+      "sha256": "086d1be39f6eb2d9229256d2c5950735d412e499d42825c7f76b7664033a5275",
+      "run_id": "npu_resnet50_b1_imagenet_val10class_v2_run8",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 1.8216301388888894,
+        "main_early": -0.18205141666666647,
+        "main_transition": -0.2521414166666666,
+        "shortcut_transition": -1.6073513055555562
+      },
+      "all_substitutions_benefit_percent": -2.0506973978782206
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r1.json",
+      "sha256": "a72d7c453b77d069fb7bac1cd13ffbca992a71547d98a05c80ad0e72adc29a9e",
+      "run_id": "npu_resnet50_b4_imagenet_val10class_v2_run1",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.18363219444444434,
+        "main_early": -0.1169472499999998,
+        "main_transition": 0.19618763888888902,
+        "shortcut_transition": -0.07974325000000008
+      },
+      "all_substitutions_benefit_percent": 1.7253813186993696
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r2.json",
+      "sha256": "249450e173c2c010f5600ae3733a1800ea63b6a52cddd049bf0a57b7ff184396",
+      "run_id": "npu_resnet50_b4_imagenet_val10class_v2_run2",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.8263238333333337,
+        "main_early": 1.1498501666666672,
+        "main_transition": 0.11160277777777756,
+        "shortcut_transition": -0.9785631111111105
+      },
+      "all_substitutions_benefit_percent": 6.699849937774071
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r3.json",
+      "sha256": "b117af127293be1a48fbba4a19f383ec8921ad0a338c435efea1e9b7e2e7881b",
+      "run_id": "npu_resnet50_b4_imagenet_val10class_v2_run3",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 9,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.75,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.3481047499999999,
+        "main_early": -0.9383259722222222,
+        "main_transition": 0.6256656944444446,
+        "shortcut_transition": -0.9404364722222219
+      },
+      "all_substitutions_benefit_percent": -9.156040647514173
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r4.json",
+      "sha256": "8070f2657931a8ed9be6127612cc3fd4453c8c5d3edc8a41d87ad3ae2363f93c",
+      "run_id": "npu_resnet50_b4_imagenet_val10class_v2_run4",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 2.9028498611111115,
+        "main_early": 0.5012745833333335,
+        "main_transition": 1.5994519722222218,
+        "shortcut_transition": 1.9248482499999995
+      },
+      "all_substitutions_benefit_percent": 39.78945805941072
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r5.json",
+      "sha256": "d917b28f303bd18c054d0a8895a98cb41b73c0ae2a3923fd59b0c1fb1858939b",
+      "run_id": "npu_resnet50_b4_imagenet_val10class_v2_run5",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.5251718888888894,
+        "main_early": -2.56273411111111,
+        "main_transition": -0.13824238888888848,
+        "shortcut_transition": 0.3906916111111111
+      },
+      "all_substitutions_benefit_percent": -17.027008594836094
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r6.json",
+      "sha256": "9180f624de68b8aad6364190e9510b899523c0ebe3073bc662dd8e79e02255e6",
+      "run_id": "npu_resnet50_b4_imagenet_val10class_v2_run6",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.5079790277777776,
+        "main_early": 1.4962391388888896,
+        "main_transition": -0.9730893055555553,
+        "shortcut_transition": 0.5359658055555555
+      },
+      "all_substitutions_benefit_percent": 13.16536562570789
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r7.json",
+      "sha256": "96974dd4e25f6c9b22bd2b41d3a9c8943e0559070f31956531117eda9f04abce",
+      "run_id": "npu_resnet50_b4_imagenet_val10class_v2_run7",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.6822682777777778,
+        "main_early": 0.084771444444444,
+        "main_transition": -0.2826801111111113,
+        "shortcut_transition": 0.26522838888888883
+      },
+      "all_substitutions_benefit_percent": 6.663789093269821
+    },
+    {
+      "file": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r8.json",
+      "sha256": "82c1301d1d0bc9980a815bba8e1307d2c2dba17a5a22fcefcb47aacfd9d63ff9",
+      "run_id": "npu_resnet50_b4_imagenet_val10class_v2_run8",
+      "model_id": "resnet50",
+      "device_id": "npu_Ascend910B3",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 0,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.69,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.8990994722222214,
+        "main_early": 0.44856080555555516,
+        "main_transition": 1.5540999166666654,
+        "shortcut_transition": -0.3464945277777782
+      },
+      "all_substitutions_benefit_percent": 13.618235815821418
+    }
+  ],
+  "audit_source_sha256": "a109f0c09cbff5c6c837dafbf9caaf60a8d55b8a4e75e0a4c12619af6595dd99",
+  "limitations": "Saved-record arithmetic/identity audit; device/run authenticity also requires worker receipts. Recorded logit equivalence cannot be recomputed from hashes alone."
+}

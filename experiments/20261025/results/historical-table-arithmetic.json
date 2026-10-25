@@ -1,0 +1,43 @@
+{
+  "scope": "Arithmetic on printed Table 3 cells; not a reconstruction of historical per-query measurements",
+  "common_families": [
+    "MatMul",
+    "Conv2D",
+    "Attention"
+  ],
+  "printed": {
+    "DeepBench": [
+      25.3,
+      28.7,
+      42.1
+    ],
+    "Roofline": [
+      18.5,
+      22.4,
+      35.8
+    ],
+    "MOH-KG": [
+      12.4,
+      11.5,
+      36.9
+    ]
+  },
+  "eight_printed_test_cells": [
+    12.4,
+    11.5,
+    36.9,
+    6.6,
+    8.9,
+    4.0,
+    9.8,
+    14.2
+  ],
+  "equal_common_family_means": {
+    "DeepBench": 32.03333333333333,
+    "Roofline": 25.566666666666666,
+    "MOH-KG": 20.266666666666666
+  },
+  "matched_roofline_minus_moh_pp": 5.300000000000001,
+  "equal_eight_family_test_mean": 13.0375,
+  "aggregation_note": "Printed Overall 14.3 cannot be reconstructed by either of these unweighted means; refreshed measurements supply explicit per-query and model/family aggregation weights."
+}

@@ -1,0 +1,22 @@
+
+Authorized users only. All activities may be monitored and reported.
+{"npu_fp32_launch": {"utc": "2026-10-25T06:27:17.238508+00:00", "torch": "2.6.0+cpu", "torch_npu": "2.6.0", "python": "3.9.9", "architecture": "aarch64", "device": "Ascend910B3", "conv_allow_hf32": false, "matmul_allow_hf32": false, "synchronization": "torch.npu.synchronize after timed calls", "visible_device_count": 1, "launcher_sha256": "2dbc8d43f9219e02bd76a115a061758717b5ecad4f581f633d913bc0b999f093", "script": "/root/het-rebuttal-20261025/interventions/paired_confirmation.py", "script_sha256": "2f33287e7d6afffb9303724ac61186c5712cbaaa0784795196d7b1f4ec6c22bb", "args": ["--device", "npu", "--model", "resnet18", "--batch", "1", "--run", "101", "--assets", "/root/het-rebuttal-20261025/assets/imagenet-val200", "--output", "/root/het-rebuttal-20261025/paired_raw/npu-resnet18-b1-r101.json"]}}
+/root/het-rebuttal-20261025/venv/lib64/python3.9/site-packages/torch_npu/utils/storage.py:38: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  if self.device.type != 'cpu':
+Traceback (most recent call last):
+  File "/root/het-rebuttal-20261025/npu_launcher.py", line 39, in <module>
+    runpy.run_path(str(target), run_name='__main__')
+  File "/usr/lib64/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/usr/lib64/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/usr/lib64/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/root/het-rebuttal-20261025/interventions/paired_confirmation.py", line 321, in <module>
+    main()
+  File "/root/het-rebuttal-20261025/interventions/paired_confirmation.py", line 316, in main
+    print(json.dumps({'output': str(args.output), 'status': out['status'], 'run_id': out['run_id'],
+  File "/usr/lib64/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+TypeError: __init__() got an unexpected keyword argument 'flush'
+[ERROR] 2026-10-25-14:27:41 (PID:48749, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception

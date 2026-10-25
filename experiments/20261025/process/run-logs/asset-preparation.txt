@@ -1,0 +1,64 @@
+{
+  "output": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/assets/imagenet-val200",
+  "sample_count": 200,
+  "candidate_counts": {
+    "n01440764": 50,
+    "n02102040": 50,
+    "n02979186": 50,
+    "n03000684": 50,
+    "n03028079": 50,
+    "n03394916": 50,
+    "n03417042": 50,
+    "n03425413": 50,
+    "n03445777": 50,
+    "n03888257": 50
+  },
+  "mapping": {
+    "n01440764": {
+      "imagenet_index": 0,
+      "imagenet_label": "tench"
+    },
+    "n02102040": {
+      "imagenet_index": 217,
+      "imagenet_label": "English_springer"
+    },
+    "n02979186": {
+      "imagenet_index": 482,
+      "imagenet_label": "cassette_player"
+    },
+    "n03000684": {
+      "imagenet_index": 491,
+      "imagenet_label": "chain_saw"
+    },
+    "n03028079": {
+      "imagenet_index": 497,
+      "imagenet_label": "church"
+    },
+    "n03394916": {
+      "imagenet_index": 566,
+      "imagenet_label": "French_horn"
+    },
+    "n03417042": {
+      "imagenet_index": 569,
+      "imagenet_label": "garbage_truck"
+    },
+    "n03425413": {
+      "imagenet_index": 571,
+      "imagenet_label": "gas_pump"
+    },
+    "n03445777": {
+      "imagenet_index": 574,
+      "imagenet_label": "golf_ball"
+    },
+    "n03888257": {
+      "imagenet_index": 701,
+      "imagenet_label": "parachute"
+    }
+  },
+  "images_shape": [
+    200,
+    3,
+    224,
+    224
+  ]
+}

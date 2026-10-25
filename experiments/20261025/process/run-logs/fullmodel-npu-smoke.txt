@@ -1,0 +1,49 @@
+
+Authorized users only. All activities may be monitored and reported.
+{"npu_fp32_launch": {"utc": "2026-10-25T05:52:48.168844+00:00", "torch": "2.6.0+cpu", "torch_npu": "2.6.0", "python": "3.9.9", "architecture": "aarch64", "device": "Ascend910B3", "conv_allow_hf32": false, "matmul_allow_hf32": false, "synchronization": "torch.npu.synchronize after timed calls", "visible_device_count": 1, "launcher_sha256": "2dbc8d43f9219e02bd76a115a061758717b5ecad4f581f633d913bc0b999f093", "script": "/root/het-rebuttal-20261025/interventions/full_model_coalitions.py", "script_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb", "args": ["--model", "resnet18", "--device", "npu", "--run", "1", "--batch", "1", "--profile-all-nodes", "--assets", "/root/het-rebuttal-20261025/assets/imagenet-val200", "--output", "/root/het-rebuttal-20261025/fullmodel_raw/npu-resnet18-b1-r1.json"]}}
+/root/het-rebuttal-20261025/venv/lib64/python3.9/site-packages/torch_npu/utils/storage.py:38: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  if self.device.type != 'cpu':
+Traceback (most recent call last):
+  File "/root/het-rebuttal-20261025/npu_launcher.py", line 39, in <module>
+    runpy.run_path(str(target), run_name='__main__')
+  File "/usr/lib64/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/usr/lib64/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/usr/lib64/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/root/het-rebuttal-20261025/interventions/full_model_coalitions.py", line 265, in <module>
+    if __name__=='__main__':main()
+  File "/root/het-rebuttal-20261025/interventions/full_model_coalitions.py", line 166, in main
+    model=copy.deepcopy(base_cpu).to(device).eval();x=torch.from_numpy(xnp).to(device)
+  File "/root/het-rebuttal-20261025/venv/lib64/python3.9/site-packages/torch_npu/utils/_module.py", line 70, in to
+    self.cast_weight(device)
+  File "/root/het-rebuttal-20261025/venv/lib64/python3.9/site-packages/torch_npu/utils/_module.py", line 133, in cast_weight
+    _format_cast(self, current_class)
+  File "/root/het-rebuttal-20261025/venv/lib64/python3.9/site-packages/torch_npu/utils/_module.py", line 96, in _format_cast
+    if torch.npu.is_jit_compile_false():
+  File "/root/het-rebuttal-20261025/venv/lib64/python3.9/site-packages/torch_npu/npu/npu_config.py", line 133, in is_jit_compile_false
+    torch_npu.npu._lazy_init()
+  File "/root/het-rebuttal-20261025/venv/lib64/python3.9/site-packages/torch_npu/npu/__init__.py", line 240, in _lazy_init
+    torch_npu._C._npu_init()
+RuntimeError: SetPrecisionMode:build/CMakeFiles/torch_npu.dir/compiler_depend.ts:155 NPU function error: at_npu::native::AclSetCompileopt(aclCompileOpt::ACL_PRECISION_MODE, precision_mode), error code is 500001
+[ERROR] 2026-10-25-13:53:00 (PID:5628, Device:0, RankID:-1) ERR00100 PTA call acl api failed
+[Error]: The internal ACL of the system is incorrect.
+        Rectify the fault based on the error information in the ascend log.
+EC0006: [PID: 5628] 2026-10-25-13:53:00.142.059 Directory operation failed. Reason: Directory [/root/het-rebuttal-20261025/ascend-cache] does not exist.
+        TraceBack (most recent call last):
+        AOE Failed to call InitCannKB[FUNC:Initialize][FILE:python_adapter_manager.cc][LINE:47]
+        Failed to initialize TeConfigInfo.
+        [GraphOpt][InitializeInner][InitTbeFunc] Failed to init tbe.[FUNC:InitializeTeFusion][FILE:tbe_op_store_adapter.cc][LINE:1921]
+        [GraphOpt][InitializeInner][InitTeFusion]: Failed to initialize TeFusion.[FUNC:InitializeInner][FILE:tbe_op_store_adapter.cc][LINE:1888]
+        [SubGraphOpt][PreCompileOp][InitAdapter] InitializeAdapter adapter [tbe_op_adapter] failed! Ret [4294967295][FUNC:InitializeAdapter][FILE:op_store_adapter_manager.cc][LINE:79]
+        [SubGraphOpt][PreCompileOp][Init] Initialize op store adapter failed, OpsStoreName[tbe-custom].[FUNC:Initialize][FILE:op_store_adapter_manager.cc][LINE:120]
+        [FusionMngr][Init] Op store adapter manager init failed.[FUNC:Initialize][FILE:fusion_manager.cc][LINE:115]
+        PluginManager InvokeAll failed.[FUNC:Initialize][FILE:ops_kernel_manager.cc][LINE:83]
+        OpsManager initialize failed.[FUNC:InnerInitialize][FILE:gelib.cc][LINE:239]
+        GELib::InnerInitialize failed.[FUNC:Initialize][FILE:gelib.cc][LINE:164]
+        GEInitialize failed.[FUNC:GEInitialize][FILE:ge_api.cc][LINE:382]
+        [Initialize][Ge]GEInitialize failed. ge result = 4294967295[FUNC:ReportCallError][FILE:log_inner.cpp][LINE:161]
+        [Init][Compiler]Init compiler failed[FUNC:ReportInnerError][FILE:log_inner.cpp][LINE:145]
+        [Set][Options]OpCompileProcessor init failed![FUNC:ReportInnerError][FILE:log_inner.cpp][LINE:145]
+

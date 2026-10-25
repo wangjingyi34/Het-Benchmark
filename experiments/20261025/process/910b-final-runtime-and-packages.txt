@@ -1,0 +1,63 @@
+
+Authorized users only. All activities may be monitored and reported.
+{"torch": "2.6.0+cpu", "torch_npu": "2.6.0", "torchvision": "0.21.0", "npu_name": "Ascend910B3", "default_conv_hf32": true, "default_matmul_hf32": false, "jit_compile_false": true}
+attrs==26.1.0
+auto_tune @ file:///root/selfgz4485423266/compiler/lib64/auto_tune-0.1.0-py3-none-any.whl
+dataflow @ file:///root/selfgz4485423266/compiler/lib64/dataflow-0.0.1-py3-none-any.whl
+decorator==5.3.1
+filelock==3.19.1
+fsspec==2025.10.0
+hccl @ file:///root/selfgz6090925669/hccl/lib64/hccl-0.1.0-py3-none-any.whl
+hccl_parser @ file:///usr/local/Ascend/ascend-toolkit/8.2.RC1/toolkit/tools/hccl_parser-0.1-py3-none-any.whl
+importlib_metadata==8.7.1
+Jinja2==3.1.6
+llm_datadist @ file:///root/selfgz4485423266/compiler/lib64/llm_datadist-0.0.1-py3-none-any.whl
+MarkupSafe==3.0.4
+mpmath==1.3.0
+msobjdump @ file:///usr/local/Ascend/ascend-toolkit/8.2.RC1/toolkit/tools/msobjdump-0.1.0-py3-none-any.whl
+networkx==3.2.1
+numpy==1.26.4
+op_compile_tool @ file:///root/selfgz4485423266/compiler/lib64/op_compile_tool-0.1.0-py3-none-any.whl
+op_gen @ file:///usr/local/Ascend/ascend-toolkit/8.2.RC1/toolkit/tools/op_gen-0.1-py3-none-any.whl
+op_test_frame @ file:///usr/local/Ascend/ascend-toolkit/8.2.RC1/toolkit/tools/op_test_frame-0.1-py3-none-any.whl
+opc_tool @ file:///root/selfgz4485423266/compiler/lib64/opc_tool-0.1.0-py3-none-any.whl
+packaging==26.3
+pillow==11.3.0
+psutil==7.2.2
+PyYAML==6.0.3
+schedule_search @ file:///root/selfgz4485423266/compiler/lib64/schedule_search-0.1.0-py3-none-any.whl
+scipy==1.13.1
+show_kernel_debug_data @ file:///usr/local/Ascend/ascend-toolkit/8.2.RC1/toolkit/tools/show_kernel_debug_data-0.1.0-py3-none-any.whl
+sympy==1.13.1
+te @ file:///root/selfgz4485423266/compiler/lib64/te-0.4.0-py3-none-any.whl
+torch==2.6.0
+torch_npu==2.6.0
+torchvision==0.21.0
+typing_extensions==4.16.0
+zipp==3.23.1
++------------------------------------------------------------------------------------------------+
+| npu-smi 25.2.0                   Version: 25.2.0                                               |
++---------------------------+---------------+----------------------------------------------------+
+| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|
+| Chip                      | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |
++===========================+===============+====================================================+
+| 2     910B3               | OK            | 84.6        32                0    / 0             |
+| 0                         | 0000:06:00.0  | 0           0    / 0          3384 / 65536         |
++===========================+===============+====================================================+
++---------------------------+---------------+----------------------------------------------------+
+| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |
++===========================+===============+====================================================+
+| No running processes found in NPU 2                                                            |
++===========================+===============+====================================================+
+Version=25.2.0
+ascendhal_version=7.35.23
+aicpu_version=1.0
+tdt_version=1.0
+log_version=1.0
+prof_version=2.0
+dvppkernels_version=1.1
+tsfw_version=1.0
+Innerversion=V100R001C21SPC008B208
+compatible_version=[V100R001C17],[V100R001C18],[V100R001C19],[V100R001C20],[V100R001C21]
+compatible_version_fw=[7.0.0,7.7.99]
+package_version=25.2.0

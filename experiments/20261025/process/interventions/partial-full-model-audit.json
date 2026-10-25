@@ -1,0 +1,1115 @@
+{
+  "kind": "independent_full_model_record_consistency_audit",
+  "counts": {
+    "blocks": 9,
+    "coalitions": 144,
+    "coalition_timed_calls": 4320,
+    "quality_predictions": 14400,
+    "equivalence_passed_records": 144,
+    "non_ok_records": 0,
+    "quality_rejections": 0
+  },
+  "groups": [
+    {
+      "task": "resnet18_b1_imagenet_val10class_v2",
+      "device": "cpu_CPU_arm_arm64",
+      "run_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "train_runs": 3,
+      "eval_runs": 5,
+      "complete_eight_run_protocol": true,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 100,
+      "quality_partitions_disjoint": true
+    },
+    {
+      "task": "resnet18_b1_imagenet_val10class_v2",
+      "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "run_indices": [
+        1
+      ],
+      "train_runs": 1,
+      "eval_runs": 0,
+      "complete_eight_run_protocol": false,
+      "unique_calibration_quality_samples": 100,
+      "unique_eval_quality_samples": 0,
+      "quality_partitions_disjoint": true
+    }
+  ],
+  "weights_identical_per_model_across_observed_devices": true,
+  "unique_sample_definition": "Repeated evaluation of the same 100 IDs is not new independent quality samples.",
+  "raw_records": [
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r1.json",
+      "sha256": "4d47810caada19c9ee6b61d1ec28e87ed7855a2d3fd043a3cca1790b78bfd656",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run1",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.4831835500000003,
+        "main_early": -0.4074127055555559,
+        "main_transition": -0.438714366666667,
+        "shortcut_transition": -0.32411714444444456
+      },
+      "all_substitutions_benefit_percent": -23.842849544618947
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r2.json",
+      "sha256": "36e5e5de2115b4000888ae37cc80a84864a16196509fcead90648f03b4cd8d4f",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run2",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.5848056583333333,
+        "main_early": 0.1803492416666662,
+        "main_transition": -0.9883073194444446,
+        "shortcut_transition": -0.585129197222222
+      },
+      "all_substitutions_benefit_percent": -27.627241332970257
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r3.json",
+      "sha256": "c610ea280b07bca082527bb3ad3f771132878f195b3077a41bb2b14a03bda5d1",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run3",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.292273297222222,
+        "main_early": 0.12730169166666658,
+        "main_transition": 0.1848098194444446,
+        "shortcut_transition": 0.033260286111110794
+      },
+      "all_substitutions_benefit_percent": 0.6890537424805202
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r4.json",
+      "sha256": "e2ee78acfc1a17a37a98582edf4074119dcc13095f96d1711468668550690d01",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run4",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.9293482583333331,
+        "main_early": -0.4183884750000005,
+        "main_transition": -0.3945136083333336,
+        "shortcut_transition": -0.4751392416666666
+      },
+      "all_substitutions_benefit_percent": -4.682062513421606
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r5.json",
+      "sha256": "e4405d53870fd0a306fabe78126b045f8b5d841ee5bec849ee68034840d924f0",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run5",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 2.8357895555555555,
+        "main_early": 2.7055332666666665,
+        "main_transition": 2.9909448666666667,
+        "shortcut_transition": -8.914413722222221
+      },
+      "all_substitutions_benefit_percent": -5.496767440951373
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r6.json",
+      "sha256": "b10e399556f07abb8e7c980108369d32353d12e00d66a8108249c8255bcd17bd",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run6",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 1.0590408083333331,
+        "main_early": -1.4700781583333329,
+        "main_transition": -0.317932563888889,
+        "shortcut_transition": 0.5562058472222227
+      },
+      "all_substitutions_benefit_percent": -2.1951193955816457
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r7.json",
+      "sha256": "9c74b0572aecd17bb31b1b35bf552743c0d1a3ff99a09782c1bf9789549b59b8",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run7",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": -0.007893661111111339,
+        "main_early": -0.5553270166666665,
+        "main_transition": 0.08600540555555591,
+        "shortcut_transition": -0.30417512777777755
+      },
+      "all_substitutions_benefit_percent": -10.19783312829456
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cpu-resnet18-b1-r8.json",
+      "sha256": "5d4bca3b74aac2af9230b9d0c5b664e65ed36dd6053233179e0c0ddb7db23795",
+      "run_id": "cpu_resnet18_b1_imagenet_val10class_v2_run8",
+      "model_id": "resnet18",
+      "device_id": "cpu_CPU_arm_arm64",
+      "phase": "eval",
+      "quality_partition": "evaluation",
+      "quality": [
+        {
+          "mask": 6,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 3,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.62,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.0075491833333333576,
+        "main_early": -0.35371583888888875,
+        "main_transition": -0.6751776111111111,
+        "shortcut_transition": 0.7382179666666664
+      },
+      "all_substitutions_benefit_percent": -4.105838440892339
+    },
+    {
+      "file": "../evidence/fullmodel_raw/cuda-resnet18-b1-r1.json",
+      "sha256": "12b0493468045fc4006f05418bee8d25929115ef374912cdb2a039bc01471078",
+      "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run1",
+      "model_id": "resnet18",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "phase": "train",
+      "quality_partition": "calibration",
+      "quality": [
+        {
+          "mask": 3,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 6,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 8,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 10,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 14,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 9,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 13,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 7,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 1,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 0,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 4,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 12,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 5,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 2,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 11,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        },
+        {
+          "mask": 15,
+          "accuracy": 0.65,
+          "retention": 1.0,
+          "prediction_disagreements_vs_mask0": 0
+        }
+      ],
+      "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+      "same_dataset_asset": true,
+      "same_input_asset": true,
+      "raw_statistics_consistent": true,
+      "independent_24_permutation_physical_shapley_ms": {
+        "stem": 0.022716050000000026,
+        "main_early": 0.02317660555555549,
+        "main_transition": 0.013842127777777788,
+        "shortcut_transition": 0.019022449999999986
+      },
+      "all_substitutions_benefit_percent": 4.039335911079103
+    }
+  ],
+  "audit_source_sha256": "a109f0c09cbff5c6c837dafbf9caaf60a8d55b8a4e75e0a4c12619af6595dd99",
+  "limitations": "Saved-record arithmetic/identity audit; device/run authenticity also requires worker receipts. Recorded logit equivalence cannot be recomputed from hashes alone."
+}

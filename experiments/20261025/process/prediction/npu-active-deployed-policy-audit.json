@@ -1,0 +1,168 @@
+{
+  "kind": "read_only_frozen_policy_provenance_audit",
+  "created_utc": "2026-10-25T06:28:13.030667+00:00",
+  "auditor_code_sha256": "70558bf708e80047a8a6c0f7e5c5d0497ca62aa212fd00151f24f01edee6a1ab",
+  "policy_sha256": "ccae163877b5726a3aa98243fdf9551de0bb9583ef7e1396986725e6f33f341a",
+  "summary_sha256": "d0e895b9f6f7be08811bc33bbec98dd1a35e0c6fa194ab0aa3cbeef144bdb475",
+  "checks": {
+    "policy_kind": true,
+    "source_summary_hash": true,
+    "target_labels_not_exported": true,
+    "source_evaluator_hash": true,
+    "all_frozen_sources_unchanged": true,
+    "threshold_exact_match": true,
+    "threshold_validation_only": true,
+    "validation_measurement_budget_respected": true,
+    "model_partitions_disjoint": true,
+    "all_checkpoint_checks": true,
+    "five_prespecified_seeds": true,
+    "all_source_profiles_unchanged": true
+  },
+  "checkpoint_audits": [
+    {
+      "seed": 11,
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/prediction/npu-policy-preserved/npu-policy-4source/probe-model-fold0-rgat-seed11.pt",
+      "sha256": "4f8eed77fb344bb571806bdd5aa25ba233aff4ab44d1c6431a6d6a1c6173f329",
+      "checks": {
+        "hash_matches_policy": true,
+        "seed_matches": true,
+        "method_matches": true,
+        "mode_matches": true,
+        "train_ids_match": true,
+        "validation_ids_match": true,
+        "test_ids_match": true,
+        "split_matches": true,
+        "source_physical_hashes_match": true,
+        "source_metadata_hashes_match": true
+      }
+    },
+    {
+      "seed": 22,
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/prediction/npu-policy-preserved/npu-policy-4source/probe-model-fold0-rgat-seed22.pt",
+      "sha256": "4ed4565b432ea7fc8e06ecf7d3f1b5eb146e6e2f4feafd80f39894c59bf92a02",
+      "checks": {
+        "hash_matches_policy": true,
+        "seed_matches": true,
+        "method_matches": true,
+        "mode_matches": true,
+        "train_ids_match": true,
+        "validation_ids_match": true,
+        "test_ids_match": true,
+        "split_matches": true,
+        "source_physical_hashes_match": true,
+        "source_metadata_hashes_match": true
+      }
+    },
+    {
+      "seed": 33,
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/prediction/npu-policy-preserved/npu-policy-4source/probe-model-fold0-rgat-seed33.pt",
+      "sha256": "95419b21f414a76fa6af3117cad63e0f5ba50be2d32fb2330cad805d455fac05",
+      "checks": {
+        "hash_matches_policy": true,
+        "seed_matches": true,
+        "method_matches": true,
+        "mode_matches": true,
+        "train_ids_match": true,
+        "validation_ids_match": true,
+        "test_ids_match": true,
+        "split_matches": true,
+        "source_physical_hashes_match": true,
+        "source_metadata_hashes_match": true
+      }
+    },
+    {
+      "seed": 44,
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/prediction/npu-policy-preserved/npu-policy-4source/probe-model-fold0-rgat-seed44.pt",
+      "sha256": "7e1c4560767f80819f24e03197e590237b937aee5cdccbc5964ab8734e2474e4",
+      "checks": {
+        "hash_matches_policy": true,
+        "seed_matches": true,
+        "method_matches": true,
+        "mode_matches": true,
+        "train_ids_match": true,
+        "validation_ids_match": true,
+        "test_ids_match": true,
+        "split_matches": true,
+        "source_physical_hashes_match": true,
+        "source_metadata_hashes_match": true
+      }
+    },
+    {
+      "seed": 55,
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/prediction/npu-policy-preserved/npu-policy-4source/probe-model-fold0-rgat-seed55.pt",
+      "sha256": "64cd6185981fb68b22f08b1b8301d9c15065d085ad8f822b61cac54801d13d57",
+      "checks": {
+        "hash_matches_policy": true,
+        "seed_matches": true,
+        "method_matches": true,
+        "mode_matches": true,
+        "train_ids_match": true,
+        "validation_ids_match": true,
+        "test_ids_match": true,
+        "split_matches": true,
+        "source_physical_hashes_match": true,
+        "source_metadata_hashes_match": true
+      }
+    }
+  ],
+  "source_profiles": [
+    {
+      "file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/m5cpu.json",
+      "sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "raw_hash_matches": true,
+      "sidecar_hash_matches": true,
+      "runtime_stack_id": "Apple-M5-CPU-4T"
+    },
+    {
+      "file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/m5mps.json",
+      "sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "raw_hash_matches": true,
+      "sidecar_hash_matches": true,
+      "runtime_stack_id": "Apple-M5-MPS"
+    },
+    {
+      "file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/a100mig.json",
+      "sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "raw_hash_matches": true,
+      "sidecar_hash_matches": true,
+      "runtime_stack_id": "A100-SXM4-MIG-2g20GB"
+    },
+    {
+      "file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/xeon_cpu.json",
+      "sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "raw_hash_matches": true,
+      "sidecar_hash_matches": true,
+      "runtime_stack_id": "Cloud-x86-CPU-4T"
+    }
+  ],
+  "all_automated_checks_pass": true,
+  "threshold": 0.7156752616167071,
+  "train_model_ids": [
+    "audio_conv_ref",
+    "audio_dilated_ref",
+    "causal_lm_ref",
+    "dual_encoder_ref",
+    "efficientnet_b0",
+    "squeezenet1_1",
+    "text_cnn_ref",
+    "text_encoder_ref"
+  ],
+  "validation_model_ids": [
+    "densenet121",
+    "mobilenet_v2"
+  ],
+  "test_model_ids": [
+    "resnet18",
+    "resnet50"
+  ],
+  "scope": "Static artifact and checkpoint audit only. No model training, target inference, hardware timing, or new performance claim.",
+  "manual_source_review": [
+    "NPU extension import precedes torch.device creation.",
+    "Unlabelled graph construction does not read operator-latency targets; y is NaN.",
+    "Decisions are written and hashed before timed() is called for selected queries.",
+    "Stage-two model/input hash must match stage-one hash before fresh timing.",
+    "Existing checkpoint source paths are explicitly rebased only for this local audit; deployment policy paths remain unchanged.",
+    "A source-freeze manifest validates dependency hashes; active_fallback does not independently re-check every imported source hash at runtime.",
+    "No-trigger or failed-measurement outcomes must remain explicit; a policy is not retuned on target outcomes."
+  ]
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet18_b1_imagenet_val10class_v2_a428cbe640.json",
+    "task": "resnet18_b1_imagenet_val10class_v2",
+    "device": "cpu_CPU_arm_arm64",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "7db7b8e0dd884e877d53956f8454d5b5b65be4b079e77a25db5d09df395e524d"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet18_b4_imagenet_val10class_v2_a428cbe640.json",
+    "task": "resnet18_b4_imagenet_val10class_v2",
+    "device": "cpu_CPU_arm_arm64",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "49d4387a04765730a14b83bafb6a579f3a2d1ceb69c42c7822d03ed6cbe352b5"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet50_b1_imagenet_val10class_v2_a428cbe640.json",
+    "task": "resnet50_b1_imagenet_val10class_v2",
+    "device": "cpu_CPU_arm_arm64",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "fa36cfdc29a6d2b74334ba99fc22425df1661aff8ad93dbfe8c96a8e5144010e"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet50_b4_imagenet_val10class_v2_a428cbe640.json",
+    "task": "resnet50_b4_imagenet_val10class_v2",
+    "device": "cpu_CPU_arm_arm64",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "1a86c66f6e718fc6208adb9413ac7f3fd8e83cc47cc6b026a6c3b6856b6c86f5"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet18_b1_imagenet_val10class_v2_2c4332169b.json",
+    "task": "resnet18_b1_imagenet_val10class_v2",
+    "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "c54f7b3439b3d7d101e39ed2847bc17f31729aad6b7482775a12e286537956ea"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet18_b4_imagenet_val10class_v2_2c4332169b.json",
+    "task": "resnet18_b4_imagenet_val10class_v2",
+    "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "310de580656fe7c8cdbec9e2e201757d6839e6c62bb57885a5693055c0c84a72"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet50_b1_imagenet_val10class_v2_2c4332169b.json",
+    "task": "resnet50_b1_imagenet_val10class_v2",
+    "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "ab140a8b94be2b7f947995bb273aedfbb7871991d332a0063b81df6dadfedcf1"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet50_b4_imagenet_val10class_v2_2c4332169b.json",
+    "task": "resnet50_b4_imagenet_val10class_v2",
+    "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "073188a309ce9c15eda35b6e0460eb982078da1761e6c5420e369a0f5ffe09a2"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet18_b1_imagenet_val10class_v2_53d3746282.json",
+    "task": "resnet18_b1_imagenet_val10class_v2",
+    "device": "mps_Apple_MPS_on_arm64",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "eb0d386f986f42b3e9ae96f930e7617c0975188b188fb5a37a6ddd959af4b02a"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet18_b4_imagenet_val10class_v2_53d3746282.json",
+    "task": "resnet18_b4_imagenet_val10class_v2",
+    "device": "mps_Apple_MPS_on_arm64",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "b13d16fde9ffa14892c8aa29c51a9e2fa2316fd9c31c812555b16be57050c0fa"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet50_b1_imagenet_val10class_v2_53d3746282.json",
+    "task": "resnet50_b1_imagenet_val10class_v2",
+    "device": "mps_Apple_MPS_on_arm64",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "196b2c907c510e38879894099ac6ea5a38eded0403c6cff0b692d99c856702c1"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet50_b4_imagenet_val10class_v2_53d3746282.json",
+    "task": "resnet50_b4_imagenet_val10class_v2",
+    "device": "mps_Apple_MPS_on_arm64",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "95eea73541b8dd8b59146b3f3f5058141ec5b56a5ced14a25fb01a14ca671155"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet18_b1_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet18_b1_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "6a507d6f0039056b388cd153cd3d613cdb2f7c193a5870a6982c044833efb9e9"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet18_b4_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet18_b4_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "ff2cd06ad7bb9248a2665683488cd26ebafaca7f411736b804e759454498b64a"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet50_b1_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet50_b1_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "7e8b3e0cf5ba1bcda434dd3ede38956a83f494d60582daa48b7304d4a6e1ab9f"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/final-tasks/resnet50_b4_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet50_b4_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "c9c3d16390a17c872abc21ce870a2b5ac616544364da99bb2348d0ccb56d8b26"
+  }
+]

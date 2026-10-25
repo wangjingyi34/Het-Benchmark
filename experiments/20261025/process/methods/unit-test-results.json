@@ -1,0 +1,125 @@
+{
+  "scope": "New v2 mathematical/logic/PPO implementation unit tests only; all data are UNIT_FIXTURE",
+  "physical_measurements": 0,
+  "task_accuracy_evaluations": 0,
+  "tests": [
+    {
+      "id": "__main__.EmbeddingAttachmentTests.test_device_alias_requires_explicit_evidence",
+      "passed": true
+    },
+    {
+      "id": "__main__.EmbeddingAttachmentTests.test_exact_match_and_duplicate_rejection",
+      "passed": true
+    },
+    {
+      "id": "__main__.MathTests.test_branch_path_switch_and_sum_ablation",
+      "passed": true
+    },
+    {
+      "id": "__main__.MathTests.test_coalition_runtime_changes_allocation",
+      "passed": true
+    },
+    {
+      "id": "__main__.MathTests.test_endpoint_closure_cannot_identify_coalitions",
+      "passed": true
+    },
+    {
+      "id": "__main__.MathTests.test_invalid_graph_overlap_nonfinite_rejected",
+      "passed": true
+    },
+    {
+      "id": "__main__.MathTests.test_negative_contribution_retained",
+      "passed": true
+    },
+    {
+      "id": "__main__.MathTests.test_pair_units_se_and_budget",
+      "passed": true
+    },
+    {
+      "id": "__main__.MathTests.test_serial_degeneracy_and_constant_cancellation",
+      "passed": true
+    },
+    {
+      "id": "__main__.PPOTests.test_ppo_learns_true_table_and_ignores_eval_labels",
+      "passed": true
+    },
+    {
+      "id": "__main__.RuntimeCalibrationTests.test_fitted_models_invariant_to_high_order_and_eval_labels",
+      "passed": true
+    },
+    {
+      "id": "__main__.RuntimeCalibrationTests.test_nonpositive_extrapolation_retained_not_clamped",
+      "passed": true
+    },
+    {
+      "id": "__main__.RuntimeCalibrationTests.test_quadratic_residual_recovers_low_order_without_high_order_access",
+      "passed": true
+    },
+    {
+      "id": "__main__.RuntimeCalibrationTests.test_runtime_profile_eval_leak_rejected",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_calibration_point9_eval_point8_paired_retention_accepts",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_duplicate_run_and_quality_sample_leak_rejected",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_embedding_control_capacity_and_model_holdout",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_hardware_mask_and_final_gate_separate",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_mask_and_budget_state",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_metadata_eval_leak_rejected",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_missing_training_quality_causes_rejection_not_crash",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_no_feasible_absolute_quality_oracle",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_oracle_and_uniform_expectation",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_placeholder_embedding_rejected",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_quality_missing_nan_and_slowdown_fail_closed",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_quality_modes_and_block_specific_baseline",
+      "passed": true
+    },
+    {
+      "id": "__main__.TableAndGateTests.test_synthetic_data_rejected_without_explicit_test_mode",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "torch": "2.9.1",
+  "source_sha256": {
+    "test_methods.py": "3ca926687d9cc3a93534e0ac18e3345fbc03081b7f41a634fa2783670772d6f6",
+    "attach_embeddings.py": "dc1963944d949a274e117028f467d8f0f519a1dd241b9fd523d00eaa39422b62",
+    "copa_v2.py": "421c94039b90c6cca76e7ba7ef53153f832e23fbb36607ee7c4a68f5f3c93d52",
+    "analyze_measured.py": "cdf36ce71d2bde73014d6045850d3f379d24d53e4e41d0c6c73db2b8fce23ca1",
+    "runtime_calibration.py": "0193d36362b6fc30910870dbc751b047aff6a5798be4f4353073581744df45d8",
+    "measured_planner.py": "ab207e080c532a5bb75cda136cdfbbd6ea93522b8ead1631f5e62913bf9f2a2b"
+  }
+}

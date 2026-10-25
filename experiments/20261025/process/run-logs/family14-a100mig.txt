@@ -1,0 +1,17 @@
+{"probe": "family14-Conv2D", "status": "measured", "wall_seconds": 0.23471415881067514}
+{"probe": "family14-Conv1D", "status": "measured", "wall_seconds": 0.008254109881818295}
+{"probe": "family14-MatMul", "status": "measured", "wall_seconds": 0.04742893483489752}
+{"probe": "family14-Attention", "status": "measured", "wall_seconds": 0.004961106926202774}
+{"probe": "family14-Normalization", "status": "measured", "wall_seconds": 0.008606868796050549}
+{"probe": "family14-Activation", "status": "measured", "wall_seconds": 0.006730725988745689}
+{"probe": "family14-Pooling", "status": "measured", "wall_seconds": 0.0075996676459908485}
+{"probe": "family14-Elementwise", "status": "measured", "wall_seconds": 0.002173573710024357}
+{"probe": "family14-View", "status": "measured", "wall_seconds": 0.0011139558628201485}
+{"probe": "family14-Embedding", "status": "measured", "wall_seconds": 0.004325454123318195}
+{"probe": "family14-Dropout", "status": "measured", "wall_seconds": 0.0015123365446925163}
+{"probe": "family14-Reduction", "status": "measured", "wall_seconds": 0.0022746585309505463}
+{"probe": "family14-Composite", "status": "measured", "wall_seconds": 0.060885424725711346}
+{"probe": "family14-Other", "status": "measured", "wall_seconds": 0.0012014955282211304}
+{"output": "/work/family14-a100mig.json", "successful": 14, "failed": 0, "budget": 17}
+
+

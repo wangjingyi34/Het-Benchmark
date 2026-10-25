@@ -1,0 +1,16 @@
+
+Authorized users only. All activities may be monitored and reported.
+{"npu_fp32_launch": {"utc": "2026-10-25T06:24:00.307923+00:00", "torch": "2.6.0+cpu", "torch_npu": "2.6.0", "python": "3.9.9", "architecture": "aarch64", "device": "Ascend910B3", "conv_allow_hf32": false, "matmul_allow_hf32": false, "synchronization": "torch.npu.synchronize after timed calls", "visible_device_count": 1, "launcher_sha256": "2dbc8d43f9219e02bd76a115a061758717b5ecad4f581f633d913bc0b999f093", "script": "/root/het-rebuttal-20261025/prediction/attention_ood_challenge.py", "script_sha256": "dfab91261cc4e9a83f232ca9275c20509d5360f78423c071e7a80236f88b5b1c", "args": ["collect", "--device", "npu", "--hardware-from", "/root/het-rebuttal-20261025/npub3.json", "--predictor-freeze", "/root/het-rebuttal-20261025/attention-freeze-main-strict.json", "--output", "/root/het-rebuttal-20261025/attention-npub3.json"]}}
+{"case": 0, "configuration": [1, 128, 128, 4], "status": "measured", "seconds": 0.9976407799999834}
+{"case": 1, "configuration": [2, 128, 128, 8], "status": "measured", "seconds": 0.045391920000383834}
+{"case": 2, "configuration": [1, 512, 128, 4], "status": "measured", "seconds": 0.039342519999991055}
+{"case": 3, "configuration": [2, 1024, 128, 8], "status": "measured", "seconds": 0.041323759999613685}
+{"case": 4, "configuration": [1, 128, 512, 8], "status": "measured", "seconds": 0.05633914000009099}
+{"case": 5, "configuration": [2, 512, 512, 8], "status": "measured", "seconds": 0.06491495999989638}
+{"case": 6, "configuration": [1, 1024, 512, 8], "status": "measured", "seconds": 0.06941787999994631}
+{"case": 7, "configuration": [2, 1024, 512, 8], "status": "measured", "seconds": 0.07417427000018506}
+{"case": 8, "configuration": [1, 128, 768, 12], "status": "measured", "seconds": 0.08939415000031659}
+{"case": 9, "configuration": [2, 512, 768, 12], "status": "measured", "seconds": 0.099903290000384}
+{"case": 10, "configuration": [1, 1024, 768, 12], "status": "measured", "seconds": 0.10896615000001475}
+{"case": 11, "configuration": [2, 1024, 768, 12], "status": "measured", "seconds": 0.11118023000017274}
+{"complete": true, "graphs": 12, "construction_failures": 0}

@@ -1,0 +1,17 @@
+{"probe": "family14-Conv2D", "status": "measured", "wall_seconds": 0.0073767006397247314}
+{"probe": "family14-Conv1D", "status": "measured", "wall_seconds": 0.004364097490906715}
+{"probe": "family14-MatMul", "status": "measured", "wall_seconds": 0.0043106162920594215}
+{"probe": "family14-Attention", "status": "measured", "wall_seconds": 0.0034720804542303085}
+{"probe": "family14-Normalization", "status": "measured", "wall_seconds": 0.0022972384467720985}
+{"probe": "family14-Activation", "status": "measured", "wall_seconds": 0.0044288598001003265}
+{"probe": "family14-Pooling", "status": "measured", "wall_seconds": 0.0021111248061060905}
+{"probe": "family14-Elementwise", "status": "measured", "wall_seconds": 0.0009014420211315155}
+{"probe": "family14-View", "status": "measured", "wall_seconds": 0.0007058698683977127}
+{"probe": "family14-Embedding", "status": "measured", "wall_seconds": 0.0020490260794758797}
+{"probe": "family14-Dropout", "status": "measured", "wall_seconds": 0.001099168322980404}
+{"probe": "family14-Reduction", "status": "measured", "wall_seconds": 0.0015319380909204483}
+{"probe": "family14-Composite", "status": "measured", "wall_seconds": 0.017940718680620193}
+{"probe": "family14-Other", "status": "measured", "wall_seconds": 0.0014634188264608383}
+{"output": "/work/family14-cloudcpu.json", "successful": 14, "failed": 0, "budget": 17}
+
+

@@ -1,0 +1,258 @@
+{
+  "kind": "independent_physical_profile_integrity_audit",
+  "created_utc": "2026-10-25T06:07:05.609702+00:00",
+  "code_sha256": "ab912c492ae12eb5cb39524f488926ceda426b50497b8a7075ffc75a9414aadb",
+  "runtime_stacks": 5,
+  "graphs": 180,
+  "measured_operator_queries": 13905,
+  "raw_timing_blocks": 278100,
+  "datasets": [
+    {
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/m5cpu.json",
+      "raw_sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "metadata_sha256": "9b3b8c5dc99190ca0b0a2732444ce6ff75dec87939bc84e87c11dd90396f1535",
+      "runtime_stack_id": "Apple-M5-CPU-4T",
+      "backend": "cpu",
+      "hardware_name": "arm CPU",
+      "torch": "2.9.1",
+      "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "collector_code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "adapter_provenance": null,
+      "graphs": 36,
+      "measured_operator_queries": 2781,
+      "raw_timing_blocks": 55620,
+      "warmup_calls_per_query": 10,
+      "calls_per_timed_block": 8,
+      "status_counts": {
+        "measured": 2781
+      },
+      "graph_failure_count": 0,
+      "per_family_n": {
+        "Normalization": 561,
+        "Activation": 633,
+        "Pooling": 108,
+        "Elementwise": 249,
+        "Conv2D": 711,
+        "View": 144,
+        "MatMul": 111,
+        "Dropout": 9,
+        "Composite": 174,
+        "Other": 27,
+        "Attention": 12,
+        "Embedding": 12,
+        "Reduction": 6,
+        "Conv1D": 24
+      },
+      "per_workload_graphs": {
+        "CV": 18,
+        "NLP": 6,
+        "Audio": 6,
+        "LLM": 3,
+        "Multimodal": 3
+      },
+      "raw_mean_max_absolute_disagreement_ms": 0.0,
+      "all_input_weight_shape_fx_and_query_ids_match_reference": true
+    },
+    {
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/m5mps.json",
+      "raw_sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "metadata_sha256": "8ea2686cf4870559424fac1e3568b136f9c56782d0469016f5efaf0426635014",
+      "runtime_stack_id": "Apple-M5-MPS",
+      "backend": "mps",
+      "hardware_name": "arm Apple MPS",
+      "torch": "2.9.1",
+      "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "collector_code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "adapter_provenance": null,
+      "graphs": 36,
+      "measured_operator_queries": 2781,
+      "raw_timing_blocks": 55620,
+      "warmup_calls_per_query": 10,
+      "calls_per_timed_block": 8,
+      "status_counts": {
+        "measured": 2781
+      },
+      "graph_failure_count": 0,
+      "per_family_n": {
+        "Normalization": 561,
+        "Activation": 633,
+        "Pooling": 108,
+        "Elementwise": 249,
+        "Conv2D": 711,
+        "View": 144,
+        "MatMul": 111,
+        "Dropout": 9,
+        "Composite": 174,
+        "Other": 27,
+        "Attention": 12,
+        "Embedding": 12,
+        "Reduction": 6,
+        "Conv1D": 24
+      },
+      "per_workload_graphs": {
+        "CV": 18,
+        "NLP": 6,
+        "Audio": 6,
+        "LLM": 3,
+        "Multimodal": 3
+      },
+      "raw_mean_max_absolute_disagreement_ms": 0.0,
+      "all_input_weight_shape_fx_and_query_ids_match_reference": true
+    },
+    {
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/a100mig.json",
+      "raw_sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "metadata_sha256": "a7e95b8be8067dcb905c603fec9404210e407c0f48cfec22a2d11b3b9a7ced3d",
+      "runtime_stack_id": "A100-SXM4-MIG-2g20GB",
+      "backend": "cuda",
+      "hardware_name": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+      "torch": "2.9.1+cu126",
+      "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+      "collector_code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "adapter_provenance": null,
+      "graphs": 36,
+      "measured_operator_queries": 2781,
+      "raw_timing_blocks": 55620,
+      "warmup_calls_per_query": 10,
+      "calls_per_timed_block": 8,
+      "status_counts": {
+        "measured": 2781
+      },
+      "graph_failure_count": 0,
+      "per_family_n": {
+        "Normalization": 561,
+        "Activation": 633,
+        "Pooling": 108,
+        "Elementwise": 249,
+        "Conv2D": 711,
+        "View": 144,
+        "MatMul": 111,
+        "Dropout": 9,
+        "Composite": 174,
+        "Other": 27,
+        "Attention": 12,
+        "Embedding": 12,
+        "Reduction": 6,
+        "Conv1D": 24
+      },
+      "per_workload_graphs": {
+        "CV": 18,
+        "NLP": 6,
+        "Audio": 6,
+        "LLM": 3,
+        "Multimodal": 3
+      },
+      "raw_mean_max_absolute_disagreement_ms": 0.0,
+      "all_input_weight_shape_fx_and_query_ids_match_reference": true
+    },
+    {
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/xeon_cpu.json",
+      "raw_sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "metadata_sha256": "064e2a80d22a081e6ad20681b83e99b1d6ee405a4b36a9d53b47c0f01c549f1e",
+      "runtime_stack_id": "Cloud-x86-CPU-4T",
+      "backend": "cpu",
+      "hardware_name": "x86_64 CPU",
+      "torch": "2.9.1+cu126",
+      "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+      "collector_code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "adapter_provenance": null,
+      "graphs": 36,
+      "measured_operator_queries": 2781,
+      "raw_timing_blocks": 55620,
+      "warmup_calls_per_query": 10,
+      "calls_per_timed_block": 8,
+      "status_counts": {
+        "measured": 2781
+      },
+      "graph_failure_count": 0,
+      "per_family_n": {
+        "Normalization": 561,
+        "Activation": 633,
+        "Pooling": 108,
+        "Elementwise": 249,
+        "Conv2D": 711,
+        "View": 144,
+        "MatMul": 111,
+        "Dropout": 9,
+        "Composite": 174,
+        "Other": 27,
+        "Attention": 12,
+        "Embedding": 12,
+        "Reduction": 6,
+        "Conv1D": 24
+      },
+      "per_workload_graphs": {
+        "CV": 18,
+        "NLP": 6,
+        "Audio": 6,
+        "LLM": 3,
+        "Multimodal": 3
+      },
+      "raw_mean_max_absolute_disagreement_ms": 0.0,
+      "all_input_weight_shape_fx_and_query_ids_match_reference": true
+    },
+    {
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/npub3.json",
+      "raw_sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "metadata_sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8",
+      "runtime_stack_id": "Ascend-910B3-64GB",
+      "backend": "npu",
+      "hardware_name": "Ascend910B3",
+      "torch": "2.6.0+cpu",
+      "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+      "collector_code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "adapter_provenance": {
+        "adapter_code_sha256": "5c8cdf291e73cba6d799b6bcdbaaccca2e005c80f18598bc0ffccc9fbee12236",
+        "frozen_core_code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+        "torch_npu": "2.6.0",
+        "identity_memory_source": "torch.npu.get_device_properties",
+        "hf32_flags": {
+          "conv": false,
+          "matmul": false
+        },
+        "model_input_and_timing_core_changed": false
+      },
+      "graphs": 36,
+      "measured_operator_queries": 2781,
+      "raw_timing_blocks": 55620,
+      "warmup_calls_per_query": 10,
+      "calls_per_timed_block": 8,
+      "status_counts": {
+        "measured": 2781
+      },
+      "graph_failure_count": 0,
+      "per_family_n": {
+        "Normalization": 561,
+        "Activation": 633,
+        "Pooling": 108,
+        "Elementwise": 249,
+        "Conv2D": 711,
+        "View": 144,
+        "MatMul": 111,
+        "Dropout": 9,
+        "Composite": 174,
+        "Other": 27,
+        "Attention": 12,
+        "Embedding": 12,
+        "Reduction": 6,
+        "Conv1D": 24
+      },
+      "per_workload_graphs": {
+        "CV": 18,
+        "NLP": 6,
+        "Audio": 6,
+        "LLM": 3,
+        "Multimodal": 3
+      },
+      "raw_mean_max_absolute_disagreement_ms": 0.0,
+      "all_input_weight_shape_fx_and_query_ids_match_reference": true
+    }
+  ],
+  "all_checks_passed": true,
+  "scope": [
+    "This audit recomputes label means and verifies identity/provenance; it does not certify task accuracy or historical v21 figures.",
+    "Five runtime stacks are not five independent hardware architectures. M5 CPU/MPS share a host, and cloud CPU/A100 MIG share a host.",
+    "NPU uses torch/torch_npu2.6.0 and other stacks use torch2.9.1; results compare measured runtime stacks, not isolated chip effects.",
+    "20 timing blocks of eight calls are repeated timing observations, not20 independent model samples."
+  ]
+}

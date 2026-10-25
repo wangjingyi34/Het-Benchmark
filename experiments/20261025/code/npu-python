@@ -1,0 +1,10 @@
+#!/bin/bash
+set -eo pipefail
+source /usr/local/Ascend/ascend-toolkit/set_env.sh
+set -u
+export TORCH_HOME=/root/het-rebuttal-20261025/assets/torch
+export HET_NPU_RECEIPTS=/root/het-rebuttal-20261025/launch-receipts
+export ASCEND_CACHE_PATH=/root/het-rebuttal-20261025/ascend-cache
+export OMP_NUM_THREADS=4
+mkdir -p "$ASCEND_CACHE_PATH"
+exec /root/het-rebuttal-20261025/venv/bin/python /root/het-rebuttal-20261025/npu_launcher.py "$@"

@@ -1,0 +1,12 @@
+[
+  {
+    "file": "npu-physical-main-complete.zip",
+    "bytes": 1225107,
+    "sha256": "37d56a254c2b8e632ce929494b71e1163e2fea366231881f98f2444f63762251"
+  },
+  {
+    "file": "npu-physical-final-confirmation.zip",
+    "bytes": 1024045,
+    "sha256": "36446f7fb9a0c39de5ecb886d72cfcb986ef4c73694724b4b52509052b56d5f8"
+  }
+]

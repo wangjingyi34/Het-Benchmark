@@ -1,0 +1,26 @@
+{
+  "kind": "independent_physical_stress_saved_record_audit",
+  "record_count": 1,
+  "all_arithmetic_identity_checks_passed": true,
+  "records": [
+    {
+      "path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/npu-main-backup/quality-stress-npu.json",
+      "sha256": "381a6c555ccae59aed7051fbe2eee71fb0ef1e0e17bc0cc8c552ae3ba4721409",
+      "device_id": "npu_Ascend910B3",
+      "model_id": "resnet18",
+      "baseline_eval_accuracy": 0.62,
+      "fault_eval_accuracy": 0.1,
+      "fault_eval_retention": 0.16129032258064518,
+      "actual_gate_rejected": true,
+      "actual_rollback_reexecuted": true,
+      "rollback_prediction_accuracy_restored": true,
+      "rollback_logits_allclose_recorded": true,
+      "current_method_source_hash_matches": {
+        "measured_planner.py": true,
+        "copa_v2.py": true
+      }
+    }
+  ],
+  "audit_source_sha256": "622dfe864c220e1684c2fdbf5048132dbaab99838567d7c06766cb6db1f83485",
+  "limitations": "Raw logits are not stored; logit allclose cannot be reconstructed from hashes. Physical authenticity also needs worker execution receipts. Fault injections are not main optimization actions or algorithm gains."
+}

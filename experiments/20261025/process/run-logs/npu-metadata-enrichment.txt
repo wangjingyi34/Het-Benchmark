@@ -1,0 +1,3 @@
+{"output": "/work/evidence/physical_profiles/npub3.metadata.json", "graphs": 36, "nodes": 2880, "raw_timings_modified": false, "all_input_weight_hashes_match": true}
+
+
