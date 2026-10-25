@@ -1,0 +1,29 @@
+{
+  "all_requested_studies_passed": true,
+  "studies": [
+    {
+      "study": "layout",
+      "exit_code": 0,
+      "log": "layout.log"
+    },
+    {
+      "study": "prediction",
+      "exit_code": 0,
+      "log": "prediction.log"
+    },
+    {
+      "study": "statistics",
+      "exit_code": 0,
+      "log": "statistics.log"
+    },
+    {
+      "study": "economics",
+      "exit_code": 0,
+      "log": "economics.log"
+    }
+  ],
+  "new_hardware_runs": 0,
+  "confidential_review_inputs_required": false,
+  "replay_script_sha256": "db0ff2f284209138dfb691dbac6e25500b28e42bf444e7d4d7b3e411adf5fad6",
+  "comparison_scope": "All four requested studies execute from copied public scientific sources with hash-bound restored public data; expected numeric exports match; economics creation timestamp intentionally excluded."
+}

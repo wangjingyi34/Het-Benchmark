@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-10-25T14:28:01.845990+00:00",
+  "protocol_sha256": "187e555fa7a578d734819f5d7e5c468058d063cd3fff632bb7d4a32cbea1ed68",
+  "quotes_sha256": "a52009ef975ee34fe0503c516f1bef445575c67286c86057f0de6c4cb3c1b3d9",
+  "source_count": 40,
+  "note": "Only protocol and sources exist before first calculation. This is an analysis freeze after seeingV3, not preregistration before original physical data collection."
+}

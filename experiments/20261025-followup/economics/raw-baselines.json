@@ -1,0 +1,1687 @@
+{
+  "source_manifest_sha256": "187e555fa7a578d734819f5d7e5c468058d063cd3fff632bb7d4a32cbea1ed68",
+  "baselines": [
+    {
+      "backend": "cuda",
+      "model": "resnet18",
+      "batch": 1,
+      "process_count": 5,
+      "calls_per_process": 30,
+      "process_means_ms": [
+        1.9140317333333332,
+        1.9180319,
+        1.9207861333333334,
+        1.9237132000000001,
+        1.9346318333333334
+      ],
+      "mean_of_five_process_means": 1.92223896,
+      "max_of_five_process_means": 1.9346318333333334,
+      "sample_sd_of_process_means_ms": 0.00779303088917708,
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "source_paths": [
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r4.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r5.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r6.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r7.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r8.json"
+      ]
+    },
+    {
+      "backend": "cuda",
+      "model": "resnet18",
+      "batch": 4,
+      "process_count": 5,
+      "calls_per_process": 30,
+      "process_means_ms": [
+        4.1696386,
+        4.170073166666667,
+        4.171544566666666,
+        4.1704318,
+        4.1727997666666665
+      ],
+      "mean_of_five_process_means": 4.17089758,
+      "max_of_five_process_means": 4.1727997666666665,
+      "sample_sd_of_process_means_ms": 0.0012765720558066808,
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "source_paths": [
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r4.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r5.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r6.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r7.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r8.json"
+      ]
+    },
+    {
+      "backend": "cuda",
+      "model": "resnet50",
+      "batch": 1,
+      "process_count": 5,
+      "calls_per_process": 30,
+      "process_means_ms": [
+        4.8447598,
+        4.841598333333334,
+        4.839819866666667,
+        4.828460866666667,
+        4.837763066666667
+      ],
+      "mean_of_five_process_means": 4.838480386666667,
+      "max_of_five_process_means": 4.8447598,
+      "sample_sd_of_process_means_ms": 0.006161415399691453,
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "source_paths": [
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r4.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r5.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r6.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r7.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r8.json"
+      ]
+    },
+    {
+      "backend": "cuda",
+      "model": "resnet50",
+      "batch": 4,
+      "process_count": 5,
+      "calls_per_process": 30,
+      "process_means_ms": [
+        11.328967766666667,
+        11.341310533333333,
+        11.330778033333333,
+        11.3235046,
+        11.326180466666667
+      ],
+      "mean_of_five_process_means": 11.33014828,
+      "max_of_five_process_means": 11.341310533333333,
+      "sample_sd_of_process_means_ms": 0.006824004085929059,
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "source_paths": [
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r4.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r5.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r6.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r7.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r8.json"
+      ]
+    },
+    {
+      "backend": "npu",
+      "model": "resnet18",
+      "batch": 1,
+      "process_count": 5,
+      "calls_per_process": 30,
+      "process_means_ms": [
+        4.700365666666666,
+        4.313590333333333,
+        5.333945666666667,
+        4.688085666666667,
+        4.528053666666667
+      ],
+      "mean_of_five_process_means": 4.7128082,
+      "max_of_five_process_means": 5.333945666666667,
+      "sample_sd_of_process_means_ms": 0.3808171856154722,
+      "device_id": "npu_Ascend910B3",
+      "source_paths": [
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r4.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r5.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r6.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r7.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r8.json"
+      ]
+    },
+    {
+      "backend": "npu",
+      "model": "resnet18",
+      "batch": 4,
+      "process_count": 5,
+      "calls_per_process": 30,
+      "process_means_ms": [
+        4.482138666666667,
+        5.976639,
+        4.563523,
+        4.724547333333334,
+        5.334977666666666
+      ],
+      "mean_of_five_process_means": 5.016365133333333,
+      "max_of_five_process_means": 5.976639,
+      "sample_sd_of_process_means_ms": 0.6323095344065891,
+      "device_id": "npu_Ascend910B3",
+      "source_paths": [
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r4.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r5.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r6.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r7.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r8.json"
+      ]
+    },
+    {
+      "backend": "npu",
+      "model": "resnet50",
+      "batch": 1,
+      "process_count": 5,
+      "calls_per_process": 30,
+      "process_means_ms": [
+        13.64587,
+        10.165134,
+        13.931830333333334,
+        10.943466666666668,
+        10.723864
+      ],
+      "mean_of_five_process_means": 11.882033,
+      "max_of_five_process_means": 13.931830333333334,
+      "sample_sd_of_process_means_ms": 1.766549917292052,
+      "device_id": "npu_Ascend910B3",
+      "source_paths": [
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r4.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r5.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r6.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r7.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r8.json"
+      ]
+    },
+    {
+      "backend": "npu",
+      "model": "resnet50",
+      "batch": 4,
+      "process_count": 5,
+      "calls_per_process": 30,
+      "process_means_ms": [
+        17.412714333333334,
+        10.484008333333334,
+        11.903161,
+        11.248675333333333,
+        18.763558666666665
+      ],
+      "mean_of_five_process_means": 13.962423533333332,
+      "max_of_five_process_means": 18.763558666666665,
+      "sample_sd_of_process_means_ms": 3.8294832859955465,
+      "device_id": "npu_Ascend910B3",
+      "source_paths": [
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r4.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r5.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r6.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r7.json",
+        "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r8.json"
+      ]
+    }
+  ],
+  "runtimes": [
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r4.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 635,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r5.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 649,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r6.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 663,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r7.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 677,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b1-r8.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 691,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r4.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 747,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r5.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 767,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r6.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 781,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r7.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 795,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet18-b4-r8.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 809,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r4.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 865,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r5.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 885,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r6.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 899,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r7.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 913,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b1-r8.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 927,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r4.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 983,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r5.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 997,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r6.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 1011,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r7.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 1025,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/cuda-resnet50-b4-r8.json",
+      "device_id": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "runtime": {
+        "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]",
+        "torch": "2.9.1+cu126",
+        "torchvision": "0.24.1+cu126",
+        "platform": "Linux-6.6.102-6.alnx4.x86_64-x86_64-with-glibc2.35",
+        "pid": 1045,
+        "threads": 4,
+        "hardware": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+        "memory_bytes": 20937965568,
+        "cuda": "12.6"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r4.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 14888,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r5.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 15901,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r6.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 16884,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r7.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 17903,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b1-r8.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 18943,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r4.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 23114,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r5.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 24095,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r6.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 25103,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r7.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 26080,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet18-b4-r8.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 27088,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r4.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 31469,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r5.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 32669,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r6.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 33791,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r7.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 34852,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b1-r8.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 35938,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r4.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 40264,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r5.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 41417,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r6.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 42477,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r7.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 43620,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    },
+    {
+      "path": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/fullmodel_raw/npu-resnet50-b4-r8.json",
+      "device_id": "npu_Ascend910B3",
+      "runtime": {
+        "python": "3.9.9 (main, Feb 26 2025, 14:58:36) \n[GCC 10.3.1]",
+        "torch": "2.6.0+cpu",
+        "torchvision": "0.21.0",
+        "platform": "Linux-5.10.0-136.12.0.92.1.ctl3.aarch64-aarch64-with-glibc2.34",
+        "pid": 44707,
+        "threads": 4,
+        "hardware": "Ascend910B3"
+      },
+      "protocol": {
+        "dtype": "float32",
+        "tf32": false,
+        "warmup": 10,
+        "repeats": 30,
+        "timing": "per-call synchronized wall clock including dispatch; full model forwards",
+        "train_runs": [
+          1,
+          2,
+          3
+        ],
+        "planned_eval_runs": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "quality_threshold": 0.99,
+        "quality_mode": "retention_ratio",
+        "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+        "mps_fallback_env": null
+      }
+    }
+  ]
+}

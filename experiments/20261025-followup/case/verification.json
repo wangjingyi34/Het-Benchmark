@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "fullmodel_blocks": 128,
+    "fullmodel_contexts": 16,
+    "fullmodel_coalitions": 2048,
+    "fullmodel_timed_calls": 61440,
+    "paired_blocks": 20,
+    "paired_coalitions": 220,
+    "paired_AB_BA_pairs": 4400
+  },
+  "V3_eight_context_all_five_key_series_match": true,
+  "new_hardware_executions": 0,
+  "source_import_ast_has_torch": false,
+  "archives": [
+    {
+      "path": "public-repo/experiments/20261025/archives/full-model-data-and-frozen-tasks.zip",
+      "sha256": "d1e1610b1072926c36ce94f70137bd9c4c47ca2958b7e43a9a23685a3634087a",
+      "matching_unique_raw_files": 128
+    },
+    {
+      "path": "public-repo/experiments/20261025/archives/paired-confirmation-data.zip",
+      "sha256": "559be52dd1312a6abd207655bc2f0231643657169c6f50a7649d053cc181c0a5",
+      "matching_unique_raw_files": 20
+    }
+  ],
+  "plan_sha256": "d4d13f9950996005f4c2150150183da4c48c8d4ec27df93263b4bd226d6334df",
+  "recomputation_code_sha256": "a69d6c6ff4e279ffbe334362fbed632e43828b1a4b9d40c9014c36671d89e18d",
+  "recomputation_sha256": "56b276bf557edba6331eae0f0c5cfd79ff3632a4a99df3b5fe65b145f49b7606",
+  "quality_min_fresh_local": 1.0,
+  "quality_min_fresh_to_A100_source": 1.0
+}

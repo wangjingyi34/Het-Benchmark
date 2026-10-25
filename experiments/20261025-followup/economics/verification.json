@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "raw_hashes_checked": 40,
+  "raw_process_means_checked": 40,
+  "raw_baseline_matches_V2": true,
+  "V3_rows_reproduced": 288,
+  "service_cases": 448,
+  "schedule_replays": 896,
+  "financial_rows": 129024,
+  "price_monotonicity_groups_checked": 192,
+  "all_cases_retained": true,
+  "checks": [
+    "frozenprotocol and quoteSHA",
+    "allsourceSHA",
+    "heldoutphase and physicalprovenance",
+    "all30 originalcalls and processmeans",
+    "capacitynormalization and batchunits",
+    "same demand,budget and activity on bothdevices",
+    "deterministic batch formation and roundrobin replay",
+    "replica utilization not above cap",
+    "minimumorder integerpurchases",
+    "reservedhour bounds",
+    "total and per1000 cost ratios identical",
+    "allplanned cases retained including infeasible",
+    "no paidorders or hardwareexecutions"
+  ]
+}

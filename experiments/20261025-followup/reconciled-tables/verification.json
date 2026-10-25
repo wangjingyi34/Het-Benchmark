@@ -1,0 +1,19 @@
+{
+  "source_sha256": "d2cba363c1ea7d2c5a1896d62427d1b2e47d43390a36f54f853c538f1051be34",
+  "historical_five_family_values": [
+    12.4,
+    11.5,
+    36.9,
+    6.6,
+    4.0
+  ],
+  "historical_five_family_equal_mean": 14.28,
+  "common3_test_mean": 20.266666666666666,
+  "common3_roofline_mean": 25.566666666666666,
+  "eight_family_test_macro": 13.0375,
+  "source_json_rows_flagged": 40,
+  "printed_table_cells_annotated": 55,
+  "old_5000_per_edge_sources_reconstructed": false,
+  "new_empirical_measurements": 0,
+  "interpretation": "Makes equal-family and provenance reporting explicit. It does not certify old per-query overall MRE or authenticate exact printed-run identity."
+}

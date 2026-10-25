@@ -1,0 +1,95 @@
+{
+  "kind": "descriptive_relative_loss_evidence_component",
+  "frozen_utc": "2026-10-25T14:12:51.739574+00:00",
+  "code_sha256": "6d9b4dbc3658b779c308a0a9f197344d6e54bf4cd6f404a210dae458cef80c35",
+  "dependency_code_sha256": {
+    "evaluate_evidence_memory.py": "e99750721b4586fe99cd63622c685a15db0dd9ef06acaf285699617c8700b337",
+    "evaluate_profiles.py": "bad26be58e40a0bf6ff939024f15e646a72ec3e1b8bc3fef54dc67745f8cce0f",
+    "structural_attributes.py": "0c175a7e2c30fd595a35c70841cb78638eb83cec159101daf204734c616913ad"
+  },
+  "source_summary": "v2-实证增强/public-reproduction-check/prediction/formal-five-stack/summary.json",
+  "source_summary_sha256": "f5c2aafca1af9bd478b54df6f9550e89b7a00aabdcb2aa4636561cb1b1805992",
+  "baseline_summary": "v2-实证增强/public-reproduction-check/prediction/evidence-memory-frozen-main/summary.json",
+  "baseline_summary_sha256": "e2fb415a5fbeeea5063527da4f4b8585f1b9ef9363458fd1479ef145b0c05b03",
+  "source_manifest": [
+    {
+      "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5cpu.json",
+      "raw_sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "metadata_sha256": "9b3b8c5dc99190ca0b0a2732444ce6ff75dec87939bc84e87c11dd90396f1535",
+      "device_id": "Apple-M5-CPU-4T"
+    },
+    {
+      "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5mps.json",
+      "raw_sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "metadata_sha256": "8ea2686cf4870559424fac1e3568b136f9c56782d0469016f5efaf0426635014",
+      "device_id": "Apple-M5-MPS"
+    },
+    {
+      "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/a100mig.json",
+      "raw_sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "metadata_sha256": "a7e95b8be8067dcb905c603fec9404210e407c0f48cfec22a2d11b3b9a7ced3d",
+      "device_id": "A100-SXM4-MIG-2g20GB"
+    },
+    {
+      "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/xeon_cpu.json",
+      "raw_sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "metadata_sha256": "064e2a80d22a081e6ad20681b83e99b1d6ee405a4b36a9d53b47c0f01c549f1e",
+      "device_id": "Cloud-x86-CPU-4T"
+    },
+    {
+      "raw_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check/evidence/physical_profiles/npub3.json",
+      "raw_sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "metadata_sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8",
+      "device_id": "Ascend-910B3-64GB"
+    }
+  ],
+  "records": 13905,
+  "fold_count": 11,
+  "new_component": "kernel-weighted relative-L1 median; weights kernel/actual_train_latency after permitted independent probe calibration",
+  "comparators": [
+    "family_kernel",
+    "semantic_evidence_memory"
+  ],
+  "k_grid": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "temperature_grid": [
+    0.25,
+    1.0,
+    4.0
+  ],
+  "probe_exponent_grid": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "validation_selection": "one global configuration per component/candidate-rule/mode/fold, minimum validation micro MRE; deterministic tie k,temp,gamma",
+  "support_and_information": "same frozen V2 train/validation/test support, exact/family anchor gate, train-only scaler, strict or 3 independent probe calibration; heldout-stack validation excludes query stack anchors",
+  "test_label_policy": "test query latency is accessed only after prediction/configuration selection, for scoring; no method selection, early stop or target score search",
+  "selective_policy": "90th percentile of validation anchor log-latency spread, greater-than threshold; report offline retention and recorded cost only, no new measurement/hybrid benefit claim",
+  "uncertainty": "10000 paired cluster bootstraps, source model (n12) for model holdout, heldout stack (n5) for stack holdout; descriptive intervals, no multiple-comparison claim",
+  "bootstrap_seed": 20261025,
+  "exploratory_status": "Retrospective descriptive extension on an already evaluated dataset. The method was frozen before this run but this is not an independent preregistered confirmatory study.",
+  "can_support": "measured-label heldout performance of a new relative-loss retrieval component on these five stacks and twelve architectures",
+  "cannot_support": [
+    "original RGAT14.3%",
+    "original five-platform physical LOPO",
+    "arbitrary hardware/model transfer",
+    "a causal benefit of measurement fallback",
+    "new physical profiling"
+  ],
+  "folds_sha256": "d01edab4fbc49df3756543a0aac3f1a7e40ab37061fb04d7aafa5ff112e157b5",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "executable": "/Users/wjy/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "numpy": "2.3.5",
+    "torch": "2.9.1",
+    "new_physical_measurements": 0,
+    "network_or_remote_execution": false
+  }
+}

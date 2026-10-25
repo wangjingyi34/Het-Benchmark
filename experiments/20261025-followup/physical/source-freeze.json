@@ -1,0 +1,8 @@
+{
+  "protocol_sha256": "5b00362ad22b94d6f8db7abbaabd6bd107a6d891507e389d788e39a26953eede",
+  "collector_sha256": "ff075e79f833ad752bc0d888a5c4e08196bfc43e410f0be051e7731d44bfdfbc",
+  "helper_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+  "read_only_peer_review": "v4_case_protocol: no unresolvedP0/P1 after pid/partialfailure fixes; final addition requires prior frozenplan for evaluation",
+  "new_physical_results_observed": false,
+  "runner_sha256": "21a9098a5cf33853d4c3ef776a47a3192e0cf5da49d1b3ba688c3c9dd8dae405"
+}

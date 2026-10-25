@@ -1,0 +1,146 @@
+{
+  "README.txt": {
+    "bytes": 4769,
+    "sha256": "f08c9fb755e6f32c605737097a747296554774693435e07e6369546a12f6cedf"
+  },
+  "audit_original_interface.py": {
+    "bytes": 3201,
+    "sha256": "25b650a74c6c7c8664baed3cc1b65c762aaba5634c00717e6f29faebfc210ea9"
+  },
+  "audit_relative_loss_results.py": {
+    "bytes": 6738,
+    "sha256": "c6807c56b17324418b4f4bbcde95be7d5b307c2e55697c3a9eba4477ef309f1a"
+  },
+  "device-A100-SXM4-MIG-2g20GB-family_kernel-anchors.jsonl.gz": {
+    "bytes": 250560,
+    "sha256": "b538c5b1b13d55e0e2335ee80770f130d5737c70ef44d5850ae638709a095926"
+  },
+  "device-A100-SXM4-MIG-2g20GB-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 126509,
+    "sha256": "b60fab0a8fffa8621aa2d2ff844fa8927660d117d10bfe277751cc809b763dc2"
+  },
+  "device-Apple-M5-CPU-4T-family_kernel-anchors.jsonl.gz": {
+    "bytes": 251984,
+    "sha256": "aeb83238cede74163fe6c7323e08a871a54194cf7c19e4b1d7a4efc92d008933"
+  },
+  "device-Apple-M5-CPU-4T-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 127378,
+    "sha256": "f26089194face5b4e2b264dc985939b5cad1aac9a72655e10e784184ab0597af"
+  },
+  "device-Apple-M5-MPS-family_kernel-anchors.jsonl.gz": {
+    "bytes": 252157,
+    "sha256": "eb56e8047df51e7a2c011268e12863ebda5d141bee530f5669ef8674f1d06a62"
+  },
+  "device-Apple-M5-MPS-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 127940,
+    "sha256": "ea0f583509a36e73b3c1494c6cc5fe5e7235af420efef8bb8eed8ff2ded074e8"
+  },
+  "device-Ascend-910B3-64GB-family_kernel-anchors.jsonl.gz": {
+    "bytes": 251105,
+    "sha256": "ac3e5d377b0469d5fa60b0a812f015c4fcc9dffc2db7785f27c47aea202ac6b4"
+  },
+  "device-Ascend-910B3-64GB-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 127448,
+    "sha256": "c52d1ed4a9d852807c2d83acf2c1365667a879ca3e3195ce228acbe2bfe8bd2f"
+  },
+  "device-Cloud-x86-CPU-4T-family_kernel-anchors.jsonl.gz": {
+    "bytes": 252800,
+    "sha256": "6b64b30cc65eb2a1fb1bdd835733e7141fc74bacdb66abdb3fd3ba2a82bfff4a"
+  },
+  "device-Cloud-x86-CPU-4T-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 127978,
+    "sha256": "ddb14c83b4f87adbde851f64ec327be821b31c3853360615f009683c17cba1cb"
+  },
+  "execution.log": {
+    "bytes": 10191,
+    "sha256": "e13aa75566e1e78c5bfb2b08f21a25ad3da31c588c09052b9a4d0420916815a2"
+  },
+  "frozen-folds.json": {
+    "bytes": 9244498,
+    "sha256": "d01edab4fbc49df3756543a0aac3f1a7e40ab37061fb04d7aafa5ff112e157b5"
+  },
+  "metrics.csv": {
+    "bytes": 2989,
+    "sha256": "2072553f63fee7de8c01139dcd95e087e2a89fbddc3a87cd25ab8f2e6af3b2e0"
+  },
+  "model-fold0-family_kernel-anchors.jsonl.gz": {
+    "bytes": 922999,
+    "sha256": "dbb62724390624842b112b68306d6a9460d8ae2ee75d45a767992d10309de539"
+  },
+  "model-fold0-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 824062,
+    "sha256": "d4917c7e9dfa08a1dd87b3d08d6749a0b1c087d07ed708179c0da6d7b8c69798"
+  },
+  "model-fold1-family_kernel-anchors.jsonl.gz": {
+    "bytes": 835709,
+    "sha256": "10e391f3e800eb16ee589d2140c941615e6a81430bb88bb7583eb877d514d6c5"
+  },
+  "model-fold1-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 762279,
+    "sha256": "ec6d8772d87cb376a657e50d41ba1ba78a1e7eb05c6f93288e5cc9e6c10d9dca"
+  },
+  "model-fold2-family_kernel-anchors.jsonl.gz": {
+    "bytes": 674786,
+    "sha256": "aef0e0bfd76cea7354e396e1089ea2246b0ccab786e819aabcca23f616002396"
+  },
+  "model-fold2-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 533684,
+    "sha256": "236214bf4b9e958627b8f4bc565cf0db392878af8a22fbc18950509dfd8335dd"
+  },
+  "model-fold3-family_kernel-anchors.jsonl.gz": {
+    "bytes": 95148,
+    "sha256": "3ccd3ba631328b3cc99f27242ebc35d872b1f1fa61972ee5b883f85b5351bb83"
+  },
+  "model-fold3-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 61277,
+    "sha256": "38f687e631bcd5e50d7baf3dbcf59cc2b64bbc92bf1ca80b5c97413e8f80c1fd"
+  },
+  "model-fold4-family_kernel-anchors.jsonl.gz": {
+    "bytes": 85169,
+    "sha256": "bf305d4807837d8bd0e8258fed45649a3f5550b9e9fb923f87cfdcd95753a723"
+  },
+  "model-fold4-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 38530,
+    "sha256": "fdd20a7b7f5f3d73f54fa1b67714b92f8022c9b44c6d7cc17d213c3fa82e7044"
+  },
+  "model-fold5-family_kernel-anchors.jsonl.gz": {
+    "bytes": 474830,
+    "sha256": "6a2ec7a357faf94259eb7ae43b3e19d9ec452907c465ea2d4b9373f2d453859a"
+  },
+  "model-fold5-semantic_evidence_memory-anchors.jsonl.gz": {
+    "bytes": 363775,
+    "sha256": "9b5d6215698f51b9a714176ed9b8200dba93ceb37e37fb91aad7db6ba878f0f3"
+  },
+  "original-checkpoint-interface-audit.json": {
+    "bytes": 5130,
+    "sha256": "15b282943ed9d42ebb55c0394b4c1cbf60a9ac1d891d4ad74de2a795b152e997"
+  },
+  "predictions.jsonl.gz": {
+    "bytes": 4668713,
+    "sha256": "31d8ab96648fab64eb98c60a225d08c94e125444b648af0e3e6e6663326e72a6"
+  },
+  "protocol.json": {
+    "bytes": 5575,
+    "sha256": "ebce8e9e3a2418ffecdbe7cd87e0cccda8444bd2a8c983960890490a9b02d3da"
+  },
+  "relative_loss_kernel.py": {
+    "bytes": 14703,
+    "sha256": "6d9b4dbc3658b779c308a0a9f197344d6e54bf4cd6f404a210dae458cef80c35"
+  },
+  "result-audit.json": {
+    "bytes": 13156,
+    "sha256": "702894c698ff1b5f959fed8a821766afd1acfcb3954c9e9ff7b48180088bcf6f"
+  },
+  "results.json": {
+    "bytes": 1478299,
+    "sha256": "717143f74ec26c90cda118b46670891f4e87a2e6951fa874908cec2bd6ba0cd4"
+  },
+  "results.partial.json": {
+    "bytes": 1430316,
+    "sha256": "81fc3a87d360e495aef2447bf45f93bb5524d49064bbcadeea1f07e9964101f3"
+  },
+  "selected-validation-predictions.jsonl.gz": {
+    "bytes": 1916034,
+    "sha256": "e80a1549ee1e3742189051e11c3c9db295c24d5ffec8d2bea1d94a349d9d1da2"
+  }
+}

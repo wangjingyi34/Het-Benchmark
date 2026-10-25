@@ -1,0 +1,351 @@
+{
+  "schema": "het.v4.economics.results.v1",
+  "created_utc": "2026-10-25T14:33:57.551817+00:00",
+  "protocol_sha256": "187e555fa7a578d734819f5d7e5c468058d063cd3fff632bb7d4a32cbea1ed68",
+  "quotes_sha256": "a52009ef975ee34fe0503c516f1bef445575c67286c86057f0de6c4cb3c1b3d9",
+  "new_hardware_executions": 0,
+  "original_raw_files": 40,
+  "original_process_baselines": 40,
+  "V3_exact_reproduction": {
+    "rows": 288,
+    "maximum_absolute_reduction_difference_percentage_points": 0,
+    "supports66_count": 0
+  },
+  "new_capacity_normalized": {
+    "cases": 576,
+    "NPU_cheaper_cases": 0,
+    "supports66_cases": 0,
+    "NPU_over_A100_cost_ratio_range": [
+      1.4256460960281878,
+      38.0124511278986
+    ],
+    "reduction_range_percent": [
+      -3701.2451127898603,
+      -42.564609602818784
+    ]
+  },
+  "new_service_envelope": {
+    "service_cases": 448,
+    "schedule_replays": 896,
+    "financial_cases": 129024,
+    "feasibility_counts": {
+      "both": 320,
+      "A100_only": 28,
+      "NPU_only": 0,
+      "neither": 100
+    },
+    "reservation_range_among_both_feasible_percent": [
+      -444001.41813493776,
+      84.68903491304924
+    ],
+    "stratified_results": [
+      {
+        "provider": "runpod",
+        "NPU_plan": "hourly_quantum1s_assumed",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -891.4052428018911,
+        "max_reduction_among_both_feasible": -186.40595903165735
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "hourly_quantum3600s_assumed",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -11796.86291362269,
+        "max_reduction_among_both_feasible": -186.40595903165735
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "monthly_30day_commitment",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -190229.1792006876,
+        "max_reduction_among_both_feasible": -90.9166149389613
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "hourly_quantum1s_assumed",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -891.4052428018911,
+        "max_reduction_among_both_feasible": -186.4059590316574
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "hourly_quantum3600s_assumed",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -891.4052428018911,
+        "max_reduction_among_both_feasible": -186.4059590316574
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "monthly_30day_commitment",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -560.8652055579431,
+        "max_reduction_among_both_feasible": -90.9166149389613
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "hourly_quantum1s_assumed",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -2213.2788998710794,
+        "max_reduction_among_both_feasible": -186.40595903165735
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "hourly_quantum3600s_assumed",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -27659.346798452945,
+        "max_reduction_among_both_feasible": -186.40595903165735
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "monthly_30day_commitment",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -444001.41813493776,
+        "max_reduction_among_both_feasible": -90.9166149389613
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "hourly_quantum1s_assumed",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -2213.2788998710794,
+        "max_reduction_among_both_feasible": -186.4059590316574
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "hourly_quantum3600s_assumed",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -2213.2788998710794,
+        "max_reduction_among_both_feasible": -186.4059590316574
+      },
+      {
+        "provider": "runpod",
+        "NPU_plan": "monthly_30day_commitment",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 0,
+        "supports66_among_both_feasible": 0,
+        "min_reduction_among_both_feasible": -1442.0188129685337,
+        "max_reduction_among_both_feasible": -90.9166149389613
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "hourly_quantum1s_assumed",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 2936,
+        "supports66_among_both_feasible": 1872,
+        "min_reduction_among_both_feasible": -377.04714640198523,
+        "max_reduction_among_both_feasible": 77.0310633213859
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "hourly_quantum3600s_assumed",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 2202,
+        "supports66_among_both_feasible": 1404,
+        "min_reduction_among_both_feasible": -5624.565756823821,
+        "max_reduction_among_both_feasible": 77.0310633213859
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "monthly_30day_commitment",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 1373,
+        "supports66_among_both_feasible": 562,
+        "min_reduction_among_both_feasible": -91483.12655086849,
+        "max_reduction_among_both_feasible": 84.68903491304924
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "hourly_quantum1s_assumed",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 2936,
+        "supports66_among_both_feasible": 1872,
+        "min_reduction_among_both_feasible": -377.04714640198523,
+        "max_reduction_among_both_feasible": 77.0310633213859
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "hourly_quantum3600s_assumed",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 2936,
+        "supports66_among_both_feasible": 1872,
+        "min_reduction_among_both_feasible": -377.04714640198523,
+        "max_reduction_among_both_feasible": 77.0310633213859
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "monthly_30day_commitment",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 1,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 3244,
+        "supports66_among_both_feasible": 2248,
+        "min_reduction_among_both_feasible": -217.99696719051562,
+        "max_reduction_among_both_feasible": 84.68903491304924
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "hourly_quantum1s_assumed",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 2936,
+        "supports66_among_both_feasible": 1872,
+        "min_reduction_among_both_feasible": -642.0733388475326,
+        "max_reduction_among_both_feasible": 77.0310633213859
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "hourly_quantum3600s_assumed",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 2202,
+        "supports66_among_both_feasible": 1404,
+        "min_reduction_among_both_feasible": -8804.88006617039,
+        "max_reduction_among_both_feasible": 77.0310633213859
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "monthly_30day_commitment",
+        "policy": "scheduled_release_outside_active_period",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 1373,
+        "supports66_among_both_feasible": 562,
+        "min_reduction_among_both_feasible": -142362.641301351,
+        "max_reduction_among_both_feasible": 84.68903491304924
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "hourly_quantum1s_assumed",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 2936,
+        "supports66_among_both_feasible": 1872,
+        "min_reduction_among_both_feasible": -642.0733388475326,
+        "max_reduction_among_both_feasible": 77.0310633213859
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "hourly_quantum3600s_assumed",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 2936,
+        "supports66_among_both_feasible": 1872,
+        "min_reduction_among_both_feasible": -642.0733388475326,
+        "max_reduction_among_both_feasible": 77.0310633213859
+      },
+      {
+        "provider": "lambda",
+        "NPU_plan": "monthly_30day_commitment",
+        "policy": "keep_warm_all_day",
+        "MIG_replicas_per_card": 3,
+        "all_cases": 5376,
+        "both_feasible": 3840,
+        "NPU_cheaper_among_both_feasible": 3244,
+        "supports66_among_both_feasible": 2248,
+        "min_reduction_among_both_feasible": -394.6619489630243,
+        "max_reduction_among_both_feasible": 84.68903491304924
+      }
+    ],
+    "counts_are_scenarios_not_statistical_evidence": true
+  },
+  "cost_identity": {
+    "original_arithmetic_only": "1-170/500=0.66",
+    "original_invoice_authenticated": false,
+    "old_cost_denominator_and_service_demand_authenticated": false,
+    "new_envelope_reconstructs_original_case": false
+  },
+  "billing_breakeven": {
+    "NPU_monthly_vs_hourly_active_billable_hours": 479.94798439531854,
+    "fraction_of720h": 0.6665944227712758,
+    "comparison": "Monthly becomes cheaper only above this many billed card-hours per month, assuming samecard and no otherfees. Scheduled release below that boundary favors hourly."
+  },
+  "interpretation": [
+    "All576 capacity-normalized scenarios favor the measured A100 MIG, under the fixed official price references and accounting allocations. This does not establish fullA100 performance or a universal price ranking.",
+    "Minimum-order reservation can make an NPU appear cheaper against an otherwise unused8card Lambda order. This is idle procurement overhead, not66percent algorithmic savings or reconstruction of the originalFITAS cost.",
+    "A1002g.20GB is neither a fullA100 benchmark nor a retail MIGquote; fraction2/7 counts nominalSMGPUhours, while actualbilledcardhours retain integerorders.",
+    "Service feasibility is an ideal periodic-arrival model using original processmean latencies, with explicit batching delay and utilizationheadroom. ProductiontailSLA requires measured arrivals, networking, queuing and concurrency evidence.",
+    "No currentofficialquote or newofflinemodel authenticates historical500/170 without pricedunit, duration, demand and billingreceipt."
+  ]
+}
