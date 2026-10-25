@@ -1,0 +1,2 @@
+Verified 189 release files
+Restored artifacts to /Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/public-reproduction-check

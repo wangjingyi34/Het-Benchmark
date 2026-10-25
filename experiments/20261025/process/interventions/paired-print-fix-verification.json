@@ -1,0 +1,11 @@
+{
+  "kind": "source_only_print_fix_and_terminal_output_unit_check",
+  "old_sha256": "2f33287e7d6afffb9303724ac61186c5712cbaaa0784795196d7b1f4ec6c22bb",
+  "new_sha256": "e88bce1b159f018e5dfa5793c726d362b70bcf0ed9795bf2a881d0ac5c1408c5",
+  "exact_single_line_difference_verified_by_old_hash_reconstruction": true,
+  "measurement_quality_randomization_unchanged": true,
+  "actual_final_print_expression_executed": true,
+  "unit_fixture_not_physical_experiment": true,
+  "physical_first_run_source_snapshot_sha256": "2f33287e7d6afffb9303724ac61186c5712cbaaa0784795196d7b1f4ec6c22bb",
+  "source_snapshot_matches_reconstructed_old_hash": true
+}

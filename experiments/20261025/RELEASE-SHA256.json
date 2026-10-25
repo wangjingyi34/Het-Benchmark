@@ -1,0 +1,1037 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5676,
+      "sha256": "65908f65b8d1a121e9fe68837fd65d506daca1dc2eda2f5b789153139c050a1d"
+    },
+    {
+      "path": "REPRODUCING.md",
+      "bytes": 7078,
+      "sha256": "7c177cb9e17eaadc16ea5563d89eab758b5bb869e6d860c0fac16daa8e908b00"
+    },
+    {
+      "path": "TECHNICAL-VALIDATION.md",
+      "bytes": 5439,
+      "sha256": "6ff2108a51307f577996f1fd292c9f936a26a6e1cf1a24c75a1e00578e94072b"
+    },
+    {
+      "path": "archives/attention-and-hardware-calibration.zip",
+      "bytes": 85520,
+      "sha256": "c56974bd0b26e89eb13d0cced4348570ecf5cdf796580b7f34bc405134784edf"
+    },
+    {
+      "path": "archives/attention-frozen-predictions.zip",
+      "bytes": 52290,
+      "sha256": "cbca1a9fc24a61e5f15f1a653e8f5b59c7762204ff16bb678aa7345599aac21f"
+    },
+    {
+      "path": "archives/bridge-resnet18-full-traces.tar.gz",
+      "bytes": 2863934,
+      "sha256": "d6804ffcf5bc12df715de49158c9a6bb74f564ab3d3a007f5c3dd7f7d97b06f2"
+    },
+    {
+      "path": "archives/bridge-resnet50-full-traces.tar.gz",
+      "bytes": 7619151,
+      "sha256": "6e4d5b337a26da931c088213ea3d05a3f62813b5c7a6b5ed7d3615d1dde5872f"
+    },
+    {
+      "path": "archives/development-and-interface-checks.zip",
+      "bytes": 5941372,
+      "sha256": "d96527436a2e0bcf6f8b951a627c86f730cb5426895739f234da9516970df6ba"
+    },
+    {
+      "path": "archives/evidence-memory-frozen-main.zip",
+      "bytes": 3004653,
+      "sha256": "5233254448d73ad4a2849d82b3a19618c3e2bfe8a87cf9a4877c24685d8fb6df"
+    },
+    {
+      "path": "archives/family14-npu-final.zip",
+      "bytes": 15429,
+      "sha256": "27d1d05e92753ecfe25b44259b46a698fa32e50f7ef27976f5c2081790934094"
+    },
+    {
+      "path": "archives/family17-absolute-ranking.zip",
+      "bytes": 9302,
+      "sha256": "3374f840f5e74e0bed582ea5fdbc28d70849a96aefea08cacf6e0979c39e02b6"
+    },
+    {
+      "path": "archives/family17-fixed-extension.zip",
+      "bytes": 1526964,
+      "sha256": "3535b3932569748d00989a8498b2850925e24d803aced8e4283f0300f5dc0b2c"
+    },
+    {
+      "path": "archives/formal-and-memory-absolute-ranking.zip",
+      "bytes": 253475,
+      "sha256": "c1ca654d028bf6cfa6d5f9c46b1fc274cc3db96df5f709567ffe3756ba6465f1"
+    },
+    {
+      "path": "archives/full-model-data-and-frozen-tasks.zip",
+      "bytes": 3508201,
+      "sha256": "d1e1610b1072926c36ce94f70137bd9c4c47ca2958b7e43a9a23685a3634087a"
+    },
+    {
+      "path": "archives/historical-pilot-records.zip",
+      "bytes": 266789,
+      "sha256": "2fcef728a8ca4ae8814d9a2a9d97970f983959a9f886926064c66d383a5d6651"
+    },
+    {
+      "path": "archives/npu-execution-and-precision-receipts.zip",
+      "bytes": 1269516,
+      "sha256": "c6b6a3ed66a1ead33b9cba51ca9a331b374a59be4059ae56998f4e4f415256d3"
+    },
+    {
+      "path": "archives/npu-final-scientific-snapshot.tar.gz",
+      "bytes": 2449943,
+      "sha256": "207f8ec4e4d6a7cdb7c9630f561e1c5d47dc6579c98e024ae71061e629ada3cd"
+    },
+    {
+      "path": "archives/paired-confirmation-data.zip",
+      "bytes": 968986,
+      "sha256": "559be52dd1312a6abd207655bc2f0231643657169c6f50a7649d053cc181c0a5"
+    },
+    {
+      "path": "archives/physical-operator-data.zip",
+      "bytes": 2909154,
+      "sha256": "2bf5aa2491024427f841fcb90cb027426ec57d6dc06276624d5f9d940dc186bb"
+    },
+    {
+      "path": "archives/planner-eight-contexts-160-policies.tar.gz",
+      "bytes": 7539368,
+      "sha256": "9769531960c576850d73ca882ff5a3e1b953ec3e79dd01cbc803058e7ed1d518"
+    },
+    {
+      "path": "archives/planner-frozen-embedding-inputs.zip",
+      "bytes": 732529,
+      "sha256": "7111de287515eca3324dc83b66a1815f262aa29aa16a9f7f332bee0dd7641777"
+    },
+    {
+      "path": "archives/prediction-parts/prediction-formal-all-files.zip.part000",
+      "bytes": 33554432,
+      "sha256": "4f708ffdd1afc67fcee0bb6838bd46295279ae5ddc2cb7b9eb9353c325228773"
+    },
+    {
+      "path": "archives/prediction-parts/prediction-formal-all-files.zip.part001",
+      "bytes": 33554432,
+      "sha256": "d0808d7966e130a35be18bb52da9bbb960b5af50a1d35608fe3e6c20a6406c75"
+    },
+    {
+      "path": "archives/prediction-parts/prediction-formal-all-files.zip.part002",
+      "bytes": 33554432,
+      "sha256": "8c7a756d79c419d3c7d6ffad316bed8095d86197b73a8a53f69b448f32db5300"
+    },
+    {
+      "path": "archives/prediction-parts/prediction-formal-all-files.zip.part003",
+      "bytes": 33554432,
+      "sha256": "c8b3c458a4992c73eb6cd223fbdf5b9bce99a89c7bf5994bd7c1dc4fc40513f0"
+    },
+    {
+      "path": "archives/prediction-parts/prediction-formal-all-files.zip.part004",
+      "bytes": 33554432,
+      "sha256": "88000af3365515862644a74b0d50fc5172d00584c075b2aef39515cf2e31ecaf"
+    },
+    {
+      "path": "archives/prediction-parts/prediction-formal-all-files.zip.part005",
+      "bytes": 33554432,
+      "sha256": "8499b0bc92908156e56d97ae6eef5d85ea2852ab1587a7ae9f08d18b55d959f6"
+    },
+    {
+      "path": "archives/prediction-parts/prediction-formal-all-files.zip.part006",
+      "bytes": 33554432,
+      "sha256": "4909f49eb3a55302092aa3b2ef0d2eeef862fc0968cd42a0233cdb0e6babf889"
+    },
+    {
+      "path": "archives/prediction-parts/prediction-formal-all-files.zip.part007",
+      "bytes": 12824213,
+      "sha256": "2f0a07d2fc443857ff272b306031402a784b972e4a1054789147f36001b21c39"
+    },
+    {
+      "path": "archives/prediction-parts.json",
+      "bytes": 1801,
+      "sha256": "a2690fee118d2063dad7e5917e5267424682ebf2d56e4a7fe29458a7061d6ef7"
+    },
+    {
+      "path": "code/download_ranges.py",
+      "bytes": 3063,
+      "sha256": "7abea47076d276207c35a052b7aa8951d5fb8a7c6c2112aa2ef61e9cd3a387c1"
+    },
+    {
+      "path": "code/interventions/assemble_tasks.py",
+      "bytes": 6464,
+      "sha256": "51cad459bf592fbd641ae4e174f0c196c407bafc5b4b3035f202730f01fa35b9"
+    },
+    {
+      "path": "code/interventions/audit_full128_traceability.py",
+      "bytes": 7975,
+      "sha256": "79070aee36d06e040aa4ece3ea01504ad84179864b1fef34902bf2226a1fa9f8"
+    },
+    {
+      "path": "code/interventions/audit_full_model_runs.py",
+      "bytes": 7250,
+      "sha256": "a109f0c09cbff5c6c837dafbf9caaf60a8d55b8a4e75e0a4c12619af6595dd99"
+    },
+    {
+      "path": "code/interventions/audit_paired_confirmation.py",
+      "bytes": 10961,
+      "sha256": "ed91c39f4e43763199d3a8b8d2017a7446dd0ccd62798f0d2c6d58a7b93a96b6"
+    },
+    {
+      "path": "code/interventions/audit_quality_stress.py",
+      "bytes": 6791,
+      "sha256": "622dfe864c220e1684c2fdbf5048132dbaab99838567d7c06766cb6db1f83485"
+    },
+    {
+      "path": "code/interventions/audit_supplemental_calibration.py",
+      "bytes": 9213,
+      "sha256": "5e4f18cc3d7f0a2165b0a1170f506f3b24de7ba9094ef1af8eef1bb45693271f"
+    },
+    {
+      "path": "code/interventions/full_model_coalitions.py",
+      "bytes": 15775,
+      "sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb"
+    },
+    {
+      "path": "code/interventions/hardware_capability_probes.py",
+      "bytes": 2220,
+      "sha256": "397f97b2b98a4477420ee9a9b1f6d7445db4e6309b8cbe1548c622e338f92593"
+    },
+    {
+      "path": "code/interventions/npu_fp32_launcher.py",
+      "bytes": 3920,
+      "sha256": "65505a60f5daaa3c1f2b02e3940648661aee7b66b8b80b193048895b90ad35b1"
+    },
+    {
+      "path": "code/interventions/paired_confirmation.py",
+      "bytes": 17242,
+      "sha256": "e88bce1b159f018e5dfa5793c726d362b70bcf0ed9795bf2a881d0ac5c1408c5"
+    },
+    {
+      "path": "code/interventions/prepare_assets.py",
+      "bytes": 6914,
+      "sha256": "3a99c7866a4accc6a70757eb6382eb8e2ea6f524c1eb9e5beaf404e444caad9f"
+    },
+    {
+      "path": "code/interventions/quality_stress.py",
+      "bytes": 8062,
+      "sha256": "4d3cfc3c604b4e0a25fa23164a3a79430300919a4301c98e427a982bec17a896"
+    },
+    {
+      "path": "code/interventions/test_interventions_unit.py",
+      "bytes": 1558,
+      "sha256": "1fdb511efcb13c10d8f2d4df8cb5af5a548b71b94488eb66a6a06f4cded106dd"
+    },
+    {
+      "path": "code/methods/analyze_measured.py",
+      "bytes": 7476,
+      "sha256": "a3bb928ff5f05f29ae45280b23c54c56dca455b80c6635e1e160e7d27da473fc"
+    },
+    {
+      "path": "code/methods/attach_embeddings.py",
+      "bytes": 3517,
+      "sha256": "dc1963944d949a274e117028f467d8f0f519a1dd241b9fd523d00eaa39422b62"
+    },
+    {
+      "path": "code/methods/audit_planner_matrix.py",
+      "bytes": 7760,
+      "sha256": "ad250979637cb99bdb089f0d869ea5feadb8552a784a8b91ff8487264a26f253"
+    },
+    {
+      "path": "code/methods/calculate_market_cost_scenarios.py",
+      "bytes": 6245,
+      "sha256": "49d1dcbb40f28a97ea789a366f759368d43f3cd15fc26f3a7f3042e4dcc24e3e"
+    },
+    {
+      "path": "code/methods/cloud_planner_matrix.py",
+      "bytes": 4866,
+      "sha256": "cd447c683cae3d6406c3227694c4c58c050ddf3aff1de25d8b370101542ccb72"
+    },
+    {
+      "path": "code/methods/copa_v2.py",
+      "bytes": 9079,
+      "sha256": "421c94039b90c6cca76e7ba7ef53153f832e23fbb36607ee7c4a68f5f3c93d52"
+    },
+    {
+      "path": "code/methods/download_research_artifacts.py",
+      "bytes": 2697,
+      "sha256": "09e285c3fa9312a11878b2a00bad1b8bbf58ccaadc80cd5ae338b2580a55b143"
+    },
+    {
+      "path": "code/methods/family_calibration_probes.py",
+      "bytes": 11101,
+      "sha256": "cdd236c31f3c223889e68026f400aad5a6413ec6c1173603d92fb05a4d91dce2"
+    },
+    {
+      "path": "code/methods/measured_planner.py",
+      "bytes": 22559,
+      "sha256": "ab207e080c532a5bb75cda136cdfbbd6ea93522b8ead1631f5e62913bf9f2a2b"
+    },
+    {
+      "path": "code/methods/migration_bridge.py",
+      "bytes": 27286,
+      "sha256": "281f9afc72b3b79abbbeba16e1f49c3de5fcf1fb6aa169948046e5c654ae2f4c"
+    },
+    {
+      "path": "code/methods/prepare_planner_matrix.py",
+      "bytes": 5483,
+      "sha256": "cb31a5eaa5c988d84b918718e88ee4bb02b7c1a04b062935583cee9ff3f8105a"
+    },
+    {
+      "path": "code/methods/runtime_calibration.py",
+      "bytes": 7463,
+      "sha256": "0193d36362b6fc30910870dbc751b047aff6a5798be4f4353073581744df45d8"
+    },
+    {
+      "path": "code/methods/summarize_bridge.py",
+      "bytes": 9928,
+      "sha256": "1566a2740577d552990a0a5cf7fe952c942e494d9f2813c309788caa345ddebc"
+    },
+    {
+      "path": "code/methods/summarize_paired_methods.py",
+      "bytes": 14516,
+      "sha256": "87eac0b12650dd6c6e905caa94a704e63a51c3fbbdbe77e9442fafa18eee07fb"
+    },
+    {
+      "path": "code/methods/test_methods.py",
+      "bytes": 18410,
+      "sha256": "3ca926687d9cc3a93534e0ac18e3345fbc03081b7f41a634fa2783670772d6f6"
+    },
+    {
+      "path": "code/methods/test_migration_bridge.py",
+      "bytes": 12193,
+      "sha256": "f363fbb3ea789eb8e41d6ca6d622adff4dfc4a3b1c982397c44e894895607632"
+    },
+    {
+      "path": "code/methods/test_paired_summary.py",
+      "bytes": 2627,
+      "sha256": "7dd03bb2471177e360f668e4c1aee219f43a188c93e74cee6f4de0b8793c17ba"
+    },
+    {
+      "path": "code/methods/test_summarize_bridge.py",
+      "bytes": 3438,
+      "sha256": "43e8bd243654abb8e70e4a3870690d845963c3ef2901343698b591b6dae01165"
+    },
+    {
+      "path": "code/npu-python",
+      "bytes": 433,
+      "sha256": "bbe18a8cf96e3ff07d1b50ff8267f3042b1e4941119cb88341752c871d1420e1"
+    },
+    {
+      "path": "code/npu_launcher.py",
+      "bytes": 1617,
+      "sha256": "2dbc8d43f9219e02bd76a115a061758717b5ecad4f581f633d913bc0b999f093"
+    },
+    {
+      "path": "code/prediction/active_fallback.py",
+      "bytes": 15962,
+      "sha256": "9af59a5b16a2cdff39f1c58529a95b67918228bb78c513af9bf0f2836ced18cc"
+    },
+    {
+      "path": "code/prediction/attention_ood_challenge.py",
+      "bytes": 19105,
+      "sha256": "dfab91261cc4e9a83f232ca9275c20509d5360f78423c071e7a80236f88b5b1c"
+    },
+    {
+      "path": "code/prediction/audit_active_predictions.py",
+      "bytes": 5063,
+      "sha256": "75c6c9caa0a60e80d6c293fbcdc9854a78d347fa4b873c9af64f8af0f046e839"
+    },
+    {
+      "path": "code/prediction/audit_evidence_memory.py",
+      "bytes": 7975,
+      "sha256": "4085e43e4409b2888f292886201d7393b249e1f57d81696c08927a37fde5a3ce"
+    },
+    {
+      "path": "code/prediction/audit_family17_results.py",
+      "bytes": 5659,
+      "sha256": "17c4b7d4cc5d0c04ac8d1e4f341403fb0d72df82a4dd5dad6e1d08781a503f24"
+    },
+    {
+      "path": "code/prediction/audit_formal_summary.py",
+      "bytes": 15734,
+      "sha256": "e7ea2b0e0ce336a0122cf81b4027a7069736a61b0e35609d1ed75652f8c0544f"
+    },
+    {
+      "path": "code/prediction/audit_frozen_policy.py",
+      "bytes": 6498,
+      "sha256": "70558bf708e80047a8a6c0f7e5c5d0497ca62aa212fd00151f24f01edee6a1ab"
+    },
+    {
+      "path": "code/prediction/audit_learning_curves.py",
+      "bytes": 5177,
+      "sha256": "85a4015e6bb0dc569ede75e8afd38ae874a6ae306ea617dfd6ca42f1e3aa12a0"
+    },
+    {
+      "path": "code/prediction/audit_physical_dataset.py",
+      "bytes": 6824,
+      "sha256": "ab912c492ae12eb5cb39524f488926ceda426b50497b8a7075ffc75a9414aadb"
+    },
+    {
+      "path": "code/prediction/collect_profiles.py",
+      "bytes": 19378,
+      "sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26"
+    },
+    {
+      "path": "code/prediction/collect_profiles_npu.py",
+      "bytes": 3552,
+      "sha256": "5c8cdf291e73cba6d799b6bcdbaaccca2e005c80f18598bc0ffccc9fbee12236"
+    },
+    {
+      "path": "code/prediction/derive_absolute_and_ranking_metrics.py",
+      "bytes": 9010,
+      "sha256": "a7672fadd6b07382ca7d8aaf933b546db8cceacf0f23d221a7fbb73a4f754165"
+    },
+    {
+      "path": "code/prediction/enrich_metadata.py",
+      "bytes": 2273,
+      "sha256": "c3ab0888ec8297420e379593551e47578c7a57e4b01ef7da94fac90410082725"
+    },
+    {
+      "path": "code/prediction/evaluate_evidence_memory.py",
+      "bytes": 18889,
+      "sha256": "e99750721b4586fe99cd63622c685a15db0dd9ef06acaf285699617c8700b337"
+    },
+    {
+      "path": "code/prediction/evaluate_family17_extension.py",
+      "bytes": 10856,
+      "sha256": "a1286aa57f0034df2ab08a0f01b2ba346aa6289fd5214104b59b76f5c50a4081"
+    },
+    {
+      "path": "code/prediction/evaluate_profiles.py",
+      "bytes": 42039,
+      "sha256": "bad26be58e40a0bf6ff939024f15e646a72ec3e1b8bc3fef54dc67745f8cce0f"
+    },
+    {
+      "path": "code/prediction/export_action_embeddings.py",
+      "bytes": 5907,
+      "sha256": "baefcecadee04aeb2692d5ebc900f5469b799c13004e1915b46b80aa1a38d073"
+    },
+    {
+      "path": "code/prediction/probe_hardware_only.py",
+      "bytes": 1798,
+      "sha256": "f719afa2ee51c734c662356f513972419ccf0670bb40f350ba6e5f6d67b6370e"
+    },
+    {
+      "path": "code/prediction/structural_attributes.py",
+      "bytes": 3133,
+      "sha256": "0c175a7e2c30fd595a35c70841cb78638eb83cec159101daf204734c616913ad"
+    },
+    {
+      "path": "code/prediction/summarize_active_fallback.py",
+      "bytes": 12077,
+      "sha256": "159ecda18cd4644651f6fb3c1381b14d5739ab347a7f2df0a876b25b0a730770"
+    },
+    {
+      "path": "code/prediction/summarize_attention_frozen_results.py",
+      "bytes": 6130,
+      "sha256": "f402cbd9a9734ecdac333bb8da9f03885eaa26634a569c0b33b274e7e4137eef"
+    },
+    {
+      "path": "code/prediction/test_active_postprocess.py",
+      "bytes": 6489,
+      "sha256": "85998e61db0a4fd2d225eed65fca79c636c94ca0766fb4c33c6a554e9b11411d"
+    },
+    {
+      "path": "code/prediction/test_evidence_memory_logic.py",
+      "bytes": 2851,
+      "sha256": "a9bdba212cbe469b793dfb7495cf15cc7d538c4732c1457c38be064a2d0953a4"
+    },
+    {
+      "path": "code/prediction/test_pipeline_logic.py",
+      "bytes": 5374,
+      "sha256": "19329400f1de27468fc59dc685032e83fa2353293659b52b3dc2516174e267de"
+    },
+    {
+      "path": "code/run_full_matrix.py",
+      "bytes": 3140,
+      "sha256": "bf17a7cc49e8a9761c712cf03ca9440758dcb1e8d2350fc9378e924f115f400d"
+    },
+    {
+      "path": "code/run_learning_curves.py",
+      "bytes": 1872,
+      "sha256": "9bdf5386c85eff9234cf6fe3312fcbcc7bbf499237c2a3076af493c517c9bdab"
+    },
+    {
+      "path": "code/run_paired_matrix.py",
+      "bytes": 3483,
+      "sha256": "62a450697c2d705b01bf94805ffe8856c204028beb73b3e8ce1b511057e54d41"
+    },
+    {
+      "path": "documentation/THEORY.md",
+      "bytes": 15672,
+      "sha256": "415dd8d3053b88f0deba1314ab209e462bbfc6f244979f8fc5b547bfd4214769"
+    },
+    {
+      "path": "documentation/interventions/paired-confirmation-protocol.md",
+      "bytes": 4945,
+      "sha256": "8836702f7de6dacbf4d67110fc540e46dbb93969015c920712e7502b0bda8584"
+    },
+    {
+      "path": "documentation/methods/README.md",
+      "bytes": 6318,
+      "sha256": "6e6338a5831a36c2c1473cc44ea5cc8533cc39cc499d9dbc0cf6d3f7936937c4"
+    },
+    {
+      "path": "documentation/methods/family-calibration-preregistration.md",
+      "bytes": 3179,
+      "sha256": "216720da65dd105305da54b44ac2da5a80428447914c3cc50bb3296648e077ae"
+    },
+    {
+      "path": "documentation/methods/paired-independent-review.md",
+      "bytes": 3707,
+      "sha256": "32240327f97b4a0d81dba121631d8a978b58828c31cdcda1051bbf3fee96556c"
+    },
+    {
+      "path": "documentation/methods/planner-matrix-independent-review.md",
+      "bytes": 4516,
+      "sha256": "e20e7ad5d465b51abc95cd2055d8c3ea5df948c5e886b16f32adec2a388f976a"
+    },
+    {
+      "path": "documentation/methods/quality-gate-npu-independent-review.md",
+      "bytes": 979,
+      "sha256": "e3d6b580161549f5b4932ef674137983e1e0f6f47766016b27574ef6d3f022b0"
+    },
+    {
+      "path": "documentation/prediction/FINAL-PREDICTION-HANDOFF.md",
+      "bytes": 7731,
+      "sha256": "207e4bfba6750d17965278351ac8cc3996e2211b24fd641ccf4d8fbd18bf53b5"
+    },
+    {
+      "path": "documentation/prediction/README.md",
+      "bytes": 20908,
+      "sha256": "aad777158817cbdf79e7a16ec78d39609b51373b9b200d63d745540cebecff89"
+    },
+    {
+      "path": "documentation/prediction/family-probe-collector-independent-review.md",
+      "bytes": 2608,
+      "sha256": "acf7e416be9c5f53648c9cdb8eddbd4a9fdf984cb9be8161dd676a6e0e7bb62b"
+    },
+    {
+      "path": "documentation/prediction/npu-active-independent-results.md",
+      "bytes": 5092,
+      "sha256": "65b5b2794e665e8613e85e99c53cf7483d2bb6b5e4161c672ca8b79a5426bebc"
+    },
+    {
+      "path": "process/910b-final-runtime-and-packages.txt",
+      "bytes": 3593,
+      "sha256": "b163cd549773e2bb04e0d8f9f6c21c8a10875102274c7c513823ce80e2ebe1dd"
+    },
+    {
+      "path": "process/environment/910b-environment-extra.txt",
+      "bytes": 846,
+      "sha256": "5184993a2bfa19db8150692b22c2f2f9164fb11ea8ccc189235086dfc7df8d32"
+    },
+    {
+      "path": "process/environment/910b-environment-install.txt",
+      "bytes": 4405,
+      "sha256": "62ccc45da49ee47d6c2e40383fa1c66d66d72fc0005c21b1e85ca962eb6f1650"
+    },
+    {
+      "path": "process/imagenet_class_index.json",
+      "bytes": 35363,
+      "sha256": "a1e7a966a1f601d39e4b43e119b3e7dd4a2ad3ea08cf69847cbaf021013767bc"
+    },
+    {
+      "path": "process/interventions/audit-full-model-snapshot-48.json",
+      "bytes": 160542,
+      "sha256": "c354d0550f9c06dde1951c6cfabcce0841dd5e2711ad71cb2c6f8f5e4affe00a"
+    },
+    {
+      "path": "process/interventions/audit-full-model-snapshot-90.json",
+      "bytes": 299605,
+      "sha256": "f71f0a9e18da1c2131cee134497cd8ffc5158ef28d1cb9b40dd8cd5648f2da2f"
+    },
+    {
+      "path": "process/interventions/full128-dag-and-task-traceability-audit.json",
+      "bytes": 14587,
+      "sha256": "278383203ed749ea04b589daf602f50b11196d476035594863a3cfbe862bd2a6"
+    },
+    {
+      "path": "process/interventions/full128-final-independent-audit.json",
+      "bytes": 425143,
+      "sha256": "96641461e4c51113f9a18a8d973968e107f848d06dd926e3fbe2fea2340ed5d5"
+    },
+    {
+      "path": "process/interventions/full128-traceability-reproducible-audit.json",
+      "bytes": 13549,
+      "sha256": "9dd558fb3c70b861fa9e14c1f33e16c3c14f0e2aba02eca4c53ee6e64d8ab8ea"
+    },
+    {
+      "path": "process/interventions/npu-collection-closeout-audit.json",
+      "bytes": 23604,
+      "sha256": "eb4b564fbf36dc3b33ceb595f4244c23cd2f97c853c2e0db109071bfcaff6032"
+    },
+    {
+      "path": "process/interventions/npu-full32-final-audit.json",
+      "bytes": 107038,
+      "sha256": "1d0d9fb25154e3d0994cbc77df39f671bb8a990fad5d035ef30a25b2eee302ba"
+    },
+    {
+      "path": "process/interventions/npu-physical-stress-audit.json",
+      "bytes": 1285,
+      "sha256": "8bd6bdcfc223ec9163511b6145d21a7e4b47973a6a61499fa107148106d6f086"
+    },
+    {
+      "path": "process/interventions/paired-audit-final-20blocks.json",
+      "bytes": 135385,
+      "sha256": "11556dc86d4fe00d8cf8250485cf2a02fb16a2b48f6a3810816b0a97fc72c7cd"
+    },
+    {
+      "path": "process/interventions/paired-audit-first-run101.json",
+      "bytes": 7823,
+      "sha256": "ea051feb343d7d5d8d7ebbc1744ace7bc8279da48389da94086204e70c49a7e7"
+    },
+    {
+      "path": "process/interventions/paired-print-fix-verification.json",
+      "bytes": 638,
+      "sha256": "cc1406c43f8754d12b018914bdd89c5b3ffd7c8baaa131d2c0865a7f15616ade"
+    },
+    {
+      "path": "process/interventions/partial-full-model-audit.json",
+      "bytes": 30900,
+      "sha256": "17f6fe9fb5de8348ad9600c3951c0f600f5293eb2846e077d052c44e6d309007"
+    },
+    {
+      "path": "process/interventions/supplemental-calibration-closeout-increment-audit.json",
+      "bytes": 61491,
+      "sha256": "4081686ee72f7c8e757a776aa0322bcedb149838ea37812eeafbcb899bdb6b26"
+    },
+    {
+      "path": "process/interventions/unit-test-results.json",
+      "bytes": 2122,
+      "sha256": "106b11a9b1c9255e5f78751603c0b92cf3f7d588a21a37e316f7b3fde2f85563"
+    },
+    {
+      "path": "process/market-cost-assumptions.json",
+      "bytes": 2061,
+      "sha256": "1e3f8f2152129e758919d06bb20f125ecdf7339167455cba7cf8322611ba9c16"
+    },
+    {
+      "path": "process/methods/family-calibration-manifest.json",
+      "bytes": 17579,
+      "sha256": "ea400f2b2df47abbd712dee71322a038f7282831d369b422ee8f016bff6c3c94"
+    },
+    {
+      "path": "process/methods/handoff.json",
+      "bytes": 3332,
+      "sha256": "a9d0bffd2a4a3801afa9f3bd08fa12e58c29da98b96cbde72d879d7d741106a6"
+    },
+    {
+      "path": "process/methods/migration-preregistration.json",
+      "bytes": 1629,
+      "sha256": "d68e6e66937aa462327e5caf19f4590b8a595614afac1d71120ab21bbf1b5fc0"
+    },
+    {
+      "path": "process/methods/paired-method-results-with-ppo.json",
+      "bytes": 761070,
+      "sha256": "76af9dac3a3fae5cf15515f83c152899de919965923a83abe44a6e520a958c50"
+    },
+    {
+      "path": "process/methods/paired-method-results.json",
+      "bytes": 122549,
+      "sha256": "f2d90d0aa1137cfe69dda70f758e5f706f2aae96c923f7843df77bfdd09f6949"
+    },
+    {
+      "path": "process/methods/planner-matrix-independent-audit.json",
+      "bytes": 201698,
+      "sha256": "4805c014d831f1f172306b96401cc05822ef1f843120587893bec72d2076b707"
+    },
+    {
+      "path": "process/methods/planner-preregistration.json",
+      "bytes": 1944,
+      "sha256": "0075179209ba63cd91c2a58e396a116a917e3308d93c767703bc019602ff6fcb"
+    },
+    {
+      "path": "process/methods/runtime-preregistration.json",
+      "bytes": 1539,
+      "sha256": "2eb275de1a1df3792832bfdd936da5456e31e7f4999bf73986363282b3b77675"
+    },
+    {
+      "path": "process/methods/unit-test-results.json",
+      "bytes": 4073,
+      "sha256": "297c9d231de5df963cde46841d9957dd1991f537bc3b01d051fe7efacba4e500"
+    },
+    {
+      "path": "process/prediction/active-postprocess-unit-test-results.json",
+      "bytes": 733,
+      "sha256": "d09c72f179a247d560c6514c550f304f30042873edcc5f00b90618f9318a5b87"
+    },
+    {
+      "path": "process/prediction/all1285-checkpoint-archive-audit.json",
+      "bytes": 229920,
+      "sha256": "9b8e3339471aed28f64206adb1e09ffaadb3429b3e259dbaa0cdda1d84903684"
+    },
+    {
+      "path": "process/prediction/attention-freeze-main-strict.json",
+      "bytes": 14530,
+      "sha256": "1ade61fff0b8e6ddca4b40f4778d9882b2d86b8ef3c467af4963b5e6713398ea"
+    },
+    {
+      "path": "process/prediction/evidence-memory-independent-audit.json",
+      "bytes": 1219554,
+      "sha256": "696831f0af50b078da5a97522e953f597febc410e26525f6a9f809fbf2898fb0"
+    },
+    {
+      "path": "process/prediction/family17-independent-audit.json",
+      "bytes": 874,
+      "sha256": "e3c0cca6c88204d9ca631cd3fe9235aaa51c2ca42fce966112dc232115bd91bf"
+    },
+    {
+      "path": "process/prediction/formal-checkpoint-archive-audit.json",
+      "bytes": 197208,
+      "sha256": "f962380f46ef4ad3709d2ddaa184420fe9c9593ed149d08288fe8910f7891555"
+    },
+    {
+      "path": "process/prediction/formal-five-stack-independent-audit.json",
+      "bytes": 5021,
+      "sha256": "bd4751f7fb644ad718605e05b6c0bb41e2b15de211db99734a125e3dc4ffec84"
+    },
+    {
+      "path": "process/prediction/learning-curves-independent-audit.json",
+      "bytes": 738,
+      "sha256": "d1143507ca6b293e8e7bcba948b66103ffff9cfd1885c16f820a54b43b577b69"
+    },
+    {
+      "path": "process/prediction/npu-active-deployed-policy-audit.json",
+      "bytes": 7669,
+      "sha256": "67abaa37dace567f04aa423d7eab8631bce4ac3a961045fb30048287bd85051b"
+    },
+    {
+      "path": "process/prediction/npu-active-posthoc.json",
+      "bytes": 8109,
+      "sha256": "004455c50f54c4eb05a6a243a387590d239c5dbfff0592519bdfd8eb91d73ca0"
+    },
+    {
+      "path": "process/prediction/npu-active-recomputed-prediction-audit.json",
+      "bytes": 1445,
+      "sha256": "1b7ce7038792d0b41bde5a62549f0449d897704aca1e410e39821ac43f291825"
+    },
+    {
+      "path": "process/prediction/physical-five-stack-audit.json",
+      "bytes": 9599,
+      "sha256": "4e797a0ec1e2e6ba0789c2b35de746788b8868f128e7f41379052e9159dd6c25"
+    },
+    {
+      "path": "process/prediction/pipeline-logic-test-results.json",
+      "bytes": 785,
+      "sha256": "fd2e6a844044889ff26ad5693c10c196aa97a7fb610969f98c05062f9d8499cd"
+    },
+    {
+      "path": "process/prediction/source-freeze.json",
+      "bytes": 909,
+      "sha256": "f993fb82b58f93531fb2c2c11a0df882693f94b5b74471b33528fda588589dc9"
+    },
+    {
+      "path": "process/profiling-stage-five-stack-summary.json",
+      "bytes": 1403,
+      "sha256": "9c2abce24afacd9f77560c62ab65df32c8373b0ae56cdc1745d5691854bdc9cb"
+    },
+    {
+      "path": "process/quality-data-preparation-manifest.json",
+      "bytes": 126717,
+      "sha256": "b413d13bb20c7a2770f5f6eaab88331c30e9ee2153a32c1847232ce104dc84f3"
+    },
+    {
+      "path": "process/restored-public-traceability-audit.json",
+      "bytes": 13549,
+      "sha256": "9dd558fb3c70b861fa9e14c1f33e16c3c14f0e2aba02eca4c53ee6e64d8ab8ea"
+    },
+    {
+      "path": "process/run-logs/910b-environment-extra.txt",
+      "bytes": 846,
+      "sha256": "5184993a2bfa19db8150692b22c2f2f9164fb11ea8ccc189235086dfc7df8d32"
+    },
+    {
+      "path": "process/run-logs/910b-runtime-probe.txt",
+      "bytes": 2718,
+      "sha256": "06e2fe36ebbe3428081d94aa21dd2bddd82487e312d6b6d6ad497228fc3aa408"
+    },
+    {
+      "path": "process/run-logs/a100mig-profile.txt",
+      "bytes": 4665,
+      "sha256": "bb43576457918c796b19e864ebbf2c5eca3669f6e4d11923c425b5923a63873b"
+    },
+    {
+      "path": "process/run-logs/asset-preparation.txt",
+      "bytes": 1457,
+      "sha256": "c9d15b0b77645ac7126cfd35f08b1bc9abdc9e6d315a6ba25f82aaa903e28918"
+    },
+    {
+      "path": "process/run-logs/attention-a100mig.txt",
+      "bytes": 1284,
+      "sha256": "f1c3ce528c34b6be80b95067b42bd1fc9bf755472f01b13f1b3853c453fbc05b"
+    },
+    {
+      "path": "process/run-logs/attention-cloudcpu.txt",
+      "bytes": 1278,
+      "sha256": "786b7f4ca035d0c63bf0639b5b0ec87ff5f8ae22ef51ca94c4c54a63211cf1e3"
+    },
+    {
+      "path": "process/run-logs/attention-m5cpu.txt",
+      "bytes": 1279,
+      "sha256": "be3c99e35e3959752b7cb33b366411c919f73a8b76a141f78b7e80fb491a9e32"
+    },
+    {
+      "path": "process/run-logs/attention-m5mps.txt",
+      "bytes": 1274,
+      "sha256": "aabf515fe314636cc7fd33507d043339f732fd880a4f33375d54ff6de5a7f469"
+    },
+    {
+      "path": "process/run-logs/cloudcpu-profile.txt",
+      "bytes": 4631,
+      "sha256": "6bb4851f4529d18fc7353830166116b9741c6e9db5f981dbbc7d95d4531bde32"
+    },
+    {
+      "path": "process/run-logs/embedding-export-a100mig.txt",
+      "bytes": 125,
+      "sha256": "a15924d8982fb073ddc3e9eccc583acf248933186b43e1a08af8cac4079c5e1d"
+    },
+    {
+      "path": "process/run-logs/embedding-export-m5cpu.txt",
+      "bytes": 123,
+      "sha256": "3d4cc3c0cfe34079b9937defb17503b0f024e86d741c94314b117716e7fad335"
+    },
+    {
+      "path": "process/run-logs/embedding-export-m5mps.txt",
+      "bytes": 123,
+      "sha256": "e1a60179bf91e5cff00e3eb283e6641e7d9087055f10fbb68c219aaf9da45e9d"
+    },
+    {
+      "path": "process/run-logs/embedding-export-npub3.txt",
+      "bytes": 123,
+      "sha256": "50d7235911d9e7bfd24716bacd20fe44e761d48a3c9810d0ae16cbda01d4ef39"
+    },
+    {
+      "path": "process/run-logs/family14-a100mig.txt",
+      "bytes": 1365,
+      "sha256": "6b6be0b438be9afea37bef9be767e0cc5e52691ccc1710b83d1c14afbd55b883"
+    },
+    {
+      "path": "process/run-logs/family14-cloudcpu.txt",
+      "bytes": 1374,
+      "sha256": "752c448355f0afa9575d27cd8032f59552630b620ae733aa7bd556a4ac83399d"
+    },
+    {
+      "path": "process/run-logs/family14-m5cpu.txt",
+      "bytes": 1397,
+      "sha256": "84efef0b3ec2157c4df988941a84e4e0e5f0b7c26ae6079301034667432b9b9a"
+    },
+    {
+      "path": "process/run-logs/family14-m5mps.txt",
+      "bytes": 1378,
+      "sha256": "d4c6d379e6f43964a02932cbf990344e530424b711ad39c681ad8242e234a130"
+    },
+    {
+      "path": "process/run-logs/family14-npub3.txt",
+      "bytes": 2275,
+      "sha256": "a85ed865337a6f51c60d11b9daaf13a72e56b7bef8d8f61b73af4112e5cb54bc"
+    },
+    {
+      "path": "process/run-logs/final-task-assembly.txt",
+      "bytes": 5395,
+      "sha256": "6860db34d6d4a1f3b5802c71c5204ccd55d29b11d12e6c45b0fde63a99fb02c3"
+    },
+    {
+      "path": "process/run-logs/formal-five-stack-training.txt",
+      "bytes": 28568,
+      "sha256": "76a52a7007a0388e2af9b44d428373406bf515ef8feb5466930c4523ee76f662"
+    },
+    {
+      "path": "process/run-logs/fullmatrix-cuda.txt",
+      "bytes": 18403,
+      "sha256": "e9a18243bf77f78a3f4177d4241ad8a6f90f962275cc40b5eabfc2e951b8e609"
+    },
+    {
+      "path": "process/run-logs/fullmatrix-local.txt",
+      "bytes": 41122,
+      "sha256": "5a1bebacbdcbffe94968867ca7fa849825287637866c20dd3115bdeb7a72aa76"
+    },
+    {
+      "path": "process/run-logs/fullmatrix-npu.txt",
+      "bytes": 60079,
+      "sha256": "bbd81fc615f1522b12a6f0a12a70a71413df25d6c1381fdb91ba616b255dcc04"
+    },
+    {
+      "path": "process/run-logs/fullmodel-cpu-smoke.txt",
+      "bytes": 382,
+      "sha256": "b70fa830dff658b2f65920c9e853b88d48fb87a2e674839f1e7e44aca18d7d0f"
+    },
+    {
+      "path": "process/run-logs/fullmodel-cuda-smoke.txt",
+      "bytes": 355,
+      "sha256": "ee88d34d3383df9222e17d7bd00a771bd45411feb8e2d03224cdda00e3f8ee01"
+    },
+    {
+      "path": "process/run-logs/fullmodel-npu-smoke-retry1.txt",
+      "bytes": 1681,
+      "sha256": "71e84f6cd8647bfb0f0c3d9e49c769660434b2ca2df715b28886808bf7cffa77"
+    },
+    {
+      "path": "process/run-logs/fullmodel-npu-smoke.txt",
+      "bytes": 5078,
+      "sha256": "04c0313074a0355dfd8b747713f050e193132f5d91e854c664659b19b3f1475d"
+    },
+    {
+      "path": "process/run-logs/imagenette-download.txt",
+      "bytes": 101,
+      "sha256": "4c530ea11cd3b867e3de816d39649653d173506bd88d224bb7e37579916f1ebe"
+    },
+    {
+      "path": "process/run-logs/imagenette-ranges.txt",
+      "bytes": 984,
+      "sha256": "911ea3cc2dc5580c3a81534edc70424a39ea09c6ed72b8b9831975980d142b61"
+    },
+    {
+      "path": "process/run-logs/learning-curves.txt",
+      "bytes": 4552,
+      "sha256": "e311c3df5b163ba9b6317f6e91eeff80e319e4770d2e4e812bd8dde3ce7c7611"
+    },
+    {
+      "path": "process/run-logs/m5cpu-profile.txt",
+      "bytes": 4661,
+      "sha256": "9ed79398eba754a55eb55f9426ee62f50418e3fc2847a9cde554dcc10f3aafc4"
+    },
+    {
+      "path": "process/run-logs/m5mps-profile.txt",
+      "bytes": 4649,
+      "sha256": "9f660590fc3f41236d24271ad32f6630dd799c3fc846a22942c634983eea6524"
+    },
+    {
+      "path": "process/run-logs/npu-attention-ood.txt",
+      "bytes": 2180,
+      "sha256": "e39c2936f786c7a53ba7ccc7877f5a254830b20fb9f64a7124f5373430c71d20"
+    },
+    {
+      "path": "process/run-logs/npu-metadata-enrichment.txt",
+      "bytes": 168,
+      "sha256": "f534bce64c6c50d402cef539cd09dd46c3f136740c0aa3abbd01f4fd11e0da9f"
+    },
+    {
+      "path": "process/run-logs/npu-paired-matrix.txt",
+      "bytes": 4459,
+      "sha256": "2d1efe2ae56afba2a5edb97001d03519af3fd02edab437306debbedda8eddec8"
+    },
+    {
+      "path": "process/run-logs/npu-paired-smoke.txt",
+      "bytes": 2322,
+      "sha256": "01ee9d7aab65040f20f3d9dfd0e2e6a1ac6c0e2901ca52611a09d8df5ed2c561"
+    },
+    {
+      "path": "process/run-logs/npu-policy-training.txt",
+      "bytes": 197,
+      "sha256": "4145f697f6ee61696bacc27e695ee40b389136c1385358286e8b99ca069250a6"
+    },
+    {
+      "path": "process/run-logs/npu-remaining-schedule.txt",
+      "bytes": 2874,
+      "sha256": "61b2c6bcf0f7d631d5042cca647374ff01c2ccd83a9bd0713d52e0f23dedbe8f"
+    },
+    {
+      "path": "process/run-logs/npub3-profile.txt",
+      "bytes": 5371,
+      "sha256": "921ff28a25ae094ba4165a1c7da239608e81104ba7182b982bbde536f4e8791d"
+    },
+    {
+      "path": "process/run-logs/prediction-full-archive-creation.txt",
+      "bytes": 116,
+      "sha256": "0d732ca60ae8c1df73d79de07e77cbfae34672803c468c29a91c436dbb7ad101"
+    },
+    {
+      "path": "process/run-logs/public-release-staging.txt",
+      "bytes": 215,
+      "sha256": "1248df778471f9e327f58cff0b8b796677a3c59ce0cd88063cdcc51ad691a3da"
+    },
+    {
+      "path": "process/run-logs/public-restoration-check.txt",
+      "bytes": 198,
+      "sha256": "a76083bb0c882ae45c953b836552b891cf68cd6aec68b86824b1290e081053a2"
+    },
+    {
+      "path": "process/run-logs/resnet18-download.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "process/run-logs/resnet50-download.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "raw/npu/SHA256.json",
+      "bytes": 324,
+      "sha256": "e8e71643fe7e028aa2455a051e7fe6960077792db757c861dafc5f17b60550ad"
+    },
+    {
+      "path": "raw/npu/npu-physical-final-confirmation.zip",
+      "bytes": 1024045,
+      "sha256": "36446f7fb9a0c39de5ecb886d72cfcb986ef4c73694724b4b52509052b56d5f8"
+    },
+    {
+      "path": "raw/npu/npu-physical-main-complete.zip",
+      "bytes": 1225107,
+      "sha256": "37d56a254c2b8e632ce929494b71e1163e2fea366231881f98f2444f63762251"
+    },
+    {
+      "path": "restore_archives.py",
+      "bytes": 2969,
+      "sha256": "6eae6254162d5576f32a9ca50a0aa136f609e4500611270f97c8c9290625e8cf"
+    },
+    {
+      "path": "results/attention-challenge-summary.json",
+      "bytes": 9040,
+      "sha256": "3ebad958dbb7a35a76bf49f088737f0a2d095648b93814cf4ab78cac1f1bc2d2"
+    },
+    {
+      "path": "results/evidence-memory-summary.json",
+      "bytes": 406956,
+      "sha256": "e2fb415a5fbeeea5063527da4f4b8585f1b9ef9363458fd1479ef145b0c05b03"
+    },
+    {
+      "path": "results/family17-summary.json",
+      "bytes": 115637,
+      "sha256": "5b209063d064fcf518940051adea47465ebcacb88a9f67b089799d016e535949"
+    },
+    {
+      "path": "results/historical-table-arithmetic.json",
+      "bytes": 928,
+      "sha256": "c6b6122ce79bf9023f53fa1ee9267ec04bc625fa1e5c646795a2cff8bb3b6707"
+    },
+    {
+      "path": "results/market-cost-scenarios.csv",
+      "bytes": 66043,
+      "sha256": "599b459ea4e72083060ab14687fe25af4fa75e3b5474e3c483ac0c40854d775a"
+    },
+    {
+      "path": "results/market-cost-scenarios.json",
+      "bytes": 286201,
+      "sha256": "881a8ef23602f045ddf7e5e59d48a6574d89316a08f6ff26de2e26a1f34fd136"
+    },
+    {
+      "path": "results/paired-confirmation-and-fixed-policies.json",
+      "bytes": 761070,
+      "sha256": "76af9dac3a3fae5cf15515f83c152899de919965923a83abe44a6e520a958c50"
+    },
+    {
+      "path": "results/primary-prediction-summary.json",
+      "bytes": 719759,
+      "sha256": "38284efb1d0b3afc4c5b39ad7c04be47353cce7442f7dd3b6796fee41a3b4862"
+    },
+    {
+      "path": "run.py",
+      "bytes": 1765,
+      "sha256": "bd55c069bdf5b43aec80fb69757b59aa26060360214300af21942e66567aea07"
+    },
+    {
+      "path": "source-snapshots/collect_profiles_npu-later-storage-guard.py",
+      "bytes": 3761,
+      "sha256": "c4ad1eccd29e6ee452ebcd3c58b1db94eb2b8ee676ec22e521dae3b0dabfc8c0"
+    },
+    {
+      "path": "source-snapshots/paired_confirmation-first-2f33287.py",
+      "bytes": 17242,
+      "sha256": "2f33287e7d6afffb9303724ac61186c5712cbaaa0784795196d7b1f4ec6c22bb"
+    }
+  ],
+  "count": 206,
+  "third_party_input_reconstruction": "Image IDs, labels, exact hashes and preparation code are supplied; third-party source images and vendor pretrained weight binaries are obtained from their declared original URLs.",
+  "operational_access": "SSH keys, passwords, kubeconfig and private infrastructure controllers are excluded."
+}

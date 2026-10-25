@@ -1,0 +1,235 @@
+{
+  "kind": "post_hoc_evaluation_of_frozen_physical_active_fallback",
+  "created_utc": "2026-10-25T06:28:00.832393+00:00",
+  "code_sha256": "159ecda18cd4644651f6fb3c1381b14d5739ab347a7f2df0a876b25b0a730770",
+  "source_hashes": {
+    "policy": "ccae163877b5726a3aa98243fdf9551de0bb9583ef7e1396986725e6f33f341a",
+    "decisions": "1c263741170f255027922f764da0c81f41b0d8a2723b92dd96c3f6f48095de6f",
+    "active": "649ae213adda4952d78b1e176427fd1000803d75924a2c0563cb62a5c5a71184",
+    "independent_physical_reference": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055"
+  },
+  "device_id": "Ascend-910B3-64GB",
+  "threshold": 0.7156752616167071,
+  "threshold_infinite": false,
+  "query_count": 732,
+  "selected_count": 83,
+  "selection_fraction": 0.1133879781420765,
+  "successful_fresh_measurements": 83,
+  "failed_measurement_record_ids": [],
+  "selected_without_successful_measurement": [],
+  "pure_prediction_against_independent_reference": {
+    "records": 732,
+    "micro_mre_percent": 50.995350903378515,
+    "family_macro_mre_percent": 50.81979362462788,
+    "model_macro_mre_percent": 49.42776991014639,
+    "per_family_mre_percent": {
+      "Conv2D": 55.09934031653633,
+      "Normalization": 49.38732084112096,
+      "Activation": 48.694473997846025,
+      "Pooling": 52.87901729939514,
+      "Elementwise": 49.57414531931654,
+      "View": 66.44664704050365,
+      "MatMul": 33.65761055767652
+    },
+    "per_family_n": {
+      "Conv2D": 219,
+      "Normalization": 219,
+      "Activation": 198,
+      "Pooling": 12,
+      "Elementwise": 72,
+      "View": 6,
+      "MatMul": 6
+    },
+    "per_model_mre_percent": {
+      "resnet18": 45.81937592572527,
+      "resnet50": 53.03616389456751
+    },
+    "per_device_mre_percent": {
+      "Ascend-910B3-64GB": 50.995350903378515
+    },
+    "per_device_n": {
+      "Ascend-910B3-64GB": 732
+    },
+    "attention_mre_percent": null,
+    "attention_n": 0,
+    "record_ids_sha256": "01f6eaeda8f15406c8909dacd5b574a03e3bec0a7231b9aec5ebd4a29dbd9133"
+  },
+  "unmeasured_selective_prediction_against_independent_reference": {
+    "records": 649,
+    "micro_mre_percent": 51.903583979107914,
+    "family_macro_mre_percent": 51.314788013434324,
+    "model_macro_mre_percent": 50.084217633291246,
+    "per_family_mre_percent": {
+      "Conv2D": 55.09934031653633,
+      "Normalization": 49.38732084112096,
+      "Pooling": 52.87901729939514,
+      "Elementwise": 49.57414531931654,
+      "Activation": 52.159434719491124,
+      "View": 66.44664704050365,
+      "MatMul": 33.65761055767652
+    },
+    "per_family_n": {
+      "Conv2D": 219,
+      "Normalization": 219,
+      "Pooling": 12,
+      "Elementwise": 72,
+      "Activation": 115,
+      "View": 6,
+      "MatMul": 6
+    },
+    "per_model_mre_percent": {
+      "resnet18": 46.10856524798814,
+      "resnet50": 54.059870018594346
+    },
+    "per_device_mre_percent": {
+      "Ascend-910B3-64GB": 51.903583979107914
+    },
+    "per_device_n": {
+      "Ascend-910B3-64GB": 649
+    },
+    "attention_mre_percent": null,
+    "attention_n": 0,
+    "record_ids_sha256": "bdbbd3377d842084bda2e16dbb21e5f1d40a68ed4464d8e3f069379ba047659e"
+  },
+  "oracle_label_substitution_replay_against_reference": {
+    "records": 732,
+    "micro_mre_percent": 46.018341533389396,
+    "family_macro_mre_percent": 48.19124322143016,
+    "model_macro_mre_percent": 43.95439320130985,
+    "per_family_mre_percent": {
+      "Conv2D": 55.09934031653633,
+      "Normalization": 49.38732084112096,
+      "Activation": 30.294621175462016,
+      "Pooling": 52.87901729939514,
+      "Elementwise": 49.57414531931654,
+      "View": 66.44664704050365,
+      "MatMul": 33.65761055767652
+    },
+    "per_family_n": {
+      "Conv2D": 219,
+      "Normalization": 219,
+      "Activation": 198,
+      "Pooling": 12,
+      "Elementwise": 72,
+      "View": 6,
+      "MatMul": 6
+    },
+    "per_model_mre_percent": {
+      "resnet18": 39.203417795390884,
+      "resnet50": 48.70536860722881
+    },
+    "per_device_mre_percent": {
+      "Ascend-910B3-64GB": 46.018341533389396
+    },
+    "per_device_n": {
+      "Ascend-910B3-64GB": 732
+    },
+    "attention_mre_percent": null,
+    "attention_n": 0,
+    "record_ids_sha256": "01f6eaeda8f15406c8909dacd5b574a03e3bec0a7231b9aec5ebd4a29dbd9133"
+  },
+  "fresh_measurement_hybrid_against_independent_reference": {
+    "records": 732,
+    "micro_mre_percent": 47.47045274911948,
+    "family_macro_mre_percent": 48.9581591015993,
+    "model_macro_mre_percent": 45.56227028671496,
+    "per_family_mre_percent": {
+      "Conv2D": 55.09934031653633,
+      "Normalization": 49.38732084112096,
+      "Activation": 35.66303233664597,
+      "Pooling": 52.87901729939514,
+      "Elementwise": 49.57414531931654,
+      "View": 66.44664704050365,
+      "MatMul": 33.65761055767652
+    },
+    "per_family_n": {
+      "Conv2D": 219,
+      "Normalization": 219,
+      "Activation": 198,
+      "Pooling": 12,
+      "Elementwise": 72,
+      "View": 6,
+      "MatMul": 6
+    },
+    "per_model_mre_percent": {
+      "resnet18": 41.16985027891587,
+      "resnet50": 49.95469029451405
+    },
+    "per_device_mre_percent": {
+      "Ascend-910B3-64GB": 47.47045274911948
+    },
+    "per_device_n": {
+      "Ascend-910B3-64GB": 732
+    },
+    "attention_mre_percent": null,
+    "attention_n": 0,
+    "record_ids_sha256": "01f6eaeda8f15406c8909dacd5b574a03e3bec0a7231b9aec5ebd4a29dbd9133"
+  },
+  "selected_predictor_against_fresh_measurement": {
+    "records": 83,
+    "micro_mre_percent": 38.62855708738549,
+    "family_macro_mre_percent": 38.62855708738549,
+    "model_macro_mre_percent": 38.25179061954648,
+    "per_family_mre_percent": {
+      "Activation": 38.62855708738549
+    },
+    "per_family_n": {
+      "Activation": 83
+    },
+    "per_model_mre_percent": {
+      "resnet18": 36.762666008563755,
+      "resnet50": 39.74091523052922
+    },
+    "per_device_mre_percent": {
+      "Ascend-910B3-64GB": 38.62855708738549
+    },
+    "per_device_n": {
+      "Ascend-910B3-64GB": 83
+    },
+    "attention_mre_percent": null,
+    "attention_n": 0,
+    "record_ids_sha256": "592663eb0163d5b2688679de2c29a88084e745054655f3901d912d67443e277c"
+  },
+  "fresh_measurement_drift_against_independent_reference": {
+    "records": 83,
+    "micro_mre_percent": 12.80657120378822,
+    "family_macro_mre_percent": 12.80657120378822,
+    "model_macro_mre_percent": 12.872019141820783,
+    "per_family_mre_percent": {
+      "Activation": 12.80657120378822
+    },
+    "per_family_n": {
+      "Activation": 83
+    },
+    "per_model_mre_percent": {
+      "resnet18": 13.130694325473291,
+      "resnet50": 12.613343958168272
+    },
+    "per_device_mre_percent": {
+      "Ascend-910B3-64GB": 12.80657120378822
+    },
+    "per_device_n": {
+      "Ascend-910B3-64GB": 83
+    },
+    "attention_mre_percent": null,
+    "attention_n": 0,
+    "record_ids_sha256": "592663eb0163d5b2688679de2c29a88084e745054655f3901d912d67443e277c"
+  },
+  "wall_cost_seconds": {
+    "decision_phase_wall_seconds": 11.656317410000156,
+    "measurement_phase_wall_seconds_including_graph_setup": 7.373988340000324,
+    "individual_measurement_wall_seconds_including_warmup": 1.0311609300015334
+  },
+  "fresh_timed_blocks_cost_ms_excluding_warmup_and_setup": 852.97968,
+  "physical_reference_read_only_after_active_execution": true,
+  "threshold_refitted": false,
+  "failures": [],
+  "scope": [
+    "Post hoc accuracy is computed against a separately measured physical target profile, joined only after frozen active execution.",
+    "Oracle replay substitutes existing reference labels and therefore is not a fresh runtime measurement.",
+    "Fresh hybrid substitutes only successfully remeasured selected queries. Drift against the reference can be nonzero.",
+    "Failed or unmeasured selected queries retain pure predictions; no missing target value is invented.",
+    "Wall cost includes predictor shape propagation and frozen inference; measurement-phase wall includes setup and warmup. This is not end-to-end application latency.",
+    "No confidence guarantee is inferred from ensemble dispersion or the validation budget under target-stack shift."
+  ]
+}

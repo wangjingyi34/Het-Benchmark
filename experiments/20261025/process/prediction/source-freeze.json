@@ -1,0 +1,14 @@
+{
+  "kind": "prediction_source_freeze_before_full_training",
+  "frozen_utc": "2026-10-25T05:55:16.019327+00:00",
+  "files": {
+    "collect_profiles.py": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+    "evaluate_profiles.py": "bad26be58e40a0bf6ff939024f15e646a72ec3e1b8bc3fef54dc67745f8cce0f",
+    "structural_attributes.py": "0c175a7e2c30fd595a35c70841cb78638eb83cec159101daf204734c616913ad",
+    "enrich_metadata.py": "c3ab0888ec8297420e379593551e47578c7a57e4b01ef7da94fac90410082725",
+    "export_action_embeddings.py": "baefcecadee04aeb2692d5ebc900f5469b799c13004e1915b46b80aa1a38d073",
+    "active_fallback.py": "9af59a5b16a2cdff39f1c58529a95b67918228bb78c513af9bf0f2836ced18cc",
+    "collect_profiles_npu.py": "c4ad1eccd29e6ee452ebcd3c58b1db94eb2b8ee676ec22e521dae3b0dabfc8c0",
+    "probe_hardware_only.py": "f719afa2ee51c734c662356f513972419ccf0670bb40f350ba6e5f6d67b6370e"
+  }
+}

@@ -1,0 +1,3166 @@
+{
+  "kind": "independent_frozen_bridge_plan_paired_confirmation",
+  "contexts": [
+    {
+      "model_id": "resnet18",
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "device_id": "npu_Ascend910B3",
+      "plans": {
+        "cross_dag": {
+          "frozen_mask": 6,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              1.396701653551841,
+              5.256862228096051,
+              2.8203366272028005,
+              0.4916293932769686,
+              -6.704667597212848
+            ],
+            "mean": 0.6521724609829628,
+            "sample_sd": 4.489078333580458,
+            "descriptive_t95": [
+              -4.921754490940449,
+              6.226099412906375
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              1.396701653551841,
+              5.256862228096051,
+              2.8203366272028005,
+              0.4916293932769686,
+              0.0
+            ],
+            "mean": 1.9931059804255322,
+            "sample_sd": 2.11654298912477,
+            "descriptive_t95": [
+              -0.6349292498212806,
+              4.621141210672345
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              7.188239022028845,
+              0.0,
+              0.13022407240565137,
+              3.6517673152583376,
+              10.139126673677668
+            ],
+            "mean": 4.2218714166741,
+            "sample_sd": 4.4357649137965565,
+            "descriptive_t95": [
+              -1.285858181282518,
+              9.729601014630717
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 4,
+          "rows": [
+            {
+              "run_id": "npu_resnet18_b1_paired_run101",
+              "run_index": 101,
+              "mask": 6,
+              "raw_gain_percent": 1.396701653551841,
+              "accepted_gain_percent": 1.396701653551841,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.07368500000000022,
+              "oracle_regret_percentage_points": 7.188239022028845
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run102",
+              "run_index": 102,
+              "mask": 6,
+              "raw_gain_percent": 5.256862228096051,
+              "accepted_gain_percent": 5.256862228096051,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.24223700000000026,
+              "oracle_regret_percentage_points": 0.0
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run103",
+              "run_index": 103,
+              "mask": 6,
+              "raw_gain_percent": 2.8203366272028005,
+              "accepted_gain_percent": 2.8203366272028005,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.12620949999999986,
+              "oracle_regret_percentage_points": 0.13022407240565137
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run104",
+              "run_index": 104,
+              "mask": 6,
+              "raw_gain_percent": 0.4916293932769686,
+              "accepted_gain_percent": 0.4916293932769686,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.021577999999999875,
+              "oracle_regret_percentage_points": 3.6517673152583376
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run105",
+              "run_index": 105,
+              "mask": 6,
+              "raw_gain_percent": -6.704667597212848,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.28743500000000033,
+              "oracle_regret_percentage_points": 10.139126673677668
+            }
+          ]
+        },
+        "cross_plain_sum": {
+          "frozen_mask": 10,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              8.584940675580686,
+              2.061263430464542,
+              0.865914158802848,
+              3.222985156297397,
+              2.6925608693767145
+            ],
+            "mean": 3.4855328581044374,
+            "sample_sd": 2.98297843990738,
+            "descriptive_t95": [
+              -0.2183240781465936,
+              7.189389794355469
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              8.584940675580686,
+              2.061263430464542,
+              0.865914158802848,
+              3.222985156297397,
+              2.6925608693767145
+            ],
+            "mean": 3.4855328581044374,
+            "sample_sd": 2.98297843990738,
+            "descriptive_t95": [
+              -0.2183240781465936,
+              7.189389794355469
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              0.0,
+              3.1955987976315092,
+              2.084646540805604,
+              0.9204115522379093,
+              7.446565804300953
+            ],
+            "mean": 2.729444538995195,
+            "sample_sd": 2.898567108138974,
+            "descriptive_t95": [
+              -0.8696018855585725,
+              6.328490963548963
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 5,
+          "rows": [
+            {
+              "run_id": "npu_resnet18_b1_paired_run101",
+              "run_index": 101,
+              "mask": 10,
+              "raw_gain_percent": 8.584940675580686,
+              "accepted_gain_percent": 8.584940675580686,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.5351115000000002,
+              "oracle_regret_percentage_points": 0.0
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run102",
+              "run_index": 102,
+              "mask": 10,
+              "raw_gain_percent": 2.061263430464542,
+              "accepted_gain_percent": 2.061263430464542,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.09375700000000009,
+              "oracle_regret_percentage_points": 3.1955987976315092
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run103",
+              "run_index": 103,
+              "mask": 10,
+              "raw_gain_percent": 0.865914158802848,
+              "accepted_gain_percent": 0.865914158802848,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.03833149999999996,
+              "oracle_regret_percentage_points": 2.084646540805604
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run104",
+              "run_index": 104,
+              "mask": 10,
+              "raw_gain_percent": 3.222985156297397,
+              "accepted_gain_percent": 3.222985156297397,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.13865149999999993,
+              "oracle_regret_percentage_points": 0.9204115522379093
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run105",
+              "run_index": 105,
+              "mask": 10,
+              "raw_gain_percent": 2.6925608693767145,
+              "accepted_gain_percent": 2.6925608693767145,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.11612700000000054,
+              "oracle_regret_percentage_points": 7.446565804300953
+            }
+          ]
+        },
+        "target_headroom": {
+          "frozen_mask": 6,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              1.396701653551841,
+              5.256862228096051,
+              2.8203366272028005,
+              0.4916293932769686,
+              -6.704667597212848
+            ],
+            "mean": 0.6521724609829628,
+            "sample_sd": 4.489078333580458,
+            "descriptive_t95": [
+              -4.921754490940449,
+              6.226099412906375
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              1.396701653551841,
+              5.256862228096051,
+              2.8203366272028005,
+              0.4916293932769686,
+              0.0
+            ],
+            "mean": 1.9931059804255322,
+            "sample_sd": 2.11654298912477,
+            "descriptive_t95": [
+              -0.6349292498212806,
+              4.621141210672345
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              7.188239022028845,
+              0.0,
+              0.13022407240565137,
+              3.6517673152583376,
+              10.139126673677668
+            ],
+            "mean": 4.2218714166741,
+            "sample_sd": 4.4357649137965565,
+            "descriptive_t95": [
+              -1.285858181282518,
+              9.729601014630717
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 4,
+          "rows": [
+            {
+              "run_id": "npu_resnet18_b1_paired_run101",
+              "run_index": 101,
+              "mask": 6,
+              "raw_gain_percent": 1.396701653551841,
+              "accepted_gain_percent": 1.396701653551841,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.07368500000000022,
+              "oracle_regret_percentage_points": 7.188239022028845
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run102",
+              "run_index": 102,
+              "mask": 6,
+              "raw_gain_percent": 5.256862228096051,
+              "accepted_gain_percent": 5.256862228096051,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.24223700000000026,
+              "oracle_regret_percentage_points": 0.0
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run103",
+              "run_index": 103,
+              "mask": 6,
+              "raw_gain_percent": 2.8203366272028005,
+              "accepted_gain_percent": 2.8203366272028005,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.12620949999999986,
+              "oracle_regret_percentage_points": 0.13022407240565137
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run104",
+              "run_index": 104,
+              "mask": 6,
+              "raw_gain_percent": 0.4916293932769686,
+              "accepted_gain_percent": 0.4916293932769686,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.021577999999999875,
+              "oracle_regret_percentage_points": 3.6517673152583376
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run105",
+              "run_index": 105,
+              "mask": 6,
+              "raw_gain_percent": -6.704667597212848,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.28743500000000033,
+              "oracle_regret_percentage_points": 10.139126673677668
+            }
+          ]
+        },
+        "target_operator_latency": {
+          "frozen_mask": 6,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              1.396701653551841,
+              5.256862228096051,
+              2.8203366272028005,
+              0.4916293932769686,
+              -6.704667597212848
+            ],
+            "mean": 0.6521724609829628,
+            "sample_sd": 4.489078333580458,
+            "descriptive_t95": [
+              -4.921754490940449,
+              6.226099412906375
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              1.396701653551841,
+              5.256862228096051,
+              2.8203366272028005,
+              0.4916293932769686,
+              0.0
+            ],
+            "mean": 1.9931059804255322,
+            "sample_sd": 2.11654298912477,
+            "descriptive_t95": [
+              -0.6349292498212806,
+              4.621141210672345
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              7.188239022028845,
+              0.0,
+              0.13022407240565137,
+              3.6517673152583376,
+              10.139126673677668
+            ],
+            "mean": 4.2218714166741,
+            "sample_sd": 4.4357649137965565,
+            "descriptive_t95": [
+              -1.285858181282518,
+              9.729601014630717
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 4,
+          "rows": [
+            {
+              "run_id": "npu_resnet18_b1_paired_run101",
+              "run_index": 101,
+              "mask": 6,
+              "raw_gain_percent": 1.396701653551841,
+              "accepted_gain_percent": 1.396701653551841,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.07368500000000022,
+              "oracle_regret_percentage_points": 7.188239022028845
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run102",
+              "run_index": 102,
+              "mask": 6,
+              "raw_gain_percent": 5.256862228096051,
+              "accepted_gain_percent": 5.256862228096051,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.24223700000000026,
+              "oracle_regret_percentage_points": 0.0
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run103",
+              "run_index": 103,
+              "mask": 6,
+              "raw_gain_percent": 2.8203366272028005,
+              "accepted_gain_percent": 2.8203366272028005,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.12620949999999986,
+              "oracle_regret_percentage_points": 0.13022407240565137
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run104",
+              "run_index": 104,
+              "mask": 6,
+              "raw_gain_percent": 0.4916293932769686,
+              "accepted_gain_percent": 0.4916293932769686,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.021577999999999875,
+              "oracle_regret_percentage_points": 3.6517673152583376
+            },
+            {
+              "run_id": "npu_resnet18_b1_paired_run105",
+              "run_index": 105,
+              "mask": 6,
+              "raw_gain_percent": -6.704667597212848,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.28743500000000033,
+              "oracle_regret_percentage_points": 10.139126673677668
+            }
+          ]
+        }
+      },
+      "mask0_negative_control": {
+        "raw_gain_percent": {
+          "n_process_blocks": 5,
+          "values": [
+            -4.3029462667417695,
+            5.098702561068388,
+            -2.6457757658363987,
+            0.2316463750774123,
+            -5.84147138669002
+          ],
+          "mean": -1.4919688966244777,
+          "sample_sd": 4.317372923605565,
+          "descriptive_t95": [
+            -6.852695422685248,
+            3.868757629436293
+          ],
+          "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+        },
+        "raw_delta_ms": {
+          "n_process_blocks": 5,
+          "values": [
+            -0.24197500000000005,
+            0.24129100000000037,
+            -0.11904000000000003,
+            0.010024000000000477,
+            -0.2557899999999993
+          ],
+          "mean": -0.0730979999999997,
+          "sample_sd": 0.20600739401900123,
+          "descriptive_t95": [
+            -0.32888996451717145,
+            0.18269396451717201
+          ],
+          "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+        },
+        "rows": [
+          {
+            "run_id": "npu_resnet18_b1_paired_run101",
+            "mask": 0,
+            "baseline_mean_ms": 5.6234725,
+            "candidate_mean_ms": 5.8654475,
+            "raw_gain_percent": -4.3029462667417695,
+            "raw_delta_ms": -0.24197500000000005,
+            "mean_pair_gain_auxiliary_percent": -4.822752130279923,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 5.511749,
+                "candidate_mean_ms": 5.861932,
+                "ratio_of_means_gain_percent": -6.35339163666561
+              },
+              "BA": {
+                "baseline_mean_ms": 5.735196,
+                "candidate_mean_ms": 5.868963,
+                "ratio_of_means_gain_percent": -2.3323875940769896
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet18_b1_paired_run102",
+            "mask": 0,
+            "baseline_mean_ms": 4.7324,
+            "candidate_mean_ms": 4.491109,
+            "raw_gain_percent": 5.098702561068388,
+            "raw_delta_ms": 0.24129100000000037,
+            "mean_pair_gain_auxiliary_percent": 4.094751401306599,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 4.65024,
+                "candidate_mean_ms": 4.441744,
+                "ratio_of_means_gain_percent": 4.48355353702175
+              },
+              "BA": {
+                "baseline_mean_ms": 4.81456,
+                "candidate_mean_ms": 4.540474,
+                "ratio_of_means_gain_percent": 5.692856668106753
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet18_b1_paired_run103",
+            "mask": 0,
+            "baseline_mean_ms": 4.4992475,
+            "candidate_mean_ms": 4.6182875,
+            "raw_gain_percent": -2.6457757658363987,
+            "raw_delta_ms": -0.11904000000000003,
+            "mean_pair_gain_auxiliary_percent": -2.811362063650084,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 4.4930069999999995,
+                "candidate_mean_ms": 4.786541,
+                "ratio_of_means_gain_percent": -6.533130262205249
+              },
+              "BA": {
+                "baseline_mean_ms": 4.505488,
+                "candidate_mean_ms": 4.4500340000000005,
+                "ratio_of_means_gain_percent": 1.2308100698525715
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet18_b1_paired_run104",
+            "mask": 0,
+            "baseline_mean_ms": 4.3272855,
+            "candidate_mean_ms": 4.3172615,
+            "raw_gain_percent": 0.2316463750774123,
+            "raw_delta_ms": 0.010024000000000477,
+            "mean_pair_gain_auxiliary_percent": 0.10221648571572713,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 4.398354,
+                "candidate_mean_ms": 4.355532999999999,
+                "ratio_of_means_gain_percent": 0.9735687486728191
+              },
+              "BA": {
+                "baseline_mean_ms": 4.256217,
+                "candidate_mean_ms": 4.27899,
+                "ratio_of_means_gain_percent": -0.535052606575274
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet18_b1_paired_run105",
+            "mask": 0,
+            "baseline_mean_ms": 4.3788625,
+            "candidate_mean_ms": 4.6346525,
+            "raw_gain_percent": -5.84147138669002,
+            "raw_delta_ms": -0.2557899999999993,
+            "mean_pair_gain_auxiliary_percent": -6.464500186960783,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 4.508558,
+                "candidate_mean_ms": 4.259613,
+                "ratio_of_means_gain_percent": 5.521610235467747
+              },
+              "BA": {
+                "baseline_mean_ms": 4.249167,
+                "candidate_mean_ms": 5.009692,
+                "ratio_of_means_gain_percent": -17.898213932283678
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          }
+        ]
+      },
+      "ppo_configuration_summary": {},
+      "planner_provenance": [],
+      "posthoc_paired_normalized_oracle": [
+        {
+          "run_id": "npu_resnet18_b1_paired_run101",
+          "oracle_mask": 10,
+          "best_baseline_normalized_gain_percent": 8.584940675580686,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet18_b1_paired_run102",
+          "oracle_mask": 6,
+          "best_baseline_normalized_gain_percent": 5.256862228096051,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet18_b1_paired_run103",
+          "oracle_mask": 5,
+          "best_baseline_normalized_gain_percent": 2.950560699608452,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet18_b1_paired_run104",
+          "oracle_mask": 3,
+          "best_baseline_normalized_gain_percent": 4.143396708535306,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet18_b1_paired_run105",
+          "oracle_mask": 3,
+          "best_baseline_normalized_gain_percent": 10.139126673677668,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        }
+      ],
+      "random_expected_controls": [
+        {
+          "run_id": "npu_resnet18_b1_paired_run101",
+          "uniform_at_most_k_raw_gain_percent": 3.897584053985947,
+          "uniform_at_most_k_accepted_gain_percent": 4.038081965934664,
+          "uniform_exact_k_raw_gain_percent": 3.740070205855539,
+          "uniform_exact_k_accepted_gain_percent": 3.9976497110948537
+        },
+        {
+          "run_id": "npu_resnet18_b1_paired_run102",
+          "uniform_at_most_k_raw_gain_percent": 1.0354989429033223,
+          "uniform_at_most_k_accepted_gain_percent": 1.3824724235406227,
+          "uniform_exact_k_raw_gain_percent": 1.9629378682459835,
+          "uniform_exact_k_accepted_gain_percent": 2.181537560046302
+        },
+        {
+          "run_id": "npu_resnet18_b1_paired_run103",
+          "uniform_at_most_k_raw_gain_percent": 1.637902298358428,
+          "uniform_at_most_k_accepted_gain_percent": 1.637902298358428,
+          "uniform_exact_k_raw_gain_percent": 2.12393776245032,
+          "uniform_exact_k_accepted_gain_percent": 2.12393776245032
+        },
+        {
+          "run_id": "npu_resnet18_b1_paired_run104",
+          "uniform_at_most_k_raw_gain_percent": 2.142915974336173,
+          "uniform_at_most_k_accepted_gain_percent": 2.142915974336173,
+          "uniform_exact_k_raw_gain_percent": 2.7221184863064507,
+          "uniform_exact_k_accepted_gain_percent": 2.7221184863064507
+        },
+        {
+          "run_id": "npu_resnet18_b1_paired_run105",
+          "uniform_at_most_k_raw_gain_percent": 2.13134748838659,
+          "uniform_at_most_k_accepted_gain_percent": 2.740862724496849,
+          "uniform_exact_k_raw_gain_percent": 2.0071347680336276,
+          "uniform_exact_k_accepted_gain_percent": 3.1245793675691025
+        }
+      ],
+      "source_quality_reference": {
+        "quality": 0.62,
+        "sample_count": 100,
+        "run_ids": [
+          "cuda_resnet18_b1_imagenet_val10class_v2_run4",
+          "cuda_resnet18_b1_imagenet_val10class_v2_run5",
+          "cuda_resnet18_b1_imagenet_val10class_v2_run6",
+          "cuda_resnet18_b1_imagenet_val10class_v2_run7",
+          "cuda_resnet18_b1_imagenet_val10class_v2_run8"
+        ],
+        "scope": "same fixed evaluation sample IDs, labels and deterministic source predictions verified across old source runs; not new source timings"
+      },
+      "interpretation": "Independent confirmation of original calibration-selected plans; all negative gains, AB/BA noise and original results retained. Five process blocks are uncertainty units."
+    },
+    {
+      "model_id": "resnet18",
+      "input_shape": [
+        4,
+        3,
+        224,
+        224
+      ],
+      "device_id": "npu_Ascend910B3",
+      "plans": {
+        "cross_dag": {
+          "frozen_mask": 6,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.618665904409406,
+              0.8278644229166097,
+              4.058518898950159,
+              -0.002059613201166982,
+              -16.27765409592636
+            ],
+            "mean": -1.35493289657027,
+            "sample_sd": 8.577176418117062,
+            "descriptive_t95": [
+              -12.004904061188563,
+              9.295038268048023
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.618665904409406,
+              0.8278644229166097,
+              4.058518898950159,
+              0.0,
+              0.0
+            ],
+            "mean": 1.9010098452552349,
+            "sample_sd": 2.259414621845333,
+            "descriptive_t95": [
+              -0.9044239477052924,
+              4.706443638215762
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              0.0,
+              3.868842578910391,
+              3.877797178821811,
+              2.7842176423610545,
+              12.460451914480661
+            ],
+            "mean": 4.598261862914783,
+            "sample_sd": 4.671721386542252,
+            "descriptive_t95": [
+              -1.2024463923933135,
+              10.39897011822288
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 3,
+          "rows": [
+            {
+              "run_id": "npu_resnet18_b4_paired_run101",
+              "run_index": 101,
+              "mask": 6,
+              "raw_gain_percent": 4.618665904409406,
+              "accepted_gain_percent": 4.618665904409406,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.2139300000000004,
+              "oracle_regret_percentage_points": 0.0
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run102",
+              "run_index": 102,
+              "mask": 6,
+              "raw_gain_percent": 0.8278644229166097,
+              "accepted_gain_percent": 0.8278644229166097,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.04238099999999978,
+              "oracle_regret_percentage_points": 3.868842578910391
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run103",
+              "run_index": 103,
+              "mask": 6,
+              "raw_gain_percent": 4.058518898950159,
+              "accepted_gain_percent": 4.058518898950159,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.20202399999999976,
+              "oracle_regret_percentage_points": 3.877797178821811
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run104",
+              "run_index": 104,
+              "mask": 6,
+              "raw_gain_percent": -0.002059613201166982,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.00011850000000013239,
+              "oracle_regret_percentage_points": 2.7842176423610545
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run105",
+              "run_index": 105,
+              "mask": 6,
+              "raw_gain_percent": -16.27765409592636,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.8088839999999999,
+              "oracle_regret_percentage_points": 12.460451914480661
+            }
+          ]
+        },
+        "cross_plain_sum": {
+          "frozen_mask": 10,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              3.3463141924216675,
+              2.7516603693463173,
+              2.5163118882762534,
+              -1.4922422913479163,
+              2.3092168866836924
+            ],
+            "mean": 1.8862522090760028,
+            "sample_sd": 1.9281345704025752,
+            "descriptive_t95": [
+              -0.5078430706849606,
+              4.280347488836966
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              3.3463141924216675,
+              2.7516603693463173,
+              2.5163118882762534,
+              0.0,
+              2.3092168866836924
+            ],
+            "mean": 2.184700667345586,
+            "sample_sd": 1.2815202477875711,
+            "descriptive_t95": [
+              0.5934831126985891,
+              3.7759182219925833
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              1.2723517119877386,
+              1.9450466324806834,
+              5.4200041894957165,
+              2.7842176423610545,
+              10.151235027796968
+            ],
+            "mean": 4.314571040824433,
+            "sample_sd": 3.622856429451636,
+            "descriptive_t95": [
+              -0.18379935828670746,
+              8.812941439935573
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 4,
+          "rows": [
+            {
+              "run_id": "npu_resnet18_b4_paired_run101",
+              "run_index": 101,
+              "mask": 10,
+              "raw_gain_percent": 3.3463141924216675,
+              "accepted_gain_percent": 3.3463141924216675,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.15358599999999978,
+              "oracle_regret_percentage_points": 1.2723517119877386
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run102",
+              "run_index": 102,
+              "mask": 10,
+              "raw_gain_percent": 2.7516603693463173,
+              "accepted_gain_percent": 2.7516603693463173,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.1387995000000002,
+              "oracle_regret_percentage_points": 1.9450466324806834
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run103",
+              "run_index": 103,
+              "mask": 10,
+              "raw_gain_percent": 2.5163118882762534,
+              "accepted_gain_percent": 2.5163118882762534,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.14068350000000063,
+              "oracle_regret_percentage_points": 5.4200041894957165
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run104",
+              "run_index": 104,
+              "mask": 10,
+              "raw_gain_percent": -1.4922422913479163,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.08817649999999944,
+              "oracle_regret_percentage_points": 2.7842176423610545
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run105",
+              "run_index": 105,
+              "mask": 10,
+              "raw_gain_percent": 2.3092168866836924,
+              "accepted_gain_percent": 2.3092168866836924,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.12094550000000037,
+              "oracle_regret_percentage_points": 10.151235027796968
+            }
+          ]
+        },
+        "target_headroom": {
+          "frozen_mask": 10,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              3.3463141924216675,
+              2.7516603693463173,
+              2.5163118882762534,
+              -1.4922422913479163,
+              2.3092168866836924
+            ],
+            "mean": 1.8862522090760028,
+            "sample_sd": 1.9281345704025752,
+            "descriptive_t95": [
+              -0.5078430706849606,
+              4.280347488836966
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              3.3463141924216675,
+              2.7516603693463173,
+              2.5163118882762534,
+              0.0,
+              2.3092168866836924
+            ],
+            "mean": 2.184700667345586,
+            "sample_sd": 1.2815202477875711,
+            "descriptive_t95": [
+              0.5934831126985891,
+              3.7759182219925833
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              1.2723517119877386,
+              1.9450466324806834,
+              5.4200041894957165,
+              2.7842176423610545,
+              10.151235027796968
+            ],
+            "mean": 4.314571040824433,
+            "sample_sd": 3.622856429451636,
+            "descriptive_t95": [
+              -0.18379935828670746,
+              8.812941439935573
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 4,
+          "rows": [
+            {
+              "run_id": "npu_resnet18_b4_paired_run101",
+              "run_index": 101,
+              "mask": 10,
+              "raw_gain_percent": 3.3463141924216675,
+              "accepted_gain_percent": 3.3463141924216675,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.15358599999999978,
+              "oracle_regret_percentage_points": 1.2723517119877386
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run102",
+              "run_index": 102,
+              "mask": 10,
+              "raw_gain_percent": 2.7516603693463173,
+              "accepted_gain_percent": 2.7516603693463173,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.1387995000000002,
+              "oracle_regret_percentage_points": 1.9450466324806834
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run103",
+              "run_index": 103,
+              "mask": 10,
+              "raw_gain_percent": 2.5163118882762534,
+              "accepted_gain_percent": 2.5163118882762534,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.14068350000000063,
+              "oracle_regret_percentage_points": 5.4200041894957165
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run104",
+              "run_index": 104,
+              "mask": 10,
+              "raw_gain_percent": -1.4922422913479163,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.08817649999999944,
+              "oracle_regret_percentage_points": 2.7842176423610545
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run105",
+              "run_index": 105,
+              "mask": 10,
+              "raw_gain_percent": 2.3092168866836924,
+              "accepted_gain_percent": 2.3092168866836924,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.12094550000000037,
+              "oracle_regret_percentage_points": 10.151235027796968
+            }
+          ]
+        },
+        "target_operator_latency": {
+          "frozen_mask": 10,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              3.3463141924216675,
+              2.7516603693463173,
+              2.5163118882762534,
+              -1.4922422913479163,
+              2.3092168866836924
+            ],
+            "mean": 1.8862522090760028,
+            "sample_sd": 1.9281345704025752,
+            "descriptive_t95": [
+              -0.5078430706849606,
+              4.280347488836966
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              3.3463141924216675,
+              2.7516603693463173,
+              2.5163118882762534,
+              0.0,
+              2.3092168866836924
+            ],
+            "mean": 2.184700667345586,
+            "sample_sd": 1.2815202477875711,
+            "descriptive_t95": [
+              0.5934831126985891,
+              3.7759182219925833
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              1.2723517119877386,
+              1.9450466324806834,
+              5.4200041894957165,
+              2.7842176423610545,
+              10.151235027796968
+            ],
+            "mean": 4.314571040824433,
+            "sample_sd": 3.622856429451636,
+            "descriptive_t95": [
+              -0.18379935828670746,
+              8.812941439935573
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 4,
+          "rows": [
+            {
+              "run_id": "npu_resnet18_b4_paired_run101",
+              "run_index": 101,
+              "mask": 10,
+              "raw_gain_percent": 3.3463141924216675,
+              "accepted_gain_percent": 3.3463141924216675,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.15358599999999978,
+              "oracle_regret_percentage_points": 1.2723517119877386
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run102",
+              "run_index": 102,
+              "mask": 10,
+              "raw_gain_percent": 2.7516603693463173,
+              "accepted_gain_percent": 2.7516603693463173,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.1387995000000002,
+              "oracle_regret_percentage_points": 1.9450466324806834
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run103",
+              "run_index": 103,
+              "mask": 10,
+              "raw_gain_percent": 2.5163118882762534,
+              "accepted_gain_percent": 2.5163118882762534,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.14068350000000063,
+              "oracle_regret_percentage_points": 5.4200041894957165
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run104",
+              "run_index": 104,
+              "mask": 10,
+              "raw_gain_percent": -1.4922422913479163,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.08817649999999944,
+              "oracle_regret_percentage_points": 2.7842176423610545
+            },
+            {
+              "run_id": "npu_resnet18_b4_paired_run105",
+              "run_index": 105,
+              "mask": 10,
+              "raw_gain_percent": 2.3092168866836924,
+              "accepted_gain_percent": 2.3092168866836924,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.12094550000000037,
+              "oracle_regret_percentage_points": 10.151235027796968
+            }
+          ]
+        }
+      },
+      "mask0_negative_control": {
+        "raw_gain_percent": {
+          "n_process_blocks": 5,
+          "values": [
+            -1.9913126260839369,
+            -1.0611467464672424,
+            10.885522254465009,
+            1.0000841025387681,
+            11.255099092982501
+          ],
+          "mean": 4.01764921548702,
+          "sample_sd": 6.529851660954505,
+          "descriptive_t95": [
+            -4.090232505531257,
+            12.125530936505296
+          ],
+          "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+        },
+        "raw_delta_ms": {
+          "n_process_blocks": 5,
+          "values": [
+            -0.09241200000000038,
+            -0.05338849999999962,
+            0.6392664999999997,
+            0.059099500000000305,
+            0.600765
+          ],
+          "mean": 0.2306661,
+          "sample_sd": 0.36001008853145344,
+          "descriptive_t95": [
+            -0.2163454659196564,
+            0.6776776659196564
+          ],
+          "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+        },
+        "rows": [
+          {
+            "run_id": "npu_resnet18_b4_paired_run101",
+            "mask": 0,
+            "baseline_mean_ms": 4.640758,
+            "candidate_mean_ms": 4.73317,
+            "raw_gain_percent": -1.9913126260839369,
+            "raw_delta_ms": -0.09241200000000038,
+            "mean_pair_gain_auxiliary_percent": -2.1066469659985834,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 4.62431,
+                "candidate_mean_ms": 4.712424,
+                "ratio_of_means_gain_percent": -1.9054518403826737
+              },
+              "BA": {
+                "baseline_mean_ms": 4.657206,
+                "candidate_mean_ms": 4.753916,
+                "ratio_of_means_gain_percent": -2.076566937343975
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet18_b4_paired_run102",
+            "mask": 0,
+            "baseline_mean_ms": 5.031208,
+            "candidate_mean_ms": 5.0845965,
+            "raw_gain_percent": -1.0611467464672424,
+            "raw_delta_ms": -0.05338849999999962,
+            "mean_pair_gain_auxiliary_percent": -1.067446759921688,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 4.800902,
+                "candidate_mean_ms": 4.836966,
+                "ratio_of_means_gain_percent": -0.751192171804393
+              },
+              "BA": {
+                "baseline_mean_ms": 5.261514,
+                "candidate_mean_ms": 5.332227,
+                "ratio_of_means_gain_percent": -1.3439667745823651
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet18_b4_paired_run103",
+            "mask": 0,
+            "baseline_mean_ms": 5.8726305,
+            "candidate_mean_ms": 5.233364,
+            "raw_gain_percent": 10.885522254465009,
+            "raw_delta_ms": 0.6392664999999997,
+            "mean_pair_gain_auxiliary_percent": 4.103762884689636,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 6.131967,
+                "candidate_mean_ms": 5.877017,
+                "ratio_of_means_gain_percent": 4.157719700709413
+              },
+              "BA": {
+                "baseline_mean_ms": 5.613294,
+                "candidate_mean_ms": 4.589711,
+                "ratio_of_means_gain_percent": 18.234979318738684
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet18_b4_paired_run104",
+            "mask": 0,
+            "baseline_mean_ms": 5.909453,
+            "candidate_mean_ms": 5.8503535,
+            "raw_gain_percent": 1.0000841025387681,
+            "raw_delta_ms": 0.059099500000000305,
+            "mean_pair_gain_auxiliary_percent": 0.7198089241542649,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 5.8824369999999995,
+                "candidate_mean_ms": 5.945392,
+                "ratio_of_means_gain_percent": -1.0702197065604024
+              },
+              "BA": {
+                "baseline_mean_ms": 5.936469,
+                "candidate_mean_ms": 5.755315,
+                "ratio_of_means_gain_percent": 3.051544613473083
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet18_b4_paired_run105",
+            "mask": 0,
+            "baseline_mean_ms": 5.337714,
+            "candidate_mean_ms": 4.736949,
+            "raw_gain_percent": 11.255099092982501,
+            "raw_delta_ms": 0.600765,
+            "mean_pair_gain_auxiliary_percent": 5.430517722223406,
+            "quality_baseline": 0.62,
+            "quality_candidate": 0.62,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 5.203479,
+                "candidate_mean_ms": 4.785941,
+                "ratio_of_means_gain_percent": 8.024208419021189
+              },
+              "BA": {
+                "baseline_mean_ms": 5.471949,
+                "candidate_mean_ms": 4.687957,
+                "ratio_of_means_gain_percent": 14.327472715845861
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          }
+        ]
+      },
+      "ppo_configuration_summary": {},
+      "planner_provenance": [],
+      "posthoc_paired_normalized_oracle": [
+        {
+          "run_id": "npu_resnet18_b4_paired_run101",
+          "oracle_mask": 6,
+          "best_baseline_normalized_gain_percent": 4.618665904409406,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet18_b4_paired_run102",
+          "oracle_mask": 9,
+          "best_baseline_normalized_gain_percent": 4.696707001827001,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet18_b4_paired_run103",
+          "oracle_mask": 5,
+          "best_baseline_normalized_gain_percent": 7.93631607777197,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet18_b4_paired_run104",
+          "oracle_mask": 3,
+          "best_baseline_normalized_gain_percent": 2.7842176423610545,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet18_b4_paired_run105",
+          "oracle_mask": 4,
+          "best_baseline_normalized_gain_percent": 12.460451914480661,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        }
+      ],
+      "random_expected_controls": [
+        {
+          "run_id": "npu_resnet18_b4_paired_run101",
+          "uniform_at_most_k_raw_gain_percent": 2.4800520954619083,
+          "uniform_at_most_k_accepted_gain_percent": 2.4800520954619083,
+          "uniform_exact_k_raw_gain_percent": 3.2238620615733704,
+          "uniform_exact_k_accepted_gain_percent": 3.2238620615733704
+        },
+        {
+          "run_id": "npu_resnet18_b4_paired_run102",
+          "uniform_at_most_k_raw_gain_percent": 2.311819087925491,
+          "uniform_at_most_k_accepted_gain_percent": 2.311819087925491,
+          "uniform_exact_k_raw_gain_percent": 2.7580475315720294,
+          "uniform_exact_k_accepted_gain_percent": 2.7580475315720294
+        },
+        {
+          "run_id": "npu_resnet18_b4_paired_run103",
+          "uniform_at_most_k_raw_gain_percent": 1.6184469439053604,
+          "uniform_at_most_k_accepted_gain_percent": 1.9372194488605503,
+          "uniform_exact_k_raw_gain_percent": 2.816506455466883,
+          "uniform_exact_k_accepted_gain_percent": 2.9598966846584807
+        },
+        {
+          "run_id": "npu_resnet18_b4_paired_run104",
+          "uniform_at_most_k_raw_gain_percent": 0.3568572100164208,
+          "uniform_at_most_k_accepted_gain_percent": 0.6507399650723367,
+          "uniform_exact_k_raw_gain_percent": 0.12227885112741606,
+          "uniform_exact_k_accepted_gain_percent": 0.627212035224101
+        },
+        {
+          "run_id": "npu_resnet18_b4_paired_run105",
+          "uniform_at_most_k_raw_gain_percent": -3.3440991908750863,
+          "uniform_at_most_k_accepted_gain_percent": 1.5495837764673983,
+          "uniform_exact_k_raw_gain_percent": -4.133891532319481,
+          "uniform_exact_k_accepted_gain_percent": 0.7641616044434535
+        }
+      ],
+      "source_quality_reference": {
+        "quality": 0.62,
+        "sample_count": 100,
+        "run_ids": [
+          "cuda_resnet18_b4_imagenet_val10class_v2_run4",
+          "cuda_resnet18_b4_imagenet_val10class_v2_run5",
+          "cuda_resnet18_b4_imagenet_val10class_v2_run6",
+          "cuda_resnet18_b4_imagenet_val10class_v2_run7",
+          "cuda_resnet18_b4_imagenet_val10class_v2_run8"
+        ],
+        "scope": "same fixed evaluation sample IDs, labels and deterministic source predictions verified across old source runs; not new source timings"
+      },
+      "interpretation": "Independent confirmation of original calibration-selected plans; all negative gains, AB/BA noise and original results retained. Five process blocks are uncertainty units."
+    },
+    {
+      "model_id": "resnet50",
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "device_id": "npu_Ascend910B3",
+      "plans": {
+        "cross_dag": {
+          "frozen_mask": 6,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              0.8371169840880103,
+              0.8553607453063845,
+              -4.936622786778443,
+              -8.069155377902456,
+              1.9675386086952142
+            ],
+            "mean": -1.869152365318258,
+            "sample_sd": 4.396489373755045,
+            "descriptive_t95": [
+              -7.32811493919532,
+              3.589810208558804
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              0.8371169840880103,
+              0.8553607453063845,
+              0.0,
+              0.0,
+              1.9675386086952142
+            ],
+            "mean": 0.7320032676179218,
+            "sample_sd": 0.8100109732820637,
+            "descriptive_t95": [
+              -0.2737581960564097,
+              1.7377647312922533
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              8.060857770076364,
+              4.941137029586798,
+              2.020190692185491,
+              14.45544788394736,
+              0.4498685024853273
+            ],
+            "mean": 5.985500375656268,
+            "sample_sd": 5.556633761268759,
+            "descriptive_t95": [
+              -0.9139717169147321,
+              12.884972468227268
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 3,
+          "rows": [
+            {
+              "run_id": "npu_resnet50_b1_paired_run101",
+              "run_index": 101,
+              "mask": 6,
+              "raw_gain_percent": 0.8371169840880103,
+              "accepted_gain_percent": 0.8371169840880103,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.09968600000000016,
+              "oracle_regret_percentage_points": 8.060857770076364
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run102",
+              "run_index": 102,
+              "mask": 6,
+              "raw_gain_percent": 0.8553607453063845,
+              "accepted_gain_percent": 0.8553607453063845,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.09971999999999959,
+              "oracle_regret_percentage_points": 4.941137029586798
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run103",
+              "run_index": 103,
+              "mask": 6,
+              "raw_gain_percent": -4.936622786778443,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.6063109999999998,
+              "oracle_regret_percentage_points": 2.020190692185491
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run104",
+              "run_index": 104,
+              "mask": 6,
+              "raw_gain_percent": -8.069155377902456,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.9001000000000001,
+              "oracle_regret_percentage_points": 14.45544788394736
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run105",
+              "run_index": 105,
+              "mask": 6,
+              "raw_gain_percent": 1.9675386086952142,
+              "accepted_gain_percent": 1.9675386086952142,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.20442249999999973,
+              "oracle_regret_percentage_points": 0.4498685024853273
+            }
+          ]
+        },
+        "cross_plain_sum": {
+          "frozen_mask": 6,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              0.8371169840880103,
+              0.8553607453063845,
+              -4.936622786778443,
+              -8.069155377902456,
+              1.9675386086952142
+            ],
+            "mean": -1.869152365318258,
+            "sample_sd": 4.396489373755045,
+            "descriptive_t95": [
+              -7.32811493919532,
+              3.589810208558804
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              0.8371169840880103,
+              0.8553607453063845,
+              0.0,
+              0.0,
+              1.9675386086952142
+            ],
+            "mean": 0.7320032676179218,
+            "sample_sd": 0.8100109732820637,
+            "descriptive_t95": [
+              -0.2737581960564097,
+              1.7377647312922533
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              8.060857770076364,
+              4.941137029586798,
+              2.020190692185491,
+              14.45544788394736,
+              0.4498685024853273
+            ],
+            "mean": 5.985500375656268,
+            "sample_sd": 5.556633761268759,
+            "descriptive_t95": [
+              -0.9139717169147321,
+              12.884972468227268
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 3,
+          "rows": [
+            {
+              "run_id": "npu_resnet50_b1_paired_run101",
+              "run_index": 101,
+              "mask": 6,
+              "raw_gain_percent": 0.8371169840880103,
+              "accepted_gain_percent": 0.8371169840880103,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.09968600000000016,
+              "oracle_regret_percentage_points": 8.060857770076364
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run102",
+              "run_index": 102,
+              "mask": 6,
+              "raw_gain_percent": 0.8553607453063845,
+              "accepted_gain_percent": 0.8553607453063845,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.09971999999999959,
+              "oracle_regret_percentage_points": 4.941137029586798
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run103",
+              "run_index": 103,
+              "mask": 6,
+              "raw_gain_percent": -4.936622786778443,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.6063109999999998,
+              "oracle_regret_percentage_points": 2.020190692185491
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run104",
+              "run_index": 104,
+              "mask": 6,
+              "raw_gain_percent": -8.069155377902456,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.9001000000000001,
+              "oracle_regret_percentage_points": 14.45544788394736
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run105",
+              "run_index": 105,
+              "mask": 6,
+              "raw_gain_percent": 1.9675386086952142,
+              "accepted_gain_percent": 1.9675386086952142,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.20442249999999973,
+              "oracle_regret_percentage_points": 0.4498685024853273
+            }
+          ]
+        },
+        "target_headroom": {
+          "frozen_mask": 6,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              0.8371169840880103,
+              0.8553607453063845,
+              -4.936622786778443,
+              -8.069155377902456,
+              1.9675386086952142
+            ],
+            "mean": -1.869152365318258,
+            "sample_sd": 4.396489373755045,
+            "descriptive_t95": [
+              -7.32811493919532,
+              3.589810208558804
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              0.8371169840880103,
+              0.8553607453063845,
+              0.0,
+              0.0,
+              1.9675386086952142
+            ],
+            "mean": 0.7320032676179218,
+            "sample_sd": 0.8100109732820637,
+            "descriptive_t95": [
+              -0.2737581960564097,
+              1.7377647312922533
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              8.060857770076364,
+              4.941137029586798,
+              2.020190692185491,
+              14.45544788394736,
+              0.4498685024853273
+            ],
+            "mean": 5.985500375656268,
+            "sample_sd": 5.556633761268759,
+            "descriptive_t95": [
+              -0.9139717169147321,
+              12.884972468227268
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 3,
+          "rows": [
+            {
+              "run_id": "npu_resnet50_b1_paired_run101",
+              "run_index": 101,
+              "mask": 6,
+              "raw_gain_percent": 0.8371169840880103,
+              "accepted_gain_percent": 0.8371169840880103,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.09968600000000016,
+              "oracle_regret_percentage_points": 8.060857770076364
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run102",
+              "run_index": 102,
+              "mask": 6,
+              "raw_gain_percent": 0.8553607453063845,
+              "accepted_gain_percent": 0.8553607453063845,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.09971999999999959,
+              "oracle_regret_percentage_points": 4.941137029586798
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run103",
+              "run_index": 103,
+              "mask": 6,
+              "raw_gain_percent": -4.936622786778443,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.6063109999999998,
+              "oracle_regret_percentage_points": 2.020190692185491
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run104",
+              "run_index": 104,
+              "mask": 6,
+              "raw_gain_percent": -8.069155377902456,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.9001000000000001,
+              "oracle_regret_percentage_points": 14.45544788394736
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run105",
+              "run_index": 105,
+              "mask": 6,
+              "raw_gain_percent": 1.9675386086952142,
+              "accepted_gain_percent": 1.9675386086952142,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.20442249999999973,
+              "oracle_regret_percentage_points": 0.4498685024853273
+            }
+          ]
+        },
+        "target_operator_latency": {
+          "frozen_mask": 10,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              8.897974754164375,
+              -2.3308958258094203,
+              1.8777890521859568,
+              12.9414036806427,
+              0.40362734425646496
+            ],
+            "mean": 4.357979801088016,
+            "sample_sd": 6.340662944952209,
+            "descriptive_t95": [
+              -3.514993102403813,
+              12.230952704579845
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              8.897974754164375,
+              0.0,
+              1.8777890521859568,
+              12.9414036806427,
+              0.40362734425646496
+            ],
+            "mean": 4.824158966249899,
+            "sample_sd": 5.78749388877417,
+            "descriptive_t95": [
+              -2.3619638352653016,
+              12.0102817677651
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              0.0,
+              5.796497774893183,
+              0.14240163999953426,
+              1.5140442033046586,
+              2.0137797669240767
+            ],
+            "mean": 1.8933446770242905,
+            "sample_sd": 2.347527057914793,
+            "descriptive_t95": [
+              -1.021495155597716,
+              4.808184509646297
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 4,
+          "rows": [
+            {
+              "run_id": "npu_resnet50_b1_paired_run101",
+              "run_index": 101,
+              "mask": 10,
+              "raw_gain_percent": 8.897974754164375,
+              "accepted_gain_percent": 8.897974754164375,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 1.1559899999999992,
+              "oracle_regret_percentage_points": 0.0
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run102",
+              "run_index": 102,
+              "mask": 10,
+              "raw_gain_percent": -2.3308958258094203,
+              "accepted_gain_percent": 0.0,
+              "accepted": false,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": -0.2614245000000004,
+              "oracle_regret_percentage_points": 5.796497774893183
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run103",
+              "run_index": 103,
+              "mask": 10,
+              "raw_gain_percent": 1.8777890521859568,
+              "accepted_gain_percent": 1.8777890521859568,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.22373649999999934,
+              "oracle_regret_percentage_points": 0.14240163999953426
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run104",
+              "run_index": 104,
+              "mask": 10,
+              "raw_gain_percent": 12.9414036806427,
+              "accepted_gain_percent": 12.9414036806427,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 1.596831,
+              "oracle_regret_percentage_points": 1.5140442033046586
+            },
+            {
+              "run_id": "npu_resnet50_b1_paired_run105",
+              "run_index": 105,
+              "mask": 10,
+              "raw_gain_percent": 0.40362734425646496,
+              "accepted_gain_percent": 0.40362734425646496,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.04198549999999912,
+              "oracle_regret_percentage_points": 2.0137797669240767
+            }
+          ]
+        }
+      },
+      "mask0_negative_control": {
+        "raw_gain_percent": {
+          "n_process_blocks": 5,
+          "values": [
+            -5.9324880287827835,
+            5.782258183479876,
+            -0.44657388161274075,
+            -4.1275900331022735,
+            0.4770555132484479
+          ],
+          "mean": -0.8494676493538947,
+          "sample_sd": 4.5410614714899395,
+          "descriptive_t95": [
+            -6.4879401921331725,
+            4.789004893425383
+          ],
+          "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+        },
+        "raw_delta_ms": {
+          "n_process_blocks": 5,
+          "values": [
+            -0.7731024999999985,
+            0.6977200000000003,
+            -0.053575999999999624,
+            -0.444526999999999,
+            0.04973349999999854
+          ],
+          "mean": -0.10475039999999965,
+          "sample_sd": 0.5551093371878862,
+          "descriptive_t95": [
+            -0.7940096790529533,
+            0.5845088790529539
+          ],
+          "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+        },
+        "rows": [
+          {
+            "run_id": "npu_resnet50_b1_paired_run101",
+            "mask": 0,
+            "baseline_mean_ms": 13.031674,
+            "candidate_mean_ms": 13.8047765,
+            "raw_gain_percent": -5.9324880287827835,
+            "raw_delta_ms": -0.7731024999999985,
+            "mean_pair_gain_auxiliary_percent": -3.7070194467152957,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 14.113548,
+                "candidate_mean_ms": 13.987131999999999,
+                "ratio_of_means_gain_percent": 0.8957067351172133
+              },
+              "BA": {
+                "baseline_mean_ms": 11.9498,
+                "candidate_mean_ms": 13.622421,
+                "ratio_of_means_gain_percent": -13.997062712346645
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet50_b1_paired_run102",
+            "mask": 0,
+            "baseline_mean_ms": 12.066566,
+            "candidate_mean_ms": 11.368846,
+            "raw_gain_percent": 5.782258183479876,
+            "raw_delta_ms": 0.6977200000000003,
+            "mean_pair_gain_auxiliary_percent": 0.49241073120406764,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 13.236187,
+                "candidate_mean_ms": 10.819523,
+                "ratio_of_means_gain_percent": 18.258007385359537
+              },
+              "BA": {
+                "baseline_mean_ms": 10.896945,
+                "candidate_mean_ms": 11.918169,
+                "ratio_of_means_gain_percent": -9.371654165456466
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet50_b1_paired_run103",
+            "mask": 0,
+            "baseline_mean_ms": 11.997119,
+            "candidate_mean_ms": 12.050695,
+            "raw_gain_percent": -0.44657388161274075,
+            "raw_delta_ms": -0.053575999999999624,
+            "mean_pair_gain_auxiliary_percent": -0.7947353265270226,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 11.920285999999999,
+                "candidate_mean_ms": 10.880039,
+                "ratio_of_means_gain_percent": 8.726694980304996
+              },
+              "BA": {
+                "baseline_mean_ms": 12.073952,
+                "candidate_mean_ms": 13.221351,
+                "ratio_of_means_gain_percent": -9.503093933121484
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet50_b1_paired_run104",
+            "mask": 0,
+            "baseline_mean_ms": 10.76965,
+            "candidate_mean_ms": 11.214177,
+            "raw_gain_percent": -4.1275900331022735,
+            "raw_delta_ms": -0.444526999999999,
+            "mean_pair_gain_auxiliary_percent": -4.6571252762951785,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 10.912881,
+                "candidate_mean_ms": 11.309875,
+                "ratio_of_means_gain_percent": -3.637847787399124
+              },
+              "BA": {
+                "baseline_mean_ms": 10.626419,
+                "candidate_mean_ms": 11.118479,
+                "ratio_of_means_gain_percent": -4.630534519672152
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet50_b1_paired_run105",
+            "mask": 0,
+            "baseline_mean_ms": 10.425097,
+            "candidate_mean_ms": 10.3753635,
+            "raw_gain_percent": 0.4770555132484479,
+            "raw_delta_ms": 0.04973349999999854,
+            "mean_pair_gain_auxiliary_percent": 0.3933222369318419,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 10.434537,
+                "candidate_mean_ms": 10.29224,
+                "ratio_of_means_gain_percent": 1.363711681697051
+              },
+              "BA": {
+                "baseline_mean_ms": 10.415657,
+                "candidate_mean_ms": 10.458487,
+                "ratio_of_means_gain_percent": -0.41120785755522066
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          }
+        ]
+      },
+      "ppo_configuration_summary": {},
+      "planner_provenance": [],
+      "posthoc_paired_normalized_oracle": [
+        {
+          "run_id": "npu_resnet50_b1_paired_run101",
+          "oracle_mask": 10,
+          "best_baseline_normalized_gain_percent": 8.897974754164375,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet50_b1_paired_run102",
+          "oracle_mask": 2,
+          "best_baseline_normalized_gain_percent": 5.796497774893183,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet50_b1_paired_run103",
+          "oracle_mask": 5,
+          "best_baseline_normalized_gain_percent": 2.020190692185491,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet50_b1_paired_run104",
+          "oracle_mask": 9,
+          "best_baseline_normalized_gain_percent": 14.45544788394736,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet50_b1_paired_run105",
+          "oracle_mask": 3,
+          "best_baseline_normalized_gain_percent": 2.4174071111805415,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        }
+      ],
+      "random_expected_controls": [
+        {
+          "run_id": "npu_resnet50_b1_paired_run101",
+          "uniform_at_most_k_raw_gain_percent": -1.7260935032487372,
+          "uniform_at_most_k_accepted_gain_percent": 2.3340051101665535,
+          "uniform_exact_k_raw_gain_percent": -0.7441137276261025,
+          "uniform_exact_k_accepted_gain_percent": 2.9272467512794353
+        },
+        {
+          "run_id": "npu_resnet50_b1_paired_run102",
+          "uniform_at_most_k_raw_gain_percent": 0.23394847436086227,
+          "uniform_at_most_k_accepted_gain_percent": 1.4990960227859096,
+          "uniform_exact_k_raw_gain_percent": -0.3355158364925111,
+          "uniform_exact_k_accepted_gain_percent": 1.117951917654611
+        },
+        {
+          "run_id": "npu_resnet50_b1_paired_run103",
+          "uniform_at_most_k_raw_gain_percent": -0.35732331867261297,
+          "uniform_at_most_k_accepted_gain_percent": 0.5340999413333163,
+          "uniform_exact_k_raw_gain_percent": 0.01598061471490415,
+          "uniform_exact_k_accepted_gain_percent": 0.90558258451344
+        },
+        {
+          "run_id": "npu_resnet50_b1_paired_run104",
+          "uniform_at_most_k_raw_gain_percent": 3.0918605836739914,
+          "uniform_at_most_k_accepted_gain_percent": 4.1140536423064615,
+          "uniform_exact_k_raw_gain_percent": 4.2734321538176125,
+          "uniform_exact_k_accepted_gain_percent": 5.776569120107716
+        },
+        {
+          "run_id": "npu_resnet50_b1_paired_run105",
+          "uniform_at_most_k_raw_gain_percent": 0.9399765014614029,
+          "uniform_at_most_k_accepted_gain_percent": 0.9755148751182797,
+          "uniform_exact_k_raw_gain_percent": 1.3139359910365043,
+          "uniform_exact_k_accepted_gain_percent": 1.3139359910365043
+        }
+      ],
+      "source_quality_reference": {
+        "quality": 0.69,
+        "sample_count": 100,
+        "run_ids": [
+          "cuda_resnet50_b1_imagenet_val10class_v2_run4",
+          "cuda_resnet50_b1_imagenet_val10class_v2_run5",
+          "cuda_resnet50_b1_imagenet_val10class_v2_run6",
+          "cuda_resnet50_b1_imagenet_val10class_v2_run7",
+          "cuda_resnet50_b1_imagenet_val10class_v2_run8"
+        ],
+        "scope": "same fixed evaluation sample IDs, labels and deterministic source predictions verified across old source runs; not new source timings"
+      },
+      "interpretation": "Independent confirmation of original calibration-selected plans; all negative gains, AB/BA noise and original results retained. Five process blocks are uncertainty units."
+    },
+    {
+      "model_id": "resnet50",
+      "input_shape": [
+        4,
+        3,
+        224,
+        224
+      ],
+      "device_id": "npu_Ascend910B3",
+      "plans": {
+        "cross_dag": {
+          "frozen_mask": 5,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.381751824817522,
+              0.06934485293190976,
+              2.0538060117397503,
+              10.076523431411887,
+              0.41457969987112653
+            ],
+            "mean": 3.399201164154439,
+            "sample_sd": 4.103597047596527,
+            "descriptive_t95": [
+              -1.696087552981437,
+              8.494489881290315
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.381751824817522,
+              0.06934485293190976,
+              2.0538060117397503,
+              10.076523431411887,
+              0.41457969987112653
+            ],
+            "mean": 3.399201164154439,
+            "sample_sd": 4.103597047596527,
+            "descriptive_t95": [
+              -1.696087552981437,
+              8.494489881290315
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              6.599411902969898,
+              6.045646150570781,
+              5.8778709331980945,
+              8.018972474720146,
+              1.1984302880017816
+            ],
+            "mean": 5.5480663498921405,
+            "sample_sd": 2.5732467401028125,
+            "descriptive_t95": [
+              2.352958514211274,
+              8.743174185573007
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 5,
+          "rows": [
+            {
+              "run_id": "npu_resnet50_b4_paired_run101",
+              "run_index": 101,
+              "mask": 5,
+              "raw_gain_percent": 4.381751824817522,
+              "accepted_gain_percent": 4.381751824817522,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.5612805000000005,
+              "oracle_regret_percentage_points": 6.599411902969898
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run102",
+              "run_index": 102,
+              "mask": 5,
+              "raw_gain_percent": 0.06934485293190976,
+              "accepted_gain_percent": 0.06934485293190976,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.007372000000000156,
+              "oracle_regret_percentage_points": 6.045646150570781
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run103",
+              "run_index": 103,
+              "mask": 5,
+              "raw_gain_percent": 2.0538060117397503,
+              "accepted_gain_percent": 2.0538060117397503,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.2837599999999991,
+              "oracle_regret_percentage_points": 5.8778709331980945
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run104",
+              "run_index": 104,
+              "mask": 5,
+              "raw_gain_percent": 10.076523431411887,
+              "accepted_gain_percent": 10.076523431411887,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 1.615351500000001,
+              "oracle_regret_percentage_points": 8.018972474720146
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run105",
+              "run_index": 105,
+              "mask": 5,
+              "raw_gain_percent": 0.41457969987112653,
+              "accepted_gain_percent": 0.41457969987112653,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.04415449999999943,
+              "oracle_regret_percentage_points": 1.1984302880017816
+            }
+          ]
+        },
+        "cross_plain_sum": {
+          "frozen_mask": 5,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.381751824817522,
+              0.06934485293190976,
+              2.0538060117397503,
+              10.076523431411887,
+              0.41457969987112653
+            ],
+            "mean": 3.399201164154439,
+            "sample_sd": 4.103597047596527,
+            "descriptive_t95": [
+              -1.696087552981437,
+              8.494489881290315
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.381751824817522,
+              0.06934485293190976,
+              2.0538060117397503,
+              10.076523431411887,
+              0.41457969987112653
+            ],
+            "mean": 3.399201164154439,
+            "sample_sd": 4.103597047596527,
+            "descriptive_t95": [
+              -1.696087552981437,
+              8.494489881290315
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              6.599411902969898,
+              6.045646150570781,
+              5.8778709331980945,
+              8.018972474720146,
+              1.1984302880017816
+            ],
+            "mean": 5.5480663498921405,
+            "sample_sd": 2.5732467401028125,
+            "descriptive_t95": [
+              2.352958514211274,
+              8.743174185573007
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 5,
+          "rows": [
+            {
+              "run_id": "npu_resnet50_b4_paired_run101",
+              "run_index": 101,
+              "mask": 5,
+              "raw_gain_percent": 4.381751824817522,
+              "accepted_gain_percent": 4.381751824817522,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.5612805000000005,
+              "oracle_regret_percentage_points": 6.599411902969898
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run102",
+              "run_index": 102,
+              "mask": 5,
+              "raw_gain_percent": 0.06934485293190976,
+              "accepted_gain_percent": 0.06934485293190976,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.007372000000000156,
+              "oracle_regret_percentage_points": 6.045646150570781
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run103",
+              "run_index": 103,
+              "mask": 5,
+              "raw_gain_percent": 2.0538060117397503,
+              "accepted_gain_percent": 2.0538060117397503,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.2837599999999991,
+              "oracle_regret_percentage_points": 5.8778709331980945
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run104",
+              "run_index": 104,
+              "mask": 5,
+              "raw_gain_percent": 10.076523431411887,
+              "accepted_gain_percent": 10.076523431411887,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 1.615351500000001,
+              "oracle_regret_percentage_points": 8.018972474720146
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run105",
+              "run_index": 105,
+              "mask": 5,
+              "raw_gain_percent": 0.41457969987112653,
+              "accepted_gain_percent": 0.41457969987112653,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.04415449999999943,
+              "oracle_regret_percentage_points": 1.1984302880017816
+            }
+          ]
+        },
+        "target_headroom": {
+          "frozen_mask": 5,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.381751824817522,
+              0.06934485293190976,
+              2.0538060117397503,
+              10.076523431411887,
+              0.41457969987112653
+            ],
+            "mean": 3.399201164154439,
+            "sample_sd": 4.103597047596527,
+            "descriptive_t95": [
+              -1.696087552981437,
+              8.494489881290315
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.381751824817522,
+              0.06934485293190976,
+              2.0538060117397503,
+              10.076523431411887,
+              0.41457969987112653
+            ],
+            "mean": 3.399201164154439,
+            "sample_sd": 4.103597047596527,
+            "descriptive_t95": [
+              -1.696087552981437,
+              8.494489881290315
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              6.599411902969898,
+              6.045646150570781,
+              5.8778709331980945,
+              8.018972474720146,
+              1.1984302880017816
+            ],
+            "mean": 5.5480663498921405,
+            "sample_sd": 2.5732467401028125,
+            "descriptive_t95": [
+              2.352958514211274,
+              8.743174185573007
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 5,
+          "rows": [
+            {
+              "run_id": "npu_resnet50_b4_paired_run101",
+              "run_index": 101,
+              "mask": 5,
+              "raw_gain_percent": 4.381751824817522,
+              "accepted_gain_percent": 4.381751824817522,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.5612805000000005,
+              "oracle_regret_percentage_points": 6.599411902969898
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run102",
+              "run_index": 102,
+              "mask": 5,
+              "raw_gain_percent": 0.06934485293190976,
+              "accepted_gain_percent": 0.06934485293190976,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.007372000000000156,
+              "oracle_regret_percentage_points": 6.045646150570781
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run103",
+              "run_index": 103,
+              "mask": 5,
+              "raw_gain_percent": 2.0538060117397503,
+              "accepted_gain_percent": 2.0538060117397503,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.2837599999999991,
+              "oracle_regret_percentage_points": 5.8778709331980945
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run104",
+              "run_index": 104,
+              "mask": 5,
+              "raw_gain_percent": 10.076523431411887,
+              "accepted_gain_percent": 10.076523431411887,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 1.615351500000001,
+              "oracle_regret_percentage_points": 8.018972474720146
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run105",
+              "run_index": 105,
+              "mask": 5,
+              "raw_gain_percent": 0.41457969987112653,
+              "accepted_gain_percent": 0.41457969987112653,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.04415449999999943,
+              "oracle_regret_percentage_points": 1.1984302880017816
+            }
+          ]
+        },
+        "target_operator_latency": {
+          "frozen_mask": 5,
+          "raw_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.381751824817522,
+              0.06934485293190976,
+              2.0538060117397503,
+              10.076523431411887,
+              0.41457969987112653
+            ],
+            "mean": 3.399201164154439,
+            "sample_sd": 4.103597047596527,
+            "descriptive_t95": [
+              -1.696087552981437,
+              8.494489881290315
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "accepted_gain_percent": {
+            "n_process_blocks": 5,
+            "values": [
+              4.381751824817522,
+              0.06934485293190976,
+              2.0538060117397503,
+              10.076523431411887,
+              0.41457969987112653
+            ],
+            "mean": 3.399201164154439,
+            "sample_sd": 4.103597047596527,
+            "descriptive_t95": [
+              -1.696087552981437,
+              8.494489881290315
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "oracle_regret_pp": {
+            "n_process_blocks": 5,
+            "values": [
+              6.599411902969898,
+              6.045646150570781,
+              5.8778709331980945,
+              8.018972474720146,
+              1.1984302880017816
+            ],
+            "mean": 5.5480663498921405,
+            "sample_sd": 2.5732467401028125,
+            "descriptive_t95": [
+              2.352958514211274,
+              8.743174185573007
+            ],
+            "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+          },
+          "quality_retentions_to_source": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "accepted_count": 5,
+          "rows": [
+            {
+              "run_id": "npu_resnet50_b4_paired_run101",
+              "run_index": 101,
+              "mask": 5,
+              "raw_gain_percent": 4.381751824817522,
+              "accepted_gain_percent": 4.381751824817522,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.5612805000000005,
+              "oracle_regret_percentage_points": 6.599411902969898
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run102",
+              "run_index": 102,
+              "mask": 5,
+              "raw_gain_percent": 0.06934485293190976,
+              "accepted_gain_percent": 0.06934485293190976,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.007372000000000156,
+              "oracle_regret_percentage_points": 6.045646150570781
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run103",
+              "run_index": 103,
+              "mask": 5,
+              "raw_gain_percent": 2.0538060117397503,
+              "accepted_gain_percent": 2.0538060117397503,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.2837599999999991,
+              "oracle_regret_percentage_points": 5.8778709331980945
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run104",
+              "run_index": 104,
+              "mask": 5,
+              "raw_gain_percent": 10.076523431411887,
+              "accepted_gain_percent": 10.076523431411887,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 1.615351500000001,
+              "oracle_regret_percentage_points": 8.018972474720146
+            },
+            {
+              "run_id": "npu_resnet50_b4_paired_run105",
+              "run_index": 105,
+              "mask": 5,
+              "raw_gain_percent": 0.41457969987112653,
+              "accepted_gain_percent": 0.41457969987112653,
+              "accepted": true,
+              "quality_retention_to_source": 1.0,
+              "quality_retention_to_target": 1.0,
+              "raw_delta_ms": 0.04415449999999943,
+              "oracle_regret_percentage_points": 1.1984302880017816
+            }
+          ]
+        }
+      },
+      "mask0_negative_control": {
+        "raw_gain_percent": {
+          "n_process_blocks": 5,
+          "values": [
+            5.4303143620735215,
+            -0.31394052187400134,
+            0.47356282372999975,
+            6.427991781582525,
+            -4.077010551096552
+          ],
+          "mean": 1.5881835788830987,
+          "sample_sd": 4.334183673049375,
+          "descriptive_t95": [
+            -3.793416249544874,
+            6.969783407311072
+          ],
+          "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+        },
+        "raw_delta_ms": {
+          "n_process_blocks": 5,
+          "values": [
+            0.7614525000000008,
+            -0.031058500000000322,
+            0.06581650000000039,
+            0.9931830000000001,
+            -0.44424750000000124
+          ],
+          "mean": 0.26902919999999997,
+          "sample_sd": 0.5930832809000779,
+          "descriptive_t95": [
+            -0.4673809578301983,
+            1.0054393578301983
+          ],
+          "uncertainty_scope": "run-to-run conditional variability on this fixed model/input/sample set; not a dataset/population or hardware-family interval"
+        },
+        "rows": [
+          {
+            "run_id": "npu_resnet50_b4_paired_run101",
+            "mask": 0,
+            "baseline_mean_ms": 14.0222545,
+            "candidate_mean_ms": 13.260802,
+            "raw_gain_percent": 5.4303143620735215,
+            "raw_delta_ms": 0.7614525000000008,
+            "mean_pair_gain_auxiliary_percent": 3.9168942093763848,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 13.478294,
+                "candidate_mean_ms": 12.793294,
+                "ratio_of_means_gain_percent": 5.08224557202863
+              },
+              "BA": {
+                "baseline_mean_ms": 14.566215,
+                "candidate_mean_ms": 13.72831,
+                "ratio_of_means_gain_percent": 5.752386601460978
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet50_b4_paired_run102",
+            "mask": 0,
+            "baseline_mean_ms": 9.893116,
+            "candidate_mean_ms": 9.9241745,
+            "raw_gain_percent": -0.31394052187400134,
+            "raw_delta_ms": -0.031058500000000322,
+            "mean_pair_gain_auxiliary_percent": -0.38555706188861627,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 9.833775,
+                "candidate_mean_ms": 9.875775,
+                "ratio_of_means_gain_percent": -0.427099460786947
+              },
+              "BA": {
+                "baseline_mean_ms": 9.952456999999999,
+                "candidate_mean_ms": 9.972574,
+                "ratio_of_means_gain_percent": -0.20213099137228957
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet50_b4_paired_run103",
+            "mask": 0,
+            "baseline_mean_ms": 13.898156,
+            "candidate_mean_ms": 13.8323395,
+            "raw_gain_percent": 0.47356282372999975,
+            "raw_delta_ms": 0.06581650000000039,
+            "mean_pair_gain_auxiliary_percent": 0.5207643228676052,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 13.61371,
+                "candidate_mean_ms": 13.53675,
+                "ratio_of_means_gain_percent": 0.5653124680928248
+              },
+              "BA": {
+                "baseline_mean_ms": 14.182602,
+                "candidate_mean_ms": 14.127929,
+                "ratio_of_means_gain_percent": 0.3854934376639724
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet50_b4_paired_run104",
+            "mask": 0,
+            "baseline_mean_ms": 15.4509065,
+            "candidate_mean_ms": 14.4577235,
+            "raw_gain_percent": 6.427991781582525,
+            "raw_delta_ms": 0.9931830000000001,
+            "mean_pair_gain_auxiliary_percent": -5.177890111261993,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 13.542466000000001,
+                "candidate_mean_ms": 14.375924,
+                "ratio_of_means_gain_percent": -6.154403488995272
+              },
+              "BA": {
+                "baseline_mean_ms": 17.359347,
+                "candidate_mean_ms": 14.539522999999999,
+                "ratio_of_means_gain_percent": 16.243836821742203
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          },
+          {
+            "run_id": "npu_resnet50_b4_paired_run105",
+            "mask": 0,
+            "baseline_mean_ms": 10.896403,
+            "candidate_mean_ms": 11.3406505,
+            "raw_gain_percent": -4.077010551096552,
+            "raw_delta_ms": -0.44424750000000124,
+            "mean_pair_gain_auxiliary_percent": -3.779405388906324,
+            "quality_baseline": 0.69,
+            "quality_candidate": 0.69,
+            "local_retention": 1.0,
+            "candidate_feasible": true,
+            "order_breakdown": {
+              "AB": {
+                "baseline_mean_ms": 10.873311000000001,
+                "candidate_mean_ms": 11.329617,
+                "ratio_of_means_gain_percent": -4.196569011959647
+              },
+              "BA": {
+                "baseline_mean_ms": 10.919495,
+                "candidate_mean_ms": 11.351684,
+                "ratio_of_means_gain_percent": -3.9579577626987428
+              }
+            },
+            "source_retention": 1.0,
+            "migration_quality_feasible": true
+          }
+        ]
+      },
+      "ppo_configuration_summary": {},
+      "planner_provenance": [],
+      "posthoc_paired_normalized_oracle": [
+        {
+          "run_id": "npu_resnet50_b4_paired_run101",
+          "oracle_mask": 1,
+          "best_baseline_normalized_gain_percent": 10.98116372778742,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet50_b4_paired_run102",
+          "oracle_mask": 10,
+          "best_baseline_normalized_gain_percent": 6.114991003502691,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet50_b4_paired_run103",
+          "oracle_mask": 10,
+          "best_baseline_normalized_gain_percent": 7.931676944937845,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet50_b4_paired_run104",
+          "oracle_mask": 2,
+          "best_baseline_normalized_gain_percent": 18.095495906132033,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        },
+        {
+          "run_id": "npu_resnet50_b4_paired_run105",
+          "oracle_mask": 6,
+          "best_baseline_normalized_gain_percent": 1.613009987872908,
+          "scope": "posthoc feasible paired-normalized target-action oracle; not used in selection"
+        }
+      ],
+      "random_expected_controls": [
+        {
+          "run_id": "npu_resnet50_b4_paired_run101",
+          "uniform_at_most_k_raw_gain_percent": 0.6279176302291682,
+          "uniform_at_most_k_accepted_gain_percent": 2.8962546916320533,
+          "uniform_exact_k_raw_gain_percent": -0.6315556118237361,
+          "uniform_exact_k_accepted_gain_percent": 2.6780643838462486
+        },
+        {
+          "run_id": "npu_resnet50_b4_paired_run102",
+          "uniform_at_most_k_raw_gain_percent": 0.5693473460960372,
+          "uniform_at_most_k_accepted_gain_percent": 1.6979979760298742,
+          "uniform_exact_k_raw_gain_percent": 2.750317793518197,
+          "uniform_exact_k_accepted_gain_percent": 2.8349029991599406
+        },
+        {
+          "run_id": "npu_resnet50_b4_paired_run103",
+          "uniform_at_most_k_raw_gain_percent": 1.0722396980021636,
+          "uniform_at_most_k_accepted_gain_percent": 2.2740417052672592,
+          "uniform_exact_k_raw_gain_percent": 1.3698834051682791,
+          "uniform_exact_k_accepted_gain_percent": 2.7812110804551406
+        },
+        {
+          "run_id": "npu_resnet50_b4_paired_run104",
+          "uniform_at_most_k_raw_gain_percent": 8.17305500509276,
+          "uniform_at_most_k_accepted_gain_percent": 8.8390214296138,
+          "uniform_exact_k_raw_gain_percent": 7.033714071077602,
+          "uniform_exact_k_accepted_gain_percent": 8.254652516032841
+        },
+        {
+          "run_id": "npu_resnet50_b4_paired_run105",
+          "uniform_at_most_k_raw_gain_percent": -0.1284902429049987,
+          "uniform_at_most_k_accepted_gain_percent": 0.6595231438354346,
+          "uniform_exact_k_raw_gain_percent": -0.5172308277118193,
+          "uniform_exact_k_accepted_gain_percent": 0.6999296171154931
+        }
+      ],
+      "source_quality_reference": {
+        "quality": 0.69,
+        "sample_count": 100,
+        "run_ids": [
+          "cuda_resnet50_b4_imagenet_val10class_v2_run4",
+          "cuda_resnet50_b4_imagenet_val10class_v2_run5",
+          "cuda_resnet50_b4_imagenet_val10class_v2_run6",
+          "cuda_resnet50_b4_imagenet_val10class_v2_run7",
+          "cuda_resnet50_b4_imagenet_val10class_v2_run8"
+        ],
+        "scope": "same fixed evaluation sample IDs, labels and deterministic source predictions verified across old source runs; not new source timings"
+      },
+      "interpretation": "Independent confirmation of original calibration-selected plans; all negative gains, AB/BA noise and original results retained. Five process blocks are uncertainty units."
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b1-r101.json",
+      "sha256": "b3dd1e7fc2d12d422064eee8393bcd77b6c9b010417da281d5b11465af9b5f48"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b1-r102.json",
+      "sha256": "e7ed9d4cc83fbc1b4fa2c05a9a826e033599e775a254f3d12f57ecbff0f968e3"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b1-r103.json",
+      "sha256": "cb908c8354355d2999aebd6fbd09a8775f749cca42d128902b43e96f687e36c3"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b1-r104.json",
+      "sha256": "a79e530e4b319645a5a08a21a016e3448e06e0a9d80731392177ea34ded2339a"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b1-r105.json",
+      "sha256": "562737a0772c5e2f5cc29f7c59e4586df54b0a6a4ef9f124d46f1f7e56b03fac"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b4-r101.json",
+      "sha256": "c49220ed6ed83369ca021fa691505e518a95af4317f78e494b2d30ce6e008f7a"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b4-r102.json",
+      "sha256": "eee4e690e3f81ec2b7a865e3841cc0d2746fc473daedd469628721676437c4f3"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b4-r103.json",
+      "sha256": "b656e135e06a44fe955ce006e09f3443cda91573ec951167122ca2ba4f95ab5f"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b4-r104.json",
+      "sha256": "aa478ba0ea4aa680d77b4f20c46ec0080420ed81784eae27f2619a88a71b8a0a"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet18-b4-r105.json",
+      "sha256": "615e1633771beb612d45bd027a5e63d98f5b8c2072f9e9d22704ff318a4d95dc"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b1-r101.json",
+      "sha256": "9b06b959183d46bd6436e9491fca9f72d4c7fea636dc4daec937914621a759bb"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b1-r102.json",
+      "sha256": "db548255df20a2de077bf0bbcd91c6e959a5bf339442e45b851067db9a501770"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b1-r103.json",
+      "sha256": "c937ac8783f86e54b7bef21de932b405e7bd7d6203bb483f9d7dad203d78cb95"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b1-r104.json",
+      "sha256": "cf109ee3786d760c2509d91e52c7122f12fd1cc7f6e169ab2281497c05fd6224"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b1-r105.json",
+      "sha256": "24d74c4e951e2fe82eccc86599c45344fa0e373371d6f027738a7637c09c6938"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b4-r101.json",
+      "sha256": "523f69368a35e1fda9438100c60ba16e5109542d785a586cd755aa1ec7743ce5"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b4-r102.json",
+      "sha256": "92b0a6edf1c16f578281f306e8c1ed50035104c6dbf0072e97c3e4538a1e5e20"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b4-r103.json",
+      "sha256": "1942509c5539077ac021935679622ad6df833616b7a23d66c042ad52424e18d1"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b4-r104.json",
+      "sha256": "780ec612c896d67dc45f9a6ab7dddee9e5f1ba654f502615d2443be49110f8ab"
+    },
+    {
+      "path": "../evidence/paired_raw/npu-resnet50-b4-r105.json",
+      "sha256": "8c9947d8c5e08833caef80e5b798af6ae6a105e31663ee85c712172bd4cd8cf2"
+    }
+  ],
+  "traces": [
+    {
+      "path": "bridge-early-results/results/a100-to-910b-resnet18-b1.json",
+      "sha256": "92fb19388b5fdbc73873b1544c9453041c47eacef2e10392b9c2613ba0c92ae0"
+    },
+    {
+      "path": "bridge-early-results/results/a100-to-910b-resnet18-b4.json",
+      "sha256": "b9b0e2da73cb80d90220dcb5ce09882ec8472f2784e79eb6976eb11683f19604"
+    },
+    {
+      "path": "bridge-resnet50-results/a100-to-910b-resnet50-b1-light.json",
+      "sha256": "bdb94040342a0ffb2c9e6bf534bb01b990565426a35c1a0f4a851cf7df960cab"
+    },
+    {
+      "path": "bridge-resnet50-results/a100-to-910b-resnet50-b4-light.json",
+      "sha256": "29098ae709f4254c15cdb78adfe8e5e5b184fe810375049a6e4813887f6ea55f"
+    }
+  ],
+  "analyzer_sha256": "87eac0b12650dd6c6e905caa94a704e63a51c3fbbdbe77e9442fafa18eee07fb"
+}

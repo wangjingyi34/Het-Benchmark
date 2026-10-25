@@ -1,0 +1,39 @@
+{"graph": "resnet18:s0", "backend": "cuda", "operators": 69, "measured": 69, "failed": 0, "model_mean_ms": 1.84841675}
+{"graph": "resnet18:s1", "backend": "cuda", "operators": 69, "measured": 69, "failed": 0, "model_mean_ms": 2.20665425}
+{"graph": "resnet18:s2", "backend": "cuda", "operators": 69, "measured": 69, "failed": 0, "model_mean_ms": 3.42467095}
+{"graph": "resnet50:s0", "backend": "cuda", "operators": 175, "measured": 175, "failed": 0, "model_mean_ms": 4.25955265}
+{"graph": "resnet50:s1", "backend": "cuda", "operators": 175, "measured": 175, "failed": 0, "model_mean_ms": 4.81638205}
+{"graph": "resnet50:s2", "backend": "cuda", "operators": 175, "measured": 175, "failed": 0, "model_mean_ms": 7.73328495}
+{"graph": "mobilenet_v2:s0", "backend": "cuda", "operators": 153, "measured": 153, "failed": 0, "model_mean_ms": 3.3726153}
+{"graph": "mobilenet_v2:s1", "backend": "cuda", "operators": 153, "measured": 153, "failed": 0, "model_mean_ms": 3.48844885}
+{"graph": "mobilenet_v2:s2", "backend": "cuda", "operators": 153, "measured": 153, "failed": 0, "model_mean_ms": 3.4738556}
+{"graph": "densenet121:s0", "backend": "cuda", "operators": 83, "measured": 83, "failed": 0, "model_mean_ms": 8.4047694}
+{"graph": "densenet121:s1", "backend": "cuda", "operators": 83, "measured": 83, "failed": 0, "model_mean_ms": 8.67446755}
+{"graph": "densenet121:s2", "backend": "cuda", "operators": 83, "measured": 83, "failed": 0, "model_mean_ms": 8.5320331}
+{"graph": "efficientnet_b0:s0", "backend": "cuda", "operators": 249, "measured": 249, "failed": 0, "model_mean_ms": 5.9611256}
+{"graph": "efficientnet_b0:s1", "backend": "cuda", "operators": 249, "measured": 249, "failed": 0, "model_mean_ms": 6.0025576}
+{"graph": "efficientnet_b0:s2", "backend": "cuda", "operators": 249, "measured": 249, "failed": 0, "model_mean_ms": 5.5506248000000005}
+{"graph": "squeezenet1_1:s0", "backend": "cuda", "operators": 66, "measured": 66, "failed": 0, "model_mean_ms": 1.2504610999999999}
+{"graph": "squeezenet1_1:s1", "backend": "cuda", "operators": 66, "measured": 66, "failed": 0, "model_mean_ms": 1.300027}
+{"graph": "squeezenet1_1:s2", "backend": "cuda", "operators": 66, "measured": 66, "failed": 0, "model_mean_ms": 1.3656123}
+{"graph": "text_encoder_ref:s0", "backend": "cuda", "operators": 45, "measured": 45, "failed": 0, "model_mean_ms": 0.52846755}
+{"graph": "text_encoder_ref:s1", "backend": "cuda", "operators": 45, "measured": 45, "failed": 0, "model_mean_ms": 0.5385669}
+{"graph": "text_encoder_ref:s2", "backend": "cuda", "operators": 45, "measured": 45, "failed": 0, "model_mean_ms": 0.5464835}
+{"graph": "text_cnn_ref:s0", "backend": "cuda", "operators": 12, "measured": 12, "failed": 0, "model_mean_ms": 0.2333833}
+{"graph": "text_cnn_ref:s1", "backend": "cuda", "operators": 12, "measured": 12, "failed": 0, "model_mean_ms": 0.2374388}
+{"graph": "text_cnn_ref:s2", "backend": "cuda", "operators": 12, "measured": 12, "failed": 0, "model_mean_ms": 0.23517675}
+{"graph": "audio_conv_ref:s0", "backend": "cuda", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.19441440000000001}
+{"graph": "audio_conv_ref:s1", "backend": "cuda", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.1936471}
+{"graph": "audio_conv_ref:s2", "backend": "cuda", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.19209775}
+{"graph": "audio_dilated_ref:s0", "backend": "cuda", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.19258075}
+{"graph": "audio_dilated_ref:s1", "backend": "cuda", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.1908817}
+{"graph": "audio_dilated_ref:s2", "backend": "cuda", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.19254145}
+{"graph": "causal_lm_ref:s0", "backend": "cuda", "operators": 44, "measured": 44, "failed": 0, "model_mean_ms": 0.51843565}
+{"graph": "causal_lm_ref:s1", "backend": "cuda", "operators": 44, "measured": 44, "failed": 0, "model_mean_ms": 0.5245448}
+{"graph": "causal_lm_ref:s2", "backend": "cuda", "operators": 44, "measured": 44, "failed": 0, "model_mean_ms": 0.52927055}
+{"graph": "dual_encoder_ref:s0", "backend": "cuda", "operators": 11, "measured": 11, "failed": 0, "model_mean_ms": 0.2291329}
+{"graph": "dual_encoder_ref:s1", "backend": "cuda", "operators": 11, "measured": 11, "failed": 0, "model_mean_ms": 0.22604415}
+{"graph": "dual_encoder_ref:s2", "backend": "cuda", "operators": 11, "measured": 11, "failed": 0, "model_mean_ms": 0.2289228}
+{"complete": true, "graphs": 36, "failed_graphs": 0, "output": "/work/evidence/a100mig.json", "code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26"}
+
+

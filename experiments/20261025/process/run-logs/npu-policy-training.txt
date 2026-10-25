@@ -1,0 +1,4 @@
+{"mode": "probe", "split": "model-fold0", "method": "rgat", "MRE": 43.18217342046926, "seconds": 4.886754864826798}
+{"complete": true, "results": 1, "predictions": 14640, "embedding_rows": 2616}
+
+

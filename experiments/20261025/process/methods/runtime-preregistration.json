@@ -1,0 +1,30 @@
+{
+  "registered_utc": "2026-10-25T05:08:09.806739+00:00",
+  "protocol": "new v2 runtime residual confirmation",
+  "input_data_seen_at_registration": false,
+  "actions": 4,
+  "fit": "training blocks only; coalition cardinality<=2",
+  "fit_coalitions": 11,
+  "within_train_unfit_high_order_coalitions": 5,
+  "evaluation": "all eval block 16 physicalcoalitions, none used for fitting",
+  "runtime_model": "second-order Boolean/Mobius residual, fixed closed-form order2; no hyperparameter tuning",
+  "ablations": [
+    "DAG quadratic runtime",
+    "DAG constant runtime (mean of same11 residuals)",
+    "DAG no runtime (same measurements offered, unused)",
+    "SUM quadratic runtime (same11 fit rows)"
+  ],
+  "nonpositive_prediction_policy": "retain raw value, count invalid, no clipping and no valid Shapley claim for invalid proxy",
+  "separate_metrics": [
+    "same-surrogate antithetic sampling error vs exact",
+    "frozen surrogate attribution error vs eval physical exact",
+    "heldout plan utility with common quality/no-regression gate"
+  ],
+  "source_sha256": {
+    "test_methods.py": "79ee2c301862a13e4e28e25351eb436da184c40f39cdd28ef650106ffe8bfa25",
+    "copa_v2.py": "421c94039b90c6cca76e7ba7ef53153f832e23fbb36607ee7c4a68f5f3c93d52",
+    "analyze_measured.py": "3104418e97fcbd022cae851a5047a8e6d8247b32748b6dd0a6143aa9c27f0917",
+    "runtime_calibration.py": "0193d36362b6fc30910870dbc751b047aff6a5798be4f4353073581744df45d8",
+    "measured_planner.py": "27c31d0065e71826502f2fdd38d8d01829196931c95c942cd3f905b91f04294a"
+  }
+}

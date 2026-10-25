@@ -1,0 +1,20 @@
+{
+  "kind": "synthetic_logic_unit_tests_only",
+  "physical_observations": 0,
+  "checks": {
+    "pure_mre_arithmetic": true,
+    "fresh_hybrid_does_not_zero_measurement_noise": true,
+    "oracle_replay_separate": true,
+    "unmeasured_selective_mre": true,
+    "timed_blocks_cost": true,
+    "failed_measurement_retains_prediction": true,
+    "record_support_mismatch_rejected": true,
+    "prediction_rejected": true,
+    "uncertainty_rejected": true,
+    "threshold_rejected": true,
+    "duplicate_failed_rejected": true
+  },
+  "passed": true,
+  "test_code_sha256": "85998e61db0a4fd2d225eed65fca79c636c94ca0766fb4c33c6a554e9b11411d",
+  "postprocessor_code_sha256": "159ecda18cd4644651f6fb3c1381b14d5739ab347a7f2df0a876b25b0a730770"
+}

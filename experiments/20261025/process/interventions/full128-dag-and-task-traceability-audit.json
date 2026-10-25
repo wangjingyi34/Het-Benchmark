@@ -1,0 +1,356 @@
+{
+  "kind": "independent_full128_DAG_source_and_assembled_task_traceability_audit",
+  "all_checks_passed": true,
+  "physical_block_count": 128,
+  "distinct_contexts": 16,
+  "blocks_per_backend": {
+    "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb": 32,
+    "npu_Ascend910B3": 32,
+    "mps_Apple_MPS_on_arm64": 32,
+    "cpu_CPU_arm_arm64": 32
+  },
+  "source_sha256": "04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb",
+  "all_blocks_use_exact_frozen_source": true,
+  "DAGs": {
+    "resnet18": {
+      "nodes": 71,
+      "edges": 78,
+      "residual_add_nodes": 8,
+      "each_residual_has_two_distinct_inputs": true
+    },
+    "resnet50": {
+      "nodes": 177,
+      "edges": 192,
+      "residual_add_nodes": 16,
+      "each_residual_has_two_distinct_inputs": true
+    }
+  },
+  "graph_topology_identical_per_model_shape_across_devices_and_runs": true,
+  "functional_target_memory_addresses_ignored_for_topology_identity": true,
+  "calibration_node_profile_statuses": {
+    "structural_zero_cost": 96,
+    "ok": 5856
+  },
+  "heldout_blocks_have_no_training_node_profiles": true,
+  "weights_identical_across_all_four_backends_per_model": {
+    "resnet18": [
+      "b6e132d398763cadd5e66a4e994f5a5eb6cf7bd415eb7e8fae476475f749ffe2"
+    ],
+    "resnet50": [
+      "d8c94fea414bccf0b6902ebe2e9927e0694b9504924ff957a43f3c27b3ab39cd"
+    ]
+  },
+  "final_task_index_sha256": "e276bd724461818e938728bec01598402bc03779e54332642a664e1b82ce29a7",
+  "assembled_all_128_raw_blocks_covered_exactly_once": true,
+  "assembled_task_count": 16,
+  "assembled_blocks_have_exact_raw_coalitions_and_hashes": true,
+  "assembled_action_and_DAG_metadata_use_only_three_calibration_runs": true,
+  "arithmetic_quality_partition_audit": "full128-final-independent-audit.json",
+  "tasks": [
+    {
+      "task": "resnet18_b1_imagenet_val10class_v2",
+      "device": "cpu_CPU_arm_arm64",
+      "artifact_sha256": "7db7b8e0dd884e877d53956f8454d5b5b65be4b079e77a25db5d09df395e524d",
+      "train": [
+        "cpu_resnet18_b1_imagenet_val10class_v2_run1",
+        "cpu_resnet18_b1_imagenet_val10class_v2_run2",
+        "cpu_resnet18_b1_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "cpu_resnet18_b1_imagenet_val10class_v2_run4",
+        "cpu_resnet18_b1_imagenet_val10class_v2_run5",
+        "cpu_resnet18_b1_imagenet_val10class_v2_run6",
+        "cpu_resnet18_b1_imagenet_val10class_v2_run7",
+        "cpu_resnet18_b1_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet18_b4_imagenet_val10class_v2",
+      "device": "cpu_CPU_arm_arm64",
+      "artifact_sha256": "49d4387a04765730a14b83bafb6a579f3a2d1ceb69c42c7822d03ed6cbe352b5",
+      "train": [
+        "cpu_resnet18_b4_imagenet_val10class_v2_run1",
+        "cpu_resnet18_b4_imagenet_val10class_v2_run2",
+        "cpu_resnet18_b4_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "cpu_resnet18_b4_imagenet_val10class_v2_run4",
+        "cpu_resnet18_b4_imagenet_val10class_v2_run5",
+        "cpu_resnet18_b4_imagenet_val10class_v2_run6",
+        "cpu_resnet18_b4_imagenet_val10class_v2_run7",
+        "cpu_resnet18_b4_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet50_b1_imagenet_val10class_v2",
+      "device": "cpu_CPU_arm_arm64",
+      "artifact_sha256": "fa36cfdc29a6d2b74334ba99fc22425df1661aff8ad93dbfe8c96a8e5144010e",
+      "train": [
+        "cpu_resnet50_b1_imagenet_val10class_v2_run1",
+        "cpu_resnet50_b1_imagenet_val10class_v2_run2",
+        "cpu_resnet50_b1_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "cpu_resnet50_b1_imagenet_val10class_v2_run4",
+        "cpu_resnet50_b1_imagenet_val10class_v2_run5",
+        "cpu_resnet50_b1_imagenet_val10class_v2_run6",
+        "cpu_resnet50_b1_imagenet_val10class_v2_run7",
+        "cpu_resnet50_b1_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet50_b4_imagenet_val10class_v2",
+      "device": "cpu_CPU_arm_arm64",
+      "artifact_sha256": "1a86c66f6e718fc6208adb9413ac7f3fd8e83cc47cc6b026a6c3b6856b6c86f5",
+      "train": [
+        "cpu_resnet50_b4_imagenet_val10class_v2_run1",
+        "cpu_resnet50_b4_imagenet_val10class_v2_run2",
+        "cpu_resnet50_b4_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "cpu_resnet50_b4_imagenet_val10class_v2_run4",
+        "cpu_resnet50_b4_imagenet_val10class_v2_run5",
+        "cpu_resnet50_b4_imagenet_val10class_v2_run6",
+        "cpu_resnet50_b4_imagenet_val10class_v2_run7",
+        "cpu_resnet50_b4_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet18_b1_imagenet_val10class_v2",
+      "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "artifact_sha256": "c54f7b3439b3d7d101e39ed2847bc17f31729aad6b7482775a12e286537956ea",
+      "train": [
+        "cuda_resnet18_b1_imagenet_val10class_v2_run1",
+        "cuda_resnet18_b1_imagenet_val10class_v2_run2",
+        "cuda_resnet18_b1_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "cuda_resnet18_b1_imagenet_val10class_v2_run4",
+        "cuda_resnet18_b1_imagenet_val10class_v2_run5",
+        "cuda_resnet18_b1_imagenet_val10class_v2_run6",
+        "cuda_resnet18_b1_imagenet_val10class_v2_run7",
+        "cuda_resnet18_b1_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet18_b4_imagenet_val10class_v2",
+      "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "artifact_sha256": "310de580656fe7c8cdbec9e2e201757d6839e6c62bb57885a5693055c0c84a72",
+      "train": [
+        "cuda_resnet18_b4_imagenet_val10class_v2_run1",
+        "cuda_resnet18_b4_imagenet_val10class_v2_run2",
+        "cuda_resnet18_b4_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "cuda_resnet18_b4_imagenet_val10class_v2_run4",
+        "cuda_resnet18_b4_imagenet_val10class_v2_run5",
+        "cuda_resnet18_b4_imagenet_val10class_v2_run6",
+        "cuda_resnet18_b4_imagenet_val10class_v2_run7",
+        "cuda_resnet18_b4_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet50_b1_imagenet_val10class_v2",
+      "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "artifact_sha256": "ab140a8b94be2b7f947995bb273aedfbb7871991d332a0063b81df6dadfedcf1",
+      "train": [
+        "cuda_resnet50_b1_imagenet_val10class_v2_run1",
+        "cuda_resnet50_b1_imagenet_val10class_v2_run2",
+        "cuda_resnet50_b1_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "cuda_resnet50_b1_imagenet_val10class_v2_run4",
+        "cuda_resnet50_b1_imagenet_val10class_v2_run5",
+        "cuda_resnet50_b1_imagenet_val10class_v2_run6",
+        "cuda_resnet50_b1_imagenet_val10class_v2_run7",
+        "cuda_resnet50_b1_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet50_b4_imagenet_val10class_v2",
+      "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+      "artifact_sha256": "073188a309ce9c15eda35b6e0460eb982078da1761e6c5420e369a0f5ffe09a2",
+      "train": [
+        "cuda_resnet50_b4_imagenet_val10class_v2_run1",
+        "cuda_resnet50_b4_imagenet_val10class_v2_run2",
+        "cuda_resnet50_b4_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "cuda_resnet50_b4_imagenet_val10class_v2_run4",
+        "cuda_resnet50_b4_imagenet_val10class_v2_run5",
+        "cuda_resnet50_b4_imagenet_val10class_v2_run6",
+        "cuda_resnet50_b4_imagenet_val10class_v2_run7",
+        "cuda_resnet50_b4_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet18_b1_imagenet_val10class_v2",
+      "device": "mps_Apple_MPS_on_arm64",
+      "artifact_sha256": "eb0d386f986f42b3e9ae96f930e7617c0975188b188fb5a37a6ddd959af4b02a",
+      "train": [
+        "mps_resnet18_b1_imagenet_val10class_v2_run1",
+        "mps_resnet18_b1_imagenet_val10class_v2_run2",
+        "mps_resnet18_b1_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "mps_resnet18_b1_imagenet_val10class_v2_run4",
+        "mps_resnet18_b1_imagenet_val10class_v2_run5",
+        "mps_resnet18_b1_imagenet_val10class_v2_run6",
+        "mps_resnet18_b1_imagenet_val10class_v2_run7",
+        "mps_resnet18_b1_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet18_b4_imagenet_val10class_v2",
+      "device": "mps_Apple_MPS_on_arm64",
+      "artifact_sha256": "b13d16fde9ffa14892c8aa29c51a9e2fa2316fd9c31c812555b16be57050c0fa",
+      "train": [
+        "mps_resnet18_b4_imagenet_val10class_v2_run1",
+        "mps_resnet18_b4_imagenet_val10class_v2_run2",
+        "mps_resnet18_b4_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "mps_resnet18_b4_imagenet_val10class_v2_run4",
+        "mps_resnet18_b4_imagenet_val10class_v2_run5",
+        "mps_resnet18_b4_imagenet_val10class_v2_run6",
+        "mps_resnet18_b4_imagenet_val10class_v2_run7",
+        "mps_resnet18_b4_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet50_b1_imagenet_val10class_v2",
+      "device": "mps_Apple_MPS_on_arm64",
+      "artifact_sha256": "196b2c907c510e38879894099ac6ea5a38eded0403c6cff0b692d99c856702c1",
+      "train": [
+        "mps_resnet50_b1_imagenet_val10class_v2_run1",
+        "mps_resnet50_b1_imagenet_val10class_v2_run2",
+        "mps_resnet50_b1_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "mps_resnet50_b1_imagenet_val10class_v2_run4",
+        "mps_resnet50_b1_imagenet_val10class_v2_run5",
+        "mps_resnet50_b1_imagenet_val10class_v2_run6",
+        "mps_resnet50_b1_imagenet_val10class_v2_run7",
+        "mps_resnet50_b1_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet50_b4_imagenet_val10class_v2",
+      "device": "mps_Apple_MPS_on_arm64",
+      "artifact_sha256": "95eea73541b8dd8b59146b3f3f5058141ec5b56a5ced14a25fb01a14ca671155",
+      "train": [
+        "mps_resnet50_b4_imagenet_val10class_v2_run1",
+        "mps_resnet50_b4_imagenet_val10class_v2_run2",
+        "mps_resnet50_b4_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "mps_resnet50_b4_imagenet_val10class_v2_run4",
+        "mps_resnet50_b4_imagenet_val10class_v2_run5",
+        "mps_resnet50_b4_imagenet_val10class_v2_run6",
+        "mps_resnet50_b4_imagenet_val10class_v2_run7",
+        "mps_resnet50_b4_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet18_b1_imagenet_val10class_v2",
+      "device": "npu_Ascend910B3",
+      "artifact_sha256": "6a507d6f0039056b388cd153cd3d613cdb2f7c193a5870a6982c044833efb9e9",
+      "train": [
+        "npu_resnet18_b1_imagenet_val10class_v2_run1",
+        "npu_resnet18_b1_imagenet_val10class_v2_run2",
+        "npu_resnet18_b1_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "npu_resnet18_b1_imagenet_val10class_v2_run4",
+        "npu_resnet18_b1_imagenet_val10class_v2_run5",
+        "npu_resnet18_b1_imagenet_val10class_v2_run6",
+        "npu_resnet18_b1_imagenet_val10class_v2_run7",
+        "npu_resnet18_b1_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet18_b4_imagenet_val10class_v2",
+      "device": "npu_Ascend910B3",
+      "artifact_sha256": "ff2cd06ad7bb9248a2665683488cd26ebafaca7f411736b804e759454498b64a",
+      "train": [
+        "npu_resnet18_b4_imagenet_val10class_v2_run1",
+        "npu_resnet18_b4_imagenet_val10class_v2_run2",
+        "npu_resnet18_b4_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "npu_resnet18_b4_imagenet_val10class_v2_run4",
+        "npu_resnet18_b4_imagenet_val10class_v2_run5",
+        "npu_resnet18_b4_imagenet_val10class_v2_run6",
+        "npu_resnet18_b4_imagenet_val10class_v2_run7",
+        "npu_resnet18_b4_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet50_b1_imagenet_val10class_v2",
+      "device": "npu_Ascend910B3",
+      "artifact_sha256": "7e8b3e0cf5ba1bcda434dd3ede38956a83f494d60582daa48b7304d4a6e1ab9f",
+      "train": [
+        "npu_resnet50_b1_imagenet_val10class_v2_run1",
+        "npu_resnet50_b1_imagenet_val10class_v2_run2",
+        "npu_resnet50_b1_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "npu_resnet50_b1_imagenet_val10class_v2_run4",
+        "npu_resnet50_b1_imagenet_val10class_v2_run5",
+        "npu_resnet50_b1_imagenet_val10class_v2_run6",
+        "npu_resnet50_b1_imagenet_val10class_v2_run7",
+        "npu_resnet50_b1_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    },
+    {
+      "task": "resnet50_b4_imagenet_val10class_v2",
+      "device": "npu_Ascend910B3",
+      "artifact_sha256": "c9c3d16390a17c872abc21ce870a2b5ac616544364da99bb2348d0ccb56d8b26",
+      "train": [
+        "npu_resnet50_b4_imagenet_val10class_v2_run1",
+        "npu_resnet50_b4_imagenet_val10class_v2_run2",
+        "npu_resnet50_b4_imagenet_val10class_v2_run3"
+      ],
+      "eval": [
+        "npu_resnet50_b4_imagenet_val10class_v2_run4",
+        "npu_resnet50_b4_imagenet_val10class_v2_run5",
+        "npu_resnet50_b4_imagenet_val10class_v2_run6",
+        "npu_resnet50_b4_imagenet_val10class_v2_run7",
+        "npu_resnet50_b4_imagenet_val10class_v2_run8"
+      ],
+      "raw_hashes_and_coalitions_match": true,
+      "metadata_only_train_profiles": true
+    }
+  ],
+  "limitations": "Saved-record consistency and traceability checks do not reconstruct logits from hashes or independently authenticate a device. Original execution/launcher receipts remain required. DAG dependency edges do not establish concurrent PyTorch scheduling or guarantee performance gains."
+}

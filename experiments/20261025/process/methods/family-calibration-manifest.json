@@ -1,0 +1,634 @@
+{
+  "kind": "frozen_family14_calibration_manifest",
+  "frozen_utc": "2026-10-25T07:29:25.063509+00:00",
+  "collector_sha256": "cdd236c31f3c223889e68026f400aad5a6413ec6c1173603d92fb05a4d91dce2",
+  "frozen_core_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+  "probe_count": 14,
+  "existing_probe_count": 3,
+  "total_query_type_budget": 17,
+  "warmup": 10,
+  "repeats": 20,
+  "inner_repeats": 8,
+  "untimed_output_check_calls_after_timing": 1,
+  "family_mapping": "one exact family to its same named probe; fixed before new measurements",
+  "failure_rule": "retain failure; only fall back to previously frozen original-three-probe mapping; do not invent ratios or retune k/temperature/gamma",
+  "scope": "auxiliary hardware calibration only, excluded from the 13905 main query labels and from task-quality claims",
+  "probes": [
+    {
+      "probe_id": "family14-Conv2D",
+      "specification": {
+        "family": "Conv2D",
+        "operator": "torch.nn.Conv2d",
+        "shape": [
+          1,
+          8,
+          16,
+          16
+        ],
+        "out_channels": 8,
+        "kernel": 3,
+        "padding": 1
+      },
+      "input_seed": 892000,
+      "weight_seed": 891000,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.conv.Conv2d",
+      "module_repr": "Conv2d(8, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))",
+      "input_shapes": [
+        {
+          "shape": [
+            1,
+            8,
+            16,
+            16
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            2048,
+            256,
+            16,
+            1
+          ],
+          "numel": 2048,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "b015a8e9d3e8e3d00f974aacf1d50981b90621abbec73ee0bba199e5fb3d864b",
+      "input_sha256": "2e1a80d0c5f83e4ef73c26f8ec3bcb5256a11d775556a0de515f27093010d302",
+      "weights_sha256": "00b66eec1756b51f4b53efb3a8dae81963c0ab3b1cc0d99aeac473ab51707ae0"
+    },
+    {
+      "probe_id": "family14-Conv1D",
+      "specification": {
+        "family": "Conv1D",
+        "operator": "torch.nn.Conv1d",
+        "shape": [
+          1,
+          8,
+          64
+        ],
+        "out_channels": 8,
+        "kernel": 3,
+        "padding": 1
+      },
+      "input_seed": 892001,
+      "weight_seed": 891001,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.conv.Conv1d",
+      "module_repr": "Conv1d(8, 8, kernel_size=(3,), stride=(1,), padding=(1,))",
+      "input_shapes": [
+        {
+          "shape": [
+            1,
+            8,
+            64
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            512,
+            64,
+            1
+          ],
+          "numel": 512,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "88427820b3fb05afac855ca34bcd0464d83b11cb373a9527673d548002f15292",
+      "input_sha256": "f534fdc2eb3e91d51adb2f9298678b9f26557afccd6c101c4c5f73d6feaea176",
+      "weights_sha256": "27d16e2e97c803188b4e32632478b10e1b98a794e3d8f6824c5b30a5e506754e"
+    },
+    {
+      "probe_id": "family14-MatMul",
+      "specification": {
+        "family": "MatMul",
+        "operator": "torch.matmul",
+        "shape": [
+          128,
+          128
+        ]
+      },
+      "input_seed": 892002,
+      "weight_seed": 891002,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.linear.Identity",
+      "module_repr": "Identity()",
+      "input_shapes": [
+        {
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            128,
+            1
+          ],
+          "numel": 16384,
+          "element_size": 4
+        },
+        {
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            128,
+            1
+          ],
+          "numel": 16384,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "2e5ac39e7f333afd43e17afefede58a7a077e68e9ebc30a339798b964a2f084f",
+      "input_sha256": "2e5ac39e7f333afd43e17afefede58a7a077e68e9ebc30a339798b964a2f084f",
+      "weights_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "probe_id": "family14-Attention",
+      "specification": {
+        "family": "Attention",
+        "operator": "torch.nn.functional.scaled_dot_product_attention",
+        "shape": [
+          1,
+          4,
+          32,
+          16
+        ],
+        "dropout_p": 0.0,
+        "is_causal": false
+      },
+      "input_seed": 892003,
+      "weight_seed": 891003,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.linear.Identity",
+      "module_repr": "Identity()",
+      "input_shapes": [
+        {
+          "shape": [
+            1,
+            4,
+            32,
+            16
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            2048,
+            512,
+            16,
+            1
+          ],
+          "numel": 2048,
+          "element_size": 4
+        },
+        {
+          "shape": [
+            1,
+            4,
+            32,
+            16
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            2048,
+            512,
+            16,
+            1
+          ],
+          "numel": 2048,
+          "element_size": 4
+        },
+        {
+          "shape": [
+            1,
+            4,
+            32,
+            16
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            2048,
+            512,
+            16,
+            1
+          ],
+          "numel": 2048,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "3af2d87f229adb3b9a286054cfb1853ac95b65e73e5c6f822d872baf9c70e772",
+      "input_sha256": "3af2d87f229adb3b9a286054cfb1853ac95b65e73e5c6f822d872baf9c70e772",
+      "weights_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "probe_id": "family14-Normalization",
+      "specification": {
+        "family": "Normalization",
+        "operator": "torch.nn.LayerNorm",
+        "shape": [
+          4,
+          32
+        ],
+        "normalized_shape": [
+          32
+        ]
+      },
+      "input_seed": 892004,
+      "weight_seed": 891004,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.normalization.LayerNorm",
+      "module_repr": "LayerNorm((32,), eps=1e-05, elementwise_affine=True)",
+      "input_shapes": [
+        {
+          "shape": [
+            4,
+            32
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            32,
+            1
+          ],
+          "numel": 128,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "cb5c925ce7d25d1860d9d0cca9833ed8635b48317d93b555e22dc1c753bdb295",
+      "input_sha256": "36159ae60b8dfdfa7d30801b19c69ef66bc0c9bc6768ca549b4de5f3853f0ab2",
+      "weights_sha256": "2b288a7f13bfebdfa954d114d565d2fbdf47a4c191193cd313232b93085539d4"
+    },
+    {
+      "probe_id": "family14-Activation",
+      "specification": {
+        "family": "Activation",
+        "operator": "torch.nn.GELU",
+        "shape": [
+          32,
+          32
+        ],
+        "approximate": "none"
+      },
+      "input_seed": 892005,
+      "weight_seed": 891005,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.activation.GELU",
+      "module_repr": "GELU(approximate='none')",
+      "input_shapes": [
+        {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            32,
+            1
+          ],
+          "numel": 1024,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "3150c07c5ca2d4669807c6b456814268700bfbc0c88736545814d957b4740c40",
+      "input_sha256": "3150c07c5ca2d4669807c6b456814268700bfbc0c88736545814d957b4740c40",
+      "weights_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "probe_id": "family14-Pooling",
+      "specification": {
+        "family": "Pooling",
+        "operator": "torch.nn.AdaptiveAvgPool2d",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "output_size": [
+          1,
+          1
+        ]
+      },
+      "input_seed": 892006,
+      "weight_seed": 891006,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.pooling.AdaptiveAvgPool2d",
+      "module_repr": "AdaptiveAvgPool2d(output_size=1)",
+      "input_shapes": [
+        {
+          "shape": [
+            1,
+            8,
+            8,
+            8
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            512,
+            64,
+            8,
+            1
+          ],
+          "numel": 512,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "af4565ee64d0c740535c1a99a39acc6ee5ddb135699d25548d894e4b17c72846",
+      "input_sha256": "af4565ee64d0c740535c1a99a39acc6ee5ddb135699d25548d894e4b17c72846",
+      "weights_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "probe_id": "family14-Elementwise",
+      "specification": {
+        "family": "Elementwise",
+        "operator": "torch.add",
+        "shape": [
+          32,
+          32
+        ]
+      },
+      "input_seed": 892007,
+      "weight_seed": 891007,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.linear.Identity",
+      "module_repr": "Identity()",
+      "input_shapes": [
+        {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            32,
+            1
+          ],
+          "numel": 1024,
+          "element_size": 4
+        },
+        {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            32,
+            1
+          ],
+          "numel": 1024,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "7648c61c532434800373a1760f51164454b879ba7129256c3f12ed8d054140c7",
+      "input_sha256": "7648c61c532434800373a1760f51164454b879ba7129256c3f12ed8d054140c7",
+      "weights_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "probe_id": "family14-View",
+      "specification": {
+        "family": "View",
+        "operator": "torch.Tensor.transpose",
+        "shape": [
+          2,
+          16,
+          32
+        ],
+        "dimensions": [
+          1,
+          2
+        ]
+      },
+      "input_seed": 892008,
+      "weight_seed": 891008,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.linear.Identity",
+      "module_repr": "Identity()",
+      "input_shapes": [
+        {
+          "shape": [
+            2,
+            16,
+            32
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            512,
+            32,
+            1
+          ],
+          "numel": 1024,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "2bc091e9904edb4864e7bc247d3ffe745aaa702ebca15c96a81a56374690bb9b",
+      "input_sha256": "2bc091e9904edb4864e7bc247d3ffe745aaa702ebca15c96a81a56374690bb9b",
+      "weights_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "probe_id": "family14-Embedding",
+      "specification": {
+        "family": "Embedding",
+        "operator": "torch.nn.Embedding",
+        "shape": [
+          2,
+          16
+        ],
+        "vocabulary": 128,
+        "embedding_width": 16,
+        "index_dtype": "int64"
+      },
+      "input_seed": 892009,
+      "weight_seed": 891009,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.sparse.Embedding",
+      "module_repr": "Embedding(128, 16)",
+      "input_shapes": [
+        {
+          "shape": [
+            2,
+            16
+          ],
+          "dtype": "torch.int64",
+          "stride": [
+            16,
+            1
+          ],
+          "numel": 32,
+          "element_size": 8
+        }
+      ],
+      "input_weights_sha256": "219b106d7c974bbbc009fcd4d22ef0df69752050253716ab90d3b2a316370d07",
+      "input_sha256": "e9e59491565d1c65586752876b349f92afea4e6bcbfc3a0aaa9cef88947c7057",
+      "weights_sha256": "2d63b8242b4b98249c56e25ff89e1709919e6010b26b96243419d83157d348e2"
+    },
+    {
+      "probe_id": "family14-Dropout",
+      "specification": {
+        "family": "Dropout",
+        "operator": "torch.nn.Dropout",
+        "shape": [
+          32,
+          32
+        ],
+        "p": 0.1,
+        "training": false,
+        "semantics": "eval identity"
+      },
+      "input_seed": 892010,
+      "weight_seed": 891010,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.dropout.Dropout",
+      "module_repr": "Dropout(p=0.1, inplace=False)",
+      "input_shapes": [
+        {
+          "shape": [
+            32,
+            32
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            32,
+            1
+          ],
+          "numel": 1024,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "bc99c5dd7f57549bfbfaf98e9141b8bc36e3294293c0e66c19e06c569cf797e9",
+      "input_sha256": "bc99c5dd7f57549bfbfaf98e9141b8bc36e3294293c0e66c19e06c569cf797e9",
+      "weights_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "probe_id": "family14-Reduction",
+      "specification": {
+        "family": "Reduction",
+        "operator": "torch.Tensor.mean",
+        "shape": [
+          4,
+          64
+        ],
+        "dim": 1
+      },
+      "input_seed": 892011,
+      "weight_seed": 891011,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.linear.Identity",
+      "module_repr": "Identity()",
+      "input_shapes": [
+        {
+          "shape": [
+            4,
+            64
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            64,
+            1
+          ],
+          "numel": 256,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "f67587ac96c054f39facf11940ce266f9cec67b0312724a1c8df7417e8b3a528",
+      "input_sha256": "f67587ac96c054f39facf11940ce266f9cec67b0312724a1c8df7417e8b3a528",
+      "weights_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "probe_id": "family14-Composite",
+      "specification": {
+        "family": "Composite",
+        "operator": "torchvision.models.densenet._DenseLayer",
+        "shape": [
+          1,
+          32,
+          8,
+          8
+        ],
+        "growth_rate": 8,
+        "bn_size": 2,
+        "drop_rate": 0.0,
+        "memory_efficient": false
+      },
+      "input_seed": 892012,
+      "weight_seed": 891012,
+      "inplace_disabled_modules": [
+        "relu1",
+        "relu2"
+      ],
+      "actual_module_class": "torchvision.models.densenet._DenseLayer",
+      "module_repr": "_DenseLayer(\n  (norm1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu1): ReLU()\n  (conv1): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)\n  (norm2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu2): ReLU()\n  (conv2): Conv2d(16, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n)",
+      "input_shapes": [
+        {
+          "shape": [
+            1,
+            32,
+            8,
+            8
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            2048,
+            64,
+            8,
+            1
+          ],
+          "numel": 2048,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "20b823494b1d90fce8bbe0e0d324b3bb8ec64322680a61c2f032a81cad559f36",
+      "input_sha256": "8f7da6dfeed85209efb8e2e33c7b0e36794a5e0216808c2cc406b17965ec73c6",
+      "weights_sha256": "467ff88acbb35c99acf35543e4d6b9f0b9a281df3ef27d44bfa1ce5ac6cdf479"
+    },
+    {
+      "probe_id": "family14-Other",
+      "specification": {
+        "family": "Other",
+        "operator": "torchvision.ops.stochastic_depth",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "p": 0.2,
+        "mode": "row",
+        "training": false,
+        "semantics": "eval identity"
+      },
+      "input_seed": 892013,
+      "weight_seed": 891013,
+      "inplace_disabled_modules": [],
+      "actual_module_class": "torch.nn.modules.linear.Identity",
+      "module_repr": "Identity()",
+      "input_shapes": [
+        {
+          "shape": [
+            1,
+            8,
+            8,
+            8
+          ],
+          "dtype": "torch.float32",
+          "stride": [
+            512,
+            64,
+            8,
+            1
+          ],
+          "numel": 512,
+          "element_size": 4
+        }
+      ],
+      "input_weights_sha256": "68f90d23482b517595a938ac9b76c3801d142288b01f639683139540f10fa667",
+      "input_sha256": "68f90d23482b517595a938ac9b76c3801d142288b01f639683139540f10fa667",
+      "weights_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "freeze_runtime": {
+    "torch": "2.9.1",
+    "torchvision": "0.24.1",
+    "platform": "macOS-26.5.1-arm64-arm-64bit"
+  },
+  "timing_observations_at_freeze": 0
+}

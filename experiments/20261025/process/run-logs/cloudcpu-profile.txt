@@ -1,0 +1,39 @@
+{"graph": "resnet18:s0", "backend": "cpu", "operators": 69, "measured": 69, "failed": 0, "model_mean_ms": 6.0286687}
+{"graph": "resnet18:s1", "backend": "cpu", "operators": 69, "measured": 69, "failed": 0, "model_mean_ms": 12.5345243}
+{"graph": "resnet18:s2", "backend": "cpu", "operators": 69, "measured": 69, "failed": 0, "model_mean_ms": 32.0414912}
+{"graph": "resnet50:s0", "backend": "cpu", "operators": 175, "measured": 175, "failed": 0, "model_mean_ms": 15.380916749999999}
+{"graph": "resnet50:s1", "backend": "cpu", "operators": 175, "measured": 175, "failed": 0, "model_mean_ms": 28.89786715}
+{"graph": "resnet50:s2", "backend": "cpu", "operators": 175, "measured": 175, "failed": 0, "model_mean_ms": 69.1155308}
+{"graph": "mobilenet_v2:s0", "backend": "cpu", "operators": 153, "measured": 153, "failed": 0, "model_mean_ms": 8.33691515}
+{"graph": "mobilenet_v2:s1", "backend": "cpu", "operators": 153, "measured": 153, "failed": 0, "model_mean_ms": 11.7594269}
+{"graph": "mobilenet_v2:s2", "backend": "cpu", "operators": 153, "measured": 153, "failed": 0, "model_mean_ms": 22.6413432}
+{"graph": "densenet121:s0", "backend": "cpu", "operators": 83, "measured": 83, "failed": 0, "model_mean_ms": 20.05340565}
+{"graph": "densenet121:s1", "backend": "cpu", "operators": 83, "measured": 83, "failed": 0, "model_mean_ms": 37.8581751}
+{"graph": "densenet121:s2", "backend": "cpu", "operators": 83, "measured": 83, "failed": 0, "model_mean_ms": 75.21677220000001}
+{"graph": "efficientnet_b0:s0", "backend": "cpu", "operators": 249, "measured": 249, "failed": 0, "model_mean_ms": 9.71906405}
+{"graph": "efficientnet_b0:s1", "backend": "cpu", "operators": 249, "measured": 249, "failed": 0, "model_mean_ms": 17.9955153}
+{"graph": "efficientnet_b0:s2", "backend": "cpu", "operators": 249, "measured": 249, "failed": 0, "model_mean_ms": 27.8330737}
+{"graph": "squeezenet1_1:s0", "backend": "cpu", "operators": 66, "measured": 66, "failed": 0, "model_mean_ms": 2.73269745}
+{"graph": "squeezenet1_1:s1", "backend": "cpu", "operators": 66, "measured": 66, "failed": 0, "model_mean_ms": 7.51207225}
+{"graph": "squeezenet1_1:s2", "backend": "cpu", "operators": 66, "measured": 66, "failed": 0, "model_mean_ms": 14.35169655}
+{"graph": "text_encoder_ref:s0", "backend": "cpu", "operators": 45, "measured": 45, "failed": 0, "model_mean_ms": 0.5130226}
+{"graph": "text_encoder_ref:s1", "backend": "cpu", "operators": 45, "measured": 45, "failed": 0, "model_mean_ms": 0.64322895}
+{"graph": "text_encoder_ref:s2", "backend": "cpu", "operators": 45, "measured": 45, "failed": 0, "model_mean_ms": 1.1668795}
+{"graph": "text_cnn_ref:s0", "backend": "cpu", "operators": 12, "measured": 12, "failed": 0, "model_mean_ms": 0.20448695}
+{"graph": "text_cnn_ref:s1", "backend": "cpu", "operators": 12, "measured": 12, "failed": 0, "model_mean_ms": 0.43731965}
+{"graph": "text_cnn_ref:s2", "backend": "cpu", "operators": 12, "measured": 12, "failed": 0, "model_mean_ms": 0.5948997}
+{"graph": "audio_conv_ref:s0", "backend": "cpu", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.2355358}
+{"graph": "audio_conv_ref:s1", "backend": "cpu", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.5388939}
+{"graph": "audio_conv_ref:s2", "backend": "cpu", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.69832095}
+{"graph": "audio_dilated_ref:s0", "backend": "cpu", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.36917675}
+{"graph": "audio_dilated_ref:s1", "backend": "cpu", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.53704815}
+{"graph": "audio_dilated_ref:s2", "backend": "cpu", "operators": 10, "measured": 10, "failed": 0, "model_mean_ms": 0.6945378}
+{"graph": "causal_lm_ref:s0", "backend": "cpu", "operators": 44, "measured": 44, "failed": 0, "model_mean_ms": 0.50317405}
+{"graph": "causal_lm_ref:s1", "backend": "cpu", "operators": 44, "measured": 44, "failed": 0, "model_mean_ms": 0.9947387}
+{"graph": "causal_lm_ref:s2", "backend": "cpu", "operators": 44, "measured": 44, "failed": 0, "model_mean_ms": 1.3687076}
+{"graph": "dual_encoder_ref:s0", "backend": "cpu", "operators": 11, "measured": 11, "failed": 0, "model_mean_ms": 0.19412315}
+{"graph": "dual_encoder_ref:s1", "backend": "cpu", "operators": 11, "measured": 11, "failed": 0, "model_mean_ms": 0.32743635}
+{"graph": "dual_encoder_ref:s2", "backend": "cpu", "operators": 11, "measured": 11, "failed": 0, "model_mean_ms": 0.4319682}
+{"complete": true, "graphs": 36, "failed_graphs": 0, "output": "/work/evidence/xeon_cpu.json", "code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26"}
+
+

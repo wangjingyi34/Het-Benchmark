@@ -1,0 +1,107 @@
+{
+  "kind": "independent_formal_five_stack_summary_audit",
+  "created_utc": "2026-10-25T07:07:04.911163+00:00",
+  "audit_code_sha256": "e7ea2b0e0ce336a0122cf81b4027a7069736a61b0e35609d1ed75652f8c0544f",
+  "summary_sha256": "f5c2aafca1af9bd478b54df6f9550e89b7a00aabdcb2aa4636561cb1b1805992",
+  "evaluation_code_sha256": "bad26be58e40a0bf6ff939024f15e646a72ec3e1b8bc3fef54dc67745f8cce0f",
+  "completed_utc": "2026-10-25T06:58:40.594426+00:00",
+  "matrix_entries": 220,
+  "fit_records": 1100,
+  "aggregate_entries": 40,
+  "paired_comparisons": 36,
+  "source_manifest": [
+    {
+      "raw_file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/m5cpu.json",
+      "raw_sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "sidecar_sha256": "9b3b8c5dc99190ca0b0a2732444ce6ff75dec87939bc84e87c11dd90396f1535",
+      "runtime_stack_id": "Apple-M5-CPU-4T"
+    },
+    {
+      "raw_file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/m5mps.json",
+      "raw_sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "sidecar_sha256": "8ea2686cf4870559424fac1e3568b136f9c56782d0469016f5efaf0426635014",
+      "runtime_stack_id": "Apple-M5-MPS"
+    },
+    {
+      "raw_file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/a100mig.json",
+      "raw_sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "sidecar_sha256": "a7e95b8be8067dcb905c603fec9404210e407c0f48cfec22a2d11b3b9a7ced3d",
+      "runtime_stack_id": "A100-SXM4-MIG-2g20GB"
+    },
+    {
+      "raw_file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/xeon_cpu.json",
+      "raw_sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "sidecar_sha256": "064e2a80d22a081e6ad20681b83e99b1d6ee405a4b36a9d53b47c0f01c549f1e",
+      "runtime_stack_id": "Cloud-x86-CPU-4T"
+    },
+    {
+      "raw_file": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/npub3.json",
+      "raw_sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "sidecar_sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8",
+      "runtime_stack_id": "Ascend-910B3-64GB"
+    }
+  ],
+  "audit_counts": {
+    "metric_objects_checked": 1560,
+    "model_bootstrap_intervals_recomputed": 1560,
+    "paired_seed_bootstrap_intervals_recomputed": 144
+  },
+  "query_support": {
+    "per_protocol_per_seed": 13905,
+    "runtime_stacks": 5,
+    "models": 12,
+    "family_n": {
+      "Normalization": 2805,
+      "Activation": 3165,
+      "Pooling": 540,
+      "Elementwise": 1245,
+      "Conv2D": 3555,
+      "View": 720,
+      "MatMul": 555,
+      "Dropout": 45,
+      "Composite": 870,
+      "Other": 135,
+      "Attention": 60,
+      "Embedding": 60,
+      "Reduction": 30,
+      "Conv1D": 120
+    },
+    "runtime_stack_n": {
+      "Apple-M5-CPU-4T": 2781,
+      "Apple-M5-MPS": 2781,
+      "A100-SXM4-MIG-2g20GB": 2781,
+      "Cloud-x86-CPU-4T": 2781,
+      "Ascend-910B3-64GB": 2781
+    }
+  },
+  "parameter_counts": {
+    "strict:ridge": 69,
+    "strict:mlp": 25473,
+    "strict:gcn": 18881,
+    "strict:rgat": 17537,
+    "strict:drop_contains": 17537,
+    "strict:drop_has_type": 17537,
+    "strict:drop_dependency": 17537,
+    "strict:drop_similarity": 17537,
+    "strict:drop_supports": 17537,
+    "strict:drop_performance_context": 17537,
+    "probe:ridge": 72,
+    "probe:mlp": 25857,
+    "probe:gcn": 19121,
+    "probe:rgat": 17633,
+    "probe:drop_contains": 17633,
+    "probe:drop_has_type": 17633,
+    "probe:drop_dependency": 17633,
+    "probe:drop_similarity": 17633,
+    "probe:drop_supports": 17633,
+    "probe:drop_performance_context": 17633
+  },
+  "all_checks_passed": true,
+  "scope": [
+    "No training or performance timing was performed.",
+    "Raw and sidecar bytes are checked locally;1100 checkpoint digests are structurally validated but checkpoint files still require publication/remote-byte verification.",
+    "All144 paired seed intervals are unadjusted conditional five-seed bootstrap intervals on fixed physical records, not independent hardware-population samples.",
+    "Model-cluster intervals are descriptive with only12 model clusters; hardware holdout includes seen model architectures.",
+    "Probe features use three physical hardware microprofiles and are hardware-calibrated, not zero-measurement transfer."
+  ]
+}

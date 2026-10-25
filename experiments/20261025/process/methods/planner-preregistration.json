@@ -1,0 +1,47 @@
+{
+  "registered_utc": "2026-10-25T05:23:44.997242+00:00",
+  "new_fullmodel_results_read": false,
+  "prior_v1_smoke_for_interface_only": true,
+  "reward": "unweighted physical training-block means; deterministic measured-calibration MDP",
+  "training_steps_target": 4096,
+  "episode_truncation": "finish last finite episode, at most budget-1 steps beyond target",
+  "policy_network": "2x64 tanh shared actorcritic trunk",
+  "learning_rate": 0.003,
+  "clip": 0.2,
+  "epochs_per_batch": 5,
+  "batch_steps": 256,
+  "gamma": 1.0,
+  "gae_lambda": 0.95,
+  "entropy_coefficient": 0.01,
+  "value_coefficient": 0.5,
+  "gradient_clip": 0.5,
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "budget": "at most2 + stop/noop",
+  "controls": [
+    "same-table nonRL greedy",
+    "same-table exhaustive search",
+    "latency/local difference",
+    "DAG residual and runtime ablations",
+    "mask on/off with common final gate",
+    "real heldout graph embedding vs same-dimensional zeroed control",
+    "uniform random exactlyk and uniform atmostk inclnoop",
+    "posthoc heldout feasible oracle"
+  ],
+  "final_acceptance": "paired evalblock raw accuracy/baseline accuracy>=.99, actualhardware support, validstatus, no latencyregression; rejected plans rollback; raw adverse effects retained",
+  "no_seed_selection": true,
+  "no_eval_hyperparameter_tuning": true,
+  "source_sha256": {
+    "test_methods.py": "7027e84a92db936720d6695560745ed6ea5eb513fca9e9d1d79db0f3e8e2b138",
+    "attach_embeddings.py": "dc1963944d949a274e117028f467d8f0f519a1dd241b9fd523d00eaa39422b62",
+    "copa_v2.py": "421c94039b90c6cca76e7ba7ef53153f832e23fbb36607ee7c4a68f5f3c93d52",
+    "analyze_measured.py": "cdf36ce71d2bde73014d6045850d3f379d24d53e4e41d0c6c73db2b8fce23ca1",
+    "runtime_calibration.py": "0193d36362b6fc30910870dbc751b047aff6a5798be4f4353073581744df45d8",
+    "measured_planner.py": "697db8e765fde8d9294bc7b47c331d4a9cd9bf5bb84365e7acbceac3f919ce22"
+  }
+}

@@ -1,0 +1,572 @@
+{
+  "kind": "independent_NPU_collection_closeout_inventory_and_record_audit",
+  "can_end_paid_NPU_collection": true,
+  "reason": "All planned physical raw records, launch precision receipts, frozen source variants and actual rollback evidence are present locally; remaining work is offline analysis and document writing.",
+  "paired_complete_blocks": 20,
+  "main_fullmodel_complete_blocks": 32,
+  "paired_source_variants": {
+    "2f33287e7d6afffb9303724ac61186c5712cbaaa0784795196d7b1f4ec6c22bb": 1,
+    "e88bce1b159f018e5dfa5793c726d362b70bcf0ed9795bf2a881d0ac5c1408c5": 19
+  },
+  "all_52_blocks_have_HF32_false_hardware_launch_receipts": true,
+  "paired_and_full_local_copies_byte_identical_to_backups": true,
+  "profiles": [
+    {
+      "file": "../evidence/npu-main-backup/npub3.json",
+      "sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "graphs": 36,
+      "measured_records": 2781,
+      "raw_statistics_consistent": true
+    },
+    {
+      "file": "../evidence/npu-final-backup/attention-npub3.json",
+      "sha256": "c767a296e695d385f2c5ff4192f7020f727817cd5841f202d8f6ed3a9c9cb9b4",
+      "graphs": 12,
+      "measured_records": 12,
+      "raw_statistics_consistent": true
+    }
+  ],
+  "active_fallback_measured_records": 83,
+  "active_frozen_decisions_hash_matches": true,
+  "actual_quality_rejection_and_reexecuted_rollback_present": true,
+  "capability_record": {
+    "file": "../evidence/npu-main-backup/capabilities-npu.json",
+    "sha256": "7dfbf3a661b6c689aefa4e818ca925240dcaa154307bf02a0717586b3eb80111"
+  },
+  "archive_local_sha256": {
+    "npu-physical-main-complete.zip": "37d56a254c2b8e632ce929494b71e1163e2fea366231881f98f2444f63762251",
+    "npu-physical-final-confirmation.zip": "36446f7fb9a0c39de5ecb886d72cfcb986ef4c73694724b4b52509052b56d5f8"
+  },
+  "matched_launch_evidence": [
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b1-r101.json",
+      "sha256": "b3dd1e7fc2d12d422064eee8393bcd77b6c9b010417da281d5b11465af9b5f48",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T062717246705.json",
+          "sha256": "f70ee4100243bc1c95d06bdf149541a5a33b68d8e5687e90e76260702be6a440"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b1-r102.json",
+      "sha256": "e7ed9d4cc83fbc1b4fa2c05a9a826e033599e775a254f3d12f57ecbff0f968e3",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063115659089.json",
+          "sha256": "daba999b9d9447576082e74bd093720c4791eaf61d6a220d94d53d9082608aaf"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b1-r103.json",
+      "sha256": "cb908c8354355d2999aebd6fbd09a8775f749cca42d128902b43e96f687e36c3",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063153472179.json",
+          "sha256": "56b068303e2a4d703d9c62773fc160fda33ab7418ed307d29145408421a5c74c"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b1-r104.json",
+      "sha256": "a79e530e4b319645a5a08a21a016e3448e06e0a9d80731392177ea34ded2339a",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063230659443.json",
+          "sha256": "e99f33e1712aa55e4fe889e7144758669d3f82064f1df7180ca186ee0472f49a"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b1-r105.json",
+      "sha256": "562737a0772c5e2f5cc29f7c59e4586df54b0a6a4ef9f124d46f1f7e56b03fac",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063307282968.json",
+          "sha256": "02e76d1c327645e947a75992b8787cdf5caf5899b1001a135b8c535d3ec7315e"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b4-r101.json",
+      "sha256": "c49220ed6ed83369ca021fa691505e518a95af4317f78e494b2d30ce6e008f7a",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063348104077.json",
+          "sha256": "f7ab091a1b5b82a42a4dfb8b1c3ba6a81e4122044f72242f8b041570d05313e9"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b4-r102.json",
+      "sha256": "eee4e690e3f81ec2b7a865e3841cc0d2746fc473daedd469628721676437c4f3",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063425967473.json",
+          "sha256": "a8080c48e649df71ca726896ef46c50e23158dc12288bbadaa26ac6443cad816"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b4-r103.json",
+      "sha256": "b656e135e06a44fe955ce006e09f3443cda91573ec951167122ca2ba4f95ab5f",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063503843170.json",
+          "sha256": "fe66b43d9a970348db12ffdf114d14d45d9b0d915d7f0acf7f69f170bc3ff6dd"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b4-r104.json",
+      "sha256": "aa478ba0ea4aa680d77b4f20c46ec0080420ed81784eae27f2619a88a71b8a0a",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063540921481.json",
+          "sha256": "36797b9a6ba25b5670d5bd1ca275dbb3241887fa78ad9f1e3988da730747c1e5"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet18-b4-r105.json",
+      "sha256": "615e1633771beb612d45bd027a5e63d98f5b8c2072f9e9d22704ff318a4d95dc",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063618779165.json",
+          "sha256": "ff7643452c4914b85cfd31273aaa906e030643ed34ec882b6c350c09e73f9ee1"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b1-r101.json",
+      "sha256": "9b06b959183d46bd6436e9491fca9f72d4c7fea636dc4daec937914621a759bb",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063656007592.json",
+          "sha256": "28eb38d5353343ccfcf60b39a4d57e9108078ea90d6db6992632737d5b63d13d"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b1-r102.json",
+      "sha256": "db548255df20a2de077bf0bbcd91c6e959a5bf339442e45b851067db9a501770",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063745825150.json",
+          "sha256": "1bef449750c18b95026ab1ef5206253bc17792432e0fb7429e58005f99011a5b"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b1-r103.json",
+      "sha256": "c937ac8783f86e54b7bef21de932b405e7bd7d6203bb483f9d7dad203d78cb95",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063832988932.json",
+          "sha256": "444d7f3ef4174c937dce768d50c7e51f80cbd72a8aa5febbe8a0dccaf210c7c1"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b1-r104.json",
+      "sha256": "cf109ee3786d760c2509d91e52c7122f12fd1cc7f6e169ab2281497c05fd6224",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T063922570294.json",
+          "sha256": "df1528b25618d16907c52a6663f41819bb9a1fdb4de1635bde7e1286e731c09a"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b1-r105.json",
+      "sha256": "24d74c4e951e2fe82eccc86599c45344fa0e373371d6f027738a7637c09c6938",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T064010717456.json",
+          "sha256": "6343e9e2215215b701cc9bc263befaacfc715d270d19cbed60a99e345a46bfc9"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b4-r101.json",
+      "sha256": "523f69368a35e1fda9438100c60ba16e5109542d785a586cd755aa1ec7743ce5",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T064059876356.json",
+          "sha256": "29cc729ad45b4da6e513b7674f11321530cc9ed69f675992346736517551335d"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b4-r102.json",
+      "sha256": "92b0a6edf1c16f578281f306e8c1ed50035104c6dbf0072e97c3e4538a1e5e20",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T064149558432.json",
+          "sha256": "94b98980b65f28169d36dea8518385eb6369122d563c313f7c15a10c1fb4d030"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b4-r103.json",
+      "sha256": "1942509c5539077ac021935679622ad6df833616b7a23d66c042ad52424e18d1",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T064237939573.json",
+          "sha256": "8b2ef4c4bd2d3023469d3deaf7f781a3e2cbac456b14e85a624e57e21dc0d4b9"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b4-r104.json",
+      "sha256": "780ec612c896d67dc45f9a6ab7dddee9e5f1ba654f502615d2443be49110f8ab",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T064327816844.json",
+          "sha256": "c9362c1e6cf9c3bc34d2c05f16f711c3ba6d51e6ec534fc44811372960e92600"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/paired_raw/npu-resnet50-b4-r105.json",
+      "sha256": "8c9947d8c5e08833caef80e5b798af6ae6a105e31663ee85c712172bd4cd8cf2",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T064418010007.json",
+          "sha256": "7786259b233bcc1bb213c574e6ba0fcb1a29b7467891e41257b89bdb2ca67310"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r1.json",
+      "sha256": "8f81557b91e2e19cfa6f2f0c7ac4dc1e996776b210cbdf497cb9262bebbdaaeb",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T055248212436.json",
+          "sha256": "2c74eb69b22e61c496e084dfb66c8c1ae6bad35e39ced54160260689d03d1a36"
+        },
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T055354282114.json",
+          "sha256": "ca16b78d82ada00eb3d1c92e4b2d7f94133ff5c6d206889c41928626ad649703"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r2.json",
+      "sha256": "789f1c345f20878dab126ceab3eb2c1ca3f36301404f420de8999ceca2cc4ac9",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T055837706376.json",
+          "sha256": "86c0844a2b20aab11ade872a2d94511572329e2fffe2561f8d28737e824ac789"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r3.json",
+      "sha256": "db41317112a450be9ce58b7241d8a337d69de756637d90b425dbdbb6064e95cb",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T055912470129.json",
+          "sha256": "30c10ee8d678e8b219cdee73afec3a93b67ecaf44aab91991ad408596207c953"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r4.json",
+      "sha256": "ddc9dfcd633e442fcd57daaf06603cc6d7821df2b58b95c7f4487249917d8135",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T055947182877.json",
+          "sha256": "c4fdc779d16415b10c2775805fbb852e62006db4d5f24e4c289f421a4402fc31"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r5.json",
+      "sha256": "4758d1e18a4f99c7531851484693817bb3fa238a1cefab8a09bee8769cfeedaf",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060021086776.json",
+          "sha256": "163afecba947f3fc058015872b5523d229d2bfee66d2b44eeea092a54ad87b03"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r6.json",
+      "sha256": "82e6be014af58d671ab903020cf8787e9345044b42184fc55bf62086670bf5d2",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060053951316.json",
+          "sha256": "e36ac45acbbd18343462e1e2b961ded4f44afa614880cbac5565db42d363be8d"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r7.json",
+      "sha256": "b6f7f253b1077fa1f4fb533f15cfca1460a0fa2f533756623067c7759445e8ad",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060125766708.json",
+          "sha256": "eb891c749e704efbe8edfeb5db812cb5fb1dc7e720e578ceefec0b1a739a37fe"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b1-r8.json",
+      "sha256": "b434a2edaba578e0ffc2125a924a6aed4b601eff523ed283e5ef1162303186d9",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060158785564.json",
+          "sha256": "c22116a9819b1eafbd01bba7dd139ea821d924ec664d145f5fa3b3c6d77bbe81"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r1.json",
+      "sha256": "e72bc03e1121ade856474ef90c5e837d164659206f5a0a5a77813e6c7b2a2a58",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060232838549.json",
+          "sha256": "ede45ef87db76b7359acbb9dd8416a02b9725a807c0b0cac41937f3b8566a6cd"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r2.json",
+      "sha256": "d4138d4b8766dc0825312c3301dc131cbe1c69800c00a21b3e4aa0f4f7775ffd",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060306774192.json",
+          "sha256": "8f51abb478006f551b8802727dde8531eedc2a5df99e6d8f89ce85a9d761356a"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r3.json",
+      "sha256": "9349877eb73be9fde6145d420a373cdd3b9a6043592a8a77d56a641c33df68d1",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060339538938.json",
+          "sha256": "765bebd67dd425670f9bc4d3160d30f25b39912dc1432aef278ef16567d14e6b"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r4.json",
+      "sha256": "6c277e4e3e1b40c3c6483662504d60d69b8ec522fb07df93fe4294abc35164c9",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060414045425.json",
+          "sha256": "de08aa7f1f88ff152fc50fcf91a683bc8029b29a38a14b4d622e8434664888a5"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r5.json",
+      "sha256": "2750058cbe67c0e2a8ac6ef91ce231b90880eb3e4feb0f2ce97aa3ecd60f7d91",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060447291976.json",
+          "sha256": "88026e70f4370b1919bf362d12464f403a766b03404eaea2c0ab3ba384d50746"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r6.json",
+      "sha256": "d690384f710349ee9292a5f7e6e6ed82b67c823f2c53b8f65d25504c4ff9f986",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060522142773.json",
+          "sha256": "19bdd3613f1a45660dd228862e8784690e105501590531f726641183f75f9898"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r7.json",
+      "sha256": "1668af2597b3214d65e05de349017e29053af465d50444b00a7fbc78b74291cd",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060555010507.json",
+          "sha256": "f13f320e3c7b5a2048ba43626eae414fb5059cabba1d05f15014ff9475dd8bd3"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet18-b4-r8.json",
+      "sha256": "e800fb671b192a5a6049d00d3180b519f237404014bc2546d787b4d0576680c1",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060627606766.json",
+          "sha256": "b6f03f66ca87f3d272694a1ed135a3f641f43b3a4e992ebc5543fcb6d72da6d3"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r1.json",
+      "sha256": "d8c487d498458f1927161d2f9215c38d2164020b7ca071e4322e897a3550dded",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060700504612.json",
+          "sha256": "e8411048fba261bbd236d0c672e370c70cb374d771f20834b99a0a9146d91320"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r2.json",
+      "sha256": "651ed5bced4d6da54d578d71864320353499049a07c17b7d2a02501e6ad7a712",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060742200355.json",
+          "sha256": "51f83c4704c2b67a4422971b5c0856ad40686d9eff11828f11a8b5c8986d650d"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r3.json",
+      "sha256": "f1df188bb06e217821f54e2dbec076c27116d336b3623f935e1f603f445e71e3",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060822809836.json",
+          "sha256": "380fba9a480cdda6512a3e46109e7f1bc3d81b0cf83264d3a827a3cf36282196"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r4.json",
+      "sha256": "72d6731f00148d82eaecbb1b16bcfc92aca0b7205055a37c1e2f6a3e07c299ae",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060905013046.json",
+          "sha256": "59c33fe1c7a9562250a9cfdd147cbfbd435261ec652c930b8f68bf4773c921ea"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r5.json",
+      "sha256": "601a560fe7cfaebe25cb035303b63076e5480262c6b97e3e8eb8e4563b24e2e7",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T060945300247.json",
+          "sha256": "46a98dbdf4eb62a0c722d4c69d8da841b9f18578eed0b85f224751b6a6579c64"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r6.json",
+      "sha256": "db04d7bc82fd639bda549ed0a4f79233173b353e5ea31fd55125e01a3f8b6170",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061024531779.json",
+          "sha256": "14e893227694392948e094e370e2b1b8e47ad4aec28cd7f461c368ab4e56c8ca"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r7.json",
+      "sha256": "1f7f32a3e723abf9258ceb02467bd499afa86d810868b31aee9ff388382db307",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061105396967.json",
+          "sha256": "88a4b4a4f7df32078988185be60a9601676a80a69a4cd5a125a5ac4a842a9d9b"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b1-r8.json",
+      "sha256": "086d1be39f6eb2d9229256d2c5950735d412e499d42825c7f76b7664033a5275",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061145488986.json",
+          "sha256": "d777a2fab6cdf07772d412c53f09c8e62bb45a208c9d16ba92c4126190ba7f84"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r1.json",
+      "sha256": "a72d7c453b77d069fb7bac1cd13ffbca992a71547d98a05c80ad0e72adc29a9e",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061226164595.json",
+          "sha256": "b63d894738f5f2e40b8bdad76e4bdc7bc84b893bce206f797310b223d40a7bc7"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r2.json",
+      "sha256": "249450e173c2c010f5600ae3733a1800ea63b6a52cddd049bf0a57b7ff184396",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061307013102.json",
+          "sha256": "17ea3dd6db9f8d870f72a729ad98faddd7f8e760cf597e7cc6c38d642b85b493"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r3.json",
+      "sha256": "b117af127293be1a48fbba4a19f383ec8921ad0a338c435efea1e9b7e2e7881b",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061352911226.json",
+          "sha256": "a2aa4c5dff541f0a3a0e5d9ab28fa22229a8bcc2f4bddb0651f58e7053737752"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r4.json",
+      "sha256": "8070f2657931a8ed9be6127612cc3fd4453c8c5d3edc8a41d87ad3ae2363f93c",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061436420387.json",
+          "sha256": "4ed6e1d17462583e9a56496fb6b550faa8f75b268093cb3639fe03b7c85d9d7c"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r5.json",
+      "sha256": "d917b28f303bd18c054d0a8895a98cb41b73c0ae2a3923fd59b0c1fb1858939b",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061518228609.json",
+          "sha256": "818aa1c0ff95bb51f722fda23710531ad35e7823558dd1b08d9caca755972ae2"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r6.json",
+      "sha256": "9180f624de68b8aad6364190e9510b899523c0ebe3073bc662dd8e79e02255e6",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061558083521.json",
+          "sha256": "03ff6176974eafa7b82b2fa30f53a6b0aa694a9ed20f98732faf23d134ddd854"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r7.json",
+      "sha256": "96974dd4e25f6c9b22bd2b41d3a9c8943e0559070f31956531117eda9f04abce",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061639346154.json",
+          "sha256": "e2765fa5f5f4256f1b13be0a2b213a0650ea9b45ce0893ee07c9d8ad697454f3"
+        }
+      ]
+    },
+    {
+      "raw": "../evidence/npu-main-backup/fullmodel_raw/npu-resnet50-b4-r8.json",
+      "sha256": "82c1301d1d0bc9980a815bba8e1307d2c2dba17a5a22fcefcb47aacfd9d63ff9",
+      "launch_receipts": [
+        {
+          "file": "../evidence/npu-final-backup/launch-receipts/20261025T061719305126.json",
+          "sha256": "c90bc05536e2c17a46da18b9db71729fbf1625b5acb915ecd353214df58625cb"
+        }
+      ]
+    }
+  ],
+  "supporting_audits": [
+    "paired-audit-final-20blocks.json",
+    "npu-full32-final-audit.json",
+    "npu-physical-stress-audit.json"
+  ],
+  "limitations": "Can end physical collection means raw data preservation is sufficient; it does not certify a positive speedup or that all reviewer claims are resolved. Offline uncertainty and fixed-plan analysis remain."
+}

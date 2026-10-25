@@ -1,0 +1,32 @@
+{
+  "recorded_utc": "2026-10-25T05:56:32.938130+00:00",
+  "scope": "cross-hardware source-target full-model diagnosis before fullmodel paired outcome consumption",
+  "actual_fullmodel_outcomes_read": false,
+  "players": "all actually measured FX executable operator nodes; structural nodes cost zero",
+  "game": "same-identity source cost replaced by target cost on actual dependency DAG; no runtime endpoint anchor",
+  "sampling": {
+    "total_permutations": 500,
+    "antithetic_pairs": 250,
+    "seed": 42,
+    "optional_reference_total_permutations": 5000,
+    "reference_seed": 90210,
+    "reference_scope": "same diagnostic surrogate only"
+  },
+  "action_priority": "positive grouped migration burden share * target calibration positive headroom ratio * abs(phi)/(abs(phi)+pair_mean_SE); no-positive-regression fallback uses target headroom",
+  "budget_at_most": 2,
+  "controls": [
+    "cross_plain_sum",
+    "target_headroom",
+    "target_operator_latency"
+  ],
+  "eval_pairing": "original run_index one-to-one and exact sampleID+label match",
+  "quality_threshold": 0.99,
+  "quality_gate": "target local retention plus candidate/source baseline retention; preserve raw negative effect",
+  "source_sha256": {
+    "migration_bridge.py": "281f9afc72b3b79abbbeba16e1f49c3de5fcf1fb6aa169948046e5c654ae2f4c",
+    "test_migration_bridge.py": "7d49c53e9b00f1de1ed38a4aa0b09d9534cefeb768a6410ef1dfcfcc2c108373",
+    "copa_v2.py": "421c94039b90c6cca76e7ba7ef53153f832e23fbb36607ee7c4a68f5f3c93d52"
+  },
+  "unit_cases_passed": 11,
+  "execution_placement": "offline CPU after physical timings or separate cloud CPU; never paid NPU"
+}

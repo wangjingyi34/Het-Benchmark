@@ -1,0 +1,291 @@
+{
+  "kind": "independently_verified_complete_frozen_MHA_OOD_scores",
+  "summarizer_code_sha256": "f402cbd9a9734ecdac333bb8da9f03885eaa26634a569c0b33b274e7e4137eef",
+  "source_challenge_code_sha256": "dfab91261cc4e9a83f232ca9275c20509d5360f78423c071e7a80236f88b5b1c",
+  "freeze_sha256": "1ade61fff0b8e6ddca4b40f4778d9882b2d86b8ef3c467af4963b5e6713398ea",
+  "physical_cases": 60,
+  "prediction_rows": 900,
+  "prediction_failures": 0,
+  "checkpoint_count": 15,
+  "all12_input_weight_hashes_match_across5stacks": true,
+  "all_checks_passed": true,
+  "results": [
+    {
+      "method": "mlp",
+      "seed_metrics": [
+        {
+          "seed": 11,
+          "physical_cases": 60,
+          "micro_MRE_percent": 76.69154346297675,
+          "MAE_ms": 13.610216155803231,
+          "WAPE_percent": 98.70775869360321
+        },
+        {
+          "seed": 22,
+          "physical_cases": 60,
+          "micro_MRE_percent": 78.53493338827121,
+          "MAE_ms": 13.625366305906274,
+          "WAPE_percent": 98.81763478546127
+        },
+        {
+          "seed": 33,
+          "physical_cases": 60,
+          "micro_MRE_percent": 71.95016895681403,
+          "MAE_ms": 13.491309093696866,
+          "WAPE_percent": 97.84538814349584
+        },
+        {
+          "seed": 44,
+          "physical_cases": 60,
+          "micro_MRE_percent": 72.08787341790024,
+          "MAE_ms": 13.487679776230562,
+          "WAPE_percent": 97.81906660763
+        },
+        {
+          "seed": 55,
+          "physical_cases": 60,
+          "micro_MRE_percent": 80.71093597926918,
+          "MAE_ms": 13.64260020315004,
+          "WAPE_percent": 98.94262320232508
+        }
+      ],
+      "micro_MRE_seed_mean": 75.99509104104628,
+      "micro_MRE_seed_sample_SD": 3.8988069594513535,
+      "MAE_ms_seed_mean": 13.571434306957395,
+      "WAPE_percent_seed_mean": 98.42649428650309
+    },
+    {
+      "method": "gcn",
+      "seed_metrics": [
+        {
+          "seed": 11,
+          "physical_cases": 60,
+          "micro_MRE_percent": 97.69612495750746,
+          "MAE_ms": 13.773667988452528,
+          "WAPE_percent": 99.89318909900457
+        },
+        {
+          "seed": 22,
+          "physical_cases": 60,
+          "micro_MRE_percent": 98.43330140441886,
+          "MAE_ms": 13.778163347944085,
+          "WAPE_percent": 99.92579158340703
+        },
+        {
+          "seed": 33,
+          "physical_cases": 60,
+          "micro_MRE_percent": 99.27031251392314,
+          "MAE_ms": 13.783733677949225,
+          "WAPE_percent": 99.96619026508091
+        },
+        {
+          "seed": 44,
+          "physical_cases": 60,
+          "micro_MRE_percent": 98.74566771413525,
+          "MAE_ms": 13.780410432035348,
+          "WAPE_percent": 99.9420885056385
+        },
+        {
+          "seed": 55,
+          "physical_cases": 60,
+          "micro_MRE_percent": 99.3785595896374,
+          "MAE_ms": 13.784577038519174,
+          "WAPE_percent": 99.97230671691953
+        }
+      ],
+      "micro_MRE_seed_mean": 98.70479323592443,
+      "micro_MRE_seed_sample_SD": 0.6831111524876036,
+      "MAE_ms_seed_mean": 13.780110496980072,
+      "WAPE_percent_seed_mean": 99.9399132340101
+    },
+    {
+      "method": "rgat",
+      "seed_metrics": [
+        {
+          "seed": 11,
+          "physical_cases": 60,
+          "micro_MRE_percent": 93.79317103374605,
+          "MAE_ms": 13.749547286703962,
+          "WAPE_percent": 99.71825430146261
+        },
+        {
+          "seed": 22,
+          "physical_cases": 60,
+          "micro_MRE_percent": 88.84496988861594,
+          "MAE_ms": 13.713148163103588,
+          "WAPE_percent": 99.45427055073633
+        },
+        {
+          "seed": 33,
+          "physical_cases": 60,
+          "micro_MRE_percent": 98.08455050683388,
+          "MAE_ms": 13.775522463132097,
+          "WAPE_percent": 99.90663863111182
+        },
+        {
+          "seed": 44,
+          "physical_cases": 60,
+          "micro_MRE_percent": 90.6862341681633,
+          "MAE_ms": 13.727834679124035,
+          "WAPE_percent": 99.5607841477873
+        },
+        {
+          "seed": 55,
+          "physical_cases": 60,
+          "micro_MRE_percent": 92.87238796906864,
+          "MAE_ms": 13.74177665238557,
+          "WAPE_percent": 99.66189796674936
+        }
+      ],
+      "micro_MRE_seed_mean": 92.85626271328556,
+      "micro_MRE_seed_sample_SD": 3.5004479887894338,
+      "MAE_ms_seed_mean": 13.74156584888985,
+      "WAPE_percent_seed_mean": 99.66036911956948
+    }
+  ],
+  "per_stack_results": [
+    {
+      "stack": "m5cpu",
+      "method": "mlp",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 86.14152907642482,
+      "micro_MRE_seed_sample_SD": 6.543636334379256
+    },
+    {
+      "stack": "m5mps",
+      "method": "mlp",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 85.01531629299639,
+      "micro_MRE_seed_sample_SD": 4.794992674978794
+    },
+    {
+      "stack": "a100mig",
+      "method": "mlp",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 79.91014414750046,
+      "micro_MRE_seed_sample_SD": 5.091511286387486
+    },
+    {
+      "stack": "cloudcpu",
+      "method": "mlp",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 88.70013089687907,
+      "micro_MRE_seed_sample_SD": 5.36816991851854
+    },
+    {
+      "stack": "npub3",
+      "method": "mlp",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 40.20833479143069,
+      "micro_MRE_seed_sample_SD": 9.315560325183752
+    },
+    {
+      "stack": "m5cpu",
+      "method": "gcn",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 99.47545030306587,
+      "micro_MRE_seed_sample_SD": 0.19550310664358952
+    },
+    {
+      "stack": "m5mps",
+      "method": "gcn",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 99.49883717746309,
+      "micro_MRE_seed_sample_SD": 0.279314237921884
+    },
+    {
+      "stack": "a100mig",
+      "method": "gcn",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 98.21433186855934,
+      "micro_MRE_seed_sample_SD": 0.7581225592673049
+    },
+    {
+      "stack": "cloudcpu",
+      "method": "gcn",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 99.6521731000448,
+      "micro_MRE_seed_sample_SD": 0.11771168589964458
+    },
+    {
+      "stack": "npub3",
+      "method": "gcn",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 96.683173730489,
+      "micro_MRE_seed_sample_SD": 2.1385906418712564
+    },
+    {
+      "stack": "m5cpu",
+      "method": "rgat",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 96.09787658772665,
+      "micro_MRE_seed_sample_SD": 1.7788503802972133
+    },
+    {
+      "stack": "m5mps",
+      "method": "rgat",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 97.06275803490632,
+      "micro_MRE_seed_sample_SD": 1.4324392343729098
+    },
+    {
+      "stack": "a100mig",
+      "method": "rgat",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 89.70582098552404,
+      "micro_MRE_seed_sample_SD": 4.79115087551738
+    },
+    {
+      "stack": "cloudcpu",
+      "method": "rgat",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 97.27851800867258,
+      "micro_MRE_seed_sample_SD": 1.2458476111464216
+    },
+    {
+      "stack": "npub3",
+      "method": "rgat",
+      "physical_cases": 12,
+      "micro_MRE_seed_mean": 84.13633994959824,
+      "micro_MRE_seed_sample_SD": 8.717528968025022
+    }
+  ],
+  "artifact_manifest": [
+    {
+      "stack": "m5cpu",
+      "profile_sha256": "d61bee90c9496b3633006e0d91df14bd2e3cbefee8bd667731e189c8e995fc1b",
+      "result_sha256": "1de253402768f9d80c95252e8d146d0c5515805f98fb8c8d55bdeddad2c02072",
+      "physical_cases": 12,
+      "prediction_rows": 180
+    },
+    {
+      "stack": "m5mps",
+      "profile_sha256": "daecf87f81487f69cf6ec6be10d07337244db4ab6e88ad6cb9bcd85284719ed4",
+      "result_sha256": "72fc4009e8f769ea9e61409ff6e9c15b4d7fe33233faa35226e44f764dfd8803",
+      "physical_cases": 12,
+      "prediction_rows": 180
+    },
+    {
+      "stack": "a100mig",
+      "profile_sha256": "ed48f4c3a9efa9f206515896b48c908232989750fa08a8e3de6db7dea84bcba9",
+      "result_sha256": "d13166e9ae3939987a3512bacd1e296abf946edd22131f8d6c56a8ccedea91dc",
+      "physical_cases": 12,
+      "prediction_rows": 180
+    },
+    {
+      "stack": "cloudcpu",
+      "profile_sha256": "b9edf298b804f2c5e82627309f764e21fb54304f7065e658c1517fc0f98c3460",
+      "result_sha256": "3d85d02a86ca9e154e50883756f34d379f68d245176f944cb6c4d2daba378116",
+      "physical_cases": 12,
+      "prediction_rows": 180
+    },
+    {
+      "stack": "npub3",
+      "profile_sha256": "c767a296e695d385f2c5ff4192f7020f727817cd5841f202d8f6ed3a9c9cb9b4",
+      "result_sha256": "448aef583242618c38ba04e560da4ec57e261b1641e2bf035d73d399847bcace",
+      "physical_cases": 12,
+      "prediction_rows": 180
+    }
+  ],
+  "scope": "Complete MHA module (QKV/output projections included), larger shapes and short FX graph OOD. Separate from primitive SDPA main labels. No retraining, parameter tuning or test-query selection. Seed variation is not independent hardware replication."
+}

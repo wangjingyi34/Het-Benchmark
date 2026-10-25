@@ -1,0 +1,16 @@
+{
+  "kind": "independent_model_budget_learning_curve_audit",
+  "all_checks_passed": true,
+  "summary_sha256": "e7d15d493333f977cb8024e22f171ab13f0073bc8b3b97273e2eabb29ad894a9",
+  "code_sha256": "85a4015e6bb0dc569ede75e8afd38ae874a6ae306ea617dfd6ca42f1e3aa12a0",
+  "fit_records": 180,
+  "budget_entries": 36,
+  "exact_full8_results_reused": 2,
+  "audit_counts": {
+    "metric_objects_checked": 252,
+    "model_bootstrap_intervals_recomputed": 252
+  },
+  "workload_round_robin_train_subset_checked": true,
+  "fixed_model_boundaries_and_main_source_hashes_checked": true,
+  "scope": "Budget2/4/6 subsets are fixed within training folds and full8 results are reused exactly. Seeds and12model clusters are not independent hardware samples."
+}

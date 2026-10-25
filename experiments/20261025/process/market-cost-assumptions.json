@@ -1,0 +1,62 @@
+{
+  "retrieved_date": "2026-10-25",
+  "currency_conversion": "CNY per USD retained as explicit scenario parameter, not a fetched FX quotation",
+  "npu_user_confirmed": {
+    "model": "Ascend910B3 64GB",
+    "hourly_cny": 38,
+    "monthly_cny": 18500,
+    "hours_per_month_scenarios": [
+      672,
+      720,
+      744
+    ],
+    "source": "direct author confirmation 2026-10-25"
+  },
+  "a100_owned": true,
+  "market_sources": [
+    {
+      "provider": "Runpod",
+      "url": "https://www.runpod.io/pricing",
+      "page_updated": "2026-10-08",
+      "product": "Pods A100 SXM 80GB",
+      "usd_per_gpu_hour": 1.79,
+      "min_gpus": 1,
+      "vcpus": 16,
+      "host_ram_gb": 125,
+      "scope": "whole GPU cloud instance; not a public MIG 2g.20GB quote"
+    },
+    {
+      "provider": "Lambda",
+      "url": "https://lambda.ai/instances",
+      "product": "8 GPU A100 SXM 80GB instance",
+      "usd_per_gpu_hour": 2.79,
+      "min_gpus": 8,
+      "usd_per_minimum_instance_hour": 22.32,
+      "vcpus_node": 240,
+      "host_ram_gib_node": 1800,
+      "tax_note": "plus applicable tax",
+      "scope": "per-GPU allocation only if entire eight-GPU node can be used; not a single-GPU order"
+    }
+  ],
+  "cost_definitions": {
+    "unit_request": "hourly_allocation_price * latency_ms / (3600000 * batch_size)",
+    "monthly_full_utilization": "monthly_price * latency_ms / (month_hours * 3600000 * batch_size)",
+    "caveat": "capacity-normalized scenario for measured A100 MIG versus rented single 910B requires an explicit opportunity-cost allocation alpha; full A100 market price is not a measured MIG tariff",
+    "a100_mig_alpha_scenarios": [
+      0.25,
+      0.2857142857142857,
+      1.0
+    ],
+    "alpha_interpretation": [
+      "illustrative memory fraction",
+      "illustrative SM slice fraction",
+      "full card reservation charged to this deployment"
+    ],
+    "fx_sensitivity_cny_per_usd": [
+      6.5,
+      7.0,
+      7.5
+    ],
+    "source_billing": "owned hardware actual rental outlay is not asserted to be public market rental cost"
+  }
+}

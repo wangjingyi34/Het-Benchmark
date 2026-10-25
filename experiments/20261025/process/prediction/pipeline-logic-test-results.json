@@ -1,0 +1,20 @@
+{
+  "fixture_kind": "synthetic logic only; zero predictor-accuracy or hardware-performance evidence",
+  "passed": [
+    "target_label_not_read_by_forward",
+    "typed_attention_node_permutation_equivariance",
+    "all_parameter_gradients_finite",
+    "12_models_each_test_once",
+    "strict_model_disjointness",
+    "device_holdout_omits_target_device",
+    "validation_only_fallback_threshold",
+    "test_true_latency_does_not_select_trigger",
+    "validation_measurement_budget",
+    "relation_node_projection_matches_edge_expansion_forward",
+    "relation_node_projection_matches_parameter_and_input_gradients",
+    "untyped_GCN_permutation_equivariance",
+    "untyped_GCN_does_not_read_labels",
+    "untyped_GCN_gradients_finite"
+  ],
+  "physical_samples_used_for_these_tests": 0
+}

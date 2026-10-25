@@ -1,0 +1,39 @@
+{"mode": "probe", "split": "model-fold0-budget2", "method": "mlp", "MRE": 43.1679694496673, "seconds": 1.8040093407034874}
+{"mode": "probe", "split": "model-fold0-budget2", "method": "rgat", "MRE": 42.34955230453294, "seconds": 3.3529630228877068}
+{"mode": "probe", "split": "model-fold0-budget4", "method": "mlp", "MRE": 45.79330822359896, "seconds": 0.966138681396842}
+{"mode": "probe", "split": "model-fold0-budget4", "method": "rgat", "MRE": 42.78008686057321, "seconds": 3.6555973701179028}
+{"mode": "probe", "split": "model-fold0-budget6", "method": "mlp", "MRE": 45.762341832941395, "seconds": 0.9351308392360806}
+{"mode": "probe", "split": "model-fold0-budget6", "method": "rgat", "MRE": 39.390867550478845, "seconds": 5.594661959446967}
+{"mode": "probe", "split": "model-fold1-budget2", "method": "mlp", "MRE": 73.96501090939778, "seconds": 0.9353848667815328}
+{"mode": "probe", "split": "model-fold1-budget2", "method": "rgat", "MRE": 64.24935939630228, "seconds": 2.208074437454343}
+{"mode": "probe", "split": "model-fold1-budget4", "method": "mlp", "MRE": 78.82966952573798, "seconds": 0.8682790622115135}
+{"mode": "probe", "split": "model-fold1-budget4", "method": "rgat", "MRE": 63.49358495726592, "seconds": 2.6348873106762767}
+{"mode": "probe", "split": "model-fold1-budget6", "method": "mlp", "MRE": 73.45361832215484, "seconds": 0.8703961195424199}
+{"mode": "probe", "split": "model-fold1-budget6", "method": "rgat", "MRE": 64.67818472410866, "seconds": 5.050335849635303}
+{"mode": "probe", "split": "model-fold2-budget2", "method": "mlp", "MRE": 140.0459445410991, "seconds": 1.092164533212781}
+{"mode": "probe", "split": "model-fold2-budget2", "method": "rgat", "MRE": 136.7087163526429, "seconds": 2.603501374833286}
+{"mode": "probe", "split": "model-fold2-budget4", "method": "mlp", "MRE": 79.3661481787151, "seconds": 1.3527631517499685}
+{"mode": "probe", "split": "model-fold2-budget4", "method": "rgat", "MRE": 109.1489805382338, "seconds": 5.301628171466291}
+{"mode": "probe", "split": "model-fold2-budget6", "method": "mlp", "MRE": 83.75588470590338, "seconds": 1.3974812012165785}
+{"mode": "probe", "split": "model-fold2-budget6", "method": "rgat", "MRE": 92.4268975299526, "seconds": 9.968683393672109}
+{"mode": "probe", "split": "model-fold3-budget2", "method": "mlp", "MRE": 62.5794755160301, "seconds": 0.48307592887431383}
+{"mode": "probe", "split": "model-fold3-budget2", "method": "rgat", "MRE": 47.97245504614822, "seconds": 1.7587713496759534}
+{"mode": "probe", "split": "model-fold3-budget4", "method": "mlp", "MRE": 79.60258465426135, "seconds": 0.5063411053270102}
+{"mode": "probe", "split": "model-fold3-budget4", "method": "rgat", "MRE": 69.30504440569574, "seconds": 3.6814510449767113}
+{"mode": "probe", "split": "model-fold3-budget6", "method": "mlp", "MRE": 81.1832559899796, "seconds": 0.514574820175767}
+{"mode": "probe", "split": "model-fold3-budget6", "method": "rgat", "MRE": 78.88304246322977, "seconds": 11.572203662246466}
+{"mode": "probe", "split": "model-fold4-budget2", "method": "mlp", "MRE": 154.83252119644166, "seconds": 0.8307014424353838}
+{"mode": "probe", "split": "model-fold4-budget2", "method": "rgat", "MRE": 151.39319696117641, "seconds": 4.1894884360954165}
+{"mode": "probe", "split": "model-fold4-budget4", "method": "mlp", "MRE": 49.49245577466476, "seconds": 0.8838802175596356}
+{"mode": "probe", "split": "model-fold4-budget4", "method": "rgat", "MRE": 43.7010147363467, "seconds": 8.999630026519299}
+{"mode": "probe", "split": "model-fold4-budget6", "method": "mlp", "MRE": 54.968558151703085, "seconds": 0.8607411244884133}
+{"mode": "probe", "split": "model-fold4-budget6", "method": "rgat", "MRE": 45.717748074689986, "seconds": 24.06780020799488}
+{"mode": "probe", "split": "model-fold5-budget2", "method": "mlp", "MRE": 32.27282256213388, "seconds": 0.8277569739148021}
+{"mode": "probe", "split": "model-fold5-budget2", "method": "rgat", "MRE": 38.687731658892666, "seconds": 4.322193633764982}
+{"mode": "probe", "split": "model-fold5-budget4", "method": "mlp", "MRE": 40.886242997454936, "seconds": 0.7931181145831943}
+{"mode": "probe", "split": "model-fold5-budget4", "method": "rgat", "MRE": 36.26986608554271, "seconds": 15.499168138951063}
+{"mode": "probe", "split": "model-fold5-budget6", "method": "mlp", "MRE": 34.16879288936762, "seconds": 0.8916637590155005}
+{"mode": "probe", "split": "model-fold5-budget6", "method": "rgat", "MRE": 38.0764541659604, "seconds": 14.712058957666159}
+{"complete": true, "results": 36, "predictions": 417150, "embedding_rows": 0}
+
+

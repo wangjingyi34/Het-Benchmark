@@ -1,0 +1,15 @@
+{"case": 0, "configuration": [1, 128, 128, 4], "status": "measured", "seconds": 0.19659634958952665}
+{"case": 1, "configuration": [2, 128, 128, 8], "status": "measured", "seconds": 0.021747136488556862}
+{"case": 2, "configuration": [1, 512, 128, 4], "status": "measured", "seconds": 0.011584652587771416}
+{"case": 3, "configuration": [2, 1024, 128, 8], "status": "measured", "seconds": 0.0586194172501564}
+{"case": 4, "configuration": [1, 128, 512, 8], "status": "measured", "seconds": 0.02436605654656887}
+{"case": 5, "configuration": [2, 512, 512, 8], "status": "measured", "seconds": 0.12828296143561602}
+{"case": 6, "configuration": [1, 1024, 512, 8], "status": "measured", "seconds": 0.06374226417392492}
+{"case": 7, "configuration": [2, 1024, 512, 8], "status": "measured", "seconds": 0.25639957562088966}
+{"case": 8, "configuration": [1, 128, 768, 12], "status": "measured", "seconds": 0.0453623216599226}
+{"case": 9, "configuration": [2, 512, 768, 12], "status": "measured", "seconds": 0.2669727122411132}
+{"case": 10, "configuration": [1, 1024, 768, 12], "status": "measured", "seconds": 0.12443029507994652}
+{"case": 11, "configuration": [2, 1024, 768, 12], "status": "measured", "seconds": 0.5135958576574922}
+{"complete": true, "graphs": 12, "construction_failures": 0}
+
+

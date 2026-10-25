@@ -1,0 +1,3 @@
+{"output": "/work/fullmodel_raw/cuda-resnet18-b1-r1.json", "run_id": "cuda_resnet18_b1_imagenet_val10class_v2_run1", "quality_baseline": 0.65, "coalitions_ok": 16, "equivalence_pass": 16, "weight_hash": "b6e132d398763cadd5e66a4e994f5a5eb6cf7bd415eb7e8fae476475f749ffe2", "input_hash": "d379c7a7f4bc3d2d0bf013b53d0943db9ac9bfbe74dd472ebe3e875a8b337ce1"}
+
+

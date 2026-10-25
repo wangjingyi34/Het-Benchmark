@@ -1,0 +1,104 @@
+{
+  "kind": "implementation_unit_test",
+  "pretrained": false,
+  "task_quality_evaluations": 0,
+  "model": "torchvision resnet18 random weights",
+  "coalition_equivalence": [
+    {
+      "mask": 0,
+      "max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "mask": 1,
+      "max_abs_error": 1.2218952178955078e-06,
+      "passed": true
+    },
+    {
+      "mask": 2,
+      "max_abs_error": 1.5795230865478516e-06,
+      "passed": true
+    },
+    {
+      "mask": 3,
+      "max_abs_error": 1.4901161193847656e-06,
+      "passed": true
+    },
+    {
+      "mask": 4,
+      "max_abs_error": 1.043081283569336e-06,
+      "passed": true
+    },
+    {
+      "mask": 5,
+      "max_abs_error": 1.430511474609375e-06,
+      "passed": true
+    },
+    {
+      "mask": 6,
+      "max_abs_error": 1.3560056686401367e-06,
+      "passed": true
+    },
+    {
+      "mask": 7,
+      "max_abs_error": 1.6391277313232422e-06,
+      "passed": true
+    },
+    {
+      "mask": 8,
+      "max_abs_error": 8.940696716308594e-07,
+      "passed": true
+    },
+    {
+      "mask": 9,
+      "max_abs_error": 1.3113021850585938e-06,
+      "passed": true
+    },
+    {
+      "mask": 10,
+      "max_abs_error": 1.1920928955078125e-06,
+      "passed": true
+    },
+    {
+      "mask": 11,
+      "max_abs_error": 1.1920928955078125e-06,
+      "passed": true
+    },
+    {
+      "mask": 12,
+      "max_abs_error": 1.2069940567016602e-06,
+      "passed": true
+    },
+    {
+      "mask": 13,
+      "max_abs_error": 1.4603137969970703e-06,
+      "passed": true
+    },
+    {
+      "mask": 14,
+      "max_abs_error": 1.3113021850585938e-06,
+      "passed": true
+    },
+    {
+      "mask": 15,
+      "max_abs_error": 1.430511474609375e-06,
+      "passed": true
+    }
+  ],
+  "graph_nodes": 71,
+  "graph_edges": 78,
+  "multi_input_nodes": 8,
+  "inplace_disabled_modules": [
+    "relu",
+    "layer1.0.relu",
+    "layer1.1.relu",
+    "layer2.0.relu",
+    "layer2.1.relu",
+    "layer3.0.relu",
+    "layer3.1.relu",
+    "layer4.0.relu",
+    "layer4.1.relu"
+  ],
+  "state_sha256": "210ec3cc8f8ca832a26a28de0af0188546360d620f2209944e52f424e849be3b",
+  "all_passed": true
+}
