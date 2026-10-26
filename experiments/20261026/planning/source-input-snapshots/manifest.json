@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "path": "v2-实证增强/evidence/early-tasks/index.json",
+      "sha256": "1a95ba622215a8e876538c3b88ba13893fe1ce95f96662d6542f6e9a56f85dd4"
+    },
+    {
+      "path": "v2-实证增强/evidence/early-tasks/resnet18_b1_imagenet_val10class_v2_2c4332169b.json",
+      "sha256": "159fe06ec3a924087bd37b97be7209ae2b268c26978e8e104c76d3e7a50d577a"
+    },
+    {
+      "path": "v2-实证增强/evidence/early-tasks/resnet18_b1_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "225e4d7ab0abf14709132ecd9f69859c2bc597ca9a3cd6866863e767e4de6f00"
+    },
+    {
+      "path": "v2-实证增强/evidence/early-tasks/resnet18_b4_imagenet_val10class_v2_2c4332169b.json",
+      "sha256": "f796df7592328e5ca449e7b5d7a1141fa14ed1cac6fe9bd43744890c38e4c5ca"
+    },
+    {
+      "path": "v2-实证增强/evidence/early-tasks/resnet18_b4_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "2c76bd2766ac02ecf38070a512a41fb53ab952a20155bc77279bf39997fd3db9"
+    },
+    {
+      "path": "v2-实证增强/evidence/early-tasks/resnet50_b1_imagenet_val10class_v2_2c4332169b.json",
+      "sha256": "1cb33641971366f2fef96ba6fc2e529e6539e9d427b9a58fa98e46e9a2e509a2"
+    },
+    {
+      "path": "v2-实证增强/evidence/early-tasks/resnet50_b4_imagenet_val10class_v2_2c4332169b.json",
+      "sha256": "ffaa3494b219a16b8cdc6ae3bcd995e7bc924406b4dbfff5db3c2bc083c9e469"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/index.json",
+      "sha256": "d1e072f48992d395c06eea4dc02427e75f23a404c37a502866229be49780d091"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/resnet18_b1_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "0bbc38344d4a3f32363c78821d6ceb1478db3fcf9315d6c609b2448e609297df"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/resnet18_b4_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "9cb86414603659c822768209073116adfe54d3976e3055c382552ddfc71a8ae0"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/resnet50_b1_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "9fef1d439cde8c8d8a6f36e213032cce85a0f49a461128741ba4f83ccdcccd64"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/resnet50_b4_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "8b8a06459247fa6cbdd113c707731c65f2aae8e1a6da57c6e60c8f535811d9e5"
+    },
+    {
+      "path": "v2-实证增强/methods/cloud_early_bridge.py",
+      "sha256": "251501ccbf58dc600aefc979b09aeafec00c972b4d8343078fc1c23dd4542524"
+    },
+    {
+      "path": "v2-实证增强/methods/migration-preregistration.json",
+      "sha256": "d68e6e66937aa462327e5caf19f4590b8a595614afac1d71120ab21bbf1b5fc0"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-preregistration.json",
+      "sha256": "0075179209ba63cd91c2a58e396a116a917e3308d93c767703bc019602ff6fcb"
+    },
+    {
+      "path": "v2-实证增强/methods/runtime-preregistration.json",
+      "sha256": "2eb275de1a1df3792832bfdd936da5456e31e7f4999bf73986363282b3b77675"
+    },
+    {
+      "path": "v4-提分条件补强/case/case-protocol.json",
+      "sha256": "b229a718635213dd345bd876a01b31c5ead082820dc137aeaa803c55d04a2361",
+      "original_sha256": "028c96535e025ffef91192885cd56d6648c2af02305f406be95045c94bba5119"
+    }
+  ],
+  "purpose": "Additional immutable inputs required by the analysis freeze; controller source is provenance only and is not needed to launch cloud tasks."
+}

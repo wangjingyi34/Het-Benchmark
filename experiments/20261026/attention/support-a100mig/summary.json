@@ -1,0 +1,505 @@
+{
+  "kind": "support_gate_reproducibility_summary",
+  "created_utc": "2026-10-26T03:51:27.674751+00:00",
+  "protocol_sha256": "9eec9d381a589d6c76e86a1b9788e56b8448a5765e55a1b2601afe2d0a309e84",
+  "reference_sha256": "bd7bf3d927328322d67a6c4253d557ebb20c37e4ec37b25741850f574aab636d",
+  "replicate_hashes": {
+    "repeat-1.json": "1974db7612661ac7b9fdb574b124a6a7be1e2e0a695d880f0bbd77d334e08450",
+    "repeat-2.json": "18b9c56b482c17ed5aca314b8606775b59806a3edb67e3a61b9343c1fd81c96a",
+    "repeat-3.json": "a61f0b3ac69388f7958a4b27d35716d987bec89899ca87782fe60acd20e1954f",
+    "repeat-4.json": "62a3f6a649d9b413612232b8a6324757935675753a6179fb08d999f63d6682b2",
+    "repeat-5.json": "69e99900b299a22c7d9e8ddde2e92fdf9e6262ef8c1733c69773e6e6261a928a"
+  },
+  "device_id": "A100-SXM4-MIG-2g20GB",
+  "query_count": 24,
+  "profile_fraction": 1.0,
+  "independent_processes": 5,
+  "mre_pct": 0.2192576909552754,
+  "mae_ms": 0.006220455833333262,
+  "wape_pct": 0.20679897347904658,
+  "profiling_wall_seconds": 4.157931580208242,
+  "repeatability_evaluation_wall_seconds": 20.884611691348255,
+  "rows": [
+    {
+      "case": 0,
+      "configuration": [
+        1,
+        320,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 0.13778335,
+      "independent_process_means_ms": [
+        0.13858025000000002,
+        0.13920155,
+        0.1390829,
+        0.1376685,
+        0.13984649999999998
+      ],
+      "reference_mean_ms": 0.13887594,
+      "ae_ms": 0.0010925900000000044,
+      "re_pct": 0.7867381491711266
+    },
+    {
+      "case": 1,
+      "configuration": [
+        1,
+        320,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 0.226828125,
+      "independent_process_means_ms": [
+        0.2250087,
+        0.226414125,
+        0.225234375,
+        0.22673245,
+        0.225960275
+      ],
+      "reference_mean_ms": 0.22586998499999997,
+      "ae_ms": 0.000958140000000024,
+      "re_pct": 0.42419978909549405
+    },
+    {
+      "case": 2,
+      "configuration": [
+        1,
+        320,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 0.664527375,
+      "independent_process_means_ms": [
+        0.664110625,
+        0.664874,
+        0.665954375,
+        0.666046175,
+        0.664858075
+      ],
+      "reference_mean_ms": 0.66516865,
+      "ae_ms": 0.0006412749999999967,
+      "re_pct": 0.09640788091862067
+    },
+    {
+      "case": 3,
+      "configuration": [
+        1,
+        640,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 0.260048325,
+      "independent_process_means_ms": [
+        0.26105259999999997,
+        0.26148705,
+        0.260840725,
+        0.262156525,
+        0.262289325
+      ],
+      "reference_mean_ms": 0.261565245,
+      "ae_ms": 0.0015169199999999772,
+      "re_pct": 0.5799394334671555
+    },
+    {
+      "case": 4,
+      "configuration": [
+        1,
+        640,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 0.45069385,
+      "independent_process_means_ms": [
+        0.451229175,
+        0.4512637,
+        0.450434,
+        0.450125425,
+        0.450506
+      ],
+      "reference_mean_ms": 0.45071165999999996,
+      "ae_ms": 1.7809999999951476e-05,
+      "re_pct": 0.003951528567055815
+    },
+    {
+      "case": 5,
+      "configuration": [
+        1,
+        640,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 1.235062,
+      "independent_process_means_ms": [
+        1.23777545,
+        1.23614995,
+        1.2369868,
+        1.23474635,
+        1.23583425
+      ],
+      "reference_mean_ms": 1.2362985599999998,
+      "ae_ms": 0.00123655999999972,
+      "re_pct": 0.10002114699540864
+    },
+    {
+      "case": 6,
+      "configuration": [
+        1,
+        960,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 0.509263625,
+      "independent_process_means_ms": [
+        0.510120975,
+        0.51001385,
+        0.51821405,
+        0.50995615,
+        0.51042655
+      ],
+      "reference_mean_ms": 0.5117463150000001,
+      "ae_ms": 0.0024826900000001206,
+      "re_pct": 0.4851407674523499
+    },
+    {
+      "case": 7,
+      "configuration": [
+        1,
+        960,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 0.803611725,
+      "independent_process_means_ms": [
+        0.80456025,
+        0.8049289000000001,
+        0.805695375,
+        0.804369975,
+        0.80433155
+      ],
+      "reference_mean_ms": 0.8047772099999999,
+      "ae_ms": 0.0011654849999999106,
+      "re_pct": 0.14482082562948206
+    },
+    {
+      "case": 8,
+      "configuration": [
+        1,
+        960,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 2.1616441,
+      "independent_process_means_ms": [
+        2.16408715,
+        2.1649260249999998,
+        2.1641616,
+        2.1624644,
+        2.161215525
+      ],
+      "reference_mean_ms": 2.16337094,
+      "ae_ms": 0.0017268399999998962,
+      "re_pct": 0.07982172488643562
+    },
+    {
+      "case": 9,
+      "configuration": [
+        1,
+        1280,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 0.7471093,
+      "independent_process_means_ms": [
+        0.746514975,
+        0.747934425,
+        0.747356575,
+        0.7458391,
+        0.746454175
+      ],
+      "reference_mean_ms": 0.74681985,
+      "ae_ms": 0.0002894500000000244,
+      "re_pct": 0.03875767362102446
+    },
+    {
+      "case": 10,
+      "configuration": [
+        1,
+        1280,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 1.1750152,
+      "independent_process_means_ms": [
+        1.1761436,
+        1.1803299,
+        1.177909425,
+        1.176253725,
+        1.175397425
+      ],
+      "reference_mean_ms": 1.177206815,
+      "ae_ms": 0.002191614999999869,
+      "re_pct": 0.18617077068143453
+    },
+    {
+      "case": 11,
+      "configuration": [
+        1,
+        1280,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 2.9665208499999998,
+      "independent_process_means_ms": [
+        2.970674475,
+        2.9691119500000003,
+        2.967625225,
+        2.96698515,
+        2.968306975
+      ],
+      "reference_mean_ms": 2.9685407550000003,
+      "ae_ms": 0.002019905000000488,
+      "re_pct": 0.06804370115513163
+    },
+    {
+      "case": 12,
+      "configuration": [
+        2,
+        320,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 0.483858275,
+      "independent_process_means_ms": [
+        0.4846839,
+        0.483987025,
+        0.485656975,
+        0.4843306,
+        0.4841991
+      ],
+      "reference_mean_ms": 0.48457152,
+      "ae_ms": 0.0007132449999999735,
+      "re_pct": 0.14719086255832237
+    },
+    {
+      "case": 13,
+      "configuration": [
+        2,
+        320,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 1.163260475,
+      "independent_process_means_ms": [
+        1.1625037,
+        1.164175875,
+        1.163742775,
+        1.1614507,
+        1.163318325
+      ],
+      "reference_mean_ms": 1.1630382750000003,
+      "ae_ms": 0.00022219999999961715,
+      "re_pct": 0.019105132202086563
+    },
+    {
+      "case": 14,
+      "configuration": [
+        2,
+        320,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 3.971184525,
+      "independent_process_means_ms": [
+        3.975203975,
+        4.00395785,
+        3.978794125,
+        4.00154915,
+        3.9905297
+      ],
+      "reference_mean_ms": 3.99000696,
+      "ae_ms": 0.018822435000000137,
+      "re_pct": 0.47173940268014314
+    },
+    {
+      "case": 15,
+      "configuration": [
+        2,
+        640,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 1.0641498,
+      "independent_process_means_ms": [
+        1.0674869249999999,
+        1.06790835,
+        1.070352675,
+        1.066343125,
+        1.06649305
+      ],
+      "reference_mean_ms": 1.067716825,
+      "ae_ms": 0.003567024999999946,
+      "re_pct": 0.334079684470641
+    },
+    {
+      "case": 16,
+      "configuration": [
+        2,
+        640,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 2.4467941,
+      "independent_process_means_ms": [
+        2.448621375,
+        2.450102425,
+        2.454150925,
+        2.447969025,
+        2.4480444
+      ],
+      "reference_mean_ms": 2.44977763,
+      "ae_ms": 0.0029835299999998455,
+      "re_pct": 0.12178778855123458
+    },
+    {
+      "case": 17,
+      "configuration": [
+        2,
+        640,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 8.232368525,
+      "independent_process_means_ms": [
+        8.2481793,
+        8.2713105,
+        8.240211875,
+        8.2581538,
+        8.286019925
+      ],
+      "reference_mean_ms": 8.26077508,
+      "ae_ms": 0.02840655500000011,
+      "re_pct": 0.34387275679221263
+    },
+    {
+      "case": 18,
+      "configuration": [
+        2,
+        960,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 1.7629130499999999,
+      "independent_process_means_ms": [
+        1.7635722,
+        1.76681165,
+        1.76583835,
+        1.7604885000000001,
+        1.763808725
+      ],
+      "reference_mean_ms": 1.7641038850000001,
+      "ae_ms": 0.0011908350000002788,
+      "re_pct": 0.06750367765333042
+    },
+    {
+      "case": 19,
+      "configuration": [
+        2,
+        960,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 3.87819265,
+      "independent_process_means_ms": [
+        3.882766525,
+        3.8806187,
+        3.894463275,
+        3.87930445,
+        3.879295675
+      ],
+      "reference_mean_ms": 3.883289725,
+      "ae_ms": 0.0050970750000001175,
+      "re_pct": 0.13125662417578482
+    },
+    {
+      "case": 20,
+      "configuration": [
+        2,
+        960,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 12.53952775,
+      "independent_process_means_ms": [
+        12.562104699999999,
+        12.56468385,
+        12.5986423,
+        12.550033925,
+        12.5485727
+      ],
+      "reference_mean_ms": 12.564807495,
+      "ae_ms": 0.02527974500000063,
+      "re_pct": 0.20119484528561518
+    },
+    {
+      "case": 21,
+      "configuration": [
+        2,
+        1280,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 2.5863315,
+      "independent_process_means_ms": [
+        2.586720375,
+        2.593563625,
+        2.586411975,
+        2.587509,
+        2.590688475
+      ],
+      "reference_mean_ms": 2.5889786900000002,
+      "ae_ms": 0.0026471900000002435,
+      "re_pct": 0.10224842754500398
+    },
+    {
+      "case": 22,
+      "configuration": [
+        2,
+        1280,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 5.41132395,
+      "independent_process_means_ms": [
+        5.410812025,
+        5.4305893,
+        5.414911025,
+        5.415378125,
+        5.411229225
+      ],
+      "reference_mean_ms": 5.416583940000001,
+      "ae_ms": 0.005259990000000769,
+      "re_pct": 0.09710899080058877
+    },
+    {
+      "case": 23,
+      "configuration": [
+        2,
+        1280,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 17.16697135,
+      "independent_process_means_ms": [
+        17.194684875,
+        17.191415175,
+        17.188491175,
+        17.175762425,
+        17.283312275
+      ],
+      "reference_mean_ms": 17.206733184999997,
+      "ae_ms": 0.03976183499999664,
+      "re_pct": 0.23108299857092626
+    }
+  ],
+  "interpretation": "repeatability of direct measured fallback, not learned prediction accuracy or original five-platform LOPO"
+}

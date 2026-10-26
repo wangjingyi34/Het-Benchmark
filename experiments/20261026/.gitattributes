@@ -1,0 +1,5 @@
+# These bounded scientific checkpoints are stored as ordinary Git blobs.
+# Exact bytes are required by RELEASE-SHA256.json and the offline replay.
+*.pt -filter -diff -merge
+*.pth -filter -diff -merge
+*.bin -filter -diff -merge

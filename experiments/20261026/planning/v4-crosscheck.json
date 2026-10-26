@@ -1,0 +1,7 @@
+{
+  "path": "v4-提分条件补强/case/all-context-recomputation.json",
+  "sha256": "56b276bf557edba6331eae0f0c5cfd79ff3632a4a99df3b5fe65b145f49b7606",
+  "status": "passed",
+  "raw_process_values_crosschecked": 320,
+  "qualification": "Same canonical raw tables; agreement is an arithmetic check, not new evidence or replication."
+}

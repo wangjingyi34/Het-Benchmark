@@ -1,0 +1,199 @@
+{
+  "contract_version": "v7-original-five-platforms-1",
+  "purpose": "Prepare real original-platform LOPO without relabeling five new software stacks or recovering missing historical observations by estimation",
+  "original_catalog_sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+  "original_platforms": {
+    "A100_80GB": "NVIDIA A100 80GB PCIe",
+    "Ascend_910B": "Huawei Ascend 910B",
+    "MLU370_X8": "Cambricon MLU370-X8",
+    "Intel_GPU_Max": "Intel GPU Max 1550",
+    "Intel_Xeon_8380": "Intel Xeon 8380"
+  },
+  "scope_modes": {
+    "historical_canonical5000": "Original frozen record IDs and original graph/checkpoint/feature/target transforms required; full 31220 opportunity status ledger and original run binding.",
+    "prospective_original_five_platforms": "New revalidation on the original five named device families; report new campaign and exact variant; never certify historical canonical5000 or historical14.3."
+  },
+  "source_model_split": {
+    "train": [
+      "ALBERT_Base",
+      "BERT_Mini",
+      "BERT_Tiny",
+      "BLIP_Base",
+      "BLOOM_560M",
+      "ConvNeXt_Base",
+      "DINOv2_Base",
+      "DeiT_Base",
+      "DistilBERT",
+      "DistilBERT_Base",
+      "EfficientNet_B0",
+      "Falcon_7B",
+      "GPT_2",
+      "GPT_Neo_1.3B",
+      "MobileNet_V2",
+      "OPT_1.3B",
+      "Phi_3_mini",
+      "Pythia_1.4B",
+      "Qwen2.5_7B",
+      "ResNet_50",
+      "RoBERTa_Base",
+      "SigLIP_Base",
+      "StableLM_3B",
+      "Swin_Base",
+      "T5_Base",
+      "ViT_Base",
+      "Wav2Vec2_Base"
+    ],
+    "validation": [
+      "BEiT_Base",
+      "RegNet_Y_4GF",
+      "TinyLlama_1.1B"
+    ],
+    "test": [
+      "BERT_Base",
+      "CLIP_ViT_B_32",
+      "Mistral_7B",
+      "Whisper_Base"
+    ]
+  },
+  "source_catalog": {
+    "path": "source-data/data/model_dataset.json",
+    "sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+    "pointer": "/models"
+  },
+  "required_counts": {
+    "source_models": 34,
+    "operator_instances": 6244,
+    "hardware_platforms": 5,
+    "opportunities": 31220,
+    "historical_canonical_performance_edges": 5000
+  },
+  "status_values": [
+    "calibrated",
+    "estimated",
+    "failed",
+    "measured",
+    "missing",
+    "unsupported"
+  ],
+  "status_rules": {
+    "measured": "Physical repeats with exact raw file hash+JSON pointer; provenance parents empty.",
+    "calibrated": "Explicit parents and calibration method evidence; excluded from strict LOPO train/validation/test.",
+    "estimated": "Explicit parents and formula evidence; excluded from strict LOPO train/validation/test.",
+    "failed": "No latency; reason/error record source.",
+    "unsupported": "No latency; unsupported-operation evidence source.",
+    "missing": "No latency; truthful unavailable-source reason, not failure or unsupported."
+  },
+  "record_common_required": [
+    "record_id",
+    "operator_instance_id",
+    "source_model_id",
+    "platform_id",
+    "status"
+  ],
+  "measured_extra_required": [
+    "samples_ms",
+    "latency_ms",
+    "statistic",
+    "run_id",
+    "captured_at_utc",
+    "configuration",
+    "configuration_sha256",
+    "model_weights_sha256",
+    "input_sha256",
+    "software_environment_sha256",
+    "raw_evidence",
+    "hardware_evidence"
+  ],
+  "configuration_required": [
+    "input_shapes",
+    "output_shapes",
+    "dtype",
+    "layout",
+    "operator_parameters"
+  ],
+  "evidence_reference": {
+    "path": "Path relative to this package root (or an explicitly provided absolute path during private validation) to an immutable JSON file.",
+    "sha256": "SHA256 of the complete file",
+    "pointer": "RFC6901 pointer identifying the exact row/object"
+  },
+  "minimum_measured_repeats": 5,
+  "planned_sampling_protocol": {
+    "warmup": 10,
+    "repeats": 100,
+    "note": "Prospective collection plan; data contract accepts archived raw repeats >=5 and reports actual protocol. All devices must synchronize device work before timing readout."
+  },
+  "hardware_evidence_required": [
+    "platform_id",
+    "device_name",
+    "partition=full_device",
+    "device_variant",
+    "driver_version",
+    "runtime_version",
+    "framework_version",
+    "host_inventory_sha256"
+  ],
+  "feature_whitelist": [
+    "attention_heads",
+    "batch_size",
+    "bytes_read",
+    "bytes_written",
+    "channels_in",
+    "channels_out",
+    "dtype",
+    "flops",
+    "groups",
+    "hardware_memory_bandwidth",
+    "hardware_memory_capacity",
+    "hardware_peak_flops",
+    "head_dimension",
+    "input_shapes",
+    "kernel_size",
+    "layout",
+    "operator_family",
+    "output_shapes",
+    "padding",
+    "sequence_length",
+    "stride"
+  ],
+  "split_rule": {
+    "train": "source_model train27 AND platform != heldout; measured only",
+    "validation": "source_model validation3 AND platform != heldout; measured only",
+    "test": "source_model test4 AND platform == heldout; measured only",
+    "preprocessing": "fit transformations and feature selection on train labels only; target-platform descriptor specs permitted; all target-platform latency labels excluded.",
+    "graph": "remove all heldout performance labels/edges; training similarity edges must have both endpoints in train source models.",
+    "checkpoint": "select on validation only; freeze each checkpoint before opening target-platform test labels; log split/checkpoint/feature hashes.",
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "metrics": [
+      "MRE micro with exact sample denominator",
+      "macro by source model and operator family",
+      "per-platform and pooled results, no mixing denominators",
+      "between-seed variance",
+      "model-cluster bootstrap confidence interval"
+    ]
+  },
+  "execution_order": [
+    "Recover or collect exact configuration and hardware identity.",
+    "Create complete opportunity status ledger with no invented outcomes.",
+    "Run validator --stage labels; any failure blocks fold construction.",
+    "Run validator --build-folds; plan contains strict immutable record memberships.",
+    "Train each pre-registered method/seed using frozen folds; persist checkpoints, per-query target/prediction pairs, transforms and train IDs.",
+    "Independent audit checks raw source hashes, leakage, coverage and all per-seed metrics."
+  ],
+  "not_ready_until": [
+    "All five named physical devices or valid historic records are available.",
+    "Complete original instance/source-model binding, raw repeats, variant/runtime metadata and provenance recovered.",
+    "Original checkpoint study additionally needs saved64-dimensional transform, target units/transform and original graph binding.",
+    "Concrete source operator-instance to executable graph-node/configuration mapping and benchmark-family grouping must be frozen; original catalog includes symbolic shapes and primitive operators."
+  ],
+  "validator": {
+    "path": "validate_original_lopo.py",
+    "sha256": "c6304eb718e185921e1a8132cfb354107f4046b807ce3fcd541aba2c89ee90a4"
+  },
+  "current_priority": "Recover verifiable per-query historical timings before constructing strict LOPO folds; do not substitute derived estimates or other device partitions."
+}

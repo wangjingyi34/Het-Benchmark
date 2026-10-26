@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-26T03:58:09.468696+00:00",
+  "source_query_partition": {
+    "total": 13905,
+    "included": 350,
+    "excluded": 13555
+  },
+  "independently_recomputed_features": 350,
+  "all_input_weights_and_physical_means_match": true,
+  "support_cells": {
+    "no_test_support": 50,
+    "execute": 40
+  },
+  "checkpoint_hashes_verified": 400,
+  "prediction_rows": 10500,
+  "metric_rows_independently_recomputed": 420,
+  "maximum_absolute_metric_difference": {
+    "micro_MRE_percent": 4.547473508864641e-13,
+    "MAE_us": 1.1368683772161603e-13,
+    "WAPE_percent": 1.7053025658242404e-13,
+    "RMSE_ms": 1.1102230246251565e-16,
+    "RMSPE_percent": 4.547473508864641e-13,
+    "accuracy_within5percent": 7.105427357601002e-15,
+    "accuracy_within10percent": 3.552713678800501e-15
+  },
+  "all_test_models_separate_from_train_and_validation": true,
+  "undefined_OOB_R2_preserved_as_null": 25,
+  "code_sha256": "0261108dc5f99e3daf3d963abbbc42460a5b9568d71754d46149a5d5fc00f000",
+  "protocol_sha256": "b8278d8d49aaea6285a5e1a986050fa8c8f14e5b3a1200c8b52e5040559b21d1",
+  "predictions_sha256": "53d0d24f3145e812c731a0364899305a6787192a80356a36f7d1f1cbd95e85f7"
+}

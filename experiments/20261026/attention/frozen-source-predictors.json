@@ -1,0 +1,541 @@
+{
+  "kind": "attention_challenge_frozen_predictors",
+  "frozen_utc": "2026-10-25T06:22:08.897296+00:00",
+  "source_summary_sha256": "6d6c8b4c3ecaa3efa0eb701038171938355115040057e9c7081dc5f10fa5a7aa",
+  "evaluation_code_sha256": "bad26be58e40a0bf6ff939024f15e646a72ec3e1b8bc3fef54dc67745f8cce0f",
+  "challenge_code_sha256": "dfab91261cc4e9a83f232ca9275c20509d5360f78423c071e7a80236f88b5b1c",
+  "fixed_configurations": [
+    [
+      1,
+      128,
+      128,
+      4
+    ],
+    [
+      2,
+      128,
+      128,
+      8
+    ],
+    [
+      1,
+      512,
+      128,
+      4
+    ],
+    [
+      2,
+      1024,
+      128,
+      8
+    ],
+    [
+      1,
+      128,
+      512,
+      8
+    ],
+    [
+      2,
+      512,
+      512,
+      8
+    ],
+    [
+      1,
+      1024,
+      512,
+      8
+    ],
+    [
+      2,
+      1024,
+      512,
+      8
+    ],
+    [
+      1,
+      128,
+      768,
+      12
+    ],
+    [
+      2,
+      512,
+      768,
+      12
+    ],
+    [
+      1,
+      1024,
+      768,
+      12
+    ],
+    [
+      2,
+      1024,
+      768,
+      12
+    ]
+  ],
+  "source_manifest": [
+    {
+      "path": "/work/evidence/physical_profiles/m5cpu.json",
+      "sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "graphs": 36,
+      "failures": [],
+      "hardware": "Apple-M5-CPU-4T",
+      "record_status_counts": {
+        "measured": 2781
+      },
+      "metadata_sidecar": "/work/evidence/physical_profiles/m5cpu.metadata.json",
+      "metadata_sidecar_sha256": "9b3b8c5dc99190ca0b0a2732444ce6ff75dec87939bc84e87c11dd90396f1535"
+    },
+    {
+      "path": "/work/evidence/physical_profiles/m5mps.json",
+      "sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "graphs": 36,
+      "failures": [],
+      "hardware": "Apple-M5-MPS",
+      "record_status_counts": {
+        "measured": 2781
+      },
+      "metadata_sidecar": "/work/evidence/physical_profiles/m5mps.metadata.json",
+      "metadata_sidecar_sha256": "8ea2686cf4870559424fac1e3568b136f9c56782d0469016f5efaf0426635014"
+    },
+    {
+      "path": "/work/evidence/physical_profiles/a100mig.json",
+      "sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "graphs": 36,
+      "failures": [],
+      "hardware": "A100-SXM4-MIG-2g20GB",
+      "record_status_counts": {
+        "measured": 2781
+      },
+      "metadata_sidecar": "/work/evidence/physical_profiles/a100mig.metadata.json",
+      "metadata_sidecar_sha256": "a7e95b8be8067dcb905c603fec9404210e407c0f48cfec22a2d11b3b9a7ced3d"
+    },
+    {
+      "path": "/work/evidence/physical_profiles/xeon_cpu.json",
+      "sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "graphs": 36,
+      "failures": [],
+      "hardware": "Cloud-x86-CPU-4T",
+      "record_status_counts": {
+        "measured": 2781
+      },
+      "metadata_sidecar": "/work/evidence/physical_profiles/xeon_cpu.metadata.json",
+      "metadata_sidecar_sha256": "064e2a80d22a081e6ad20681b83e99b1d6ee405a4b36a9d53b47c0f01c549f1e"
+    },
+    {
+      "path": "/work/evidence/physical_profiles/npub3.json",
+      "sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "code_sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "graphs": 36,
+      "failures": [],
+      "hardware": "Ascend-910B3-64GB",
+      "record_status_counts": {
+        "measured": 2781
+      },
+      "metadata_sidecar": "/work/evidence/physical_profiles/npub3.metadata.json",
+      "metadata_sidecar_sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8"
+    }
+  ],
+  "checkpoints": [
+    {
+      "method": "mlp",
+      "feature_mode": "strict",
+      "seed": 11,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-mlp-seed11.pt",
+      "sha256": "ac533a8b5d7d6f7bc7c43f0fd12db3c4255c8e286379fdad6c93f99c4cc5e9ff",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "mlp",
+      "feature_mode": "strict",
+      "seed": 22,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-mlp-seed22.pt",
+      "sha256": "a9664d11af05b55187eaece25b3ec83946a5c481d1dba8ebd4afaea3ec5a6ae1",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "mlp",
+      "feature_mode": "strict",
+      "seed": 33,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-mlp-seed33.pt",
+      "sha256": "e7927a50295f6d6f9d793db466d494eaf029c4446637df1c520d86f7a33a9d23",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "mlp",
+      "feature_mode": "strict",
+      "seed": 44,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-mlp-seed44.pt",
+      "sha256": "f69ef30975196c8a86b9287b2de47a8ecf55a50169c756a904132e2405cfd4e3",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "mlp",
+      "feature_mode": "strict",
+      "seed": 55,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-mlp-seed55.pt",
+      "sha256": "67d64ceab0ec020a7aae69cb3fe6a297da31e22c7504b6ab2289b0910b5a3019",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "gcn",
+      "feature_mode": "strict",
+      "seed": 11,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-gcn-seed11.pt",
+      "sha256": "2e7f933b6e738cd072b3770063814256e87a9cce62b92f2a7c929e6b7ee71dbd",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "gcn",
+      "feature_mode": "strict",
+      "seed": 22,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-gcn-seed22.pt",
+      "sha256": "9f62bc2972c390afecc2cb19adfdda881279a858234ae65b6adbc1371b4e0447",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "gcn",
+      "feature_mode": "strict",
+      "seed": 33,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-gcn-seed33.pt",
+      "sha256": "baf79dab3732fcc1bc3b3e64f8390186ca4295377186fa793584a59739dde9bb",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "gcn",
+      "feature_mode": "strict",
+      "seed": 44,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-gcn-seed44.pt",
+      "sha256": "d2dd6ac88860fd93db16ba15fb15bb7bb76acb3dad1798466694baff82eda041",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "gcn",
+      "feature_mode": "strict",
+      "seed": 55,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-gcn-seed55.pt",
+      "sha256": "d08727a60c82db2a3aee8d5ccc4295cdc13f6ca6b4e1e1f057e7e3f90073c40d",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "rgat",
+      "feature_mode": "strict",
+      "seed": 11,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-rgat-seed11.pt",
+      "sha256": "349c48ecf111c1915b3296cfe1236bdb5311b38c9b1ede6849bb00ec673173db",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "rgat",
+      "feature_mode": "strict",
+      "seed": 22,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-rgat-seed22.pt",
+      "sha256": "4f126dd1e68b9a153f6fa30d2b7638def74d5c78ad92f2c26923d8508e5b4dd8",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "rgat",
+      "feature_mode": "strict",
+      "seed": 33,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-rgat-seed33.pt",
+      "sha256": "836b20bf2af97c29d65384889b9903d235ab71e2fa086990582531c937b78ab5",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "rgat",
+      "feature_mode": "strict",
+      "seed": 44,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-rgat-seed44.pt",
+      "sha256": "f16a28f8a6b679cf1695cf945501721b3d027e7fc6492ab599bb5925b6320029",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    },
+    {
+      "method": "rgat",
+      "feature_mode": "strict",
+      "seed": 55,
+      "path": "/work/prediction/formal-five-stack/strict-model-fold0-rgat-seed55.pt",
+      "sha256": "398cc8ff7a733d08ef769d5b5a072cc24a1ab4a27f742285de38631bc0ca35d2",
+      "split_id": "model-fold0",
+      "training_model_ids": [
+        "efficientnet_b0",
+        "squeezenet1_1",
+        "text_encoder_ref",
+        "text_cnn_ref",
+        "audio_conv_ref",
+        "audio_dilated_ref",
+        "causal_lm_ref",
+        "dual_encoder_ref"
+      ],
+      "validation_model_ids": [
+        "mobilenet_v2",
+        "densenet121"
+      ],
+      "test_model_ids": [
+        "resnet18",
+        "resnet50"
+      ]
+    }
+  ],
+  "challenge_labels_used_for_fitting_or_selection": false
+}

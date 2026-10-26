@@ -1,0 +1,487 @@
+{
+  "status": "passed",
+  "tests": 20,
+  "failures": 0,
+  "errors": 0,
+  "negative_cases_executed": 61,
+  "negative_case_outcomes": [
+    {
+      "case": "actual_run5_latency_regression",
+      "accepted": false,
+      "reason": "latency_regression",
+      "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run5",
+      "requested_mask": 6,
+      "accepted_mask": 0,
+      "rollback_to_baseline": true,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false,
+      "accepted_latency_ms": 4.313590333333333,
+      "accepted_benefit_percent": 0.0,
+      "baseline_quality": 0.62,
+      "artifact_id": "npu_resnet18_b1_imagenet_val10class_v2_run5_mask6",
+      "raw_latency_ms": 6.4778253333333335,
+      "raw_benefit_percent": -50.17247426756877,
+      "normalized_quality": 1.0,
+      "baseline_correct": 62,
+      "candidate_correct": 62,
+      "quality_total": 100,
+      "quality_mode": "retention_ratio",
+      "quality_contract_evaluated": true,
+      "fallback_action_required": true,
+      "rollback_executed": false,
+      "decision_implementation": "strict_quality_gate.v1.1",
+      "deployment_or_rollback_execution_proved": false,
+      "threshold": 0.99,
+      "source_sha256": "4758d1e18a4f99c7531851484693817bb3fa238a1cefab8a09bee8769cfeedaf",
+      "quality_metric": "ImageNet1000_top1_accuracy",
+      "quality_dataset_id": "imagenette2-160_original_ILSVRC2012_val_sha20perclass",
+      "candidate_quality": 0.62
+    },
+    {
+      "case": "candidate_binding_artifact_id",
+      "accepted": false,
+      "reason": "artifact_id_binding_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "candidate_binding_mask",
+      "accepted": false,
+      "reason": "record_mask_binding_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "candidate_binding_action_ids",
+      "accepted": false,
+      "reason": "record_action_binding_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "prediction_and_score_consistent_but_not_frozen",
+      "accepted": false,
+      "reason": "record_changed_after_collector_freeze",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "duplicate_sample_id",
+      "accepted": false,
+      "reason": "sample_ids_duplicate",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_task_id",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_device_id",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_model_id",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_run_id",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_run_index",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_dataset_id",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_weights_state_sha256",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_input_tensor_sha256",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_dataset_manifest_sha256",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_input_shape",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_phase",
+      "accepted": false,
+      "reason": "evaluation_partition_required",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_quality_partition",
+      "accepted": false,
+      "reason": "evaluation_partition_required",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "identity_model_configuration",
+      "accepted": false,
+      "reason": "model_input_run_or_dataset_identity_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "baseline_corrupted",
+      "accepted": false,
+      "reason": "quality_score_disagrees_with_raw_ledger",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true
+    },
+    {
+      "case": "label_tampered",
+      "accepted": false,
+      "reason": "sample_label_binding_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "malformed_packet_None",
+      "accepted": false,
+      "reason": "packet_invalid",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "malformed_packet_{}",
+      "accepted": false,
+      "reason": "packet_source_hash_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "malformed_packet_{'identity': {}}",
+      "accepted": false,
+      "reason": "packet_source_hash_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "measurement_status",
+      "accepted": false,
+      "reason": "measurement_status_invalid",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "measurement_equivalence",
+      "accepted": false,
+      "reason": "numerical_equivalence_not_passed",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_sample_ids",
+      "accepted": false,
+      "reason": "quality_field_missing",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_labels",
+      "accepted": false,
+      "reason": "quality_field_missing",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_predictions",
+      "accepted": false,
+      "reason": "quality_field_missing",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_correct",
+      "accepted": false,
+      "reason": "quality_field_missing",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_correct_count",
+      "accepted": false,
+      "reason": "quality_field_missing",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_sample_count",
+      "accepted": false,
+      "reason": "quality_field_missing",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_quality_score",
+      "accepted": false,
+      "reason": "quality_field_missing",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_quality_evaluated",
+      "accepted": false,
+      "reason": "quality_not_evaluated",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_artifact_id",
+      "accepted": false,
+      "reason": "artifact_id_binding_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_equivalence",
+      "accepted": false,
+      "reason": "numerical_equivalence_not_passed",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_status",
+      "accepted": false,
+      "reason": "measurement_status_invalid",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_retention_ratio",
+      "accepted": false,
+      "reason": "record_changed_after_collector_freeze",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "missing_input_identity",
+      "accepted": false,
+      "reason": "identity_field_missing",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "quality_score_nan",
+      "accepted": false,
+      "reason": "quality_score_nonfinite_or_invalid",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "quality_score_inf",
+      "accepted": false,
+      "reason": "quality_score_nonfinite_or_invalid",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "correct_count_nan",
+      "accepted": false,
+      "reason": "correct_count_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "correct_count_inf",
+      "accepted": false,
+      "reason": "correct_count_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "sample_count_nan",
+      "accepted": false,
+      "reason": "sample_count_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "sample_count_inf",
+      "accepted": false,
+      "reason": "sample_count_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "retention_ratio_nan",
+      "accepted": false,
+      "reason": "malformed_or_nonfinite_evidence",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "retention_ratio_inf",
+      "accepted": false,
+      "reason": "malformed_or_nonfinite_evidence",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "mean_ms_nan",
+      "accepted": false,
+      "reason": "latency_mean_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "mean_ms_inf",
+      "accepted": false,
+      "reason": "latency_mean_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "labels_nan",
+      "accepted": false,
+      "reason": "class_label_or_prediction_invalid",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "predictions_nan",
+      "accepted": false,
+      "reason": "class_label_or_prediction_invalid",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "latency_samples_ms_nan",
+      "accepted": false,
+      "reason": "latency_samples_invalid",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "consistent_joint_sample_permutation",
+      "accepted": false,
+      "reason": "sample_identity_or_order_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "prediction_tampered",
+      "accepted": false,
+      "reason": "correct_vector_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "injected_consistent_quality_failure",
+      "accepted": false,
+      "reason": "quality_below_threshold",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "quality_score_tampered",
+      "accepted": false,
+      "reason": "quality_score_disagrees_with_raw_ledger",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "packet_source_hash",
+      "accepted": false,
+      "reason": "packet_source_hash_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "file_source_hash_mismatch",
+      "accepted": false,
+      "reason": "source_hash_mismatch",
+      "run_id": null,
+      "requested_mask": 6,
+      "accepted_mask": 0,
+      "rollback_to_baseline": true,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "accepted_latency_ms": null,
+      "accepted_benefit_percent": 0.0,
+      "baseline_quality": null,
+      "artifact_id": null,
+      "raw_latency_ms": null,
+      "raw_benefit_percent": null,
+      "normalized_quality": null,
+      "baseline_correct": null,
+      "candidate_correct": null,
+      "quality_total": null,
+      "quality_mode": "not_evaluated",
+      "quality_contract_evaluated": false,
+      "fallback_action_required": true,
+      "rollback_executed": false,
+      "decision_implementation": "strict_quality_gate.v1.1",
+      "deployment_or_rollback_execution_proved": false
+    },
+    {
+      "case": "unsupported_action",
+      "accepted": false,
+      "reason": "hardware_unsupported",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "budget_exceeded",
+      "accepted": false,
+      "reason": "action_budget_exceeded",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    },
+    {
+      "case": "wrong_sample",
+      "accepted": false,
+      "reason": "sample_identity_or_order_mismatch",
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": false
+    }
+  ],
+  "module_sha256": "e79a974a4b5da59d55a3383dccc1310b3597e95c528fa16166b3114b1a6910a3",
+  "test_sha256": "fab91c878ba8a65e81f7b0ea1f966d29f548654fc36706f505fa4d25f52df8ae",
+  "scope": "Detached-copy software corruption tests plus replay of an existing adverse physical block; no new hardware.",
+  "all_rejections_conservatively_fallback_to_baseline": true,
+  "public_runtime_modified": false,
+  "deployed": false
+}

@@ -1,0 +1,60 @@
+Strict quality gate v1.1: quality-contract repair, pending independent re-review/publication
+
+The new module is strict_quality_gate.py. It is independent of torch and uses Python 3.9+ standard library only. The original historical files, frozen analysis inputs and public runtime are unchanged. This is a new implementation, not evidence that the old gate already performed these checks. Version 1.0 and its independent review are preserved under prior-versions/strict-gate-v1-pre-quality-review/. The review found QG-P1-001 (dropped caller quality semantics) and QG-P2-002 (AttributeError for malformed adapter input); v1.1 addresses them with explicit contract checks and regression evidence. Independent re-review remains pending.
+
+Required trust boundary
+expected_source_sha256 must be supplied by an independently pinned manifest or an authenticated measurement collector. Never compute the expected hash from a candidate-provided file at the point of acceptance, and never accept a candidate-owned “expected hash”. The loader checks the raw file bytes against the trusted hash before parsing. This authenticates the selected artifact against its anchor; it does not itself prove a physical run occurred. The experiment evidence and its collection provenance remain separate obligations.
+
+Inputs and binding
+load_verified_run(path, expected_source_sha256) returns a VerifiedRun. make_binding(verified_run, candidate_mask, threshold=0.99, max_actions=2) freezes the common task/device/model/run identity, input shape and tensor hash, model configuration and weight-state hash, dataset hash/ID, evaluation partition, sample order, ordered sample-label pairing, baseline/candidate artifact IDs, masks, actions, support flags, immutable record hashes, quality threshold and intervention budget.
+
+packet_from_run(verified_run, mask) returns a detached packet. strict_final_gate(baseline_packet, candidate_packet, binding) validates both packets and their raw ledgers. make_binding and packet_from_run check that the verified run was not altered in memory after loading. The candidate cannot overwrite the separate GateBinding through its packet.
+
+Supported quality contract
+Only mode=retention_ratio is implemented. absolute and unknown modes are rejected, never reinterpreted as paired retention. The adapter requires table.mode to equal quality_definition.mode and the pinned raw protocol. table.threshold must be finite, in (0,1], and exactly equal both quality_definition.threshold and raw.protocol.quality_threshold. The current frozen study's threshold is 0.99. A different caller threshold cannot weaken or change that frozen policy.
+
+The sole explicit semantic mapping is table quality_definition.metric="ImageNet1000_top1_accuracy" to raw quality_metric="unrestricted ImageNet-1000 top-1 accuracy, not ten-class-restricted logits". Unknown metric names and merely similar descriptions are rejected. quality_definition.dataset_id must exactly equal the pinned raw dataset_id. Raw mode, threshold and metric semantics are also checked by the core binding path, not only by the adapter, and are bound into the decision. This is unrestricted ImageNet-1000 top-1 evaluated on the declared 100-image Imagenette subset; it is not ImageNet-wide accuracy.
+
+The adapter validates required table attributes, payload/definition mappings and block fields before accessing them. None, empty mappings, missing attributes/keys and invalid metadata yield an unevaluated rejection requiring verified-baseline reload; they do not raise the reviewed AttributeError. Declared input failures are handled explicitly rather than swallowing arbitrary unrelated programmer exceptions.
+
+Ledger verification
+The gate requires raw sample_ids, labels, predictions, correct, correct_count, sample_count, quality_score and quality_evaluated. IDs must be nonempty and unique; IDs, labels, predictions and counts must agree in length. Their ordering and the exact sample-label pairing must match the frozen baseline anchor. Labels/predictions must be integer ImageNet-1000 class IDs; booleans, NaN and infinite values are invalid. The gate recomputes correct_count/total and accuracy from predictions and labels, then verifies stored correctness, count and score. It additionally binds the immutable complete record, so consistently rewriting predictions and all summary fields does not evade the collector freeze.
+
+The baseline and candidate must refer to the exact declared evaluation run, task, device, model, model configuration, input/weight hashes, dataset and sample order. The baseline mask is 0. The candidate mask/artifact/action sequence must match the frozen selection. This adapter covers the local target baseline/candidate pair used by original MeasuredTable.final_gate; it does not silently join another physical run or another device. Source-relative migration quality is a separate explicitly paired comparison and must not be inferred from the local result.
+
+Acceptance and conservative fallback
+Both measurements must have status ok and a passed numerical-equivalence check. Raw latency samples must be finite and positive, with their recomputed mean matching the stored mean. Selected actions must be supported and respect max_actions. Candidate/baseline recomputed top-1 retention must be >=0.99 by default; the supplied retention and threshold flag must also agree. Candidate latency must not exceed the verified baseline latency.
+
+Every rejection returns accepted=false, accepted_mask=0, rollback_to_baseline=true, fallback=baseline, and accepted_benefit_percent=0. If the baseline itself was not verified, accepted_latency_ms is None and requires_verified_baseline_reload=true. Quality-contract or object-boundary rejection also sets quality_mode=not_evaluated and quality_contract_evaluated=false. rollback_to_baseline is a requested action, not an execution receipt: rollback_executed=false and deployment_or_rollback_execution_proved=false remain explicit. The controller must reload the known baseline from trusted deployment configuration and must not use an untrusted supplied baseline packet as the fallback. A rejection never authorizes executing the rejected candidate. A decision is not proof that real rollback execution or its overhead was measured.
+
+Direct call
+  from strict_quality_gate import gate_verified_raw
+  decision = gate_verified_raw(raw_path, pinned_manifest_sha256, selected_mask,
+                               threshold=0.99, max_actions=2)
+
+Original-call upgrade
+Original code:
+  decision = table.final_gate(eval_block, selected_mask)
+
+New adapter in upgrade_final_gate_example.py:
+  from upgrade_final_gate_example import upgraded_final_gate
+  decision = upgraded_final_gate(table, eval_block, selected_mask,
+                                 raw_path=pinned_raw_path,
+                                 expected_source_sha256=pinned_manifest_sha256)
+
+The adapter first validates the caller object boundary and quality contract, then matches table identity, support flags, block run identity, sample ordering and actual baseline/candidate records to the pinned raw file. It then calls the new strict gate. Any supported-input mismatch produces the same conservative baseline fallback. This is executable integration code, not pseudocode. It has been replayed, but has not been installed in the public or deployed runtime.
+
+Replay
+From the original HET-rebuttal workspace root:
+  PYTHONDONTWRITEBYTECODE=1 python3 v7-剩余条件实证闭环/planning/test_strict_quality_gate.py
+  PYTHONDONTWRITEBYTECODE=1 /Users/wjy/.local/bin/python3.12 v7-剩余条件实证闭环/planning/test_quality_contract_adapter.py
+  PYTHONDONTWRITEBYTECODE=1 /Users/wjy/.local/bin/python3.12 v7-剩余条件实证闭环/planning/replay_strict_quality_gate.py
+
+When code is placed elsewhere, set HET_EVIDENCE_BASE to the original or reconstructed evidence workspace root. Keep analysis-freeze.json beside the tests. The replay also reads planner-seedwise-process.csv beside the script and the frozen V2 raw/task files under HET_EVIDENCE_BASE. The original-comparison adapter replay imports the existing measured_planner and its CPU torch environment; the new strict module and its corruption tests have no torch dependency.
+
+Executed validation
+20 tests include 61 negative cases covering altered quality scores, predictions, labels, wrong samples, joint sample-order changes, NaN/infinity, missing fields, duplicate IDs, altered model/input/run/dataset identities, action/artifact mismatch, unsupported actions, budget excess and invalid baseline evidence. All rejected cases fall back to baseline. Five additional adapter faults reproduce the old score-trust flaw and verify rejection through the upgrade call.
+
+The independent-review repair adds 10 tests with 58 negative cases, including the exact absolute-quality, dataset, metric, None and missing-threshold counterexamples, inconsistent/decreased/nonfinite thresholds, unknown modes, incomplete mappings and unsupported raw protocols. All reject without claiming rollback execution and require verified-baseline reload. See quality-contract-regression-tests.json and quality-review-remediation.json. The 20-test/61-case suite and 440/800 replay were rerun after the repair.
+
+On 40 existing evaluation process files, all 440 at-most-two-action decisions match the original decisions for valid ledgers: 318 accept and 122 reject. All 800 previously reported policy-seed/process scores match. The 880 ledger validations reuse baselines; they are not 880 independent runs or new accuracy samples. Raw source hashes are unchanged after replay. No new hardware experiment, deployment, historical rewrite or public-runtime change is claimed.

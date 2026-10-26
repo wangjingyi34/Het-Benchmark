@@ -1,0 +1,9 @@
+{
+  "purpose": "Software validation only; all positive fixture latency values are synthetic and prohibited from paper results",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "pass": true,
+  "validator_sha256": "c6304eb718e185921e1a8132cfb354107f4046b807ce3fcd541aba2c89ee90a4",
+  "tests_sha256": "e557cfa117ce30657b790cec442fd5c8ee20a6f637f2a8085db12e99417be71a"
+}

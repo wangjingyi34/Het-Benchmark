@@ -1,0 +1,505 @@
+{
+  "kind": "support_gate_reproducibility_summary",
+  "created_utc": "2026-10-26T03:52:26.978751+00:00",
+  "protocol_sha256": "9eec9d381a589d6c76e86a1b9788e56b8448a5765e55a1b2601afe2d0a309e84",
+  "reference_sha256": "50272c7ddd0e62cb847e7e3366ed76eef3300752ef3dad5e3010d5d856e801ee",
+  "replicate_hashes": {
+    "repeat-1.json": "81abd5fcb8acbd117e9df79453e007d522bae26a7a28815f272d9db209b7244e",
+    "repeat-2.json": "d24c358c5c82338d5b9ffef6be6303bc439796314ec821391f093bebad7648a7",
+    "repeat-3.json": "51f45aca830aaed4008db6b495bb707531e206ec4f63d3f3854493ad6776ce4d",
+    "repeat-4.json": "f9cc109bd03d39b356f7c3de4c118c7e0786354758707299454f715a39258dc6",
+    "repeat-5.json": "fab6ab9d8b1ed77e1269bb8108bc7fc5ac6bda6cfd7dd66e336dc95fa662dc74"
+  },
+  "device_id": "Apple-M5-MPS",
+  "query_count": 24,
+  "profile_fraction": 1.0,
+  "independent_processes": 5,
+  "mre_pct": 6.688614210291025,
+  "mae_ms": 0.9122820633333335,
+  "wape_pct": 6.348300162568398,
+  "profiling_wall_seconds": 16.60797283300053,
+  "repeatability_evaluation_wall_seconds": 83.08693237500847,
+  "rows": [
+    {
+      "case": 0,
+      "configuration": [
+        1,
+        320,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 1.3219750000000001,
+      "independent_process_means_ms": [
+        1.5353979249999998,
+        1.629657275,
+        1.351446875,
+        1.5145062,
+        1.324967725
+      ],
+      "reference_mean_ms": 1.4711952,
+      "ae_ms": 0.1492201999999998,
+      "re_pct": 10.142787306538235
+    },
+    {
+      "case": 1,
+      "configuration": [
+        1,
+        320,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 3.3136052,
+      "independent_process_means_ms": [
+        3.083445775,
+        3.599760425,
+        3.690849925,
+        3.57981665,
+        3.459193725
+      ],
+      "reference_mean_ms": 3.4826132999999997,
+      "ae_ms": 0.16900809999999966,
+      "re_pct": 4.8529103130686275
+    },
+    {
+      "case": 2,
+      "configuration": [
+        1,
+        320,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 11.60193025,
+      "independent_process_means_ms": [
+        12.8469834,
+        13.3914083,
+        12.31603335,
+        12.853603175,
+        12.218755225
+      ],
+      "reference_mean_ms": 12.72535669,
+      "ae_ms": 1.1234264399999994,
+      "re_pct": 8.828251084567432
+    },
+    {
+      "case": 3,
+      "configuration": [
+        1,
+        640,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 3.769057325,
+      "independent_process_means_ms": [
+        3.775750025,
+        4.000272925,
+        3.6588823,
+        3.165077075,
+        3.586712425
+      ],
+      "reference_mean_ms": 3.63733895,
+      "ae_ms": 0.13171837499999972,
+      "re_pct": 3.621284043380112
+    },
+    {
+      "case": 4,
+      "configuration": [
+        1,
+        640,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 7.379118725,
+      "independent_process_means_ms": [
+        7.5501396,
+        8.150021875,
+        7.890356275,
+        7.5931093,
+        7.817923975
+      ],
+      "reference_mean_ms": 7.800310205,
+      "ae_ms": 0.42119148000000006,
+      "re_pct": 5.399676024807531
+    },
+    {
+      "case": 5,
+      "configuration": [
+        1,
+        640,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 26.067613575,
+      "independent_process_means_ms": [
+        25.188031225,
+        26.513518775,
+        28.171237525,
+        25.622110425,
+        27.466142675
+      ],
+      "reference_mean_ms": 26.592208125000003,
+      "ae_ms": 0.5245945500000033,
+      "re_pct": 1.9727378318268305
+    },
+    {
+      "case": 6,
+      "configuration": [
+        1,
+        960,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 6.47641245,
+      "independent_process_means_ms": [
+        7.1855270749999995,
+        8.863619775,
+        7.100862475,
+        7.28004065,
+        6.45887915
+      ],
+      "reference_mean_ms": 7.377785824999999,
+      "ae_ms": 0.9013733749999995,
+      "re_pct": 12.217396877334801
+    },
+    {
+      "case": 7,
+      "configuration": [
+        1,
+        960,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 12.105774925,
+      "independent_process_means_ms": [
+        13.722304175,
+        12.512781225,
+        13.659111475,
+        13.053682325,
+        12.575353125
+      ],
+      "reference_mean_ms": 13.104646465000002,
+      "ae_ms": 0.9988715400000014,
+      "re_pct": 7.622270029701266
+    },
+    {
+      "case": 8,
+      "configuration": [
+        1,
+        960,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 40.726651075,
+      "independent_process_means_ms": [
+        42.677849975,
+        42.507657275,
+        43.018911475,
+        43.311408375,
+        42.235422875
+      ],
+      "reference_mean_ms": 42.750249995000004,
+      "ae_ms": 2.023598920000005,
+      "re_pct": 4.733537044196657
+    },
+    {
+      "case": 9,
+      "configuration": [
+        1,
+        1280,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 11.4436854,
+      "independent_process_means_ms": [
+        10.714919775,
+        10.9213323,
+        11.258412475,
+        11.0047729,
+        10.9587521
+      ],
+      "reference_mean_ms": 10.97163791,
+      "ae_ms": 0.47204748999999957,
+      "re_pct": 4.302434092996782
+    },
+    {
+      "case": 10,
+      "configuration": [
+        1,
+        1280,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 17.900742725,
+      "independent_process_means_ms": [
+        17.81677395,
+        19.854660475,
+        19.491724925,
+        19.01126565,
+        18.657837524999998
+      ],
+      "reference_mean_ms": 18.966452505,
+      "ae_ms": 1.0657097799999988,
+      "re_pct": 5.618919930962592
+    },
+    {
+      "case": 11,
+      "configuration": [
+        1,
+        1280,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 56.165681275,
+      "independent_process_means_ms": [
+        58.1975094,
+        59.86412085,
+        61.912066625,
+        61.587976025,
+        57.571626
+      ],
+      "reference_mean_ms": 59.82665978,
+      "ae_ms": 3.6609785050000028,
+      "re_pct": 6.119309549392334
+    },
+    {
+      "case": 12,
+      "configuration": [
+        2,
+        320,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 1.194205175,
+      "independent_process_means_ms": [
+        1.23197295,
+        0.873352125,
+        1.159442775,
+        1.227520825,
+        1.037998925
+      ],
+      "reference_mean_ms": 1.10605752,
+      "ae_ms": 0.08814765499999999,
+      "re_pct": 7.969536249796485
+    },
+    {
+      "case": 13,
+      "configuration": [
+        2,
+        320,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 1.5506156,
+      "independent_process_means_ms": [
+        1.74946665,
+        1.885912475,
+        1.830966675,
+        1.5944396,
+        1.586293775
+      ],
+      "reference_mean_ms": 1.729415835,
+      "ae_ms": 0.17880023499999997,
+      "re_pct": 10.338764765618095
+    },
+    {
+      "case": 14,
+      "configuration": [
+        2,
+        320,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 3.8298864249999998,
+      "independent_process_means_ms": [
+        3.88133225,
+        3.8710708,
+        3.828540625,
+        3.481655225,
+        3.779439575
+      ],
+      "reference_mean_ms": 3.7684076950000005,
+      "ae_ms": 0.06147872999999926,
+      "re_pct": 1.6314245956341316
+    },
+    {
+      "case": 15,
+      "configuration": [
+        2,
+        640,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 4.1312844,
+      "independent_process_means_ms": [
+        4.310398975,
+        5.023266725,
+        4.9409781,
+        4.183597925,
+        4.04539795
+      ],
+      "reference_mean_ms": 4.5007279350000005,
+      "ae_ms": 0.36944353500000027,
+      "re_pct": 8.208528494402323
+    },
+    {
+      "case": 16,
+      "configuration": [
+        2,
+        640,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 5.082386475,
+      "independent_process_means_ms": [
+        5.480436475,
+        5.391395875,
+        5.714072875,
+        4.945703125,
+        5.1862302
+      ],
+      "reference_mean_ms": 5.34356771,
+      "ae_ms": 0.26118123500000046,
+      "re_pct": 4.887768793707312
+    },
+    {
+      "case": 17,
+      "configuration": [
+        2,
+        640,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 9.974134375,
+      "independent_process_means_ms": [
+        10.854084325,
+        12.085630225,
+        10.822242675,
+        10.258680224999999,
+        10.567089574999999
+      ],
+      "reference_mean_ms": 10.917545404999998,
+      "ae_ms": 0.9434110299999983,
+      "re_pct": 8.641237521832853
+    },
+    {
+      "case": 18,
+      "configuration": [
+        2,
+        960,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 8.391899975,
+      "independent_process_means_ms": [
+        9.222568725,
+        9.5080542,
+        9.039824975,
+        8.904194799999999,
+        8.533999025
+      ],
+      "reference_mean_ms": 9.041728345,
+      "ae_ms": 0.6498283699999998,
+      "re_pct": 7.1869928536323435
+    },
+    {
+      "case": 19,
+      "configuration": [
+        2,
+        960,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 10.2111157,
+      "independent_process_means_ms": [
+        10.222796925,
+        11.41323125,
+        11.51586255,
+        10.920435425,
+        10.428333325
+      ],
+      "reference_mean_ms": 10.900131895000001,
+      "ae_ms": 0.6890161950000007,
+      "re_pct": 6.321173006319852
+    },
+    {
+      "case": 20,
+      "configuration": [
+        2,
+        960,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 18.771769825,
+      "independent_process_means_ms": [
+        21.0546052,
+        20.5877542,
+        20.936901025,
+        21.56145945,
+        20.525698974999997
+      ],
+      "reference_mean_ms": 20.93328377,
+      "ae_ms": 2.1615139449999994,
+      "re_pct": 10.325728006886898
+    },
+    {
+      "case": 21,
+      "configuration": [
+        2,
+        1280,
+        256,
+        8
+      ],
+      "fallback_measured_ms": 14.83288855,
+      "independent_process_means_ms": [
+        16.23188645,
+        16.444641675,
+        17.014163525,
+        14.67927495,
+        15.206015575
+      ],
+      "reference_mean_ms": 15.915196434999999,
+      "ae_ms": 1.0823078849999987,
+      "re_pct": 6.800468278354611
+    },
+    {
+      "case": 22,
+      "configuration": [
+        2,
+        1280,
+        448,
+        8
+      ],
+      "fallback_measured_ms": 16.97509895,
+      "independent_process_means_ms": [
+        16.709608324999998,
+        18.5064885,
+        19.2518813,
+        16.9441407,
+        16.772180225
+      ],
+      "reference_mean_ms": 17.636859809999997,
+      "ae_ms": 0.6617608599999976,
+      "re_pct": 3.752146737736062
+    },
+    {
+      "case": 23,
+      "configuration": [
+        2,
+        1280,
+        896,
+        14
+      ],
+      "fallback_measured_ms": 31.286326025,
+      "independent_process_means_ms": [
+        34.90017815,
+        35.730342775,
+        35.267295875,
+        33.145484375,
+        32.9190344
+      ],
+      "reference_mean_ms": 34.392467115,
+      "ae_ms": 3.1061410900000013,
+      "re_pct": 9.031457614290433
+    }
+  ],
+  "interpretation": "repeatability of direct measured fallback, not learned prediction accuracy or original five-platform LOPO"
+}

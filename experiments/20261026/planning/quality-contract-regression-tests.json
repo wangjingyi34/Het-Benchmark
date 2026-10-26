@@ -1,0 +1,486 @@
+{
+  "status": "passed",
+  "tests": 10,
+  "failures": 0,
+  "errors": 0,
+  "negative_cases_executed": 58,
+  "negative_case_outcomes": [
+    {
+      "case": "raw_absolute_mode",
+      "reason": "raw_quality_mode_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "raw_unknown_mode",
+      "reason": "raw_quality_mode_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "raw_unknown_metric",
+      "reason": "raw_quality_metric_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "raw_threshold_differs_from_requested",
+      "reason": "threshold_differs_from_pinned_quality_protocol",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "raw_missing_mode",
+      "reason": "raw_quality_mode_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "raw_missing_threshold",
+      "reason": "raw_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_table_dict",
+      "reason": "upgrade_table_attribute_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_table_list",
+      "reason": "upgrade_table_attribute_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_table_SimpleNamespace",
+      "reason": "upgrade_table_attribute_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_block_dict0",
+      "reason": "upgrade_block_field_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_block_list0",
+      "reason": "upgrade_table_or_block_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_block_str0",
+      "reason": "upgrade_table_or_block_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_block_dict1",
+      "reason": "upgrade_block_field_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_payload_None",
+      "reason": "upgrade_table_payload_or_support_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_payload_{}",
+      "reason": "table_quality_definition_incomplete",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "malformed_payload_[]",
+      "reason": "upgrade_table_payload_or_support_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "support_none",
+      "reason": "upgrade_table_payload_or_support_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "review_absolute_mode_accuracy062_threshold099",
+      "reason": "table_quality_mode_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "review_dataset_id_mismatch",
+      "reason": "table_raw_quality_contract_mismatch",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "review_metric_mismatch",
+      "reason": "table_quality_metric_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "review_table_none",
+      "reason": "upgrade_table_or_block_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "review_block_none",
+      "reason": "upgrade_table_or_block_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_table_attribute_threshold",
+      "reason": "upgrade_table_attribute_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_table_attribute_mode",
+      "reason": "upgrade_table_attribute_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_table_attribute_payload",
+      "reason": "upgrade_table_attribute_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_table_attribute_supported",
+      "reason": "upgrade_table_attribute_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "raw_description_is_not_declared_table_metric_name",
+      "reason": "table_quality_metric_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "incomplete_quality_definition_None",
+      "reason": "table_quality_definition_incomplete",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "incomplete_quality_definition_{}",
+      "reason": "table_quality_definition_incomplete",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "incomplete_quality_definition_[]",
+      "reason": "table_quality_definition_incomplete",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "incomplete_quality_definition_{'mode': 'retention_ratio'}",
+      "reason": "table_quality_definition_incomplete",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_quality_definition_mode",
+      "reason": "table_quality_definition_incomplete",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_quality_definition_threshold",
+      "reason": "table_quality_definition_incomplete",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_quality_definition_metric",
+      "reason": "table_quality_definition_incomplete",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_quality_definition_dataset_id",
+      "reason": "table_quality_definition_incomplete",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_block_run_id",
+      "reason": "upgrade_block_field_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_block_quality_partition",
+      "reason": "upgrade_block_field_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_block_provenance",
+      "reason": "upgrade_block_field_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_block_quality_sample_ids",
+      "reason": "upgrade_block_field_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "missing_block_records",
+      "reason": "upgrade_block_field_missing",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_block_quality_sample_ids",
+      "reason": "upgrade_block_mapping_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_block_records",
+      "reason": "upgrade_block_mapping_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "attribute_threshold_changed",
+      "reason": "table_quality_threshold_inconsistent",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "declared_threshold_changed",
+      "reason": "table_quality_threshold_inconsistent",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "both_thresholds_differ_from_raw",
+      "reason": "table_raw_quality_contract_mismatch",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "threshold_nearby_but_not_exact",
+      "reason": "table_raw_quality_contract_mismatch",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_threshold_None",
+      "reason": "table_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_threshold_0.99",
+      "reason": "table_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_threshold_True",
+      "reason": "table_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_threshold_nan",
+      "reason": "table_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_threshold_inf",
+      "reason": "table_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_threshold_-1",
+      "reason": "table_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_threshold_0",
+      "reason": "table_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_threshold_2",
+      "reason": "table_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "invalid_threshold_10000000000000000000",
+      "reason": "table_quality_threshold_invalid",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "unknown_mode",
+      "reason": "table_quality_mode_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "mode_attribute_changed",
+      "reason": "table_quality_mode_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    },
+    {
+      "case": "mode_declaration_changed",
+      "reason": "table_quality_mode_unsupported",
+      "accepted": false,
+      "fallback": "baseline",
+      "requires_verified_baseline_reload": true,
+      "rollback_executed": false
+    }
+  ],
+  "addresses_findings": [
+    "QG-P1-001",
+    "QG-P2-002"
+  ],
+  "independent_review_sha256": "fe574419b9606184f5896126bf32011cf50c233b5d63569017b73551e73e45bb",
+  "module_sha256": "e79a974a4b5da59d55a3383dccc1310b3597e95c528fa16166b3114b1a6910a3",
+  "adapter_sha256": "75e8b7d51ebd16a192d00205decbc334274b1d4be4e64c5a8cd9639b2e8de3ed",
+  "test_sha256": "c728711d01e0b499fa22b30bc1abbb442c6e2ef634dba75015be5d0c60cfed35",
+  "all_rejections_require_verified_baseline_reload": true,
+  "no_rollback_execution_claimed": true,
+  "scope": "Software regression tests for the independent review findings; existing raw data and old reviewed version are preserved.",
+  "deployed": false,
+  "independent_rereview_status": "pending"
+}

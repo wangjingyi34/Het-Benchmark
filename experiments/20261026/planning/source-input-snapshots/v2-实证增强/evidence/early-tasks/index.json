@@ -1,0 +1,50 @@
+[
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/early-tasks/resnet18_b1_imagenet_val10class_v2_2c4332169b.json",
+    "task": "resnet18_b1_imagenet_val10class_v2",
+    "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "159fe06ec3a924087bd37b97be7209ae2b268c26978e8e104c76d3e7a50d577a"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/early-tasks/resnet18_b4_imagenet_val10class_v2_2c4332169b.json",
+    "task": "resnet18_b4_imagenet_val10class_v2",
+    "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "f796df7592328e5ca449e7b5d7a1141fa14ed1cac6fe9bd43744890c38e4c5ca"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/early-tasks/resnet50_b1_imagenet_val10class_v2_2c4332169b.json",
+    "task": "resnet50_b1_imagenet_val10class_v2",
+    "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "1cb33641971366f2fef96ba6fc2e529e6539e9d427b9a58fa98e46e9a2e509a2"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/early-tasks/resnet50_b4_imagenet_val10class_v2_2c4332169b.json",
+    "task": "resnet50_b4_imagenet_val10class_v2",
+    "device": "cuda_NVIDIA_A100-SXM4-80GB_MIG_2g.20gb",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "ffaa3494b219a16b8cdc6ae3bcd995e7bc924406b4dbfff5db3c2bc083c9e469"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/early-tasks/resnet18_b1_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet18_b1_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "225e4d7ab0abf14709132ecd9f69859c2bc597ca9a3cd6866863e767e4de6f00"
+  },
+  {
+    "file": "v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/early-tasks/resnet18_b4_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet18_b4_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "2c76bd2766ac02ecf38070a512a41fb53ab952a20155bc77279bf39997fd3db9"
+  }
+]

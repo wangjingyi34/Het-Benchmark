@@ -1,0 +1,434 @@
+{
+  "row_count": 50,
+  "model_count": 10,
+  "platforms": [
+    "CANN",
+    "CUDA",
+    "MLU",
+    "ROCm",
+    "oneAPI"
+  ],
+  "all_rows_exact_match": true,
+  "reported_error_column_mean_percent": 4.169200000000001,
+  "recomputed_from_rounded_latency_mean_percent": 4.164341340183012,
+  "rows": [
+    {
+      "model": "Qwen2.5-7B",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "18.91",
+      "actual_latency_ms": "18.50",
+      "prediction_error_percent": "2.23"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "18.58",
+      "actual_latency_ms": "20.11",
+      "prediction_error_percent": "7.60"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "22.86",
+      "actual_latency_ms": "23.72",
+      "prediction_error_percent": "3.60"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "20.09",
+      "actual_latency_ms": "21.02",
+      "prediction_error_percent": "4.43"
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "26.67",
+      "actual_latency_ms": "25.69",
+      "prediction_error_percent": "3.78"
+    },
+    {
+      "model": "Mistral-7B",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "19.74",
+      "actual_latency_ms": "19.20",
+      "prediction_error_percent": "2.83"
+    },
+    {
+      "model": "Mistral-7B",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "22.18",
+      "actual_latency_ms": "20.87",
+      "prediction_error_percent": "6.27"
+    },
+    {
+      "model": "Mistral-7B",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "22.99",
+      "actual_latency_ms": "24.62",
+      "prediction_error_percent": "6.61"
+    },
+    {
+      "model": "Mistral-7B",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "21.55",
+      "actual_latency_ms": "21.82",
+      "prediction_error_percent": "1.25"
+    },
+    {
+      "model": "Mistral-7B",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "24.66",
+      "actual_latency_ms": "26.67",
+      "prediction_error_percent": "7.52"
+    },
+    {
+      "model": "Phi-3-mini",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "11.75",
+      "actual_latency_ms": "12.30",
+      "prediction_error_percent": "4.50"
+    },
+    {
+      "model": "Phi-3-mini",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "13.38",
+      "actual_latency_ms": "13.37",
+      "prediction_error_percent": "0.09"
+    },
+    {
+      "model": "Phi-3-mini",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "14.57",
+      "actual_latency_ms": "15.77",
+      "prediction_error_percent": "7.58"
+    },
+    {
+      "model": "Phi-3-mini",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "13.30",
+      "actual_latency_ms": "13.98",
+      "prediction_error_percent": "4.82"
+    },
+    {
+      "model": "Phi-3-mini",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "17.49",
+      "actual_latency_ms": "17.08",
+      "prediction_error_percent": "2.40"
+    },
+    {
+      "model": "ResNet-50",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "3.22",
+      "actual_latency_ms": "3.20",
+      "prediction_error_percent": "0.72"
+    },
+    {
+      "model": "ResNet-50",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "3.32",
+      "actual_latency_ms": "3.48",
+      "prediction_error_percent": "4.47"
+    },
+    {
+      "model": "ResNet-50",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "4.16",
+      "actual_latency_ms": "4.10",
+      "prediction_error_percent": "1.43"
+    },
+    {
+      "model": "ResNet-50",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "3.82",
+      "actual_latency_ms": "3.64",
+      "prediction_error_percent": "4.95"
+    },
+    {
+      "model": "ResNet-50",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "4.09",
+      "actual_latency_ms": "4.44",
+      "prediction_error_percent": "7.90"
+    },
+    {
+      "model": "ViT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "5.03",
+      "actual_latency_ms": "4.80",
+      "prediction_error_percent": "4.89"
+    },
+    {
+      "model": "ViT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "5.38",
+      "actual_latency_ms": "5.22",
+      "prediction_error_percent": "3.17"
+    },
+    {
+      "model": "ViT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "6.00",
+      "actual_latency_ms": "6.15",
+      "prediction_error_percent": "2.56"
+    },
+    {
+      "model": "ViT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "5.15",
+      "actual_latency_ms": "5.45",
+      "prediction_error_percent": "5.51"
+    },
+    {
+      "model": "ViT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "7.15",
+      "actual_latency_ms": "6.67",
+      "prediction_error_percent": "7.32"
+    },
+    {
+      "model": "Swin-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "6.33",
+      "actual_latency_ms": "6.50",
+      "prediction_error_percent": "2.61"
+    },
+    {
+      "model": "Swin-Base",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "6.60",
+      "actual_latency_ms": "7.07",
+      "prediction_error_percent": "6.52"
+    },
+    {
+      "model": "Swin-Base",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "7.80",
+      "actual_latency_ms": "8.33",
+      "prediction_error_percent": "6.45"
+    },
+    {
+      "model": "Swin-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "7.80",
+      "actual_latency_ms": "7.39",
+      "prediction_error_percent": "5.56"
+    },
+    {
+      "model": "Swin-Base",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "9.18",
+      "actual_latency_ms": "9.03",
+      "prediction_error_percent": "1.66"
+    },
+    {
+      "model": "BERT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "2.20",
+      "actual_latency_ms": "2.10",
+      "prediction_error_percent": "4.91"
+    },
+    {
+      "model": "BERT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "2.37",
+      "actual_latency_ms": "2.28",
+      "prediction_error_percent": "3.68"
+    },
+    {
+      "model": "BERT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "2.71",
+      "actual_latency_ms": "2.69",
+      "prediction_error_percent": "0.58"
+    },
+    {
+      "model": "BERT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "2.57",
+      "actual_latency_ms": "2.39",
+      "prediction_error_percent": "7.57"
+    },
+    {
+      "model": "BERT-Base",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "2.86",
+      "actual_latency_ms": "2.92",
+      "prediction_error_percent": "1.94"
+    },
+    {
+      "model": "T5-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "5.44",
+      "actual_latency_ms": "5.40",
+      "prediction_error_percent": "0.83"
+    },
+    {
+      "model": "T5-Base",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "6.18",
+      "actual_latency_ms": "5.87",
+      "prediction_error_percent": "5.27"
+    },
+    {
+      "model": "T5-Base",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "7.05",
+      "actual_latency_ms": "6.92",
+      "prediction_error_percent": "1.90"
+    },
+    {
+      "model": "T5-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "6.49",
+      "actual_latency_ms": "6.14",
+      "prediction_error_percent": "5.79"
+    },
+    {
+      "model": "T5-Base",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "7.59",
+      "actual_latency_ms": "7.50",
+      "prediction_error_percent": "1.24"
+    },
+    {
+      "model": "Whisper-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "8.98",
+      "actual_latency_ms": "8.70",
+      "prediction_error_percent": "3.27"
+    },
+    {
+      "model": "Whisper-Base",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "8.77",
+      "actual_latency_ms": "9.46",
+      "prediction_error_percent": "7.27"
+    },
+    {
+      "model": "Whisper-Base",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "10.67",
+      "actual_latency_ms": "11.15",
+      "prediction_error_percent": "4.35"
+    },
+    {
+      "model": "Whisper-Base",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "9.55",
+      "actual_latency_ms": "9.89",
+      "prediction_error_percent": "3.37"
+    },
+    {
+      "model": "Whisper-Base",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "11.27",
+      "actual_latency_ms": "12.08",
+      "prediction_error_percent": "6.72"
+    },
+    {
+      "model": "CLIP-ViT-B/32",
+      "source_platform": "CUDA",
+      "target_platform": "CUDA",
+      "predicted_latency_ms": "4.98",
+      "actual_latency_ms": "5.20",
+      "prediction_error_percent": "4.28"
+    },
+    {
+      "model": "CLIP-ViT-B/32",
+      "source_platform": "CUDA",
+      "target_platform": "ROCm",
+      "predicted_latency_ms": "5.29",
+      "actual_latency_ms": "5.65",
+      "prediction_error_percent": "6.38"
+    },
+    {
+      "model": "CLIP-ViT-B/32",
+      "source_platform": "CUDA",
+      "target_platform": "oneAPI",
+      "predicted_latency_ms": "6.43",
+      "actual_latency_ms": "6.67",
+      "prediction_error_percent": "3.55"
+    },
+    {
+      "model": "CLIP-ViT-B/32",
+      "source_platform": "CUDA",
+      "target_platform": "CANN",
+      "predicted_latency_ms": "6.04",
+      "actual_latency_ms": "5.91",
+      "prediction_error_percent": "2.17"
+    },
+    {
+      "model": "CLIP-ViT-B/32",
+      "source_platform": "CUDA",
+      "target_platform": "MLU",
+      "predicted_latency_ms": "7.07",
+      "actual_latency_ms": "7.22",
+      "prediction_error_percent": "2.16"
+    }
+  ],
+  "provenance_class": "deterministic_ratio_and_random_perturbation_demo",
+  "eligible_for_original_four_test_model_or_five_hardware_LOPO": false,
+  "sources": [
+    {
+      "path": "source-data/results/table8_cross_platform_prediction.csv",
+      "sha256": "7f94a8bb0951b0d5f71ea8792a11aaa075f0d9f65c24c5c8cf6cc566de82cfa2",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/table8_cross_platform_prediction.csv",
+      "upstream_sha256": "7f94a8bb0951b0d5f71ea8792a11aaa075f0d9f65c24c5c8cf6cc566de82cfa2",
+      "locator": "header and all 50 rows"
+    },
+    {
+      "path": "source-data/src/regenerate_tables.py",
+      "sha256": "0d8f0e558e985e896cff40deea78ae6195dd2967d5787bf1fe3c5478b07049a0",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/src/regenerate_tables.py",
+      "upstream_sha256": "0d8f0e558e985e896cff40deea78ae6195dd2967d5787bf1fe3c5478b07049a0",
+      "locator": "lines 202-247"
+    }
+  ]
+}

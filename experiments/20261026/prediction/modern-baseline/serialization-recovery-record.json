@@ -1,0 +1,16 @@
+{
+  "kind": "non_scientific_serialization_recovery",
+  "created_utc": "2026-10-26T03:57:06.382565+00:00",
+  "original_protocol_sha256": "b8278d8d49aaea6285a5e1a986050fa8c8f14e5b3a1200c8b52e5040559b21d1",
+  "original_training_script_sha256": "ab68a7e07e0b679b2caac306969f46e4ebf07d6ba8cda0afb42c3c645afdb659",
+  "completion_script_sha256": "9d00564c949e298e7fc87d37a52bd53652947e0472c7aa6435ee09d8e5d0ec28",
+  "observed_failure": "ValueError: Out of range float values are not JSON compliant: nan",
+  "stage": "all 400 checkpoints trained and saved; JSON fit receipt export stopped before test metric aggregation",
+  "cause": "25 RF fits have one training query, so OOB R2 is undefined (NaN).",
+  "action": "Replay the existing 400 checkpoints; serialize undefined OOB R2 as null with reason. No retraining, filtering, model selection, hyperparameter change or new physical measurements.",
+  "original_training_stdout_final_receipt": {
+    "complete_cells": 90,
+    "total_fits": 400,
+    "elapsed_seconds": 32.75589591699827
+  }
+}

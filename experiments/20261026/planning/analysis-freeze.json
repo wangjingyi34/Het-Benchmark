@@ -1,0 +1,946 @@
+{
+  "version": "v7-planning-analysis-freeze-1",
+  "frozen_utc": "2026-10-26T03:37:13.779880+00:00",
+  "scope": "X8 complete identity-preserving migration trace and A7 complete eight-context 160-fit panel, offline only",
+  "prior_exposure": "Existing V2 aggregate review and V4 analysis code read before freeze; this is a retrospective specified reanalysis, not a prospective preregistration. No detailed per-seed outcomes inspected before this freeze.",
+  "case_selection": {
+    "task_id": "resnet18_b1_imagenet_val10class_v2",
+    "rule": "ResNet-18 batch 1 fixed by user before analysis; retain adverse result, no gain-based case selection",
+    "source": "A100 MIG 2g.20gb",
+    "target": "Ascend 910B3",
+    "chains": "Cross-hardware trace cal1-3 -> eval4-8 is separate from target-side PPO A100 2.097 and fresh NPU101-105 confirmation."
+  },
+  "stats": {
+    "unit": "One independent physical process block, evaluation run_index 4-8; five policy seeds averaged within block before CI",
+    "seedwise": "Report all fixed seeds 11,22,33,44,55 with five physical-block results each; never count seed x block as 25 independent hardware samples",
+    "estimator": "Mean of process-wise 100*(baseline mean latency-candidate mean latency)/baseline mean latency; raw and gate-accepted metrics separate",
+    "interval": "Descriptive Student t 95% interval, df4 t=2.7764451051977987 over 5 process blocks. No familywise confirmatory inference",
+    "cross_context": "Equal-weight mean across all 8 fixed contexts, descriptive only; do not treat contexts sharing model/device as independent biological or hardware population replicates",
+    "contrasts": "Within-context physical-block paired differences in percentage points. Full four-PPO-config x all feasible fixed baseline/random contrasts plus primary real-v-zero and masked-v-unmasked. No direction/seed/config filtering",
+    "controls": [
+      "same-evidence exhaustive search",
+      "same-evidence greedy",
+      "target operator latency",
+      "uniform exactly 2 action subsets",
+      "uniform at most 2 subsets including no-op"
+    ],
+    "budget": "Same at-most-2 intervention budget; not an equal training-compute claim. Uniform-exact-2 has exactly2 rather than atmost2. Exhaustive enumerates 11 feasible masks. PPO 4096 steps target with final-episode truncation to <=4097.",
+    "quality": "Recompute top1 from raw sample IDs/labels/predictions. Threshold .99 candidate/baseline retention. All quality is heldout-100 finite sample evidence, not population confidence. Cross-hardware additionally compares candidate to source baseline.",
+    "mask": "Report actual support domain and invalid attempts. Equality when all four actions supported cannot establish effectiveness on invalid actions.",
+    "failure": "Any identity/hash/metric mismatch aborts output rather than patching data"
+  },
+  "steps": [
+    "Verify hash and all task/run/sample/weights/split identities",
+    "Independently recompute original raw process latencies and top1",
+    "Replay migration attribution/headroom and compare frozen chosen mask",
+    "Build full seedwise/context/contrast/raw+gate panels and quality gate audit",
+    "Test identity/error rejection and deterministic replay; produce English X8/A7 text"
+  ],
+  "inputs": [
+    {
+      "path": "v2-实证增强/evidence/final-tasks/index.json",
+      "sha256": "e276bd724461818e938728bec01598402bc03779e54332642a664e1b82ce29a7"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet18_b1_imagenet_val10class_v2_2c4332169b.json",
+      "sha256": "c54f7b3439b3d7d101e39ed2847bc17f31729aad6b7482775a12e286537956ea"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet18_b1_imagenet_val10class_v2_53d3746282.json",
+      "sha256": "eb0d386f986f42b3e9ae96f930e7617c0975188b188fb5a37a6ddd959af4b02a"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet18_b1_imagenet_val10class_v2_a428cbe640.json",
+      "sha256": "7db7b8e0dd884e877d53956f8454d5b5b65be4b079e77a25db5d09df395e524d"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet18_b1_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "6a507d6f0039056b388cd153cd3d613cdb2f7c193a5870a6982c044833efb9e9"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet18_b4_imagenet_val10class_v2_2c4332169b.json",
+      "sha256": "310de580656fe7c8cdbec9e2e201757d6839e6c62bb57885a5693055c0c84a72"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet18_b4_imagenet_val10class_v2_53d3746282.json",
+      "sha256": "b13d16fde9ffa14892c8aa29c51a9e2fa2316fd9c31c812555b16be57050c0fa"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet18_b4_imagenet_val10class_v2_a428cbe640.json",
+      "sha256": "49d4387a04765730a14b83bafb6a579f3a2d1ceb69c42c7822d03ed6cbe352b5"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet18_b4_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "ff2cd06ad7bb9248a2665683488cd26ebafaca7f411736b804e759454498b64a"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet50_b1_imagenet_val10class_v2_2c4332169b.json",
+      "sha256": "ab140a8b94be2b7f947995bb273aedfbb7871991d332a0063b81df6dadfedcf1"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet50_b1_imagenet_val10class_v2_53d3746282.json",
+      "sha256": "196b2c907c510e38879894099ac6ea5a38eded0403c6cff0b692d99c856702c1"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet50_b1_imagenet_val10class_v2_a428cbe640.json",
+      "sha256": "fa36cfdc29a6d2b74334ba99fc22425df1661aff8ad93dbfe8c96a8e5144010e"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet50_b1_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "7e8b3e0cf5ba1bcda434dd3ede38956a83f494d60582daa48b7304d4a6e1ab9f"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet50_b4_imagenet_val10class_v2_2c4332169b.json",
+      "sha256": "073188a309ce9c15eda35b6e0460eb982078da1761e6c5420e369a0f5ffe09a2"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet50_b4_imagenet_val10class_v2_53d3746282.json",
+      "sha256": "95eea73541b8dd8b59146b3f3f5058141ec5b56a5ced14a25fb01a14ca671155"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet50_b4_imagenet_val10class_v2_a428cbe640.json",
+      "sha256": "1a86c66f6e718fc6208adb9413ac7f3fd8e83cc47cc6b026a6c3b6856b6c86f5"
+    },
+    {
+      "path": "v2-实证增强/evidence/final-tasks/resnet50_b4_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "c9c3d16390a17c872abc21ce870a2b5ac616544364da99bb2348d0ccb56d8b26"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b1-r1.json",
+      "sha256": "4d47810caada19c9ee6b61d1ec28e87ed7855a2d3fd043a3cca1790b78bfd656"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b1-r2.json",
+      "sha256": "36e5e5de2115b4000888ae37cc80a84864a16196509fcead90648f03b4cd8d4f"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b1-r3.json",
+      "sha256": "c610ea280b07bca082527bb3ad3f771132878f195b3077a41bb2b14a03bda5d1"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b1-r4.json",
+      "sha256": "e2ee78acfc1a17a37a98582edf4074119dcc13095f96d1711468668550690d01"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b1-r5.json",
+      "sha256": "e4405d53870fd0a306fabe78126b045f8b5d841ee5bec849ee68034840d924f0"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b1-r6.json",
+      "sha256": "b10e399556f07abb8e7c980108369d32353d12e00d66a8108249c8255bcd17bd"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b1-r7.json",
+      "sha256": "9c74b0572aecd17bb31b1b35bf552743c0d1a3ff99a09782c1bf9789549b59b8"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b1-r8.json",
+      "sha256": "5d4bca3b74aac2af9230b9d0c5b664e65ed36dd6053233179e0c0ddb7db23795"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b4-r1.json",
+      "sha256": "e74846248af18c6c9d302c4f1fe6a01fa51aac19f94ba54c4e729bee3b1e1318"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b4-r2.json",
+      "sha256": "04e8a6db4e4e530c4c8b34fc9a450d34bb9fba0df51e1f8f4ca802007f40b1f0"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b4-r3.json",
+      "sha256": "5db68c60240532bbd7754dca55318a220b13c37014661b2a02b8f41ba397633a"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b4-r4.json",
+      "sha256": "34ea61f349bcaab1c2a0361b05f967cd2fd8186395a2809bbcd0f198e45f3ed6"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b4-r5.json",
+      "sha256": "55dc5842ea00936879775a3c0010079d7d341e5cf61a952db8919ff3a5102375"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b4-r6.json",
+      "sha256": "6394b3bd8f4bf2779b1c7e9a322c800477d949e5e75017e73dc2f9d0297b3875"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b4-r7.json",
+      "sha256": "07af2ad8c86bcd36412563dfd2262ab8c09e1e43412f9b0f7776c1f804bb4abf"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet18-b4-r8.json",
+      "sha256": "724c148e60ace4b4d719790f53bac5b0ff8905e1e59de1c97b93b3b287225a63"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b1-r1.json",
+      "sha256": "4bd21ab83850b2b663fdc3d4352cb32a09a86a7af9acfc24980c7c23fb033a05"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b1-r2.json",
+      "sha256": "bcad0ee43a13ccb32a5216c6b38be079f3a978daff9d6c7340ea06d2572be928"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b1-r3.json",
+      "sha256": "d39efdc5cd55029d5b02986f3ce73e916a463d583eaf99850e6a004b3e078480"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b1-r4.json",
+      "sha256": "75ad8775d76a17086c9c51515f9ab5cad50f4e70b1bd2dd27a6f2f70f9272a8c"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b1-r5.json",
+      "sha256": "7d8c4c22505116624b550979973ee7e192f906678236bc2ac26b339d9b61cf6f"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b1-r6.json",
+      "sha256": "4c9a5c96907fc4fc05917133f9031e265177423a8b675077a0c0f3c021ee790a"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b1-r7.json",
+      "sha256": "1e066a61422e2319c09c993d4c6c80dd0f1b48133e9f87bab4e85a50d3193364"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b1-r8.json",
+      "sha256": "bb85a0325fa56e3d83882c9151c616852deff9e9bb7e7f947d32407545af1421"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b4-r1.json",
+      "sha256": "75f0d1c747abb28ab78993187f9dd04740709dd5a5bd7519ebb0e67b86064634"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b4-r2.json",
+      "sha256": "923284291205fa9511b6700611fd9cafd341e8dafe8174948ffac87a5cd99c35"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b4-r3.json",
+      "sha256": "c55904d99ba88ed5a72ffc2dd528aec284e7f9ee69e997d5e7b1bcfe29afc4fa"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b4-r4.json",
+      "sha256": "f2d68cb159723c521bb356fcc84cccecd7997d9e91d0f262544c3abace0652b7"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b4-r5.json",
+      "sha256": "a09256e8dd99aaa81505ff658e32666a8e0a5ea652f5573ef6d47fddc17504cd"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b4-r6.json",
+      "sha256": "3d81472e607f85982fb7bdecd9c7f58c492c3b0a1ce7076916524f41e472af2e"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b4-r7.json",
+      "sha256": "60e8a4d4cab846b009aff8a3e851e603074fc72f830221cd014194121fe85fac"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cpu-resnet50-b4-r8.json",
+      "sha256": "84835481f2837911a22e06a52dabf6539e4564cad5ee4dd5cbcca7cc89b1ef27"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r1.json",
+      "sha256": "12b0493468045fc4006f05418bee8d25929115ef374912cdb2a039bc01471078"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r2.json",
+      "sha256": "cfc1f300862ef102fabe813ae13d40cc53504331c087a6203bcadea7028fcc4b"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r3.json",
+      "sha256": "91275d7e7cca4f9a9bd8de01909371277a10c9d70c34f8b8a80bd93c5acda476"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r4.json",
+      "sha256": "0832075f202fa0fd9ddd4e6a0809b292aa823bbd5b6215d7785494c4fb82bcbb"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r5.json",
+      "sha256": "eb3a3fabff53831bcf28410ab499a38f5e5f9921e1c2d3860262e9f13ae9a9e6"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r6.json",
+      "sha256": "31e2a886321fc5a0f776f1550c7e5a5fa3889a8cd5becda88e4ff77b30df33a6"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r7.json",
+      "sha256": "833c873f8a6ea1bc4c411d8ce1f7086f07118be2c5d92ab9bd02139da4d8086d"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b1-r8.json",
+      "sha256": "0283c160469df4367949f87a7e52e85e80ab19a7c1d68f3b0f0f6be4c41d625f"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r1.json",
+      "sha256": "5a68e59939aecc38c55e8bb5d72e9d8ae96d609093d9ca0e227be0dc4194c01a"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r2.json",
+      "sha256": "a012ec339b3ee5231eb0cebe55293f5e7ddb7d87b3659d50e7788ce3ee883a34"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r3.json",
+      "sha256": "e9be9e551631cd84ab7ade45552bee1054f2bf9b8cf8aa72d99156abc03cef04"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r4.json",
+      "sha256": "02e56c9c57caaa4990c03afa655c3d6a92eea5d1f936f14e41af43949f522477"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r5.json",
+      "sha256": "3c8bdd26cd8029691cfe0811e7bd095420401f23b1efc8c65c223e8fbc10ff57"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r6.json",
+      "sha256": "c2d586f33fd6be1d3142a718465fa188d0a1ec4f96508f65ae435acef1d82c46"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r7.json",
+      "sha256": "b35d6e6ceed7790a1715ef24954d8ffb3a65e39e36f32f0010dcea77fd76cf50"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet18-b4-r8.json",
+      "sha256": "bc9d6e4b1bcaa3911d9c0948c180ccf6f1bfe8b95a052bebafbeb9daa5003cd0"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r1.json",
+      "sha256": "5f788c065b565b34b5a8821728e06b65f171d1d35d77d7d722595f85b6724f5d"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r2.json",
+      "sha256": "336a263a9507082d72c6c1edb7011c1b0ec3a7f9d02c464b460c65f657b0896e"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r3.json",
+      "sha256": "f0944e0726a67d7167ff966829a8201450b33c6c1a8b873a320bb1b50dad86ea"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r4.json",
+      "sha256": "3449dbd147d7eb34e91782fd76263ede7a2a8d2b45664b854e7a830861d8b151"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r5.json",
+      "sha256": "723809972dbaedb546825fce1bd78a7ff4c4d18d9c3eac15e2096ab377f3bc0c"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r6.json",
+      "sha256": "0d6b586339af3a4998d24b360f8fa02fbb2cb78b1b70a578b994c5564c6e7b45"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r7.json",
+      "sha256": "36f60ef1a1231016a50f18764f4ad22cea413bed06d04de6e634e13f06799992"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b1-r8.json",
+      "sha256": "ededf4837ecb1b4d904c73df43a22664419f317d4f84cbb9ea81848ea2f4e709"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r1.json",
+      "sha256": "3743acb94ecee2fdced8b2287d7ffb64f6e3bb5fc1ee6463ac877342a995f069"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r2.json",
+      "sha256": "b828db147df023e3bb2bb4cb74304b20bf58c5cc0ebf59b3ec0786c27045b993"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r3.json",
+      "sha256": "b3c62f3fac98e121e2d84bf2ba2b0c541edd95e447991d106f1c10420543f3c1"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r4.json",
+      "sha256": "81f8da00c3d5448b9800fa2c7ff0c8a589675e20a0c98cc9702f1d7cc417910d"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r5.json",
+      "sha256": "900ae4d81fd7ac460069f58a1563e422f173020b59f8f219423666c9698dcc2a"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r6.json",
+      "sha256": "d2086c5d4499df70295265e91f79f0191530a1b5bded2e608c4d9a2b92eb276b"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r7.json",
+      "sha256": "01817818b4ee22f315343ca9a5d9e42b1704552cb7e7a68a3f4aff00a283890b"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/cuda-resnet50-b4-r8.json",
+      "sha256": "ede7ff3bd3467419ecc4c3300bf32f6a8b0fb34c447ab37a19f88d66ae7ae644"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/matrix-state-cpu-mps.json",
+      "sha256": "97de21599e4a151d74791e4ae01eefb27a9d51dd3e2da31116da64cd7709e650"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/matrix-state-cuda.json",
+      "sha256": "1a5435438ba21db307e684dce2ac2ae16ee67a986ca62245b97c1cda20b2d255"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/matrix-state-npu.json",
+      "sha256": "4f6ceb193c30919a8f54ed559f154d67036e571e1ac5c2fe26bbafa74be27741"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b1-r1.json",
+      "sha256": "4a72ac50b89c93d68373ce7a048a2202620d46cb71d64f437456d23bf65e816e"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b1-r2.json",
+      "sha256": "b56fa14427a18bc256e7f17a5c2db412bc3b9af687b38cead3e80d5e320ebc62"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b1-r3.json",
+      "sha256": "caeb98515041bc1de533483d257727d73b5169da9b5ae89a361ab992c94d7da6"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b1-r4.json",
+      "sha256": "6b46f65fbd1bd5cd7ca21913df59f191f229e6bd6e07f1a7be4e35a44a74540e"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b1-r5.json",
+      "sha256": "059fc0b0bb3340cac46ec4969354dd3b9ae5c848c2f6f3d30b022268633c90e3"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b1-r6.json",
+      "sha256": "4186b6c3cf2d0503f662a6f37e0c4caa7516e844acd80df9869dcad0e0a5f37d"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b1-r7.json",
+      "sha256": "1bde10d9ffb0bac8dea02df738d4a442a764c75178ffe6b705affce8153fa6f2"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b1-r8.json",
+      "sha256": "d8e63e73f707311119b3c680270a796a17dbc5f06975d533a207013a99eef453"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b4-r1.json",
+      "sha256": "2686dd5db4d07627bbe50c03166b8a788bf6fe9fbb493a11c82126a33a6047d0"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b4-r2.json",
+      "sha256": "354470d3d8f85d4b21e21807ad29d5659239fc4e522899032738118463c71c01"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b4-r3.json",
+      "sha256": "f382fd92d9d4f2f0de5e317a06c7be72324c048ed0620f27999594529c7f2001"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b4-r4.json",
+      "sha256": "1e6035e5f5f5f23834a381bbc0b2ec3a62e98bedcc7dad0f482ff40cdfced986"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b4-r5.json",
+      "sha256": "862eef13b16b00503a9da1883d4dedd1a40f012e9ea9a51e8b518722b4a819eb"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b4-r6.json",
+      "sha256": "ad0cadfa92975740bb4bfafa19609fdca807ed9c844ef35bb81ed3073ae23806"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b4-r7.json",
+      "sha256": "db63eec158310c82e29d30ea4981b3253e1336192740d6a504ba51273a9b989a"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet18-b4-r8.json",
+      "sha256": "548072dcf2f28ae63db32f7b545952a29680d037b9ec3273ac7e46ecc9d2d96f"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b1-r1.json",
+      "sha256": "9673dddb14850f606cd8a4b9da8bbe9e29572d24200dab67d1ef05c5235ea18b"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b1-r2.json",
+      "sha256": "d85d953427d161bb1b288021866a4e49178804fe1868518154d228ba74f608dd"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b1-r3.json",
+      "sha256": "b2e1878d94b93819c267fbcd930416826732024fd4975009a1e323900001bb7c"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b1-r4.json",
+      "sha256": "c07d421e3c6de97ac70dce1e754cf25449ed1bfb72e3cdd33d03b448f2351dae"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b1-r5.json",
+      "sha256": "1c77d550db55a7546de2f1b3e6da62dc9358969f7d5ad1cdde146465155aa9e4"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b1-r6.json",
+      "sha256": "a80f91683dea83bc825be0a03245ef02dd0b9fb94bbd6cc26e45c5e28e880a77"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b1-r7.json",
+      "sha256": "59b71bacfff4eb0201024b8345b4eb3c61278756757ef8c1e47ca024afe66716"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b1-r8.json",
+      "sha256": "5d61e927f8c4279a1908f406e31615ae84d9566be6022476b2e98c4e6af08c34"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b4-r1.json",
+      "sha256": "58b2b9033fc7dca68d55b1d752c24808a0d2cf8bf4a0cd6caaced6c4d2719331"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b4-r2.json",
+      "sha256": "20b4f3a970a5f086e2bd781f77b4818c44fbebec4a298dc6b7e49f82b679a427"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b4-r3.json",
+      "sha256": "2d6f4f236430cac51639bbf3608e181ff7b3244fcf3b65efea94c412f585ea37"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b4-r4.json",
+      "sha256": "65f1729642ec85521b357ed435bd74d8e32770f017e6ae177fe24e905a5e8a3c"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b4-r5.json",
+      "sha256": "f399a568ee3839f83efd9faf2ec29878ff5f920e0ed85da7addd722d1754ab9e"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b4-r6.json",
+      "sha256": "a3d513383849da380c9809c7157883b571b1677da3fe2631912ac065764fbc8e"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b4-r7.json",
+      "sha256": "cfec193457d1a15a5bcb385e6b8541e99340f89eec7a6b21d2158f815bcd44f4"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/mps-resnet50-b4-r8.json",
+      "sha256": "1af683c80d7c14264b0aa1d48a783d4175305672cdbc27525058f0a5d4466ed4"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r1.json",
+      "sha256": "8f81557b91e2e19cfa6f2f0c7ac4dc1e996776b210cbdf497cb9262bebbdaaeb"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r2.json",
+      "sha256": "789f1c345f20878dab126ceab3eb2c1ca3f36301404f420de8999ceca2cc4ac9"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r3.json",
+      "sha256": "db41317112a450be9ce58b7241d8a337d69de756637d90b425dbdbb6064e95cb"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r4.json",
+      "sha256": "ddc9dfcd633e442fcd57daaf06603cc6d7821df2b58b95c7f4487249917d8135"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r5.json",
+      "sha256": "4758d1e18a4f99c7531851484693817bb3fa238a1cefab8a09bee8769cfeedaf"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r6.json",
+      "sha256": "82e6be014af58d671ab903020cf8787e9345044b42184fc55bf62086670bf5d2"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r7.json",
+      "sha256": "b6f7f253b1077fa1f4fb533f15cfca1460a0fa2f533756623067c7759445e8ad"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r8.json",
+      "sha256": "b434a2edaba578e0ffc2125a924a6aed4b601eff523ed283e5ef1162303186d9"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r1.json",
+      "sha256": "e72bc03e1121ade856474ef90c5e837d164659206f5a0a5a77813e6c7b2a2a58"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r2.json",
+      "sha256": "d4138d4b8766dc0825312c3301dc131cbe1c69800c00a21b3e4aa0f4f7775ffd"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r3.json",
+      "sha256": "9349877eb73be9fde6145d420a373cdd3b9a6043592a8a77d56a641c33df68d1"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r4.json",
+      "sha256": "6c277e4e3e1b40c3c6483662504d60d69b8ec522fb07df93fe4294abc35164c9"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r5.json",
+      "sha256": "2750058cbe67c0e2a8ac6ef91ce231b90880eb3e4feb0f2ce97aa3ecd60f7d91"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r6.json",
+      "sha256": "d690384f710349ee9292a5f7e6e6ed82b67c823f2c53b8f65d25504c4ff9f986"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r7.json",
+      "sha256": "1668af2597b3214d65e05de349017e29053af465d50444b00a7fbc78b74291cd"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b4-r8.json",
+      "sha256": "e800fb671b192a5a6049d00d3180b519f237404014bc2546d787b4d0576680c1"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r1.json",
+      "sha256": "d8c487d498458f1927161d2f9215c38d2164020b7ca071e4322e897a3550dded"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r2.json",
+      "sha256": "651ed5bced4d6da54d578d71864320353499049a07c17b7d2a02501e6ad7a712"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r3.json",
+      "sha256": "f1df188bb06e217821f54e2dbec076c27116d336b3623f935e1f603f445e71e3"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r4.json",
+      "sha256": "72d6731f00148d82eaecbb1b16bcfc92aca0b7205055a37c1e2f6a3e07c299ae"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r5.json",
+      "sha256": "601a560fe7cfaebe25cb035303b63076e5480262c6b97e3e8eb8e4563b24e2e7"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r6.json",
+      "sha256": "db04d7bc82fd639bda549ed0a4f79233173b353e5ea31fd55125e01a3f8b6170"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r7.json",
+      "sha256": "1f7f32a3e723abf9258ceb02467bd499afa86d810868b31aee9ff388382db307"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b1-r8.json",
+      "sha256": "086d1be39f6eb2d9229256d2c5950735d412e499d42825c7f76b7664033a5275"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r1.json",
+      "sha256": "a72d7c453b77d069fb7bac1cd13ffbca992a71547d98a05c80ad0e72adc29a9e"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r2.json",
+      "sha256": "249450e173c2c010f5600ae3733a1800ea63b6a52cddd049bf0a57b7ff184396"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r3.json",
+      "sha256": "b117af127293be1a48fbba4a19f383ec8921ad0a338c435efea1e9b7e2e7881b"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r4.json",
+      "sha256": "8070f2657931a8ed9be6127612cc3fd4453c8c5d3edc8a41d87ad3ae2363f93c"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r5.json",
+      "sha256": "d917b28f303bd18c054d0a8895a98cb41b73c0ae2a3923fd59b0c1fb1858939b"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r6.json",
+      "sha256": "9180f624de68b8aad6364190e9510b899523c0ebe3073bc662dd8e79e02255e6"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r7.json",
+      "sha256": "96974dd4e25f6c9b22bd2b41d3a9c8943e0559070f31956531117eda9f04abce"
+    },
+    {
+      "path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet50-b4-r8.json",
+      "sha256": "82c1301d1d0bc9980a815bba8e1307d2c2dba17a5a22fcefcb47aacfd9d63ff9"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b1-r101.json",
+      "sha256": "b3dd1e7fc2d12d422064eee8393bcd77b6c9b010417da281d5b11465af9b5f48"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b1-r102.json",
+      "sha256": "e7ed9d4cc83fbc1b4fa2c05a9a826e033599e775a254f3d12f57ecbff0f968e3"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b1-r103.json",
+      "sha256": "cb908c8354355d2999aebd6fbd09a8775f749cca42d128902b43e96f687e36c3"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b1-r104.json",
+      "sha256": "a79e530e4b319645a5a08a21a016e3448e06e0a9d80731392177ea34ded2339a"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b1-r105.json",
+      "sha256": "562737a0772c5e2f5cc29f7c59e4586df54b0a6a4ef9f124d46f1f7e56b03fac"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b4-r101.json",
+      "sha256": "c49220ed6ed83369ca021fa691505e518a95af4317f78e494b2d30ce6e008f7a"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b4-r102.json",
+      "sha256": "eee4e690e3f81ec2b7a865e3841cc0d2746fc473daedd469628721676437c4f3"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b4-r103.json",
+      "sha256": "b656e135e06a44fe955ce006e09f3443cda91573ec951167122ca2ba4f95ab5f"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b4-r104.json",
+      "sha256": "aa478ba0ea4aa680d77b4f20c46ec0080420ed81784eae27f2619a88a71b8a0a"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet18-b4-r105.json",
+      "sha256": "615e1633771beb612d45bd027a5e63d98f5b8c2072f9e9d22704ff318a4d95dc"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b1-r101.json",
+      "sha256": "9b06b959183d46bd6436e9491fca9f72d4c7fea636dc4daec937914621a759bb"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b1-r102.json",
+      "sha256": "db548255df20a2de077bf0bbcd91c6e959a5bf339442e45b851067db9a501770"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b1-r103.json",
+      "sha256": "c937ac8783f86e54b7bef21de932b405e7bd7d6203bb483f9d7dad203d78cb95"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b1-r104.json",
+      "sha256": "cf109ee3786d760c2509d91e52c7122f12fd1cc7f6e169ab2281497c05fd6224"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b1-r105.json",
+      "sha256": "24d74c4e951e2fe82eccc86599c45344fa0e373371d6f027738a7637c09c6938"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b4-r101.json",
+      "sha256": "523f69368a35e1fda9438100c60ba16e5109542d785a586cd755aa1ec7743ce5"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b4-r102.json",
+      "sha256": "92b0a6edf1c16f578281f306e8c1ed50035104c6dbf0072e97c3e4538a1e5e20"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b4-r103.json",
+      "sha256": "1942509c5539077ac021935679622ad6df833616b7a23d66c042ad52424e18d1"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b4-r104.json",
+      "sha256": "780ec612c896d67dc45f9a6ab7dddee9e5f1ba654f502615d2443be49110f8ab"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/npu-resnet50-b4-r105.json",
+      "sha256": "8c9947d8c5e08833caef80e5b798af6ae6a105e31663ee85c712172bd4cd8cf2"
+    },
+    {
+      "path": "v2-实证增强/evidence/paired_raw/paired-matrix-state.json",
+      "sha256": "9f263149d210390ad02ba5fa7375773eb7d8855f506350c313e499537e32f04b"
+    },
+    {
+      "path": "v2-实证增强/methods/analyze_measured.py",
+      "sha256": "a3bb928ff5f05f29ae45280b23c54c56dca455b80c6635e1e160e7d27da473fc"
+    },
+    {
+      "path": "v2-实证增强/methods/attach_embeddings.py",
+      "sha256": "dc1963944d949a274e117028f467d8f0f519a1dd241b9fd523d00eaa39422b62"
+    },
+    {
+      "path": "v2-实证增强/methods/audit_planner_matrix.py",
+      "sha256": "ad250979637cb99bdb089f0d869ea5feadb8552a784a8b91ff8487264a26f253"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-early-results/results/a100-to-910b-resnet18-b1.json",
+      "sha256": "92fb19388b5fdbc73873b1544c9453041c47eacef2e10392b9c2613ba0c92ae0"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/index.json",
+      "sha256": "d1e072f48992d395c06eea4dc02427e75f23a404c37a502866229be49780d091"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/resnet18_b1_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "0bbc38344d4a3f32363c78821d6ceb1478db3fcf9315d6c609b2448e609297df"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/resnet18_b4_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "9cb86414603659c822768209073116adfe54d3976e3055c382552ddfc71a8ae0"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/resnet50_b1_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "9fef1d439cde8c8d8a6f36e213032cce85a0f49a461128741ba4f83ccdcccd64"
+    },
+    {
+      "path": "v2-实证增强/methods/bridge-final-inputs/npu-tasks/resnet50_b4_imagenet_val10class_v2_bac88cfcaa.json",
+      "sha256": "8b8a06459247fa6cbdd113c707731c65f2aae8e1a6da57c6e60c8f535811d9e5"
+    },
+    {
+      "path": "v2-实证增强/methods/calculate_market_cost_scenarios.py",
+      "sha256": "49d1dcbb40f28a97ea789a366f759368d43f3cd15fc26f3a7f3042e4dcc24e3e"
+    },
+    {
+      "path": "v2-实证增强/methods/cloud_early_bridge.py",
+      "sha256": "251501ccbf58dc600aefc979b09aeafec00c972b4d8343078fc1c23dd4542524"
+    },
+    {
+      "path": "v2-实证增强/methods/cloud_planner_matrix.py",
+      "sha256": "cd447c683cae3d6406c3227694c4c58c050ddf3aff1de25d8b370101542ccb72"
+    },
+    {
+      "path": "v2-实证增强/methods/copa_v2.py",
+      "sha256": "421c94039b90c6cca76e7ba7ef53153f832e23fbb36607ee7c4a68f5f3c93d52"
+    },
+    {
+      "path": "v2-实证增强/methods/download_research_artifacts.py",
+      "sha256": "09e285c3fa9312a11878b2a00bad1b8bbf58ccaadc80cd5ae338b2580a55b143"
+    },
+    {
+      "path": "v2-实证增强/methods/family_calibration_probes.py",
+      "sha256": "cdd236c31f3c223889e68026f400aad5a6413ec6c1173603d92fb05a4d91dce2"
+    },
+    {
+      "path": "v2-实证增强/methods/measured_planner.py",
+      "sha256": "ab207e080c532a5bb75cda136cdfbbd6ea93522b8ead1631f5e62913bf9f2a2b"
+    },
+    {
+      "path": "v2-实证增强/methods/migration-preregistration.json",
+      "sha256": "d68e6e66937aa462327e5caf19f4590b8a595614afac1d71120ab21bbf1b5fc0"
+    },
+    {
+      "path": "v2-实证增强/methods/migration_bridge.py",
+      "sha256": "281f9afc72b3b79abbbeba16e1f49c3de5fcf1fb6aa169948046e5c654ae2f4c"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-inputs/tasks/cuda-resnet18_b1_imagenet_val10class_v2.json",
+      "sha256": "2afabd1477d6e25ed44a5e7bf635e1b6d744191c99305c0076bdfa80ca891d45"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-inputs/tasks/cuda-resnet18_b4_imagenet_val10class_v2.json",
+      "sha256": "86806a3399bab19a17c24dbbc99494697455401b90c2d3d696ce016ba0775642"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-inputs/tasks/cuda-resnet50_b1_imagenet_val10class_v2.json",
+      "sha256": "7dcf82a7cb73a495bf183e9379369a8c8feab6fb889d2ad01c07cb63a18c8ffe"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-inputs/tasks/cuda-resnet50_b4_imagenet_val10class_v2.json",
+      "sha256": "9ca7ee5d20db446afad7d3e2c04d449de594e875e102c71bf7384c2dc37bdf9a"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-inputs/tasks/npu-resnet18_b1_imagenet_val10class_v2.json",
+      "sha256": "3cf848f4af81d00a71c6d55b3dfc01d0310adc967000a7224a2c0dfe4e812b79"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-inputs/tasks/npu-resnet18_b4_imagenet_val10class_v2.json",
+      "sha256": "84925ab0ecdeeb69a8bfc61f5bba5f86b4f559e7efe52a5b0559600065488d28"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-inputs/tasks/npu-resnet50_b1_imagenet_val10class_v2.json",
+      "sha256": "0fdc56459aca477b50a80667853ed08ed1f2b8ce4d912398b1a431c64a821da9"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-inputs/tasks/npu-resnet50_b4_imagenet_val10class_v2.json",
+      "sha256": "9c7da249b4994799c2badb7fa2a2e2a873b6005f4c14d2d7c2b3f2170a6dc609"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/cuda-resnet18_b1_imagenet_val10class_v2.json",
+      "sha256": "5bdc698157ba3fd5ebab011201036546f2129a8b6c0ba94af45fdaf76f937e00"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/cuda-resnet18_b1_imagenet_val10class_v2.partial.json",
+      "sha256": "ce9c83c47cc5a996eaba2af19f0fd30cbdf88ef5734ea7b930111b502d771413"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/cuda-resnet18_b4_imagenet_val10class_v2.json",
+      "sha256": "f95b63ad7886c0b5cb34aec2dab5e8a3e85fda65d1e579d04109dc703ce664fc"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/cuda-resnet18_b4_imagenet_val10class_v2.partial.json",
+      "sha256": "9466d81adca5382022908b4746a12e2d045cb6ec7a29469acd0b4dd87ab8e03c"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/cuda-resnet50_b1_imagenet_val10class_v2.json",
+      "sha256": "fe3efc56b0658c4f9ebf648e7a93c102c3018c79917afa750cc94d15a086c457"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/cuda-resnet50_b1_imagenet_val10class_v2.partial.json",
+      "sha256": "167638348d9fe6389d29c5bba56420587c5ba9821ce53d5850a85589b39d9a01"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/cuda-resnet50_b4_imagenet_val10class_v2.json",
+      "sha256": "1c2608d7838f66cd677583fc727a6af172a524fa8a3fafe4af5c250e08985045"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/cuda-resnet50_b4_imagenet_val10class_v2.partial.json",
+      "sha256": "5cd4916122c8427ee121551ea2e23224cc07d808b1f106795c0feef4f9684f8d"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/npu-resnet18_b1_imagenet_val10class_v2.json",
+      "sha256": "ed8395323be8faec4d05f619c05f5a9b196c96c51a1556441198e77ffb263f5f"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/npu-resnet18_b1_imagenet_val10class_v2.partial.json",
+      "sha256": "8a8476dc620466e83686324fa8b7e563db226db672bfa4f9c90f510b30ab740b"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/npu-resnet18_b4_imagenet_val10class_v2.json",
+      "sha256": "69efef23d3a6b7a09a8a549197ec6c3f1013b3b998d56081b9a1ef4a603bd171"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/npu-resnet18_b4_imagenet_val10class_v2.partial.json",
+      "sha256": "319dd5c0494535e376c11780d15d28b19b4341e6daccf1e5812d4a6024de8503"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/npu-resnet50_b1_imagenet_val10class_v2.json",
+      "sha256": "39aefec1f4064c0e20b1fbf9a6f17ebd7bdf1b63eb9234f8c4ba2a4834f59058"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/npu-resnet50_b1_imagenet_val10class_v2.partial.json",
+      "sha256": "30c02c67a643b2baa9d45c5741daeec5fca43c7da19fd48dfc7abffb8f80b3be"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/npu-resnet50_b4_imagenet_val10class_v2.json",
+      "sha256": "c0e24be02309754731e117ce27b3c30d9cef93ecd126b477750f15730b60d18b"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-matrix-results/all-complete-v1/results/npu-resnet50_b4_imagenet_val10class_v2.partial.json",
+      "sha256": "d8e1660ca7a4c48c688f7e05693f0bbc299b5f9eb16be54dfa968391b502178e"
+    },
+    {
+      "path": "v2-实证增强/methods/planner-preregistration.json",
+      "sha256": "0075179209ba63cd91c2a58e396a116a917e3308d93c767703bc019602ff6fcb"
+    },
+    {
+      "path": "v2-实证增强/methods/prepare_planner_matrix.py",
+      "sha256": "cb31a5eaa5c988d84b918718e88ee4bb02b7c1a04b062935583cee9ff3f8105a"
+    },
+    {
+      "path": "v2-实证增强/methods/runtime-preregistration.json",
+      "sha256": "2eb275de1a1df3792832bfdd936da5456e31e7f4999bf73986363282b3b77675"
+    },
+    {
+      "path": "v2-实证增强/methods/runtime_calibration.py",
+      "sha256": "0193d36362b6fc30910870dbc751b047aff6a5798be4f4353073581744df45d8"
+    },
+    {
+      "path": "v2-实证增强/methods/summarize_bridge.py",
+      "sha256": "1566a2740577d552990a0a5cf7fe952c942e494d9f2813c309788caa345ddebc"
+    },
+    {
+      "path": "v2-实证增强/methods/summarize_paired_methods.py",
+      "sha256": "87eac0b12650dd6c6e905caa94a704e63a51c3fbbdbe77e9442fafa18eee07fb"
+    },
+    {
+      "path": "v2-实证增强/methods/test_methods.py",
+      "sha256": "3ca926687d9cc3a93534e0ac18e3345fbc03081b7f41a634fa2783670772d6f6"
+    },
+    {
+      "path": "v2-实证增强/methods/test_migration_bridge.py",
+      "sha256": "f363fbb3ea789eb8e41d6ca6d622adff4dfc4a3b1c982397c44e894895607632"
+    },
+    {
+      "path": "v2-实证增强/methods/test_paired_summary.py",
+      "sha256": "7dd03bb2471177e360f668e4c1aee219f43a188c93e74cee6f4de0b8793c17ba"
+    },
+    {
+      "path": "v2-实证增强/methods/test_summarize_bridge.py",
+      "sha256": "43e8bd243654abb8e70e4a3870690d845963c3ef2901343698b591b6dae01165"
+    },
+    {
+      "path": "v4-提分条件补强/case/all-context-recomputation.json",
+      "sha256": "56b276bf557edba6331eae0f0c5cfd79ff3632a4a99df3b5fe65b145f49b7606"
+    },
+    {
+      "path": "v4-提分条件补强/case/case-protocol.json",
+      "sha256": "b229a718635213dd345bd876a01b31c5ead082820dc137aeaa803c55d04a2361"
+    },
+    {
+      "path": "v4-提分条件补强/case/offline-analysis-plan.json",
+      "sha256": "d4d13f9950996005f4c2150150183da4c48c8d4ec27df93263b4bd226d6334df"
+    },
+    {
+      "path": "v4-提分条件补强/case/recompute_case.py",
+      "sha256": "a69d6c6ff4e279ffbe334362fbed632e43828b1a4b9d40c9014c36671d89e18d"
+    },
+    {
+      "path": "v4-提分条件补强/case/verification.json",
+      "sha256": "1d5989001b9cc721c04e9aec18fb0ce5d69213edf4fca0184891b0935b2e3fb7"
+    }
+  ],
+  "public_export_notice": "One non-numerical purpose field has been de-identified in the public protocol snapshot. The private original freeze is retained unchanged. See public-export-adjustments.json."
+}

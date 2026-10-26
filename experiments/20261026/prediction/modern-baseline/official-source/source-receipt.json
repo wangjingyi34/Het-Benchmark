@@ -1,0 +1,105 @@
+{
+  "repository": "microsoft/nn-Meter",
+  "commit": "cd8dab49b735d58d03746141f73ef5934559ae68",
+  "files": [
+    {
+      "local_filename": "predictor_lib.py",
+      "encoding": "utf-8",
+      "sha": "41f24834e97cd93187dc9adb31422ecdbdde73c7",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/nn_meter/builder/kernel_predictor_builder/predictor_builder/predictor_lib.py",
+      "display_title": "predictor_lib.py",
+      "sha256": "c1ed54a16a7e5ab51886294fcd66c9ce1bc8b41d602e65b3adb53e9c6007057a",
+      "bytes": 12125
+    },
+    {
+      "local_filename": "extract_feature.py",
+      "encoding": "utf-8",
+      "sha": "bd62dae2a4846673eeb9451fc7cceea7a3f0dbd1",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/nn_meter/builder/kernel_predictor_builder/predictor_builder/extract_feature.py",
+      "display_title": "extract_feature.py",
+      "sha256": "578c0e80c3085b53de1e329b67d3af8bf04d7cd0bda5745eae20ced6625d4968",
+      "bytes": 9106
+    },
+    {
+      "local_filename": "feature_utils.py",
+      "encoding": "utf-8",
+      "sha": "169538fd716b87ecc5711f7a1b32c58c74a28d26",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/nn_meter/builder/kernel_predictor_builder/predictor_builder/utils.py",
+      "display_title": "utils.py",
+      "sha256": "1548dfefa1029d971c523111c4514fca224e1479ec30d39bc2e86147e13f91f8",
+      "bytes": 2006
+    },
+    {
+      "local_filename": "kernel_operators.py",
+      "encoding": "utf-8",
+      "sha": "44295562c3b856be34bc2d466d9a56a413e1ac24",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/nn_meter/builder/nn_modules/torch_networks/operators.py",
+      "display_title": "operators.py",
+      "sha256": "e8d294955aa8cfd01ae53dade012e86c6d7f0f335805095f0acf994bc6eac1ff",
+      "bytes": 9433
+    },
+    {
+      "local_filename": "utils_init.py",
+      "encoding": "utf-8",
+      "sha": "df9f1ae90cc45f900e05312afd014f3e65f0d0b2",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/nn_meter/utils/__init__.py",
+      "display_title": "__init__.py",
+      "sha256": "5b7125625c2ca30dd6338d49dfa9ea41bca8dc98d2a7d4d7b28e7b704b068c84",
+      "bytes": 346
+    },
+    {
+      "local_filename": "LICENSE",
+      "encoding": "utf-8",
+      "sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/LICENSE",
+      "display_title": "LICENSE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141
+    },
+    {
+      "local_filename": "build_kernel_latency_predictor.md",
+      "encoding": "utf-8",
+      "sha": "575b013f9afc36f83e9b9ad74ed1d929656e590a",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/docs/builder/build_kernel_latency_predictor.md",
+      "display_title": "build_kernel_latency_predictor.md",
+      "sha256": "bb1073505b2083beee8d430e6d98fd197e0515b40c2637b66eaecf7c6d9250a3",
+      "bytes": 33258
+    },
+    {
+      "local_filename": "evaluation.py",
+      "encoding": "utf-8",
+      "sha": "7e6032c00791249d41c6c6db29426d7ee8a75cb4",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/nn_meter/utils/evaluation.py",
+      "display_title": "evaluation.py",
+      "sha256": "9850578be70f458ce2789425eb4a041d2607bcaeb86766ae2f004755697f57dd",
+      "bytes": 1332
+    },
+    {
+      "local_filename": "kernel_utils.py",
+      "encoding": "utf-8",
+      "sha": "803c1b71de88286c9204c118930fc1b1d1c9be2f",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/nn_meter/builder/nn_modules/torch_networks/utils.py",
+      "display_title": "utils.py",
+      "sha256": "5d2f18d5340dc2e0d99dc5c0aa87a7369ea692f481365bdaf8044947b6eaf09a",
+      "bytes": 801
+    },
+    {
+      "local_filename": "build_predictor.py",
+      "encoding": "utf-8",
+      "sha": "9527e038be012d128478d0d648203fe9d1e85948",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/nn_meter/builder/kernel_predictor_builder/predictor_builder/build_predictor.py",
+      "display_title": "build_predictor.py",
+      "sha256": "c107870e165358b5748e85984531cd6df15c6507e21b2dec4a76e0d8b7c75f5e",
+      "bytes": 4362
+    },
+    {
+      "local_filename": "kernel_blocks.py",
+      "encoding": "utf-8",
+      "sha": "2d2e7d4d8b8443cc16a3cacdd64882a432330a57",
+      "display_url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/nn_meter/builder/nn_modules/torch_networks/blocks.py",
+      "display_title": "blocks.py",
+      "sha256": "c4a8da904774fae5ec022b3392a506490bc68369201d165f9573b42f2e98fd58",
+      "bytes": 17503
+    }
+  ]
+}

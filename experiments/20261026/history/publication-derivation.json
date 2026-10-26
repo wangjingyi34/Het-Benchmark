@@ -1,0 +1,24 @@
+{
+  "kind": "Portable scientific audit derived from frozen local historical analysis",
+  "original_validator_sha256": "65e0fcefee1eb3614bb7e1105d9268e4880400b02955d5ad736f1284b69676d4",
+  "portable_validator_sha256": "c6304eb718e185921e1a8132cfb354107f4046b807ce3fcd541aba2c89ee90a4",
+  "validator_changes": [
+    "Resolve relative evidence paths from package root.",
+    "Reports use bundle basename rather than private absolute path."
+  ],
+  "original_numeric_script_sha256": "74fd2637d25be4f22ab552a49219c7cc1014119d60a9c888d400426dfa455aa6",
+  "portable_numeric_script_sha256": "72fceef6534f79a34d067fc2b6ca0aac754f69907ae85807789108c907a94b57",
+  "numeric_script_changes": [
+    "Use bundled pinned public source files and verify their hashes before arithmetic.",
+    "Remove local/private archive and checkout-discovery sections.",
+    "Use relative evidence paths plus commit-pinned public URLs.",
+    "Recompute family counts and emit numerical-only outputs."
+  ],
+  "scope": "No physical measurements created; raw missing data stay missing. No confidential correspondence, private archive inventory or local review documents are included.",
+  "verification_portability": {
+    "cause": "CPython 3.12 built-in floating sum differs by several ulps from CPython 3.9",
+    "comparison": "Exact input/artifact hashes, JSON structure/list order/nonfloat scalar types and values, and CSV bytes; finite recomputed floats math.isclose rel_tol=1e-12 abs_tol=1e-12",
+    "frozen_numerical_output_bytes_changed": false,
+    "negative_controls": "Reject changed values beyond tolerance, changed list order, boolean/integer substitution, changed fields, and NaN"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "upstream_repository": "https://github.com/wangjingyi34/Het-Benchmark",
+  "verified_commit": "b95ad13664a4f41e791a888bc7b092b4a4dd4399",
+  "files": [
+    {
+      "path": "source-data/data/model_dataset.json",
+      "upstream_path": "data/model_dataset.json",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/data/model_dataset.json",
+      "upstream_sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+      "bundled_sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+      "bytes": 1818678,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/data/moh_kg.json",
+      "upstream_path": "data/moh_kg.json",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/data/moh_kg.json",
+      "upstream_sha256": "f04a4c55eddc319afc53482e298cecc5cf106aaeb6f3050c850fd954ded645f3",
+      "bundled_sha256": "f04a4c55eddc319afc53482e298cecc5cf106aaeb6f3050c850fd954ded645f3",
+      "bytes": 6903109,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/data/paper_schema_counts.json",
+      "upstream_path": "data/paper_schema_counts.json",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/data/paper_schema_counts.json",
+      "upstream_sha256": "1ddb914a5ecc6ef414e4ca28b1e34fbef5d862c17c853708c8de1d35c254a9ae",
+      "bundled_sha256": "1ddb914a5ecc6ef414e4ca28b1e34fbef5d862c17c853708c8de1d35c254a9ae",
+      "bytes": 573,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/experiments/exp_baseline_real.py",
+      "upstream_path": "experiments/exp_baseline_real.py",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_baseline_real.py",
+      "upstream_sha256": "14669fea8acfb06029b03e760007fedc5df8f1a128be35e5e0dee2cd983f7349",
+      "bundled_sha256": "14669fea8acfb06029b03e760007fedc5df8f1a128be35e5e0dee2cd983f7349",
+      "bytes": 15237,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/experiments/exp_cross_platform_eval.py",
+      "upstream_path": "experiments/exp_cross_platform_eval.py",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_cross_platform_eval.py",
+      "upstream_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+      "bundled_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+      "bytes": 10764,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/experiments/exp_fitas_migration.py",
+      "upstream_path": "experiments/exp_fitas_migration.py",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_fitas_migration.py",
+      "upstream_sha256": "74af71cfea555bc24c3bdc33c2c334342da5424c18df0d74c9ea0c89bd69dafe",
+      "bundled_sha256": "b923da0dda7b79fcbca21cf52d5817d0d69db7216007790ba4b534d3e5696c36",
+      "bytes": 13069,
+      "derivative_changes": [
+        "Replace hardcoded historical home-directory output path with a source-relative results directory. No arithmetic or workload logic changed."
+      ]
+    },
+    {
+      "path": "source-data/results/baseline_real_comparison.json",
+      "upstream_path": "results/baseline_real_comparison.json",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/baseline_real_comparison.json",
+      "upstream_sha256": "8eb9754ba8599f4d4416de9c2bf82b46c525a9f3f51a98830be52934fec5617f",
+      "bundled_sha256": "8eb9754ba8599f4d4416de9c2bf82b46c525a9f3f51a98830be52934fec5617f",
+      "bytes": 19471,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/results/cross_platform_results.json",
+      "upstream_path": "results/cross_platform_results.json",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/cross_platform_results.json",
+      "upstream_sha256": "ee4b6c2ccaa30b61903d57475ff1f030e691acd619022518af5ba1b501e84265",
+      "bundled_sha256": "ee4b6c2ccaa30b61903d57475ff1f030e691acd619022518af5ba1b501e84265",
+      "bytes": 8707,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/results/fitas_migration_results.json",
+      "upstream_path": "results/fitas_migration_results.json",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/fitas_migration_results.json",
+      "upstream_sha256": "a37968bb57d78bc135950bd7042643d892e3c4d015756417192ae16ad1bf4b2a",
+      "bundled_sha256": "a37968bb57d78bc135950bd7042643d892e3c4d015756417192ae16ad1bf4b2a",
+      "bytes": 2157,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/results/paper_tables/model_latency_ms.csv",
+      "upstream_path": "results/paper_tables/model_latency_ms.csv",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/paper_tables/model_latency_ms.csv",
+      "upstream_sha256": "909565a9835b3d3f2a568ae6cbf69070c0d183441e1ca864fda3380e3eae4384",
+      "bundled_sha256": "909565a9835b3d3f2a568ae6cbf69070c0d183441e1ca864fda3380e3eae4384",
+      "bytes": 232,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/results/paper_tables/prediction_mre.csv",
+      "upstream_path": "results/paper_tables/prediction_mre.csv",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/paper_tables/prediction_mre.csv",
+      "upstream_sha256": "d2cba363c1ea7d2c5a1896d62427d1b2e47d43390a36f54f853c538f1051be34",
+      "bundled_sha256": "d2cba363c1ea7d2c5a1896d62427d1b2e47d43390a36f54f853c538f1051be34",
+      "bytes": 335,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/results/paper_tables/surrogate_speedup.csv",
+      "upstream_path": "results/paper_tables/surrogate_speedup.csv",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/paper_tables/surrogate_speedup.csv",
+      "upstream_sha256": "3dfca140a7f0e15fcbf0fa856c4e6a7c3093e0ee6ca11a6a15e7dc9fa2bfe051",
+      "bundled_sha256": "3dfca140a7f0e15fcbf0fa856c4e6a7c3093e0ee6ca11a6a15e7dc9fa2bfe051",
+      "bytes": 291,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/results/table8_cross_platform_prediction.csv",
+      "upstream_path": "results/table8_cross_platform_prediction.csv",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/table8_cross_platform_prediction.csv",
+      "upstream_sha256": "7f94a8bb0951b0d5f71ea8792a11aaa075f0d9f65c24c5c8cf6cc566de82cfa2",
+      "bundled_sha256": "7f94a8bb0951b0d5f71ea8792a11aaa075f0d9f65c24c5c8cf6cc566de82cfa2",
+      "bytes": 1982,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/src/regenerate_tables.py",
+      "upstream_path": "src/regenerate_tables.py",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/src/regenerate_tables.py",
+      "upstream_sha256": "0d8f0e558e985e896cff40deea78ae6195dd2967d5787bf1fe3c5478b07049a0",
+      "bundled_sha256": "0d8f0e558e985e896cff40deea78ae6195dd2967d5787bf1fe3c5478b07049a0",
+      "bytes": 15078,
+      "derivative_changes": []
+    },
+    {
+      "path": "source-data/src/split_mohkg.py",
+      "upstream_path": "src/split_mohkg.py",
+      "upstream_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/src/split_mohkg.py",
+      "upstream_sha256": "74b3ce421f91a056335bd816f3914df20fb97ff77fab1d540eeb74e918b41587",
+      "bundled_sha256": "74b3ce421f91a056335bd816f3914df20fb97ff77fab1d540eeb74e918b41587",
+      "bytes": 2363,
+      "derivative_changes": []
+    }
+  ],
+  "license_sha256": "082e433d0627573c4655e4ab65086a562beb78289f0fe21137471a9cac85e9cc"
+}

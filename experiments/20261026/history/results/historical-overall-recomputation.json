@@ -1,0 +1,31 @@
+{
+  "five_family_equal_macro": 14.279999999999998,
+  "five_family_set": [
+    "MatMul",
+    "Conv2D",
+    "Attention",
+    "LayerNorm",
+    "Activation"
+  ],
+  "eight_family_equal_macro": 13.0375,
+  "eight_family_set": [
+    "MatMul",
+    "Conv2D",
+    "Attention",
+    "LayerNorm",
+    "Softmax",
+    "Activation",
+    "Pooling",
+    "Embedding"
+  ],
+  "common3_test_equal_macro": 20.266666666666666,
+  "common3_roofline_equal_macro": 25.566666666666663,
+  "original_micro_MRE_certified": false,
+  "source": {
+    "path": "source-data/results/paper_tables/prediction_mre.csv",
+    "sha256": "d2cba363c1ea7d2c5a1896d62427d1b2e47d43390a36f54f853c538f1051be34",
+    "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/paper_tables/prediction_mre.csv",
+    "upstream_sha256": "d2cba363c1ea7d2c5a1896d62427d1b2e47d43390a36f54f853c538f1051be34",
+    "locator": "test/roofline columns; named family subsets; no per-query weights available"
+  }
+}

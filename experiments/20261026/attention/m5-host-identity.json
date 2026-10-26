@@ -1,0 +1,9 @@
+{
+  "observed_utc": "2026-10-26T04:05:37.514068+00:00",
+  "chip": "Apple M5",
+  "machine_architecture": "arm64",
+  "torch": "2.9.1",
+  "mps_available": true,
+  "source": "sysctl machdep.cpu.brand_string; platform.machine; torch.backends.mps",
+  "scope": "Post-run hardware identity receipt on same local execution host; no serial collected."
+}

@@ -1,0 +1,100 @@
+{
+  "scope": "Released catalog declarations, not physical labels",
+  "source_model_split": {
+    "train": [
+      "ALBERT_Base",
+      "BERT_Mini",
+      "BERT_Tiny",
+      "BLIP_Base",
+      "BLOOM_560M",
+      "ConvNeXt_Base",
+      "DINOv2_Base",
+      "DeiT_Base",
+      "DistilBERT",
+      "DistilBERT_Base",
+      "EfficientNet_B0",
+      "Falcon_7B",
+      "GPT_2",
+      "GPT_Neo_1.3B",
+      "MobileNet_V2",
+      "OPT_1.3B",
+      "Phi_3_mini",
+      "Pythia_1.4B",
+      "Qwen2.5_7B",
+      "ResNet_50",
+      "RoBERTa_Base",
+      "SigLIP_Base",
+      "StableLM_3B",
+      "Swin_Base",
+      "T5_Base",
+      "ViT_Base",
+      "Wav2Vec2_Base"
+    ],
+    "validation": [
+      "BEiT_Base",
+      "RegNet_Y_4GF",
+      "TinyLlama_1.1B"
+    ],
+    "test": [
+      "BERT_Base",
+      "CLIP_ViT_B_32",
+      "Mistral_7B",
+      "Whisper_Base"
+    ]
+  },
+  "operator_family_counts_by_group": {
+    "train": {
+      "Embedding": 40,
+      "LayerNorm": 512,
+      "Linear": 2115,
+      "Tanh": 7,
+      "Softmax": 382,
+      "GELU": 258,
+      "Dropout": 580,
+      "Conv2d": 267,
+      "BatchNorm2d": 261,
+      "ReLU": 54,
+      "MaxPool2d": 2,
+      "AdaptiveAvgPool2d": 4,
+      "ReLU6": 35,
+      "RMSNorm": 265,
+      "SiLU": 124
+    },
+    "validation": {
+      "Conv2d": 68,
+      "LayerNorm": 25,
+      "Linear": 205,
+      "Softmax": 34,
+      "GELU": 12,
+      "Dropout": 46,
+      "BatchNorm2d": 67,
+      "ReLU": 23,
+      "MaxPool2d": 1,
+      "AdaptiveAvgPool2d": 1,
+      "Embedding": 1,
+      "RMSNorm": 45,
+      "SiLU": 22
+    },
+    "test": {
+      "Embedding": 7,
+      "LayerNorm": 76,
+      "Linear": 444,
+      "Tanh": 1,
+      "Softmax": 68,
+      "GELU": 36,
+      "Dropout": 56,
+      "Conv2d": 1,
+      "RMSNorm": 65,
+      "SiLU": 32,
+      "Conv1d": 2
+    }
+  },
+  "source": {
+    "path": "source-data/data/model_dataset.json",
+    "sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+    "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/data/model_dataset.json",
+    "upstream_sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+    "locator": "/models/*/operators/*/type"
+  },
+  "original_performance_label_balance_certified": false
+}

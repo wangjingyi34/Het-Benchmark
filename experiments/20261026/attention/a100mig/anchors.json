@@ -1,0 +1,82 @@
+{
+  "kind": "fresh_physical_attention_anchors",
+  "stage": "anchors",
+  "process": 0,
+  "created_utc": "2026-10-26T03:45:29.471467+00:00",
+  "protocol_sha256": "40bcf48a46633170115eb4b148753322b41667108d95104fba57aec5149d7c35",
+  "decisions_sha256": "507c570547498ef34811b04670a0197313978e180e80316536546d66d253a75e",
+  "correction_sha256": null,
+  "torch_version": "2.9.1+cu126",
+  "observed_runtime": {
+    "hardware_name": "NVIDIA A100-SXM4-80GB MIG 2g.20gb",
+    "visible_device_memory_bytes": 20937965568,
+    "compute_capability": [
+      8,
+      0
+    ]
+  },
+  "rows": [
+    {
+      "case": 22,
+      "input_weights_sha256": "67d0aa3c4b6aba8b54afd1abc094850712b4a8f0fbfad6823082a1dd508910df",
+      "latency_samples_ms": [
+        5.22049825,
+        5.21462825,
+        5.213872,
+        5.212194,
+        5.2132535,
+        5.2128645,
+        5.20764675,
+        5.207494,
+        5.203906,
+        5.20767075
+      ],
+      "latency_mean_ms": 5.2114028,
+      "latency_median_ms": 5.21252925,
+      "latency_sd_ms": 0.004771817477533046,
+      "wall_seconds": 0.44112755358219147
+    },
+    {
+      "case": 16,
+      "input_weights_sha256": "03baa6efba85ff42ef6b55e63aa89702fb99f1ce6a8ddd77aedb084ad21069f4",
+      "latency_samples_ms": [
+        1.0904205,
+        1.0876895,
+        1.08809125,
+        1.08874475,
+        1.08741975,
+        1.08723025,
+        1.08789475,
+        1.087502,
+        1.08903075,
+        1.0877205
+      ],
+      "latency_mean_ms": 1.0881744,
+      "latency_median_ms": 1.087807625,
+      "latency_sd_ms": 0.0009742751450865197,
+      "wall_seconds": 0.06463252194225788
+    },
+    {
+      "case": 19,
+      "input_weights_sha256": "092b243a10f1822e32c86927fda736903393c74802afe292f520d8fe8fce2717",
+      "latency_samples_ms": [
+        2.32766125,
+        2.324953,
+        2.32426875,
+        2.326144,
+        2.330138,
+        2.3314725,
+        2.3266625,
+        2.32561875,
+        2.33014525,
+        2.3235565
+      ],
+      "latency_mean_ms": 2.32706205,
+      "latency_median_ms": 2.3264032500000003,
+      "latency_sd_ms": 0.0027162835921121595,
+      "wall_seconds": 0.12157624959945679
+    }
+  ],
+  "errors": [],
+  "wall_seconds": 0.6275221724063158
+}

@@ -1,0 +1,41 @@
+Prediction statistics and bounded kernel-regressor comparison
+
+Scope
+The absolute-error panel reanalyses every saved prediction from the unchanged 20261025 measured experiment (13,905 queries; 1,100 fits; 2,781,000 prediction rows). It reports 7,200 fold/seed/source-model cells, 1,100 fit cells, 21,600 cluster sufficient-statistic rows, 200 pooled seed rows and 40 aggregate combinations. Query error dispersion, training-seed variability, and source-model/runtime-stack cluster intervals are distinct. Each model has three configurations, and stack clusters share hosts; all intervals are descriptive.
+
+The modern-baseline directory contains a source-pinned nn-Meter random-forest kernel-regressor component adaptation. Exact official source bytes from commit cd8dab49b735d58d03746141f73ef5934559ae68 and its MIT license are retained. This experiment is restricted to350 of13,905 structural-compatible bias-present batch-one Conv2d/FC records across five runtime stacks. The remaining13,555 records have explicit exclusion reasons. All six original model folds and90 stack/kernel/fold cells are retained;40 have train and test support. There are200 RF and200 same-information MLP fits, all weights, all10,500 prediction rows including archived references, and every result. The MLP control uses the same features and training labels. The archived V2 ridge/MLP/GCN/RGAT references have richer training support and are labelled accordingly.
+
+Headline results on this narrow subset
+RF component: five-seed MRE57.54182%, SD0.07102 points; MAE16.97471 microseconds, SD0.01210.
+Same-information MLP: MRE167.83122%, SD243.16511 points; MAE64.89865 microseconds, SD94.44124.
+Archived richer-training references: MLP MRE40.99912%, GCN67.71611%, RGAT49.49645%, ridge82.02073%.
+No overall method superiority is inferred. The main convolution held-out fold has only one compatible training query per stack; this scarcity is a result of strict semantics and is not concealed by relaxing the filter. The full nn-Meter fusion discovery, adaptive profiling, end-to-end model estimation and unknown-device transfer protocols were not performed.
+
+Inputs already released in experiments/20261025
+1. Restore the existing release once:
+   python experiments/20261025/restore_archives.py --extract
+   This restores run-data/evidence/physical_profiles and run-data/prediction/formal-five-stack.
+2. Run the supplied layout adapter from this prediction directory:
+   python prepare_public_replay.py --prior-release PATH_TO_EXPERIMENTS_20261025 --workspace NEW_EMPTY_WORKSPACE --mode verify
+   --restored-root may point to a separately restored archive root. The adapter copies only publication-allowlist.json files into a fresh workspace, maps the unchanged previous-release data by symlinks, and verifies every frozen source hash. The existing data and provenance files are never rewritten.
+3. The new prediction directory is NEW_EMPTY_WORKSPACE/v7-剩余条件实证闭环/prediction.
+
+Environment
+Python3.12.14, numpy2.3.5, torch2.9.1 were used. Additional baseline packages are pinned in modern-baseline/requirements-baseline.txt. Install in a separate environment, or use a target directory and add it to PYTHONPATH. Dependencies and virtual environments are deliberately excluded from publication. Exact cross-platform neural floating-point identity is not promised.
+
+Independent verification (mode verify)
+   python NEW_PREDICTION_DIR/audit_absolute_error_panel.py
+   python NEW_PREDICTION_DIR/modern-baseline/audit_component_results.py
+The first uses Python scalar statistics to recompute every detailed panel cell from the previous raw prediction stream. The second verifies the complete include/exclude partition, physical-label means, feature formulas, split separation,400 weight hashes, and420 per-seed score rows.
+
+Recompute using existing frozen fits (mode recompute)
+Prepare a second fresh workspace with --mode recompute; it retains the frozen protocols and component checkpoints but omits derived result tables.
+   OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python NEW_PREDICTION_DIR/absolute_error_panel.py
+   python NEW_PREDICTION_DIR/audit_absolute_error_panel.py
+   OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python NEW_PREDICTION_DIR/modern-baseline/complete_from_checkpoints.py
+   python NEW_PREDICTION_DIR/modern-baseline/audit_component_results.py
+
+Full local CPU refit (mode retrain)
+Prepare a fresh workspace with --mode retrain. Run modern-baseline/run_kernel_component.py with no arguments, then complete_from_checkpoints.py. The frozen trainer saves all400 fits and verifies their replay before a known strict-JSON receipt-export failure: OOB R2 is undefined for25 RF fits with one training query. The completion script reloads the saved weights, represents those diagnostic R2 values as null with the explicit reason, and computes the unchanged frozen endpoints. No sample is dropped and no estimator is retrained by completion. serialization-recovery-record.json retains this execution fact.
+
+No additional timing calls, cloud hardware, target-platform labels, adaptive probe selection, or original benchmark identity reconstruction occur in these scripts. The original2.78-million-row prediction archive is referenced by SHA256, not duplicated in this release. publication-allowlist.json contains only scientific code, protocols, raw compatible-feature records, exclusions, full predictions, checkpoints, numerical audits, pinned official source/license and this reproduction guide.

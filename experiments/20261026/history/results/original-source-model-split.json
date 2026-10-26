@@ -1,0 +1,100 @@
+{
+  "status": "reconstructed_from_released_deterministic_recipe_not_original_run_attestation",
+  "seed": 42,
+  "split": {
+    "train": [
+      "ALBERT_Base",
+      "BERT_Mini",
+      "BERT_Tiny",
+      "BLIP_Base",
+      "BLOOM_560M",
+      "ConvNeXt_Base",
+      "DINOv2_Base",
+      "DeiT_Base",
+      "DistilBERT",
+      "DistilBERT_Base",
+      "EfficientNet_B0",
+      "Falcon_7B",
+      "GPT_2",
+      "GPT_Neo_1.3B",
+      "MobileNet_V2",
+      "OPT_1.3B",
+      "Phi_3_mini",
+      "Pythia_1.4B",
+      "Qwen2.5_7B",
+      "ResNet_50",
+      "RoBERTa_Base",
+      "SigLIP_Base",
+      "StableLM_3B",
+      "Swin_Base",
+      "T5_Base",
+      "ViT_Base",
+      "Wav2Vec2_Base"
+    ],
+    "validation": [
+      "BEiT_Base",
+      "RegNet_Y_4GF",
+      "TinyLlama_1.1B"
+    ],
+    "test": [
+      "BERT_Base",
+      "CLIP_ViT_B_32",
+      "Mistral_7B",
+      "Whisper_Base"
+    ]
+  },
+  "group_statistics": {
+    "train": {
+      "models": 27,
+      "operator_instances": 4906,
+      "categories": {
+        "NLP": 7,
+        "Multimodal": 2,
+        "LLM": 9,
+        "CV": 8,
+        "Audio": 1
+      }
+    },
+    "validation": {
+      "models": 3,
+      "operator_instances": 550,
+      "categories": {
+        "CV": 2,
+        "LLM": 1
+      }
+    },
+    "test": {
+      "models": 4,
+      "operator_instances": 788,
+      "categories": {
+        "NLP": 1,
+        "CV": 1,
+        "LLM": 1,
+        "Audio": 1
+      }
+    }
+  },
+  "sources": [
+    {
+      "path": "source-data/src/split_mohkg.py",
+      "sha256": "74b3ce421f91a056335bd816f3914df20fb97ff77fab1d540eeb74e918b41587",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/src/split_mohkg.py",
+      "upstream_sha256": "74b3ce421f91a056335bd816f3914df20fb97ff77fab1d540eeb74e918b41587",
+      "locator": "lines 13-22; 35-52"
+    },
+    {
+      "path": "source-data/data/model_dataset.json",
+      "sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/data/model_dataset.json",
+      "upstream_sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+      "locator": "$.models[*].model_id/operators/category"
+    },
+    {
+      "path": "source-data/data/paper_schema_counts.json",
+      "sha256": "1ddb914a5ecc6ef414e4ca28b1e34fbef5d862c17c853708c8de1d35c254a9ae",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/data/paper_schema_counts.json",
+      "upstream_sha256": "1ddb914a5ecc6ef414e4ca28b1e34fbef5d862c17c853708c8de1d35c254a9ae",
+      "locator": "$.split"
+    }
+  ]
+}

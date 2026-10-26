@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "input_hashes_verified": 405,
+  "fit_checkpoint_hashes_verified": 160,
+  "fit_checkpoint_reloads_verified": 160,
+  "raw_hardware_processes_in_planner_panel": 64,
+  "eval_hardware_processes_in_panel": 40,
+  "migration_same_chain_source_and_target_processes": 16,
+  "migration_operator_attributions_replayed": 69,
+  "v4_raw_values_crosschecked": 320,
+  "analysis_freeze_sha256": "05f6860d552d43afd94cf1a1db18efa2bb3b3883df0314a1afc084ef18fc034d",
+  "analyzer_sha256": "cf12e49bd48c15d06f6205e5c5688f318b487e4e9886e79aa976f4f66c05da8c",
+  "mutation_scope": "v7-剩余条件实证闭环/planning only",
+  "no_new_hardware_measurements": true,
+  "no_retraining": true,
+  "mask_claim": "All actions supported; zero effect cannot establish benefit on invalid actions."
+}

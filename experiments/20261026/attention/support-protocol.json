@@ -1,0 +1,300 @@
+{
+  "kind": "support_gate_followup_protocol",
+  "created_utc": "2026-10-26T03:50:01.577705+00:00",
+  "configurations": [
+    [
+      1,
+      320,
+      256,
+      8
+    ],
+    [
+      1,
+      320,
+      448,
+      8
+    ],
+    [
+      1,
+      320,
+      896,
+      14
+    ],
+    [
+      1,
+      640,
+      256,
+      8
+    ],
+    [
+      1,
+      640,
+      448,
+      8
+    ],
+    [
+      1,
+      640,
+      896,
+      14
+    ],
+    [
+      1,
+      960,
+      256,
+      8
+    ],
+    [
+      1,
+      960,
+      448,
+      8
+    ],
+    [
+      1,
+      960,
+      896,
+      14
+    ],
+    [
+      1,
+      1280,
+      256,
+      8
+    ],
+    [
+      1,
+      1280,
+      448,
+      8
+    ],
+    [
+      1,
+      1280,
+      896,
+      14
+    ],
+    [
+      2,
+      320,
+      256,
+      8
+    ],
+    [
+      2,
+      320,
+      448,
+      8
+    ],
+    [
+      2,
+      320,
+      896,
+      14
+    ],
+    [
+      2,
+      640,
+      256,
+      8
+    ],
+    [
+      2,
+      640,
+      448,
+      8
+    ],
+    [
+      2,
+      640,
+      896,
+      14
+    ],
+    [
+      2,
+      960,
+      256,
+      8
+    ],
+    [
+      2,
+      960,
+      448,
+      8
+    ],
+    [
+      2,
+      960,
+      896,
+      14
+    ],
+    [
+      2,
+      1280,
+      256,
+      8
+    ],
+    [
+      2,
+      1280,
+      448,
+      8
+    ],
+    [
+      2,
+      1280,
+      896,
+      14
+    ]
+  ],
+  "source_hashes": {
+    "attention_support_gate.py": "ac8759fec378bde033183392e8121771afcaec71472853e5f2bad69a0e9405f7",
+    "attention_ood_challenge.py": "dfab91261cc4e9a83f232ca9275c20509d5360f78423c071e7a80236f88b5b1c",
+    "collect_profiles.py": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+    "structural_attributes.py": "0c175a7e2c30fd595a35c70841cb78638eb83cec159101daf204734c616913ad",
+    "evaluate_profiles.py": "bad26be58e40a0bf6ff939024f15e646a72ec3e1b8bc3fef54dc67745f8cce0f",
+    "active_fallback.py": "9af59a5b16a2cdff39f1c58529a95b67918228bb78c513af9bf0f2836ced18cc",
+    "training-attention-catalog.json": "e64749ce66abb0c23e35b48330ca7a994f1e362c9d0a9c5043de0ca42ed44b8c"
+  },
+  "design_history": "Designed after the first V7 three-anchor calibration experiment. All first-experiment outcomes are retained; this follow-up measures an operational fallback on different shapes.",
+  "support_rule": "training catalog contains functional SDPA and no complete-MHA composite module; every complete-MHA query is outside this executable contract and triggers direct synchronized profiling",
+  "decisions": [
+    {
+      "case": 0,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 1,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 2,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 3,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 4,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 5,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 6,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 7,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 8,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 9,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 10,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 11,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 12,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 13,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 14,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 15,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 16,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 17,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 18,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 19,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 20,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 21,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 22,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    },
+    {
+      "case": 23,
+      "trigger_profile": true,
+      "reason": "unsupported full-MHA composite leaf"
+    }
+  ],
+  "budget": "24 of 24 new queries per backend; 100 percent direct measurement cost; no three-probe efficiency claim",
+  "procedure": "Process0 profiles all queries and freezes their measured output; processes1-5 independently remeasure all24 in fixed shuffled order. No refit or error-dependent selection.",
+  "warmup": 5,
+  "blocks": 10,
+  "inner": 4,
+  "endpoints": [
+    "paired measurement reproducibility MRE",
+    "WAPE",
+    "MAE",
+    "all raw timings",
+    "measurement wall overhead"
+  ],
+  "interpretation": "repeatability of direct measured fallback, not learned prediction accuracy or original five-platform LOPO",
+  "devices": [
+    "a100mig",
+    "m5mps"
+  ]
+}

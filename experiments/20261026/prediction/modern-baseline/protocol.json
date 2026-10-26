@@ -1,0 +1,254 @@
+{
+  "kind": "prospectively_frozen_retrospective_nn_meter_kernel_component_adaptation",
+  "created_utc": "2026-10-26T03:53:25.793922+00:00",
+  "official_repository": "microsoft/nn-Meter",
+  "official_commit": "cd8dab49b735d58d03746141f73ef5934559ae68",
+  "official_license": "MIT, retained verbatim",
+  "publications": [
+    "https://github.com/microsoft/nn-Meter",
+    "https://www.microsoft.com/en-us/research/publication/nn-meter-towards-accurate-latency-prediction-of-dnn-inference-on-diverse-edge-devices/"
+  ],
+  "baseline_name": "nn_meter_official_rf_component_adapted",
+  "not_full_method_reproduction": true,
+  "feature_contract": {
+    "conv-block": [
+      "HW",
+      "CIN",
+      "COUT",
+      "KERNEL_SIZE",
+      "STRIDES",
+      "official_flops/2e6",
+      "official_params/1e6"
+    ],
+    "dwconv-block": [
+      "HW",
+      "CIN",
+      "COUT",
+      "KERNEL_SIZE",
+      "STRIDES",
+      "official_flops/2e6",
+      "official_params/1e6"
+    ],
+    "fc": [
+      "CIN",
+      "COUT",
+      "official_flops/2e6",
+      "official_params/1e6"
+    ]
+  },
+  "structural_filter": "Only measured FP32 bias=True Conv2d/Linear records matching official single-input batch1 generators. Conv requires square NCHW, dilation1, official padding/output, groups1 or depthwise multiplier1; FC requires shape [1,CIN] -> [1,COUT]. No filter uses latency, error, or prior method outcomes.",
+  "split": "Original six V2 source-model folds; per-stack/per-kernel fits, train/validation/test source model membership unchanged. Validation records are preserved but not used by either fixed estimator. No test tuning.",
+  "rf": "Call verbatim official init_predictor(kernel, het_pytorch_eager). It takes official generic fallback: 370 trees, max_depth50, min_leaf1, min_split2, oob=True. Set random_state to each frozen seed, n_jobs1. Translate legacy sklearn max_features=auto to mathematically equivalent 1.0; no other parameter change.",
+  "matched_control": "New MLP on exactly the same per-stack/per-kernel features and training labels; two hidden128 GELU layers; train-only x mean/population SD; log-y mean/population SD floor.05; AdamW lr.003 weight_decay.0001; gradient clip5; exactly80 epochs; fixed final epoch, no validation/test selection. Seed11/22/33/44/55. The MLP is a new same-information control, not the archived V2 MLP.",
+  "calibration_probe_budget": 0,
+  "new_hardware_measurements": 0,
+  "training_device": "local CPU only",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "included_queries": 350,
+  "excluded_queries": 13555,
+  "exclusion_reason_counts": {
+    "bias_absent_official_kernel_has_bias": 2670,
+    "outside_Conv2d_Linear_modules": 9795,
+    "FC_not_single_batch_vector": 495,
+    "Conv_not_batch1_NCHW": 590,
+    "Conv_padding_differs_from_official_generator": 5
+  },
+  "included_per_stack": {
+    "Apple-M5-CPU-4T": 70,
+    "Apple-M5-MPS": 70,
+    "A100-SXM4-MIG-2g20GB": 70,
+    "Cloud-x86-CPU-4T": 70,
+    "Ascend-910B3-64GB": 70
+  },
+  "included_per_kernel": {
+    "fc": 60,
+    "conv-block": 290
+  },
+  "included_source_models": [
+    "audio_conv_ref",
+    "audio_dilated_ref",
+    "densenet121",
+    "dual_encoder_ref",
+    "efficientnet_b0",
+    "mobilenet_v2",
+    "resnet18",
+    "resnet50",
+    "squeezenet1_1",
+    "text_cnn_ref",
+    "text_encoder_ref"
+  ],
+  "executable_cells": 40,
+  "total_cells_including_empty": 90,
+  "reference_controls": "Archived strict V2 ridge/MLP/GCN/RGAT scores are recomputed only on the exact executable test-query support, with the same source-model folds and five seeds. Those models were trained on more records/all stacks/other features; the reference comparison is not an equal-information causal test.",
+  "metrics": [
+    "micro_MRE_percent",
+    "MAE_us",
+    "WAPE_percent",
+    "RMSE_ms",
+    "RMSPE_percent",
+    "accuracy_within5percent",
+    "accuracy_within10percent"
+  ],
+  "report_all": "Retain every fold, seed, kernel, stack, exclusion and worse result; no errors dropped.",
+  "cannot_claim": [
+    "Complete nn-Meter pipeline reproduction: no target-backend fusion discovery or adaptive kernel sampling is run.",
+    "Full-model latency accuracy: only isolated operator timings are scored.",
+    "Unknown-device transfer: every RF receives same-stack training labels.",
+    "Original four-test identities, original RGAT14.3, original five-hardware LOPO, HELP or BRP-NAS reproduction."
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "torch": "2.9.1",
+    "numpy": "2.3.5",
+    "sklearn": "1.7.2",
+    "platform": "macOS-26.5.1-arm64-arm-64bit"
+  },
+  "sources": [
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5cpu.json",
+      "sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "bytes": 9193620
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5cpu.metadata.json",
+      "sha256": "9b3b8c5dc99190ca0b0a2732444ce6ff75dec87939bc84e87c11dd90396f1535",
+      "bytes": 1468005
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5mps.json",
+      "sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "bytes": 9183017
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5mps.metadata.json",
+      "sha256": "8ea2686cf4870559424fac1e3568b136f9c56782d0469016f5efaf0426635014",
+      "bytes": 1468005
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/a100mig.json",
+      "sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "bytes": 9214405
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/a100mig.metadata.json",
+      "sha256": "a7e95b8be8067dcb905c603fec9404210e407c0f48cfec22a2d11b3b9a7ced3d",
+      "bytes": 1468007
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/xeon_cpu.json",
+      "sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "bytes": 9199684
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/xeon_cpu.metadata.json",
+      "sha256": "064e2a80d22a081e6ad20681b83e99b1d6ee405a4b36a9d53b47c0f01c549f1e",
+      "bytes": 1468008
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/npub3.json",
+      "sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "bytes": 9466786
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/npub3.metadata.json",
+      "sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8",
+      "bytes": 1467852
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/prediction/formal-five-stack/summary.json",
+      "sha256": "f5c2aafca1af9bd478b54df6f9550e89b7a00aabdcb2aa4636561cb1b1805992",
+      "bytes": 23936810
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/prediction/formal-five-stack/predictions.jsonl.gz",
+      "sha256": "935abb1b6c932fd231cacf768dcc37edddd96a368f85e6a4fb6e8b8f33a02c3b",
+      "bytes": 102398003
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/run_kernel_component.py",
+      "sha256": "ab68a7e07e0b679b2caac306969f46e4ebf07d6ba8cda0afb42c3c645afdb659",
+      "bytes": 20040
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/compatible-queries.json",
+      "sha256": "c4298b09c1f66bff3ba99ef7a0739c877e55c1daea237a7ad42803f0d4b970f5",
+      "bytes": 191418
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/excluded-queries.csv",
+      "sha256": "d796aad7028efd425e6317f3cfa94331f20051422af7e99138136be4c84c50c2",
+      "bytes": 1669984
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/frozen-splits-and-support.json",
+      "sha256": "cfb4ec923a8ad7205f4ca358cfe0c827f0498c1905a7bde8d407a979240e134e",
+      "bytes": 170826
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/LICENSE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/build_kernel_latency_predictor.md",
+      "sha256": "bb1073505b2083beee8d430e6d98fd197e0515b40c2637b66eaecf7c6d9250a3",
+      "bytes": 33258
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/build_predictor.py",
+      "sha256": "c107870e165358b5748e85984531cd6df15c6507e21b2dec4a76e0d8b7c75f5e",
+      "bytes": 4362
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/evaluation.py",
+      "sha256": "9850578be70f458ce2789425eb4a041d2607bcaeb86766ae2f004755697f57dd",
+      "bytes": 1332
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/extract_feature.py",
+      "sha256": "578c0e80c3085b53de1e329b67d3af8bf04d7cd0bda5745eae20ced6625d4968",
+      "bytes": 9106
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/feature_utils.py",
+      "sha256": "1548dfefa1029d971c523111c4514fca224e1479ec30d39bc2e86147e13f91f8",
+      "bytes": 2006
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/kernel_blocks.py",
+      "sha256": "c4a8da904774fae5ec022b3392a506490bc68369201d165f9573b42f2e98fd58",
+      "bytes": 17503
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/kernel_operators.py",
+      "sha256": "e8d294955aa8cfd01ae53dade012e86c6d7f0f335805095f0acf994bc6eac1ff",
+      "bytes": 9433
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/kernel_utils.py",
+      "sha256": "5d2f18d5340dc2e0d99dc5c0aa87a7369ea692f481365bdaf8044947b6eaf09a",
+      "bytes": 801
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/predictor_lib.py",
+      "sha256": "c1ed54a16a7e5ab51886294fcd66c9ce1bc8b41d602e65b3adb53e9c6007057a",
+      "bytes": 12125
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/source-receipt.json",
+      "sha256": "f02579779bbd38189603f8a4efad74ee752047490a73226e96647e132bbf1983",
+      "bytes": 5032
+    },
+    {
+      "path": "v7-剩余条件实证闭环/prediction/modern-baseline/official-source/utils_init.py",
+      "sha256": "5b7125625c2ca30dd6338d49dfa9ea41bca8dc98d2a7d4d7b28e7b704b068c84",
+      "bytes": 346
+    }
+  ]
+}

@@ -1,0 +1,1008 @@
+{
+  "declared_canonical_counts": {
+    "snapshot": "paper-canonical-v1",
+    "node_counts": {
+      "model": 34,
+      "operator_instance": 6244,
+      "hardware": 5,
+      "operator_family": 16,
+      "total": 6299
+    },
+    "edge_counts": {
+      "contains": 6244,
+      "has_type": 6244,
+      "supports": 80,
+      "sequence": 6210,
+      "similar": 5421,
+      "performance": 5000,
+      "total": 29199
+    },
+    "similarity": {
+      "feature_dimension": 128,
+      "metric": "cosine",
+      "threshold": 0.8
+    },
+    "split": {
+      "group": "source_model",
+      "ratios": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "seed": 42,
+      "model_counts": [
+        27,
+        3,
+        4
+      ]
+    }
+  },
+  "actual_legacy_counts": {
+    "r_supports": 76,
+    "r_contains": 6244,
+    "r_has_type": 6244,
+    "r_seq": 6210,
+    "r_sim": 10345,
+    "r_perf": 80
+  },
+  "actual_legacy_total": 29199,
+  "legacy_hardware": [
+    {
+      "node_id": "nvidia_cuda",
+      "node_type": "hardware",
+      "properties": {
+        "id": "nvidia_cuda",
+        "name": "NVIDIA CUDA/cuDNN",
+        "vendor": "NVIDIA",
+        "type": "GPU",
+        "compute_capability": "8.0+"
+      }
+    },
+    {
+      "node_id": "amd_rocm",
+      "node_type": "hardware",
+      "properties": {
+        "id": "amd_rocm",
+        "name": "AMD ROCm/MIGraphX",
+        "vendor": "AMD",
+        "type": "GPU",
+        "compute_capability": "gfx90a"
+      }
+    },
+    {
+      "node_id": "intel_oneapi",
+      "node_type": "hardware",
+      "properties": {
+        "id": "intel_oneapi",
+        "name": "Intel oneAPI/oneDNN",
+        "vendor": "Intel",
+        "type": "GPU/CPU",
+        "compute_capability": "Xe"
+      }
+    },
+    {
+      "node_id": "huawei_cann",
+      "node_type": "hardware",
+      "properties": {
+        "id": "huawei_cann",
+        "name": "Huawei Ascend CANN",
+        "vendor": "Huawei",
+        "type": "NPU",
+        "compute_capability": "Ascend910"
+      }
+    },
+    {
+      "node_id": "cambricon_mlu",
+      "node_type": "hardware",
+      "properties": {
+        "id": "cambricon_mlu",
+        "name": "Cambricon MLU/CNNL",
+        "vendor": "Cambricon",
+        "type": "MLU",
+        "compute_capability": "MLU370"
+      }
+    }
+  ],
+  "legacy_performance_edges": [
+    {
+      "json_pointer": "/edges/29119",
+      "source_id": "op_type_ReLU6",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.005,
+        "throughput": 200000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29120",
+      "source_id": "op_type_ReLU6",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0056,
+        "throughput": 180000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29121",
+      "source_id": "op_type_ReLU6",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0067,
+        "throughput": 150000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29122",
+      "source_id": "op_type_ReLU6",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0059,
+        "throughput": 170000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29123",
+      "source_id": "op_type_ReLU6",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0071,
+        "throughput": 140000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29124",
+      "source_id": "op_type_Embedding",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.02,
+        "throughput": 50000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29125",
+      "source_id": "op_type_Embedding",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0222,
+        "throughput": 45000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29126",
+      "source_id": "op_type_Embedding",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0267,
+        "throughput": 37500.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29127",
+      "source_id": "op_type_Embedding",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0235,
+        "throughput": 42500.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29128",
+      "source_id": "op_type_Embedding",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0286,
+        "throughput": 35000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29129",
+      "source_id": "op_type_Conv1d",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.05,
+        "throughput": 20000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29130",
+      "source_id": "op_type_Conv1d",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0556,
+        "throughput": 18000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29131",
+      "source_id": "op_type_Conv1d",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0667,
+        "throughput": 15000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29132",
+      "source_id": "op_type_Conv1d",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0588,
+        "throughput": 17000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29133",
+      "source_id": "op_type_Conv1d",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0714,
+        "throughput": 14000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29134",
+      "source_id": "op_type_Linear",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.05,
+        "throughput": 20000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29135",
+      "source_id": "op_type_Linear",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0556,
+        "throughput": 18000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29136",
+      "source_id": "op_type_Linear",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0667,
+        "throughput": 15000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29137",
+      "source_id": "op_type_Linear",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0588,
+        "throughput": 17000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29138",
+      "source_id": "op_type_Linear",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0714,
+        "throughput": 14000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29139",
+      "source_id": "op_type_Softmax",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.01,
+        "throughput": 100000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29140",
+      "source_id": "op_type_Softmax",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0111,
+        "throughput": 90000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29141",
+      "source_id": "op_type_Softmax",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0133,
+        "throughput": 75000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29142",
+      "source_id": "op_type_Softmax",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0118,
+        "throughput": 85000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29143",
+      "source_id": "op_type_Softmax",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0143,
+        "throughput": 70000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29144",
+      "source_id": "op_type_RMSNorm",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.02,
+        "throughput": 50000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29145",
+      "source_id": "op_type_RMSNorm",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0222,
+        "throughput": 45000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29146",
+      "source_id": "op_type_RMSNorm",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0267,
+        "throughput": 37500.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29147",
+      "source_id": "op_type_RMSNorm",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0235,
+        "throughput": 42500.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29148",
+      "source_id": "op_type_RMSNorm",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0286,
+        "throughput": 35000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29149",
+      "source_id": "op_type_AdaptiveAvgPool2d",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.01,
+        "throughput": 100000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29150",
+      "source_id": "op_type_AdaptiveAvgPool2d",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0111,
+        "throughput": 90000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29151",
+      "source_id": "op_type_AdaptiveAvgPool2d",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0133,
+        "throughput": 75000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29152",
+      "source_id": "op_type_AdaptiveAvgPool2d",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0118,
+        "throughput": 85000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29153",
+      "source_id": "op_type_AdaptiveAvgPool2d",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0143,
+        "throughput": 70000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29154",
+      "source_id": "op_type_SiLU",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.01,
+        "throughput": 100000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29155",
+      "source_id": "op_type_SiLU",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0111,
+        "throughput": 90000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29156",
+      "source_id": "op_type_SiLU",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0133,
+        "throughput": 75000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29157",
+      "source_id": "op_type_SiLU",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0118,
+        "throughput": 85000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29158",
+      "source_id": "op_type_SiLU",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0143,
+        "throughput": 70000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29159",
+      "source_id": "op_type_GELU",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.01,
+        "throughput": 100000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29160",
+      "source_id": "op_type_GELU",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0111,
+        "throughput": 90000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29161",
+      "source_id": "op_type_GELU",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0133,
+        "throughput": 75000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29162",
+      "source_id": "op_type_GELU",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0118,
+        "throughput": 85000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29163",
+      "source_id": "op_type_GELU",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0143,
+        "throughput": 70000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29164",
+      "source_id": "op_type_MaxPool2d",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.02,
+        "throughput": 50000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29165",
+      "source_id": "op_type_MaxPool2d",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0222,
+        "throughput": 45000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29166",
+      "source_id": "op_type_MaxPool2d",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0267,
+        "throughput": 37500.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29167",
+      "source_id": "op_type_MaxPool2d",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0235,
+        "throughput": 42500.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29168",
+      "source_id": "op_type_MaxPool2d",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0286,
+        "throughput": 35000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29169",
+      "source_id": "op_type_Tanh",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.01,
+        "throughput": 100000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29170",
+      "source_id": "op_type_Tanh",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0111,
+        "throughput": 90000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29171",
+      "source_id": "op_type_Tanh",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0133,
+        "throughput": 75000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29172",
+      "source_id": "op_type_Tanh",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0118,
+        "throughput": 85000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29173",
+      "source_id": "op_type_Tanh",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0143,
+        "throughput": 70000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29174",
+      "source_id": "op_type_Conv2d",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.1,
+        "throughput": 10000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29175",
+      "source_id": "op_type_Conv2d",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.1111,
+        "throughput": 9000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29176",
+      "source_id": "op_type_Conv2d",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.1333,
+        "throughput": 7500.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29177",
+      "source_id": "op_type_Conv2d",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.1176,
+        "throughput": 8500.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29178",
+      "source_id": "op_type_Conv2d",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.1429,
+        "throughput": 7000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29179",
+      "source_id": "op_type_LayerNorm",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.02,
+        "throughput": 50000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29180",
+      "source_id": "op_type_LayerNorm",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0222,
+        "throughput": 45000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29181",
+      "source_id": "op_type_LayerNorm",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0267,
+        "throughput": 37500.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29182",
+      "source_id": "op_type_LayerNorm",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0235,
+        "throughput": 42500.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29183",
+      "source_id": "op_type_LayerNorm",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0286,
+        "throughput": 35000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29184",
+      "source_id": "op_type_ReLU",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.005,
+        "throughput": 200000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29185",
+      "source_id": "op_type_ReLU",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0056,
+        "throughput": 180000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29186",
+      "source_id": "op_type_ReLU",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0067,
+        "throughput": 150000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29187",
+      "source_id": "op_type_ReLU",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0059,
+        "throughput": 170000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29188",
+      "source_id": "op_type_ReLU",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0071,
+        "throughput": 140000.0,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29189",
+      "source_id": "op_type_BatchNorm2d",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.03,
+        "throughput": 33333.33,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29190",
+      "source_id": "op_type_BatchNorm2d",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0333,
+        "throughput": 30000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29191",
+      "source_id": "op_type_BatchNorm2d",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.04,
+        "throughput": 25000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29192",
+      "source_id": "op_type_BatchNorm2d",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0353,
+        "throughput": 28333.33,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29193",
+      "source_id": "op_type_BatchNorm2d",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0429,
+        "throughput": 23333.33,
+        "relative_speedup": 0.7
+      }
+    },
+    {
+      "json_pointer": "/edges/29194",
+      "source_id": "op_type_Dropout",
+      "target_id": "nvidia_cuda",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.005,
+        "throughput": 200000.0,
+        "relative_speedup": 1.0
+      }
+    },
+    {
+      "json_pointer": "/edges/29195",
+      "source_id": "op_type_Dropout",
+      "target_id": "amd_rocm",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0056,
+        "throughput": 180000.0,
+        "relative_speedup": 0.9
+      }
+    },
+    {
+      "json_pointer": "/edges/29196",
+      "source_id": "op_type_Dropout",
+      "target_id": "intel_oneapi",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0067,
+        "throughput": 150000.0,
+        "relative_speedup": 0.75
+      }
+    },
+    {
+      "json_pointer": "/edges/29197",
+      "source_id": "op_type_Dropout",
+      "target_id": "huawei_cann",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0059,
+        "throughput": 170000.0,
+        "relative_speedup": 0.85
+      }
+    },
+    {
+      "json_pointer": "/edges/29198",
+      "source_id": "op_type_Dropout",
+      "target_id": "cambricon_mlu",
+      "edge_type": "r_perf",
+      "properties": {
+        "latency_ms": 0.0071,
+        "throughput": 140000.0,
+        "relative_speedup": 0.7
+      }
+    }
+  ],
+  "legacy_performance_edges_are_family_level": true,
+  "canonical5000_per_edge_records_recovered": false,
+  "opportunity_count_arithmetic": 31220,
+  "opportunity_denominator_is_not_observed_profile_count": true,
+  "sources": [
+    {
+      "path": "source-data/data/moh_kg.json",
+      "sha256": "f04a4c55eddc319afc53482e298cecc5cf106aaeb6f3050c850fd954ded645f3",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/data/moh_kg.json",
+      "upstream_sha256": "f04a4c55eddc319afc53482e298cecc5cf106aaeb6f3050c850fd954ded645f3",
+      "locator": "$.metadata; $.statistics; $.edges"
+    },
+    {
+      "path": "source-data/data/paper_schema_counts.json",
+      "sha256": "1ddb914a5ecc6ef414e4ca28b1e34fbef5d862c17c853708c8de1d35c254a9ae",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/data/paper_schema_counts.json",
+      "upstream_sha256": "1ddb914a5ecc6ef414e4ca28b1e34fbef5d862c17c853708c8de1d35c254a9ae",
+      "locator": "$.edge_counts; $.node_counts"
+    }
+  ]
+}

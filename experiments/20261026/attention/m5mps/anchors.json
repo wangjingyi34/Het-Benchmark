@@ -1,0 +1,79 @@
+{
+  "kind": "fresh_physical_attention_anchors",
+  "stage": "anchors",
+  "process": 0,
+  "created_utc": "2026-10-26T03:45:05.615309+00:00",
+  "protocol_sha256": "40bcf48a46633170115eb4b148753322b41667108d95104fba57aec5149d7c35",
+  "decisions_sha256": "88911337ad4ab105fe9d3bc0ad2101c6d93f091fb26e90115b4743b10990a3c7",
+  "correction_sha256": null,
+  "torch_version": "2.9.1",
+  "observed_runtime": {
+    "host_machine": "arm64",
+    "host_processor": "arm",
+    "backend": "mps"
+  },
+  "rows": [
+    {
+      "case": 22,
+      "input_weights_sha256": "67d0aa3c4b6aba8b54afd1abc094850712b4a8f0fbfad6823082a1dd508910df",
+      "latency_samples_ms": [
+        16.4078855,
+        16.7714375,
+        15.93688525,
+        16.731375,
+        16.911698,
+        16.35140625,
+        16.04090625,
+        15.4293645,
+        15.57764575,
+        15.29289575
+      ],
+      "latency_mean_ms": 16.145149975,
+      "latency_median_ms": 16.19615625,
+      "latency_sd_ms": 0.5821465480956911,
+      "wall_seconds": 2.3756631659998675
+    },
+    {
+      "case": 16,
+      "input_weights_sha256": "03baa6efba85ff42ef6b55e63aa89702fb99f1ce6a8ddd77aedb084ad21069f4",
+      "latency_samples_ms": [
+        1.422,
+        1.67921875,
+        1.13959375,
+        1.4109375,
+        1.4075105,
+        1.149802,
+        1.49528125,
+        1.63340625,
+        1.211479,
+        1.37771875
+      ],
+      "latency_mean_ms": 1.392694775,
+      "latency_median_ms": 1.409224,
+      "latency_sd_ms": 0.1850205855427703,
+      "wall_seconds": 0.10770149999734713
+    },
+    {
+      "case": 19,
+      "input_weights_sha256": "092b243a10f1822e32c86927fda736903393c74802afe292f520d8fe8fce2717",
+      "latency_samples_ms": [
+        4.857823,
+        4.2954895,
+        4.7376665,
+        4.380177,
+        4.094052,
+        4.48104175,
+        4.94189575,
+        4.687125,
+        3.9020105,
+        4.8810105
+      ],
+      "latency_mean_ms": 4.52582915,
+      "latency_median_ms": 4.5840833750000005,
+      "latency_sd_ms": 0.35468837139944254,
+      "wall_seconds": 0.25999058299930766
+    }
+  ],
+  "errors": [],
+  "wall_seconds": 2.743846291996306
+}

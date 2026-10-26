@@ -1,0 +1,11 @@
+{
+  "source": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI\u4e8c\u9636\u6bb5\u5ba1\u7a3f/HET-rebuttal\u5de5\u4f5c\u533a-20261025/v2-\u5b9e\u8bc1\u589e\u5f3a/evidence/physical_profiles/m5mps.json",
+  "sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+  "attention_nodes": 12,
+  "targets": {
+    "call_function <built-in function scaled_dot_product_attention>": 12
+  },
+  "module_paths": [
+    ""
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "independent_implementation": "Python stdlib math/statistics, no original summarizer import",
+  "evaluation_query_process_rows_verified": 450,
+  "checks": [
+    {
+      "backend": "a100mig",
+      "experiment": "three_query",
+      "metrics": {
+        "pure": {
+          "mre_pct": 91.35999701584261,
+          "mae_ms": 1.562759081540474,
+          "wape_pct": 97.74413126938296
+        },
+        "calibrated": {
+          "mre_pct": 313.62423612422845,
+          "mae_ms": 1.6776479243734004,
+          "wape_pct": 104.92995425892497
+        }
+      },
+      "passed": true
+    },
+    {
+      "backend": "a100mig",
+      "experiment": "support_gate",
+      "mre_pct": 0.2192576909552754,
+      "profile_seconds": 4.157931580208242,
+      "passed": true
+    },
+    {
+      "backend": "m5mps",
+      "experiment": "three_query",
+      "metrics": {
+        "pure": {
+          "mre_pct": 97.62742116352808,
+          "mae_ms": 8.013902133718146,
+          "wape_pct": 99.38722910421522
+        },
+        "calibrated": {
+          "mre_pct": 71.91997612004869,
+          "mae_ms": 4.765066664133513,
+          "wape_pct": 59.095652073476195
+        }
+      },
+      "passed": true
+    },
+    {
+      "backend": "m5mps",
+      "experiment": "support_gate",
+      "mre_pct": 6.688614210291025,
+      "profile_seconds": 16.60797283300053,
+      "passed": true
+    }
+  ],
+  "scope": "Audits prospective file ordering, exact frozen decisions, independent correction equations, all timing means and reported endpoints. Does not authenticate the machine outside recorded runtime evidence."
+}

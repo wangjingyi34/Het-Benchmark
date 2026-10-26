@@ -1,0 +1,17 @@
+{
+  "scope": "Public export only; no numerical inputs or results changed",
+  "original_private_analysis_freeze_sha256": "05f6860d552d43afd94cf1a1db18efa2bb3b3883df0314a1afc084ef18fc034d",
+  "public_analysis_freeze_sha256": "df01c12cc5e5e42d6e0499937901917dde7b08ec731011a3898c76af129cda88",
+  "file": "v4-\u63d0\u5206\u6761\u4ef6\u8865\u5f3a/case/case-protocol.json",
+  "original_protocol_sha256": "028c96535e025ffef91192885cd56d6648c2af02305f406be95045c94bba5119",
+  "public_protocol_sha256": "b229a718635213dd345bd876a01b31c5ead082820dc137aeaa803c55d04a2361",
+  "changed_field": "prospective_direct_COPA_validation.purpose",
+  "reason": "Remove private reviewer identifiers from non-numerical context",
+  "selection_clarification": "The retrospective case was fixed by the task orchestration instruction before analysis, not by a direct human instruction naming this particular model.",
+  "test_report_export": {
+    "file": "test_quality_contract_adapter.py",
+    "original_sha256": "c728711d01e0b499fa22b30bc1abbb442c6e2ef634dba75015be5d0c60cfed35",
+    "public_sha256": "871ad8d60d0003ef1375158f3a4f73d72babac510977a0c1b1fd5008a852a680",
+    "change": "Only report metadata permits an omitted private review; test assertions and production module are unchanged."
+  }
+}

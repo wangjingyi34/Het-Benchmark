@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-26T03:39:22.667085+00:00",
+  "protocol_sha256": "789e9d057010caebefb2651d6186c7a9205ea16b32a04cc15c07f00b741b5567",
+  "code_sha256": "988ad176b421a14c710fa686ca309d3dd552b73caeb336d9b36a7c8149e41f55",
+  "verified_prediction_rows": 2781000,
+  "unique_measured_queries": 13905,
+  "fits": 1100,
+  "panel_rows": 7200,
+  "fold_rows": 1100,
+  "sufficient_rows": 21600,
+  "aggregate_rows": 40,
+  "pooled_seed_rows": 200,
+  "max_truth_vs_physical_samples_difference_ms": 3.552713678800501e-15,
+  "max_mre_vs_frozen_summary_difference_percentage_points": 1.9326762412674725e-12,
+  "all_test_support_hashes_match": true,
+  "all_saved_prediction_input_weight_identities_match": true,
+  "no_original_four_test_identity_claim": true,
+  "no_new_measurements": true,
+  "outputs": [
+    {
+      "path": "aggregate-panel.csv",
+      "sha256": "c0744ed146a9d04a739f7ff1bceecb1a5d5c427b998f27d49335e8916bbabdea",
+      "bytes": 26398
+    },
+    {
+      "path": "per-fold-seed-model-shape-sufficient.csv",
+      "sha256": "9061f48a39e4a6aace95e60077f5b9dd1e0df5836522c3a92e2aa0a149085979",
+      "bytes": 3608412
+    },
+    {
+      "path": "per-fold-seed-model.csv",
+      "sha256": "47785b7d24e26cb3914ea344c3b4bc50778e2d2253d4c751ad9111c36db57f6b",
+      "bytes": 3083747
+    },
+    {
+      "path": "per-fold-seed.csv",
+      "sha256": "3acc2ead5038a697a3c02021ea7eab2d9ed16d7fafd34181af7ab7d6e90446c7",
+      "bytes": 395264
+    },
+    {
+      "path": "pooled-per-seed.csv",
+      "sha256": "030acc90a9a38554a2dabe8894c00284c400e9e9de3b251ce06f3c96dee30ae0",
+      "bytes": 25048
+    }
+  ]
+}

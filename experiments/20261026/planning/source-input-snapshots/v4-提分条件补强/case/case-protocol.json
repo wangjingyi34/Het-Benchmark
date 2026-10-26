@@ -1,0 +1,152 @@
+{
+  "role": "Independent AI expert perspective 3; not a real professor or official reviewer",
+  "created_utc": "2026-10-25T14:22:11.053150+00:00",
+  "historical_FITAS": {
+    "verdict": "15.6% is not identifiable or reproducible from currently supplied original code/results; new public ResNet is a distinct supplementary study",
+    "source_identity": [
+      {
+        "submitted_path": "submitted-v21/HET_AAAI27_Final_All_Files_v21/05_Code_Data/HET_AAAI27_Code_Data_v21/experiments/exp_fitas_migration.py",
+        "submitted_sha256": "74af71cfea555bc24c3bdc33c2c334342da5424c18df0d74c9ea0c89bd69dafe",
+        "public_path": "public-repo/experiments/exp_fitas_migration.py",
+        "public_sha256": "74af71cfea555bc24c3bdc33c2c334342da5424c18df0d74c9ea0c89bd69dafe",
+        "identical_bytes": true
+      },
+      {
+        "submitted_path": "submitted-v21/HET_AAAI27_Final_All_Files_v21/05_Code_Data/HET_AAAI27_Code_Data_v21/experiments/exp_migration_5platforms.py",
+        "submitted_sha256": "2438b5272b3e22e041f31691d360186a82b56fd57ea6ec4974bdc235c9176296",
+        "public_path": "public-repo/experiments/exp_migration_5platforms.py",
+        "public_sha256": "2438b5272b3e22e041f31691d360186a82b56fd57ea6ec4974bdc235c9176296",
+        "identical_bytes": true
+      },
+      {
+        "submitted_path": "submitted-v21/HET_AAAI27_Final_All_Files_v21/05_Code_Data/HET_AAAI27_Code_Data_v21/experiments/exp2_copa_evaluation.py",
+        "submitted_sha256": "b7b9759f2dccfdfb4e51a087f33464c3b8aea4a48e4725ed1b074ae8329f0caf",
+        "public_path": "public-repo/experiments/exp2_copa_evaluation.py",
+        "public_sha256": "b7b9759f2dccfdfb4e51a087f33464c3b8aea4a48e4725ed1b074ae8329f0caf",
+        "identical_bytes": true
+      },
+      {
+        "submitted_path": "submitted-v21/HET_AAAI27_Final_All_Files_v21/05_Code_Data/HET_AAAI27_Code_Data_v21/results/fitas_migration_results.json",
+        "submitted_sha256": "a37968bb57d78bc135950bd7042643d892e3c4d015756417192ae16ad1bf4b2a",
+        "public_path": "public-repo/results/fitas_migration_results.json",
+        "public_sha256": "a37968bb57d78bc135950bd7042643d892e3c4d015756417192ae16ad1bf4b2a",
+        "identical_bytes": true
+      }
+    ],
+    "available_model": "exp_fitas_migration.py defines a randomly initialized six-layer TransformerEncoder: d_model768, 12 heads, feedforward3072, Linear input/output768; global torch seed42. Optional CUDA timing uses batch32/64/128, seq256. No saved checkpoint or fixed input bytes are supplied for that test.",
+    "available_workload": "Five task descriptions and arithmetic FLOP counts: transformer data collection, MLP factor analysis, BERT sentiment, LSTM risk prediction, transformer strategy optimization. They are not five executable FITAS task models.",
+    "available_data": "Optional Transformer test calls torch.randn; no FITAS request trace, task labels, industrial pipeline dataset, or task-quality evaluation function.",
+    "available_actions": "No executed COPA, MOH-KG, PPO policy, selected plan, operator substitution or target-hardware optimization in exp_fitas_migration.py. exp_migration_5platforms.py contains descriptive MultiheadAttention/Linear/LayerNorm optimization labels only.",
+    "numerical_incompatibilities": [
+      "exp_fitas_migration_results.json real_measurements=[]; hardware-spec arithmetic yields target/source312/320*2039/1200=1.6566875, i.e.65.66875% latency increase, stored as-65.7% improvement.",
+      "Model accuracy94.2/94.0 are assigned constants, not evaluated labels.",
+      "exp_migration_5platforms.py names BERT-Base/LLaMA-7B and hardcodes-8.5% total_latency_reduction; it does not uniquely identify the15.6% run.",
+      "exp2_copa_evaluation.py returns15.6 as a constant in its Top1 MOH-KG comparison; no trace links that constant to a measured FITAS plan.",
+      "Manuscript abstract/Section5 and supplement assert15.6 complete-plan speedup but omit absolute before/after quantities and reproducible run identity."
+    ],
+    "metric_ambiguity": "Freeze whether15.6 means latency reduction100*(T_before-T_after)/T_before or relative throughput/speedup100*(T_before/T_after-1). They are different:15.6% latency reduction means1.184834x speedup;1.156x speedup means13.49481% latency reduction. Also distinguish target-before→target-after optimization from source-A100→target-optimized migration.",
+    "minimum_reconstruction_bundle": [
+      "Exact immutable FITAS task DAG, deployed code/containers and request trace with task-frequency weights",
+      "Exact model architectures/checkpoint hashes, tokenizers/preprocessing, shapes/batches/precision and identical input identities",
+      "A100 baseline,910B unoptimized and910B optimized raw synchronized full-pipeline timings with warmup/repeats/replicate/process identity",
+      "Frozen COPA scores, uncertainty, KG predictions, PPO checkpoint/seeds, ordered executable actions, validity decisions and per-action predicted/measured deltas",
+      "A separately defined task-quality function, labels, threshold, baseline/candidate outcomes and rejection/rollback records",
+      "Absolute baseline/target quantities and the exact15.6 formula; explicit cost denominator and price/usage provenance if66% is retained"
+    ],
+    "direct_historical_test": "With that bundle, replay identical end-to-end requests on A100 baseline,910B unoptimized,910B fixed complete plan; report all three latencies, target-side plan effect and source-relative migration separately. Re-execute the historical selected actions, not a substitute model. If unavailable, label15.6 as an unverified original case result and replace any new validated headline with the supplementary study exact scope."
+  },
+  "available_public_supplement": {
+    "models": [
+      {
+        "model": "resnet18",
+        "weights": "IMAGENET1K_V1",
+        "weights_url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+        "weights_state_sha256": "b6e132d398763cadd5e66a4e994f5a5eb6cf7bd415eb7e8fae476475f749ffe2"
+      },
+      {
+        "model": "resnet50",
+        "weights": "IMAGENET1K_V1",
+        "weights_url": "https://download.pytorch.org/models/resnet50-0676ba61.pth",
+        "weights_state_sha256": "d8c94fea414bccf0b6902ebe2e9927e0694b9504924ff957a43f3c27b3ab39cd"
+      }
+    ],
+    "assets_path": "/Users/wjy/Desktop/SVN_HOME/WJY-Project/claud/het-paper/AAAI二阶段审稿/HET-rebuttal工作区-20261025/v2-实证增强/assets/imagenet-val200",
+    "asset_manifest_sha256": "b413d13bb20c7a2770f5f6eaab88331c30e9ee2153a32c1847232ce104dc84f3",
+    "dataset_id": "imagenette2-160_original_ILSVRC2012_val_sha20perclass",
+    "quality_asset_sha256": "bf38c72e5fdfed8d4c6e309e7c2a6ec29acfc42968d07479ca4e0dd01bd38eec",
+    "data": "200 fixed original ILSVRC2012-val identities from Imagenette2-160;10 classes,20 per class selected by filename hash before inference;100calibration/100evaluation disjoint. ImageNet1000 unrestricted top1. Resize256/center224/ImageNet normalization;not full ImageNet representativeness.",
+    "actions": [
+      {
+        "bit": 0,
+        "id": "stem",
+        "conv": "conv1",
+        "bn": "bn1"
+      },
+      {
+        "bit": 1,
+        "id": "main_early",
+        "conv": "layer1.0.conv1",
+        "bn": "layer1.0.bn1"
+      },
+      {
+        "bit": 2,
+        "id": "main_transition",
+        "conv": "layer2.0.conv1",
+        "bn": "layer2.0.bn1"
+      },
+      {
+        "bit": 3,
+        "id": "shortcut_transition",
+        "conv": "layer2.0.downsample.0",
+        "bn": "layer2.0.downsample.1"
+      }
+    ],
+    "action_semantics": "Function-preserving eval ConvBN folding; candidate nodes physically executed in complete pretrained ResNet. No retraining or numerical precision reduction. Out-of-place ReLU configuration fixed on all platforms.",
+    "measured_devices": "A100-SXM4-80GB MIG2g.20gb; Apple M5 CPU/MPS; Ascend910B3. MIG is not a full80GB A100. NPU and CUDA/MPS software stacks differ and must be reported.",
+    "valid_claim": "Tests actual target-side deployment actions, task preservation and raw end-to-end inference timing; it is not historical FITAS, arbitrary operator substitution, or proof that mixed source/target cost coalitions are physically executable."
+  },
+  "prospective_direct_COPA_validation": {
+    "purpose": "Validate measured-action utility with fixed equal-budget rankings while retaining ties and negative effects.",
+    "contexts": "Both public models × B1/B4 × cuda(A100 exact partition recorded)/mps(M5)/npu(910B exact type recorded)=12 fixed contexts. CPU optional declared control, not silently pooled with accelerator result.",
+    "action_library": "Use the same four eligible ConvBN substitutions and fixed at-most2 budget in every ranking. All16 physical coalitions permit exact action-Shapley and5 unfitted high-order states; primary direct utility additionally reports cardinality-matched random.",
+    "split": "3 independent calibration processes per context and a locked plan before5 independent heldout AB/BA processes; keep same100+100quality split and bytes. Future newtiming runs are independent physical blocks but reuse100quality IDs, so they do not increase independent image sample size.",
+    "rankings": [
+      "Uncalibrated cross-hardware operator DAG-COPA with immutable node→action grouping and frozen burden×headroom×uncertainty rule",
+      "Separately named target-side runtime-calibrated action COPA fit only on train11 low-order coalitions",
+      "Target operator-latency top2 from the same standalone train profiles",
+      "Local headroom, plain source-target difference and same-evidence calibration exhaustive search",
+      "Uniform random exactsame-cardinality, exact2 and uniform≤2 expectations over completely measured shared eligible action set"
+    ],
+    "fairness": "All methods share legal actions, quality threshold and action budget. Freeze allscore/mask rules, ties, stop/no-op and fallback before reading newevaluation. Do not select among methods, PPO seeds, budgets, devices or models using evaluation; report them all. Physical exactShapley is an outcome audit, not a predictor or low-query method.",
+    "measurement": "Each mask has separate baseline/candidate copies and equal invocation frequency;30warmups each then20 adjacent pairs with10AB/10BA and randomized round/mask order. Every forward synchronizes backend before/after; per-call synchronized host wall clock includes dispatch. Save allraw calls/order/start/end/output-equivalence/resource receipts. mask0 is baseline-vs-baseline noise only; deploying no-op has0gain.",
+    "quality": "Record IDs/labels/predictions/correct/accuracy and logit equivalence at1e-4 tolerances. Require localcandidate/base and crosshardwarecandidate/source retention>=.99. Preserve failures/OOM/unsupported/negative effects. Gate/rollback gains are secondary and never replace raw negative gains.",
+    "analysis": "Perprocess ratio of means100*(meanA-meanB)/meanA; compare strategy gains using withinprocess paired differences. Allcalls within oneprocess are technical repeats. Average allfixed PPO seeds within eachphysical block before uncertainty. Report effect size, SD, individualprocesses, AB/BA breakdown,mask0noise, regret/topkrecall to heldout oracle; rawrank and runtimecalibratedrank separate.",
+    "raise_condition": "For an asserted scoped COPA advantage require predeclared positive paired gain over BOTH latency and same-cardinality random, retained quality, no unresolved validity errors, and an uncertainty analysis justified for the frozen estimand. For multi-context generality predeclare equal-context weighting and multiplicity treatment (e.g.Holm across12contexts×2primary contrasts) or a hierarchical aggregate; fiveprocess tintervals are descriptive and insufficient for broad claims. If ties, negative effects or intervals spanning0, state that truth and limit to implementation/diagnostic validation. No test guarantees a reviewer score change.",
+    "execution_entrypoints": [
+      "python interventions/full_model_coalitions.py --model resnet18 --device cuda --batch 1 --run 1 --assets assets/imagenet-val200 --output NEW_STUDY/cal/cuda-resnet18-b1-r1.json --profile-all-nodes (repeat2models×2batches×runs1..3, supported backend separately)",
+      "python interventions/assemble_tasks.py --raw-dir NEW_STUDY/raw --output-dir NEW_STUDY/frozen-tasks (requires realcal1..3 and eval; for prospective freeze exporttrainonlyranking beforecollector evaluation, never use resulting eval for selection)",
+      "python interventions/paired_confirmation.py --model resnet18 --device cuda --batch 1 --run 101 --assets assets/imagenet-val200 --output NEW_STUDY/paired/cuda-resnet18-b1-r101.json (repeatall12contexts×101..105; currentscript supportscuda/mps/npu/cpu; useNPU HF32disabling wrapper and neveroverwriteoldIDs/files)",
+      "Run eachcal/eval with distinctPythonprocess; snapshot source,helper,asset,weights and frozenplanSHA256; runbackend environments sequentially and preserveworker receipts. The existing runIDrange101..105 requires a newstudy directory and studyidentity wrapper to distinguish newfromold NPU confirmations."
+    ]
+  },
+  "new_layout_deployment_trial": {
+    "scope": "Root-proposed newA100 deploymentcase: F=alllegalConvBNfolding,L=globalchannels_last with NCHW→channels_lastconversion inside everytimedforward;4coalitions,2models×2batches×3cal+5eval=32processes.",
+    "utility": "Scientifically useful additional measurable deploymentgain and interaction test with task-preserving actions. It does not by itself test operator COPA versus latency/random because allmodel folding and global layout are coarse actions and root is not claiming that comparison.",
+    "requirements": "Freezek1choiceamongF/Landno-opfromcal; freeze k2combination/no-opseparately. Budget2plan must not be compared as ranking win against budget1baseline. Record preconversionNCHWinputstrides and postconversion/modelweightlayout. Weightconversion excluded as offline setup; inputconversion and forward dispatch included. Retain all4contexts including failed/negative. Planhashmustbindbeforeeval.",
+    "source_review": {
+      "path": "v4-提分条件补强/physical/layout_validation.py",
+      "sha256": "ff075e79f833ad752bc0d888a5c4e08196bfc43e410f0be051e7731d44bfdfbc",
+      "P0": [],
+      "P1": [],
+      "closed_P1": [
+        "Process identitynowstoredwithpid/ppid/argv/python/platform; actualrunner mustproveindependentprocesses.",
+        "started/quality/roundatomicpersist and failedexceptionpathretainpartialrecords; actualfailuresmustnotoverwriteoldrunIDs."
+      ],
+      "P2": [
+        "Resource/workerreceiptsandexactMIGidentitycome fromrunner,notcollector alone.",
+        "Allcompleted32recordsandfrozenplanbindingstillneedactualexecutionaudit."
+      ],
+      "verdict": "PASS_FOR_SCOPED_COLLECTION_SOURCE_ONLY; no hardware run certified by this review"
+    }
+  }
+}

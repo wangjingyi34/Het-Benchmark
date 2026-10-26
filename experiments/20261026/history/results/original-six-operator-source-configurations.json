@@ -1,0 +1,187 @@
+{
+  "run_identity_certified": false,
+  "rows": [
+    {
+      "name": "MatMul 4096x4096",
+      "source_key": "matmul_4096",
+      "inputs": [
+        [
+          4096,
+          4096
+        ]
+      ],
+      "operation": "torch.mm(x,x.T)",
+      "layout": "default contiguous x; transposed view for right operand",
+      "batch": null,
+      "kernel": null,
+      "heads": null,
+      "dtype": "float16",
+      "source_config_only": true,
+      "timing": {
+        "warmup": 20,
+        "repeats": 100,
+        "synchronize": "torch.cuda.synchronize before/after wall clock"
+      },
+      "source": {
+        "path": "source-data/experiments/exp_cross_platform_eval.py",
+        "sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_cross_platform_eval.py",
+        "upstream_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "locator": "lines 59-77; 132-167; 170-176"
+      }
+    },
+    {
+      "name": "Conv2D 224x224",
+      "source_key": "conv2d_224",
+      "inputs": [
+        [
+          1,
+          64,
+          224,
+          224
+        ]
+      ],
+      "operation": "Conv2d(64,128,3,padding=1)",
+      "layout": "default contiguous NCHW",
+      "batch": 1,
+      "kernel": [
+        3,
+        3
+      ],
+      "channels_in": 64,
+      "channels_out": 128,
+      "heads": null,
+      "dtype": "float16",
+      "source_config_only": true,
+      "timing": {
+        "warmup": 20,
+        "repeats": 100,
+        "synchronize": "torch.cuda.synchronize before/after wall clock"
+      },
+      "source": {
+        "path": "source-data/experiments/exp_cross_platform_eval.py",
+        "sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_cross_platform_eval.py",
+        "upstream_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "locator": "lines 59-77; 132-167; 170-176"
+      }
+    },
+    {
+      "name": "Attention sequence 512",
+      "source_key": "attention_512",
+      "inputs": [
+        [
+          1,
+          512,
+          768
+        ]
+      ],
+      "operation": "MultiheadAttention(768,12,batch_first=True), m(x,x,x)[0]",
+      "layout": "batch,sequence,embedding",
+      "batch": 1,
+      "heads": 12,
+      "head_dim": 64,
+      "dtype": "float16",
+      "source_config_only": true,
+      "timing": {
+        "warmup": 20,
+        "repeats": 100,
+        "synchronize": "torch.cuda.synchronize before/after wall clock"
+      },
+      "source": {
+        "path": "source-data/experiments/exp_cross_platform_eval.py",
+        "sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_cross_platform_eval.py",
+        "upstream_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "locator": "lines 59-77; 132-167; 170-176"
+      }
+    },
+    {
+      "name": "LayerNorm width 768",
+      "source_key": "layernorm_768",
+      "inputs": [
+        [
+          32,
+          512,
+          768
+        ]
+      ],
+      "operation": "LayerNorm(768)",
+      "layout": "default contiguous",
+      "batch": 32,
+      "dtype": "float16",
+      "source_config_only": true,
+      "timing": {
+        "warmup": 20,
+        "repeats": 100,
+        "synchronize": "torch.cuda.synchronize before/after wall clock"
+      },
+      "source": {
+        "path": "source-data/experiments/exp_cross_platform_eval.py",
+        "sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_cross_platform_eval.py",
+        "upstream_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "locator": "lines 59-77; 132-167; 170-176"
+      }
+    },
+    {
+      "name": "Softmax 512x512",
+      "source_key": "softmax_512x512",
+      "inputs": [
+        [
+          8,
+          12,
+          512,
+          512
+        ]
+      ],
+      "operation": "Softmax(dim=-1)",
+      "layout": "default contiguous",
+      "batch": 8,
+      "dtype": "float16",
+      "source_config_only": true,
+      "timing": {
+        "warmup": 20,
+        "repeats": 100,
+        "synchronize": "torch.cuda.synchronize before/after wall clock"
+      },
+      "source": {
+        "path": "source-data/experiments/exp_cross_platform_eval.py",
+        "sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_cross_platform_eval.py",
+        "upstream_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "locator": "lines 59-77; 132-167; 170-176"
+      }
+    },
+    {
+      "name": "Linear width 4096",
+      "source_key": "linear_4096",
+      "inputs": [
+        [
+          32,
+          512,
+          768
+        ]
+      ],
+      "operation": "Linear(768,3072)",
+      "layout": "default contiguous",
+      "batch": 32,
+      "printed_name_matches_dimensions": false,
+      "dtype": "float16",
+      "source_config_only": true,
+      "timing": {
+        "warmup": 20,
+        "repeats": 100,
+        "synchronize": "torch.cuda.synchronize before/after wall clock"
+      },
+      "source": {
+        "path": "source-data/experiments/exp_cross_platform_eval.py",
+        "sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_cross_platform_eval.py",
+        "upstream_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+        "locator": "lines 59-77; 132-167; 170-176"
+      }
+    }
+  ],
+  "boundary": "Recovered source declarations. The printed Linear width 4096 label disagrees with 768->3072 in the candidate source, and no run/config hash binds Table 4 to this source. Attention in cross_platform_profiler.py is a different batch=8 candidate."
+}

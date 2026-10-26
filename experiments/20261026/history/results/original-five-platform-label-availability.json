@@ -1,0 +1,81 @@
+{
+  "rows": [
+    {
+      "platform_id": "A100_80GB",
+      "device_name": "NVIDIA A100 80GB PCIe",
+      "source_operator_summary_rows": 6,
+      "source_model_summary_rows": 2,
+      "measured_flag_true": 8,
+      "measured_flag_false": 0,
+      "canonical5000_linked_records": null,
+      "per_repeat_raw_observations_found_in_this_file": 0,
+      "strict_LOPO_eligible": false,
+      "reason": "No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates."
+    },
+    {
+      "platform_id": "Ascend_910B",
+      "device_name": "Huawei Ascend 910B",
+      "source_operator_summary_rows": 6,
+      "source_model_summary_rows": 2,
+      "measured_flag_true": 0,
+      "measured_flag_false": 8,
+      "canonical5000_linked_records": null,
+      "per_repeat_raw_observations_found_in_this_file": 0,
+      "strict_LOPO_eligible": false,
+      "reason": "No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates."
+    },
+    {
+      "platform_id": "MLU370_X8",
+      "device_name": "Cambricon MLU370-X8",
+      "source_operator_summary_rows": 6,
+      "source_model_summary_rows": 2,
+      "measured_flag_true": 0,
+      "measured_flag_false": 8,
+      "canonical5000_linked_records": null,
+      "per_repeat_raw_observations_found_in_this_file": 0,
+      "strict_LOPO_eligible": false,
+      "reason": "No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates."
+    },
+    {
+      "platform_id": "Intel_GPU_Max",
+      "device_name": "Intel GPU Max 1550",
+      "source_operator_summary_rows": 6,
+      "source_model_summary_rows": 2,
+      "measured_flag_true": 0,
+      "measured_flag_false": 8,
+      "canonical5000_linked_records": null,
+      "per_repeat_raw_observations_found_in_this_file": 0,
+      "strict_LOPO_eligible": false,
+      "reason": "No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates."
+    },
+    {
+      "platform_id": "Intel_Xeon_8380",
+      "device_name": "Intel Xeon 8380 (CPU)",
+      "source_operator_summary_rows": 6,
+      "source_model_summary_rows": 2,
+      "measured_flag_true": 0,
+      "measured_flag_false": 8,
+      "canonical5000_linked_records": null,
+      "per_repeat_raw_observations_found_in_this_file": 0,
+      "strict_LOPO_eligible": false,
+      "reason": "No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates."
+    }
+  ],
+  "counts_are_source_declarations_not_independent_attestation": true,
+  "sources": [
+    {
+      "path": "source-data/results/cross_platform_results.json",
+      "sha256": "ee4b6c2ccaa30b61903d57475ff1f030e691acd619022518af5ba1b501e84265",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/cross_platform_results.json",
+      "upstream_sha256": "ee4b6c2ccaa30b61903d57475ff1f030e691acd619022518af5ba1b501e84265",
+      "locator": "$.operators[*].platforms; $.models[*].platforms"
+    },
+    {
+      "path": "source-data/experiments/exp_cross_platform_eval.py",
+      "sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_cross_platform_eval.py",
+      "upstream_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+      "locator": "lines 29-55; 170-195; 225-241"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+platform_id,device_name,source_operator_summary_rows,source_model_summary_rows,measured_flag_true,measured_flag_false,canonical5000_linked_records,per_repeat_raw_observations_found_in_this_file,strict_LOPO_eligible,reason
+A100_80GB,NVIDIA A100 80GB PCIe,6,2,8,0,,0,False,No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates.
+Ascend_910B,Huawei Ascend 910B,6,2,0,8,,0,False,No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates.
+MLU370_X8,Cambricon MLU370-X8,6,2,0,8,,0,False,No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates.
+Intel_GPU_Max,Intel GPU Max 1550,6,2,0,8,,0,False,No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates.
+Intel_Xeon_8380,Intel Xeon 8380 (CPU),6,2,0,8,,0,False,No operator-instance/model split binding or raw trace lineage; non-A100 entries additionally use hardware-spec estimates.

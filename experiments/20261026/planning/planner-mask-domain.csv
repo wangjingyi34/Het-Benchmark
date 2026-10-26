@@ -1,0 +1,9 @@
+context,supported_actions,all_actions_supported,all_16_coalitions_valid_and_equivalent,masked_seed_masks,unmasked_seed_masks,mask_toggle_equal_by_seed,total_training_invalid_attempts,validity_effect_identifiable,minimum_eval_quality_retention
+cuda-resnet18_b1_imagenet_val10class_v2,"[true, true, true, true]",True,True,"[3, 3, 3, 3, 3]","[3, 3, 3, 3, 3]",True,0,False,1.0
+cuda-resnet18_b4_imagenet_val10class_v2,"[true, true, true, true]",True,True,"[1, 1, 1, 1, 1]","[1, 1, 1, 1, 1]",True,0,False,1.0
+cuda-resnet50_b1_imagenet_val10class_v2,"[true, true, true, true]",True,True,"[9, 9, 9, 9, 9]","[9, 9, 9, 9, 9]",True,0,False,1.0
+cuda-resnet50_b4_imagenet_val10class_v2,"[true, true, true, true]",True,True,"[9, 9, 9, 9, 12]","[9, 9, 9, 9, 12]",True,0,False,1.0
+npu-resnet18_b1_imagenet_val10class_v2,"[true, true, true, true]",True,True,"[12, 12, 12, 12, 12]","[12, 12, 12, 12, 12]",True,0,False,1.0
+npu-resnet18_b4_imagenet_val10class_v2,"[true, true, true, true]",True,True,"[0, 1, 4, 4, 1]","[0, 1, 4, 4, 1]",True,0,False,1.0
+npu-resnet50_b1_imagenet_val10class_v2,"[true, true, true, true]",True,True,"[10, 10, 10, 10, 10]","[10, 10, 10, 10, 10]",True,0,False,1.0
+npu-resnet50_b4_imagenet_val10class_v2,"[true, true, true, true]",True,True,"[5, 5, 5, 5, 5]","[5, 5, 5, 5, 5]",True,0,False,1.0

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "test_source_sha256": "7cd4c5760f28866641c2a77e516f1a3ccc8b2a15a1f415c38da6cb1515bbfb3b",
+  "audit_validator_sha256": "cf12e49bd48c15d06f6205e5c5688f318b487e4e9886e79aa976f4f66c05da8c",
+  "scope": "Fault injection on in-memory copies and direct original gate calls; no hardware-quality failure trial.",
+  "original_gate_limitation": "Original final_gate trusts quality_score; raw-ledger spoof is accepted there but rejected by this isolated strict validator. Original runtime files were not modified.",
+  "implementation_chain": [
+    "raw heldout labeled predictions -> audited top1",
+    "local target retention >=.99",
+    "hardware support and valid status",
+    "nonregression or baseline rollback",
+    "cross-device candidate/source retention >=.99, else source fallback"
+  ],
+  "deployed_runtime_hardening_claim": false
+}

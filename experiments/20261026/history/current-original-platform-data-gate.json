@@ -1,0 +1,52 @@
+{
+  "pass": false,
+  "stage": "labels",
+  "error_counts": {
+    "OPPORTUNITY_LEDGER_INCOMPLETE": 1,
+    "CANONICAL5000_MISSING": 1,
+    "MISSING_SOURCE_BINDING": 1,
+    "ORIGINAL_RUN_BINDING_MISSING": 1,
+    "NO_PHYSICAL_LABELS": 1
+  },
+  "errors_first_150": [
+    {
+      "code": "OPPORTUNITY_LEDGER_INCOMPLETE",
+      "at": "records",
+      "detail": "31220 operator/platform pairs have no recorded status; this is not a measured failure count"
+    },
+    {
+      "code": "CANONICAL5000_MISSING",
+      "at": "canonical_record_ids",
+      "detail": "Exactly 5000 distinct original record IDs required"
+    },
+    {
+      "code": "MISSING_SOURCE_BINDING",
+      "at": "original_run_binding",
+      "detail": "Require path, sha256 and exact JSON pointer"
+    },
+    {
+      "code": "ORIGINAL_RUN_BINDING_MISSING",
+      "at": "original_run_binding",
+      "detail": "Frozen original graph, checkpoint, split and label ledger binding required"
+    },
+    {
+      "code": "NO_PHYSICAL_LABELS",
+      "at": "records",
+      "detail": "No eligible physical labels available for LOPO"
+    }
+  ],
+  "record_count": 0,
+  "expected_opportunities": 31220,
+  "unrecorded_opportunities": 31220,
+  "per_platform_recorded_status_counts": {
+    "A100_80GB": {},
+    "Ascend_910B": {},
+    "MLU370_X8": {},
+    "Intel_GPU_Max": {},
+    "Intel_Xeon_8380": {}
+  },
+  "evidence_boundary": "Pass validates submitted files, identifiers, arithmetic and declared split membership; it does not independently authenticate hardware or prove training code used the declared inputs.",
+  "bundle_path": "current-original-data-candidate.json",
+  "bundle_sha256": "ee55aa66c1aacb641c83e6877518e973e7aefabec8e7ec6870273a1230b933e5",
+  "validator_sha256": "c6304eb718e185921e1a8132cfb354107f4046b807ce3fcd541aba2c89ee90a4"
+}

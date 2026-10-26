@@ -1,0 +1,183 @@
+{
+  "created_utc": "2026-10-26T03:43:10.246113+00:00",
+  "kind": "preregistered_attention_budget_protocol",
+  "configurations": [
+    [
+      1,
+      256,
+      192,
+      6
+    ],
+    [
+      1,
+      256,
+      384,
+      6
+    ],
+    [
+      1,
+      256,
+      640,
+      10
+    ],
+    [
+      1,
+      384,
+      192,
+      6
+    ],
+    [
+      1,
+      384,
+      384,
+      6
+    ],
+    [
+      1,
+      384,
+      640,
+      10
+    ],
+    [
+      1,
+      768,
+      192,
+      6
+    ],
+    [
+      1,
+      768,
+      384,
+      6
+    ],
+    [
+      1,
+      768,
+      640,
+      10
+    ],
+    [
+      1,
+      1536,
+      192,
+      6
+    ],
+    [
+      1,
+      1536,
+      384,
+      6
+    ],
+    [
+      1,
+      1536,
+      640,
+      10
+    ],
+    [
+      2,
+      256,
+      192,
+      6
+    ],
+    [
+      2,
+      256,
+      384,
+      6
+    ],
+    [
+      2,
+      256,
+      640,
+      10
+    ],
+    [
+      2,
+      384,
+      192,
+      6
+    ],
+    [
+      2,
+      384,
+      384,
+      6
+    ],
+    [
+      2,
+      384,
+      640,
+      10
+    ],
+    [
+      2,
+      768,
+      192,
+      6
+    ],
+    [
+      2,
+      768,
+      384,
+      6
+    ],
+    [
+      2,
+      768,
+      640,
+      10
+    ],
+    [
+      2,
+      1536,
+      192,
+      6
+    ],
+    [
+      2,
+      1536,
+      384,
+      6
+    ],
+    [
+      2,
+      1536,
+      640,
+      10
+    ]
+  ],
+  "checkpoint_manifest_sha256": "1ade61fff0b8e6ddca4b40f4778d9882b2d86b8ef3c467af4963b5e6713398ea",
+  "code_hashes": {
+    "attention_budget_test.py": "b6650af5fd0e5ef45d09f213543131ae3d7d9cfa6c9fd7ae70a350cd1c1854c4",
+    "attention_ood_challenge.py": "dfab91261cc4e9a83f232ca9275c20509d5360f78423c071e7a80236f88b5b1c",
+    "collect_profiles.py": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+    "structural_attributes.py": "0c175a7e2c30fd595a35c70841cb78638eb83cec159101daf204734c616913ad",
+    "evaluate_profiles.py": "bad26be58e40a0bf6ff939024f15e646a72ec3e1b8bc3fef54dc67745f8cce0f",
+    "active_fallback.py": "9af59a5b16a2cdff39f1c58529a95b67918228bb78c513af9bf0f2836ced18cc"
+  },
+  "methods": [
+    "rgat ensemble of seeds 11,22,33,44,55"
+  ],
+  "selection": "descending sample SD of log predictions, case index ascending breaks ties; exactly 3 anchors",
+  "correction": "ensemble prediction multiplied by exp(weighted mean anchor log(actual/pred)); weights exp(-0.5 squared Euclidean distance on log2(batch,sequence,width,heads)), normalized over all three anchors; no tuned coefficients",
+  "evaluation": "all other 21 cases in 5 independent fresh processes; anchor process precedes correction freeze, correction precedes evaluation",
+  "blocks": 10,
+  "inner": 4,
+  "warmup": 5,
+  "seeds": "PCG64 portable parameters 681000+i, input 781000+i",
+  "endpoints": [
+    "query mean absolute relative error",
+    "WAPE",
+    "MAE ms",
+    "paired per-query relative error difference",
+    "process variation",
+    "measurement and decision wall times"
+  ],
+  "platforms": [
+    "a100mig",
+    "m5mps"
+  ],
+  "scope": "full-MHA new shapes, not 21 independent architectures or original five-hardware LOPO; old full-MHA results were known at design, all 24 configurations here are different",
+  "failures": "retain all failures; do not change selection/hyperparameters after measuring labels"
+}

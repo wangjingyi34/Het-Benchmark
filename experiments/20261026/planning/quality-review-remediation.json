@@ -1,0 +1,61 @@
+{
+  "status": "implemented_and_locally_validated_pending_independent_rereview",
+  "independent_review_path": "prior-versions/strict-gate-v1-pre-quality-review/quality-independent-review.json",
+  "independent_review_sha256": "fe574419b9606184f5896126bf32011cf50c233b5d63569017b73551e73e45bb",
+  "preservation_manifest_path": "prior-versions/strict-gate-v1-pre-quality-review/preservation-manifest.json",
+  "preservation_manifest_sha256": "6280a239c7e6ad2d0d2331c24463b678308af58207cf4cc21fa87f90cf863061",
+  "previous_module_sha256": "45fa8faf20b949312427a9b27fc296d0842337b02ed4c6313c5001a34573726d",
+  "previous_adapter_sha256": "6acc5292c695300775f659edd2cfeec0f2baef3d11c90611ddbd60b6965be6c2",
+  "new_module_sha256": "e79a974a4b5da59d55a3383dccc1310b3597e95c528fa16166b3114b1a6910a3",
+  "new_adapter_sha256": "75e8b7d51ebd16a192d00205decbc334274b1d4be4e64c5a8cd9639b2e8de3ed",
+  "fixes": [
+    {
+      "id": "QG-P1-001",
+      "status": "implemented_pending_independent_retest",
+      "change": "Bind table.mode, declared quality mode/threshold/metric/dataset and pinned raw protocol. Reject absolute/unknown modes and inconsistent/frozen-threshold mismatches. Explicit ImageNet1000_top1_accuracy to raw unrestricted-top1 mapping. Core binding also verifies supported raw contract.",
+      "code": [
+        "upgrade_final_gate_example.py:upgraded_final_gate",
+        "strict_quality_gate.py:quality_contract_from_run",
+        "strict_quality_gate.py:make_binding"
+      ],
+      "tests": [
+        "test_exact_review_absolute_counterexample",
+        "test_exact_review_dataset_and_metric_counterexamples",
+        "test_thresholds_bound_to_declaration_and_frozen_raw_protocol",
+        "test_core_rejects_unsupported_pinned_raw_contracts"
+      ]
+    },
+    {
+      "id": "QG-P2-002",
+      "status": "implemented_pending_independent_retest",
+      "change": "Explicit required-attribute and mapping boundary. None/missing fields return unevaluated rejection with verified-baseline reload required and rollback_executed=false; no broad catch of arbitrary programmer errors.",
+      "code": [
+        "upgrade_final_gate_example.py:upgraded_final_gate",
+        "strict_quality_gate.py:baseline_fallback"
+      ],
+      "tests": [
+        "test_exact_review_none_and_missing_attribute_counterexamples",
+        "test_empty_mappings_and_malformed_object_boundaries",
+        "test_missing_quality_definition_and_block_fields"
+      ]
+    }
+  ],
+  "validation": {
+    "original_tests": 20,
+    "original_negative_cases": 61,
+    "added_regression_tests": 10,
+    "added_negative_cases": 58,
+    "real_decisions_replayed": 440,
+    "prior_seed_process_scores_matched": 800,
+    "adapter_faults_passed": 5
+  },
+  "reviewers_original_priorities_retained": {
+    "P0": 0,
+    "P1": 1,
+    "P2": 1
+  },
+  "independent_review_conclusion_not_overwritten": true,
+  "analysis_freeze_sha256": "05f6860d552d43afd94cf1a1db18efa2bb3b3883df0314a1afc084ef18fc034d",
+  "original_data_or_public_runtime_modified": false,
+  "deployed": false
+}

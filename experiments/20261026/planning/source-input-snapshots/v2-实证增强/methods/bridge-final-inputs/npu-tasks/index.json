@@ -1,0 +1,34 @@
+[
+  {
+    "file": "bridge-final-inputs/npu-tasks/resnet18_b1_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet18_b1_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "0bbc38344d4a3f32363c78821d6ceb1478db3fcf9315d6c609b2448e609297df"
+  },
+  {
+    "file": "bridge-final-inputs/npu-tasks/resnet18_b4_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet18_b4_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "9cb86414603659c822768209073116adfe54d3976e3055c382552ddfc71a8ae0"
+  },
+  {
+    "file": "bridge-final-inputs/npu-tasks/resnet50_b1_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet50_b1_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "9fef1d439cde8c8d8a6f36e213032cce85a0f49a461128741ba4f83ccdcccd64"
+  },
+  {
+    "file": "bridge-final-inputs/npu-tasks/resnet50_b4_imagenet_val10class_v2_bac88cfcaa.json",
+    "task": "resnet50_b4_imagenet_val10class_v2",
+    "device": "npu_Ascend910B3",
+    "train_runs": 3,
+    "eval_runs": 5,
+    "sha256": "8b8a06459247fa6cbdd113c707731c65f2aae8e1a6da57c6e60c8f535811d9e5"
+  }
+]

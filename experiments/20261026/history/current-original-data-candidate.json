@@ -1,0 +1,61 @@
+{
+  "scope": "historical_canonical5000",
+  "platform_ids": [
+    "A100_80GB",
+    "Ascend_910B",
+    "MLU370_X8",
+    "Intel_GPU_Max",
+    "Intel_Xeon_8380"
+  ],
+  "source_catalog": {
+    "path": "source-data/data/model_dataset.json",
+    "sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+    "pointer": "/models"
+  },
+  "source_model_split": {
+    "train": [
+      "ALBERT_Base",
+      "BERT_Mini",
+      "BERT_Tiny",
+      "BLIP_Base",
+      "BLOOM_560M",
+      "ConvNeXt_Base",
+      "DINOv2_Base",
+      "DeiT_Base",
+      "DistilBERT",
+      "DistilBERT_Base",
+      "EfficientNet_B0",
+      "Falcon_7B",
+      "GPT_2",
+      "GPT_Neo_1.3B",
+      "MobileNet_V2",
+      "OPT_1.3B",
+      "Phi_3_mini",
+      "Pythia_1.4B",
+      "Qwen2.5_7B",
+      "ResNet_50",
+      "RoBERTa_Base",
+      "SigLIP_Base",
+      "StableLM_3B",
+      "Swin_Base",
+      "T5_Base",
+      "ViT_Base",
+      "Wav2Vec2_Base"
+    ],
+    "validation": [
+      "BEiT_Base",
+      "RegNet_Y_4GF",
+      "TinyLlama_1.1B"
+    ],
+    "test": [
+      "BERT_Base",
+      "CLIP_ViT_B_32",
+      "Mistral_7B",
+      "Whisper_Base"
+    ]
+  },
+  "records": [],
+  "canonical_record_ids": [],
+  "original_run_binding": null,
+  "source_observation_note": "Empty records means no admissible per-instance original physical labels recovered by this audit. It does not mean no historical experiments occurred. Existing summary/estimated rows are retained in separate source files and are not converted into raw records."
+}

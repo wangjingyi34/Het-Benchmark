@@ -1,0 +1,376 @@
+{
+  "scope": "Offline arithmetic from archived hardware-spec-ratio source; not measurement or LOPO",
+  "derived_record_count": 32,
+  "all_measured_flags_false": true,
+  "all_values_reproduced": true,
+  "records": [
+    {
+      "pointer": "/operators/matmul_4096/platforms/Ascend_910B",
+      "source_case_type": "matmul",
+      "platform_id": "Ascend_910B",
+      "a100_summary_ms": 0.6295839231461287,
+      "calculated_ratio": 0.9408000000000001,
+      "calculated_ms": 0.6692005985821945,
+      "stored_ms": 0.6692005985821945,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/matmul_4096/platforms/MLU370_X8",
+      "source_case_type": "matmul",
+      "platform_id": "MLU370_X8",
+      "a100_summary_ms": 0.6295839231461287,
+      "calculated_ratio": 0.6876000000000001,
+      "calculated_ms": 0.915625251812287,
+      "stored_ms": 0.915625251812287,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/matmul_4096/platforms/Intel_GPU_Max",
+      "source_case_type": "matmul",
+      "platform_id": "Intel_GPU_Max",
+      "a100_summary_ms": 0.6295839231461287,
+      "calculated_ratio": 1.3968000000000003,
+      "calculated_ms": 0.45073304921687324,
+      "stored_ms": 0.45073304921687324,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/matmul_4096/platforms/Intel_Xeon_8380",
+      "source_case_type": "matmul",
+      "platform_id": "Intel_Xeon_8380",
+      "a100_summary_ms": 0.6295839231461287,
+      "calculated_ratio": 0.028000000000000004,
+      "calculated_ms": 22.485140112361734,
+      "stored_ms": 22.485140112361734,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/conv2d_224/platforms/Ascend_910B",
+      "source_case_type": "conv",
+      "platform_id": "Ascend_910B",
+      "a100_summary_ms": 0.1326348539441824,
+      "calculated_ratio": 0.9408000000000001,
+      "calculated_ms": 0.140980924685568,
+      "stored_ms": 0.140980924685568,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/conv2d_224/platforms/MLU370_X8",
+      "source_case_type": "conv",
+      "platform_id": "MLU370_X8",
+      "a100_summary_ms": 0.1326348539441824,
+      "calculated_ratio": 0.6876000000000001,
+      "calculated_ms": 0.19289536641096913,
+      "stored_ms": 0.19289536641096913,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/conv2d_224/platforms/Intel_GPU_Max",
+      "source_case_type": "conv",
+      "platform_id": "Intel_GPU_Max",
+      "a100_summary_ms": 0.1326348539441824,
+      "calculated_ratio": 1.3968000000000003,
+      "calculated_ms": 0.09495622418684305,
+      "stored_ms": 0.09495622418684305,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/conv2d_224/platforms/Intel_Xeon_8380",
+      "source_case_type": "conv",
+      "platform_id": "Intel_Xeon_8380",
+      "a100_summary_ms": 0.1326348539441824,
+      "calculated_ratio": 0.028000000000000004,
+      "calculated_ms": 4.736959069435085,
+      "stored_ms": 4.736959069435085,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/attention_512/platforms/Ascend_910B",
+      "source_case_type": "attention",
+      "platform_id": "Ascend_910B",
+      "a100_summary_ms": 0.2558569237589836,
+      "calculated_ratio": 0.813,
+      "calculated_ms": 0.31470716329518283,
+      "stored_ms": 0.31470716329518283,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/attention_512/platforms/MLU370_X8",
+      "source_case_type": "attention",
+      "platform_id": "MLU370_X8",
+      "a100_summary_ms": 0.2558569237589836,
+      "calculated_ratio": 0.4875,
+      "calculated_ms": 0.5248347154030433,
+      "stored_ms": 0.5248347154030433,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/attention_512/platforms/Intel_GPU_Max",
+      "source_case_type": "attention",
+      "platform_id": "Intel_GPU_Max",
+      "a100_summary_ms": 0.2558569237589836,
+      "calculated_ratio": 1.473,
+      "calculated_ms": 0.17369784369245322,
+      "stored_ms": 0.17369784369245322,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/attention_512/platforms/Intel_Xeon_8380",
+      "source_case_type": "attention",
+      "platform_id": "Intel_Xeon_8380",
+      "a100_summary_ms": 0.2558569237589836,
+      "calculated_ratio": 0.055,
+      "calculated_ms": 4.6519440683451565,
+      "stored_ms": 4.6519440683451565,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/layernorm_768/platforms/Ascend_910B",
+      "source_case_type": "layernorm",
+      "platform_id": "Ascend_910B",
+      "a100_summary_ms": 0.08502582088112831,
+      "calculated_ratio": 0.6426000000000001,
+      "calculated_ms": 0.13231531416297587,
+      "stored_ms": 0.13231531416297587,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/layernorm_768/platforms/MLU370_X8",
+      "source_case_type": "layernorm",
+      "platform_id": "MLU370_X8",
+      "a100_summary_ms": 0.08502582088112831,
+      "calculated_ratio": 0.2207,
+      "calculated_ms": 0.3852551920304862,
+      "stored_ms": 0.3852551920304862,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/layernorm_768/platforms/Intel_GPU_Max",
+      "source_case_type": "layernorm",
+      "platform_id": "Intel_GPU_Max",
+      "a100_summary_ms": 0.08502582088112831,
+      "calculated_ratio": 1.5746000000000002,
+      "calculated_ms": 0.05399836204822069,
+      "stored_ms": 0.05399836204822069,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/layernorm_768/platforms/Intel_Xeon_8380",
+      "source_case_type": "layernorm",
+      "platform_id": "Intel_Xeon_8380",
+      "a100_summary_ms": 0.08502582088112831,
+      "calculated_ratio": 0.09100000000000001,
+      "calculated_ms": 0.9343496800123989,
+      "stored_ms": 0.9343496800123989,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/softmax_512x512/platforms/Ascend_910B",
+      "source_case_type": "softmax",
+      "platform_id": "Ascend_910B",
+      "a100_summary_ms": 0.09365341626107693,
+      "calculated_ratio": 0.6426000000000001,
+      "calculated_ms": 0.14574138851708204,
+      "stored_ms": 0.14574138851708204,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/softmax_512x512/platforms/MLU370_X8",
+      "source_case_type": "softmax",
+      "platform_id": "MLU370_X8",
+      "a100_summary_ms": 0.09365341626107693,
+      "calculated_ratio": 0.2207,
+      "calculated_ms": 0.4243471511602942,
+      "stored_ms": 0.4243471511602942,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/softmax_512x512/platforms/Intel_GPU_Max",
+      "source_case_type": "softmax",
+      "platform_id": "Intel_GPU_Max",
+      "a100_summary_ms": 0.09365341626107693,
+      "calculated_ratio": 1.5746000000000002,
+      "calculated_ms": 0.05947759193514347,
+      "stored_ms": 0.05947759193514347,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/softmax_512x512/platforms/Intel_Xeon_8380",
+      "source_case_type": "softmax",
+      "platform_id": "Intel_Xeon_8380",
+      "a100_summary_ms": 0.09365341626107693,
+      "calculated_ratio": 0.09100000000000001,
+      "calculated_ms": 1.0291584204513946,
+      "stored_ms": 1.0291584204513946,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/linear_4096/platforms/Ascend_910B",
+      "source_case_type": "linear",
+      "platform_id": "Ascend_910B",
+      "a100_summary_ms": 0.38673507049679756,
+      "calculated_ratio": 0.9408000000000001,
+      "calculated_ms": 0.411070440579079,
+      "stored_ms": 0.411070440579079,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/linear_4096/platforms/MLU370_X8",
+      "source_case_type": "linear",
+      "platform_id": "MLU370_X8",
+      "a100_summary_ms": 0.38673507049679756,
+      "calculated_ratio": 0.6876000000000001,
+      "calculated_ms": 0.5624419291692808,
+      "stored_ms": 0.5624419291692808,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/linear_4096/platforms/Intel_GPU_Max",
+      "source_case_type": "linear",
+      "platform_id": "Intel_GPU_Max",
+      "a100_summary_ms": 0.38673507049679756,
+      "calculated_ratio": 1.3968000000000003,
+      "calculated_ms": 0.27687218678178516,
+      "stored_ms": 0.27687218678178516,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/operators/linear_4096/platforms/Intel_Xeon_8380",
+      "source_case_type": "linear",
+      "platform_id": "Intel_Xeon_8380",
+      "a100_summary_ms": 0.38673507049679756,
+      "calculated_ratio": 0.028000000000000004,
+      "calculated_ms": 13.811966803457054,
+      "stored_ms": 13.811966803457054,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/models/ResNet50/platforms/Ascend_910B",
+      "source_case_type": "conv",
+      "platform_id": "Ascend_910B",
+      "a100_summary_ms": 4.76578751578927,
+      "calculated_ratio": 0.9408000000000001,
+      "calculated_ms": 5.06567550572839,
+      "stored_ms": 5.06567550572839,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/models/ResNet50/platforms/MLU370_X8",
+      "source_case_type": "conv",
+      "platform_id": "MLU370_X8",
+      "a100_summary_ms": 4.76578751578927,
+      "calculated_ratio": 0.6876000000000001,
+      "calculated_ms": 6.931046416214761,
+      "stored_ms": 6.931046416214761,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/models/ResNet50/platforms/Intel_GPU_Max",
+      "source_case_type": "conv",
+      "platform_id": "Intel_GPU_Max",
+      "a100_summary_ms": 4.76578751578927,
+      "calculated_ratio": 1.3968000000000003,
+      "calculated_ms": 3.411932643033555,
+      "stored_ms": 3.411932643033555,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/models/ResNet50/platforms/Intel_Xeon_8380",
+      "source_case_type": "conv",
+      "platform_id": "Intel_Xeon_8380",
+      "a100_summary_ms": 4.76578751578927,
+      "calculated_ratio": 0.028000000000000004,
+      "calculated_ms": 170.20669699247392,
+      "stored_ms": 170.20669699247392,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/models/MobileNetV2/platforms/Ascend_910B",
+      "source_case_type": "mixed",
+      "platform_id": "Ascend_910B",
+      "a100_summary_ms": 4.323409702628851,
+      "calculated_ratio": 0.813,
+      "calculated_ms": 5.317847112704614,
+      "stored_ms": 5.317847112704614,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/models/MobileNetV2/platforms/MLU370_X8",
+      "source_case_type": "mixed",
+      "platform_id": "MLU370_X8",
+      "a100_summary_ms": 4.323409702628851,
+      "calculated_ratio": 0.4875,
+      "calculated_ms": 8.868532723341232,
+      "stored_ms": 8.868532723341232,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/models/MobileNetV2/platforms/Intel_GPU_Max",
+      "source_case_type": "mixed",
+      "platform_id": "Intel_GPU_Max",
+      "a100_summary_ms": 4.323409702628851,
+      "calculated_ratio": 1.473,
+      "calculated_ms": 2.9351050255457234,
+      "stored_ms": 2.9351050255457234,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    },
+    {
+      "pointer": "/models/MobileNetV2/platforms/Intel_Xeon_8380",
+      "source_case_type": "mixed",
+      "platform_id": "Intel_Xeon_8380",
+      "a100_summary_ms": 4.323409702628851,
+      "calculated_ratio": 0.055,
+      "calculated_ms": 78.60744913870639,
+      "stored_ms": 78.60744913870639,
+      "measured_flag": false,
+      "equal_with_1e_12_relative_tolerance": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "source-data/experiments/exp_cross_platform_eval.py",
+      "sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/experiments/exp_cross_platform_eval.py",
+      "upstream_sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+      "locator": "lines81-111;132-167;184-195;225-241"
+    },
+    {
+      "path": "source-data/results/cross_platform_results.json",
+      "sha256": "ee4b6c2ccaa30b61903d57475ff1f030e691acd619022518af5ba1b501e84265",
+      "public_url": "https://github.com/wangjingyi34/Het-Benchmark/blob/b95ad13664a4f41e791a888bc7b092b4a4dd4399/results/cross_platform_results.json",
+      "upstream_sha256": "ee4b6c2ccaa30b61903d57475ff1f030e691acd619022518af5ba1b501e84265",
+      "locator": "$.operators;$.models"
+    }
+  ]
+}

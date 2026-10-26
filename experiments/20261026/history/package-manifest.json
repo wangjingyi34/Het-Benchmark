@@ -1,0 +1,209 @@
+{
+  "kind": "public_scientific_package_manifest",
+  "scope": "Only listed portable scientific sources, arithmetic, evidence contracts, software controls and outputs; no original private review/archive material",
+  "files": [
+    {
+      "path": "LICENSE.public-sources",
+      "sha256": "082e433d0627573c4655e4ab65086a562beb78289f0fe21137471a9cac85e9cc",
+      "bytes": 10717
+    },
+    {
+      "path": "README.txt",
+      "sha256": "9e7fdd6e6866f8026b3364e05d9f932c4bcb0d603f898888ea5f740283577866",
+      "bytes": 3134
+    },
+    {
+      "path": "current-original-data-candidate.json",
+      "sha256": "ee55aa66c1aacb641c83e6877518e973e7aefabec8e7ec6870273a1230b933e5",
+      "bytes": 1513
+    },
+    {
+      "path": "current-original-platform-data-gate.json",
+      "sha256": "6c28017304b9562fcd2367b70c5f2248c52deecd9739db731d69b6343fd86e71",
+      "bytes": 1793
+    },
+    {
+      "path": "original-five-platform-lopo-contract.json",
+      "sha256": "f0b3c4110e5ac3dd4db83cdddbe0390d56593e3788d8d3ce271a07580a553ef9",
+      "bytes": 7183
+    },
+    {
+      "path": "publication-derivation.json",
+      "sha256": "0613900d3bb2a753ec03e015d95bd7da03ea4ce35cf549f6c8fbd8c81dd2daba",
+      "bytes": 1664
+    },
+    {
+      "path": "recompute_history_findings.py",
+      "sha256": "72fceef6534f79a34d067fc2b6ca0aac754f69907ae85807789108c907a94b57",
+      "bytes": 15372
+    },
+    {
+      "path": "results/fitas-source-reconciliation.json",
+      "sha256": "ed2d74270185de1f9e7f36466f93309f2162071ec3d73112154496809ebab485",
+      "bytes": 1585
+    },
+    {
+      "path": "results/historical-overall-recomputation.json",
+      "sha256": "df41b0c2aef978a06f979586b1a817cb0e28a56f416964c7d1c9b14088811eb4",
+      "bytes": 1003
+    },
+    {
+      "path": "results/mobilenet-source-reconciliation.json",
+      "sha256": "36b97162494c4e06c1391a063061a4a9733173116cc01a82364dcb1b3fde13fa",
+      "bytes": 4873
+    },
+    {
+      "path": "results/old50-prediction-reproduction.json",
+      "sha256": "7de0bdec3f35c996416ba511da38e7b2d05b392e1edbf53749e2f08100b24729",
+      "bytes": 12478
+    },
+    {
+      "path": "results/original-catalog-family-balance.json",
+      "sha256": "01859834a9c5607cf0d9564bf51a1ce9df6b44da42ca9307460ff8c99386b8ee",
+      "bytes": 2279
+    },
+    {
+      "path": "results/original-cross-platform-derived-reproduction.json",
+      "sha256": "92b12c0743e6bdff00e9c7f5931114c2b3abf53baf26daddf1d907a6f34a95ee",
+      "bytes": 13994
+    },
+    {
+      "path": "results/original-five-platform-label-availability.csv",
+      "sha256": "fd8ff7f76953d1501d7fac363434666e15c23c43ace05cdef4cde4e44d799053",
+      "bytes": 1087
+    },
+    {
+      "path": "results/original-five-platform-label-availability.json",
+      "sha256": "c7d7da1c98fd0397eba97b8e81286610a3c24c2da75bd838a7d73780fd739623",
+      "bytes": 3621
+    },
+    {
+      "path": "results/original-graph-observed-counts.json",
+      "sha256": "f7ff0d6169c9bca2cb1765c5c104ce78916daa26c1312b7d2228c617230d8657",
+      "bytes": 25426
+    },
+    {
+      "path": "results/original-six-operator-source-configurations.json",
+      "sha256": "bfd43089c99416199d51cda706f72a062eb7459ad1cab97923a0819e00d7a4ee",
+      "bytes": 6430
+    },
+    {
+      "path": "results/original-source-model-split.json",
+      "sha256": "93b9dc584be2628ba53869c2738d563d1371394edde7ac2724a62b8eb535c2d3",
+      "bytes": 2731
+    },
+    {
+      "path": "source-data/data/model_dataset.json",
+      "sha256": "5be0c5aac386bc366552cb7672ebeadbd03177e795bfe84866d9acfdc28b1245",
+      "bytes": 1818678
+    },
+    {
+      "path": "source-data/data/moh_kg.json",
+      "sha256": "f04a4c55eddc319afc53482e298cecc5cf106aaeb6f3050c850fd954ded645f3",
+      "bytes": 6903109
+    },
+    {
+      "path": "source-data/data/paper_schema_counts.json",
+      "sha256": "1ddb914a5ecc6ef414e4ca28b1e34fbef5d862c17c853708c8de1d35c254a9ae",
+      "bytes": 573
+    },
+    {
+      "path": "source-data/experiments/exp_baseline_real.py",
+      "sha256": "14669fea8acfb06029b03e760007fedc5df8f1a128be35e5e0dee2cd983f7349",
+      "bytes": 15237
+    },
+    {
+      "path": "source-data/experiments/exp_cross_platform_eval.py",
+      "sha256": "f74c9b813341d7f9e6171c3f30d9841e261738041040ecbe3530a7461bbde30f",
+      "bytes": 10764
+    },
+    {
+      "path": "source-data/experiments/exp_fitas_migration.py",
+      "sha256": "b923da0dda7b79fcbca21cf52d5817d0d69db7216007790ba4b534d3e5696c36",
+      "bytes": 13069
+    },
+    {
+      "path": "source-data/results/baseline_real_comparison.json",
+      "sha256": "8eb9754ba8599f4d4416de9c2bf82b46c525a9f3f51a98830be52934fec5617f",
+      "bytes": 19471
+    },
+    {
+      "path": "source-data/results/cross_platform_results.json",
+      "sha256": "ee4b6c2ccaa30b61903d57475ff1f030e691acd619022518af5ba1b501e84265",
+      "bytes": 8707
+    },
+    {
+      "path": "source-data/results/fitas_migration_results.json",
+      "sha256": "a37968bb57d78bc135950bd7042643d892e3c4d015756417192ae16ad1bf4b2a",
+      "bytes": 2157
+    },
+    {
+      "path": "source-data/results/paper_tables/model_latency_ms.csv",
+      "sha256": "909565a9835b3d3f2a568ae6cbf69070c0d183441e1ca864fda3380e3eae4384",
+      "bytes": 232
+    },
+    {
+      "path": "source-data/results/paper_tables/prediction_mre.csv",
+      "sha256": "d2cba363c1ea7d2c5a1896d62427d1b2e47d43390a36f54f853c538f1051be34",
+      "bytes": 335
+    },
+    {
+      "path": "source-data/results/paper_tables/surrogate_speedup.csv",
+      "sha256": "3dfca140a7f0e15fcbf0fa856c4e6a7c3093e0ee6ca11a6a15e7dc9fa2bfe051",
+      "bytes": 291
+    },
+    {
+      "path": "source-data/results/table8_cross_platform_prediction.csv",
+      "sha256": "7f94a8bb0951b0d5f71ea8792a11aaa075f0d9f65c24c5c8cf6cc566de82cfa2",
+      "bytes": 1982
+    },
+    {
+      "path": "source-data/src/regenerate_tables.py",
+      "sha256": "0d8f0e558e985e896cff40deea78ae6195dd2967d5787bf1fe3c5478b07049a0",
+      "bytes": 15078
+    },
+    {
+      "path": "source-data/src/split_mohkg.py",
+      "sha256": "74b3ce421f91a056335bd816f3914df20fb97ff77fab1d540eeb74e918b41587",
+      "bytes": 2363
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "6d8f18519702da3e5f1afbc0b4486b52d590683717dc184495eac843a441d4f7",
+      "bytes": 8249
+    },
+    {
+      "path": "test_original_lopo_validator.py",
+      "sha256": "e557cfa117ce30657b790cec442fd5c8ee20a6f637f2a8085db12e99417be71a",
+      "bytes": 5798
+    },
+    {
+      "path": "validate_original_lopo.py",
+      "sha256": "c6304eb718e185921e1a8132cfb354107f4046b807ce3fcd541aba2c89ee90a4",
+      "bytes": 18499
+    },
+    {
+      "path": "validator-selftest-results.json",
+      "sha256": "f8a649e7ab7f980d3d29dc9342728834aa5faabab37fb5f813aa29b0dd5ba246",
+      "bytes": 372
+    },
+    {
+      "path": "verify_package.py",
+      "sha256": "4e9a5746718e5b51167f8532cf4c5355ea59e22c30533d628eef562422ba725c",
+      "bytes": 3786
+    }
+  ],
+  "numerical_outputs_equal_to_frozen_analysis": [
+    "historical-overall-recomputation.json",
+    "fitas-source-reconciliation.json",
+    "old50-prediction-reproduction.json",
+    "original-source-model-split.json",
+    "original-six-operator-source-configurations.json",
+    "original-cross-platform-derived-reproduction.json",
+    "mobilenet-source-reconciliation.json",
+    "original-five-platform-label-availability.json",
+    "original-catalog-family-balance.json",
+    "original-graph-observed-counts.json"
+  ],
+  "frozen_history_files_verified_unchanged": 43
+}

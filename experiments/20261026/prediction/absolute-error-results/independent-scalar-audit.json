@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-26T03:40:26.626532+00:00",
+  "checked_raw_prediction_rows": 2781000,
+  "independently_recomputed_panel_rows": 7200,
+  "scalar_statistics_implementation": "Python statistics.mean/variance/stdev and math.fsum; main panel used NumPy",
+  "maximum_absolute_difference": {
+    "mae_us": 1.1368683772161603e-13,
+    "ae_sample_variance_us2": 1.862645149230957e-09,
+    "ae_sample_sd_us": 4.547473508864641e-13,
+    "micro_mre_percent": 4.547473508864641e-13,
+    "are_sample_variance_percent2": 1.862645149230957e-09,
+    "wape_percent": 3.410605131648481e-13
+  },
+  "source_sha256": "935abb1b6c932fd231cacf768dcc37edddd96a368f85e6a4fb6e8b8f33a02c3b",
+  "panel_sha256": "47785b7d24e26cb3914ea344c3b4bc50778e2d2253d4c751ad9111c36db57f6b",
+  "code_sha256": "a0542e337d89660651f9c654e5dfe8cc7c31922eca6f91574ea9bbabd0566f38",
+  "bootstrap_audit_scope": "Cluster cardinality and interval ordering checked; percentile draws are specified reproducibly in frozen analysis code, not independently regenerated here."
+}

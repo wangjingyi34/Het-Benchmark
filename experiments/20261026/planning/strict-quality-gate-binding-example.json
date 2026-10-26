@@ -1,0 +1,61 @@
+{
+  "raw_path": "v2-实证增强/evidence/fullmodel_raw/npu-resnet18-b1-r4.json",
+  "pinned_source_sha256": "ddc9dfcd633e442fcd57daaf06603cc6d7821df2b58b95c7f4487249917d8135",
+  "binding": {
+    "source_sha256": "ddc9dfcd633e442fcd57daaf06603cc6d7821df2b58b95c7f4487249917d8135",
+    "identity_json": "{\"action_ids\":[\"stem\",\"main_early\",\"main_transition\",\"shortcut_transition\"],\"dataset_id\":\"imagenette2-160_original_ILSVRC2012_val_sha20perclass\",\"dataset_manifest_sha256\":\"b413d13bb20c7a2770f5f6eaab88331c30e9ee2153a32c1847232ce104dc84f3\",\"device_id\":\"npu_Ascend910B3\",\"input_shape\":[1,3,224,224],\"input_tensor_sha256\":\"ccba587109577e06507d01a5a1a216ac61c60e1a75de5b8e4fc0ece9fe58db4d\",\"model_configuration\":{\"inplace_disabled_modules\":[\"relu\",\"layer1.0.relu\",\"layer1.1.relu\",\"layer2.0.relu\",\"layer2.1.relu\",\"layer3.0.relu\",\"layer3.1.relu\",\"layer4.0.relu\",\"layer4.1.relu\"],\"reason\":\"Immutable node-profile replay inputs and consistent out-of-place baseline/candidate inference; not torchvision default allocation configuration\"},\"model_id\":\"resnet18\",\"phase\":\"eval\",\"protocol\":{\"dtype\":\"float32\",\"mps_fallback_env\":null,\"planned_eval_runs\":[4,5,6,7,8],\"quality_mode\":\"retention_ratio\",\"quality_threshold\":0.99,\"repeats\":30,\"source_sha256\":\"04c84a5283a3c5c1c286cf3b7dc6300c60d90fbad5275437a1ec2f15907cacdb\",\"tf32\":false,\"timing\":\"per-call synchronized wall clock including dispatch; full model forwards\",\"train_runs\":[1,2,3],\"warmup\":10},\"provenance\":\"physical_measurement\",\"quality_metric\":\"unrestricted ImageNet-1000 top-1 accuracy, not ten-class-restricted logits\",\"quality_partition\":\"evaluation\",\"quality_sample_count\":100,\"run_id\":\"npu_resnet18_b1_imagenet_val10class_v2_run4\",\"run_index\":4,\"schema_version\":\"het.fullmodel.run.v2\",\"task_id\":\"resnet18_b1_imagenet_val10class_v2\",\"weights_state_sha256\":\"b6e132d398763cadd5e66a4e994f5a5eb6cf7bd415eb7e8fae476475f749ffe2\"}",
+    "baseline_record_sha256": "05cc8a27b81c0e11b5c7520f3f4b70752932b1fe232dee80a141814d5308cd04",
+    "candidate_record_sha256": "5a3405b5548a6742195ed2b10a4a636d9fd3ac5f247665404c0f3842d9f4a186",
+    "sample_order_sha256": "4f748141c95db291b5c40175b8ebbe07fe66671213e625d57348ce8b8038c9c8",
+    "sample_labels_sha256": "b554e6b4db7b7913a46895030ca9b34ad8ed6e31b5c84bf75cf450b7ef51d4d0",
+    "baseline_artifact_id": "npu_resnet18_b1_imagenet_val10class_v2_run4_mask0",
+    "candidate_artifact_id": "npu_resnet18_b1_imagenet_val10class_v2_run4_mask6",
+    "candidate_mask": 6,
+    "candidate_actions": [
+      "main_early",
+      "main_transition"
+    ],
+    "hardware_supported": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "max_actions": 2,
+    "threshold": 0.99,
+    "quality_mode": "retention_ratio",
+    "quality_metric": "ImageNet1000_top1_accuracy",
+    "quality_dataset_id": "imagenette2-160_original_ILSVRC2012_val_sha20perclass"
+  },
+  "strict_decision": {
+    "accepted": true,
+    "reason": "ok",
+    "run_id": "npu_resnet18_b1_imagenet_val10class_v2_run4",
+    "requested_mask": 6,
+    "accepted_mask": 6,
+    "rollback_to_baseline": false,
+    "fallback": "none",
+    "requires_verified_baseline_reload": false,
+    "accepted_latency_ms": 4.6453896666666665,
+    "accepted_benefit_percent": 1.1696111302546108,
+    "baseline_quality": 0.62,
+    "artifact_id": "npu_resnet18_b1_imagenet_val10class_v2_run4_mask6",
+    "raw_latency_ms": 4.6453896666666665,
+    "raw_benefit_percent": 1.1696111302546108,
+    "normalized_quality": 1.0,
+    "baseline_correct": 62,
+    "candidate_correct": 62,
+    "quality_total": 100,
+    "quality_mode": "retention_ratio",
+    "quality_contract_evaluated": true,
+    "fallback_action_required": false,
+    "rollback_executed": false,
+    "decision_implementation": "strict_quality_gate.v1.1",
+    "deployment_or_rollback_execution_proved": false,
+    "threshold": 0.99,
+    "source_sha256": "ddc9dfcd633e442fcd57daaf06603cc6d7821df2b58b95c7f4487249917d8135",
+    "quality_metric": "ImageNet1000_top1_accuracy",
+    "quality_dataset_id": "imagenette2-160_original_ILSVRC2012_val_sha20perclass",
+    "candidate_quality": 0.62
+  }
+}
