@@ -1,0 +1,291 @@
+{
+  "kind": "prospective_code_and_split_freeze_for_retrospective_HELP_operator_domain_experiment",
+  "created_utc": "2026-10-26T06:12:42.773005+00:00",
+  "official_repository": "https://github.com/HayeonLee/HELP",
+  "official_commit": "45f70eb92d0d735970a33b608d1544ad3c52f285",
+  "paper": "https://proceedings.neurips.cc/paper/2021/file/e3251075554389fe91d17a794861d47b-Paper.pdf",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "configuration": {
+    "layer_size": 32,
+    "episodes": 1000,
+    "source_tasks_per_episode": 3,
+    "query_batch_size": 64,
+    "inner_updates": 2,
+    "initial_meta_sgd_lr": 0.001,
+    "pooled_inner_lr": 0.001,
+    "outer_lr": 0.0001,
+    "z_scaling": 0.01,
+    "kl_scaling": 0.1,
+    "deterministic_z": true,
+    "second_order": true,
+    "gradient_clip_norm": 10.0,
+    "training_device": "cpu",
+    "torch_threads": 1,
+    "checkpoint_selection": "fixed final episode; validation descriptive only"
+  },
+  "n_operator_records": 13905,
+  "n_unique_operator_configurations": 2781,
+  "n_source_models": 12,
+  "n_stacks": 5,
+  "crossed_model_stack_cells": 30,
+  "n_HELP_fits": 150,
+  "n_pooled_control_fits": 150,
+  "n_independent_probe_records": 15,
+  "methods": [
+    "help_zero_probe_source_embedding",
+    "help_three_probe_full",
+    "help_three_probe_no_inner_update",
+    "help_three_probe_no_z_modulation",
+    "pooled_zero_probe",
+    "pooled_three_probe_conditioned",
+    "pooled_three_probe_finetuned"
+  ],
+  "feature_contract": {
+    "family_one_hot": [
+      "Conv2D",
+      "Conv1D",
+      "MatMul",
+      "Attention",
+      "Normalization",
+      "Softmax",
+      "Embedding",
+      "Pooling",
+      "Dropout",
+      "Activation",
+      "View",
+      "Reduction",
+      "Elementwise",
+      "Composite",
+      "Other",
+      "Context"
+    ],
+    "log1p_numeric": [
+      "input_numel",
+      "output_numel",
+      "parameter_numel",
+      "input_bytes",
+      "output_bytes",
+      "rank",
+      "dim0",
+      "dim1",
+      "dim2",
+      "dim3"
+    ],
+    "log1p_structural": [
+      "in_channels",
+      "out_channels",
+      "groups",
+      "kernel_h",
+      "kernel_w",
+      "stride_h",
+      "stride_w",
+      "padding_h",
+      "padding_w",
+      "dilation_h",
+      "dilation_w",
+      "in_features",
+      "out_features",
+      "num_embeddings",
+      "embedding_dim",
+      "normalized_dim",
+      "eps",
+      "attention_heads",
+      "attention_head_dim",
+      "is_causal",
+      "dropout_p",
+      "bias_present",
+      "training_flag",
+      "input_channels_last",
+      "composite_leaf"
+    ],
+    "dimension": 51,
+    "excluded": [
+      "latency labels",
+      "device IDs",
+      "model IDs",
+      "graph positions",
+      "target normalization bounds"
+    ]
+  },
+  "source_split": "Each cell has 3 training stacks x 8 source models, a separate validation stack x 2 validation models, and a target stack x 2 test models. All shapes of each source model stay together. Target stack and both test models are excluded from training and validation. Thirty crossed cells cover every existing physical query once per seed/method.",
+  "reference_budget": "Exactly three independent matmul256/conv2d16/layernorm128 references per stack, reused as both hardware embedding and adaptation support. These are 15 existing measurement records with 20 block samples each, disjoint from 13905 evaluation queries. References are fixed across all six model folds; no additional target labels.",
+  "zero_probe_contract": "No target hardware latency is read by the zero-probe prediction path. It uses the arithmetic mean of the three source-stack minmax probe embeddings; no target adaptation. This is a blinded transfer control, not standard reference-conditioned HELP.",
+  "normalization": "Operator features and log latency are standardized using only current training stack/model rows plus current source-stack reference rows. No validation or target latency extrema are used. Three-probe hardware embedding minmax-normalizes only its three reference means, as official Eq3.",
+  "HELP_mechanism": "Verbatim official Net and InferenceNetwork classes. Learned hardware embedding, z modulation of fc3/fc4/fc5 initial weights/biases as official get_params_z, learned per-parameter Meta-SGD steps, two inner support-gradient updates, exact second-order meta-gradients on disjoint source-query losses. Deterministic posterior mean z is an official supported setting.",
+  "controls": "Paired source data, feature normalization, reference information, architecture initialization and episode query samples. Pooled MLP uses supervised query/support losses and the same 1000 outer steps; it has no z or learned inner rates. 0-probe, 3-probe conditioned and 3-probe fixed-step finetuning results all reported. HELP no-inner/no-z are test-time mechanism diagnostics, not independently retrained ablations.",
+  "adaptations_from_official": [
+    "Prediction unit is contextual isolated operator, not whole NAS architecture; official dense encoder accepts the new 51-D structural feature vector.",
+    "Reference dimension and support reduced from 10/20 to exactly 3 measured operator references.",
+    "Hidden layer 32 instead of default 100; 1000 fixed outer episodes instead of default 2000, source meta-batch 3 and query batch64.",
+    "No outlier trimming. All successful measured records retained, including large relative errors.",
+    "Global source-only log-target standardization replaces per-device normalization that would otherwise require unseen target labels.",
+    "CPU execution and deterministic z, gradient norm clip10 and fixed final checkpoint; no target-based selection."
+  ],
+  "statistical_units": "Five seeds measure optimization variability. Query/model/stack metrics retain their units; no hardware-population guarantee since some stacks share physical hosts.",
+  "metrics": [
+    "micro_MRE_percent",
+    "MAE_us",
+    "WAPE_percent",
+    "RMSE_ms",
+    "RMSPE_percent",
+    "Spearman",
+    "accuracy_within10percent"
+  ],
+  "reporting": "Every stack/model cell, all five seeds and all seven inference conditions retained. Failure recorded without dropping or replacing seeds. No result-based tuning or extra training.",
+  "cannot_claim": [
+    "Original five historical platforms LOPO reproduced",
+    "Exact published HELP NAS benchmark/table or end-to-end NAS reproduced",
+    "Universal cross-hardware or unseen-model guarantee",
+    "Independent new timing repeats or physical measurements"
+  ],
+  "new_hardware_measurements": 0,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "torch": "2.9.1",
+    "numpy": "2.3.5",
+    "platform": "macOS-26.5.1-arm64-arm-64bit"
+  },
+  "sources": [
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5cpu.json",
+      "sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "bytes": 9193620
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5cpu.metadata.json",
+      "sha256": "9b3b8c5dc99190ca0b0a2732444ce6ff75dec87939bc84e87c11dd90396f1535",
+      "bytes": 1468005
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5mps.json",
+      "sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "bytes": 9183017
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5mps.metadata.json",
+      "sha256": "8ea2686cf4870559424fac1e3568b136f9c56782d0469016f5efaf0426635014",
+      "bytes": 1468005
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/a100mig.json",
+      "sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "bytes": 9214405
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/a100mig.metadata.json",
+      "sha256": "a7e95b8be8067dcb905c603fec9404210e407c0f48cfec22a2d11b3b9a7ced3d",
+      "bytes": 1468007
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/xeon_cpu.json",
+      "sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "bytes": 9199684
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/xeon_cpu.metadata.json",
+      "sha256": "064e2a80d22a081e6ad20681b83e99b1d6ee405a4b36a9d53b47c0f01c549f1e",
+      "bytes": 1468008
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/npub3.json",
+      "sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "bytes": 9466786
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/npub3.metadata.json",
+      "sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8",
+      "bytes": 1467852
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/prediction/formal-five-stack/summary.json",
+      "sha256": "f5c2aafca1af9bd478b54df6f9550e89b7a00aabdcb2aa4636561cb1b1805992",
+      "bytes": 23936810
+    },
+    {
+      "path": "v2-实证增强/prediction/collect_profiles.py",
+      "sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "bytes": 19378
+    },
+    {
+      "path": "v8-逐问处理/prediction/run_help_operator.py",
+      "sha256": "788700e554e3f76a13cded66f5bc7556cff76cd2470ce48222383c2f6e66455a",
+      "bytes": 27107
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/LICENSE",
+      "sha256": "3c98229c673fb4c782576aa9da6013416cc906a8a38d0d6daf15807c6361f4f5",
+      "bytes": 1066
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/net.py",
+      "sha256": "62945282e3c588b651045c9ebbd3148e799df461c65b55a29b181aa27a8a7ba7",
+      "bytes": 11989
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/README.md",
+      "sha256": "bcfadcd9497050c22e88a86e5d3e4b99d40f0dcdc4cc929ba60a7932ac3769dd",
+      "bytes": 21577
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/parser.py",
+      "sha256": "f9dba9e130eccbe57150757e225cb48b9351b040941937a435184ea5f8abff10",
+      "bytes": 4941
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/utils.py",
+      "sha256": "2706c07d88df80ea259c99b28f3f894a1ceee0b293c75249b5790f8f6193e298",
+      "bytes": 8044
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/loader.py",
+      "sha256": "ab034ff5513087e4a38858825f37e82289f15f63468d63b58294643313caa3ea",
+      "bytes": 11742
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/source-receipt.json",
+      "sha256": "02502504ee9a994104ff680fba883127911147d08c07097fdca3f4b0935fd9cc",
+      "bytes": 1918
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/commit-receipt.json",
+      "sha256": "7b9c3c57175f76ec85a1dd314e54979539531af6a0bb431939237f3e2e9ea9d2",
+      "bytes": 5918
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/help.py",
+      "sha256": "a57e06dd1ede19e11607cfb67bfb2f1ed033fb54af648fffe02ebb1fc7f142ed",
+      "bytes": 21122
+    },
+    {
+      "path": "v8-逐问处理/prediction/operator-records.jsonl.gz",
+      "sha256": "1dbe4bbd732d691c2cd59d41e621aee975d892f7536122de7f26d638ad053ec5",
+      "bytes": 482425
+    },
+    {
+      "path": "v8-逐问处理/prediction/independent-probes.json",
+      "sha256": "8587df36c842ae387b66e37e2f09a4021cbe3b0e59b401ec56958487ec0c31b9",
+      "bytes": 21916
+    },
+    {
+      "path": "v8-逐问处理/prediction/probe-semantics.json",
+      "sha256": "7d8973545ae8d9352f4dfb6c9102ccf0fa5e9ac89e63659400a1074821e9dad9",
+      "bytes": 3797
+    },
+    {
+      "path": "v8-逐问处理/prediction/frozen-splits.json",
+      "sha256": "570a6df5f66133ebe3857f4bd19f606a329f839f4e64d8ac9898756bdda02698",
+      "bytes": 11782823
+    },
+    {
+      "path": "v8-逐问处理/prediction/engineering-selfcheck.json",
+      "sha256": "214c437fa8ab4c8bbdb7117ddd0f8b5873f5be34dd5259fcdd8ad63baa6c5e8f",
+      "bytes": 625
+    }
+  ]
+}

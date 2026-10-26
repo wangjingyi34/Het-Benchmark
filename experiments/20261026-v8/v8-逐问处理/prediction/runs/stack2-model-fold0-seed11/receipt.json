@@ -1,0 +1,74 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-26T06:16:24.789551+00:00",
+  "cell_id": "stack2-model-fold0",
+  "seed": 11,
+  "protocol_sha256": "9b84441114b9aa53cb68f778502aeb03abda650b215459055332a04c245ebabd",
+  "training_episodes": 1000,
+  "training_stack_count": 3,
+  "train_model_ids": [
+    "efficientnet_b0",
+    "squeezenet1_1",
+    "text_encoder_ref",
+    "text_cnn_ref",
+    "audio_conv_ref",
+    "audio_dilated_ref",
+    "causal_lm_ref",
+    "dual_encoder_ref"
+  ],
+  "validation_model_ids": [
+    "mobilenet_v2",
+    "densenet121"
+  ],
+  "test_model_ids": [
+    "resnet18",
+    "resnet50"
+  ],
+  "train_records": 4023,
+  "validation_records": 708,
+  "test_records": 732,
+  "training_reference_records": 9,
+  "target_reference_records": 3,
+  "reference_test_overlap": 0,
+  "prediction_rows": 10080,
+  "log_output_clipping_counts": {
+    "validation": {
+      "help_zero_probe_source_embedding": 0,
+      "help_three_probe_full": 0,
+      "help_three_probe_no_inner_update": 0,
+      "help_three_probe_no_z_modulation": 0,
+      "pooled_zero_probe": 0,
+      "pooled_three_probe_conditioned": 0,
+      "pooled_three_probe_finetuned": 0
+    },
+    "test": {
+      "help_zero_probe_source_embedding": 0,
+      "help_three_probe_full": 0,
+      "help_three_probe_no_inner_update": 0,
+      "help_three_probe_no_z_modulation": 0,
+      "pooled_zero_probe": 0,
+      "pooled_three_probe_conditioned": 0,
+      "pooled_three_probe_finetuned": 0
+    }
+  },
+  "checkpoint_replay_exact": true,
+  "zero_probe_target_reference_poisoning_invariant": true,
+  "seconds": 12.497704417000932,
+  "outputs": [
+    {
+      "path": "checkpoint.pt",
+      "sha256": "2f8619b82548da9bacfa31564afbc16f043563b4d42681837d183a2284badd4a",
+      "bytes": 182282
+    },
+    {
+      "path": "predictions.jsonl.gz",
+      "sha256": "fd5463d3c8b63d3abd0924a8a38e3b4a96ff0fdb458bcb102241b6da87468dda",
+      "bytes": 160377
+    },
+    {
+      "path": "training-loss.json",
+      "sha256": "13f0db24e6f3b90b3525ca9113beddf1daf533a798e949b2e27852df8dd88f41",
+      "bytes": 1097
+    }
+  ]
+}

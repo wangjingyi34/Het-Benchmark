@@ -1,0 +1,6 @@
+device_id,all_fx_nodes,excluded_context_or_non_tensor_execution,measured,timing_blocks,failed_record,unsupported_record,eligible_missing_record,derived_record,boundary
+Apple-M5-CPU-4T,2880,99,2781,55620,0,0,0,0,Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware.
+Apple-M5-MPS,2880,99,2781,55620,0,0,0,0,Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware.
+Cloud-x86-CPU-4T,2880,99,2781,55620,0,0,0,0,Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware.
+A100-SXM4-MIG-2g20GB,2880,99,2781,55620,0,0,0,0,Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware.
+Ascend-910B3-64GB,2880,99,2781,55620,0,0,0,0,Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware.

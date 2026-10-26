@@ -1,0 +1,74 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-26T06:14:29.615573+00:00",
+  "cell_id": "stack0-model-fold4",
+  "seed": 11,
+  "protocol_sha256": "9b84441114b9aa53cb68f778502aeb03abda650b215459055332a04c245ebabd",
+  "training_episodes": 1000,
+  "training_stack_count": 3,
+  "train_model_ids": [
+    "resnet18",
+    "resnet50",
+    "mobilenet_v2",
+    "densenet121",
+    "efficientnet_b0",
+    "squeezenet1_1",
+    "text_encoder_ref",
+    "text_cnn_ref"
+  ],
+  "validation_model_ids": [
+    "causal_lm_ref",
+    "dual_encoder_ref"
+  ],
+  "test_model_ids": [
+    "audio_conv_ref",
+    "audio_dilated_ref"
+  ],
+  "train_records": 7668,
+  "validation_records": 165,
+  "test_records": 60,
+  "training_reference_records": 9,
+  "target_reference_records": 3,
+  "reference_test_overlap": 0,
+  "prediction_rows": 1575,
+  "log_output_clipping_counts": {
+    "validation": {
+      "help_zero_probe_source_embedding": 0,
+      "help_three_probe_full": 0,
+      "help_three_probe_no_inner_update": 0,
+      "help_three_probe_no_z_modulation": 0,
+      "pooled_zero_probe": 0,
+      "pooled_three_probe_conditioned": 0,
+      "pooled_three_probe_finetuned": 0
+    },
+    "test": {
+      "help_zero_probe_source_embedding": 0,
+      "help_three_probe_full": 0,
+      "help_three_probe_no_inner_update": 0,
+      "help_three_probe_no_z_modulation": 0,
+      "pooled_zero_probe": 0,
+      "pooled_three_probe_conditioned": 0,
+      "pooled_three_probe_finetuned": 0
+    }
+  },
+  "checkpoint_replay_exact": true,
+  "zero_probe_target_reference_poisoning_invariant": true,
+  "seconds": 10.095258708999609,
+  "outputs": [
+    {
+      "path": "checkpoint.pt",
+      "sha256": "d606bb6adf21b9de9b1cb4138be3af0e7ce013035aa14f0cf7faa92ba975b8b1",
+      "bytes": 182282
+    },
+    {
+      "path": "predictions.jsonl.gz",
+      "sha256": "97e87e6a772e664df1d096e3d4f07bf3eb040d4143266762c5452a850094f563",
+      "bytes": 23700
+    },
+    {
+      "path": "training-loss.json",
+      "sha256": "710f76e527e4383348b30e94a1e3fb643b4861316474f7441d26439cb6490044",
+      "bytes": 1094
+    }
+  ]
+}

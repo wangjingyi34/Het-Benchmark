@@ -1,0 +1,3731 @@
+{
+  "scope": "Scientific increment; private review correspondence excluded; adverse results retained.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "e0a4fc85fb5e5fb7c00c7629d7a19371dd75b17afdc0c48a07dd20bb2f34f6cb",
+      "bytes": 80
+    },
+    {
+      "path": "README.txt",
+      "sha256": "f73b4926d62c698ca440995d7e6876dfb603578d8bc8f2746a624954be2d589c",
+      "bytes": 1558
+    },
+    {
+      "path": "v2-实证增强/prediction/collect_profiles.py",
+      "sha256": "7050d276d82bead7f6b936be35f93059be5d24b0073eb7045434174bec618f26",
+      "bytes": 19378
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/a100mig.json",
+      "sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "bytes": 9214405
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/a100mig.metadata.json",
+      "sha256": "a7e95b8be8067dcb905c603fec9404210e407c0f48cfec22a2d11b3b9a7ced3d",
+      "bytes": 1468007
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5cpu.json",
+      "sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "bytes": 9193620
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5cpu.metadata.json",
+      "sha256": "9b3b8c5dc99190ca0b0a2732444ce6ff75dec87939bc84e87c11dd90396f1535",
+      "bytes": 1468005
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5mps.json",
+      "sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "bytes": 9183017
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/m5mps.metadata.json",
+      "sha256": "8ea2686cf4870559424fac1e3568b136f9c56782d0469016f5efaf0426635014",
+      "bytes": 1468005
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/npub3.json",
+      "sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "bytes": 9466786
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/npub3.metadata.json",
+      "sha256": "d90b708c7fbec53b39b733a02eac9d60b5c38949f91ae51f83b2a240194090a8",
+      "bytes": 1467852
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/xeon_cpu.json",
+      "sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "bytes": 9199684
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/evidence/physical_profiles/xeon_cpu.metadata.json",
+      "sha256": "064e2a80d22a081e6ad20681b83e99b1d6ee405a4b36a9d53b47c0f01c549f1e",
+      "bytes": 1468008
+    },
+    {
+      "path": "v2-实证增强/public-reproduction-check/prediction/formal-five-stack/summary.json",
+      "sha256": "f5c2aafca1af9bd478b54df6f9550e89b7a00aabdcb2aa4636561cb1b1805992",
+      "bytes": 23936810
+    },
+    {
+      "path": "v8-逐问处理/cost/README.md",
+      "sha256": "ed68c031a745e475d179c54595f642188f418b5aac94c882f173d9dd477aa590",
+      "bytes": 5536
+    },
+    {
+      "path": "v8-逐问处理/cost/allocation-sensitivity.csv",
+      "sha256": "20bf61d1c4a2a24db38b2feb8e659bb8bdbaebb1ba9b455ac445d4f44110c18d",
+      "bytes": 350204
+    },
+    {
+      "path": "v8-逐问处理/cost/break-even.csv",
+      "sha256": "a97086abb10892760fb5e4e653b587c825d91137c9ceb93173907566b5871469",
+      "bytes": 14850
+    },
+    {
+      "path": "v8-逐问处理/cost/fallback-costs.csv",
+      "sha256": "2b9b27cffde8abc3471bbe539c7b1ed7604fd5424db2a0bb94eb563a37d5c960",
+      "bytes": 2599
+    },
+    {
+      "path": "v8-逐问处理/cost/input-snapshot-manifest.json",
+      "sha256": "e0022a27d5b14e0ce57f750b5a1f79c0b5c1a5b1bd89ba4d36a52466f6a4fd62",
+      "bytes": 11708
+    },
+    {
+      "path": "v8-逐问处理/cost/measured-processes.csv",
+      "sha256": "c2e85565f3366223b0e665db3a1f30eff910f69d02dd958152b7f98062ca3586",
+      "bytes": 7366
+    },
+    {
+      "path": "v8-逐问处理/cost/migration-costs.csv",
+      "sha256": "ad398fd51b2a1976ab2a23db46a5abf5323d47dc369e15ee9bdcb988fe73fb38",
+      "bytes": 14164
+    },
+    {
+      "path": "v8-逐问处理/cost/pricing-inputs.json",
+      "sha256": "099422123e9f61c88eca5eacc4da73a8bb79e9225a5f9adf17a04c182a9015f9",
+      "bytes": 7391
+    },
+    {
+      "path": "v8-逐问处理/cost/public-cost-replay.json",
+      "sha256": "126f02b545b6b69e6f169449936a40df8d316fc1a0245776006d6a04e8378fa9",
+      "bytes": 15578
+    },
+    {
+      "path": "v8-逐问处理/cost/public-export-adjustments.json",
+      "sha256": "2cd154c038dabbeb05b2f8be5356747d73c774e4060e4bc4f0df5defbd8db020",
+      "bytes": 17836
+    },
+    {
+      "path": "v8-逐问处理/cost/recompute_costs.py",
+      "sha256": "55d8a0c85e5054d6aafb78efd18859764321de1d388b7243395bfece74d2fdf5",
+      "bytes": 23065
+    },
+    {
+      "path": "v8-逐问处理/cost/results-summary.json",
+      "sha256": "832ba582be3c8765253f0237886f1086977dc7af64dc117cc19ec0b199830c2e",
+      "bytes": 21344
+    },
+    {
+      "path": "v8-逐问处理/cost/service-procurement.csv",
+      "sha256": "4f855df17b0669c59c383567c48015ccbee0a857025ad38a97f48a5cd9207258",
+      "bytes": 5611673
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/boc-fx.html",
+      "sha256": "1a8b06bf7eac60031e57ed2f171e032bbaa089993fe9e0432ad9aa080908b6cb",
+      "bytes": 29861
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/ctyun-billing.html",
+      "sha256": "8519ad1fe5e330591483e8e2c1d50005458b5dd38f12403d9e5af5bd58bb589f",
+      "bytes": 593713
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/ctyun-monthly.html",
+      "sha256": "702f7d9e5569f8d1278b32e1ac6569bd19d3d81d7efa223037ce7ab027ea4f45",
+      "bytes": 587423
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/ctyun-price.html",
+      "sha256": "39a7cabd00e7b516829fc0f40fbaf687a6614af1838f1d0c843eeb55e72127bc",
+      "bytes": 657841
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/ctyun-regions.html",
+      "sha256": "8cba805b15a5a529fac1dccc08e64e4c2cabea4f4034e56daeeea74d35ee4423",
+      "bytes": 585721
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/fallback/a100mig-reference.json",
+      "sha256": "bd7bf3d927328322d67a6c4253d557ebb20c37e4ec37b25741850f574aab636d",
+      "bytes": 13257
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/fallback/active-fallback-npu.decisions.json",
+      "sha256": "1c263741170f255027922f764da0c81f41b0d8a2723b92dd96c3f6f48095de6f",
+      "bytes": 290807
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/fallback/active-fallback-npu.json",
+      "sha256": "649ae213adda4952d78b1e176427fd1000803d75924a2c0563cb62a5c5a71184",
+      "bytes": 113397
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/fallback/m5mps-reference.json",
+      "sha256": "50272c7ddd0e62cb847e7e3366ed76eef3300752ef3dad5e3010d5d856e801ee",
+      "bytes": 13189
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/fallback/npu-active-posthoc.json",
+      "sha256": "004455c50f54c4eb05a6a243a387590d239c5dbfff0592519bdfd8eb91d73ca0",
+      "bytes": 8109
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/fetch-manifest.json",
+      "sha256": "c937ad266bd162b9d7afed0fd76c7998bfe502e8b48a609e79e567c72d9fa3e1",
+      "bytes": 7242
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/lambda-billing.html",
+      "sha256": "f1f47978d646ee0f28997a7934da206db1835f936d63736676d8397d39a3171c",
+      "bytes": 78601
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/lambda-price.html",
+      "sha256": "f994c31b5bee26badd444b9d113da6b93088e6a678b8bb4b31b6d5296cbf19d2",
+      "bytes": 98671
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/lambda-regions.html",
+      "sha256": "122a9dc02f87d8f8f0ae9bcd88231431e45e177db6f58b9ffd1036b50a6a4fd0",
+      "bytes": 95499
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b1-r4.json",
+      "sha256": "0832075f202fa0fd9ddd4e6a0809b292aa823bbd5b6215d7785494c4fb82bcbb",
+      "bytes": 207493
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b1-r5.json",
+      "sha256": "eb3a3fabff53831bcf28410ab499a38f5e5f9921e1c2d3860262e9f13ae9a9e6",
+      "bytes": 207413
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b1-r6.json",
+      "sha256": "31e2a886321fc5a0f776f1550c7e5a5fa3889a8cd5becda88e4ff77b30df33a6",
+      "bytes": 207460
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b1-r7.json",
+      "sha256": "833c873f8a6ea1bc4c411d8ce1f7086f07118be2c5d92ab9bd02139da4d8086d",
+      "bytes": 207436
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b1-r8.json",
+      "sha256": "0283c160469df4367949f87a7e52e85e80ab19a7c1d68f3b0f0f6be4c41d625f",
+      "bytes": 207467
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b4-r4.json",
+      "sha256": "02e56c9c57caaa4990c03afa655c3d6a92eea5d1f936f14e41af43949f522477",
+      "bytes": 207434
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b4-r5.json",
+      "sha256": "3c8bdd26cd8029691cfe0811e7bd095420401f23b1efc8c65c223e8fbc10ff57",
+      "bytes": 207414
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b4-r6.json",
+      "sha256": "c2d586f33fd6be1d3142a718465fa188d0a1ec4f96508f65ae435acef1d82c46",
+      "bytes": 207452
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b4-r7.json",
+      "sha256": "b35d6e6ceed7790a1715ef24954d8ffb3a65e39e36f32f0010dcea77fd76cf50",
+      "bytes": 207447
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet18-b4-r8.json",
+      "sha256": "bc9d6e4b1bcaa3911d9c0948c180ccf6f1bfe8b95a052bebafbeb9daa5003cd0",
+      "bytes": 207475
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b1-r4.json",
+      "sha256": "3449dbd147d7eb34e91782fd76263ede7a2a8d2b45664b854e7a830861d8b151",
+      "bytes": 247521
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b1-r5.json",
+      "sha256": "723809972dbaedb546825fce1bd78a7ff4c4d18d9c3eac15e2096ab377f3bc0c",
+      "bytes": 247565
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b1-r6.json",
+      "sha256": "0d6b586339af3a4998d24b360f8fa02fbb2cb78b1b70a578b994c5564c6e7b45",
+      "bytes": 247555
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b1-r7.json",
+      "sha256": "36f60ef1a1231016a50f18764f4ad22cea413bed06d04de6e634e13f06799992",
+      "bytes": 247515
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b1-r8.json",
+      "sha256": "ededf4837ecb1b4d904c73df43a22664419f317d4f84cbb9ea81848ea2f4e709",
+      "bytes": 247541
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b4-r4.json",
+      "sha256": "81f8da00c3d5448b9800fa2c7ff0c8a589675e20a0c98cc9702f1d7cc417910d",
+      "bytes": 248038
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b4-r5.json",
+      "sha256": "900ae4d81fd7ac460069f58a1563e422f173020b59f8f219423666c9698dcc2a",
+      "bytes": 248058
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b4-r6.json",
+      "sha256": "d2086c5d4499df70295265e91f79f0191530a1b5bded2e608c4d9a2b92eb276b",
+      "bytes": 248069
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b4-r7.json",
+      "sha256": "01817818b4ee22f315343ca9a5d9e42b1704552cb7e7a68a3f4aff00a283890b",
+      "bytes": 248067
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/cuda-resnet50-b4-r8.json",
+      "sha256": "ede7ff3bd3467419ecc4c3300bf32f6a8b0fb34c447ab37a19f88d66ae7ae644",
+      "bytes": 248073
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b1-r4.json",
+      "sha256": "ddc9dfcd633e442fcd57daaf06603cc6d7821df2b58b95c7f4487249917d8135",
+      "bytes": 206496
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b1-r5.json",
+      "sha256": "4758d1e18a4f99c7531851484693817bb3fa238a1cefab8a09bee8769cfeedaf",
+      "bytes": 206530
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b1-r6.json",
+      "sha256": "82e6be014af58d671ab903020cf8787e9345044b42184fc55bf62086670bf5d2",
+      "bytes": 206478
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b1-r7.json",
+      "sha256": "b6f7f253b1077fa1f4fb533f15cfca1460a0fa2f533756623067c7759445e8ad",
+      "bytes": 206459
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b1-r8.json",
+      "sha256": "b434a2edaba578e0ffc2125a924a6aed4b601eff523ed283e5ef1162303186d9",
+      "bytes": 206551
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b4-r4.json",
+      "sha256": "6c277e4e3e1b40c3c6483662504d60d69b8ec522fb07df93fe4294abc35164c9",
+      "bytes": 206514
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b4-r5.json",
+      "sha256": "2750058cbe67c0e2a8ac6ef91ce231b90880eb3e4feb0f2ce97aa3ecd60f7d91",
+      "bytes": 206563
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b4-r6.json",
+      "sha256": "d690384f710349ee9292a5f7e6e6ed82b67c823f2c53b8f65d25504c4ff9f986",
+      "bytes": 206499
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b4-r7.json",
+      "sha256": "1668af2597b3214d65e05de349017e29053af465d50444b00a7fbc78b74291cd",
+      "bytes": 206476
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet18-b4-r8.json",
+      "sha256": "e800fb671b192a5a6049d00d3180b519f237404014bc2546d787b4d0576680c1",
+      "bytes": 206494
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b1-r4.json",
+      "sha256": "72d6731f00148d82eaecbb1b16bcfc92aca0b7205055a37c1e2f6a3e07c299ae",
+      "bytes": 247074
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b1-r5.json",
+      "sha256": "601a560fe7cfaebe25cb035303b63076e5480262c6b97e3e8eb8e4563b24e2e7",
+      "bytes": 247033
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b1-r6.json",
+      "sha256": "db04d7bc82fd639bda549ed0a4f79233173b353e5ea31fd55125e01a3f8b6170",
+      "bytes": 247024
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b1-r7.json",
+      "sha256": "1f7f32a3e723abf9258ceb02467bd499afa86d810868b31aee9ff388382db307",
+      "bytes": 247125
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b1-r8.json",
+      "sha256": "086d1be39f6eb2d9229256d2c5950735d412e499d42825c7f76b7664033a5275",
+      "bytes": 247082
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b4-r4.json",
+      "sha256": "8070f2657931a8ed9be6127612cc3fd4453c8c5d3edc8a41d87ad3ae2363f93c",
+      "bytes": 247139
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b4-r5.json",
+      "sha256": "d917b28f303bd18c054d0a8895a98cb41b73c0ae2a3923fd59b0c1fb1858939b",
+      "bytes": 247134
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b4-r6.json",
+      "sha256": "9180f624de68b8aad6364190e9510b899523c0ebe3073bc662dd8e79e02255e6",
+      "bytes": 247100
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b4-r7.json",
+      "sha256": "96974dd4e25f6c9b22bd2b41d3a9c8943e0559070f31956531117eda9f04abce",
+      "bytes": 246851
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/measurements/npu-resnet50-b4-r8.json",
+      "sha256": "82c1301d1d0bc9980a815bba8e1307d2c2dba17a5a22fcefcb47aacfd9d63ff9",
+      "bytes": 247118
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/nvidia-mig.html",
+      "sha256": "aea425308e1ee199ab96b864b97c2f6629e6e4e8fdcb864eb612bd29e2384f69",
+      "bytes": 62801
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/prior/fitas_migration_results.json",
+      "sha256": "a37968bb57d78bc135950bd7042643d892e3c4d015756417192ae16ad1bf4b2a",
+      "bytes": 2157
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/prior/migration-heldout-process.csv",
+      "sha256": "fae05c877b976ed4bac298300c62e6b09ad77d4bf98305ecf8dfe70472d65297",
+      "bytes": 3885
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/runpod-billing.html",
+      "sha256": "3d3bc71a2243760f3b2608c872837da48f2adb8b3b30689a1c975a69e4c0c607",
+      "bytes": 372488
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/runpod-price.html",
+      "sha256": "8381962862a3c8c533b416a09961db758df6de0f0f6c104056763b7f5824f9e0",
+      "bytes": 323727
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/runpod-select.html",
+      "sha256": "1640ef193a81a5d1dead8a6129701c778c99d1d224689f5a861adbd9dead5c11",
+      "bytes": 391330
+    },
+    {
+      "path": "v8-逐问处理/cost/sources/runpod-tax.html",
+      "sha256": "ba172ca74309a7103e0693754dbd6d4fd09a664879d3916338fe9e39819c5fb5",
+      "bytes": 365039
+    },
+    {
+      "path": "v8-逐问处理/cost/timing-summary.csv",
+      "sha256": "d45ee6733ff032523d8891e06bc1d46dd5a52f894c909added8b54c5bf255867",
+      "bytes": 1142
+    },
+    {
+      "path": "v8-逐问处理/cost/unit-cost-primary.csv",
+      "sha256": "a124712222095aa49bb7f80b48d6ea8ed82293dce2081035d92b1f26013ff1cf",
+      "bytes": 15164
+    },
+    {
+      "path": "v8-逐问处理/cost/verification.json",
+      "sha256": "4aebf2e17f99c89893f30ba3320d46562754a69cc7d93530c2ff0c4a0ffc9a1f",
+      "bytes": 1590
+    },
+    {
+      "path": "v8-逐问处理/planning/a100mig/process-1.json",
+      "sha256": "98d8264359161e36a144767fdbc2122e2aba8b6d7b32912b3c76ab2e457a5674",
+      "bytes": 113253
+    },
+    {
+      "path": "v8-逐问处理/planning/a100mig/process-2.json",
+      "sha256": "182fb61cbd603b3d2f4dbbda78de349d4c694d4af6d0f30e456162549b285038",
+      "bytes": 113236
+    },
+    {
+      "path": "v8-逐问处理/planning/a100mig/process-3.json",
+      "sha256": "0affd6e8b4fae60e088f4a14d2e691e91f803b4a217e16da6c31268e639665c6",
+      "bytes": 113260
+    },
+    {
+      "path": "v8-逐问处理/planning/a100mig/process-4.json",
+      "sha256": "08b915a59ef660221cad3bdeccc9ece56f4b11ccdf22eeb07f663586973af922",
+      "bytes": 113260
+    },
+    {
+      "path": "v8-逐问处理/planning/a100mig/process-5.json",
+      "sha256": "08479df5189d0f57b421d9c009033e37203e7cb6efb01b1b64c54721dfa7e477",
+      "bytes": 113239
+    },
+    {
+      "path": "v8-逐问处理/planning/audit_configuration_measurements.py",
+      "sha256": "5c310fc9d3caee38e06b38e7825ad47b8e31b1b3e6dbcd7810a8f9bc736b05db",
+      "bytes": 3920
+    },
+    {
+      "path": "v8-逐问处理/planning/build_measured_ledger.py",
+      "sha256": "81d4bc0e13669821c91f5fcc7e94587538fef8836f1f82993935b40cfb2f0d42",
+      "bytes": 4476
+    },
+    {
+      "path": "v8-逐问处理/planning/configuration-audit.json",
+      "sha256": "462b58e943208ae0d8d8dcd088500d6c3e018f9b5c1262d8152d5e30183d9efe",
+      "bytes": 12488
+    },
+    {
+      "path": "v8-逐问处理/planning/configuration-measurements.csv",
+      "sha256": "97ee6ab12727d7631016c0b3286402f8901bfa01943d4ab88a4dd429bb6e0a52",
+      "bytes": 5171
+    },
+    {
+      "path": "v8-逐问处理/planning/configuration-protocol.json",
+      "sha256": "c5a17d5875a70fcd4c4a9f5a8a05323487cc3ddbbf469d68c17c2b40b33c1206",
+      "bytes": 6639
+    },
+    {
+      "path": "v8-逐问处理/planning/configuration_remeasurement.py",
+      "sha256": "0cf7f362dbd6a7a1736560f1649c7073b0c822237494d755367c4b2e74386898",
+      "bytes": 7610
+    },
+    {
+      "path": "v8-逐问处理/planning/m5mps/process-1.json",
+      "sha256": "c23697ce4a14fc9f565cccf3503a48768308bd26babbb1573d460725ee8fc81d",
+      "bytes": 109976
+    },
+    {
+      "path": "v8-逐问处理/planning/m5mps/process-2.json",
+      "sha256": "858a2bd0f044fb30554971b53a57b9d1df3a4922544da8f7c837286523ad273d",
+      "bytes": 110001
+    },
+    {
+      "path": "v8-逐问处理/planning/m5mps/process-3.json",
+      "sha256": "5036110997df82bd3e5d1b3aec3d4a7e0a08597a86ea0430a08415c18cb3b301",
+      "bytes": 109994
+    },
+    {
+      "path": "v8-逐问处理/planning/m5mps/process-4.json",
+      "sha256": "9f922d57d94f96f990f02e38b050e1da9663f3dfb8ee1675ebc560edf758da0b",
+      "bytes": 109911
+    },
+    {
+      "path": "v8-逐问处理/planning/m5mps/process-5.json",
+      "sha256": "56db9ff259d8340fae6723dc4b9b144e6771b3b509ef953899da09fc107b640b",
+      "bytes": 109907
+    },
+    {
+      "path": "v8-逐问处理/planning/measured-ledger/ledger-audit.json",
+      "sha256": "3db4d710e55ed38fbdef523e66af5d5e45577d83993dbc4c2011f83421ae1592",
+      "bytes": 3977
+    },
+    {
+      "path": "v8-逐问处理/planning/measured-ledger/node-status-ledger.csv",
+      "sha256": "e7023c23f95e2428be640f6418453c7a7e3d432861857596ca29968e91bd3ad2",
+      "bytes": 4393646
+    },
+    {
+      "path": "v8-逐问处理/planning/measured-ledger/platform-status-counts.csv",
+      "sha256": "2ed8122ddae1262796c8225d1ffee663b32a4a531f718db9aed9572acfb5eaf3",
+      "bytes": 1069
+    },
+    {
+      "path": "v8-逐问处理/prediction/README.txt",
+      "sha256": "0a0d2750eda483a2e6a2ca3c9570a41ded1f555cc8fc4f4cf4677341a71ba913",
+      "bytes": 1389
+    },
+    {
+      "path": "v8-逐问处理/prediction/analysis-freeze.json",
+      "sha256": "dca39dbdbdeb98c8c320c53098ffa6b55e075d84094ce6b871cd6f32643fca96",
+      "bytes": 1184
+    },
+    {
+      "path": "v8-逐问处理/prediction/audit_cluster_and_source_embedding.py",
+      "sha256": "b7c7ddf5357bf1efbfbbc3751a7c153b8ed0f296453a1164ee0356847c0921db",
+      "bytes": 5223
+    },
+    {
+      "path": "v8-逐问处理/prediction/audit_help_independent.py",
+      "sha256": "ec6e51eda356e3774425b1ebaf8397d45d64f7a91f1b9fd37da646cc59abf62d",
+      "bytes": 13581
+    },
+    {
+      "path": "v8-逐问处理/prediction/engineering-selfcheck.json",
+      "sha256": "214c437fa8ab4c8bbdb7117ddd0f8b5873f5be34dd5259fcdd8ad63baa6c5e8f",
+      "bytes": 625
+    },
+    {
+      "path": "v8-逐问处理/prediction/frozen-splits.json",
+      "sha256": "570a6df5f66133ebe3857f4bd19f606a329f839f4e64d8ac9898756bdda02698",
+      "bytes": 11782823
+    },
+    {
+      "path": "v8-逐问处理/prediction/independent-probes.json",
+      "sha256": "8587df36c842ae387b66e37e2f09a4021cbe3b0e59b401ec56958487ec0c31b9",
+      "bytes": 21916
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/LICENSE",
+      "sha256": "3c98229c673fb4c782576aa9da6013416cc906a8a38d0d6daf15807c6361f4f5",
+      "bytes": 1066
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/README.md",
+      "sha256": "bcfadcd9497050c22e88a86e5d3e4b99d40f0dcdc4cc929ba60a7932ac3769dd",
+      "bytes": 21577
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/commit-receipt.json",
+      "sha256": "7b9c3c57175f76ec85a1dd314e54979539531af6a0bb431939237f3e2e9ea9d2",
+      "bytes": 5918
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/help.py",
+      "sha256": "a57e06dd1ede19e11607cfb67bfb2f1ed033fb54af648fffe02ebb1fc7f142ed",
+      "bytes": 21122
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/loader.py",
+      "sha256": "ab034ff5513087e4a38858825f37e82289f15f63468d63b58294643313caa3ea",
+      "bytes": 11742
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/net.py",
+      "sha256": "62945282e3c588b651045c9ebbd3148e799df461c65b55a29b181aa27a8a7ba7",
+      "bytes": 11989
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/parser.py",
+      "sha256": "f9dba9e130eccbe57150757e225cb48b9351b040941937a435184ea5f8abff10",
+      "bytes": 4941
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/source-receipt.json",
+      "sha256": "02502504ee9a994104ff680fba883127911147d08c07097fdca3f4b0935fd9cc",
+      "bytes": 1918
+    },
+    {
+      "path": "v8-逐问处理/prediction/official-help/utils.py",
+      "sha256": "2706c07d88df80ea259c99b28f3f894a1ceee0b293c75249b5790f8f6193e298",
+      "bytes": 8044
+    },
+    {
+      "path": "v8-逐问处理/prediction/operator-records.jsonl.gz",
+      "sha256": "1dbe4bbd732d691c2cd59d41e621aee975d892f7536122de7f26d638ad053ec5",
+      "bytes": 482425
+    },
+    {
+      "path": "v8-逐问处理/prediction/post-run-method-disclosures.json",
+      "sha256": "440fbba95c787e10267920e6db530f1acc5f5c634f45398fe3a1fdf35d6fc3b4",
+      "bytes": 1334
+    },
+    {
+      "path": "v8-逐问处理/prediction/probe-semantics.json",
+      "sha256": "7d8973545ae8d9352f4dfb6c9102ccf0fa5e9ac89e63659400a1074821e9dad9",
+      "bytes": 3797
+    },
+    {
+      "path": "v8-逐问处理/prediction/protocol.json",
+      "sha256": "9b84441114b9aa53cb68f778502aeb03abda650b215459055332a04c245ebabd",
+      "bytes": 12137
+    },
+    {
+      "path": "v8-逐问处理/prediction/results/aggregate-metrics.csv",
+      "sha256": "46d6919a088a96bfca9642d99e563dd041da786547be101448944dff848aa550",
+      "bytes": 527288
+    },
+    {
+      "path": "v8-逐问处理/prediction/results/fit-ledger.csv",
+      "sha256": "0d22e08bb364cdc0d18fab189e7db2b24318c521279dd13831797ce58cf8088f",
+      "bytes": 23815
+    },
+    {
+      "path": "v8-逐问处理/prediction/results/independent-audit.json",
+      "sha256": "49d34ce2f63eb12ebadb46c678d4fd040adfd5dec1b3bfbe9581a09ec61dc040",
+      "bytes": 1914
+    },
+    {
+      "path": "v8-逐问处理/prediction/results/independent-cluster-source-audit.json",
+      "sha256": "f1a9fab87f0b46f5bc8292a370f45892d5e0acd60a62163d3e6f368d57d93bde",
+      "bytes": 2762
+    },
+    {
+      "path": "v8-逐问处理/prediction/results/paired-model-cluster-comparisons.json",
+      "sha256": "7e90f9fc351f78509aadbbe605e7056aac80c4801285bb6d53fbc420a2629aef",
+      "bytes": 2916
+    },
+    {
+      "path": "v8-逐问处理/prediction/results/per-seed-metrics.csv",
+      "sha256": "28fbf71bb9a00941d9cee77f98799f3342b7ba5437151b46b2c89eeb6203b8ea",
+      "bytes": 1142533
+    },
+    {
+      "path": "v8-逐问处理/prediction/results/summary.json",
+      "sha256": "f7aa866c602cf427a78a85076c93c54e74a806edf59f0abcb306ad74fe5f18d2",
+      "bytes": 96010
+    },
+    {
+      "path": "v8-逐问处理/prediction/results-report.json",
+      "sha256": "646529f779ed6cdcd5894ac9c2b46a51f16fc646edacefe495d89a8f7efef92c",
+      "bytes": 23437
+    },
+    {
+      "path": "v8-逐问处理/prediction/run_help_operator.py",
+      "sha256": "788700e554e3f76a13cded66f5bc7556cff76cd2470ce48222383c2f6e66455a",
+      "bytes": 27107
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed11/checkpoint.pt",
+      "sha256": "1be7fc5f0b78a7b81f99ed83bc3e80fd57d02ceda3f504dbae48ad7f0e4b3642",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed11/predictions.jsonl.gz",
+      "sha256": "f6a6146974683806b999d38113d1b8560271b3d7843494e1812938cf510265ec",
+      "bytes": 158268
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed11/receipt.json",
+      "sha256": "63924e41cb737c1836e68b22cfb9a3e5bed4705fff784fccd1f336b02e46dd2b",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed11/training-loss.json",
+      "sha256": "061a3ab43a4ff5cc52914a74e50319d3794ae88dd846152f6790df19c10c2bec",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed22/checkpoint.pt",
+      "sha256": "6cbc23fe9764e65285758335802632ac7e73716e5073f7cc9dd0f480c22caa8f",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed22/predictions.jsonl.gz",
+      "sha256": "2f84f9514c22f6e1e82ed3a2bd3930a8b493546dadd5468120f0dc25691b1eca",
+      "bytes": 158931
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed22/receipt.json",
+      "sha256": "4f7ce6e86e855e94c186b96ded64721b43284132c5af36d376ab84f4ff789d29",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed22/training-loss.json",
+      "sha256": "01e430d903a4eb8271efc0daf93aa95a0839809f53fb09800c6faf33b3c24f2e",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed33/checkpoint.pt",
+      "sha256": "9a85fbe131b0b17b2276b1a90b21699a118a5ab544fe306fc8a81cbfc8ba6adc",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed33/predictions.jsonl.gz",
+      "sha256": "f8c7ac8deae00b28dcbd429d49db33a00e91984ff89c8576632df6eee677933e",
+      "bytes": 158521
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed33/receipt.json",
+      "sha256": "1cf6d1799a35bee3b2d9421421c98bdf67d6c5c378f3b2db1d38e8438a844ba5",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed33/training-loss.json",
+      "sha256": "0f19cbe5bf8bc7c1fa33b10dfef7fbc10d4f4b6f2fdbd5a1aaf9b6c9855c685f",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed44/checkpoint.pt",
+      "sha256": "10ac279291788612d977209b40391aa779432b4371919a263c81963ee9df8c48",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed44/predictions.jsonl.gz",
+      "sha256": "c3e308c240938aa73eed2ab696642ff80f92475c806a67eef1191181f5171c30",
+      "bytes": 158882
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed44/receipt.json",
+      "sha256": "1f3d01d740d7b8558d679f76d73bcfddd1f0d6f7f3fdc161814748218565b650",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed44/training-loss.json",
+      "sha256": "47f755910dc0b9725cb806c3e0918b8852675cc23b0a4c152a2661fac769d327",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed55/checkpoint.pt",
+      "sha256": "1d0e3e598c71b5160d0dbdf06b056064cfcdecfebd5d375905ce2b73bb044035",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed55/predictions.jsonl.gz",
+      "sha256": "eee854814ab1785041d075cc59496b1a844eb170a1b6c9a2309671b83af42c4c",
+      "bytes": 158674
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed55/receipt.json",
+      "sha256": "d880f3c7dbde9ac4a4c1f38808d16807442d879bc516e3da8dbd669eba03c8ed",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold0-seed55/training-loss.json",
+      "sha256": "4737025013a7a1ef31383f9988f51ac0ef82773f9eee7916bd23f70d9b1405b7",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed11/checkpoint.pt",
+      "sha256": "77e0fab0b9605206ab36d0e979dd89e052d83d5c622d5c563d4b8ecf534adbf4",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed11/predictions.jsonl.gz",
+      "sha256": "6f596b84137ccbf528de8a20f64214d9e1bebb01b3cf60af9a0211953e8c4ebb",
+      "bytes": 195090
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed11/receipt.json",
+      "sha256": "1a1716bdd3b0b9f99d5d60416922d329485739f79d2f8f31a22748ec59e900e3",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed11/training-loss.json",
+      "sha256": "4eb889c88055b0750086a02eb574e842b61dd50b708a5efea86dc9be0f7c75ee",
+      "bytes": 1099
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed22/checkpoint.pt",
+      "sha256": "bf70cde915346035afd2024c7b32a8cc1d7eb8f160ea13406a4d314eec59f4ae",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed22/predictions.jsonl.gz",
+      "sha256": "5d12f0e9da2883f958c54c62b89cc918fcc2869e31776e315a59f6805cbac8d7",
+      "bytes": 195322
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed22/receipt.json",
+      "sha256": "fa3d4759653a5e1513f2c4e6ea0d94d5aba41b9e75e424fbe7c0f527802c4cd6",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed22/training-loss.json",
+      "sha256": "88289700fd4a0a27eb1e2456f7d2b2b25626ac6602b1df9e3407ee357a6910bf",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed33/checkpoint.pt",
+      "sha256": "6a59f4556e856ef244c2006904591bd791afaecd4e60726c6400375ff0119b6a",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed33/predictions.jsonl.gz",
+      "sha256": "4d5c467ebe0f7e7a4837487348683d5260cea27c9a0601dbd9f4f0e43dbb625f",
+      "bytes": 195458
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed33/receipt.json",
+      "sha256": "2f97309e742b2a85abc472adf886bdf0dfdf23c2495f280bda31c6f4fe3e3caf",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed33/training-loss.json",
+      "sha256": "cf9a2854be4b29651ff22fe99ae8e0a369ec4b59fa0c4352b91f0a2e0bf2229b",
+      "bytes": 1091
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed44/checkpoint.pt",
+      "sha256": "ee09ee541228eb25d20d2a7cd4fc5f18ddcd868b8969b5602f2f26b0ad703025",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed44/predictions.jsonl.gz",
+      "sha256": "871ceeee9b346a65dcfe199072a0dba84707bad318696630cd14e32d35a1c921",
+      "bytes": 195334
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed44/receipt.json",
+      "sha256": "c95b7710b6250f2d8ca1d03b9d42be2a8085f989577d3f68a5f440b2f82b7a84",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed44/training-loss.json",
+      "sha256": "2e38a66e7e3d4e302ad009cf193103ffef72523325dac72ce89e133181cc047b",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed55/checkpoint.pt",
+      "sha256": "3f6a5f1c05bf3b56337ad7492b8c45d01c6f066e30025aa4cd84149e27f0c52d",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed55/predictions.jsonl.gz",
+      "sha256": "0cf901fca385a5a6bc691e25830c19031c9ea1ad62dce6a7191de8960226f05e",
+      "bytes": 195321
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed55/receipt.json",
+      "sha256": "1e3be6d984733ba44d068f6d722d367ad8d39b7bb53ae3eacd60561db9820acc",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold1-seed55/training-loss.json",
+      "sha256": "e16d001a723531d3b7883ff93442f60db0a469987217ea5ac11f1018591c3534",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed11/checkpoint.pt",
+      "sha256": "8dc8c261238df64a36c7cc5453f1b7cc12382581746f62aa56b26133389b7976",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed11/predictions.jsonl.gz",
+      "sha256": "94f3e7c3c37bb3a79d68cef58dd045d33798652a60e9f3084c9e682431d5ad3b",
+      "bytes": 122120
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed11/receipt.json",
+      "sha256": "ad2488a84ae6f1b99c3e3366481ac93bbec10fe4e016e0807574c5b921066be5",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed11/training-loss.json",
+      "sha256": "1bfc273d7f858f27b35d458e3e34f41fb574d1d0b7307c327a2bcd9c90d60d7e",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed22/checkpoint.pt",
+      "sha256": "223e80ce4f123a8d76627c13a17ebfba511896543efbeeaa274e318ab2612422",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed22/predictions.jsonl.gz",
+      "sha256": "0d451a39991c115612449eec3226368e2f1e238c52ba9dc1a02dfeb9ec61899d",
+      "bytes": 122424
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed22/receipt.json",
+      "sha256": "e7a53c6b65def7df485ae6ed8c31aa7b73aaced9c71e237764fdf68efd5b0200",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed22/training-loss.json",
+      "sha256": "fc168f36adf5a592708f8e1da5d2690020ae64d387183491fb05e2fb542515ab",
+      "bytes": 1090
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed33/checkpoint.pt",
+      "sha256": "4cb81951ba5674903962fcdb25cc2a9a11cc6d1a5a90a8956f7b486016b822a7",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed33/predictions.jsonl.gz",
+      "sha256": "1418a1d94e1d6656b32f522e797a692347d163c03e4bac4c82888f538fffbc9e",
+      "bytes": 122231
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed33/receipt.json",
+      "sha256": "a850e9e1188deec736a6205985de7de1435c97b50cea6107fee6e3686ee9130e",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed33/training-loss.json",
+      "sha256": "5e8a58066b6ecdc74c512faf0dd1c07a399d27b4728b61cbce65a98bf67dc229",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed44/checkpoint.pt",
+      "sha256": "7d26243218db4eac354c439792f6d334f034f67b1114d77bb5ba281d9836a30c",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed44/predictions.jsonl.gz",
+      "sha256": "b73d10a8dbf507fb015e24e9de01e3cc908a1b9ba9b451b83dd5027aff4dfb7a",
+      "bytes": 122431
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed44/receipt.json",
+      "sha256": "0974b7a332869f72a4e4a0c38828ebaadf6422ef33b31bbf7edae80ff18b0c8a",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed44/training-loss.json",
+      "sha256": "20a911d435bebc4b1e24a3fe22b60baff4cfacbf08bb71341a8be5a9630a3444",
+      "bytes": 1091
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed55/checkpoint.pt",
+      "sha256": "2a1aef6ab11672fd8d809717f5d6154a4b910887b0a857d19c82b5bfefee4f25",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed55/predictions.jsonl.gz",
+      "sha256": "7304e3537e2580a757021dc30ea633620f426088e14776d39ce3db3275ee66d2",
+      "bytes": 122509
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed55/receipt.json",
+      "sha256": "b567a790e447f179c1e760cd7f27cb1bcd73efc0ce89e585d42b3eea99975e99",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold2-seed55/training-loss.json",
+      "sha256": "619fa61adac4cc44f26f96faeea962fa25cb278fc5bc598daf2f17de01b4f1cf",
+      "bytes": 1090
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed11/checkpoint.pt",
+      "sha256": "acbdf4a7cc73eefd91a2f0e09639c5541fecb3ccdf3b59c1b6ff3495e94ed7e9",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed11/predictions.jsonl.gz",
+      "sha256": "f7cd2e238b3cb2ba6a62f734c5779c71e3fe9ebbf1a7699271cb5596fc7446be",
+      "bytes": 23791
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed11/receipt.json",
+      "sha256": "856c3625c92feb9a49d596ae70256ee30a11a8b5c43c48c027559034e90fdeb1",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed11/training-loss.json",
+      "sha256": "d6263a418247e363eecc221443e0340a7f4e74e1195ca1d72c43a47817fa17cb",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed22/checkpoint.pt",
+      "sha256": "df8696eb3d35a90faeb83523caddd2de472bf510bb364cb8fff6e345a90f2428",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed22/predictions.jsonl.gz",
+      "sha256": "1589182b7a5218aede2368036e30456c158a1295099c6493b6e8dee50657e012",
+      "bytes": 23689
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed22/receipt.json",
+      "sha256": "5de8a942ec4ff492a652ecf08569643a1eb8dd10ea3eb4036ce4c6bd6a87baf0",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed22/training-loss.json",
+      "sha256": "1313878671bb09004a7c1bb22a74075487546729dccd04a63c5d2feb1831a064",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed33/checkpoint.pt",
+      "sha256": "b8fe9a109a53281cc28d2f25128bdba5c2fe6208f48d5370064eb9f9b6cc5054",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed33/predictions.jsonl.gz",
+      "sha256": "4d35ba16e8ffa185678bfe96f73bd05d1b19a33982c29e1db15c9e5388c4fb72",
+      "bytes": 23667
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed33/receipt.json",
+      "sha256": "7a7a03e25a414eff80b05a7227760dda51fe67748685ec1b1ad029282ebb4299",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed33/training-loss.json",
+      "sha256": "12a7bdad6c8d34afe54e757db76a7b71e361ab0eaf88dc2d4b7f15b67dc27c35",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed44/checkpoint.pt",
+      "sha256": "ef9ac4a501ac6879c3701bb1399d5f74df0e6a5256bada3e3e4bb6060af0f256",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed44/predictions.jsonl.gz",
+      "sha256": "a35cd85eb4c4df6f7b0a734f10ae9eb9f94a49da3d98f64d12002f2e1edc3e52",
+      "bytes": 23668
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed44/receipt.json",
+      "sha256": "9857d5d03364caedefd0266b2c1442922291ebd8d29f7d1675710df812b946f0",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed44/training-loss.json",
+      "sha256": "daedb9ec7727c017f5f68a332d0b0d547467e6a153da905315b444dcddbb5a9a",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed55/checkpoint.pt",
+      "sha256": "f77887e584dceebb618109d01cbfe1ac6a144af107b3777c017c20816204a54c",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed55/predictions.jsonl.gz",
+      "sha256": "2ce9680c9fc530642ba142996b82adba69a2db43d59ff16582786c3cd0184960",
+      "bytes": 23795
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed55/receipt.json",
+      "sha256": "93803bbd5c092cd5f54c2c4acbd61c8690e452c513b33812abf97e3812a806ba",
+      "bytes": 2063
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold3-seed55/training-loss.json",
+      "sha256": "98116548eb05ed4fb02e074fd9e349e3de199fbd17ab4c0f5c55d5a9affd0217",
+      "bytes": 1091
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed11/checkpoint.pt",
+      "sha256": "d606bb6adf21b9de9b1cb4138be3af0e7ce013035aa14f0cf7faa92ba975b8b1",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed11/predictions.jsonl.gz",
+      "sha256": "97e87e6a772e664df1d096e3d4f07bf3eb040d4143266762c5452a850094f563",
+      "bytes": 23700
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed11/receipt.json",
+      "sha256": "3595a2cf10efb37a77202484c269ad06571739fc20f97fe5504b7315bdea1b64",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed11/training-loss.json",
+      "sha256": "710f76e527e4383348b30e94a1e3fb643b4861316474f7441d26439cb6490044",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed22/checkpoint.pt",
+      "sha256": "b0e090fbc4a3d48fb66c3972078cd014286fcd8f12bf64b3c0bbe0015b0f06ed",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed22/predictions.jsonl.gz",
+      "sha256": "a7c3406203dd3f68528388b19ac55810588d39bbba0b799af4605e4142e7862d",
+      "bytes": 23649
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed22/receipt.json",
+      "sha256": "4cb41f72325d6786f6dd8c103fb0f096fff464f42f59dd809c53e3784abb27d0",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed22/training-loss.json",
+      "sha256": "22b661b2468590738cc14e96ef22902fd7ec12639fa4418ae1b65c4fb4f529a3",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed33/checkpoint.pt",
+      "sha256": "e986c09283e606c7f55fe96f09a6aa501d8f4d9505d076f2d51257716c8618ea",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed33/predictions.jsonl.gz",
+      "sha256": "c70690ae83ba04f184c7a34811a94b5070de0479975a77ac33cfb4fea1ffd1f0",
+      "bytes": 23684
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed33/receipt.json",
+      "sha256": "13c706fbe2f4a49af6f4aa2acb80fc222b97de0c524d7b9fc5dfdc640d5ea155",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed33/training-loss.json",
+      "sha256": "0858c0ebde1d642bea6aac2d03a37fad46ba2396e1a671d418101ff3abe373a9",
+      "bytes": 1091
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed44/checkpoint.pt",
+      "sha256": "86211d12f321a082b8dedb8e380b623fa0b817f4fec404eb10f7e696ceacab87",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed44/predictions.jsonl.gz",
+      "sha256": "66d7ac6dada9d4f4a01fed4539e1d6757ffe85aedd230bc04814cdaec11ed4a1",
+      "bytes": 23635
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed44/receipt.json",
+      "sha256": "49ff6151b93403459d51f31a1e5c47c6e018ce2b2080b18741131c7057bda2a2",
+      "bytes": 2063
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed44/training-loss.json",
+      "sha256": "fe025df540818c8c3e6ce02143479f6a8de939d28f524cf07ac4f27535c2ed97",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed55/checkpoint.pt",
+      "sha256": "fe85421f588d6b4c5e50fba6b90da4eb8407e30321d7a434f0d51a26535bc0c5",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed55/predictions.jsonl.gz",
+      "sha256": "5a4f76e18c590ae016a20dc4675ee3a7df09e044d451cab4e4ca80f55c0283c7",
+      "bytes": 23652
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed55/receipt.json",
+      "sha256": "ccf880d5462bd0357db6ebf71321fe3a60c0f96685400ce5c3ce42649979e1c2",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold4-seed55/training-loss.json",
+      "sha256": "a3ca9fcbe39a2019d96ed7da355bf7dd9dd2455a212f2478372ec6f0a9679529",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed11/checkpoint.pt",
+      "sha256": "08ceb4576e7c0143cba2bca9b4d57c9b8bf66bd9719d885b5957069a6571cb32",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed11/predictions.jsonl.gz",
+      "sha256": "ff3b82becf2a90e576cca5c43f03255b4b7925a68a62d200e433589ddf6caf03",
+      "bytes": 91529
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed11/receipt.json",
+      "sha256": "acca0cea7c07e0ee144b0897bc9749ed3bc1dde8d35016a6dddca2aa9841e716",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed11/training-loss.json",
+      "sha256": "56fe14d6ad3c1ff24ea7fdcfc2e3d5a3f2c26978eb1168f126c0d5ee6c647d66",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed22/checkpoint.pt",
+      "sha256": "949141bef865329c685d03faf51c148b4c2c986e520c52cb4ba15732166edf1c",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed22/predictions.jsonl.gz",
+      "sha256": "20583151c5b5031ccdbdd9764889053c6c2ddf29e95caaf6ba1540e925339d13",
+      "bytes": 91523
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed22/receipt.json",
+      "sha256": "efaccc393a240ce04242a7050ca64e7fc4bd6c5804ec1c01f10e8b5234e52ed7",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed22/training-loss.json",
+      "sha256": "88162843b025a8d2468549dd70e3f155cdf84e0bd5b9e2a5aa455f720c652347",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed33/checkpoint.pt",
+      "sha256": "6b7e15e8caac3ca3087465ddf1d072a0f6a5750b5c7bb66516acc83e6852028b",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed33/predictions.jsonl.gz",
+      "sha256": "001acd328c3cc51236e37f89c9a8de183f557815117d252e41b07ce25ff88066",
+      "bytes": 91532
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed33/receipt.json",
+      "sha256": "a94f49c96fc18edc3223ecd7e60c256a877779a6fe9325ab5917336eed0da447",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed33/training-loss.json",
+      "sha256": "b5d1f5bfd3c898757eea872d88af337403d35330549c945f203751834d6f8c42",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed44/checkpoint.pt",
+      "sha256": "c5b87106d7dedaf07b99f704d82f9c33d81c35905512306490837e77fa3d0147",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed44/predictions.jsonl.gz",
+      "sha256": "9b4f5f827697a22a961fb18115fbc4184944357351baa7ae60ecbf89657698b6",
+      "bytes": 91768
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed44/receipt.json",
+      "sha256": "958a79e35f1cfab41db239950bdb63ed9cd32d684b2fcdab5a14062eba701d22",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed44/training-loss.json",
+      "sha256": "a9a60ca6190fb02897551734cb0c63d25f9b81a8f5e0d73ab202de8f436eb96e",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed55/checkpoint.pt",
+      "sha256": "b38753c9d4bed10cb1b3e7227b5943af3ca834a0c7418814d38b79c1fdbecdae",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed55/predictions.jsonl.gz",
+      "sha256": "f38fed6f6b865da0064b076955443118204dd3562f2fa442fa03bcacb390a0e6",
+      "bytes": 91819
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed55/receipt.json",
+      "sha256": "ccb51013821e92fe74b619edad571bc20a7a8a73f480b2482bd920302e2d8054",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack0-model-fold5-seed55/training-loss.json",
+      "sha256": "e4bd76194143cfaabdec4e2035037cba57c0affa3c205a0992c03347f5bb3f26",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed11/checkpoint.pt",
+      "sha256": "3cd560665087b78c0043531f464b18d5b74536a7777256929808767d9263714f",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed11/predictions.jsonl.gz",
+      "sha256": "ae0a7450960de709df2173d3e11af804915f32f4b79985290a5ec216aad62c81",
+      "bytes": 163195
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed11/receipt.json",
+      "sha256": "d15d6c20c2533c56dd793f05b72b260a4e791aff529120e8ea1cf34ea7921a40",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed11/training-loss.json",
+      "sha256": "9add62db1d973a77089bcf5463285f1c3f4c3dec0a010488ddae959bceadddfb",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed22/checkpoint.pt",
+      "sha256": "1d9d4739da66662fe36049e36cb9f2597cb0b5e273cf05b20d005f9b8c52f7e0",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed22/predictions.jsonl.gz",
+      "sha256": "38b9aef36ced54e3235431ed550ec869af5da5b355222eae2b7d524d3c00d59c",
+      "bytes": 162890
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed22/receipt.json",
+      "sha256": "62fc284884fcc66cd451c50e2f38f647f2bc09952e853ee87e483ec66f813beb",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed22/training-loss.json",
+      "sha256": "b0e549b1a75b33984653b0fb0389209493eb8ee30342183b2b7c1311a6473612",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed33/checkpoint.pt",
+      "sha256": "8fd64e84475c47eb8809d9e24a6f8925b1b142896166295bbb026268051a0227",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed33/predictions.jsonl.gz",
+      "sha256": "f7709e547585fc8f2ec714bd3546e90be48f4413517ae35d7201df53c7f2674d",
+      "bytes": 163133
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed33/receipt.json",
+      "sha256": "63728156cf4b13f10ad791b967982d95c1972ae4f058bccb5d29a23aac523d7d",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed33/training-loss.json",
+      "sha256": "7e370f36dcfe5faf30d1c7d3c43d07020e01068969ae7267af3f7b82495a0a5d",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed44/checkpoint.pt",
+      "sha256": "3f394e0537ee988eac2c35e8ad45e1078988b50b5271fecfb290a96533a60d42",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed44/predictions.jsonl.gz",
+      "sha256": "5bdecd8019bcaae57225093bb669d7c1def56eb5586d0dbd04d2fb3218382b71",
+      "bytes": 163086
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed44/receipt.json",
+      "sha256": "339f9f35ba73ba25e17b255816630964ac5a1190a9ce403fec6a09c44976a4a7",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed44/training-loss.json",
+      "sha256": "5ebb20bb3fb63f8a05fe69c109719b5139517aba0967dfad2f9908344b20185a",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed55/checkpoint.pt",
+      "sha256": "e0e93bc12c1223237e82a59d7bcf3cf4e5fc7de6e6cab2450032cc8f932009c5",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed55/predictions.jsonl.gz",
+      "sha256": "72030fb356f04a6ffbd0c697d81ddf561158825ec8416873e84ead2bc2a7aad3",
+      "bytes": 163130
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed55/receipt.json",
+      "sha256": "34cd396b0ed03b9c83558e17dfbcd18cbf697cc9a9290922efed1c913fce2556",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold0-seed55/training-loss.json",
+      "sha256": "03807437fda96a79ceaba11b13c04e451108204c5d758ac4ed59d8d47fcdf0c2",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed11/checkpoint.pt",
+      "sha256": "d2986fce21a546fea62c9b612f0449b166cf3c764029b36a7fd8014eaeb47ccb",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed11/predictions.jsonl.gz",
+      "sha256": "c454eb9ffe2866acac772d9eec5fde4a9e861130ad84dd9ac5ef12fec21797d8",
+      "bytes": 196992
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed11/receipt.json",
+      "sha256": "7c358aebc5a895e363a7a2e7d77bb0622db33ff82daa4eafe727129f9f48fc38",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed11/training-loss.json",
+      "sha256": "7a53129f84fb706d5dcb7dafaa0ce7b5e2190f9cf484355cf48a88dec0f1b394",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed22/checkpoint.pt",
+      "sha256": "3b8f4acf1e6242611122888a008b3f815a2d74284e44a8e472af706a7f3b4a06",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed22/predictions.jsonl.gz",
+      "sha256": "fddfb007f939ea22c4a27699c1126957613b53bf9121944a301d1ae4ae205257",
+      "bytes": 197585
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed22/receipt.json",
+      "sha256": "041ca72bc7ad1dd411a8bf1cf7cf658f70e99301b070adfe85932090be59754c",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed22/training-loss.json",
+      "sha256": "e256b570e768b91ee5e27ac424478e04b79bd8eddb369a002707d36241f7340c",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed33/checkpoint.pt",
+      "sha256": "2037aea00cc204a9f116a7f22b92b721c2b53a07e16c10736e3762b9f38f6988",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed33/predictions.jsonl.gz",
+      "sha256": "a8f07ea1b94a3b14d439673e345a79b039b93df06151f88a2978e0a088159aab",
+      "bytes": 197448
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed33/receipt.json",
+      "sha256": "1ff0792fc97cd7a64d763874b8ef0c693ae6e1f84eaebc3fa30886ebf7cecb53",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed33/training-loss.json",
+      "sha256": "4e185ba6d0fa908977777647554b88aa28fdafcbf94bb745c817d87785874dc5",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed44/checkpoint.pt",
+      "sha256": "e261468b5766a864020c002cd01a2af34bf725abfe11d4a95be01c1135aef454",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed44/predictions.jsonl.gz",
+      "sha256": "1b071fa54f242319050e9ad11252970b9a03eb9bf4c348aa3d58ee8ef4f4fe19",
+      "bytes": 197822
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed44/receipt.json",
+      "sha256": "7de9072ff142ef7015bf2f4d5ad2398b2c8ce5782f51b7d7d522be8a1edadb91",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed44/training-loss.json",
+      "sha256": "7d6b16fee5397305946f87fe03614dfbc7cf93bb06d80f1ab56ebfdc1806fd27",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed55/checkpoint.pt",
+      "sha256": "5cffba1f58796c4cc75ceb05e46aab8fb1469677d0e14fdb387cf2b9b648cd74",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed55/predictions.jsonl.gz",
+      "sha256": "aad57febc13dcb2de7fdb3aaacfdfafe3c8df55daf1445c0623c76beb8ec6315",
+      "bytes": 197252
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed55/receipt.json",
+      "sha256": "6fe267bbc318760909d6cb2a9625e87292331fed809d25f7d57cdcfcd194231a",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold1-seed55/training-loss.json",
+      "sha256": "267abed035911f67b8102a3cf8a2fea4b0d4fc4710527a1e9608df0ce4cc2102",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed11/checkpoint.pt",
+      "sha256": "046c53e35f3661763afb274d38e7dc01aa97c97c5f481f6e64c9229d70c25c5d",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed11/predictions.jsonl.gz",
+      "sha256": "1ef1725ceb9146f509ae8985734104629da3ba0f465d2160c472488c07ea0b2a",
+      "bytes": 126937
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed11/receipt.json",
+      "sha256": "3a6c5ab88cb64c274d6dfb574f80f1ae142ade3fd391fb457102860babc9217d",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed11/training-loss.json",
+      "sha256": "4ee49c31d638e506f4d4c755f5aa2862e61ad0d368e3cb69b518a9b0de1bf330",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed22/checkpoint.pt",
+      "sha256": "7715b7456ad33af27f2e902fd60f8494293a73f7961abc01f57a09e455e65d40",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed22/predictions.jsonl.gz",
+      "sha256": "c308a6a4beaee4a6103a26b4eef6488f276ae51b988c70c871c7810f1928c062",
+      "bytes": 127133
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed22/receipt.json",
+      "sha256": "80502431ea145592d666fcb19406342f40bbee4716ff60440d1b892c7edde4e8",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed22/training-loss.json",
+      "sha256": "867b4efcbc419d77425d4e897a1b635b372cae5499162fdc1be37afd9baedf7c",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed33/checkpoint.pt",
+      "sha256": "4f4c7f3b01c950e5ed66f83e29d31d0266416e2a4df62e6ae800092e4ccaaeb8",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed33/predictions.jsonl.gz",
+      "sha256": "df062d8d2285b736e0a56205d17aee5ef6b149c57a0de4a16bb08743ea4bcae4",
+      "bytes": 126970
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed33/receipt.json",
+      "sha256": "3f846dc6ae97e59aab3c46b93716705408c60d8224a80f67be7b7f191f8aaf62",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed33/training-loss.json",
+      "sha256": "711859d702591bdadd23790bb68fe337141ae0307056dcdb362692efa9bbeee0",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed44/checkpoint.pt",
+      "sha256": "d585bb891c5de4ebb1b134044b59e5ef22c87e99507fd16e66608a66a6c48f1b",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed44/predictions.jsonl.gz",
+      "sha256": "7f76f62796a995a91291d24d50f89d5a57b4590402bca0455092869879e88f4e",
+      "bytes": 127121
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed44/receipt.json",
+      "sha256": "cbe2a613ab60cd778ca163bdb3b20fbbb965914b6ce13177251195cce82a8a65",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed44/training-loss.json",
+      "sha256": "b3329a41e0f4a2f41dee09c42e84b0cbe75732c7dc5b2e0e89328fce0d17eaf1",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed55/checkpoint.pt",
+      "sha256": "cee760e08c562f255c53a6a31e7493ae536a462903b2220fea03938299174a3e",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed55/predictions.jsonl.gz",
+      "sha256": "445c48d86910dbe38f26c8601271c0a8dc8dcd83b6ef3ed28dba1311e21395f1",
+      "bytes": 127052
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed55/receipt.json",
+      "sha256": "875182e097244414ede02a94330e62744f467a8be703f6f653ea880cd0cf858a",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold2-seed55/training-loss.json",
+      "sha256": "6a91754749d4a4c943c1de0ad23c26f0215855f9d4165a118a55ce9d84444c44",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed11/checkpoint.pt",
+      "sha256": "7f7b81e56d4202fde8e30bad2bd6c5e54a19cfaf9e00ba91caa53de026cc4062",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed11/predictions.jsonl.gz",
+      "sha256": "cc07be24b5f94e74917ea31d3edc328926626fb3e25f59a601caefe7683062c1",
+      "bytes": 23750
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed11/receipt.json",
+      "sha256": "ad6f5fdaabcd3298f3cc1480348724674d14929fc452dd7714dd08b3b1dbd67b",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed11/training-loss.json",
+      "sha256": "ec8b93f31684f098c461733c2c661bc5f64e3b78509403791686e9229ca7ea62",
+      "bytes": 1091
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed22/checkpoint.pt",
+      "sha256": "719733eb508bfa71990650a9a8959da2b4386495d350bf1c4c4459d0ce8c3d14",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed22/predictions.jsonl.gz",
+      "sha256": "ca98c89308338fbcd695d2af6eda0c494ca316fd8df585815257181baef33378",
+      "bytes": 23720
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed22/receipt.json",
+      "sha256": "223d5fd4de717edd9e9a93b908b4a9e23f12458331ce9200e806d189afd3f6e2",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed22/training-loss.json",
+      "sha256": "830e91953476ff4d2550e2389ef4403e249f6e276062ed3e62a3def39ee790ef",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed33/checkpoint.pt",
+      "sha256": "f06785ae1d6ab9a59a9bde8a9dcc09230539cc523eeb3cc8045d369b64cf867c",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed33/predictions.jsonl.gz",
+      "sha256": "402f9d4250316bd56253e58303f6cd421636647dd0c01da9690da5b3f3cbefb7",
+      "bytes": 23812
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed33/receipt.json",
+      "sha256": "00cb51972e0e9e5a9c7e1099fbdf5d30a8775f366811d94b82546d5f0b855677",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed33/training-loss.json",
+      "sha256": "0a988afd65b2ed2daaad0e54e227fcb7dfaa0d500288146bb844754aa629bde1",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed44/checkpoint.pt",
+      "sha256": "72f7ffc0c90b24be0eb87c3dc2ac993157d37d9ee1681a6128f6efaeaff7d226",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed44/predictions.jsonl.gz",
+      "sha256": "b04ddb8e2dd13f5f493eeb3faec8476d89cced8a6e86fc0470212e9df692d042",
+      "bytes": 23792
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed44/receipt.json",
+      "sha256": "aff0ed1fdec0b1b361f43be8c55ffea1d9bb3f94dd7720f1ea5657e665d73a3b",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed44/training-loss.json",
+      "sha256": "dcd63cbf1793a5771117162eb3223d7c6c0a1e286dd18c2d3e3296eb7aa03851",
+      "bytes": 1091
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed55/checkpoint.pt",
+      "sha256": "6a5aa2fded14d815c9b53d2ecb5394da0240a217da586e6ce7c17daca7b85f9b",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed55/predictions.jsonl.gz",
+      "sha256": "e1498e1bf5caf5ce09c52edfe6ee0d000a8c88b8c357df198e13d28b27d9e0f6",
+      "bytes": 23825
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed55/receipt.json",
+      "sha256": "e1881821a6e2bf31329b7a2823653aabdaf196fe00d6ad301d42c24fd8d30764",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold3-seed55/training-loss.json",
+      "sha256": "70b7bc711542904ab5576195edca074b6964f053fb5cc918c25f23af56be319b",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed11/checkpoint.pt",
+      "sha256": "8881cf88364680b762fe7faa348a201bd305824868cccd970a944df5217de5df",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed11/predictions.jsonl.gz",
+      "sha256": "c20f2c3e1f4902350055f0626d067baa802bf9869794ccf15f524eeed03a7f8c",
+      "bytes": 23806
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed11/receipt.json",
+      "sha256": "655e579b184dd8da0c3e4aaf2e6f2907617dcb982a34c6ae43819bbe413e3b9b",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed11/training-loss.json",
+      "sha256": "e5dc0fc0e20896aaeba704f5459a6e03c2309369126c72862455bebbc16439fa",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed22/checkpoint.pt",
+      "sha256": "a84adb65fc97651bd550605db0afe31341563ec05e062896289ba2f522b80776",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed22/predictions.jsonl.gz",
+      "sha256": "476ea4093830d4b9b4ab707be942ba9b6d08519d856fb77984a8c1ebea25572b",
+      "bytes": 23820
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed22/receipt.json",
+      "sha256": "429c06c592bb9b6059f0999a5ecacaf793980c9e4646e3153d19e7dc0e661475",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed22/training-loss.json",
+      "sha256": "fc48ce4d231fd69d6f26180dd7246ccda79867350a446beba74bf6e7258ca57d",
+      "bytes": 1088
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed33/checkpoint.pt",
+      "sha256": "0166644ed951d8e8aa35d0df12ef412dc7b70534dac1adac5c0d0b56056dd8ff",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed33/predictions.jsonl.gz",
+      "sha256": "fa4ef0dd51a0cfa5f39ff8eca17b817e3818e0cebb1a883fa3b002d0c37eed70",
+      "bytes": 23833
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed33/receipt.json",
+      "sha256": "922a15bc12c5191624b6833455ded8f662689cb29e85d6a76eb7e1e739dc5615",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed33/training-loss.json",
+      "sha256": "847e0017ee07af4cbb84d111352e4f5a1143d5f37ca57d8746422dc7e4ce9be6",
+      "bytes": 1087
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed44/checkpoint.pt",
+      "sha256": "524f30604c6d51727f985fd7c051890580dda8fb8a9dd9f72831c050716ed997",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed44/predictions.jsonl.gz",
+      "sha256": "1ba44476e4e2be0d4fb0c6a3b95a10191a88f16f9e539ea1fb8626a455a44759",
+      "bytes": 23907
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed44/receipt.json",
+      "sha256": "7d06d2a09950e351cf091afba63c2670c42a6144ab83b1a6df739d1d8da8012e",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed44/training-loss.json",
+      "sha256": "86de2f38bfa4db224c4d79497af7c78c353d58edea0f90f9b1c335665878afe3",
+      "bytes": 1091
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed55/checkpoint.pt",
+      "sha256": "f9e5abef3954a42cf65b114e25ecaf20a8cd1804657611b25fbf9dcbe6b5e22e",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed55/predictions.jsonl.gz",
+      "sha256": "ced061d6fc76855277838352f7f12290aa8b072290607263e260977cefd7d174",
+      "bytes": 23891
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed55/receipt.json",
+      "sha256": "bc46afaace5d49ddd488758e5968f16db5cdee0faff9871c416b41f542ecbd26",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold4-seed55/training-loss.json",
+      "sha256": "f9fdd3b26bbdb831b69844f756b496d09585eaa9098886df61f3e9db29d6a52e",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed11/checkpoint.pt",
+      "sha256": "b2b1868ec4d92552b70390ca22703f487b919b6384049e3e4cf2530145a41464",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed11/predictions.jsonl.gz",
+      "sha256": "fff1be21df972621cde3668d940196f9cc3ef2165475139280f311e76ba828a5",
+      "bytes": 91704
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed11/receipt.json",
+      "sha256": "f47c14af4075b1bfd0929fe8172d6c5ef70c7f6d6243b6b101366d5b33000d85",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed11/training-loss.json",
+      "sha256": "ff5d4443fe6d1d0bbfe8050dab8a1b662bab2bdda71200721014f3bc1411bffd",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed22/checkpoint.pt",
+      "sha256": "181c1f9a4e57798ce7b62a376c4cad8d6d961cdaf1cf71b5869ffb2e53136608",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed22/predictions.jsonl.gz",
+      "sha256": "7ce6b1ab29953b1a0582ae9d2d8ce6d9b9961af6ccfa4b9b2d562d729bdc0994",
+      "bytes": 91885
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed22/receipt.json",
+      "sha256": "7f8f471fdb08a516ed63f7798d86aa1252e40b499a4819fecce55e418b956e77",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed22/training-loss.json",
+      "sha256": "3c0a419d29918fdfaa9afe8225a7581416b7760c7fdbec590142a67c3b4628f7",
+      "bytes": 1090
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed33/checkpoint.pt",
+      "sha256": "788bcc1921b71fd2340055ab4f0964d5374e27202cf3652be4f17d44e5403251",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed33/predictions.jsonl.gz",
+      "sha256": "48dab2cc014e111c335114dfe4ae2be5ef65d2c832fdaa6d8821880089dfe823",
+      "bytes": 91770
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed33/receipt.json",
+      "sha256": "31b3963ea840d554749e02fa84d41e96892e5b04737fff305e7a945f60919dba",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed33/training-loss.json",
+      "sha256": "eb480ade274174dd305f05722b2f7f91055b033140063101c8a26dcffb83bb28",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed44/checkpoint.pt",
+      "sha256": "9367dcedfb88c19951a321d0dc9c5a2b32826f9c66d9f6e0af1c3c261822a587",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed44/predictions.jsonl.gz",
+      "sha256": "f51cbba9244c2ce07203fbfe8b48505d825d100831d296781573204cb9ea545d",
+      "bytes": 91813
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed44/receipt.json",
+      "sha256": "98a8cbb33c92934ac56148f7e50115ee2d7857fb89ecfa96c14746c30de48a7f",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed44/training-loss.json",
+      "sha256": "e62301a552b1fe0aa054448a494e54a161a076deda9fd8ddfa16b1ebfab53095",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed55/checkpoint.pt",
+      "sha256": "3000bf9f525625d7e8fecfc56f7874e32a057377bf826c97e82c1b82aab2f96c",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed55/predictions.jsonl.gz",
+      "sha256": "8a446ef514383ad54fa8704254d5d68524ef1cf8a7b5d812fb7f7d7c63a061c8",
+      "bytes": 91713
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed55/receipt.json",
+      "sha256": "adb38b3eed7f91336698e7d31e9b13f0d163b73b256f18fed4975702e75adfb6",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack1-model-fold5-seed55/training-loss.json",
+      "sha256": "18bdfaef71a169cf03ce7c2a6c62cd69004a2699d26bb64731cc230bdf3f6c62",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed11/checkpoint.pt",
+      "sha256": "2f8619b82548da9bacfa31564afbc16f043563b4d42681837d183a2284badd4a",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed11/predictions.jsonl.gz",
+      "sha256": "fd5463d3c8b63d3abd0924a8a38e3b4a96ff0fdb458bcb102241b6da87468dda",
+      "bytes": 160377
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed11/receipt.json",
+      "sha256": "2ebe6ba542ff11033ddea3969cdebeae5d78add4e04e73bf7106fec400850a12",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed11/training-loss.json",
+      "sha256": "13f0db24e6f3b90b3525ca9113beddf1daf533a798e949b2e27852df8dd88f41",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed22/checkpoint.pt",
+      "sha256": "6d276a4a36372e343e58f4dfb9704084f60b0a673ceb1d4d916689ea2a94ae91",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed22/predictions.jsonl.gz",
+      "sha256": "3c74dcf6c8863053303692fbb8951a56b32089aea6990f4d5420ee1bfa827261",
+      "bytes": 159735
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed22/receipt.json",
+      "sha256": "82b65878aef5f39e8ddb04aba99bc5f0a58ce5ea423fa182ec0188d16d38b24a",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed22/training-loss.json",
+      "sha256": "e12319ab68dccfc200ba8ac970d888f5a418dd96224248a1f6f301440d083318",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed33/checkpoint.pt",
+      "sha256": "e4156512c6297ab10cfee9b22d28c37c24e08495e11515aa82c374f6b648205a",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed33/predictions.jsonl.gz",
+      "sha256": "6d3645d7c6da488a5a07c2cef4561b41e4cb3830dbc418a484af4b28f7dfe3d9",
+      "bytes": 160199
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed33/receipt.json",
+      "sha256": "e8cfc18a104cfdbb6eb3810c5471c5bbb939711c692bc0cbf0f6385e96cc99d9",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed33/training-loss.json",
+      "sha256": "9d7a21d5ec96cf5ac86a940c619e099d345e293422338af95c859ee96a662065",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed44/checkpoint.pt",
+      "sha256": "cc6373868780575dcdddd32b75be50220832a0d38efaf71d6367970f5dda286f",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed44/predictions.jsonl.gz",
+      "sha256": "b60e267255724eac85de4f98acde626fed4ebceb4f01be88424af2c0f2dfa872",
+      "bytes": 160430
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed44/receipt.json",
+      "sha256": "062d9a9f61eb692573e8eb63f81a4714dfdae169c51a67c324b6606bded40745",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed44/training-loss.json",
+      "sha256": "557748532f5d949fdc4f10f6a886fdae3b9adaf6c7017e70b7c68585377f37fc",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed55/checkpoint.pt",
+      "sha256": "e86b95bc4a605e8d16445c697537f4a287fd7318ce2f33999bb4bb12985c1603",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed55/predictions.jsonl.gz",
+      "sha256": "bacaa3129eb3783dc4a6aeabf3873a01e199bf346d5d5e1593eaf8214d458ab0",
+      "bytes": 160231
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed55/receipt.json",
+      "sha256": "daffef33a82a00e58f87ea838d37b7afd24c907eb9bdaeb82d39c6f0707f8bbf",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold0-seed55/training-loss.json",
+      "sha256": "78d757dd1f678e2d667cf7b516e912bcd9d5a482b87f295caedea2912e09e609",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed11/checkpoint.pt",
+      "sha256": "28f8050783a72840da9102ddb145ceedbc34433ba2c7af30bf40ab99bf18ef85",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed11/predictions.jsonl.gz",
+      "sha256": "450695176640dc8b64583ed4be32918b9dead9b7fa999855014531045db015e1",
+      "bytes": 196356
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed11/receipt.json",
+      "sha256": "1ecb79ed63a9f72ab313c552791240c002186790decf77de60ea12a053d2310c",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed11/training-loss.json",
+      "sha256": "d1f84662bcaefa1714689c7783d4da2a4d6d4bf1abd5f32764fa23ba3f6e7d6d",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed22/checkpoint.pt",
+      "sha256": "1e19d115fa5fc78533fe64551d1d514fa303ac1452a1e9a5ecac922271355cc8",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed22/predictions.jsonl.gz",
+      "sha256": "a5006b301fa7c950e66632cb70d682e560ba506659f03643658fee442a673f6e",
+      "bytes": 196122
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed22/receipt.json",
+      "sha256": "bbc6b3a1c11f41a42958799c79702a0076d3855eb21eb94dee9705664b38cedc",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed22/training-loss.json",
+      "sha256": "b3d3e8a574269cec1efb9096522efc3578c6e53b9e56d072f4ee1bf04aa38dee",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed33/checkpoint.pt",
+      "sha256": "c60a9e2e3950cc638a8e8cb5516ccce678a0afd0bcc305c57f822f84566800de",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed33/predictions.jsonl.gz",
+      "sha256": "b3a93d3fc5f16a207b0b9bb6f34b5024d712b9b7f04b9fa2a5e5aae0a4dee0fb",
+      "bytes": 196089
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed33/receipt.json",
+      "sha256": "9715bbb0a92ccae8cfd4e1f6d12f83459c650057d83d83c903a4baa76968cfde",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed33/training-loss.json",
+      "sha256": "72fe3d29e425b99e402ff7037469860de0b964adfdd46144a0a252217205eece",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed44/checkpoint.pt",
+      "sha256": "7e49371177a2154c15b85aebdc658031c43c6f05f95d007ccd9d301c8e65d66d",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed44/predictions.jsonl.gz",
+      "sha256": "cde21873742f1bd8c86c436a263845cc451865bf3e7ad81ddb948eb9cb84657d",
+      "bytes": 196696
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed44/receipt.json",
+      "sha256": "cc72bf4f26f914020977386e3b0e2fbce46ebfa2a0d1eeb182d066487f25dc4a",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed44/training-loss.json",
+      "sha256": "79944e58d6d421dd954b38bcfeddc57f928c4e9b0b74934ae5cd5367fffbdd90",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed55/checkpoint.pt",
+      "sha256": "c5d8c57ab5deabd3824b44b32a2c793e5c555fdbc3283e5baa8ceb8ca03cc2ad",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed55/predictions.jsonl.gz",
+      "sha256": "ccc87981db407a593aeddd0d5905ddec44e02de39f5016015d1d095d4f079f2a",
+      "bytes": 195975
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed55/receipt.json",
+      "sha256": "ec653d7cad151716e5bcf4b45d07cd5e72afe12397f54d3ea10c114210019e85",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold1-seed55/training-loss.json",
+      "sha256": "fd8317813c9ab37684b10dce72fb6b17501a89a73ce9008b96bfe4263f512f05",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed11/checkpoint.pt",
+      "sha256": "41fcf180274837599c388b37f4c2edf3e54718f4a559eb6e9d41f63da96a81c4",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed11/predictions.jsonl.gz",
+      "sha256": "7dcc09a70d3e2d09435b6bb2257614dbfe5ceeab85f01250f32b047c8f1e2b1e",
+      "bytes": 126774
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed11/receipt.json",
+      "sha256": "5c23fbed13a7553f4c8c4bb2e663a4cc61cf1de879069fec9b03097b05508f96",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed11/training-loss.json",
+      "sha256": "8d949dc40b61267238cd4e287a681bfd685000946a373c0bc3f27b31c77a9c7e",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed22/checkpoint.pt",
+      "sha256": "c36aa24305c3f0d99e05aed4c7cb484a8c35cc2e0f1b0cce7ee8d757018dc30d",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed22/predictions.jsonl.gz",
+      "sha256": "2b1378bd95d2c03392994770706a8f72d88e5b41ed916daad42850d90fc938a8",
+      "bytes": 126958
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed22/receipt.json",
+      "sha256": "b8546681f1b987fbd707d07d43281825aeb89072b77ef277dec2190d0a2a146d",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed22/training-loss.json",
+      "sha256": "2e88609cea5478a35f5890a6061926fb63e810c7c0ae76314112931a59db2585",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed33/checkpoint.pt",
+      "sha256": "5d45dd4cc0741cd2a9ad85f0ceaadee57fa132f7f37b4b8a547c9124bfe13976",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed33/predictions.jsonl.gz",
+      "sha256": "35328fbb044c8936c17a4a588daecd884dd1766bcc9890954010f35ad7503a1c",
+      "bytes": 126792
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed33/receipt.json",
+      "sha256": "3ebef314bb7a3338e6cf9eeec29474cb656cdfbcbd1f881c3832cb6297ccb089",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed33/training-loss.json",
+      "sha256": "ba4a8dc8961ef65d581a9594dc6c5a7c00a2de18ad387766c319d352307d7702",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed44/checkpoint.pt",
+      "sha256": "c54d282a1d71cea36c5ba688e02436ab5b53e03aec9e8789aadc75d1b3c22c22",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed44/predictions.jsonl.gz",
+      "sha256": "41ac6789c9663d6d748268b95b86d6b95cb22de35694d01247ea964cb4fa5db7",
+      "bytes": 126751
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed44/receipt.json",
+      "sha256": "b29023fab5f305921d583a8f2a43e1824f50bd1a64f75c22e93c74b3ee4e33d1",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed44/training-loss.json",
+      "sha256": "f4dd4a72672a1bdf16e0afbcc53890e8cb6b70dfb34153984ebd8efa43b5d4d7",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed55/checkpoint.pt",
+      "sha256": "e472a2844212e5982a7dafd95c6604601f155eb5181a0382095b0e71538eae2f",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed55/predictions.jsonl.gz",
+      "sha256": "265d6ca1631a66158a5b920e90ae26b63f1d060eaa67bc221005407b02e5a7c9",
+      "bytes": 126834
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed55/receipt.json",
+      "sha256": "7cff6b6e4923b52a184f7bbdfbf5016982e3866b8a194f77a5adfc5e408e09da",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold2-seed55/training-loss.json",
+      "sha256": "4aeffd56a54933dd6f84b2174f439dc940da14dea0c4fc61385345c890e8efba",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed11/checkpoint.pt",
+      "sha256": "15be79dba766c4e7f3a27e7340c8dd87b5f88666976c8fd9dd152dca70b2ddb5",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed11/predictions.jsonl.gz",
+      "sha256": "238d28a17538338eac9f80bca972f455a00c2dd31ce7a152eda586f0bdf12813",
+      "bytes": 24135
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed11/receipt.json",
+      "sha256": "c07972b74c5206d1844535ba6076abd439c521edf59a86b7f8dbe1213dbf0fab",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed11/training-loss.json",
+      "sha256": "e5f93561e5c52c37da06017b3d8ad2b62937f1be5f1e8c62414432aa0a129154",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed22/checkpoint.pt",
+      "sha256": "b6863cafdb0ee2a830a7c5a6fc03fc000eb22512b1c9058ee77d175651134e87",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed22/predictions.jsonl.gz",
+      "sha256": "d6beba94062ff7d670de1a91afc734682fff7d5fed928a239bc20023e57110e5",
+      "bytes": 24127
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed22/receipt.json",
+      "sha256": "352a2c3e2ae63bfb7febd6f791abe413fc37ea20985ffb4a804ef519dfd52a03",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed22/training-loss.json",
+      "sha256": "69f0a516d95fdaf8fe89677e21369ae6cadfa0d3058eb9de9d60cbd2bbaa5cc3",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed33/checkpoint.pt",
+      "sha256": "4ba1e60df4425cebc6b3692102a5a4bef43c3bfa89da3b2691183f32ab32c9af",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed33/predictions.jsonl.gz",
+      "sha256": "bee6d34ae3c5130184795bedfb8de4dc1c4939a786b05effbd4895191e0c5cf4",
+      "bytes": 24138
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed33/receipt.json",
+      "sha256": "eaa75cea08d3ad34e21812684b081bc0e02dc7c885a0e42e64dbadf6fee60896",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed33/training-loss.json",
+      "sha256": "2057292e21ac746a6292fd10e745717ea9613e01fd2d5c91747d3a7d76478638",
+      "bytes": 1099
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed44/checkpoint.pt",
+      "sha256": "3c89c2b0d00a36fe5cdc8cc85417345a5351fd35aab8f35636ffb3174847cce1",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed44/predictions.jsonl.gz",
+      "sha256": "65addb0edbee0e1d87329117f1370394ca059861d35aaab4a6a9fc2e62af10ef",
+      "bytes": 24191
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed44/receipt.json",
+      "sha256": "8f52458ea5729b84bf821453c283ddaeef821dd947d8ad0ca7cad0c0120b361a",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed44/training-loss.json",
+      "sha256": "e673690a98662b765f99dcb4560abdfbac1dda6295b646d3174a3b2a80c3cb4f",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed55/checkpoint.pt",
+      "sha256": "6b70644e79336fe3fcfc902128dce780965e541113a2f886f3adb8ff9c064a7d",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed55/predictions.jsonl.gz",
+      "sha256": "595e6024cf17d88b060e595dade02cd84b362edb308342006d8781d3923639c4",
+      "bytes": 24223
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed55/receipt.json",
+      "sha256": "58efe600912450df4de1948aec6ee48a47da68f05e716a3097c35d2dedde912a",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold3-seed55/training-loss.json",
+      "sha256": "f8f6ab5fdad0b4239cca12e9c2b48865822b37ff22170324ccc412897d73ffd5",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed11/checkpoint.pt",
+      "sha256": "62ac587809a74e30d07d03e3d6f6d3a2c8e02dcd8c84cd53006c8275cba3c3b5",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed11/predictions.jsonl.gz",
+      "sha256": "7bf645792136e5c60877827f04a87295316d4ffc2decef0e4db93a5504505db3",
+      "bytes": 23553
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed11/receipt.json",
+      "sha256": "0ebc0346a8597a3c2fdd64eaf2ace111c688dc598fba4636c2732da342a0573e",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed11/training-loss.json",
+      "sha256": "f40df57ecb2628fa68c6d924c0cc4f9da88ba6967d79a55a961883fcdf5960aa",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed22/checkpoint.pt",
+      "sha256": "4c54a6ca0ed7b97926f24a5f1cec3683299ba862152df9da66e3cffe30a4c981",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed22/predictions.jsonl.gz",
+      "sha256": "4b466050157d36156a135ccb8a1796bc78152016b85c7269747ee05d93b72e4a",
+      "bytes": 23519
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed22/receipt.json",
+      "sha256": "fc40e41d001af5d55ad3952e60b23db996070e1927fbb324bb66a0ed93978b78",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed22/training-loss.json",
+      "sha256": "ad4f39cb498ed1d87936e329dc21b6ba87c3aef47028cc47627cbd0b9ea51804",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed33/checkpoint.pt",
+      "sha256": "d46c650144a221ac78bce03fd20f02afd1cbb44ec9041ced1c97c6f07e9cdcee",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed33/predictions.jsonl.gz",
+      "sha256": "88f3dba2cbd7912f20d565941f9750d2ededb288b7124a6e7bd88d5f40d5044a",
+      "bytes": 23551
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed33/receipt.json",
+      "sha256": "07a313e7209519072dcc76e982e2e9a7d4ff15dded424475b9632bdc059c56d2",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed33/training-loss.json",
+      "sha256": "102e6e0b8777ef888ad2ae2fb2742fb84c56a989dfbda6ea4517522ef6c0344e",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed44/checkpoint.pt",
+      "sha256": "29e52a28e4f30f230262352150782fbaf205dd54553c5c6ade25c10014efc75f",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed44/predictions.jsonl.gz",
+      "sha256": "bbfa3473bdd55663705e1ef2371ba084c9fe44feb050e9259ec2e4c1b2dbd4a6",
+      "bytes": 23503
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed44/receipt.json",
+      "sha256": "7c8cfa6700a9ed13a5fdca8767e364cc0e757b1fa3be8510dd6dfa1860e6707b",
+      "bytes": 2063
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed44/training-loss.json",
+      "sha256": "55f5ad70ec18d9f01f54b13cd6b6c7c2f9f6bec93c41e6d53e54ac5faf679606",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed55/checkpoint.pt",
+      "sha256": "a6e87fbdcc234fdd45beefd393d8cc8d882cb3425ef77de07ff6e49edf515d68",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed55/predictions.jsonl.gz",
+      "sha256": "d446157076e72e556175003345b1df02145e93311cc8a748d9e0f6e08eb45e8f",
+      "bytes": 23569
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed55/receipt.json",
+      "sha256": "fc730e0fe31f7d16d94c05adedaab7f6d9f7b760907765d9f2600fb5b25f9487",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold4-seed55/training-loss.json",
+      "sha256": "dc2f6eb2b7a9251af8133dd7639514d33aabd8e44d07f0f69ae99b72b0cb4e69",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed11/checkpoint.pt",
+      "sha256": "341a3f53666f2e38d3f9378e6579a1e31ccc953d83b72c73955aae7fef39bcc5",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed11/predictions.jsonl.gz",
+      "sha256": "3d5cea592b17c59e4562cd521851cd3ede2f8ebb9757e3a9bd87b1be2a2f5935",
+      "bytes": 89334
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed11/receipt.json",
+      "sha256": "6b07ff669d4347d1842525e50a7a09d87904f9008703b1c2a4569cb50a0ab655",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed11/training-loss.json",
+      "sha256": "5f45d6844fd1fe6df55227082831fd3c7362533a553dfd58065dd233c72a7711",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed22/checkpoint.pt",
+      "sha256": "6dfd26e5073fa32973eb0197fd14142dfdea1c25c2b54234d46e1341321aa11f",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed22/predictions.jsonl.gz",
+      "sha256": "0f43cf1f3db815790b522a0d22d3dfd35c1262556a2ad718a1b4f7412b5973a6",
+      "bytes": 89195
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed22/receipt.json",
+      "sha256": "40dd4cc68db1a7d986922e497d0fcdef13c9578d8e296a55417647d724383979",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed22/training-loss.json",
+      "sha256": "11308ac1c6bdbf065a369d778359fad29c4461187e3c188d18cffcf498420fff",
+      "bytes": 1099
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed33/checkpoint.pt",
+      "sha256": "704f82299d0362fda8cd85e5cf9e7d2dd1f545fa6e6f66e0e747ccb0db847659",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed33/predictions.jsonl.gz",
+      "sha256": "da37304173350e618303283a866bd34e5083add9e1d4eca29da3887ff440eab0",
+      "bytes": 89285
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed33/receipt.json",
+      "sha256": "2dd1960137d543a3874cd907725f4fb568d4ce2577313964b5e051451ed57c8f",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed33/training-loss.json",
+      "sha256": "3d9dc67e0fc77c71d7af67705e023ea192a62fb685b765c9b185eaf88cb7ef70",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed44/checkpoint.pt",
+      "sha256": "29aa3d46a37d6dfa5729b93bb8863701f88d898090cf0020e27eab6486d1b766",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed44/predictions.jsonl.gz",
+      "sha256": "498115bbafe3929c8779d70cb0229b9aec7427d0b77f46b72b7e0039216fbb41",
+      "bytes": 89183
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed44/receipt.json",
+      "sha256": "7279ebc6e85ce4395d6942db5e5a8e4064b6785d8d97b002d1da5f2c062809a1",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed44/training-loss.json",
+      "sha256": "b3d3629dba1082b0f65be06153a31a0c69251be421b70709f8fbcac10c1524b2",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed55/checkpoint.pt",
+      "sha256": "bf2267812686b6a0b4f5ec89b4219b37bbfea70be5b449c18d268004da0b947d",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed55/predictions.jsonl.gz",
+      "sha256": "4deeca7db0fc72991d17660d9293e8e94810a4fe973f9bef043432b1bb9fbfef",
+      "bytes": 89167
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed55/receipt.json",
+      "sha256": "af2e50fe1b88f592e273d09c31655f96fe04dee56967938ce3944be5923a7109",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack2-model-fold5-seed55/training-loss.json",
+      "sha256": "0a27b4bd4e3f53706a344b4655043bbbd778c8d76820bc4d92c94fd48ba09aaa",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed11/checkpoint.pt",
+      "sha256": "682f7e571c8a11ccf731bbb36bd29ae141c5f47319d36119cc05ebc031cc5321",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed11/predictions.jsonl.gz",
+      "sha256": "a7608720dd95cd6c51fd5673dd6b1d649481bd4433714cb73854a8ef2654913c",
+      "bytes": 159710
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed11/receipt.json",
+      "sha256": "0bb701672d8222e3cb9218666e6a0c37e47b6fa1529ba08f96014aafdc43ea6e",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed11/training-loss.json",
+      "sha256": "187f932234ebc26e373fff966266c9e27b45ccdd79829f0b864a984fa9f7976d",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed22/checkpoint.pt",
+      "sha256": "a68b2baff600d3c8d15f7b1e0c018a34732b525557116ffe47642383eec8f552",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed22/predictions.jsonl.gz",
+      "sha256": "998c7de533fe1e40ed9cbe82792db1019d799107fa6eb8b1884749eb9ff619ee",
+      "bytes": 159539
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed22/receipt.json",
+      "sha256": "f5cf7cd33990afaf0380c7b6dfe9c0d8baa2eb97b31d2a0c8b84180998d45bf3",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed22/training-loss.json",
+      "sha256": "009539a869eab43076c25a0583bc89bbb9d2b5f4fc8983acfe548ee200b423dd",
+      "bytes": 1099
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed33/checkpoint.pt",
+      "sha256": "7222220f327f9123aacc636a6bcb81682b66cd8fd0138223a416a0620a5b50ca",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed33/predictions.jsonl.gz",
+      "sha256": "a70341df507d44cdd741d31c4c29d25a2404590b3c54586b835266566b54b47c",
+      "bytes": 159698
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed33/receipt.json",
+      "sha256": "fa089a0359f5fa3d120d3b7062aa9b8eef89f0975b0dc2dc05caf8651c328534",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed33/training-loss.json",
+      "sha256": "558a6c503f54641b5d9fd935d81e7d6b16d0b96e8faa5c4473a3fdc3fab0c71e",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed44/checkpoint.pt",
+      "sha256": "96ffd9039befc128427859d7e84ee83be722f73ced9524e4e86e9560da9d438e",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed44/predictions.jsonl.gz",
+      "sha256": "b4e39348dd7de74142269bdcc19309c24551c956377f2d7cbb537c49ed6a3bf5",
+      "bytes": 159943
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed44/receipt.json",
+      "sha256": "ad3229ff334ec9cb4e26459935b37c77db0a05c320d9b30f49dbf2f8203e92d6",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed44/training-loss.json",
+      "sha256": "3a11e72299c81b4322048a7965330cf1a89517907343ed80c9af7368e7de18d5",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed55/checkpoint.pt",
+      "sha256": "c081fbd13d9490a2a67832bd7d856784d7294ce5f3cce4b462b62c43dc1ba338",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed55/predictions.jsonl.gz",
+      "sha256": "dc402c4da1fc615c1add2aba348b9033771a6ceac3e0b259f14df6fbb1a57f9e",
+      "bytes": 159471
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed55/receipt.json",
+      "sha256": "371d4caa0df97ef308f4bc2a5e9d71d61a7d5f79cf6205cb019a62d2ed6694da",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold0-seed55/training-loss.json",
+      "sha256": "71289d13f693bd1391137db9e5eafa35baeda485ff94297170260afb25098ca5",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed11/checkpoint.pt",
+      "sha256": "1eed00a184881aa4a8bdac96a08dbf4658f55ad3344a436bd12e0933beef4913",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed11/predictions.jsonl.gz",
+      "sha256": "bc709afe05cb431e85e542efe78dc1d30e0e362e7cf541f6f05652de656b94e2",
+      "bytes": 193680
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed11/receipt.json",
+      "sha256": "d093b189a24c90c030ca933ccc9ccab0da701c51016fde516393c5a039ea2f2c",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed11/training-loss.json",
+      "sha256": "aabe4edb558e229204ab5b8f511184b578b9cff8731439fa3f2ad48c5963be0f",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed22/checkpoint.pt",
+      "sha256": "7946173cbb26b499b204c7a296c6bcb7ca8f3a5e20e2f6433a9a94391c34d913",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed22/predictions.jsonl.gz",
+      "sha256": "1dc97a6f2f28d64064c18c50af11bcd033fe851e07d22d2b324a717501f265f4",
+      "bytes": 194227
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed22/receipt.json",
+      "sha256": "e9c3bce943d504ffd1dd10af939f916daac696895c32914eb82d711f047a0faf",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed22/training-loss.json",
+      "sha256": "8c0b4a0b274bad46e2b3f27d9fb293e1505645745de356553074bb0c5b5cfcec",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed33/checkpoint.pt",
+      "sha256": "09339d0f179b3f17b7d0b1c7c655145444e31acb93afd7b10e97ec37f359389b",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed33/predictions.jsonl.gz",
+      "sha256": "c9ff5a478e197af30fd44f1d0278f7092802869b00323f46b32f00c7d95c46ee",
+      "bytes": 193518
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed33/receipt.json",
+      "sha256": "64ce4d4d7e0525399213232094f6db587b7746a4df714f0f39e3cfdfd3d1ac7a",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed33/training-loss.json",
+      "sha256": "c146ecae0945699ed68bb9ac35ffd38387dfaf4f7421a0a72394ff835d16bbdf",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed44/checkpoint.pt",
+      "sha256": "a7e06174ed00ed29338fe808aa87db4fe193519a66214515e295726bf796480d",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed44/predictions.jsonl.gz",
+      "sha256": "c3a1c3f885c01d740649de6f5b2abbb8df9b993cbe3a7219c406f879f7ec4278",
+      "bytes": 193757
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed44/receipt.json",
+      "sha256": "a9301d06d693bb246abe6d814d6092631f17674f7baf4b0b69e8ef414408b6d6",
+      "bytes": 2068
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed44/training-loss.json",
+      "sha256": "5354e2fd591e991c4397a366caf5ffd63668f45cfaeb946635e88e6deb85dc6f",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed55/checkpoint.pt",
+      "sha256": "28eb9971a49d4a352cce410b2308287e01b701033e72fd539595df829a34a596",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed55/predictions.jsonl.gz",
+      "sha256": "a0e4c26645df70f32f6475e2c3677c6a41f6945323674e3886bed68d295e84fc",
+      "bytes": 193184
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed55/receipt.json",
+      "sha256": "32ea98573a83056defa0b06be0a417bcf1c3c47fd3cf31750febc29b26aec4c9",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold1-seed55/training-loss.json",
+      "sha256": "0a90fc43c071a4477242b72db92778221858684a32bc14eed21486b84ebfe4b7",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed11/checkpoint.pt",
+      "sha256": "c5fb06be56d52ca52527af3438cad35798363ae89efadf6acd056288ba255f7c",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed11/predictions.jsonl.gz",
+      "sha256": "d2fd5c4f6a50962dd39430ecabd08cac8743b5e2b6875b0ec47c82b659bad835",
+      "bytes": 123569
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed11/receipt.json",
+      "sha256": "3ac8b195177cee2aa6ce0422bae3da9eeedc3cae5879fe3b92f2ffc92e3b8a3f",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed11/training-loss.json",
+      "sha256": "afab1b8f29dc5f5ff73a9ae53ade3e53882582a8a505d0d156b7b6a65a13c104",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed22/checkpoint.pt",
+      "sha256": "db2aae4c849f1e8d49031880026526c6588876f20dca28bac34deb06dce1586e",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed22/predictions.jsonl.gz",
+      "sha256": "4eb3d3cb476da74601f2debbf8e7440fd3d4bd267b669c01ee436b91083b2d53",
+      "bytes": 123642
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed22/receipt.json",
+      "sha256": "fc3f6cfe2f6ce6b37248cdf230324b561779372421dc766b438b7e401426ab21",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed22/training-loss.json",
+      "sha256": "abe1def7084ccda44d069fadb4c43ea45d5ad3131d301076847eef38f5496db4",
+      "bytes": 1091
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed33/checkpoint.pt",
+      "sha256": "4de44c85e7233321d737efd92f344f32e4e8c0a69c88be1d8779915ae10fa9a8",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed33/predictions.jsonl.gz",
+      "sha256": "cf502393b5dc38595e84687a722c0dcfaf7b553140a08f245b4192d5b4975a63",
+      "bytes": 123467
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed33/receipt.json",
+      "sha256": "1cb320bbde49a69c9bebd0e552a9347074cf236a9b92cc24ba34e7f4d7b6331f",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed33/training-loss.json",
+      "sha256": "06f968bd85b781f02b595f0c22b0d16805cbc6bdcd3f89b44ebd7811bf5bd5ca",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed44/checkpoint.pt",
+      "sha256": "7d16a32d97ea21e37a34f1b176dace0b15ad3a474c487e3e38a35fdf46f021d7",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed44/predictions.jsonl.gz",
+      "sha256": "8759fe62cb91c8a612462dbf6f7b6987d39c460d3de71e5021c28320e563abbe",
+      "bytes": 123669
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed44/receipt.json",
+      "sha256": "8b4f1d4466abd16e3ecd5c9c279287f86778eec93b99ef2fa06fb79863c07628",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed44/training-loss.json",
+      "sha256": "823e44e4cb0e61b2ba72dac99e62acb3674ae71cacdca952329282a4e52c88a1",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed55/checkpoint.pt",
+      "sha256": "c5d3e5af2b8d93a248742cd759c3c077109f620a06c191f3f43f6a81eca91d42",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed55/predictions.jsonl.gz",
+      "sha256": "23d236e0dbb1aac67e0233557384da9093519ea1d593340dcbebca4285e813a7",
+      "bytes": 123696
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed55/receipt.json",
+      "sha256": "ce17793ee028cfec0badbe28b30a03ec52b48f2020b67e01c42b2f94a442241d",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold2-seed55/training-loss.json",
+      "sha256": "37b8bd9c29e316728a2b3cd4e81ae515436b945e2f2d24ac720b0488a75b7c45",
+      "bytes": 1099
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed11/checkpoint.pt",
+      "sha256": "9653179c5ac5196f3614ff25752de6b9e76baca9e38359cc8f2cb9041ad9c857",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed11/predictions.jsonl.gz",
+      "sha256": "f5c569761c3657a4121aaef4f09717be32a519d64574182bb8e8a3649bb9d528",
+      "bytes": 23762
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed11/receipt.json",
+      "sha256": "d2ad6533ebe7b363ec3085c2c619eec3e54b479a91fc5297c31a4214080a77af",
+      "bytes": 2063
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed11/training-loss.json",
+      "sha256": "5c244df82d6f2c53e2e9cff7208734428226979091c5bd559e26c001893b8ff5",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed22/checkpoint.pt",
+      "sha256": "a196142d5e154e2aa2f662cf33a22b111bd47d2a2038d67904cd6e117fba5ebc",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed22/predictions.jsonl.gz",
+      "sha256": "433e9a0ae9bea2afcbbebcce841f7005f2eb1b759571eefa2448716e41d79fbc",
+      "bytes": 23633
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed22/receipt.json",
+      "sha256": "cf22a81136663535654f48fd774bcf1cf902a11b9601db3617cdbb223e0a6ec8",
+      "bytes": 2063
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed22/training-loss.json",
+      "sha256": "bb26ba46cd927f460f24996891e02115721cb97aa6fbb797dece67850e910f4a",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed33/checkpoint.pt",
+      "sha256": "6568df3961cc9e9d2356d026fdb9e7556193afd23171a97b66375140cea317e6",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed33/predictions.jsonl.gz",
+      "sha256": "f97df9faebb3b74bbf38f78dda6119c3cb5e51424ac03a65001f4b5bb0b8e161",
+      "bytes": 23670
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed33/receipt.json",
+      "sha256": "d20d4c5ff018cad30fdc9f9fe5a8b8de1d9ce44967b5acee2b5972346b114ecb",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed33/training-loss.json",
+      "sha256": "cde3ed5617706c7797286b9f949c2af12c50180289daef312b523c8ce92acf78",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed44/checkpoint.pt",
+      "sha256": "62b2566a584e5fce3ea072e4ad9a5cd5cc0103e2ea4081cc91ef342c614a412c",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed44/predictions.jsonl.gz",
+      "sha256": "d20a920519ed8107ccf36915ac3395188a4aed11a16966a7f77447108b2d74ae",
+      "bytes": 23639
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed44/receipt.json",
+      "sha256": "54c25fb9bddde12a9329e058e10cb4f82e909af6b67a13d3c42dd4da8dc276ea",
+      "bytes": 2063
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed44/training-loss.json",
+      "sha256": "6f52ff84c2e7b5d95e36fab1b819c1652192039608fe49e1c7d9fd25c7ea9807",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed55/checkpoint.pt",
+      "sha256": "997a4127add19f14c1e0e6d87c25cd57a1ced2fb8e7bd692974572b6db5586f9",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed55/predictions.jsonl.gz",
+      "sha256": "34fd90436e8ab2f2d1c437653d9772be83f9567e5c1d09ee6022f4b60d472ec7",
+      "bytes": 23620
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed55/receipt.json",
+      "sha256": "64a8f23074bd55345efe35faa43797d6927427c2689d9406956a1911d8c40341",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold3-seed55/training-loss.json",
+      "sha256": "72fb361e0db32840726ae3880177ee1fe0e558ce52a5f8328380f29d3d1b4711",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed11/checkpoint.pt",
+      "sha256": "755aeefdf855b77b8e9375c75be3c466d36ab1d52e4dc1dcf89901a49f832976",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed11/predictions.jsonl.gz",
+      "sha256": "84d25d48a7e47b49308012007e3dd63011a6be647425beb5d9dd7c7695c7e2e6",
+      "bytes": 24083
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed11/receipt.json",
+      "sha256": "4b45df3f1c4ebd644b23527be5e78063b3e6b369c4b04cce848be154c91a8d54",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed11/training-loss.json",
+      "sha256": "2c3f19660189b0735fa7b6207c8d62b823acd3a9e276c75250d44818e8f85f65",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed22/checkpoint.pt",
+      "sha256": "bd0708ba45d5f4735dfcd524381bdead89b4313d1d045a6968d9951f6ea34ce7",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed22/predictions.jsonl.gz",
+      "sha256": "7130c560036f73bfff810312720a0a04245c01e3efa9a83e0001b461c856c95c",
+      "bytes": 23956
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed22/receipt.json",
+      "sha256": "b18519199df4639b240921d5963a6f0ef14b83a95381b194e5f1767a5ed8e159",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed22/training-loss.json",
+      "sha256": "e68beb45f7eca7bd83dff73e16eb024cade506722c30272dc24dfcf2b37d4c6e",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed33/checkpoint.pt",
+      "sha256": "d993244a3f41ae5c9518fdc2a3bae5b80b36d583efa4abde2e9c0798eae5e1a2",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed33/predictions.jsonl.gz",
+      "sha256": "fd159ffb6e9ef4585e273fa10510ccdf315c8a4d4ebc4f1a3888099cff9f37de",
+      "bytes": 23980
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed33/receipt.json",
+      "sha256": "15160771d72af4789ebc4b154cf20f4bff8eb44b218896ffb7ca904de0882959",
+      "bytes": 2062
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed33/training-loss.json",
+      "sha256": "5ce49d4de6218dc8a1b78680758ea05f42e73c73539be80e02dcbbea32d7565f",
+      "bytes": 1092
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed44/checkpoint.pt",
+      "sha256": "d46a85d502f7d75694f424e4f65ec1dbb0534962e773ccb9a732c8c56c094b9e",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed44/predictions.jsonl.gz",
+      "sha256": "d0dd04d7aa3a2324fb10ce9f222a046bc4349da28cb8a498fd2895f441fbb749",
+      "bytes": 24024
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed44/receipt.json",
+      "sha256": "93cb308e0e70226a6a17e7c08310774d6aa8db8939014206be99d1ef63373a36",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed44/training-loss.json",
+      "sha256": "44969de10c359fec683761f0f77e0d490524fd824cccecc2f4b0dcc3990ef071",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed55/checkpoint.pt",
+      "sha256": "4b824bf18ab2681bd4763263a992068e4f740ab73f61789480a34b9b0596d8d4",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed55/predictions.jsonl.gz",
+      "sha256": "fdb204fc255c01bc843ba10c7fa625014bc74ea719ac3146c6e2ca2536dbb455",
+      "bytes": 24035
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed55/receipt.json",
+      "sha256": "5e57903da304abc13197abafef5f217521f3730970d03a44006fddf6757b9fb6",
+      "bytes": 2063
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold4-seed55/training-loss.json",
+      "sha256": "c5c1d0ca5954fab551a7ba4fc94c66ecb4fbd7d2e3deb89c2dd2e4e6204ce2ad",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed11/checkpoint.pt",
+      "sha256": "01116518dadafa27a3d4f9ccf1f08f657c7376f2a72607e2ad9d2bc3bcd665ab",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed11/predictions.jsonl.gz",
+      "sha256": "7337ffa279ca3ef8fb59b74ddef2f9cd3658f2c769342e03bc9c4283f47ab04e",
+      "bytes": 90965
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed11/receipt.json",
+      "sha256": "b37aaf4f2321d87ec014a28079bdc826a448daaa40cc6473b52e1c505aca81d0",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed11/training-loss.json",
+      "sha256": "6922ed6b2bdb08e851fc2c4daa52bf8c6be1a312fba483ecb9a50f45e9af37ee",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed22/checkpoint.pt",
+      "sha256": "ddb9a80433e254c278007bccfe84b7a797295b1b584d21db40c565636390da7a",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed22/predictions.jsonl.gz",
+      "sha256": "221111ef79b4f4d868db77586792b9e5d85965254ec70b334a5af2211e06a2f0",
+      "bytes": 91008
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed22/receipt.json",
+      "sha256": "90024a1d20a3c7b9d7504cc63bc1d3aeb7dfd888b35c2ef867e193355af63048",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed22/training-loss.json",
+      "sha256": "0f3ff68a77f1b90b977545b149e8a0cbf303ccdf3176cbde4348c18b134eafe9",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed33/checkpoint.pt",
+      "sha256": "eeeaf91147d3c3b5f0c591958f9ce87f45cb792ab09622458671dc17abf00c98",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed33/predictions.jsonl.gz",
+      "sha256": "8863072315881ac850898f90d0e4d77c0e09126d812adcd9c372903b91fff10c",
+      "bytes": 91007
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed33/receipt.json",
+      "sha256": "35edff15f201ce78f7f4663a158dcab6f188eddb0132029622450b014d346bd9",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed33/training-loss.json",
+      "sha256": "13324b1a6ebc03896532aed77ccaaf6808757974d58ed8cecc9f91616f322101",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed44/checkpoint.pt",
+      "sha256": "1368ed7594bf4e745706fb247c8b854249936f481f20d2cc6854138199e00e93",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed44/predictions.jsonl.gz",
+      "sha256": "479365965bb40816c5d0339bec7f9f0f7ad3dd25c072c0e6223cbb65176c32e7",
+      "bytes": 90988
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed44/receipt.json",
+      "sha256": "4ef4f3110a8673286c2f875494622503125a8ef045a35deb143c47408284702b",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed44/training-loss.json",
+      "sha256": "7274c9e44ff57ae635e6da3c09884dbd95d382d5ab75338eaee1adf75709df91",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed55/checkpoint.pt",
+      "sha256": "1ad328dfb07fdfa3e223f6f7d2382491cc2635abd377807c4bc8de8bc221b784",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed55/predictions.jsonl.gz",
+      "sha256": "ecd5e6fa723d1db4224e816a3ae5ac115d7842e27f6234ef46dc1a6eed3b9c7a",
+      "bytes": 90933
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed55/receipt.json",
+      "sha256": "77da0347e790966927234471ad01635284fc9e5df64c92c28d41b55fb87262c9",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack3-model-fold5-seed55/training-loss.json",
+      "sha256": "43c7045afe0a09e68d7b274685d76a51e4592bb6cd4ca6377885e5a301ff296d",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed11/checkpoint.pt",
+      "sha256": "ae81fcd3512ba0a7fb10737ff2ede2e2daa39a4d7b29680b7ecf32641d8dcc77",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed11/predictions.jsonl.gz",
+      "sha256": "3b0a6426174b5cf4f9002b3bde0003caf828b4e74e9d9907550e1a27639ea4e8",
+      "bytes": 159570
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed11/receipt.json",
+      "sha256": "bcee308e6ec7e158ba80ffd599c75f5212170b51ff11f121988556fbefed2ce6",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed11/training-loss.json",
+      "sha256": "6e1d9c0e51f94f0b8c87524f77c2f3fde999bc090362cdd465c8a84ddd919bcf",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed22/checkpoint.pt",
+      "sha256": "e865addf05cba0381defd3007690c4b7bbb7703a2f709fcb0f5dbc682f11ea9b",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed22/predictions.jsonl.gz",
+      "sha256": "fd83635aef448e6228f0025460b1daba6a06b694f20a77112ee3cf95338d8a23",
+      "bytes": 159753
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed22/receipt.json",
+      "sha256": "49ed34190e69298b684ffba964578f134c6e61b70b196be17a4450043399111f",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed22/training-loss.json",
+      "sha256": "e62286c10ec31392ee3637dcdf9bca85c14d64a52b87f27ca8a50becee1ec4a8",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed33/checkpoint.pt",
+      "sha256": "a457c9a504a3baf727cf878305875c3ceef2568f7d16a033a09bb7f43d5d8018",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed33/predictions.jsonl.gz",
+      "sha256": "82344c825c720f1e4bf7b6292c377d8854f8a1b1dd5c18cafc3a9dbf5fd05f8f",
+      "bytes": 159712
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed33/receipt.json",
+      "sha256": "8825f7714ac7f0b720aafc00dded19efe1364e8b32bf4296c2c553e79429a548",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed33/training-loss.json",
+      "sha256": "dfbf985a4a29dc61281b5dcfdf98f32d1c59d7dba4735738e29045e7d663eb04",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed44/checkpoint.pt",
+      "sha256": "c575bf282ccb70ec44bfd2252f384ce79e041f153c7085b088c21e95784a8a22",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed44/predictions.jsonl.gz",
+      "sha256": "f557910e0e0449061fb6287a70b8144e3e0d3b5ca38c6191f82126b2e857797f",
+      "bytes": 159507
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed44/receipt.json",
+      "sha256": "6a3b9c1de0a40ade4dc9bf6d1b4e938d6e2eb9fa6396a071e2913e1b2b0256bc",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed44/training-loss.json",
+      "sha256": "6855dbb80b66336da60ecceb0be13e0e9a65eff6dc528e201a44253d72753446",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed55/checkpoint.pt",
+      "sha256": "99d8c4b23386867cfe7f9a6471bf47a724918eccd0f80326f69f7c9e1bd8c17e",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed55/predictions.jsonl.gz",
+      "sha256": "4cdf0c2dc2082d6ec26a47989cb24c318b73158f9ad3630feb091b279a77d90e",
+      "bytes": 159601
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed55/receipt.json",
+      "sha256": "aae56023a9fedce37d06a3fd1f5d0c18d0cbd0d16a3245c82dca1f758f58139a",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold0-seed55/training-loss.json",
+      "sha256": "26c81814333dfbc8bd3698b9920dc5ae46b3c22cde971f54a9c0d2e44c99604e",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed11/checkpoint.pt",
+      "sha256": "63ad50ff10c86bef535466a45d4733ff05daa6ea1978c4f8c99a8372d70fb186",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed11/predictions.jsonl.gz",
+      "sha256": "795bf2de1e84af16348b896da4028ea150c65e236344f02337df189b76a1dc74",
+      "bytes": 194495
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed11/receipt.json",
+      "sha256": "b9863441291f1fa93819267cceeb3640820e448b46c195ffbdb512eebef29959",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed11/training-loss.json",
+      "sha256": "f96cbd2ba120ced5aec541d3cac71a7c441aedda90bd9b9429b916281db98f53",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed22/checkpoint.pt",
+      "sha256": "b728a7421dc3943e023f77b95270eb04d7682b8d0fd088a864055280cafc6fb1",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed22/predictions.jsonl.gz",
+      "sha256": "0886ee82e4e2a077b7ea3d4e290e11864ca82b12346536abe4deb6f4c1ef34f2",
+      "bytes": 194371
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed22/receipt.json",
+      "sha256": "259fa0b41bed8e5af71b8312eb51c28bc7b6c1404482fd193d169af7e4327f6f",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed22/training-loss.json",
+      "sha256": "9054fd7552f630035e0e8332972fd02e2c2d4ffcf3f341dd93f754daddcd7401",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed33/checkpoint.pt",
+      "sha256": "1a8e58e1a0dc5492e267614c5de37fc7940836b74125a3007730635aa8e928ff",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed33/predictions.jsonl.gz",
+      "sha256": "829852b6cee6ad28d84e4745ebec72cf9abaede4ce90155541a8f46a2f81c05d",
+      "bytes": 194746
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed33/receipt.json",
+      "sha256": "05a4a09a6ae5f2b8d585ad61f7c0cbce5a9e4818e861ff28c146f3fff9327b18",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed33/training-loss.json",
+      "sha256": "6caf46c04024be978b0ac1dd51bb6c527f496c847c27c7152406ee1983cf343d",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed44/checkpoint.pt",
+      "sha256": "014987da62ef99111b43d0ab97452c716b45d23171a98beb7b23b36d2fb89a8c",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed44/predictions.jsonl.gz",
+      "sha256": "98203a780ae4e75b57e54606fe78efdc016dc09792c24ab2b381cbc4b0a8d311",
+      "bytes": 194550
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed44/receipt.json",
+      "sha256": "6f164005c826460df120fec82f3a8ca423cbc0113ad9b043ff7cdf3d26b6c3cb",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed44/training-loss.json",
+      "sha256": "8a8c594b0fbb18ba304dc226ca13d8427e8469cbfe3e7050795ce0b205662d32",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed55/checkpoint.pt",
+      "sha256": "8a095cab3423847edceb5a1f633591d6a5202b67f7e6328f81d8c8bb73a92ec2",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed55/predictions.jsonl.gz",
+      "sha256": "5f6475e1adbdbde3682786e35118246b57a2b76d54e32cd54521c9cd73fcd603",
+      "bytes": 194159
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed55/receipt.json",
+      "sha256": "582ae16abc775b59bfbf3cf561ef3e866258ce22ab2d6099f08395e55edb3aa4",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold1-seed55/training-loss.json",
+      "sha256": "f9bbde1e5fc2a60b5b8563791a7cc48f0e219a8cead82d90ef876c79366fc576",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed11/checkpoint.pt",
+      "sha256": "27b088989c007beef573246dff655afd1d71026b511c394df3c61b32e7c05eda",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed11/predictions.jsonl.gz",
+      "sha256": "846baf8f915f6a757cf48ea006bac5203545e9c1d0ad55c92886c55bf97970c0",
+      "bytes": 125422
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed11/receipt.json",
+      "sha256": "91854a7c9528bae937fc1f180b3b0fd2c0a1a4b421a3d079d6563e245de79597",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed11/training-loss.json",
+      "sha256": "2de23631d15ca39be06c0508dbcba856c9c3580291fb7c9b9f8ab12af25ad9f5",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed22/checkpoint.pt",
+      "sha256": "b1cd60d0120dcb49502fbba4b8beff01426fe934980b44225d9c87f72d62e22a",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed22/predictions.jsonl.gz",
+      "sha256": "c476dcf0df2e828bda378e8b73c3a57a83cc7e42bb8ee3a79c9c00c453520945",
+      "bytes": 125409
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed22/receipt.json",
+      "sha256": "744734b3aca4ab15b6b6b7f3a7cd3a0f554f1fdb19f3376586a62d0c2202c5cf",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed22/training-loss.json",
+      "sha256": "c1cbb37de02dc312f9decac9674ab33decd5d6f2828c94b138b33e341b69da02",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed33/checkpoint.pt",
+      "sha256": "4521444fc465fc5477b8cc7e4a289b97c45b6beaf3348d085e266d29061a1494",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed33/predictions.jsonl.gz",
+      "sha256": "0d6d450a9e8427c0b301bb107e1bffee33a07fe8d82832ababdfdd932ffc1cdf",
+      "bytes": 125333
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed33/receipt.json",
+      "sha256": "ad9763180af520f1d669827ccf8fc5d23965ba7f79a8d4497c4cb030dafab361",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed33/training-loss.json",
+      "sha256": "4d4e94d9423ddcf6056f3e942e103ca062afee6a3c27504bb1747fabd91fa645",
+      "bytes": 1090
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed44/checkpoint.pt",
+      "sha256": "87b21fe84986baa4885eeb1cbf70f62259a68b4faed42e798133a6326f55cd4e",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed44/predictions.jsonl.gz",
+      "sha256": "611f97645a7ed80720f94ec7696a0d00d8c2cd0b60eef07f71beabcfe83a85a8",
+      "bytes": 125426
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed44/receipt.json",
+      "sha256": "8a97a438346c4b57df0f1a3ab4eb89c4c3d8f6305251a896aa38dde0d47c2a61",
+      "bytes": 2067
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed44/training-loss.json",
+      "sha256": "a357073bccb7c9c6f29963df618bc46f95f6af9c0edae7cb64d281328e7bc9f7",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed55/checkpoint.pt",
+      "sha256": "b8eda1e5663439ef3538de0b07db387d7e15e7a639192b1335c23200144e22d8",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed55/predictions.jsonl.gz",
+      "sha256": "f0be8e31c073b8e5ce26b89c405ae6235cdba2cce735c491352c54cbc0f776d4",
+      "bytes": 125345
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed55/receipt.json",
+      "sha256": "904455e2352be853c7d93c5ff7f78966fdde6bfa344a6d9932082a2ec10b4b8a",
+      "bytes": 2066
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold2-seed55/training-loss.json",
+      "sha256": "b5d4df16bd3b5230bdac6fc9bdc6e4c43cc255024abd2b60a48c03b33c304e4c",
+      "bytes": 1089
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed11/checkpoint.pt",
+      "sha256": "eb8637f52482fa37b811ff3c9f6f5ec2b08eba137de627c91be8acf2f51fdd5a",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed11/predictions.jsonl.gz",
+      "sha256": "7ddc819195d5aff9ecfbd2cfbdfbcbb159cd587abab78c141cfc2988f88ec0d9",
+      "bytes": 24001
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed11/receipt.json",
+      "sha256": "2364d2e6f9e019d0b4d75c9369a56a3b151f55587a4de7df898e1269deedcfca",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed11/training-loss.json",
+      "sha256": "c2ee94bacf912821862e5a14294dda3873d3c5493f5aa780e50c27518f1ae273",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed22/checkpoint.pt",
+      "sha256": "781588c3bd598e9080f9aaa36a7570c2fea1307a8cc1f3ad6f1e27250eddc62a",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed22/predictions.jsonl.gz",
+      "sha256": "a71af7786d0727d2ace967d9466a8519dd397e824b722cea62302cdd19167299",
+      "bytes": 23930
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed22/receipt.json",
+      "sha256": "ed1ab8bda018577002c8c9ba22f04c928b975791621bfce43dc9e42d76227c4b",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed22/training-loss.json",
+      "sha256": "d370bc00bf5cbce9b8d7e1b3e991b6ebf232b9a9bfeae3b97a8ea22ebc96b9b8",
+      "bytes": 1093
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed33/checkpoint.pt",
+      "sha256": "d902b1575ed3bf525d946d79c6d7fcda728298c2c2d9c8d7aa1b0dd0d65724f3",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed33/predictions.jsonl.gz",
+      "sha256": "f3690fa30c5c2707f76e20e0a4107a219319c983c47a9c8e1aa7dccf7ab41e1b",
+      "bytes": 23982
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed33/receipt.json",
+      "sha256": "3ae04a7118310cd1e2de0545248b20ecd7d2e2752cf697893a16dd542adfc642",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed33/training-loss.json",
+      "sha256": "fd6abbbb79cc2083d64b0cd17fdb263ca5ef5a7b7a0f5ed15a5bbfa4199f1140",
+      "bytes": 1091
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed44/checkpoint.pt",
+      "sha256": "c4b7e21af32e1693aab7960ed5f9920cb2b070e2ac0c474150e80e686f5869b9",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed44/predictions.jsonl.gz",
+      "sha256": "c78c8a32933f127bc12335f1b1182007fa9935958c91663bd1ea5d96f9b53aa7",
+      "bytes": 23928
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed44/receipt.json",
+      "sha256": "b50776761a5215ddfa566f2874025c0edd90715c21f8a30b912f7a3d45f1a797",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed44/training-loss.json",
+      "sha256": "b963d86fb6a6c90ae4f0e27250ea2d8e3f9b415d005b23cc70b943f583258534",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed55/checkpoint.pt",
+      "sha256": "97ad71ad0c62e8d5c9f07d3dfcd3eef63b4bc708bd8ae30e99f4d294e7184fd2",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed55/predictions.jsonl.gz",
+      "sha256": "1207b74c63f82acb94aee2fe92a6e6add222e17a99a941ee289f7bb1f35646dd",
+      "bytes": 24023
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed55/receipt.json",
+      "sha256": "da8edfd79ec92baa97485ece462c7f8300f8c18c94f9cb6751b00513c7cb16a0",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold3-seed55/training-loss.json",
+      "sha256": "caa3fd02db6072eeb6781c3e889c099b36a83cceb53fb17cca504ebacbf02731",
+      "bytes": 1095
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed11/checkpoint.pt",
+      "sha256": "87be783ab22293942326cb134a5764fe93c82760e774fea2e1787f97de0ec057",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed11/predictions.jsonl.gz",
+      "sha256": "1976c9220fe30095701e7b141c31cc705b3cfbd354b1bfa221154fecd1b41d4b",
+      "bytes": 23539
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed11/receipt.json",
+      "sha256": "df4a733ae44f0adbc859042cd4aa9514b54b3b4c94984ac50795d7b95955d14d",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed11/training-loss.json",
+      "sha256": "35243b3607aa90eb5966891bd5c9d3af0e79bf29eea7c00484b2c7051e413ecf",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed22/checkpoint.pt",
+      "sha256": "0d3b13fb9fe74f8c98b6e4a6668578a6b5f6a0e485bcdfb7b82c550550306bb5",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed22/predictions.jsonl.gz",
+      "sha256": "4c7fa89a5cb3ee6514518e84a5d7872e2c78b8434e3cbeb1db97e711c842db91",
+      "bytes": 23520
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed22/receipt.json",
+      "sha256": "1577f9d043cc05920ad72c9d4f10198a8bd5ce4088edcc8dd3e6d49e9abba1ef",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed22/training-loss.json",
+      "sha256": "76879b1a09a2b4f23db8ed2ae17d3ef7555ff900d5ce250666fa6ea23734f5b1",
+      "bytes": 1094
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed33/checkpoint.pt",
+      "sha256": "1118762397ee5b289907adf2f5e7f52dd955a738660b0f5d55fa59a1bea412ec",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed33/predictions.jsonl.gz",
+      "sha256": "f6e892a676621539a3879c19cc4ae1c5f39a25aa65d9ff67c3e22d797822dc68",
+      "bytes": 23505
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed33/receipt.json",
+      "sha256": "aabedbbe3fe31a3f5fd1e283bd38c306039511e6616a20894316687c52b1b98b",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed33/training-loss.json",
+      "sha256": "d7f53b7b4b4b31c602ae68cc88875ff2346d5684e599ae26cc077b0563eaf335",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed44/checkpoint.pt",
+      "sha256": "575ec4d8ccd6123bc73742553aab8cd9b80aefe7710e0a17b7a5a7dc9fc27e0e",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed44/predictions.jsonl.gz",
+      "sha256": "0f4cba1486927afe15aa45b74079d188d3cbe30393de430f0c861bd5a6676719",
+      "bytes": 23496
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed44/receipt.json",
+      "sha256": "e619a80324cfb8242ca4208fb10ff49e584156f888aca304da1a60e4c59ee24d",
+      "bytes": 2064
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed44/training-loss.json",
+      "sha256": "2b47c52c594891765f248e0b655ddde1571790c8ecabd2a1a6915a60b24f53ea",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed55/checkpoint.pt",
+      "sha256": "b32d9d2e02681aee2b048cb37f5b7c86d6ed24c088e755de0e588c898d75b536",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed55/predictions.jsonl.gz",
+      "sha256": "d62b199ed6cc0396a21b20191d43a4c508bd629b07be55507f949578e37e89e1",
+      "bytes": 23448
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed55/receipt.json",
+      "sha256": "4a164b7fd73d3967e63a3adebf240b46726679bad2d9ea0581883ceee6b1c3ca",
+      "bytes": 2062
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold4-seed55/training-loss.json",
+      "sha256": "1ab5a7996933bc97aba66294fcf0073a44e9776362bec054b52e3f08cc87383f",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed11/checkpoint.pt",
+      "sha256": "11c5ddd3566dc2c2fc48d2c4f65e4b2071b85466bd6baaf13660ad18b4522720",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed11/predictions.jsonl.gz",
+      "sha256": "6a8ae5380c2d8c7c1490f9162728678a9a2859a72610247fd22060e470468ba2",
+      "bytes": 88277
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed11/receipt.json",
+      "sha256": "b164e60b026d6cba3c4ae7b46f7068435a665ff24be4c2646a03588b46226660",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed11/training-loss.json",
+      "sha256": "4f2e001cd5fc0c1aef1f86c43eb95f3acc950b51beee7bd21ff351b9bb018f59",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed22/checkpoint.pt",
+      "sha256": "86eb051cf0b008ec8e2c8fa8be1afd7cf23ddabbf897ef8d00e02ffe505fd760",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed22/predictions.jsonl.gz",
+      "sha256": "0c7cd607266d2fa01c5b63bd9a429281ad69c773129a73cc112338ab4a396262",
+      "bytes": 88162
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed22/receipt.json",
+      "sha256": "e4ad449de4ede02847f0fc06c2016f903365099e7eb7bfd4ff7823911e31b9e2",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed22/training-loss.json",
+      "sha256": "9cd29e4744676e95caf6d446f0c9100d06207e32db5d643f328b494aa362a898",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed33/checkpoint.pt",
+      "sha256": "245bcc85181ec63b5d0a95424555cf390d9b9b2b620ebca177d2a92cf4d2df6c",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed33/predictions.jsonl.gz",
+      "sha256": "a5f075df54ee54bf842b4393f0f5dc78b3ceee0770d2d2e63abf352c153a39d3",
+      "bytes": 88275
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed33/receipt.json",
+      "sha256": "55bfdb2d81720baa10a3cf94597c9d62e73f9144cfa929310046da2feaf8997b",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed33/training-loss.json",
+      "sha256": "d729e69516ad455aedad6d6e2fd9082b6a8f6a7de605266b5e145e0b14cb00ce",
+      "bytes": 1097
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed44/checkpoint.pt",
+      "sha256": "3ce09682e7dca491393d4ef619c2dc1745a4ac5c8a0dbba5d2fff5045f0664ad",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed44/predictions.jsonl.gz",
+      "sha256": "9d1e39b6ca8e15af60a8095543352b1489df2b6ceee82e7c123ad4a25b2b9aa3",
+      "bytes": 88392
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed44/receipt.json",
+      "sha256": "8304c2642f5a9c51a011aa1fb7e1a190bd6a77e04f5b1f9c37990f02c1c98e1c",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed44/training-loss.json",
+      "sha256": "928a476e49e496be94eace4be8581c80c0d7605ca27d78cc1291ef7351149ae9",
+      "bytes": 1098
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed55/checkpoint.pt",
+      "sha256": "f13db60495b9811a27d3822460a2c45f05e901cffbf3e8eaae2b4a3b547af405",
+      "bytes": 182282
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed55/predictions.jsonl.gz",
+      "sha256": "6c50c28a0d2ee0f4a9bc2f235cae416af8e5b01782328907da6c5ef4a9d3d561",
+      "bytes": 88177
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed55/receipt.json",
+      "sha256": "c1d64d51174bb65ba7d1b28a63e0cfc6f5b700d25ed6807242c865d0c3350f7a",
+      "bytes": 2065
+    },
+    {
+      "path": "v8-逐问处理/prediction/runs/stack4-model-fold5-seed55/training-loss.json",
+      "sha256": "68411a7398aa001d2bedda4fb866add1960becd1badc3e6a303ae48965fd4c51",
+      "bytes": 1096
+    },
+    {
+      "path": "v8-逐问处理/prediction/summarize_help_results.py",
+      "sha256": "cbb401d4bdf75c85ced37b678ed518ce4b1bea022669b56d86bceb770d8f8de5",
+      "bytes": 7871
+    },
+    {
+      "path": "v8-逐问处理/prediction/training-complete-shard0.json",
+      "sha256": "732ead7962ce0de2bce82feaacb7445e255a1e3696974ffedf8ac8157ab6a79e",
+      "bytes": 333
+    },
+    {
+      "path": "v8-逐问处理/prediction/training-complete-shard1.json",
+      "sha256": "ce36565f1ed2e1bdfd8bbec3da3e6c28833030c2c40910d13ea2a72b823bbd17",
+      "bytes": 332
+    },
+    {
+      "path": "v8-逐问处理/prediction/training-complete-shard2.json",
+      "sha256": "98b0934372719b684420eb76b6263a05a300752646b6e7905c6c0565a5f5c988",
+      "bytes": 332
+    },
+    {
+      "path": "v8-逐问处理/prediction/training-complete-shard3.json",
+      "sha256": "c586457c6af14aa17b5a2a0e006810985af850b420313dcb6c78296236f87f8d",
+      "bytes": 331
+    },
+    {
+      "path": "verify_release.py",
+      "sha256": "9a21d12c3865eedff12f3fb3ddceb48f28383db88bc0fb2d76bbdd23eed1a0a7",
+      "bytes": 294
+    }
+  ],
+  "total_bytes": 160569372
+}

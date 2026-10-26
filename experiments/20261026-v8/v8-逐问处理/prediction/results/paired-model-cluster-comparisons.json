@@ -1,0 +1,90 @@
+[
+  {
+    "first": "help_three_probe_full",
+    "second": "help_zero_probe_source_embedding",
+    "sign": "first minus second; negative favors first",
+    "micro_MRE_difference_pp": 2120.4661039604844,
+    "model_macro_MRE_difference_pp": 1295.4045003544263,
+    "conditional_model_cluster95_micro_pp": [
+      -264.4214815316601,
+      6703.403235161646
+    ],
+    "conditional_model_cluster95_macro_pp": [
+      -192.7987756248977,
+      3718.95443553181
+    ],
+    "models_improved": 7,
+    "models_worse": 5,
+    "models_tied": 0,
+    "cluster_unit": "source model, all 5 target stacks and seed-average errors retained together",
+    "n_clusters": 12,
+    "draws": 10000,
+    "population_or_multiple_testing_claim": false
+  },
+  {
+    "first": "help_three_probe_full",
+    "second": "pooled_three_probe_finetuned",
+    "sign": "first minus second; negative favors first",
+    "micro_MRE_difference_pp": 2390.188456634101,
+    "model_macro_MRE_difference_pp": 1669.7670946679218,
+    "conditional_model_cluster95_micro_pp": [
+      92.09641296485182,
+      6915.604409766026
+    ],
+    "conditional_model_cluster95_macro_pp": [
+      202.95612909826073,
+      4040.5447356572017
+    ],
+    "models_improved": 0,
+    "models_worse": 12,
+    "models_tied": 0,
+    "cluster_unit": "source model, all 5 target stacks and seed-average errors retained together",
+    "n_clusters": 12,
+    "draws": 10000,
+    "population_or_multiple_testing_claim": false
+  },
+  {
+    "first": "help_three_probe_full",
+    "second": "pooled_three_probe_conditioned",
+    "sign": "first minus second; negative favors first",
+    "micro_MRE_difference_pp": 2345.70928849287,
+    "model_macro_MRE_difference_pp": 1620.4948755140338,
+    "conditional_model_cluster95_micro_pp": [
+      46.615628720049116,
+      6866.790368781282
+    ],
+    "conditional_model_cluster95_macro_pp": [
+      156.8751009813324,
+      3987.5176727667617
+    ],
+    "models_improved": 3,
+    "models_worse": 9,
+    "models_tied": 0,
+    "cluster_unit": "source model, all 5 target stacks and seed-average errors retained together",
+    "n_clusters": 12,
+    "draws": 10000,
+    "population_or_multiple_testing_claim": false
+  },
+  {
+    "first": "help_three_probe_full",
+    "second": "help_three_probe_no_inner_update",
+    "sign": "first minus second; negative favors first",
+    "micro_MRE_difference_pp": 2120.7255430185564,
+    "model_macro_MRE_difference_pp": 1291.687690841452,
+    "conditional_model_cluster95_micro_pp": [
+      -263.20975886124063,
+      6702.249385410301
+    ],
+    "conditional_model_cluster95_macro_pp": [
+      -195.29782220431616,
+      3713.4111472391714
+    ],
+    "models_improved": 7,
+    "models_worse": 5,
+    "models_tied": 0,
+    "cluster_unit": "source model, all 5 target stacks and seed-average errors retained together",
+    "n_clusters": 12,
+    "draws": 10000,
+    "population_or_multiple_testing_claim": false
+  }
+]

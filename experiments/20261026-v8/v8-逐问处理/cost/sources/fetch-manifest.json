@@ -1,0 +1,200 @@
+[
+  {
+    "id": "ctyun-price",
+    "url": "https://www.ctyun.cn/document/10029787/10047957",
+    "final_url": "https://www.ctyun.cn/document/10029787/10047957",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:52:11.956860+00:00",
+    "headers": {
+      "Date": "Mon, 26 Oct 2026 05:52:12 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "657841",
+      "Vary": "Accept-Encoding",
+      "ETag": "\"a09b1-0hL4GeqqPq/Houd9m/Xp4KJkpMw\"",
+      "Accept-Ranges": "none",
+      "Cache-Control": "max-age=604800",
+      "Age": "11756"
+    },
+    "sha256": "39a7cabd00e7b516829fc0f40fbaf687a6614af1838f1d0c843eeb55e72127bc",
+    "bytes": 657841,
+    "file": "ctyun-price.html"
+  },
+  {
+    "id": "ctyun-billing",
+    "url": "https://www.ctyun.cn/document/10029787/10030141",
+    "final_url": "https://www.ctyun.cn/document/10029787/10030141",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:52:13.026905+00:00",
+    "headers": {
+      "Date": "Mon, 26 Oct 2026 05:52:12 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "593713",
+      "Vary": "Accept-Encoding",
+      "ETag": "\"90f31-r8SWv3VwvhFwhQrEutGPyofiaVw\"",
+      "Accept-Ranges": "none",
+      "Cache-Control": "max-age=604800",
+      "Age": "1"
+    },
+    "sha256": "8519ad1fe5e330591483e8e2c1d50005458b5dd38f12403d9e5af5bd58bb589f",
+    "bytes": 593713,
+    "file": "ctyun-billing.html"
+  },
+  {
+    "id": "runpod-price",
+    "url": "https://www.runpod.io/pricing",
+    "final_url": "https://www.runpod.io/pricing",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:52:12.569711+00:00",
+    "headers": {
+      "Date": "Mon, 26 Oct 2026 05:52:12 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Age": "199596",
+      "Last-Modified": "Fri, 23 Oct 2026 22:41:06 GMT",
+      "Vary": "accept-encoding"
+    },
+    "sha256": "8381962862a3c8c533b416a09961db758df6de0f0f6c104056763b7f5824f9e0",
+    "bytes": 323727,
+    "file": "runpod-price.html"
+  },
+  {
+    "id": "lambda-price",
+    "url": "https://lambda.ai/instances",
+    "final_url": "https://lambda.ai/instances",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:52:12.617219+00:00",
+    "headers": {
+      "Date": "Mon, 26 Oct 2026 05:52:12 GMT",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Cache-Control": "s-maxage=36000, max-age=5",
+      "Last-Modified": "Thu, 22 Oct 2026 16:28:35 GMT",
+      "Vary": "accept-encoding"
+    },
+    "sha256": "f994c31b5bee26badd444b9d113da6b93088e6a678b8bb4b31b6d5296cbf19d2",
+    "bytes": 98671,
+    "file": "lambda-price.html"
+  },
+  {
+    "id": "boc-fx",
+    "url": "https://www.boc.cn/sourcedb/whpj/?timer=tc",
+    "final_url": "https://www.boc.cn/sourcedb/whpj/?timer=tc",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:52:11.800359+00:00",
+    "headers": {
+      "Date": "Mon, 26 Oct 2026 05:52:12 GMT",
+      "Content-Type": "text/html",
+      "Content-Length": "29861",
+      "Last-Modified": "Mon, 26 Oct 2026 05:52:07 GMT",
+      "ETag": "\"6adeea87-74a5\"",
+      "Accept-Ranges": "bytes"
+    },
+    "sha256": "1a8b06bf7eac60031e57ed2f171e032bbaa089993fe9e0432ad9aa080908b6cb",
+    "bytes": 29861,
+    "file": "boc-fx.html"
+  },
+  {
+    "id": "nvidia-mig",
+    "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/supported-mig-profiles.html",
+    "final_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/supported-mig-profiles.html",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:52:12.382095+00:00",
+    "headers": {
+      "Content-Type": "text/html",
+      "Last-Modified": "Wed, 14 Oct 2026 00:41:57 GMT",
+      "ETag": "\"1be34b4f32832dcb393359986eab23fe\"",
+      "Vary": "Accept-Encoding",
+      "Date": "Mon, 26 Oct 2026 05:52:12 GMT",
+      "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0"
+    },
+    "sha256": "aea425308e1ee199ab96b864b97c2f6629e6e4e8fdcb864eb612bd29e2384f69",
+    "bytes": 62801,
+    "file": "nvidia-mig.html"
+  },
+  {
+    "id": "runpod-billing",
+    "url": "https://docs.runpod.io/pods/pricing",
+    "final_url": "https://docs.runpod.io/pods/pricing",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:52:12.882825+00:00",
+    "headers": {
+      "Age": "41448",
+      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Mon, 26 Oct 2026 05:52:12 GMT",
+      "Etag": "W/\"12sss71lvhv7ze2\"",
+      "Vary": "rsc, accept-encoding, Accept, User-Agent"
+    },
+    "sha256": "3d3bc71a2243760f3b2608c872837da48f2adb8b3b30689a1c975a69e4c0c607",
+    "bytes": 372488,
+    "file": "runpod-billing.html"
+  },
+  {
+    "id": "lambda-regions",
+    "url": "https://docs.lambda.ai/public-cloud/on-demand/",
+    "final_url": "https://docs.lambda.ai/public-cloud/on-demand/",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:52:13.274233+00:00",
+    "headers": {
+      "Date": "Mon, 26 Oct 2026 05:52:13 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "public, max-age=0, must-revalidate"
+    },
+    "sha256": "122a9dc02f87d8f8f0ae9bcd88231431e45e177db6f58b9ffd1036b50a6a4fd0",
+    "bytes": 95499,
+    "file": "lambda-regions.html"
+  },
+  {
+    "id": "ctyun-regions",
+    "url": "https://www.ctyun.cn/document/10029787/10192375",
+    "final_url": "https://www.ctyun.cn/document/10029787/10192375",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:54:50.087672+00:00",
+    "sha256": "8cba805b15a5a529fac1dccc08e64e4c2cabea4f4034e56daeeea74d35ee4423",
+    "bytes": 585721,
+    "file": "ctyun-regions.html",
+    "headers": {}
+  },
+  {
+    "id": "ctyun-monthly",
+    "url": "https://www.ctyun.cn/document/10029787/10030140",
+    "final_url": "https://www.ctyun.cn/document/10029787/10030140",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:54:49.459844+00:00",
+    "sha256": "702f7d9e5569f8d1278b32e1ac6569bd19d3d81d7efa223037ce7ab027ea4f45",
+    "bytes": 587423,
+    "file": "ctyun-monthly.html",
+    "headers": {}
+  },
+  {
+    "id": "runpod-tax",
+    "url": "https://docs.runpod.io/accounts-billing/sales-tax",
+    "final_url": "https://docs.runpod.io/accounts-billing/sales-tax",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:54:49.664621+00:00",
+    "sha256": "ba172ca74309a7103e0693754dbd6d4fd09a664879d3916338fe9e39819c5fb5",
+    "bytes": 365039,
+    "file": "runpod-tax.html",
+    "headers": {}
+  },
+  {
+    "id": "lambda-billing",
+    "url": "https://docs.lambda.ai/public-cloud/billing/",
+    "final_url": "https://docs.lambda.ai/public-cloud/billing/",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:54:49.493077+00:00",
+    "sha256": "f1f47978d646ee0f28997a7934da206db1835f936d63736676d8397d39a3171c",
+    "bytes": 78601,
+    "file": "lambda-billing.html",
+    "headers": {}
+  },
+  {
+    "id": "runpod-select",
+    "url": "https://docs.runpod.io/pods/choose-a-pod",
+    "final_url": "https://docs.runpod.io/pods/choose-a-pod",
+    "http_status": 200,
+    "retrieved_utc": "2026-10-26T05:54:49.572939+00:00",
+    "sha256": "1640ef193a81a5d1dead8a6129701c778c99d1d224689f5a861adbd9dead5c11",
+    "bytes": 391330,
+    "file": "runpod-select.html",
+    "headers": {}
+  }
+]

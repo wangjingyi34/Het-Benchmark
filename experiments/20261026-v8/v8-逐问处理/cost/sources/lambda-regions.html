@@ -1,0 +1,4670 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Lambda GPU Cloud documentation">
+      
+      
+      
+        <link rel="canonical" href="https://docs.lambda.ai/public-cloud/on-demand/">
+      
+      
+        <link rel="prev" href="../manage-billing/">
+      
+      
+        <link rel="next" href="connecting-instance/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/lambda/favicon-48x48.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Overview - Lambda Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+      <link rel="stylesheet" href="../../assets/css/filter-tags.css">
+    
+      <link rel="stylesheet" href="../../assets/css/glightbox.min.css">
+    
+      <link rel="stylesheet" href="../../assets/css/yaml-cards.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NZ5JKG2');</script>
+<!-- End Google Tag Manager -->
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  <meta name="google-site-verification" content="ZERwIpTAZEHySOFyxl78SDev6mOdjwQd9UMgOCnbU6o">
+
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Overview - Lambda Docs">
+<meta property="og:description" content="Lambda GPU Cloud documentation">
+<meta property="og:image" content="https://docs.lambda.ai/assets/images/social/public-cloud/on-demand/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://docs.lambda.ai/public-cloud/on-demand/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Overview - Lambda Docs">
+<meta property="twitter:description" content="Lambda GPU Cloud documentation">
+<meta property="twitter:image" content="https://docs.lambda.ai/assets/images/social/public-cloud/on-demand/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine classes -->
+
+
+
+<!-- Header -->
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+
+    <!-- Link to home -->
+    <a href="../.." title="Lambda Docs" class="md-header__button md-logo" aria-label="Lambda Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/lambda/lambda-docs-logo-light-mode.svg" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette toggle -->
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+
+    <!-- User preference: color palette -->
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Public Cloud
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../private-cloud/" class="md-tabs__link">
+          
+  
+  
+  Private Cloud
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../managed-kubernetes/" class="md-tabs__link">
+          
+  
+  
+  Managed Kubernetes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../managed-slurm/" class="md-tabs__link">
+          
+  
+  
+  Managed Slurm
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../education/" class="md-tabs__link">
+          
+  
+  
+  Education
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Lambda Docs" class="md-nav__button md-logo" aria-label="Lambda Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/lambda/lambda-docs-logo-light-mode.svg" alt="logo">
+
+    </a>
+    Lambda Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+          
+          
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Public Cloud
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Public Cloud
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3">
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resource management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Resource management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resource-hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resource hierarchy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managing-account/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your account
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managing-workspaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your workspaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4">
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Access and security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Access and security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../access-security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access and security overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identity and access management (IAM)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../predefined-roles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Predefined roles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managing-identities-groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing identities and groups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managing-access/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing access
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firewalls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firewalls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enabling-sso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enabling single sign-on (SSO)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5">
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Data management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filesystems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filesystems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3-adapter-filesystems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filesystem S3 Adapter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-exporting-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Importing and exporting data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6">
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Logging and monitoring
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Logging and monitoring
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guest-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guest Agent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7">
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Billing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Billing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../billing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Billing overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manage-billing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing billing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.lambda.ai/api/cloud" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Cloud API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+            
+            
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    On-Demand
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            On-Demand
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+      
+        <!-- Determine title -->
+
+
+
+<!-- Table of contents -->
+
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+  <!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+  
+    
+  
+
+  <!-- Table of contents title and list -->
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#instance-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Base images
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Base images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternative images
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#root-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Root volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filesystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filesystems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filesystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mount-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mount point
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Billing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Size limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connection options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firewall-defaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firewall defaults
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instance-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instance management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lambda-cloud-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lambda Cloud console
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="connecting-instance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connecting to an instance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="creating-managing-instances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating and managing instances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="managing-system-environment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your system environment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+            
+            
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10">
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    1-Click Clusters
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            1-Click Clusters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-click-clusters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-click-clusters/serving-llama-3_1-405b/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to serve the Llama 3.1 405B model using a Lambda 1-Click Cluster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-click-clusters/security-posture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security posture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-click-clusters/support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+            
+            
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_11">
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Additional resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            Additional resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://deeptalk.lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Forum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/blog" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/@lambda-ai" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    YouTube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Main site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Private Cloud
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Private Cloud
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../private-cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../private-cloud/accessing-private-cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accessing your Lambda Private Cloud cluster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../private-cloud/security-posture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security posture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4">
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Additional resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Additional resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://deeptalk.lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Forum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/blog" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/@lambda-ai" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    YouTube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Main site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Managed Kubernetes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Managed Kubernetes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-kubernetes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-kubernetes/continuous-validation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous validation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-kubernetes/auto-remediation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto-remediation system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-kubernetes/cluster-upgrades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cluster upgrades
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5">
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Additional resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Additional resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://deeptalk.lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Forum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/blog" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/@lambda-ai" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    YouTube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Main site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Managed Slurm
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Managed Slurm
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-slurm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-slurm/quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-slurm/using-mslurm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Managed Slurm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-slurm/health-checks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Health checks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-slurm/auto-remediation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto-remediation system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-slurm/slurm-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slurm console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_7">
+        
+          
+          <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Additional resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            Additional resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://deeptalk.lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Forum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/blog" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/@lambda-ai" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    YouTube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Main site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Education
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Education
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/using-mig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Multi-Instance GPU (MIG)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3">
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Generative AI (GAI)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Generative AI (GAI)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/generative-ai/flux-prompt-to-image/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to serve the FLUX.1 prompt-to-image models using Lambda Cloud on-demand instances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/fine-tune-mochi-gh200/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fine-tuning the Mochi video generation model on GH200
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_4">
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Large language models (LLMs)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Large language models (LLMs)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/large-language-models/deploying-a-llama-3-inference-endpoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploying a Llama 3 inference endpoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/large-language-models/k8s-ollama-llama-3-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploying Llama 3.2 3B in a Kubernetes (K8s) cluster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/large-language-models/kubeai-hermes-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using KubeAI to deploy Nous Research's Hermes 3 and other LLMs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/large-language-models/serving-llama-3-1-405b/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serving Llama 3.1 405B on a Lambda 1-Click Cluster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/large-language-models/serving-llama-3-1-docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serving the Llama 3.1 8B and 70B models using Lambda Cloud on-demand instances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/large-language-models/deepseek-r1-ollama/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running DeepSeek-R1 70B using Ollama
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/large-language-models/deploying-nemotron-3-nano/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploying NVIDIA Nemotron 3 Nano using vLLM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_5">
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Linux usage and system administration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Linux usage and system administration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/linux-usage/basic-linux-commands-and-system-administration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Linux commands and system administration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/linux-usage/configuring-software-raid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring Software RAID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/linux-usage/lambda-stack-and-recovery-images/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambda Stack and recovery images
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/linux-usage/troubleshooting-and-debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting and debugging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/linux-usage/using-the-lambda-bug-report-to-troubleshoot-your-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the Lambda bug report to troubleshoot your system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/linux-usage/using-the-nvidia-bug-report.log-file-to-troubleshoot-your-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the nvidia-bug-report.log file to troubleshoot your system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Programming
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Programming
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/programming/virtual-environments-containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual environments and Docker containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/running-huggingface-diffusers-transformers-gh200/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running Hugging Face Transformers and Diffusers on an NVIDIA GH200 instance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_7">
+        
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Scheduling and orchestration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            Scheduling and orchestration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/scheduling-and-orchestration/orchestrating-workloads-with-dstack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Orchestrating AI workloads with dstack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/scheduling-and-orchestration/skypilot-deploy-kubernetes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using SkyPilot to deploy a Kubernetes cluster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_8">
+        
+          
+          <label class="md-nav__link" for="__nav_6_8" id="__nav_6_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Benchmarking
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8">
+            <span class="md-nav__icon md-icon"></span>
+            Benchmarking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../education/running-benchmark-gh200/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running a PyTorch®-based benchmark on an NVIDIA GH200 instance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_9">
+        
+          
+          <label class="md-nav__link" for="__nav_6_9" id="__nav_6_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Additional resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_9">
+            <span class="md-nav__icon md-icon"></span>
+            Additional resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://deeptalk.lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Forum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/blog" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/@lambda-ai" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    YouTube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://lambda.ai/" class="md-nav__link external" target="_blank">
+        
+  
+  <span class="md-ellipsis">
+    Main site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Determine title -->
+
+
+
+<!-- Table of contents -->
+
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+  <!--
+    Check whether the content starts with a level 1 headline. If it does, the
+    top-level anchor must be skipped, since it would be redundant to the link
+    to the current page that is located just above the anchor. Therefore we
+    directly continue with the children of the anchor.
+  -->
+  
+    
+  
+
+  <!-- Table of contents title and list -->
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#instance-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Base images
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Base images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternative images
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#root-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Root volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filesystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filesystems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filesystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mount-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mount point
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Billing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Size limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connection options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firewall-defaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firewall defaults
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instance-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instance management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lambda-cloud-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lambda Cloud console
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h1>
+<p>On-Demand Cloud (ODC) provides on-demand access to Linux-based, GPU-backed
+virtual machine instances.</p>
+<h2 id="instance-types">Instance types<a class="headerlink" href="#instance-types" title="Permanent link">#</a></h2>
+<p>ODC offers a variety of predefined instance types to support different workload
+requirements. Available GPUs include the state-of-the-art NVIDIA HGX B200 GPU,
+NVIDIA GH200 Grace Hopper Superchip, and NVIDIA H100 Tensor Core GPU, as well
+as several earlier models. Each instance you create is tied to a specific
+geographical region. For a list of available regions, see the
+<a href="#regions">Regions</a> section below.</p>
+<p>Select instance types are backed by GPUs that feature NVIDIA SXM. SXM offers
+improved bandwidth between the NVIDIA GPUs in a single physical server.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Lambda prohibits cryptocurrency mining on ODC instances.</p>
+</div>
+<p>As of December 2025, ODC offers the following instance types:</p>
+<table>
+<thead>
+<tr>
+<th>GPU</th>
+<th>Number of GPUs</th>
+<th>VRAM per GPU</th>
+<th>vCPU cores</th>
+<th>RAM</th>
+<th>Root volume size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B200</td>
+<td>8</td>
+<td>180 GB</td>
+<td>208</td>
+<td>2900 GiB</td>
+<td>22 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>4</td>
+<td>180 GB</td>
+<td>104</td>
+<td>1440 GiB</td>
+<td>11 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>180 GB</td>
+<td>52</td>
+<td>720 GiB</td>
+<td>5.5 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td>180 GB</td>
+<td>26</td>
+<td>360 GiB</td>
+<td>2.75 TiB</td>
+</tr>
+<tr>
+<td>GH200<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td>1</td>
+<td>96 GB</td>
+<td>64</td>
+<td>432 GiB</td>
+<td>4 TiB</td>
+</tr>
+<tr>
+<td>H100 SXM</td>
+<td>8</td>
+<td>80 GB</td>
+<td>208</td>
+<td>1800 GiB</td>
+<td>22 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>4</td>
+<td>80 GB</td>
+<td>104</td>
+<td>900 GiB</td>
+<td>11 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>80 GB</td>
+<td>52</td>
+<td>450 GiB</td>
+<td>5.5 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td>80 GB</td>
+<td>26</td>
+<td>225 GiB</td>
+<td>2.75 TiB</td>
+</tr>
+<tr>
+<td>H100 PCIe</td>
+<td>1</td>
+<td>80 GB</td>
+<td>26</td>
+<td>225 GiB</td>
+<td>1 TiB</td>
+</tr>
+<tr>
+<td>A100 SXM</td>
+<td>8</td>
+<td>80 GB</td>
+<td>240</td>
+<td>1800 GiB</td>
+<td>19.5 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>8</td>
+<td>40 GB</td>
+<td>124</td>
+<td>1800 GiB</td>
+<td>5.8 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td>40 GB</td>
+<td>30</td>
+<td>220 GiB</td>
+<td>512 GiB</td>
+</tr>
+<tr>
+<td>A100 PCIe</td>
+<td>4</td>
+<td>40 GB</td>
+<td>120</td>
+<td>900 GiB</td>
+<td>1 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>40 GB</td>
+<td>60</td>
+<td>450 GiB</td>
+<td>1 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td>40 GB</td>
+<td>30</td>
+<td>225 GiB</td>
+<td>512 GiB</td>
+</tr>
+<tr>
+<td>A10</td>
+<td>1</td>
+<td>24 GB</td>
+<td>30</td>
+<td>226 GiB</td>
+<td>1.3 TiB</td>
+</tr>
+<tr>
+<td>A6000</td>
+<td>4</td>
+<td>48 GB</td>
+<td>56</td>
+<td>400 GiB</td>
+<td>1 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>48 GB</td>
+<td>28</td>
+<td>200 GiB</td>
+<td>1 TiB</td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td>48 GB</td>
+<td>14</td>
+<td>100 GiB</td>
+<td>512 GiB</td>
+</tr>
+<tr>
+<td>Tesla V100</td>
+<td>8</td>
+<td>16 GB</td>
+<td>88</td>
+<td>448 GiB</td>
+<td>5.8 TiB</td>
+</tr>
+<tr>
+<td>RTX 6000</td>
+<td>1</td>
+<td>24 GB</td>
+<td>14</td>
+<td>46 GiB</td>
+<td>512 GiB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="base-images">Base images<a class="headerlink" href="#base-images" title="Permanent link">#</a></h2>
+<h3 id="default-image">Default image<a class="headerlink" href="#default-image" title="Permanent link">#</a></h3>
+<p>By default, each ODC instance runs Ubuntu 22.04 LTS. Lambda also preinstalls
+Lambda Stack, a standard set of AI/ML-related drivers, tools, and
+frameworks, on the instance:</p>
+<ul>
+<li><em>NVIDIA tools, libraries, and drivers</em>: CUDA, cuDNN, NCCL, NVIDIA container
+  toolkit, NVIDIA driver</li>
+<li><em>Deep learning frameworks and libraries</em>: TensorFlow, torchvision, Keras,
+  PyTorch®, JAX, Triton</li>
+<li><em>Dev tools</em>: Git, Vim, Emacs, Valgrind, tmux, screen, htop, build-essential</li>
+</ul>
+<p>For more information on Lambda Stack, see
+<a class="external" href="https://lambda.ai/lambda-stack-deep-learning-software" rel="noopener noreferrer" target="_blank">Lambda Stack</a>.</p>
+<p>In addition, each ODC instance provides a JupyterLab installation for creating
+and managing Jupyter notebooks. You can access your instance's JupyterLab by
+visiting the
+<a class="external" href="https://cloud.lambda.ai/instances" rel="noopener noreferrer" target="_blank">Instances page</a>
+in the Lambda Cloud console and clicking <strong>Launch</strong> in your instance's row.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a href="connecting-instance/#accessing-jupyterlab">JupyterLab</a>
+can take a few minutes after an instance launches to become accessible.</p>
+</div>
+<h3 id="alternative-images">Alternative images<a class="headerlink" href="#alternative-images" title="Permanent link">#</a></h3>
+<p>If you launch your instance using the Lambda Cloud API, you can choose to use
+an alternative base image instead. Available image types include:</p>
+<ul>
+<li><strong>Lambda Stack</strong>: The default image used on most ODC instances.<ul>
+<li><em>Includes:</em> NVIDIA driver, CUDA toolkit, OFED, cuDNN, NCCL, Lambda Stack
+   Python packages (PyTorch, TensorFlow, JAX), Docker, JupyterLab</li>
+<li><em>Use if:</em> You want something that "just works" and don't need deep
+   configurability.</li>
+</ul>
+</li>
+<li><strong>Lambda Stack Legacy</strong>: The default image on V100-backed ODC instances.<ul>
+<li><em>Includes:</em> NVIDIA driver (closed-source), CUDA toolkit, OFED, cuDNN,
+   NCCL, Lambda Stack Python packages (PyTorch, TensorFlow, JAX), Docker,
+   JupyterLab</li>
+<li><em>Use if:</em> You're running an instance that requires NVIDIA's legacy
+   closed-source driver stack, such as a V100 instance.</li>
+</ul>
+</li>
+<li><strong>GPU Base</strong>: An image based on Ubuntu Server that includes a minimal set of
+    key AI/ML tools and drivers.<ul>
+<li><em>Includes:</em> NVIDIA driver, CUDA toolkit, OFED, cuDNN, NCCL, Docker</li>
+<li><em>Use if:</em> You want a minimal working setup with a high degree of control
+   over your Python environment.</li>
+</ul>
+</li>
+<li><strong>Ubuntu Server</strong>: A standard, unmodified Ubuntu Server image.<ul>
+<li><em>Includes:</em> No additional packages.</li>
+<li><em>Use if:</em> You're an expert user who prefers maximum customizability, or
+   you have unique tool or driver requirements.</li>
+</ul>
+</li>
+</ul>
+<p>The table below lists the available versions for each of the above image types,
+the architectures each version supports, and the default Python version each
+includes.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Image name</th>
+<th style="text-align: left;">Image family</th>
+<th style="text-align: left;">Architectures supported</th>
+<th style="text-align: left;">Python version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Lambda Stack 24.04</td>
+<td style="text-align: left;"><code>lambda-stack-24-04</code></td>
+<td style="text-align: left;">x86-64, arm64</td>
+<td style="text-align: left;">3.12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lambda Stack 22.04</td>
+<td style="text-align: left;"><code>lambda-stack-22-04</code></td>
+<td style="text-align: left;">x86-64, arm64</td>
+<td style="text-align: left;">3.10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lambda Stack Legacy 22.04</td>
+<td style="text-align: left;"><code>lambda-stack-legacy-22-04</code></td>
+<td style="text-align: left;">x86-64</td>
+<td style="text-align: left;">3.10</td>
+</tr>
+<tr>
+<td style="text-align: left;">GPU Base 24.04</td>
+<td style="text-align: left;"><code>gpu-base-24-04</code></td>
+<td style="text-align: left;">x86-64</td>
+<td style="text-align: left;">3.12</td>
+</tr>
+<tr>
+<td style="text-align: left;">GPU Base 22.04</td>
+<td style="text-align: left;"><code>gpu-base-22-04</code></td>
+<td style="text-align: left;">x86-64</td>
+<td style="text-align: left;">3.10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ubuntu Server 24.04</td>
+<td style="text-align: left;"><code>ubuntu-24-04</code></td>
+<td style="text-align: left;">x86-64</td>
+<td style="text-align: left;">3.12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ubuntu Server 22.04</td>
+<td style="text-align: left;"><code>ubuntu-22-04</code></td>
+<td style="text-align: left;">x86-64</td>
+<td style="text-align: left;">3.10</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of December 2025, running <code>sudo apt full-upgrade</code> or <code>sudo apt
+dist-upgrade</code> on the Lambda Stack 24.04 or GPU Base 24.04 base images
+produces an error that prevents the upgrade from completing successfully. For
+instructions on how to avoid the error, see
+<a href="troubleshooting/#apt-full-upgrade-fails-on-lambda-stack-2404-and-gpu-base-2404-images">Troubleshooting &gt; apt full-upgrade fails on Lambda Stack 24.04 and GPU Base 24.04 images</a>.</p>
+</div>
+<h2 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">#</a></h2>
+<h3 id="root-volume">Root volume<a class="headerlink" href="#root-volume" title="Permanent link">#</a></h3>
+<p>Each new instance comes with a root volume of a predefined size. The specific
+volume size depends on which instance type you choose. To see which volume sizes
+are associated with each instance type, check out the instance type table above.</p>
+<h3 id="filesystems">Filesystems<a class="headerlink" href="#filesystems" title="Permanent link">#</a></h3>
+<p>When you create a new instance, you're prompted to attach a <strong>filesystem</strong>. A
+filesystem is a unit of networked persistent storage you can connect to your
+instance. Filesystems are typically several orders of magnitude larger than your
+root volume, and are an ideal place to store both your instance state and your
+large datasets.</p>
+<p>To use a filesystem with your instance, you must attach it during the instance
+creation process. The filesystem must also reside in the same region and
+workspace as your instance.</p>
+<p>For more information about filesystems, see <a href="../filesystems/">Filesystems</a>.</p>
+<h4 id="mount-point">Mount point<a class="headerlink" href="#mount-point" title="Permanent link">#</a></h4>
+<p>When you mount a filesystem to your instance, the filesystem is available at:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/lambda/nfs/&lt;FILESYSTEM_NAME&gt;
+</span></code></pre></div>
+<p>By default, the filesystem is symlinked in the <code>ubuntu</code> user's home directory,
+using the filesystem's name. You can safely remove the symlink if it's not
+needed.</p>
+<h4 id="billing">Billing<a class="headerlink" href="#billing" title="Permanent link">#</a></h4>
+<p>Filesystems are billed per GB used per month, in increments of one hour. If you
+delete an instance but not its associated filesystem, you'll continue to be
+billed for the filesystem. For more details on filesystem pricing, see
+<a href="../filesystems/">Filesystems</a>.</p>
+<h4 id="size-limits">Size limits<a class="headerlink" href="#size-limits" title="Permanent link">#</a></h4>
+<p>ODC filesystem size limits vary by region. In general, filesystems have a
+capacity of 8 EB (8,000,000 TB), and you can have a total of 24 filesystems. In
+the Texas, USA (us-south-1) region, filesystem size is limited to 10 TB.</p>
+<h2 id="network">Network<a class="headerlink" href="#network" title="Permanent link">#</a></h2>
+<h3 id="connection-options">Connection options<a class="headerlink" href="#connection-options" title="Permanent link">#</a></h3>
+<p>You connect to your instance through a standard SSH connection. For information
+on creating and managing SSH keys, see <a href="../console/#add-generate-and-delete-ssh-keys">Lambda Cloud console &gt; Add, generate,
+and delete SSH keys</a>
+or the
+<a class="external" href="https://docs.lambda.ai/api/cloud#SSH-keys" rel="noopener noreferrer" target="_blank">SSH keys</a>
+section of the Lambda Cloud API browser.</p>
+<h3 id="firewall-defaults">Firewall defaults<a class="headerlink" href="#firewall-defaults" title="Permanent link">#</a></h3>
+<p>You can define inbound TCP and UDP firewall rules on the <a class="external" href="https://cloud.lambda.ai/firewall" rel="noopener noreferrer" target="_blank">Firewall
+page</a> in the
+Lambda Cloud console. By default, only port 22 (SSH) is open.</p>
+<p>ODC allows ICMP traffic by default, as many network diagnostic tools rely on
+ICMP to determine where connectivity issues are occurring. If you'd prefer to
+restrict ICMP traffic, you can do so on the Firewall page.</p>
+<h3 id="regions">Regions<a class="headerlink" href="#regions" title="Permanent link">#</a></h3>
+<p>Lambda resources are hosted in multiple locations worldwide. Not every instance
+type will be available in every region.</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Physical location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>asia-northeast-1</td>
+<td>Tokyo, Japan</td>
+</tr>
+<tr>
+<td>asia-northeast-2</td>
+<td>Osaka, Japan</td>
+</tr>
+<tr>
+<td>asia-south-1</td>
+<td>India</td>
+</tr>
+<tr>
+<td>europe-central-1</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>me-west-1</td>
+<td>Israel</td>
+</tr>
+<tr>
+<td>us-east-1</td>
+<td>Virginia, USA</td>
+</tr>
+<tr>
+<td>us-east-2</td>
+<td>Washington DC, USA</td>
+</tr>
+<tr>
+<td>us-midwest-1</td>
+<td>Illinois, USA</td>
+</tr>
+<tr>
+<td>us-south-1</td>
+<td>Texas, USA</td>
+</tr>
+<tr>
+<td>us-south-2</td>
+<td>North Texas, USA</td>
+</tr>
+<tr>
+<td>us-south-3</td>
+<td>Central Texas, USA</td>
+</tr>
+<tr>
+<td>us-west-1</td>
+<td>California, USA</td>
+</tr>
+<tr>
+<td>us-west-2</td>
+<td>Arizona, USA</td>
+</tr>
+<tr>
+<td>us-west-3</td>
+<td>Utah, USA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="instance-management">Instance management<a class="headerlink" href="#instance-management" title="Permanent link">#</a></h2>
+<h3 id="lambda-cloud-console">Lambda Cloud console<a class="headerlink" href="#lambda-cloud-console" title="Permanent link">#</a></h3>
+<p>In addition to the firewall settings mentioned earlier, you can manage your
+instances, filesystems, SSH keys, API keys, and more through the Lambda Cloud
+console. For more information, see <a href="../console/">Lambda Cloud console</a>.</p>
+<h3 id="cloud-api">Cloud API<a class="headerlink" href="#cloud-api" title="Permanent link">#</a></h3>
+<p>You can perform administrative tasks such as creating, restarting, listing, and
+terminating your instances through the Lambda Cloud API. For more details, visit
+the
+<a class="external" href="https://docs.lambda.ai/api/cloud" rel="noopener noreferrer" target="_blank">Lambda Cloud API browser</a>.</p>
+<h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">#</a></h2>
+<ul>
+<li><a class="external" href="https://cloud.lambda.ai" rel="noopener noreferrer" target="_blank">Visit the Lambda Cloud portal</a></li>
+<li><a class="external" href="https://docs.lambda.ai/api/cloud" rel="noopener noreferrer" target="_blank">Explore the Lambda Cloud API</a></li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>The NVIDIA GH200 Grace Hopper Superchip features an onboard ARM CPU.
+Verify that your intended workloads run on ARM before choosing this instance
+type.&nbsp;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://x.com/LambdaAPI" target="_blank" rel="noopener" title="x.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/lambda-cloud" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8c0-14.3 5.7-27.9 15.8-38S39.6 0 53.8 0s27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.tabs", "navigation.top", "navigation.expand", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../js/mkdocs-charts-plugin.js"></script>
+      
+        <script src="../../assets/js/glightbox.min.js"></script>
+      
+        <script src="../../assets/js/api-search-links.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      
+        <script src="https://js.hs-scripts.com/21998649.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../assets/js/tablesort.js"></script>
+      
+        <script src="../../assets/js/filter-tags.js"></script>
+      
+    
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ5JKG2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

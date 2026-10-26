@@ -1,0 +1,171 @@
+{
+  "query_date": "2026-10-26",
+  "fx": {
+    "cny_per_usd": 6.685499999999999,
+    "type": "Bank of China USD telegraphic-transfer selling reference, not actual execution rate",
+    "published_local": "2026/10/26 13:48:32",
+    "source_url": "https://www.boc.cn/sourcedb/whpj/?timer=tc",
+    "unit_on_source": "CNY per 100 USD",
+    "sell_per_100_usd": 668.55,
+    "bank_conversion_per_100_usd": 671.62,
+    "snapshot_sha256": "1a8b06bf7eac60031e57ed2f171e032bbaa089993fe9e0432ad9aa080908b6cb"
+  },
+  "a100_rates": [
+    {
+      "id": "runpod",
+      "provider": "Runpod",
+      "product": "Pods A100 SXM 80GB",
+      "usd_per_card_hour": 1.79,
+      "minimum_cards_per_order": 1,
+      "billing_quantum_seconds": 1,
+      "vcpu": 16,
+      "host_ram_gb": 125,
+      "region": "Global public displayed tariff; 30+ regions advertised; this SKU/price not bound to a specific region or live capacity",
+      "tax": "Additional jurisdiction-dependent digital sales tax may apply to credits; exact payer rate is unknown",
+      "monthly_commitment_price_usd": null,
+      "monthly_status": "No current public numeric A100 monthly commitment quote. Savings plans deprecated; reserved clusters contact sales. 720h extension is a calculation, not a monthly plan.",
+      "source_url": "https://www.runpod.io/pricing",
+      "page_updated": "2026-10-08",
+      "billing_url": "https://docs.runpod.io/pods/pricing",
+      "tax_url": "https://docs.runpod.io/accounts-billing/sales-tax",
+      "inclusion": "CPU/RAM listed; storage separately billed; no ingress/egress fee in Pods pricing documentation",
+      "MIG_access_verified": false,
+      "minimum_order_caveat": "Single-card public rate used for order scenario; no order or capacity inquiry was placed."
+    },
+    {
+      "id": "lambda",
+      "provider": "Lambda",
+      "product": "8x A100 SXM 80GB instance",
+      "usd_per_card_hour": 2.79,
+      "minimum_cards_per_order": 8,
+      "usd_per_minimum_instance_hour": 22.32,
+      "billing_quantum_seconds": 60,
+      "vcpu_per_node": 240,
+      "host_ram_gib_per_node": 1800,
+      "root_storage_tib_per_node": 19.5,
+      "region": "Public global list; docs list US, Japan, India, Germany and Israel regions; not all SKUs available in every region. A100-80GB region/capacity is unverified.",
+      "tax": "Published rate excludes applicable sales tax/VAT/GST; invoice tax depends on billing location",
+      "monthly_commitment_price_usd": null,
+      "monthly_status": "On-demand is billed by minute. No matching public numeric A100 monthly reservation quote verified. 720h extension is calculated only.",
+      "source_url": "https://lambda.ai/instances",
+      "billing_url": "https://docs.lambda.ai/public-cloud/billing/",
+      "region_url": "https://docs.lambda.ai/public-cloud/on-demand/",
+      "inclusion": "CPU/RAM/root volume listed; additional filesystem charged separately; no egress fees on instance page",
+      "MIG_access_verified": false
+    }
+  ],
+  "npu_tariffs": [
+    {
+      "id": "ctyun_public",
+      "basis": "official_public_list",
+      "provider": "Tianyi Cloud",
+      "product": "pak3.4xlarge.8 Ascend 910B 64GB",
+      "hourly_cny": 38.45,
+      "monthly_cny": 18454,
+      "minimum_cards_per_order": 1,
+      "vcpu": 16,
+      "host_ram_gb": 128,
+      "region": "Public tariff is not region-specific. Product-region page delegates to ECS; exact PAK3 capacity and matched A100 region were not verified.",
+      "tax": "Tax-inclusive/exclusive basis not stated on retrieved tariff; do not assume zero tax or claim a fully tax-normalized comparison.",
+      "billing_quantum_seconds": null,
+      "source_url": "https://www.ctyun.cn/document/10029787/10047957",
+      "page_updated": "2026-10-15 16:38:42",
+      "billing_url": "https://www.ctyun.cn/document/10029787/10030141",
+      "monthly_url": "https://www.ctyun.cn/document/10029787/10030140",
+      "inclusion": "Compute CPU/RAM/accelerator; disks and public bandwidth separately charged",
+      "stop_rule": "Current page announces ordinary-stop billing change from Oct 28; scheduled-release scenarios require actual release or qualifying economy stop, not merely ordinary stop. No restart-capacity guarantee."
+    },
+    {
+      "id": "author_reported",
+      "basis": "direct_user_supplied_current_task_not_an_invoice",
+      "provider": "Tianyi Cloud user input",
+      "product": "single 910B rental",
+      "hourly_cny": 38,
+      "monthly_cny": 18500,
+      "minimum_cards_per_order": 1,
+      "region": "Not supplied for this analysis",
+      "tax": "Not supplied",
+      "billing_quantum_seconds": null,
+      "source_url": null,
+      "note": "Kept distinct from official 38.45/18454. A100 is self-owned; market rates are opportunity-cost scenarios, not actual rental outlay."
+    }
+  ],
+  "comparison_policy": {
+    "currency": "CNY",
+    "cost_scope": "Listed compute-resource subtotal, before unquantified additional taxes, storage, network, startup and engineering; not TCO or final invoice",
+    "monthly_horizon_hours": [
+      672,
+      720,
+      744
+    ],
+    "primary_month_hours": 720,
+    "fx_sensitivity": [
+      6.5,
+      6.685499999999999,
+      7.0,
+      7.5
+    ],
+    "mig_allocation_alpha": [
+      0.25,
+      0.2857142857142857,
+      1.0
+    ],
+    "mig_allocations_are_tariffs": false,
+    "measured_a100": "A100-SXM4-80GB MIG 2g.20gb",
+    "packing_sensitivity": [
+      1,
+      3
+    ],
+    "packing_is_performance_evidence": false,
+    "source_url_mig": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/supported-mig-profiles.html",
+    "request_unit": "One classified image; measured input batch size is retained"
+  },
+  "service_model": {
+    "demands_per_second": [
+      1,
+      100,
+      500,
+      1000
+    ],
+    "response_budgets_ms": [
+      10,
+      50,
+      100
+    ],
+    "utilization_cap": 0.8,
+    "latency_endpoints": [
+      "mean",
+      "upper_95_t_mean"
+    ],
+    "active_hours_per_day": [
+      0.08333333333333333,
+      1,
+      24
+    ],
+    "billing_policies": [
+      "scheduled_release",
+      "keep_warm"
+    ],
+    "npu_billing_quanta_seconds_assumed": [
+      1,
+      3600
+    ],
+    "month_days": 30,
+    "measured_service_sla": false,
+    "arrival_model": "Periodic arrivals, complete batches dispatched round-robin; no extra network/startup/queue overhead when utilization is below cap"
+  },
+  "statistical_protocol": {
+    "replication_unit": "Five held-out physical process means per context, runs 4-8; 30 timed calls/process are not independent process replicates",
+    "latency_ci": "Descriptive two-sided 95% Student t interval on the five process means, df=4",
+    "ratio_ci": "Descriptive 95% independent-means Fieller interval for target/source ratio of means with zero cross-hardware covariance and conservative df4; normal-means approximation; not a universal or multiplicity-adjusted guarantee",
+    "t_critical_df4": 2.7764451051977987,
+    "price_fx_tax_scenarios_are_CI": false
+  },
+  "original_claim_action": "Replace unconditional measured 66% savings with measured latency/quality and explicitly priced service scenarios. Retain 500/170 only as the archived monthly-budget arithmetic, not an authenticated equal-service result.",
+  "prohibitions_respected": {
+    "orders_placed": false,
+    "messages_sent": false,
+    "new_hardware_used": false,
+    "historical_inputs_modified": false
+  }
+}

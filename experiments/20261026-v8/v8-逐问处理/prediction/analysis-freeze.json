@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-26T06:23:17.311802+00:00",
+  "scientific_protocol_sha256": "9b84441114b9aa53cb68f778502aeb03abda650b215459055332a04c245ebabd",
+  "analysis_code_sha256": "cbb401d4bdf75c85ced37b678ed518ce4b1bea022669b56d86bceb770d8f8de5",
+  "independent_audit_code_sha256": "ec6e51eda356e3774425b1ebaf8397d45d64f7a91f1b9fd37da646cc59abf62d",
+  "analysis_frozen_before_reading_scientific_prediction_metrics": true,
+  "predefined_test_contrasts": [
+    "HELP3 minus HELP0",
+    "HELP3 minus pooled3 finetuned",
+    "HELP3 minus pooled3 conditioned",
+    "HELP3 minus HELP3 no-inner-update"
+  ],
+  "units": "query micro error and equal-model macro error; 12-model cluster bootstrap averaging seeds, 10000 draws; all 7 methods and both validation/test phases retained",
+  "training_changes": false,
+  "execution": {
+    "parallel_shards": 4,
+    "threads_per_process": 1,
+    "tool_session_ids": {
+      "0": 37003,
+      "1": 84582,
+      "2": 76206,
+      "3": 76311
+    }
+  },
+  "engineering_environment_note": "First import lacked scipy on initial PYTHONPATH; resolved by using existing pinned V7 baseline scipy dependencies. This occurred before any scientific fitting."
+}

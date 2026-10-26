@@ -1,0 +1,52 @@
+[
+  {
+    "episode": 100,
+    "help_meta_loss": 3.820322036743164,
+    "pooled_loss": 0.9500606656074524
+  },
+  {
+    "episode": 200,
+    "help_meta_loss": 2.9224131107330322,
+    "pooled_loss": 0.6496492028236389
+  },
+  {
+    "episode": 300,
+    "help_meta_loss": 2.3929550647735596,
+    "pooled_loss": 0.3479032516479492
+  },
+  {
+    "episode": 400,
+    "help_meta_loss": 2.06864070892334,
+    "pooled_loss": 0.3433876037597656
+  },
+  {
+    "episode": 500,
+    "help_meta_loss": 1.8136091232299805,
+    "pooled_loss": 0.3341606557369232
+  },
+  {
+    "episode": 600,
+    "help_meta_loss": 1.5779972076416016,
+    "pooled_loss": 0.32963109016418457
+  },
+  {
+    "episode": 700,
+    "help_meta_loss": 1.38608980178833,
+    "pooled_loss": 0.3634420931339264
+  },
+  {
+    "episode": 800,
+    "help_meta_loss": 1.2069605588912964,
+    "pooled_loss": 0.36690834164619446
+  },
+  {
+    "episode": 900,
+    "help_meta_loss": 1.0466432571411133,
+    "pooled_loss": 0.3093140721321106
+  },
+  {
+    "episode": 1000,
+    "help_meta_loss": 0.9078090190887451,
+    "pooled_loss": 0.34170758724212646
+  }
+]

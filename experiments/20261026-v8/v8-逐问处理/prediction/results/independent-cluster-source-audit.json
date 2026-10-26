@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "utc": "2026-10-26T06:34:10.228313+00:00",
+  "code_sha256": "b7c7ddf5357bf1efbfbbc3751a7c153b8ed0f296453a1164ee0356847c0921db",
+  "scope": "Post-result numerical audit; no retraining, new measurements, selection, or scientific protocol change. Uses independent scalar reconstruction from per-model metrics already verified from raw predictions.",
+  "source_mean_embeddings_reconstructed_from_training_probes": 150,
+  "maximum_source_embedding_difference": 0.0,
+  "cluster_contrasts_independently_recomputed": 4,
+  "draws_per_contrast": 10000,
+  "maximum_scalar_difference_pp": 2.2737367544323206e-12,
+  "maximum_interval_endpoint_difference_pp": 8.185452315956354e-12,
+  "recomputed": [
+    {
+      "first": "help_three_probe_full",
+      "second": "help_zero_probe_source_embedding",
+      "micro_difference_pp": 2120.466103960482,
+      "macro_difference_pp": 1295.4045003544247,
+      "micro95": [
+        -264.42148153166033,
+        6703.403235161639
+      ],
+      "macro95": [
+        -192.79877562489784,
+        3718.954435531807
+      ]
+    },
+    {
+      "first": "help_three_probe_full",
+      "second": "pooled_three_probe_finetuned",
+      "micro_difference_pp": 2390.1884566340987,
+      "macro_difference_pp": 1669.7670946679202,
+      "micro95": [
+        92.09641296485171,
+        6915.60440976602
+      ],
+      "macro95": [
+        202.95612909826065,
+        4040.544735657197
+      ]
+    },
+    {
+      "first": "help_three_probe_full",
+      "second": "pooled_three_probe_conditioned",
+      "micro_difference_pp": 2345.709288492868,
+      "macro_difference_pp": 1620.4948755140326,
+      "micro95": [
+        46.61562872004914,
+        6866.790368781277
+      ],
+      "macro95": [
+        156.87510098133248,
+        3987.517672766758
+      ]
+    },
+    {
+      "first": "help_three_probe_full",
+      "second": "help_three_probe_no_inner_update",
+      "micro_difference_pp": 2120.7255430185546,
+      "macro_difference_pp": 1291.6876908414504,
+      "micro95": [
+        -263.20975886124086,
+        6702.249385410293
+      ],
+      "macro95": [
+        -195.2978222043161,
+        3713.411147239167
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "path": "protocol.json",
+      "sha256": "9b84441114b9aa53cb68f778502aeb03abda650b215459055332a04c245ebabd"
+    },
+    {
+      "path": "results/per-seed-metrics.csv",
+      "sha256": "28fbf71bb9a00941d9cee77f98799f3342b7ba5437151b46b2c89eeb6203b8ea"
+    },
+    {
+      "path": "results/paired-model-cluster-comparisons.json",
+      "sha256": "7e90f9fc351f78509aadbbe605e7056aac80c4801285bb6d53fbc420a2629aef"
+    },
+    {
+      "path": "results/independent-audit.json",
+      "sha256": "d3e1277a9e051345f91dd0ba3524db6f75ee3234573fbfbed654c22492962320"
+    }
+  ]
+}

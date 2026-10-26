@@ -1,0 +1,1820 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Supported MIG Profiles &#8212; NVIDIA Multi-Instance GPU User Guide</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/nvidia-sphinx-theme.css?v=933278ad" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=767de534" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+
+
+
+
+
+
+
+
+
+<script>
+// Public-site consent and analytics are unnecessary in local previews.
+if ((location.protocol === 'http:' || location.protocol === 'https:') && !['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+  document.write("\u003cscript src=\"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js\" type=\"text/javascript\"\n  data-document-language=\"true\" charset=\"UTF-8\" data-domain-script=\"3e2b62ff-7ae7-4ac5-87c8-d5949ecafff5\"\u003e\n\u003c/script\u003e");
+}
+</script>
+<script type="text/javascript">
+  function OptanonWrapper() {
+    var event = new Event('bannerLoaded');
+    window.dispatchEvent(event);
+  }
+</script>
+<script>
+// Public-site consent and analytics are unnecessary in local previews.
+if ((location.protocol === 'http:' || location.protocol === 'https:') && !['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+  document.write("\u003cscript src=\"https://images.nvidia.com/aem-dam/Solutions/ot-js/ot-custom.js\" type=\"text/javascript\"\u003e\n\u003c/script\u003e");
+}
+</script>
+
+
+    <script rel="preload" src="_static/modal-table.js"></script>
+    <script src="_static/documentation_options.js?v=bed2dc90"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scrollspy-patch.js?v=edc4054a"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=65e89d2a"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'supported-mig-profiles';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '../versions1.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '615';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <script src="_static/version-patch.js?v=3e13fdd2"></script>
+    <script src="_static/geoip/geoip.js?v=f4a6bb41"></script>
+
+<script>
+// Public-site consent and analytics are unnecessary in local previews.
+if ((location.protocol === 'http:' || location.protocol === 'https:') && !['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+  document.write("\u003cscript type=\"text/javascript\" src=\"https://assets.adobedtm.com/5d4962a43b79/c1061d2c5e7b/launch-191c2462b890.min.js\"\u003e\u003c/script\u003e");
+}
+</script>
+
+
+    <link rel="icon" href="_static/favicon.ico"/>
+
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting Started with MIG" href="getting-started-with-mig.html" />
+    <link rel="prev" title="MIG Device Names" href="mig-device-names.html" />
+
+<link rel="preload" as="image" href="https://www.nvidia.com/content/dam/1x1-00000000.png">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+    <meta name="docbuild:last-update" content="Oct 13, 2026"/>
+
+
+  </head>
+
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+<img src="https://www.nvidia.com/content/dam/1x1-00000000.png" width="1" height="1" style="display:none;" alt="country_code">
+
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="NVIDIA Multi-Instance GPU User Guide - Home"/>
+    <img src="_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="NVIDIA Multi-Instance GPU User Guide - Home"/>
+  
+  
+    <p class="title logo__title">NVIDIA Multi-Instance GPU User Guide</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+
+
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+
+<div>
+  <ul class="bd-navbar-elements navbar-nav">
+  
+    <li class="nav-item pst-header-nav-item">
+      
+      <a class="nav-link nav-external" href="pdf/MIG_User_Guide.pdf">PDF</a>
+      
+    </li>
+  
+  </ul>
+</div>
+</div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="NVIDIA Multi-Instance GPU User Guide - Home"/>
+    <img src="_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="NVIDIA Multi-Instance GPU User Guide - Home"/>
+  
+  
+    <p class="title logo__title">NVIDIA Multi-Instance GPU User Guide</p>
+  
+</a>
+
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+
+
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+          
+        
+          
+          
+            <div class="navbar-item">
+
+
+<div>
+  <ul class="bd-navbar-elements navbar-nav">
+  
+    <li class="nav-item pst-header-nav-item">
+      
+      <a class="nav-link nav-external" href="pdf/MIG_User_Guide.pdf">PDF</a>
+      
+    </li>
+  
+  </ul>
+</div>
+</div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Table of Contents">
+  <p class="bd-links__title" role="heading" aria-level="1">Table of Contents</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported-gpus.html">Supported GPUs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported-configurations.html">Supported Configurations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="virtualization.html">Virtualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deployment-considerations.html">Deployment Considerations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mig-device-names.html">MIG Device Names</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Supported MIG Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started-with-mig.html">Getting Started with MIG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="device-nodes-and-capabilities.html">Device Nodes and Capabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notices.html">Notices</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Supported MIG Profiles</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+<div class="header-article-item">
+  <div class="d-flex justify-content-end w-100">
+    <a href="https://surveys.hotjar.com/4904bf71-6484-47a7-83ff-4715cceabdb5" id="openPopupButton">Is this page helpful?</a>
+  </div>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="supported-mig-profiles">
+<span id="supported-profiles"></span><h1>Supported MIG Profiles<a class="headerlink" href="#supported-mig-profiles" title="Link to this heading">#</a></h1>
+<p>This section provides an overview of the supported profiles and possible placements of the MIG profiles on supported GPUs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The P2P column in the profile diagrams shows the per-profile flag reported by <code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code>. P2P between MIG instances
+on the same GPU is supported with driver R570 and later (refer to <a class="reference internal" href="deployment-considerations.html#application-considerations"><span class="std std-ref">Application Considerations</span></a>).</p>
+</div>
+<section id="gb300-mig-profiles">
+<h2>GB300 MIG Profiles<a class="headerlink" href="#gb300-mig-profiles" title="Link to this heading">#</a></h2>
+<p>On DGX Station, MIG applies to the GB300 GPU. A DGX Station may also contain an RTX PRO Blackwell card, which has its own MIG profile section.</p>
+<p>The following diagram shows the profiles supported on the NVIDIA GB300:</p>
+<figure class="align-center" id="gb300-profiles-v1">
+<a class="reference internal image-reference" href="_images/gb300-profiles-v1.png"><img alt="Profiles on GB300" src="_images/gb300-profiles-v1.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 10 </span><span class="caption-text">Profiles on GB300</span><a class="headerlink" href="#gb300-profiles-v1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the GB300 252 GB product.</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id1">
+<caption><span class="caption-number">Table 5 </span><span class="caption-text">GPU Instance Profiles on GB300</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Profile Name</p></th>
+<th class="head" rowspan="2"><p>Fraction of Memory</p></th>
+<th class="head" rowspan="2"><p>Fraction of SMs</p></th>
+<th class="head" colspan="3"><p>Hardware Units</p></th>
+<th class="head" rowspan="2"><p>L2 Cache Size</p></th>
+<th class="head" rowspan="2"><p>Copy Engines</p></th>
+<th class="head" rowspan="2"><p>Number of Instances</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>NVDEC</p></th>
+<th class="head"><p>JPEG</p></th>
+<th class="head"><p>OFA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>MIG 1g.31gb</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1/8</p></td>
+<td><p>2</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.31gb+me</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1/8</p></td>
+<td><p>2</p></td>
+<td><p>1 (A single 1g profile can
+include media extensions)</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.63gb</p></td>
+<td><p>2/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>2/8</p></td>
+<td><p>2</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 2g.63gb</p></td>
+<td><p>2/8</p></td>
+<td><p>2/7</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>2/8</p></td>
+<td><p>4</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 3g.126gb</p></td>
+<td><p>4/8</p></td>
+<td><p>3/7</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>0</p></td>
+<td><p>4/8</p></td>
+<td><p>6</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 4g.126gb</p></td>
+<td><p>4/8</p></td>
+<td><p>4/7</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>4/8</p></td>
+<td><p>8</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 7g.251gb</p></td>
+<td><p>Full</p></td>
+<td><p>Full</p></td>
+<td><p>7</p></td>
+<td><p>7</p></td>
+<td><p>2</p></td>
+<td><p>Full</p></td>
+<td><p>16</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="b200-mig-profiles">
+<h2>B200 MIG Profiles<a class="headerlink" href="#b200-mig-profiles" title="Link to this heading">#</a></h2>
+<p>The following diagram shows the profiles supported on the NVIDIA B200:</p>
+<figure class="align-center" id="b200-profiles-v1">
+<a class="reference internal image-reference" href="_images/b200-profiles-v1.png"><img alt="Profiles on B200" src="_images/b200-profiles-v1.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 11 </span><span class="caption-text">Profiles on B200</span><a class="headerlink" href="#b200-profiles-v1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the B200 180 GB product.</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id2">
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">GPU Instance Profiles on B200</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Profile Name</p></th>
+<th class="head" rowspan="2"><p>Fraction of Memory</p></th>
+<th class="head" rowspan="2"><p>Fraction of SMs</p></th>
+<th class="head" colspan="3"><p>Hardware Units</p></th>
+<th class="head" rowspan="2"><p>L2 Cache Size</p></th>
+<th class="head" rowspan="2"><p>Copy Engines</p></th>
+<th class="head" rowspan="2"><p>Number of Instances</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>NVDEC</p></th>
+<th class="head"><p>JPEG</p></th>
+<th class="head"><p>OFA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>MIG 1g.23gb</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1/8</p></td>
+<td><p>2</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.23gb+me</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1/8</p></td>
+<td><p>2</p></td>
+<td><p>1 (A single 1g profile can
+include media extensions)</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.45gb</p></td>
+<td><p>2/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>2/8</p></td>
+<td><p>2</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 2g.45gb</p></td>
+<td><p>2/8</p></td>
+<td><p>2/7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>2/8</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 3g.90gb</p></td>
+<td><p>4/8</p></td>
+<td><p>3/7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>4/8</p></td>
+<td><p>6</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 4g.90gb</p></td>
+<td><p>4/8</p></td>
+<td><p>4/7</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>4/8</p></td>
+<td><p>8</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 7g.180gb</p></td>
+<td><p>Full</p></td>
+<td><p>Full</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>Full</p></td>
+<td><p>16</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="rtx-pro-6000-blackwell-mig-profiles">
+<h2>RTX PRO 6000 Blackwell MIG Profiles<a class="headerlink" href="#rtx-pro-6000-blackwell-mig-profiles" title="Link to this heading">#</a></h2>
+<p>The following diagram shows the profiles supported on the NVIDIA RTX PRO 6000 Blackwell Workstation Edition, Max-Q Workstation Edition, and RTX PRO 6000 Blackwell Server Edition:</p>
+<figure class="align-center" id="mig-blackwell-profile">
+<a class="reference internal image-reference" href="_images/mig-blackwell-profile.png"><img alt="Profiles on RTX PRO 6000" src="_images/mig-blackwell-profile.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 12 </span><span class="caption-text">Profiles on NVIDIA RTX PRO 6000 Blackwell Workstation Edition and RTX PRO 6000 Blackwell Max-Q Workstation Edition</span><a class="headerlink" href="#mig-blackwell-profile" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the RTX PRO 6000 Blackwell Workstation Edition, Max-Q Workstation Edition, and RTX PRO 6000 Blackwell Server Edition 96GB products:</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id3">
+<caption><span class="caption-number">Table 7 </span><span class="caption-text">GPU Instance Profiles on RTX PRO 6000</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Profile Name</p></th>
+<th class="head" rowspan="2"><p>Fraction of Memory</p></th>
+<th class="head" rowspan="2"><p>Fraction of SMs</p></th>
+<th class="head" colspan="4"><p>Hardware Units</p></th>
+<th class="head" rowspan="2"><p>L2 Cache Size</p></th>
+<th class="head" rowspan="2"><p>Copy Engines</p></th>
+<th class="head" rowspan="2"><p>Number of Instances</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>NVDEC</p></th>
+<th class="head"><p>NVENC</p></th>
+<th class="head"><p>JPEG</p></th>
+<th class="head"><p>OFA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>MIG 1g.24gb</p></td>
+<td><p>1/4</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.24gb+me</p></td>
+<td><p>1/4</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.24gb+gfx</p></td>
+<td><p>1/4</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.24gb+me.all</p></td>
+<td><p>1/4</p></td>
+<td><p>1/4</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.24gb-me</p></td>
+<td><p>1/4</p></td>
+<td><p>1/4</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 2g.48gb</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>1/2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.48gb+gfx</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>1/2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 2g.48gb+me.all</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>1/2</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.48gb-me</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1/2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 4g.96gb</p></td>
+<td><p>Full</p></td>
+<td><p>Full</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>Full</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 4g.96gb+gfx</p></td>
+<td><p>Full</p></td>
+<td><p>Full</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>Full</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="rtx-pro-5000-blackwell-mig-profiles">
+<h2>RTX PRO 5000 Blackwell MIG Profiles<a class="headerlink" href="#rtx-pro-5000-blackwell-mig-profiles" title="Link to this heading">#</a></h2>
+<p>The following diagram shows the profiles supported on the NVIDIA RTX PRO 5000 Blackwell:</p>
+<figure class="align-center" id="mig-blackwell-5000">
+<a class="reference internal image-reference" href="_images/blackwell-5000.png"><img alt="Profiles on RTX PRO 5000" src="_images/blackwell-5000.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 13 </span><span class="caption-text">Profiles on NVIDIA RTX PRO 5000 Blackwell</span><a class="headerlink" href="#mig-blackwell-5000" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the RTX PRO 5000 Blackwell 48GB products:</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id4">
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">GPU Instance Profiles on RTX PRO 5000</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Profile Name</p></th>
+<th class="head" rowspan="2"><p>Fraction of Memory</p></th>
+<th class="head" rowspan="2"><p>Fraction of SMs</p></th>
+<th class="head" colspan="4"><p>Hardware Units</p></th>
+<th class="head" rowspan="2"><p>L2 Cache Size</p></th>
+<th class="head" rowspan="2"><p>Copy Engines</p></th>
+<th class="head" rowspan="2"><p>Number of Instances</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>NVDEC</p></th>
+<th class="head"><p>NVENC</p></th>
+<th class="head"><p>JPEG</p></th>
+<th class="head"><p>OFA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>MIG 1g.24gb</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.24gb+me</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.24gb+gfx</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.24gb+me.all</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.24gb-me</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 2g.48gb</p></td>
+<td><p>Full</p></td>
+<td><p>Full</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>Full</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.48gb+gfx</p></td>
+<td><p>Full</p></td>
+<td><p>Full</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>Full</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="rtx-pro-4500-blackwell-mig-profiles">
+<h2>RTX PRO 4500 Blackwell MIG Profiles<a class="headerlink" href="#rtx-pro-4500-blackwell-mig-profiles" title="Link to this heading">#</a></h2>
+<p>The following diagram shows the profiles supported on the NVIDIA RTX PRO 4500 Blackwell:</p>
+<figure class="align-center" id="mig-blackwell-4500">
+<a class="reference internal image-reference" href="_images/blackwell-4500.png"><img alt="Profiles on RTX PRO 4500" src="_images/blackwell-4500.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 14 </span><span class="caption-text">Profiles on NVIDIA RTX PRO 4500 Blackwell</span><a class="headerlink" href="#mig-blackwell-4500" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the RTX PRO 4500 Blackwell 32GB products:</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id5">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">GPU Instance Profiles on RTX PRO 4500</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Profile Name</p></th>
+<th class="head" rowspan="2"><p>Fraction of Memory</p></th>
+<th class="head" rowspan="2"><p>Fraction of SMs</p></th>
+<th class="head" colspan="4"><p>Hardware Units</p></th>
+<th class="head" rowspan="2"><p>L2 Cache Size</p></th>
+<th class="head" rowspan="2"><p>Copy Engines</p></th>
+<th class="head" rowspan="2"><p>Number of Instances</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>NVDEC</p></th>
+<th class="head"><p>NVENC</p></th>
+<th class="head"><p>JPEG</p></th>
+<th class="head"><p>OFA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>MIG 1g.16gb</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.16gb+gfx</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.16gb+me.all</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.16gb-me</p></td>
+<td><p>1/2</p></td>
+<td><p>1/2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1/2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.32gb</p></td>
+<td><p>Full</p></td>
+<td><p>Full</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>Full</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 2g.32gb+gfx</p></td>
+<td><p>Full</p></td>
+<td><p>Full</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>Full</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="thor-igpu-mig-profiles">
+<h2>Thor iGPU MIG Profiles<a class="headerlink" href="#thor-igpu-mig-profiles" title="Link to this heading">#</a></h2>
+<p>The following diagram shows the profiles supported on the NVIDIA Thor iGPU:</p>
+<figure class="align-center" id="thor-igpu-profiles">
+<a class="reference internal image-reference" href="_images/thor-igpu-profiles.png"><img alt="MIG profiles on Thor iGPU" src="_images/thor-igpu-profiles.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 15 </span><span class="caption-text">MIG profiles on NVIDIA Thor iGPU</span><a class="headerlink" href="#thor-igpu-profiles" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the NVIDIA Thor iGPU (GB10B).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Thor iGPU uses unified system memory shared with the CPU. There is no dedicated video
+memory, so all profiles report 0 GB. Memory bandwidth is proportional to the instance size.</p>
+<p>At most two MIG instances can coexist simultaneously: one compute instance and one
+graphics (<code class="docutils literal notranslate"><span class="pre">+gfx</span></code>) instance. The full <code class="docutils literal notranslate"><span class="pre">3g.0gb</span></code> profile cannot coexist with any
+other instance.</p>
+</div>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id6">
+<caption><span class="caption-number">Table 10 </span><span class="caption-text">GPU Instance Profiles on Thor iGPU</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Profile Name</p></th>
+<th class="head" rowspan="2"><p>Fraction of Memory</p></th>
+<th class="head" rowspan="2"><p>Fraction of SMs</p></th>
+<th class="head" colspan="4"><p>Hardware Units</p></th>
+<th class="head" rowspan="2"><p>L2 Cache Size</p></th>
+<th class="head" rowspan="2"><p>Copy Engines</p></th>
+<th class="head" rowspan="2"><p>Number of Instances</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>NVDEC</p></th>
+<th class="head"><p>NVENC</p></th>
+<th class="head"><p>JPEG</p></th>
+<th class="head"><p>OFA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>MIG 1g.0gb+me</p></td>
+<td><p>N/A</p></td>
+<td><p>~1/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>~1/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.0gb</p></td>
+<td><p>N/A</p></td>
+<td><p>~1/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>~1/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.0gb+gfx</p></td>
+<td><p>N/A</p></td>
+<td><p>~1/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>~1/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 2g.0gb</p></td>
+<td><p>N/A</p></td>
+<td><p>~2/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>~2/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.0gb+gfx</p></td>
+<td><p>N/A</p></td>
+<td><p>~2/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>~2/3</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 3g.0gb</p></td>
+<td><p>N/A</p></td>
+<td><p>Full</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>Full</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 3g.0gb+gfx</p></td>
+<td><p>N/A</p></td>
+<td><p>Full</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>Full</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="h100-mig-profiles">
+<h2>H100 MIG Profiles<a class="headerlink" href="#h100-mig-profiles" title="Link to this heading">#</a></h2>
+<p>The following diagram shows the profiles supported on the NVIDIA H100:</p>
+<figure class="align-center" id="h100-profiles-v1">
+<a class="reference internal image-reference" href="_images/h100-profiles-v1.png"><img alt="Profiles on H100" src="_images/h100-profiles-v1.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 16 </span><span class="caption-text">Profiles on H100</span><a class="headerlink" href="#h100-profiles-v1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the H100 80GB product (PCIe and SXM5).</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id7">
+<caption><span class="caption-number">Table 11 </span><span class="caption-text">GPU Instance Profiles on H100</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Profile Name</p></th>
+<th class="head"><p>Fraction of Memory</p></th>
+<th class="head"><p>Fraction of SMs</p></th>
+<th class="head"><p>Hardware Units</p></th>
+<th class="head"><p>L2 Cache Size</p></th>
+<th class="head"><p>Copy Engines</p></th>
+<th class="head"><p>Number of Instances Available</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MIG 1g.10gb</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC  /1 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.10gb+me</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /1 JPEG /1 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>1 (A single 1g profile can include media extensions)</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.20gb</p></td>
+<td><p>1/4</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /1 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.20gb</p></td>
+<td><p>2/8</p></td>
+<td><p>2/7</p></td>
+<td><p>2 NVDECs /2 JPEG /0 OFA</p></td>
+<td><p>2/8</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 3g.40gb</p></td>
+<td><p>4/8</p></td>
+<td><p>3/7</p></td>
+<td><p>3 NVDECs /3 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 4g.40gb</p></td>
+<td><p>4/8</p></td>
+<td><p>4/7</p></td>
+<td><p>4 NVDECs /4 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 7g.80gb</p></td>
+<td><p>Full</p></td>
+<td><p>7/7</p></td>
+<td><p>7 NVDECs /7 JPEG /1 OFA</p></td>
+<td><p>Full</p></td>
+<td><p>8</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The following table shows the supported profiles on the H100 94GB product (PCIe and SXM5).</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Profile Name</p></th>
+<th class="head"><p>Fraction of Memory</p></th>
+<th class="head"><p>Fraction of SMs</p></th>
+<th class="head"><p>Hardware Units</p></th>
+<th class="head"><p>L2 Cache Size</p></th>
+<th class="head"><p>Copy Engines</p></th>
+<th class="head"><p>Number of Instances Available</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MIG 1g.12gb</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC  /1 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.12gb+me</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /1 JPEG /1 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>1 (A single 1g profile can include media extensions)</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.24gb</p></td>
+<td><p>1/4</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /1 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.24gb</p></td>
+<td><p>2/8</p></td>
+<td><p>2/7</p></td>
+<td><p>2 NVDECs /2 JPEG /0 OFA</p></td>
+<td><p>2/8</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 3g.47gb</p></td>
+<td><p>4/8</p></td>
+<td><p>3/7</p></td>
+<td><p>3 NVDECs /3 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 4g.47gb</p></td>
+<td><p>4/8</p></td>
+<td><p>4/7</p></td>
+<td><p>4 NVDECs /4 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 7g.94gb</p></td>
+<td><p>Full</p></td>
+<td><p>7/7</p></td>
+<td><p>7 NVDECs /7 JPEG /1 OFA</p></td>
+<td><p>Full</p></td>
+<td><p>8</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The following table shows the supported profiles on the H100 96GB product (H100 on GH200).</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Profile Name</p></th>
+<th class="head"><p>Fraction of Memory</p></th>
+<th class="head"><p>Fraction of SMs</p></th>
+<th class="head"><p>Hardware Units</p></th>
+<th class="head"><p>L2 Cache Size</p></th>
+<th class="head"><p>Copy Engines</p></th>
+<th class="head"><p>Number of Instances Available</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MIG 1g.12gb</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /1 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.12gb+me</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /1 JPEG /1 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>1 (A single 1g profile can include media extensions)</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.24gb</p></td>
+<td><p>1/4</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /1 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.24gb</p></td>
+<td><p>2/8</p></td>
+<td><p>2/7</p></td>
+<td><p>2 NVDECs /2 JPEG /0 OFA</p></td>
+<td><p>2/8</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 3g.48gb</p></td>
+<td><p>4/8</p></td>
+<td><p>3/7</p></td>
+<td><p>3 NVDECs /3 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 4g.48gb</p></td>
+<td><p>4/8</p></td>
+<td><p>4/7</p></td>
+<td><p>4 NVDECs /4 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 7g.96gb</p></td>
+<td><p>Full</p></td>
+<td><p>7/7</p></td>
+<td><p>7 NVDECs /7 JPEG /1 OFA</p></td>
+<td><p>Full</p></td>
+<td><p>8</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="h200-mig-profiles">
+<h2>H200 MIG Profiles<a class="headerlink" href="#h200-mig-profiles" title="Link to this heading">#</a></h2>
+<p>The following diagram shows the profiles supported on the NVIDIA H200:</p>
+<figure class="align-center" id="h200-profiles-v1">
+<a class="reference internal image-reference" href="_images/h200-profiles-v1.png"><img alt="Profiles on H200" src="_images/h200-profiles-v1.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 17 </span><span class="caption-text">Profiles on H200</span><a class="headerlink" href="#h200-profiles-v1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the H200 141GB product.</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id8">
+<caption><span class="caption-number">Table 12 </span><span class="caption-text">GPU Instance Profiles on H200</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Profile Name</p></th>
+<th class="head"><p>Fraction of Memory</p></th>
+<th class="head"><p>Fraction of SMs</p></th>
+<th class="head"><p>Hardware Units</p></th>
+<th class="head"><p>L2 Cache Size</p></th>
+<th class="head"><p>Copy Engines</p></th>
+<th class="head"><p>Number of Instances Available</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MIG 1g.18gb</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDECs /1 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.18gb+me</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /1 JPEG /1 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>1 (A single 1g profile can include media extensions)</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.35gb</p></td>
+<td><p>1/4</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDECs /1 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.35gb</p></td>
+<td><p>2/8</p></td>
+<td><p>2/7</p></td>
+<td><p>2 NVDECs /2 JPEG /0 OFA</p></td>
+<td><p>2/8</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 3g.71gb</p></td>
+<td><p>4/8</p></td>
+<td><p>3/7</p></td>
+<td><p>3 NVDECs /3 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 4g.71gb</p></td>
+<td><p>4/8</p></td>
+<td><p>4/7</p></td>
+<td><p>4 NVDECs /4 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 7g.141gb</p></td>
+<td><p>Full</p></td>
+<td><p>7/7</p></td>
+<td><p>7 NVDECs /7 JPEG /1 OFA</p></td>
+<td><p>Full</p></td>
+<td><p>8</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="a100-mig-profiles">
+<h2>A100 MIG Profiles<a class="headerlink" href="#a100-mig-profiles" title="Link to this heading">#</a></h2>
+<p>The following diagram shows the profiles supported on the NVIDIA A100:</p>
+<figure class="align-center" id="a100-profiles-v4">
+<a class="reference internal image-reference" href="_images/a100-profiles-v4.png"><img alt="Profiles on A100" src="_images/a100-profiles-v4.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 18 </span><span class="caption-text">Profiles on A100</span><a class="headerlink" href="#a100-profiles-v4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the A100-SXM4-40GB product. For A100-SXM4-80GB, the profile
+names will change according to the memory proportion – for example, <code class="docutils literal notranslate"><span class="pre">1g.10gb</span></code>, <code class="docutils literal notranslate"><span class="pre">1g.10gb+me</span></code>, <code class="docutils literal notranslate"><span class="pre">1g.20gb</span></code>,
+<code class="docutils literal notranslate"><span class="pre">2g.20gb</span></code>, <code class="docutils literal notranslate"><span class="pre">3g.40gb</span></code>, <code class="docutils literal notranslate"><span class="pre">4g.40gb</span></code>, <code class="docutils literal notranslate"><span class="pre">7g.80gb</span></code> respectively.</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id9">
+<caption><span class="caption-number">Table 13 </span><span class="caption-text">GPU Instance Profiles on A100</span><a class="headerlink" href="#id9" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Profile Name</p></th>
+<th class="head"><p>Fraction of Memory</p></th>
+<th class="head"><p>Fraction of SMs</p></th>
+<th class="head"><p>Hardware Units</p></th>
+<th class="head"><p>L2 Cache Size</p></th>
+<th class="head"><p>Copy Engines</p></th>
+<th class="head"><p>Number of Instances Available</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MIG 1g.5gb</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>0 NVDECs /0 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.5gb+me</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /1 JPEG /1 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>1 (A single 1g profile can include media extensions)</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 1g.10gb</p></td>
+<td><p>1/8</p></td>
+<td><p>1/7</p></td>
+<td><p>1 NVDEC /0 JPEG /0 OFA</p></td>
+<td><p>1/8</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.10gb</p></td>
+<td><p>2/8</p></td>
+<td><p>2/7</p></td>
+<td><p>1 NVDEC /0 JPEG /0 OFA</p></td>
+<td><p>2/8</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 3g.20gb</p></td>
+<td><p>4/8</p></td>
+<td><p>3/7</p></td>
+<td><p>2 NVDECs /0 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 4g.20gb</p></td>
+<td><p>4/8</p></td>
+<td><p>4/7</p></td>
+<td><p>2 NVDECs /0 JPEG /0 OFA</p></td>
+<td><p>4/8</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 7g.40gb</p></td>
+<td><p>Full</p></td>
+<td><p>7/7</p></td>
+<td><p>5 NVDECs /1 JPEG /1 OFA</p></td>
+<td><p>Full</p></td>
+<td><p>7</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">1g.5gb+me</span></code> profile is only available starting with R470 drivers.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">1g.10gb</span></code> profile is only available starting with R525 drivers.</p>
+</div>
+</section>
+<section id="a30-mig-profiles">
+<h2>A30 MIG Profiles<a class="headerlink" href="#a30-mig-profiles" title="Link to this heading">#</a></h2>
+<p>The following diagram shows the profiles supported on the NVIDIA A30:</p>
+<figure class="align-center" id="a30-profiles-v2">
+<a class="reference internal image-reference" href="_images/a30-profiles-v2.png"><img alt="Profiles on A30" src="_images/a30-profiles-v2.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Figure 19 </span><span class="caption-text">Profiles on A30</span><a class="headerlink" href="#a30-profiles-v2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The following table shows the supported profiles on the A30-24GB product.</p>
+<div class="pst-scrollable-table-container"><table class="table-no-stripes table" id="id10">
+<caption><span class="caption-number">Table 14 </span><span class="caption-text">GPU Instance Profiles on A30</span><a class="headerlink" href="#id10" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Profile Name</p></th>
+<th class="head"><p>Fraction of Memory</p></th>
+<th class="head"><p>Fraction of SMs</p></th>
+<th class="head"><p>Hardware Units</p></th>
+<th class="head"><p>L2 Cache Size</p></th>
+<th class="head"><p>Copy Engines</p></th>
+<th class="head"><p>Number of Instances Available</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MIG 1g.6gb</p></td>
+<td><p>1/4</p></td>
+<td><p>1/4</p></td>
+<td><p>0 NVDECs /0 JPEG /0 OFA</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 1g.6gb+me</p></td>
+<td><p>1/4</p></td>
+<td><p>1/4</p></td>
+<td><p>1 NVDEC /1 JPEG /1 OFA</p></td>
+<td><p>1/4</p></td>
+<td><p>1</p></td>
+<td><p>1 (A single 1g profile can include media extensions)</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 2g.12gb</p></td>
+<td><p>2/4</p></td>
+<td><p>2/4</p></td>
+<td><p>2 NVDECs /0 JPEG /0 OFA</p></td>
+<td><p>2/4</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>MIG 2g.12gb+me</p></td>
+<td><p>2/4</p></td>
+<td><p>2/4</p></td>
+<td><p>2 NVDECs /1 JPEG /1 OFA</p></td>
+<td><p>2/4</p></td>
+<td><p>2</p></td>
+<td><p>1 (A single 2g profile can include media extensions)</p></td>
+</tr>
+<tr class="row-even"><td><p>MIG 4g.24gb</p></td>
+<td><p>Full</p></td>
+<td><p>4/4</p></td>
+<td><p>4 NVDECs /1 JPEG /1 OFA</p></td>
+<td><p>Full</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">1g.6gb+me</span></code> profile is only available starting with R470 drivers.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">2g.12gb+me</span></code> profile is only available starting with R525 drivers.</p>
+</div>
+<p><strong>Universal MIG</strong></p>
+<p>Universal MIG enables both compute and graphics workloads to run on the same GPU with hardware isolation. This feature is available on RTX PRO 6000 GPUs. <code class="docutils literal notranslate"><span class="pre">+gfx</span> <span class="pre">profiles</span></code>
+which are new in GB20X architecture, enables graphics support in MIG instances.</p>
+<p><strong>Profile References</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">+me</span> <span class="pre">profiles</span></code>: Include at least one media engine (NVDEC, NVENC, NVJPG, or OFA).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+gfx</span></code>: Adds support for graphics APIs (new in GB20X).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+me.all</span></code>: Allocates all available media engines to this instance (does not include graphics support).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-me</span></code>: Excludes all media engines for pure compute workloads.</p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="mig-device-names.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">MIG Device Names</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="getting-started-with-mig.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Getting Started with MIG</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+
+
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gb300-mig-profiles">GB300 MIG Profiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b200-mig-profiles">B200 MIG Profiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rtx-pro-6000-blackwell-mig-profiles">RTX PRO 6000 Blackwell MIG Profiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rtx-pro-5000-blackwell-mig-profiles">RTX PRO 5000 Blackwell MIG Profiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rtx-pro-4500-blackwell-mig-profiles">RTX PRO 4500 Blackwell MIG Profiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thor-igpu-mig-profiles">Thor iGPU MIG Profiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#h100-mig-profiles">H100 MIG Profiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#h200-mig-profiles">H200 MIG Profiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a100-mig-profiles">A100 MIG Profiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a30-mig-profiles">A30 MIG Profiles</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+
+<script type="text/javascript">if (typeof _satellite !== "undefined") {_satellite.pageBottom();}</script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+<a class="footer-brand logo" href="https://www.nvidia.com">
+  <img src="_static/nvidia-logo-horiz-rgb-1c-blk-for-screen.svg" class="logo__image only-light" alt="NVIDIA"/>
+  <img src="_static/nvidia-logo-horiz-rgb-1c-wht-for-screen.svg" class="logo__image only-dark" alt="NVIDIA"/>
+</a></div>
+      
+        <div class="footer-item">
+
+<div class="footer-links">
+  
+  
+  <a class="external" href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/">Privacy Policy</a>
+   | 
+  
+  
+  
+  <a class="external" href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/">Your Privacy Choices</a>
+   | 
+  
+  
+  
+  <a class="external" href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/">Terms of Service</a>
+   | 
+  
+  
+  
+  <a class="external" href="https://www.nvidia.com/en-us/about-nvidia/accessibility/">Accessibility</a>
+   | 
+  
+  
+  
+  <a class="external" href="https://www.nvidia.com/en-us/about-nvidia/company-policies/">Corporate Policies</a>
+   | 
+  
+  
+  
+  <a class="external" href="https://www.nvidia.com/en-us/product-security/">Product Security</a>
+   | 
+  
+  
+  
+  <a class="external" href="https://www.nvidia.com/en-us/contact/">Contact</a>
+  
+  
+  
+</div>
+</div>
+      
+        <div class="footer-item">
+
+
+
+
+  <p class="copyright">
+    
+      Copyright © 2020-2026, NVIDIA Corporation &amp; affiliates. All rights reserved.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on Oct 13, 2026.
+  <br/>
+</p></div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

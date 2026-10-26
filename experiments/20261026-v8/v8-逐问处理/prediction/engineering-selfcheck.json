@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "utc": "2026-10-26T06:12:29.014948+00:00",
+  "synthetic_only": true,
+  "real_target_metrics_seen": false,
+  "episodes": 10,
+  "seconds": 0.0758129999958328,
+  "seconds_per_paired_training_episode": 0.0075812999995832795,
+  "projected_150_pairs_training_seconds": 1137.194999937492,
+  "second_order_gradient_executes": true,
+  "meta_sgd_parameters_updated": true,
+  "z_modulator_parameters_updated": true,
+  "finite_inner_adaptation": true,
+  "final_synthetic_losses": [
+    3.737287998199463,
+    0.90723717212677
+  ],
+  "code_sha256": "788700e554e3f76a13cded66f5bc7556cff76cd2470ce48222383c2f6e66455a"
+}

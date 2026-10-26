@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "cohort_models": 12,
+  "graph_configurations": 36,
+  "platform_graphs": 180,
+  "all_fx_node_platform_rows": 14400,
+  "measured_query_platform_records": 13905,
+  "excluded_context_or_non_tensor_execution_nodes": 495,
+  "measured_timing_blocks": 278100,
+  "all_matching_graph_input_hashes_agree": true,
+  "shape_comparison_scope": "Portable shape/dtype/stride/element metadata agree; Ascend-only backend_storage_format is retained in raw profiles but excluded from this comparison. This does not assert identical physical storage layout.",
+  "sources": [
+    {
+      "file": "m5cpu.json",
+      "sha256": "f4ead4dff6975a699dc0bd5bc2d3de4870e9bbf354e0e36cbdabc9465e47f253",
+      "graphs": 36,
+      "collection_failures": []
+    },
+    {
+      "file": "m5mps.json",
+      "sha256": "84e057621a380cd47f2c291e79fb366474efd3873f85dbfc8226ef8601c766cb",
+      "graphs": 36,
+      "collection_failures": []
+    },
+    {
+      "file": "xeon_cpu.json",
+      "sha256": "10883e02a8b80820a09cc451f8c577da7fa0415b8974ecc1ae37e6b3951de42e",
+      "graphs": 36,
+      "collection_failures": []
+    },
+    {
+      "file": "a100mig.json",
+      "sha256": "ecd7f2e3b6332e1b452d43905ab2fca60110876accda044a146c09a13215fa41",
+      "graphs": 36,
+      "collection_failures": []
+    },
+    {
+      "file": "npub3.json",
+      "sha256": "dc06062066b9be617b0ce709ecdfaa4e1a9b088e85180c1aaaac52205eb31055",
+      "graphs": 36,
+      "collection_failures": []
+    }
+  ],
+  "platforms": [
+    {
+      "device_id": "Apple-M5-CPU-4T",
+      "all_fx_nodes": 2880,
+      "excluded_context_or_non_tensor_execution": 99,
+      "measured": 2781,
+      "timing_blocks": 55620,
+      "failed_record": 0,
+      "unsupported_record": 0,
+      "eligible_missing_record": 0,
+      "derived_record": 0,
+      "boundary": "Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware."
+    },
+    {
+      "device_id": "Apple-M5-MPS",
+      "all_fx_nodes": 2880,
+      "excluded_context_or_non_tensor_execution": 99,
+      "measured": 2781,
+      "timing_blocks": 55620,
+      "failed_record": 0,
+      "unsupported_record": 0,
+      "eligible_missing_record": 0,
+      "derived_record": 0,
+      "boundary": "Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware."
+    },
+    {
+      "device_id": "Cloud-x86-CPU-4T",
+      "all_fx_nodes": 2880,
+      "excluded_context_or_non_tensor_execution": 99,
+      "measured": 2781,
+      "timing_blocks": 55620,
+      "failed_record": 0,
+      "unsupported_record": 0,
+      "eligible_missing_record": 0,
+      "derived_record": 0,
+      "boundary": "Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware."
+    },
+    {
+      "device_id": "A100-SXM4-MIG-2g20GB",
+      "all_fx_nodes": 2880,
+      "excluded_context_or_non_tensor_execution": 99,
+      "measured": 2781,
+      "timing_blocks": 55620,
+      "failed_record": 0,
+      "unsupported_record": 0,
+      "eligible_missing_record": 0,
+      "derived_record": 0,
+      "boundary": "Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware."
+    },
+    {
+      "device_id": "Ascend-910B3-64GB",
+      "all_fx_nodes": 2880,
+      "excluded_context_or_non_tensor_execution": 99,
+      "measured": 2781,
+      "timing_blocks": 55620,
+      "failed_record": 0,
+      "unsupported_record": 0,
+      "eligible_missing_record": 0,
+      "derived_record": 0,
+      "boundary": "Only the executed 12-architecture/3-configuration cohort; no coverage assertion for unexecuted models or original historical hardware."
+    }
+  ],
+  "original_5000_claim_authenticated": false,
+  "scope": "Recount and identity verification of existing raw physical evidence; no new measurement or inferred labels."
+}

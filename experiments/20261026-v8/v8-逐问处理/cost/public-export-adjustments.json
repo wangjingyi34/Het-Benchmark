@@ -1,0 +1,403 @@
+{
+  "scope": "Privacy/path-only export; arithmetic and measured data unchanged. Private originals retained.",
+  "source_calculator_sha256": "55d8a0c85e5054d6aafb78efd18859764321de1d388b7243395bfece74d2fdf5",
+  "copied_explicit_allowlist": [
+    "recompute_costs.py",
+    "pricing-inputs.json",
+    "sources/measurements/cuda-resnet18-b1-r4.json",
+    "sources/measurements/cuda-resnet18-b1-r5.json",
+    "sources/measurements/cuda-resnet18-b1-r6.json",
+    "sources/measurements/cuda-resnet18-b1-r7.json",
+    "sources/measurements/cuda-resnet18-b1-r8.json",
+    "sources/measurements/cuda-resnet18-b4-r4.json",
+    "sources/measurements/cuda-resnet18-b4-r5.json",
+    "sources/measurements/cuda-resnet18-b4-r6.json",
+    "sources/measurements/cuda-resnet18-b4-r7.json",
+    "sources/measurements/cuda-resnet18-b4-r8.json",
+    "sources/measurements/cuda-resnet50-b1-r4.json",
+    "sources/measurements/cuda-resnet50-b1-r5.json",
+    "sources/measurements/cuda-resnet50-b1-r6.json",
+    "sources/measurements/cuda-resnet50-b1-r7.json",
+    "sources/measurements/cuda-resnet50-b1-r8.json",
+    "sources/measurements/cuda-resnet50-b4-r4.json",
+    "sources/measurements/cuda-resnet50-b4-r5.json",
+    "sources/measurements/cuda-resnet50-b4-r6.json",
+    "sources/measurements/cuda-resnet50-b4-r7.json",
+    "sources/measurements/cuda-resnet50-b4-r8.json",
+    "sources/measurements/npu-resnet18-b1-r4.json",
+    "sources/measurements/npu-resnet18-b1-r5.json",
+    "sources/measurements/npu-resnet18-b1-r6.json",
+    "sources/measurements/npu-resnet18-b1-r7.json",
+    "sources/measurements/npu-resnet18-b1-r8.json",
+    "sources/measurements/npu-resnet18-b4-r4.json",
+    "sources/measurements/npu-resnet18-b4-r5.json",
+    "sources/measurements/npu-resnet18-b4-r6.json",
+    "sources/measurements/npu-resnet18-b4-r7.json",
+    "sources/measurements/npu-resnet18-b4-r8.json",
+    "sources/measurements/npu-resnet50-b1-r4.json",
+    "sources/measurements/npu-resnet50-b1-r5.json",
+    "sources/measurements/npu-resnet50-b1-r6.json",
+    "sources/measurements/npu-resnet50-b1-r7.json",
+    "sources/measurements/npu-resnet50-b1-r8.json",
+    "sources/measurements/npu-resnet50-b4-r4.json",
+    "sources/measurements/npu-resnet50-b4-r5.json",
+    "sources/measurements/npu-resnet50-b4-r6.json",
+    "sources/measurements/npu-resnet50-b4-r7.json",
+    "sources/measurements/npu-resnet50-b4-r8.json",
+    "sources/prior/migration-heldout-process.csv",
+    "sources/prior/fitas_migration_results.json",
+    "sources/fallback/active-fallback-npu.json",
+    "sources/fallback/active-fallback-npu.decisions.json",
+    "sources/fallback/npu-active-posthoc.json",
+    "sources/fallback/a100mig-reference.json",
+    "sources/fallback/m5mps-reference.json",
+    "sources/ctyun-price.html",
+    "sources/ctyun-billing.html",
+    "sources/runpod-price.html",
+    "sources/lambda-price.html",
+    "sources/boc-fx.html",
+    "sources/nvidia-mig.html",
+    "sources/runpod-billing.html",
+    "sources/lambda-regions.html",
+    "sources/ctyun-regions.html",
+    "sources/ctyun-monthly.html",
+    "sources/runpod-tax.html",
+    "sources/lambda-billing.html",
+    "sources/runpod-select.html"
+  ],
+  "transformations": [
+    {
+      "file": "sources/prior/migration-heldout-process.csv",
+      "original_sha256": "f2cb5d326b901dad002e8acc622e5f4209cafe97647dd01c624779b1440b9797",
+      "public_sha256": "fae05c877b976ed4bac298300c62e6b09ad77d4bf98305ecf8dfe70472d65297",
+      "change": "Only source_raw_path and target_raw_path relocated to package-relative files; numeric and digest fields unchanged."
+    },
+    {
+      "file": "input-snapshot-manifest.json",
+      "original_sha256": "0903aca490548889ec010c76b22f379347ff7307f8c4c50570c74ad3fc04669f",
+      "public_sha256": "e0022a27d5b14e0ce57f750b5a1f79c0b5c1a5b1bd89ba4d36a52466f6a4fd62",
+      "change": "Explicit scientific input allowlist retains47inputs; excludes7nonnumerical private/redundant inputs including reviewer-response map/internal audits. Original-path metadata replaced by package-relative paths; migrationCSVdigest updated. Original private manifest unchanged."
+    },
+    {
+      "file": "sources/fetch-manifest.json",
+      "original_sha256": "2a6f53c69ee69d12e44972253539ecb2e1d926b871c1b1d1ca4c27411dc92767",
+      "public_sha256": "c937ad266bd162b9d7afed0fd76c7998bfe502e8b48a609e79e567c72d9fa3e1",
+      "change": "Header allowlist removes cookies,request/trace identifiers and unnecessary non-content headers. URLs,timestamps,status,HTMLhashes and byte counts unchanged.",
+      "removed_header_names_by_source": [
+        {
+          "source_id": "ctyun-price",
+          "removed_header_names": [
+            "Connection",
+            "Content-Security-Policy",
+            "X-Ct-Request-Id",
+            "Strict-Transport-Security",
+            "Ctl-Cache-Status",
+            "Request-Id",
+            "Access-Control-Allow-Headers",
+            "X-Download-Options",
+            "X-Permitted-Cross-Domain-Policies",
+            "X-XSS-Protection"
+          ]
+        },
+        {
+          "source_id": "ctyun-billing",
+          "removed_header_names": [
+            "Connection",
+            "Set-Cookie",
+            "Content-Security-Policy",
+            "X-Ct-Request-Id",
+            "Strict-Transport-Security",
+            "Ctl-Cache-Status",
+            "Request-Id",
+            "Access-Control-Allow-Headers",
+            "X-Download-Options",
+            "X-Permitted-Cross-Domain-Policies",
+            "X-XSS-Protection"
+          ]
+        },
+        {
+          "source_id": "runpod-price",
+          "removed_header_names": [
+            "Transfer-Encoding",
+            "Connection",
+            "CF-Ray",
+            "CF-Cache-Status",
+            "Link",
+            "Server",
+            "Set-Cookie",
+            "Strict-Transport-Security",
+            "content-security-policy",
+            "o2o-cache-status",
+            "surrogate-control",
+            "surrogate-key",
+            "x-frame-options",
+            "x-lambda-id",
+            "x-wf-region"
+          ]
+        },
+        {
+          "source_id": "lambda-price",
+          "removed_header_names": [
+            "Transfer-Encoding",
+            "Connection",
+            "set-cookie",
+            "Nel",
+            "Link",
+            "Strict-Transport-Security",
+            "Content-Security-Policy",
+            "Edge-Cache-Tag",
+            "Referrer-Policy",
+            "X-HS-CF-Cache-Status",
+            "X-HS-Cache-Config",
+            "X-HS-Cache-Control",
+            "X-HS-Content-Id",
+            "X-HS-Hub-Id",
+            "X-Hs-Prerendered",
+            "x-hs-cfworker-meta",
+            "x-hs-portal-id",
+            "Report-To",
+            "Server",
+            "CF-RAY",
+            "alt-svc"
+          ]
+        },
+        {
+          "source_id": "boc-fx",
+          "removed_header_names": [
+            "Server",
+            "Connection"
+          ]
+        },
+        {
+          "source_id": "nvidia-mig",
+          "removed_header_names": [
+            "Server",
+            "x-amz-replication-status",
+            "x-amz-server-side-encryption",
+            "x-amz-version-id",
+            "X-Amz-Cf-Pop",
+            "X-Amz-Cf-Id",
+            "x-nv-aws-origin",
+            "Edge-Cache-Tag",
+            "Transfer-Encoding",
+            "Connection",
+            "Set-Cookie",
+            "Expires",
+            "Pragma",
+            "Content-Security-Policy",
+            "Akamai-Cache-Status"
+          ]
+        },
+        {
+          "source_id": "runpod-billing",
+          "removed_header_names": [
+            "Cf-Cache-Status",
+            "Cf-Ray",
+            "Content-Security-Policy",
+            "Content-Security-Policy-Report-Only",
+            "Expires",
+            "Link",
+            "Pragma",
+            "Reporting-Endpoints",
+            "Server",
+            "Strict-Transport-Security",
+            "X-Content-Type-Options",
+            "X-Frame-Options",
+            "X-Llms-Txt",
+            "X-Matched-Path",
+            "X-Mint-Proxy-Version",
+            "X-Mintlify-Client-Version",
+            "X-Nextjs-Prerender",
+            "X-Nextjs-Stale-Time",
+            "X-Served-Version",
+            "X-Vercel-Cache",
+            "X-Vercel-Id",
+            "X-Vercel-Project-Id",
+            "X-Version",
+            "Connection",
+            "Transfer-Encoding"
+          ]
+        },
+        {
+          "source_id": "lambda-regions",
+          "removed_header_names": [
+            "Transfer-Encoding",
+            "Connection",
+            "Report-To",
+            "Nel",
+            "Access-Control-Allow-Origin",
+            "x-content-type-options",
+            "referrer-policy",
+            "set-cookie",
+            "Server",
+            "cf-cache-status",
+            "CF-RAY"
+          ]
+        },
+        {
+          "source_id": "ctyun-regions",
+          "removed_header_names": []
+        },
+        {
+          "source_id": "ctyun-monthly",
+          "removed_header_names": []
+        },
+        {
+          "source_id": "runpod-tax",
+          "removed_header_names": []
+        },
+        {
+          "source_id": "lambda-billing",
+          "removed_header_names": []
+        },
+        {
+          "source_id": "runpod-select",
+          "removed_header_names": []
+        }
+      ]
+    }
+  ],
+  "excluded_from_public": [
+    {
+      "file": "author-replacements.json",
+      "original_sha256": "43603945739cf7a964d27d1ee379fce1ad2b9ef51de65f912c87e0c9c2816359",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "cost-audit-report.txt",
+      "original_sha256": "6110f5701c0d2aef0cf8335247dbc7cad5b2601097d5f249e1403d493f2a0d9c",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "delivery-manifest.json",
+      "original_sha256": "3147a99b875143f55533b64e99269850db7f23db4be9ca8b16cdf79ec0cd567a",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "independent-validation.json",
+      "original_sha256": "94b8675fa089e5cf021dcac84e1f937c51b50a225aeaf9b34fe8f098a4a9fc07",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "manuscript-replacement.txt",
+      "original_sha256": "33188b7f89ea8974e27f6a5726213ead88a9b96766a48792e98f973106f3cf53",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "prepare_cost_inputs.py",
+      "original_sha256": "0d796ce67b8b4b9f2a9b2a8b7fe933b326dcb61be4dae1bd32c3d62dec2b77a6",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "recompute-console.json",
+      "original_sha256": "70a29a6fcec4e7c72ee6f0994a2bfc132541d32c7b766191a5896d4bf5c337f6",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "short-responses.txt",
+      "original_sha256": "295fa3ca56d5b32289be029ed5c55a3c489f60fb0ee93d649f613103bc9021b9",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/boc-fx.visible-text.txt",
+      "original_sha256": "18a0b9cf18a5b4469ffccff511bad996c94a25770e8d5832880d2ed425138a92",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/ctyun-billing.visible-text.txt",
+      "original_sha256": "f857bdc355a920060030af81f97591f25c40d5989a9b1f52394308b4a7f36176",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/ctyun-monthly.visible-text.txt",
+      "original_sha256": "5d3a8b170a8f1fd6c9c1117e6be3314f320135244b79b7f5c0f84cd3e7acd211",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/ctyun-price.visible-text.txt",
+      "original_sha256": "620480668b3ee62c8fbf040379967bc7ec770725dc818604c7310e49cf557223",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/ctyun-regions.visible-text.txt",
+      "original_sha256": "39f17075d92277566833269f75b7a12675778e8e9b36f2f78490a2af34ca1c82",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/fallback/attention-independent-audit.json",
+      "original_sha256": "a63505f31c773ecf0ac9e3026bf3cc469f8fad8577614e142ef64cb58a7e83f6",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/lambda-billing.visible-text.txt",
+      "original_sha256": "d42469037dcf7464462527c8026c71d1bfad3235206c27928406a93410a897c9",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/prior/analysis-freeze.json",
+      "original_sha256": "05f6860d552d43afd94cf1a1db18efa2bb3b3883df0314a1afc084ef18fc034d",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/prior/historical-cost-source-audit.json",
+      "original_sha256": "9a5ca414aa922c0b3fcbdb2a11785e680ea4c111a8b834fa78c7bea23c064c3a",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/prior/official-quotes-v4.json",
+      "original_sha256": "a52009ef975ee34fe0503c516f1bef445575c67286c86057f0de6c4cb3c1b3d9",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/prior/protocol-v4.json",
+      "original_sha256": "187e555fa7a578d734819f5d7e5c468058d063cd3fff632bb7d4a32cbea1ed68",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/prior/question-answer-map-v7.json",
+      "original_sha256": "352ea371b17961b2983151383f007651c3f62242cae3cb2a7413b4981b7aa1a9",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/prior/results-summary-v4.json",
+      "original_sha256": "575e00c145c6d2daef89028d900affdd940a8c84eacaf8052540e7d4dcdd7f17",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/runpod-price.visible-text.txt",
+      "original_sha256": "e7afd2401ff297442b5d790a2e25d1eaa786c509806336f2d2b071cb367628a1",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/runpod-select.visible-text.txt",
+      "original_sha256": "d5319c125c9ed6917eb455d82506eaba5ea90ff2cc9893240213a261505ab77a",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "sources/runpod-tax.visible-text.txt",
+      "original_sha256": "df9da1e72af30f98bc43f100e4929abbef542b91667529829cc5023ecaf11f2a",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    },
+    {
+      "file": "write_author_replacements.py",
+      "original_sha256": "cebcac377fc559240728ab87d2c25d990ebb179ca83e53a1c58365ea6f6d2dd2",
+      "reason": "Outside explicit scientific allowlist: private author/reviewer material,internal reports,prior redundant inputs,build scripts or regenerated logs."
+    }
+  ],
+  "generated_files": [
+    "measured-processes.csv",
+    "timing-summary.csv",
+    "unit-cost-primary.csv",
+    "allocation-sensitivity.csv",
+    "break-even.csv",
+    "service-procurement.csv",
+    "migration-costs.csv",
+    "fallback-costs.csv",
+    "results-summary.json",
+    "verification.json",
+    "README.md",
+    "public-export-adjustments.json",
+    "public-cost-replay.json"
+  ],
+  "original_private_tree_unchanged": true
+}

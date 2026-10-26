@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "physical_raw_files": 40,
+  "source_manifests_verified": true,
+  "means_recomputed_from_30_samples": true,
+  "cross_hardware_weights_input_data_identity": true,
+  "quality_counts_recomputed": true,
+  "all_negative_and_infeasible_scenarios_retained": true,
+  "no_hardware_or_network_execution": true,
+  "csv_tables": 8,
+  "outputs": {
+    "measured-processes.csv": {
+      "rows": 40,
+      "sha256": "c2e85565f3366223b0e665db3a1f30eff910f69d02dd958152b7f98062ca3586"
+    },
+    "timing-summary.csv": {
+      "rows": 8,
+      "sha256": "d45ee6733ff032523d8891e06bc1d46dd5a52f894c909added8b54c5bf255867"
+    },
+    "unit-cost-primary.csv": {
+      "rows": 32,
+      "sha256": "a124712222095aa49bb7f80b48d6ea8ed82293dce2081035d92b1f26013ff1cf"
+    },
+    "allocation-sensitivity.csv": {
+      "rows": 768,
+      "sha256": "20bf61d1c4a2a24db38b2feb8e659bb8bdbaebb1ba9b455ac445d4f44110c18d"
+    },
+    "break-even.csv": {
+      "rows": 48,
+      "sha256": "a97086abb10892760fb5e4e653b587c825d91137c9ceb93173907566b5871469"
+    },
+    "service-procurement.csv": {
+      "rows": 13824,
+      "sha256": "4f855df17b0669c59c383567c48015ccbee0a857025ad38a97f48a5cd9207258"
+    },
+    "migration-costs.csv": {
+      "rows": 40,
+      "sha256": "ad398fd51b2a1976ab2a23db46a5abf5323d47dc369e15ee9bdcb988fe73fb38"
+    },
+    "fallback-costs.csv": {
+      "rows": 9,
+      "sha256": "2b9b27cffde8abc3471bbe539c7b1ed7604fd5424db2a0bb94eb563a37d5c960"
+    },
+    "results-summary.json": {
+      "sha256": "832ba582be3c8765253f0237886f1086977dc7af64dc117cc19ec0b199830c2e"
+    }
+  }
+}

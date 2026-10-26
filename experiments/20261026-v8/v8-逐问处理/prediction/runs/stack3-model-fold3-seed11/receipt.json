@@ -1,0 +1,74 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-26T06:18:46.253597+00:00",
+  "cell_id": "stack3-model-fold3",
+  "seed": 11,
+  "protocol_sha256": "9b84441114b9aa53cb68f778502aeb03abda650b215459055332a04c245ebabd",
+  "training_episodes": 1000,
+  "training_stack_count": 3,
+  "train_model_ids": [
+    "resnet18",
+    "resnet50",
+    "mobilenet_v2",
+    "densenet121",
+    "efficientnet_b0",
+    "squeezenet1_1",
+    "causal_lm_ref",
+    "dual_encoder_ref"
+  ],
+  "validation_model_ids": [
+    "audio_conv_ref",
+    "audio_dilated_ref"
+  ],
+  "test_model_ids": [
+    "text_encoder_ref",
+    "text_cnn_ref"
+  ],
+  "train_records": 7650,
+  "validation_records": 60,
+  "test_records": 171,
+  "training_reference_records": 9,
+  "target_reference_records": 3,
+  "reference_test_overlap": 0,
+  "prediction_rows": 1617,
+  "log_output_clipping_counts": {
+    "validation": {
+      "help_zero_probe_source_embedding": 0,
+      "help_three_probe_full": 0,
+      "help_three_probe_no_inner_update": 0,
+      "help_three_probe_no_z_modulation": 0,
+      "pooled_zero_probe": 0,
+      "pooled_three_probe_conditioned": 0,
+      "pooled_three_probe_finetuned": 0
+    },
+    "test": {
+      "help_zero_probe_source_embedding": 0,
+      "help_three_probe_full": 0,
+      "help_three_probe_no_inner_update": 0,
+      "help_three_probe_no_z_modulation": 0,
+      "pooled_zero_probe": 0,
+      "pooled_three_probe_conditioned": 0,
+      "pooled_three_probe_finetuned": 0
+    }
+  },
+  "checkpoint_replay_exact": true,
+  "zero_probe_target_reference_poisoning_invariant": true,
+  "seconds": 13.7313487920037,
+  "outputs": [
+    {
+      "path": "checkpoint.pt",
+      "sha256": "9653179c5ac5196f3614ff25752de6b9e76baca9e38359cc8f2cb9041ad9c857",
+      "bytes": 182282
+    },
+    {
+      "path": "predictions.jsonl.gz",
+      "sha256": "f5c569761c3657a4121aaef4f09717be32a519d64574182bb8e8a3649bb9d528",
+      "bytes": 23762
+    },
+    {
+      "path": "training-loss.json",
+      "sha256": "5c244df82d6f2c53e2e9cff7208734428226979091c5bd559e26c001893b8ff5",
+      "bytes": 1092
+    }
+  ]
+}

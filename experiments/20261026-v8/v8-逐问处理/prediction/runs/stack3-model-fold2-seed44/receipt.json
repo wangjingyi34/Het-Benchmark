@@ -1,0 +1,74 @@
+{
+  "complete": true,
+  "created_utc": "2026-10-26T06:19:12.837551+00:00",
+  "cell_id": "stack3-model-fold2",
+  "seed": 44,
+  "protocol_sha256": "9b84441114b9aa53cb68f778502aeb03abda650b215459055332a04c245ebabd",
+  "training_episodes": 1000,
+  "training_stack_count": 3,
+  "train_model_ids": [
+    "resnet18",
+    "resnet50",
+    "mobilenet_v2",
+    "densenet121",
+    "audio_conv_ref",
+    "audio_dilated_ref",
+    "causal_lm_ref",
+    "dual_encoder_ref"
+  ],
+  "validation_model_ids": [
+    "text_encoder_ref",
+    "text_cnn_ref"
+  ],
+  "test_model_ids": [
+    "efficientnet_b0",
+    "squeezenet1_1"
+  ],
+  "train_records": 4995,
+  "validation_records": 171,
+  "test_records": 945,
+  "training_reference_records": 9,
+  "target_reference_records": 3,
+  "reference_test_overlap": 0,
+  "prediction_rows": 7812,
+  "log_output_clipping_counts": {
+    "validation": {
+      "help_zero_probe_source_embedding": 0,
+      "help_three_probe_full": 0,
+      "help_three_probe_no_inner_update": 0,
+      "help_three_probe_no_z_modulation": 0,
+      "pooled_zero_probe": 0,
+      "pooled_three_probe_conditioned": 0,
+      "pooled_three_probe_finetuned": 0
+    },
+    "test": {
+      "help_zero_probe_source_embedding": 0,
+      "help_three_probe_full": 0,
+      "help_three_probe_no_inner_update": 0,
+      "help_three_probe_no_z_modulation": 0,
+      "pooled_zero_probe": 0,
+      "pooled_three_probe_conditioned": 0,
+      "pooled_three_probe_finetuned": 0
+    }
+  },
+  "checkpoint_replay_exact": true,
+  "zero_probe_target_reference_poisoning_invariant": true,
+  "seconds": 9.701146667001012,
+  "outputs": [
+    {
+      "path": "checkpoint.pt",
+      "sha256": "7d16a32d97ea21e37a34f1b176dace0b15ad3a474c487e3e38a35fdf46f021d7",
+      "bytes": 182282
+    },
+    {
+      "path": "predictions.jsonl.gz",
+      "sha256": "8759fe62cb91c8a612462dbf6f7b6987d39c460d3de71e5021c28320e563abbe",
+      "bytes": 123669
+    },
+    {
+      "path": "training-loss.json",
+      "sha256": "823e44e4cb0e61b2ba72dac99e62acb3674ae71cacdca952329282a4e52c88a1",
+      "bytes": 1098
+    }
+  ]
+}

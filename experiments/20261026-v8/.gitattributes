@@ -1,0 +1,3 @@
+*.pt -filter -diff -merge
+*.pth -filter -diff -merge
+*.bin -filter -diff -merge

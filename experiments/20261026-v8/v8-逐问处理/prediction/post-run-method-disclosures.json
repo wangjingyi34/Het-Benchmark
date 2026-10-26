@@ -1,0 +1,9 @@
+{
+  "status": "post-run reporting disclosure; frozen training, protocol and checkpoints unchanged",
+  "official_code": "HayeonLee/HELP commit45f70eb92d0d735970a33b608d1544ad3c52f285",
+  "objective_difference": "This adaptation averages the KL divergence over each source task. The pinned upstream training driver reuses the final source-task KL. Thus official neural classes are reused, but the full outer-loop objective is not bit-for-bit identical.",
+  "transfer_failure": "The fixed 3-reference, width32, 1000-episode operator-domain experiment exhibits reproducible target-adaptation instability. Independent full-training replay matches the extreme checkpoints. Signed Meta-SGD updates can increase target support loss; the worst A100 cell rises3.5234->4.1772->21.1989, and its worst depthwise-group feature is23.45source standard deviations away. This is not evidence of general inferiority of published HELP.",
+  "zero_probe": "Zero-probe predictions have no target-measurement dependency. The combined evaluation program also reads target references for its six other output conditions.",
+  "statistics": "All300fits and973350validation/test prediction rows retained; no seed/checkpoint selection after observing evaluation.",
+  "independent_review_sha256": "a039b0e707951c617f66aa1c5d412f40b092ed291489ab2d8072770457ea4766"
+}

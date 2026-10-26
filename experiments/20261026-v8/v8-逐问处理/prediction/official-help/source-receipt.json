@@ -1,0 +1,48 @@
+{
+  "repository": "HayeonLee/HELP",
+  "commit": "45f70eb92d0d735970a33b608d1544ad3c52f285",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/HayeonLee/HELP/45f70eb92d0d735970a33b608d1544ad3c52f285/README.md",
+      "sha256": "bcfadcd9497050c22e88a86e5d3e4b99d40f0dcdc4cc929ba60a7932ac3769dd",
+      "bytes": 21577
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/HayeonLee/HELP/45f70eb92d0d735970a33b608d1544ad3c52f285/LICENSE",
+      "sha256": "3c98229c673fb4c782576aa9da6013416cc906a8a38d0d6daf15807c6361f4f5",
+      "bytes": 1066
+    },
+    {
+      "path": "net.py",
+      "url": "https://raw.githubusercontent.com/HayeonLee/HELP/45f70eb92d0d735970a33b608d1544ad3c52f285/net.py",
+      "sha256": "62945282e3c588b651045c9ebbd3148e799df461c65b55a29b181aa27a8a7ba7",
+      "bytes": 11989
+    },
+    {
+      "path": "help.py",
+      "url": "https://raw.githubusercontent.com/HayeonLee/HELP/45f70eb92d0d735970a33b608d1544ad3c52f285/help.py",
+      "sha256": "a57e06dd1ede19e11607cfb67bfb2f1ed033fb54af648fffe02ebb1fc7f142ed",
+      "bytes": 21122
+    },
+    {
+      "path": "loader.py",
+      "url": "https://raw.githubusercontent.com/HayeonLee/HELP/45f70eb92d0d735970a33b608d1544ad3c52f285/loader.py",
+      "sha256": "ab034ff5513087e4a38858825f37e82289f15f63468d63b58294643313caa3ea",
+      "bytes": 11742
+    },
+    {
+      "path": "parser.py",
+      "url": "https://raw.githubusercontent.com/HayeonLee/HELP/45f70eb92d0d735970a33b608d1544ad3c52f285/parser.py",
+      "sha256": "f9dba9e130eccbe57150757e225cb48b9351b040941937a435184ea5f8abff10",
+      "bytes": 4941
+    },
+    {
+      "path": "utils.py",
+      "url": "https://raw.githubusercontent.com/HayeonLee/HELP/45f70eb92d0d735970a33b608d1544ad3c52f285/utils.py",
+      "sha256": "2706c07d88df80ea259c99b28f3f894a1ceee0b293c75249b5790f8f6193e298",
+      "bytes": 8044
+    }
+  ]
+}
