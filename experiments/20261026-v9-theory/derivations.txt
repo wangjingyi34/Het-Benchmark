@@ -1,0 +1,26 @@
+1. All rates must use one currency. With effective hourly rate p, batch latency
+t in seconds and batch size b, the active-compute allocation model gives
+c=p*t/(3600*b). Let alpha allocate a fraction of full-card A100 rate P_A.
+c_N/c_A=(p_N/(alpha*P_A))*(t_N/t_A)*(b_A/b_N).
+Saving at least 66% is equivalent to c_N/c_A<=0.34. For equal batch sizes,
+p_N/(alpha*P_A)<=0.34*t_A/t_N is necessary and sufficient within this model.
+
+2. For fixed procurement totals C_N,C_A and identical feasible delivered demand
+Q>0, average billed cost is C/Q, so 66% savings requires C_N<=0.34*C_A.
+Different order minima can satisfy this condition at low demand even when
+active-compute efficiency does not. This is a different estimand.
+
+3. On a finite feasible set A, suppose every action satisfies
+abs(T_hat(a)-T(a))<=epsilon. If the selected action a_hat satisfies
+T_hat(a_hat)<=min_a T_hat(a)+eta, then for the true optimum a_star:
+T(a_hat)<=T_hat(a_hat)+epsilon<=T_hat(a_star)+eta+epsilon
+        <=T(a_star)+2*epsilon+eta.
+Hence regret<=2*epsilon+eta; exact argmin gives eta=0.
+An average relative prediction error does not imply a uniform absolute-error
+bound. A measured quality gate defines empirical admissibility on its evaluation
+samples, not guaranteed feasibility on all production inputs. A finite penalty
+alone does not guarantee feasibility. If eta is unbounded for a planner, the
+stated numerical regret bound cannot be assigned to it.
+
+The enumeration tests the inequality on 729 toy instances and includes a tight
+example. The three-line inequality, not the enumeration count, is the proof.

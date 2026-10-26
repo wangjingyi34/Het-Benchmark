@@ -1,0 +1,97 @@
+{
+  "source_hashes": {
+    "20261026-v8/v8-逐问处理/cost/pricing-inputs.json": "099422123e9f61c88eca5eacc4da73a8bb79e9225a5f9adf17a04c182a9015f9",
+    "20261026-v8/v8-逐问处理/cost/timing-summary.csv": "d45ee6733ff032523d8891e06bc1d46dd5a52f894c909added8b54c5bf255867"
+  },
+  "source_measurement_commit": "35e91a692716fd890ab80c90f3da9de9a3f4127e",
+  "cost_rows": [
+    {
+      "model": "resnet18",
+      "batch": 1,
+      "source_measured": "A100 MIG2g20GB",
+      "t_a_s": 0.00192223896,
+      "t_n_s": 0.0047128082,
+      "t_n_over_t_a": 2.451728582173779,
+      "N_A_price_ratio_runpod_alpha1": 3.212990341391714,
+      "N_A_price_ratio_lambda_alpha1": 2.0613809000326766,
+      "N_A_active_cost_ratio_runpod_alpha1": 7.877380254238354,
+      "N_A_active_cost_ratio_lambda_alpha1": 5.053946471357223,
+      "A_full_card_USD_hour_required_for_66_at_alpha1": 41.47209016201956,
+      "N_CNY_hour_max_for_66_runpod_alpha1": 1.6595618820059106,
+      "runpod_unit_A_CNY_per_image": 6.389866704186999e-06,
+      "N_unit_CNY_per_image": 5.033540980277778e-05
+    },
+    {
+      "model": "resnet18",
+      "batch": 4,
+      "source_measured": "A100 MIG2g20GB",
+      "t_a_s": 0.00417089758,
+      "t_n_s": 0.005016365133333333,
+      "t_n_over_t_a": 1.2027063808489233,
+      "N_A_price_ratio_runpod_alpha1": 3.212990341391714,
+      "N_A_price_ratio_lambda_alpha1": 2.0613809000326766,
+      "N_A_active_cost_ratio_runpod_alpha1": 3.864283985197775,
+      "N_A_active_cost_ratio_lambda_alpha1": 2.4792359618293967,
+      "A_full_card_USD_hour_required_for_66_at_alpha1": 20.344318627952987,
+      "N_CNY_hour_max_for_66_runpod_alpha1": 3.3830329370399315,
+      "runpod_unit_A_CNY_per_image": 3.4662027104341042e-06,
+      "N_unit_CNY_per_image": 1.339439162337963e-05
+    },
+    {
+      "model": "resnet50",
+      "batch": 1,
+      "source_measured": "A100 MIG2g20GB",
+      "t_a_s": 0.0048384803866666675,
+      "t_n_s": 0.011882033,
+      "t_n_over_t_a": 2.455736522719644,
+      "N_A_price_ratio_runpod_alpha1": 3.212990341391714,
+      "N_A_price_ratio_lambda_alpha1": 2.0613809000326766,
+      "N_A_active_cost_ratio_runpod_alpha1": 7.89025772850109,
+      "N_A_active_cost_ratio_lambda_alpha1": 5.062208363446935,
+      "A_full_card_USD_hour_required_for_66_at_alpha1": 41.539886276520434,
+      "N_CNY_hour_max_for_66_runpod_alpha1": 1.656853356358421,
+      "runpod_unit_A_CNY_per_image": 1.6083975699682613e-05,
+      "N_unit_CNY_per_image": 0.00012690671356944445
+    },
+    {
+      "model": "resnet50",
+      "batch": 4,
+      "source_measured": "A100 MIG2g20GB",
+      "t_a_s": 0.011330148279999999,
+      "t_n_s": 0.013962423533333332,
+      "t_n_over_t_a": 1.2323248723919908,
+      "N_A_price_ratio_runpod_alpha1": 3.212990341391714,
+      "N_A_price_ratio_lambda_alpha1": 2.0613809000326766,
+      "N_A_active_cost_ratio_runpod_alpha1": 3.9594479124522435,
+      "N_A_active_cost_ratio_lambda_alpha1": 2.5402909545840555,
+      "A_full_card_USD_hour_required_for_66_at_alpha1": 20.845328715557397,
+      "N_CNY_hour_max_for_66_runpod_alpha1": 3.301722939424495,
+      "runpod_unit_A_CNY_per_image": 9.415860716905039e-06,
+      "N_unit_CNY_per_image": 3.7281610059490735e-05
+    }
+  ],
+  "service": {
+    "conditional_lambda8_CNY_month": 107438.6592,
+    "npu_CNY_month": 18454,
+    "runpod1_CNY_720hours": 8616.2724,
+    "savings_vs_lambda8_percent": 82.82368736038731,
+    "savings_vs_runpod1_percent": -114.1761441989694,
+    "source_bill_required_for_66_CNY": 54276.470588235294,
+    "equal_feasible_demand_assumption": "1image/s,720h,periodic arrival,batch1,quality>=.99paired retention; excludes startup/network; deployment suitability is an assumption, not measured cloud SLA."
+  },
+  "regret_controls": 729,
+  "tight_example": {
+    "truth": [
+      1.5,
+      1.0
+    ],
+    "prediction": [
+      1.25,
+      1.25
+    ],
+    "epsilon": 0.25,
+    "tie_pick": 0,
+    "regret": 0.5
+  },
+  "scope": "Conditional recomputation using prior measurements and frozen tariffs. No new hardware run. No historical-result authentication. The eight-card procurement example is not a per-inference efficiency result."
+}
