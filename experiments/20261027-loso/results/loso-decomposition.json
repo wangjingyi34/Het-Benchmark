@@ -1,0 +1,68 @@
+{
+  "purpose": "Per-stack decomposition of the five-fold leave-one-stack-out (LOSO) protocol; each fold trains RGAT on four stacks and evaluates on the held-out stack.",
+  "source": {
+    "archive": "experiments/20261025/archives/prediction-parts",
+    "protocol": "device_holdout_seen_architectures",
+    "feature_mode": "probe",
+    "method": "rgat",
+    "code_sha256": "bad26be58e40a0bf6ff939024f15e646a72ec3e1b8bc3fef54dc67745f8cce0f",
+    "seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "labels": 13905,
+    "stacks": 5
+  },
+  "loso_folds": [
+    {
+      "heldout_stack": "Ascend-910B3-64GB",
+      "label": "Ascend 910B3",
+      "test_records": 2781,
+      "seed_micro_mre_mean_percent": 52.27,
+      "seed_micro_mre_sample_sd": 11.01,
+      "split_id": "device-Ascend-910B3-64GB"
+    },
+    {
+      "heldout_stack": "Cloud-x86-CPU-4T",
+      "label": "x86 CPU",
+      "test_records": 2781,
+      "seed_micro_mre_mean_percent": 56.31,
+      "seed_micro_mre_sample_sd": 12.77,
+      "split_id": "device-Cloud-x86-CPU-4T"
+    },
+    {
+      "heldout_stack": "Apple-M5-MPS",
+      "label": "Apple M5 MPS",
+      "test_records": 2781,
+      "seed_micro_mre_mean_percent": 104.98,
+      "seed_micro_mre_sample_sd": 55.48,
+      "split_id": "device-Apple-M5-MPS"
+    },
+    {
+      "heldout_stack": "Apple-M5-CPU-4T",
+      "label": "Apple M5 CPU",
+      "test_records": 2781,
+      "seed_micro_mre_mean_percent": 274.1,
+      "seed_micro_mre_sample_sd": 89.93,
+      "split_id": "device-Apple-M5-CPU-4T"
+    },
+    {
+      "heldout_stack": "A100-SXM4-MIG-2g20GB",
+      "label": "A100 MIG 2g.20GB",
+      "test_records": 2781,
+      "seed_micro_mre_mean_percent": 367.48,
+      "seed_micro_mre_sample_sd": 285.88,
+      "split_id": "device-A100-SXM4-MIG-2g20GB"
+    }
+  ],
+  "micro_average_weighted_by_records_percent": 171.03,
+  "aggregate_seed_mean_percent": 171.03,
+  "notes": [
+    "Every one of the 13,905 records is scored by a model that never saw its stack during training.",
+    "Runtime stacks are not independent hardware architectures: M5 CPU/MPS share a machine; cloud CPU and A100 MIG share a host.",
+    "These stacks are newly measured and differ from the paper's original five platforms; the original per-edge labels are not recoverable."
+  ]
+}
